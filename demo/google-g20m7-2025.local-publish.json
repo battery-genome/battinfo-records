@@ -1,0 +1,12 @@
+{
+  "status": "published",
+  "id": "https://w3id.org/battinfo/cell-type/pwkw-5qgx-swzr-0qyr",
+  "entity_type": "cell-type",
+  "uid": "pwkw-5qgx-swzr-0qyr",
+  "output_dir": "demo\\resolver\\cell-type\\pwkw-5qgx-swzr-0qyr",
+  "files": [
+    "demo\\resolver\\cell-type\\pwkw-5qgx-swzr-0qyr\\index.json",
+    "demo\\resolver\\cell-type\\pwkw-5qgx-swzr-0qyr\\index.jsonld",
+    "demo\\resolver\\cell-type\\pwkw-5qgx-swzr-0qyr\\index.html"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "battinfo": "https://w3id.org/battinfo#",
+      "csvw": "http://www.w3.org/ns/csvw#"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/cell-type/pwkw-5qgx-swzr-0qyr",
+  "@type": "battinfo:BatteryCellType",
+  "schema:identifier": "pwkw-5qgx-swzr-0qyr",
+  "schema:name": "Google G20M7",
+  "schema:manufacturer": {
+    "@type": "schema:Organization",
+    "schema:name": "Google"
+  },
+  "battinfo:chemistry": "Li-ion",
+  "battinfo:format": "prismatic",
+  "battinfo:sizeCode": "P6/65/75",
+  "battinfo:positiveElectrodeBasis": "LCO",
+  "battinfo:negativeElectrodeBasis": "Graphite"
+}

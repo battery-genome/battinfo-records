@@ -1,0 +1,30 @@
+{
+  "kind": "BattinfoSubmissionResult",
+  "submission_mode": "resource",
+  "project_snapshot_id": null,
+  "project_id": "brct",
+  "publisher_id": "de",
+  "title": "Google G20M7",
+  "source_version": "d1",
+  "status": "published",
+  "resource_count": 1,
+  "created_count": 1,
+  "resources": [
+    {
+      "resource_type": "cell_type",
+      "source_local_id": "google-g20m7-2025",
+      "title": "Google G20M7",
+      "submission_id": "2e0a2dd7-315f-479f-8375-3acc144aa573",
+      "status": "published",
+      "canonical_id": "de--google-g20m7-2025--1e17b071",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+      "created": true
+    }
+  ],
+  "canonical_id_map": {
+    "google-g20m7-2025": "de--google-g20m7-2025--1e17b071"
+  },
+  "canonical_iri_map": {
+    "google-g20m7-2025": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071"
+  }
+}

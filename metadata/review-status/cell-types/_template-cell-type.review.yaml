@@ -1,0 +1,7 @@
+record_id: replace-with-stable-cell-type-id
+workflow_state: draft
+registry_state: unpublished
+curator: replace-with-name-or-team
+last_reviewed_on:
+change_summary: "Replace with a short reviewer-oriented summary."
+blocking_issues: []

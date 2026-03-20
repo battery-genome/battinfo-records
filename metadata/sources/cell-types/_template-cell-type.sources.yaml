@@ -1,0 +1,10 @@
+record_id: replace-with-stable-cell-type-id
+sources:
+  - source_id: replace-with-source-id
+    kind: datasheet
+    citation: "Replace with a concise citation"
+    locator: "https://example.org/source"
+    accessed_on: 2026-03-19
+    supports:
+      - record.json
+    notes: "Point to the relevant section, table, figure, or derived interpretation."
