@@ -1,0 +1,81 @@
+{
+  "tenant_id": "br",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "2026-03-23-baseline",
+  "published_count": 6,
+  "records": [
+    {
+      "record_id": "a123-anr26650m1-b-2012",
+      "title": "A123 ANR26650M1-B",
+      "canonical_id": "de--a123-anr26650m1-b-2012--80a20565",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--a123-anr26650m1-b-2012--80a20565",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/pge5-wer6-2q82-v9k0",
+      "battinfo_short_id": "pge5we",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--a123-anr26650m1-b-2012--80a20565/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--a123-anr26650m1-b-2012--80a20565/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--a123-anr26650m1-b-2012--80a20565/manifest.json"
+    },
+    {
+      "record_id": "energizer-cr2032-2024",
+      "title": "Energizer CR2032",
+      "canonical_id": "de--energizer-cr2032-2024--903980ad",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--energizer-cr2032-2024--903980ad",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/wa3w-j2fg-ewf3-1b4c",
+      "battinfo_short_id": "wa3wj2",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/manifest.json"
+    },
+    {
+      "record_id": "google-g20m7-2025",
+      "title": "Google G20M7",
+      "canonical_id": "de--google-g20m7-2025--1e17b071",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/nm6t-ceph-frax-1mk1",
+      "battinfo_short_id": "nm6tce",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/manifest.json"
+    },
+    {
+      "record_id": "samsung-eb-ba156aby-2025",
+      "title": "Samsung EB-BA156ABY",
+      "canonical_id": "de--samsung-eb-ba156aby-2025--92ccc417",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--samsung-eb-ba156aby-2025--92ccc417",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/phfh-9qkn-sy60-hqdr",
+      "battinfo_short_id": "phfh9q",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-ba156aby-2025--92ccc417/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-ba156aby-2025--92ccc417/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-ba156aby-2025--92ccc417/manifest.json"
+    },
+    {
+      "record_id": "samsung-eb-bs931abe-2025",
+      "title": "Samsung EB-BS931ABE",
+      "canonical_id": "de--samsung-eb-bs931abe-2025--2d045937",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--samsung-eb-bs931abe-2025--2d045937",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/m6b3-tdz5-mvb4-qt4s",
+      "battinfo_short_id": "m6b3td",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-bs931abe-2025--2d045937/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-bs931abe-2025--2d045937/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--samsung-eb-bs931abe-2025--2d045937/manifest.json"
+    },
+    {
+      "record_id": "sunwoda-bm68-2024",
+      "title": "Sunwoda BM68",
+      "canonical_id": "de--sunwoda-bm68-2024--c90e4438",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--sunwoda-bm68-2024--c90e4438",
+      "source_version": "2026-03-23-baseline",
+      "battinfo_product_id": "https://w3id.org/battinfo/cell-type/b6m7-3dtj-vdsx-svaj",
+      "battinfo_short_id": "b6m73d",
+      "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/index.html",
+      "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/resource.jsonld",
+      "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/manifest.json"
+    }
+  ]
+}

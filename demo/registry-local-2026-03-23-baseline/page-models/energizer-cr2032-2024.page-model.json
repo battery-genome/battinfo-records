@@ -1,0 +1,162 @@
+{
+  "model_type": "publication-model",
+  "model_version": "1.0",
+  "resource_type": "cell_type",
+  "resource_class": "CellType",
+  "canonical_id": "de--energizer-cr2032-2024--903980ad",
+  "canonical_iri": "https://w3id.org/battinfo/cell_type/de--energizer-cr2032-2024--903980ad",
+  "title": "Energizer CR2032",
+  "identity": {
+    "publisher_id": "de",
+    "source_local_id": "energizer-cr2032-2024",
+    "source_version": "2026-03-23-baseline"
+  },
+  "semantic_payload": {
+    "@context": null,
+    "@id": null,
+    "@type": "CellType",
+    "@graph": null,
+    "metadata": {
+      "manufacturer": "Energizer",
+      "model": "CR2032",
+      "format": "coin",
+      "chemistry": "Li-primary",
+      "size_code": "R2032",
+      "iec_code": "CR2032",
+      "country_of_origin": "China",
+      "year": 2024,
+      "positive_electrode_basis": "MnO2",
+      "negative_electrode_basis": "Lithium"
+    },
+    "battinfo_records": {
+      "cell_type": {
+        "schema_version": "0.1.0",
+        "product": {
+          "id": "https://w3id.org/battinfo/cell-type/wa3w-j2fg-ewf3-1b4c",
+          "short_id": "wa3wj2",
+          "identifier": "cell-type:wa3w-j2fg-ewf3-1b4c",
+          "name": "Energizer CR2032",
+          "model": "CR2032",
+          "manufacturer": {
+            "type": "Organization",
+            "name": "Energizer"
+          },
+          "cellFormat": "coin",
+          "chemistry": "Li-primary",
+          "positiveElectrodeBasis": "MnO2",
+          "negativeElectrodeBasis": "Lithium",
+          "sizeCode": "R2032",
+          "iecCode": "CR2032",
+          "countryOfOrigin": "China",
+          "year": 2024
+        },
+        "specs": {
+          "nominal_voltage": {
+            "value": 3.0,
+            "unit": "V"
+          },
+          "nominal_capacity": {
+            "value": 0.235,
+            "unit": "Ah"
+          },
+          "diameter": {
+            "value": 20.0,
+            "unit": "mm"
+          },
+          "height": {
+            "value": 3.2,
+            "unit": "mm"
+          },
+          "mass": {
+            "value": 3,
+            "unit": "g"
+          },
+          "discharging_cutoff_voltage": {
+            "value": 2.0,
+            "unit": "V"
+          },
+          "continuous_discharging_current": {
+            "value": 0.00019,
+            "unit": "A"
+          }
+        },
+        "provenance": {
+          "source_type": "datasheet",
+          "source_file": "ENERGIZER__CR2032.pdf",
+          "source_url": null,
+          "retrieved_at": 1774280868
+        },
+        "notes": [
+          "Second manual cell-type draft for batch loading."
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "manufacturer": "Energizer",
+    "model": "CR2032",
+    "format": "coin",
+    "chemistry": "Li-primary",
+    "size_code": "R2032",
+    "iec_code": "CR2032",
+    "country_of_origin": "China",
+    "year": 2024,
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Lithium"
+  },
+  "related_resources": [],
+  "distributions": [],
+  "artifacts": {
+    "html": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/index.html",
+    "turtle": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/resource.ttl",
+    "jsonld": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/resource.jsonld",
+    "manifest": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--energizer-cr2032-2024--903980ad/manifest.json"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T16:22:33.897847Z"
+  },
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "publication": {
+    "status": "published",
+    "published_at": "2026-03-23T16:22:33.921598+00:00",
+    "version_number": 1
+  },
+  "display": {
+    "summary_fields": [
+      {
+        "label": "Manufacturer",
+        "value": "Energizer"
+      },
+      {
+        "label": "Model",
+        "value": "CR2032"
+      },
+      {
+        "label": "Format",
+        "value": "coin"
+      },
+      {
+        "label": "Chemistry",
+        "value": "Li-primary"
+      },
+      {
+        "label": "Size Code",
+        "value": "R2032"
+      },
+      {
+        "label": "Iec Code",
+        "value": "CR2032"
+      }
+    ],
+    "metric_fields": [
+      {
+        "label": "Year",
+        "value": 2024
+      }
+    ]
+  }
+}

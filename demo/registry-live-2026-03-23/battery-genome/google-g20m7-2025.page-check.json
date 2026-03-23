@@ -1,0 +1,7 @@
+{
+  "status_code": 200,
+  "contains_title": true,
+  "contains_canonical_id": true,
+  "contains_registry_label": true,
+  "url": "http://127.0.0.1:3001/registry/cell_type/de--google-g20m7-2025--1e17b071"
+}

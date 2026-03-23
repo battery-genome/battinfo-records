@@ -1,0 +1,178 @@
+{
+  "model_type": "publication-model",
+  "model_version": "1.0",
+  "resource_type": "cell_type",
+  "resource_class": "CellType",
+  "canonical_id": "de--sunwoda-bm68-2024--c90e4438",
+  "canonical_iri": "https://w3id.org/battinfo/cell_type/de--sunwoda-bm68-2024--c90e4438",
+  "title": "Sunwoda BM68",
+  "identity": {
+    "publisher_id": "de",
+    "source_local_id": "sunwoda-bm68-2024",
+    "source_version": "2026-03-23-baseline"
+  },
+  "semantic_payload": {
+    "@context": null,
+    "@id": null,
+    "@type": "CellType",
+    "@graph": null,
+    "metadata": {
+      "manufacturer": "Sunwoda",
+      "model": "BM68",
+      "format": "prismatic",
+      "chemistry": "Li-ion",
+      "size_code": "P6/64/81",
+      "iec_code": "ICP6/64/81",
+      "country_of_origin": "China",
+      "year": 2024,
+      "positive_electrode_basis": "LCO",
+      "negative_electrode_basis": "Graphite"
+    },
+    "battinfo_records": {
+      "cell_type": {
+        "schema_version": "0.1.0",
+        "product": {
+          "id": "https://w3id.org/battinfo/cell-type/b6m7-3dtj-vdsx-svaj",
+          "short_id": "b6m73d",
+          "identifier": "cell-type:b6m7-3dtj-vdsx-svaj",
+          "name": "Sunwoda BM68",
+          "model": "BM68",
+          "manufacturer": {
+            "type": "Organization",
+            "name": "Sunwoda"
+          },
+          "cellFormat": "prismatic",
+          "chemistry": "Li-ion",
+          "positiveElectrodeBasis": "LCO",
+          "negativeElectrodeBasis": "Graphite",
+          "sizeCode": "P6/64/81",
+          "iecCode": "ICP6/64/81",
+          "countryOfOrigin": "China",
+          "year": 2024
+        },
+        "specs": {
+          "nominal_capacity": {
+            "value": 6.2,
+            "unit": "Ah"
+          },
+          "rated_capacity": {
+            "value": 6.06,
+            "unit": "Ah"
+          },
+          "nominal_energy": {
+            "value": 23.87,
+            "unit": "Wh"
+          },
+          "rated_energy": {
+            "value": 23.34,
+            "unit": "Wh"
+          },
+          "nominal_voltage": {
+            "value": 3.85,
+            "unit": "V"
+          },
+          "charging_voltage": {
+            "value": 4.53,
+            "unit": "V"
+          },
+          "discharging_cutoff_voltage": {
+            "value": 3.0,
+            "unit": "V"
+          },
+          "mass": {
+            "value": 72,
+            "unit": "g"
+          },
+          "width": {
+            "value": 64,
+            "unit": "mm"
+          },
+          "length": {
+            "value": 81,
+            "unit": "mm"
+          },
+          "thickness": {
+            "value": 6,
+            "unit": "mm"
+          }
+        },
+        "provenance": {
+          "source_type": "label",
+          "source_file": "sunwoda-bm68-2024.json",
+          "source_url": null,
+          "retrieved_at": 1774280883
+        },
+        "notes": [
+          "Values are taken from the label of a BM68 battery cell manufactured on 2024-09-05 and purchased in 2025"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "manufacturer": "Sunwoda",
+    "model": "BM68",
+    "format": "prismatic",
+    "chemistry": "Li-ion",
+    "size_code": "P6/64/81",
+    "iec_code": "ICP6/64/81",
+    "country_of_origin": "China",
+    "year": 2024,
+    "positive_electrode_basis": "LCO",
+    "negative_electrode_basis": "Graphite"
+  },
+  "related_resources": [],
+  "distributions": [],
+  "artifacts": {
+    "html": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/index.html",
+    "turtle": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/resource.ttl",
+    "jsonld": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/resource.jsonld",
+    "manifest": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--sunwoda-bm68-2024--c90e4438/manifest.json"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T16:22:34.177890Z"
+  },
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "publication": {
+    "status": "published",
+    "published_at": "2026-03-23T16:22:34.184681+00:00",
+    "version_number": 1
+  },
+  "display": {
+    "summary_fields": [
+      {
+        "label": "Manufacturer",
+        "value": "Sunwoda"
+      },
+      {
+        "label": "Model",
+        "value": "BM68"
+      },
+      {
+        "label": "Format",
+        "value": "prismatic"
+      },
+      {
+        "label": "Chemistry",
+        "value": "Li-ion"
+      },
+      {
+        "label": "Size Code",
+        "value": "P6/64/81"
+      },
+      {
+        "label": "Iec Code",
+        "value": "ICP6/64/81"
+      }
+    ],
+    "metric_fields": [
+      {
+        "label": "Year",
+        "value": 2024
+      }
+    ]
+  }
+}

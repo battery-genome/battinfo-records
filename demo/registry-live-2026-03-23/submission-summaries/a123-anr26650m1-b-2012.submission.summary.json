@@ -1,0 +1,110 @@
+{
+  "schema_version": "0.1.0",
+  "kind": "BattinfoSubmission",
+  "submission_mode": "resource",
+  "generated_at": "2026-03-23T18:05:06.920652+00:00",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "live-2026-03-23",
+  "title": "A123 ANR26650M1-B",
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T18:05:06.920652+00:00"
+  },
+  "release": {
+    "version": "live-2026-03-23"
+  },
+  "workspace": {
+    "editorial": {
+      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-types\\a123-anr26650m1-b-2012\\record.json",
+      "record_id": "a123-anr26650m1-b-2012"
+    }
+  },
+  "resource": {
+    "resource_type": "cell_type",
+    "source_local_id": "a123-anr26650m1-b-2012",
+    "title": "A123 ANR26650M1-B",
+    "semantic_payload": {
+      "@type": "CellType",
+      "metadata": {
+        "manufacturer": "A123",
+        "model": "ANR26650M1-B",
+        "format": "cylindrical",
+        "chemistry": "Li-ion",
+        "size_code": "R26650",
+        "iec_code": "IFpR26650",
+        "country_of_origin": "United States",
+        "year": 2012,
+        "positive_electrode_basis": "LFP",
+        "negative_electrode_basis": "Graphite"
+      },
+      "battinfo_records": {
+        "cell_type": {
+          "schema_version": "0.1.0",
+          "product": {
+            "id": "https://w3id.org/battinfo/cell-type/pge5-wer6-2q82-v9k0",
+            "short_id": "pge5we",
+            "identifier": "cell-type:pge5-wer6-2q82-v9k0",
+            "name": "A123 ANR26650M1-B",
+            "model": "ANR26650M1-B",
+            "manufacturer": {
+              "type": "Organization",
+              "name": "A123"
+            },
+            "cellFormat": "cylindrical",
+            "chemistry": "Li-ion",
+            "positiveElectrodeBasis": "LFP",
+            "negativeElectrodeBasis": "Graphite",
+            "sizeCode": "R26650",
+            "iecCode": "IFpR26650",
+            "countryOfOrigin": "United States",
+            "year": 2012
+          },
+          "specs": {
+            "nominal_capacity": {
+              "value": 2.5,
+              "unit": "Ah"
+            },
+            "nominal_voltage": {
+              "value": 3.3,
+              "unit": "V"
+            },
+            "diameter": {
+              "value": 26.0,
+              "unit": "mm"
+            },
+            "height": {
+              "value": 65.0,
+              "unit": "mm"
+            },
+            "mass": {
+              "value": 76.0,
+              "unit": "g"
+            }
+          },
+          "provenance": {
+            "source_type": "datasheet",
+            "source_file": "a123-anr26650m1-b-2012.json",
+            "source_url": null,
+            "retrieved_at": 1774280864
+          },
+          "notes": [
+            "Manual cell-type authoring draft. Canonical IDs and default provenance are added when the workspace saves the record."
+          ]
+        }
+      }
+    },
+    "related_resources": [],
+    "distributions": []
+  },
+  "artifacts": [],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "policy": "default"
+  }
+}

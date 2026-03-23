@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.1.0",
+  "kind": "BattinfoSubmission",
+  "submission_mode": "resource",
+  "generated_at": "2026-03-23T18:05:18.163394+00:00",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "live-2026-03-23",
+  "title": "Samsung EB-BS931ABE",
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T18:05:18.163394+00:00"
+  },
+  "release": {
+    "version": "live-2026-03-23"
+  },
+  "workspace": {
+    "editorial": {
+      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-types\\samsung-eb-bs931abe-2025\\record.json",
+      "record_id": "samsung-eb-bs931abe-2025"
+    }
+  },
+  "resource": {
+    "resource_type": "cell_type",
+    "source_local_id": "samsung-eb-bs931abe-2025",
+    "title": "Samsung EB-BS931ABE",
+    "semantic_payload": {
+      "@type": "CellType",
+      "metadata": {
+        "manufacturer": "Samsung",
+        "model": "EB-BS931ABE",
+        "format": "prismatic",
+        "chemistry": "Li-ion",
+        "size_code": "P5/63/69",
+        "iec_code": "ICP5/63/69",
+        "country_of_origin": "Vietnam",
+        "year": 2025,
+        "positive_electrode_basis": "LCO",
+        "negative_electrode_basis": "Graphite"
+      },
+      "battinfo_records": {
+        "cell_type": {
+          "schema_version": "0.1.0",
+          "product": {
+            "id": "https://w3id.org/battinfo/cell-type/m6b3-tdz5-mvb4-qt4s",
+            "short_id": "m6b3td",
+            "identifier": "cell-type:m6b3-tdz5-mvb4-qt4s",
+            "name": "Samsung EB-BS931ABE",
+            "model": "EB-BS931ABE",
+            "manufacturer": {
+              "type": "Organization",
+              "name": "Samsung"
+            },
+            "cellFormat": "prismatic",
+            "chemistry": "Li-ion",
+            "positiveElectrodeBasis": "LCO",
+            "negativeElectrodeBasis": "Graphite",
+            "sizeCode": "P5/63/69",
+            "iecCode": "ICP5/63/69",
+            "countryOfOrigin": "Vietnam",
+            "year": 2025
+          },
+          "specs": {
+            "nominal_capacity": {
+              "value": 4.0,
+              "unit": "Ah"
+            },
+            "rated_capacity": {
+              "value": 3.885,
+              "unit": "Ah"
+            },
+            "nominal_energy": {
+              "value": 15.6,
+              "unit": "Wh"
+            },
+            "rated_energy": {
+              "value": 15.16,
+              "unit": "Wh"
+            },
+            "nominal_voltage": {
+              "value": 3.9,
+              "unit": "V"
+            },
+            "charging_voltage": {
+              "value": 4.5,
+              "unit": "V"
+            },
+            "discharging_cutoff_voltage": {
+              "value": 3.0,
+              "unit": "V"
+            },
+            "mass": {
+              "value": 50,
+              "unit": "g"
+            },
+            "width": {
+              "value": 63,
+              "unit": "mm"
+            },
+            "length": {
+              "value": 69,
+              "unit": "mm"
+            },
+            "thickness": {
+              "value": 5,
+              "unit": "mm"
+            }
+          },
+          "provenance": {
+            "source_type": "label",
+            "source_file": "samsung-eb-bs931abe-2025.json",
+            "source_url": null,
+            "retrieved_at": 1774280879
+          },
+          "notes": [
+            "Values are taken from the label of a EB-BS931ABE battery cell manufactured on 2025-01-03 and purchased in 2025"
+          ]
+        }
+      }
+    },
+    "related_resources": [],
+    "distributions": []
+  },
+  "artifacts": [],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "policy": "default"
+  }
+}

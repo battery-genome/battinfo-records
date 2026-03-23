@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "a123-anr26650m1-b-2012",
+    "expected_canonical_id": "de--a123-anr26650m1-b-2012--80a20565",
+    "live_canonical_id": "de--a123-anr26650m1-b-2012--80a20565",
+    "match": true
+  },
+  {
+    "record_id": "energizer-cr2032-2024",
+    "expected_canonical_id": "de--energizer-cr2032-2024--903980ad",
+    "live_canonical_id": "de--energizer-cr2032-2024--903980ad",
+    "match": true
+  },
+  {
+    "record_id": "google-g20m7-2025",
+    "expected_canonical_id": "de--google-g20m7-2025--1e17b071",
+    "live_canonical_id": "de--google-g20m7-2025--1e17b071",
+    "match": true
+  },
+  {
+    "record_id": "samsung-eb-ba156aby-2025",
+    "expected_canonical_id": "de--samsung-eb-ba156aby-2025--92ccc417",
+    "live_canonical_id": "de--samsung-eb-ba156aby-2025--92ccc417",
+    "match": true
+  },
+  {
+    "record_id": "samsung-eb-bs931abe-2025",
+    "expected_canonical_id": "de--samsung-eb-bs931abe-2025--2d045937",
+    "live_canonical_id": "de--samsung-eb-bs931abe-2025--2d045937",
+    "match": true
+  },
+  {
+    "record_id": "sunwoda-bm68-2024",
+    "expected_canonical_id": "de--sunwoda-bm68-2024--c90e4438",
+    "live_canonical_id": "de--sunwoda-bm68-2024--c90e4438",
+    "match": true
+  }
+]

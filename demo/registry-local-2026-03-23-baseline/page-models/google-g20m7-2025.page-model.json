@@ -1,0 +1,178 @@
+{
+  "model_type": "publication-model",
+  "model_version": "1.0",
+  "resource_type": "cell_type",
+  "resource_class": "CellType",
+  "canonical_id": "de--google-g20m7-2025--1e17b071",
+  "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+  "title": "Google G20M7",
+  "identity": {
+    "publisher_id": "de",
+    "source_local_id": "google-g20m7-2025",
+    "source_version": "2026-03-23-baseline"
+  },
+  "semantic_payload": {
+    "@context": null,
+    "@id": null,
+    "@type": "CellType",
+    "@graph": null,
+    "metadata": {
+      "manufacturer": "Google",
+      "model": "G20M7",
+      "format": "prismatic",
+      "chemistry": "Li-ion",
+      "size_code": "P6/65/75",
+      "iec_code": "ICP6/65/75",
+      "country_of_origin": "Vietnam",
+      "year": 2025,
+      "positive_electrode_basis": "LCO",
+      "negative_electrode_basis": "Graphite"
+    },
+    "battinfo_records": {
+      "cell_type": {
+        "schema_version": "0.1.0",
+        "product": {
+          "id": "https://w3id.org/battinfo/cell-type/nm6t-ceph-frax-1mk1",
+          "short_id": "nm6tce",
+          "identifier": "cell-type:nm6t-ceph-frax-1mk1",
+          "name": "Google G20M7",
+          "model": "G20M7",
+          "manufacturer": {
+            "type": "Organization",
+            "name": "Google"
+          },
+          "cellFormat": "prismatic",
+          "chemistry": "Li-ion",
+          "positiveElectrodeBasis": "LCO",
+          "negativeElectrodeBasis": "Graphite",
+          "sizeCode": "P6/65/75",
+          "iecCode": "ICP6/65/75",
+          "countryOfOrigin": "Vietnam",
+          "year": 2025
+        },
+        "specs": {
+          "nominal_capacity": {
+            "value": 4.97,
+            "unit": "Ah"
+          },
+          "rated_capacity": {
+            "value": 4.835,
+            "unit": "Ah"
+          },
+          "nominal_energy": {
+            "value": 19.39,
+            "unit": "Wh"
+          },
+          "rated_energy": {
+            "value": 18.86,
+            "unit": "Wh"
+          },
+          "nominal_voltage": {
+            "value": 3.9,
+            "unit": "V"
+          },
+          "charging_voltage": {
+            "value": 4.5,
+            "unit": "V"
+          },
+          "discharging_cutoff_voltage": {
+            "value": 3.0,
+            "unit": "V"
+          },
+          "mass": {
+            "value": 63,
+            "unit": "g"
+          },
+          "width": {
+            "value": 65,
+            "unit": "mm"
+          },
+          "length": {
+            "value": 75,
+            "unit": "mm"
+          },
+          "thickness": {
+            "value": 6,
+            "unit": "mm"
+          }
+        },
+        "provenance": {
+          "source_type": "label",
+          "source_file": "google-g20m7-2025.json",
+          "source_url": null,
+          "retrieved_at": 1774280872
+        },
+        "notes": [
+          "Values are taken from the label of a G20M7 battery cell purchased from ifixit.com in 2025"
+        ]
+      }
+    }
+  },
+  "metadata": {
+    "manufacturer": "Google",
+    "model": "G20M7",
+    "format": "prismatic",
+    "chemistry": "Li-ion",
+    "size_code": "P6/65/75",
+    "iec_code": "ICP6/65/75",
+    "country_of_origin": "Vietnam",
+    "year": 2025,
+    "positive_electrode_basis": "LCO",
+    "negative_electrode_basis": "Graphite"
+  },
+  "related_resources": [],
+  "distributions": [],
+  "artifacts": {
+    "html": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/index.html",
+    "turtle": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/resource.ttl",
+    "jsonld": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/resource.jsonld",
+    "manifest": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-baseline/public/cell_type/de--google-g20m7-2025--1e17b071/manifest.json"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T16:22:33.978171Z"
+  },
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "publication": {
+    "status": "published",
+    "published_at": "2026-03-23T16:22:34.000816+00:00",
+    "version_number": 1
+  },
+  "display": {
+    "summary_fields": [
+      {
+        "label": "Manufacturer",
+        "value": "Google"
+      },
+      {
+        "label": "Model",
+        "value": "G20M7"
+      },
+      {
+        "label": "Format",
+        "value": "prismatic"
+      },
+      {
+        "label": "Chemistry",
+        "value": "Li-ion"
+      },
+      {
+        "label": "Size Code",
+        "value": "P6/65/75"
+      },
+      {
+        "label": "Iec Code",
+        "value": "ICP6/65/75"
+      }
+    ],
+    "metric_fields": [
+      {
+        "label": "Year",
+        "value": 2025
+      }
+    ]
+  }
+}

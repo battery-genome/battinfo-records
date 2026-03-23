@@ -1,0 +1,68 @@
+[
+  {
+    "canonical_id": "de--sunwoda-bm68-2024--c90e4438",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--sunwoda-bm68-2024--c90e4438",
+    "resource_type": "cell_type",
+    "title": "Sunwoda BM68",
+    "publisher_id": "de",
+    "source_local_id": "sunwoda-bm68-2024",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:34.184681"
+  },
+  {
+    "canonical_id": "de--samsung-eb-bs931abe-2025--2d045937",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--samsung-eb-bs931abe-2025--2d045937",
+    "resource_type": "cell_type",
+    "title": "Samsung EB-BS931ABE",
+    "publisher_id": "de",
+    "source_local_id": "samsung-eb-bs931abe-2025",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:34.128951"
+  },
+  {
+    "canonical_id": "de--samsung-eb-ba156aby-2025--92ccc417",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--samsung-eb-ba156aby-2025--92ccc417",
+    "resource_type": "cell_type",
+    "title": "Samsung EB-BA156ABY",
+    "publisher_id": "de",
+    "source_local_id": "samsung-eb-ba156aby-2025",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:34.072803"
+  },
+  {
+    "canonical_id": "de--google-g20m7-2025--1e17b071",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+    "resource_type": "cell_type",
+    "title": "Google G20M7",
+    "publisher_id": "de",
+    "source_local_id": "google-g20m7-2025",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:34.000816"
+  },
+  {
+    "canonical_id": "de--energizer-cr2032-2024--903980ad",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--energizer-cr2032-2024--903980ad",
+    "resource_type": "cell_type",
+    "title": "Energizer CR2032",
+    "publisher_id": "de",
+    "source_local_id": "energizer-cr2032-2024",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:33.921598"
+  },
+  {
+    "canonical_id": "de--a123-anr26650m1-b-2012--80a20565",
+    "canonical_iri": "https://w3id.org/battinfo/cell_type/de--a123-anr26650m1-b-2012--80a20565",
+    "resource_type": "cell_type",
+    "title": "A123 ANR26650M1-B",
+    "publisher_id": "de",
+    "source_local_id": "a123-anr26650m1-b-2012",
+    "source_version": "2026-03-23-baseline",
+    "version_number": 1,
+    "published_at": "2026-03-23T16:22:33.786535"
+  }
+]

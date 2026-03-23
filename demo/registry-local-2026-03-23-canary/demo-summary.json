@@ -1,0 +1,13 @@
+{
+  "tenant_id": "br",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "2026-03-23-canary",
+  "canonical_id": "de--google-g20m7-2025--1e17b071",
+  "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+  "resource_html_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-canary/public/cell_type/de--google-g20m7-2025--1e17b071/index.html",
+  "resource_jsonld_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-canary/public/cell_type/de--google-g20m7-2025--1e17b071/resource.jsonld",
+  "resource_manifest_uri": "file:///C:/Users/simonc/Documents/Github-local/battery-genome/battinfo-registry/tc3_artifacts_2026-03-23-canary/public/cell_type/de--google-g20m7-2025--1e17b071/manifest.json",
+  "embedded_battinfo_product_id": "https://w3id.org/battinfo/cell-type/nm6t-ceph-frax-1mk1",
+  "embedded_battinfo_short_id": "nm6tce"
+}

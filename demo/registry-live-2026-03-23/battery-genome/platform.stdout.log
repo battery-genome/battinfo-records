@@ -1,0 +1,29 @@
+
+> battery-genome-platform@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3001
+
+  ▲ Next.js 14.2.35
+  - Local:        http://127.0.0.1:3001
+  - Network:      http://127.0.0.1:3001
+
+ ✓ Starting...
+ ✓ Ready in 5.3s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1738ms (203 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 7.2s (659 modules)
+ GET / 200 in 7664ms
+ ○ Compiling /auth/sign-in ...
+ ✓ Compiled /auth/sign-in in 5.4s (663 modules)
+ GET /auth/sign-in 200 in 5552ms
+ ✓ Compiled /auth/mock in 142ms (405 modules)
+ GET /auth/mock?handle=simonc&provider=github&next=%2Fregistry%2Fcell_type%2Fde--google-g20m7-2025--1e17b071 307 in 238ms
+ GET /auth/sign-in?next=%2Fregistry%2Fcell_type%2Fde--google-g20m7-2025--1e17b071 200 in 136ms
+ ○ Compiling /registry/[resourceType]/[id] ...
+ ✓ Compiled /registry/[resourceType]/[id] in 664ms (687 modules)
+ GET /registry/cell_type/de--google-g20m7-2025--1e17b071 200 in 1415ms
+ ✓ Compiled in 784ms (474 modules)
+ ✓ Compiled in 516ms (474 modules)
+ ✓ Compiled in 635ms (474 modules)
+ ✓ Compiled in 162ms (203 modules)
+ ✓ Compiled in 331ms (271 modules)

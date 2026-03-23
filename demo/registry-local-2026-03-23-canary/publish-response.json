@@ -1,0 +1,30 @@
+{
+  "kind": "BattinfoSubmissionResult",
+  "submission_mode": "resource",
+  "project_snapshot_id": null,
+  "project_id": "brct",
+  "publisher_id": "de",
+  "title": "Google G20M7",
+  "source_version": "2026-03-23-canary",
+  "status": "published",
+  "resource_count": 1,
+  "created_count": 1,
+  "resources": [
+    {
+      "resource_type": "cell_type",
+      "source_local_id": "google-g20m7-2025",
+      "title": "Google G20M7",
+      "submission_id": "86650b9b-2b78-45ec-81e2-b7c5f3a97d42",
+      "status": "published",
+      "canonical_id": "de--google-g20m7-2025--1e17b071",
+      "canonical_iri": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071",
+      "created": true
+    }
+  ],
+  "canonical_id_map": {
+    "google-g20m7-2025": "de--google-g20m7-2025--1e17b071"
+  },
+  "canonical_iri_map": {
+    "google-g20m7-2025": "https://w3id.org/battinfo/cell_type/de--google-g20m7-2025--1e17b071"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schema_version": "0.1.0",
+  "kind": "BattinfoSubmission",
+  "submission_mode": "resource",
+  "generated_at": "2026-03-23T18:05:15.531578+00:00",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "live-2026-03-23",
+  "title": "Samsung EB-BA156ABY",
+  "publication_intent": {
+    "mode": "canonical-publication"
+  },
+  "provenance": {
+    "source_system": "battinfo-records",
+    "workflow_name": "curated-cell-type-publication",
+    "generated_at": "2026-03-23T18:05:15.531578+00:00"
+  },
+  "release": {
+    "version": "live-2026-03-23"
+  },
+  "workspace": {
+    "editorial": {
+      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-types\\samsung-eb-ba156aby-2025\\record.json",
+      "record_id": "samsung-eb-ba156aby-2025"
+    }
+  },
+  "resource": {
+    "resource_type": "cell_type",
+    "source_local_id": "samsung-eb-ba156aby-2025",
+    "title": "Samsung EB-BA156ABY",
+    "semantic_payload": {
+      "@type": "CellType",
+      "metadata": {
+        "manufacturer": "Samsung",
+        "model": "EB-BA156ABY",
+        "format": "prismatic",
+        "chemistry": "Li-ion",
+        "size_code": "P6/64/86",
+        "iec_code": "ICP6/64/86",
+        "country_of_origin": "China",
+        "year": 2025,
+        "positive_electrode_basis": "LCO",
+        "negative_electrode_basis": "Graphite"
+      },
+      "battinfo_records": {
+        "cell_type": {
+          "schema_version": "0.1.0",
+          "product": {
+            "id": "https://w3id.org/battinfo/cell-type/phfh-9qkn-sy60-hqdr",
+            "short_id": "phfh9q",
+            "identifier": "cell-type:phfh-9qkn-sy60-hqdr",
+            "name": "Samsung EB-BA156ABY",
+            "model": "EB-BA156ABY",
+            "manufacturer": {
+              "type": "Organization",
+              "name": "Samsung"
+            },
+            "cellFormat": "prismatic",
+            "chemistry": "Li-ion",
+            "positiveElectrodeBasis": "LCO",
+            "negativeElectrodeBasis": "Graphite",
+            "sizeCode": "P6/64/86",
+            "iecCode": "ICP6/64/86",
+            "countryOfOrigin": "China",
+            "year": 2025
+          },
+          "specs": {
+            "nominal_capacity": {
+              "value": 5.0,
+              "unit": "Ah"
+            },
+            "rated_capacity": {
+              "value": 4.9,
+              "unit": "Ah"
+            },
+            "nominal_energy": {
+              "value": 19.25,
+              "unit": "Wh"
+            },
+            "rated_energy": {
+              "value": 18.87,
+              "unit": "Wh"
+            },
+            "nominal_voltage": {
+              "value": 3.85,
+              "unit": "V"
+            },
+            "charging_voltage": {
+              "value": 4.4,
+              "unit": "V"
+            },
+            "discharging_cutoff_voltage": {
+              "value": 3.0,
+              "unit": "V"
+            },
+            "mass": {
+              "value": 67,
+              "unit": "g"
+            },
+            "width": {
+              "value": 64,
+              "unit": "mm"
+            },
+            "length": {
+              "value": 86,
+              "unit": "mm"
+            },
+            "thickness": {
+              "value": 6,
+              "unit": "mm"
+            }
+          },
+          "provenance": {
+            "source_type": "label",
+            "source_file": "samsung-eb-ba156aby-2025.json",
+            "source_url": null,
+            "retrieved_at": 1774280875
+          },
+          "notes": [
+            "Values are taken from the label of a EB-BA156ABY battery cell manufactured on 2025-08-14 and purchased in 2025"
+          ]
+        }
+      }
+    },
+    "related_resources": [],
+    "distributions": []
+  },
+  "artifacts": [],
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "policy": "default"
+  }
+}
