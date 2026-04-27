@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/9bx9-2skj-he83-5448",
+    "short_id": "9bx92s",
+    "identifier": "cell-type:9bx9-2skj-he83-5448",
+    "name": "A123 APR18650M1A",
+    "model": "APR18650M1A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "A123"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "size_code": "R18650",
+    "year": 2009
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 1.1,
+      "unit": "Ah"
+    },
+    "continuous_discharging_current": {
+      "value": 30.0,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 1.5,
+      "unit": "A"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/A123__APR18650M1A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "669547a4afe03bfc964317580d23c0d2a716303b4aa4b8dc31957f8db6be8d3e"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}
