@@ -52,5 +52,10 @@
     "Created from local datasheet intake.",
     "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
     "Supplemented from datasheet JGNE__HTPFR26650-3000mAh-3.2V.pdf."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

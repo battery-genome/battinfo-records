@@ -60,5 +60,10 @@
     "Created from local datasheet intake.",
     "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
     "Likely duplicate of lg-chem-inr21700-m50.json; keep only if this datasheet preserves distinct evidence not captured in the canonical LG record."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

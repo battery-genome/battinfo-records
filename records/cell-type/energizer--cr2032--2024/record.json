@@ -57,5 +57,10 @@
   },
   "notes": [
     "Second manual cell-type draft for batch loading."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

@@ -48,7 +48,7 @@
       "unit": "°C"
     },
     "diameter": {
-      "value": 7.000000000000001e-05,
+      "value": 7.000000000000001E-05,
       "unit": "m"
     }
   },
@@ -63,5 +63,10 @@
     "Created from local datasheet intake.",
     "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
     "Supplemented from datasheet SAMSUNG__INR18650-29E6.pdf."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

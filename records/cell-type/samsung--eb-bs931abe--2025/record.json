@@ -73,5 +73,10 @@
   },
   "notes": [
     "Values are taken from the label of a EB-BS931ABE battery cell manufactured on 2025-01-03 and purchased in 2025"
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

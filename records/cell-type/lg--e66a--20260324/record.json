@@ -76,5 +76,10 @@
     "Converted from CellInfoRepository BatteryTypeJson format.",
     "Normalized LG-family manufacturer label to parent company LG.",
     "Preferred E66A record pending source review; compare against lg-e66a.json before curation because that record points to a misfetched PDF."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

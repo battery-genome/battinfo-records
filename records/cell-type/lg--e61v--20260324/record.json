@@ -75,5 +75,10 @@
     "Mapped Height to thickness for non-cylindrical cell format.",
     "Converted from CellInfoRepository BatteryTypeJson format.",
     "Normalized LG-family manufacturer label to parent company LG."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

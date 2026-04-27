@@ -78,5 +78,10 @@
     "Mapped MaximumContinuousChargingCurrent to maximum_continuous_charging_current.",
     "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> maximum_continuous_charging_current.",
     "Converted from CellInfoRepository BatteryTypeJson format."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

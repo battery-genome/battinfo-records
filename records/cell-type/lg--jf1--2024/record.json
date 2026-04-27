@@ -99,5 +99,10 @@
     "Completed from the LG multi-cell datasheet comparison table.",
     "Did not map the internal resistance row because the datasheet reports a range rather than a single scalar value.",
     "Did not map the continuous discharge performance row because the datasheet reports it as a C-rate plus duration condition rather than a single current limit."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

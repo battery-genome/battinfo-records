@@ -97,5 +97,10 @@
     "Datasheet SAMSUNG__INR21700-40T.pdf reports continuous_discharging_current=6.0 A but existing value was kept.",
     "Datasheet SAMSUNG__INR21700-40T.pdf reports diameter=0.02122 m but existing value was kept.",
     "Supplemented from datasheet SAMSUNG__INR21700-40T.pdf."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

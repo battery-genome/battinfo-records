@@ -98,5 +98,10 @@
     "Completed from the LG multi-cell datasheet comparison table.",
     "Mapped datasheet chemistry label 'NCMA/Graphite' to BattINFO basis values 'NCA' and 'Graphite'.",
     "Preferred canonical LG-family record for INR21700-M50L; merge overlapping datasheet evidence from lg-inr21700-m50l.json before curation if needed."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

@@ -102,5 +102,10 @@
   "notes": [
     "Created from local datasheet intake.",
     "Removed legacy continuous current placeholders during migration to explicit nominal/maximum current fields; no source-backed continuous current claim is retained yet for this draft."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

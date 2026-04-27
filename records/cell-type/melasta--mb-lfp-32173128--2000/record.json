@@ -89,5 +89,10 @@
     "Converted from CellInfoRepository BatteryTypeJson format.",
     "Datasheet MELASTA__MB-LFP-32173128.pdf reports continuous_charging_current=5.0 A but existing value was kept.",
     "Supplemented from datasheet MELASTA__MB-LFP-32173128.pdf."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

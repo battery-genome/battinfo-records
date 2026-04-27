@@ -97,5 +97,10 @@
     "Completed from the LG multi-cell datasheet comparison table.",
     "Mapped datasheet chemistry label 'NCMA/Graphite' to BattINFO basis values 'NCA' and 'Graphite'.",
     "Skipped internal resistance because the datasheet reports a range rather than a single scalar value."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

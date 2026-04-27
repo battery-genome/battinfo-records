@@ -76,5 +76,10 @@
     "Converted from CellInfoRepository BatteryTypeJson format.",
     "Normalized LG-family manufacturer label to parent company LG.",
     "Preferred canonical LG-family record for INR21700-M50; merge overlapping datasheet evidence from lg-inr21700-m50.json before curation if needed."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

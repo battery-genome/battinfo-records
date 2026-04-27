@@ -101,5 +101,10 @@
     "Completed from the LG multi-cell datasheet comparison table.",
     "Mapped datasheet chemistry label 'NCMA/Graphite+SiO' to BattINFO basis values 'NCA' and 'Graphite'.",
     "Did not map the continuous discharge performance row because the datasheet reports it as a duty/elapsed-time condition rather than a single current limit."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

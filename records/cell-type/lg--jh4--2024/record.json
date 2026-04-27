@@ -95,5 +95,10 @@
     "Completed from the LG multi-cell datasheet comparison table.",
     "Used the maximum shipping-state dimensions reported without lead tab.",
     "Did not map the internal resistance row because the datasheet reports a bounded range rather than a single scalar value."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }

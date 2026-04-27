@@ -61,7 +61,7 @@
       "unit": "kg"
     },
     "diameter": {
-      "value": 7.000000000000001e-05,
+      "value": 7.000000000000001E-05,
       "unit": "m"
     }
   },
@@ -75,5 +75,10 @@
   "notes": [
     "Created from local datasheet intake.",
     "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
-  ]
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
 }

@@ -49,5 +49,10 @@
   },
   "notes": [
     "Manual cell-type authoring draft. Canonical IDs and default provenance are added when the workspace saves the record."
-  ]
+  ],
+  "editorial": {
+    "review_status": "reviewed",
+    "promoted_at": "2026-04-27",
+    "note": "Individually reviewed against a primary source before publication."
+  }
 }
