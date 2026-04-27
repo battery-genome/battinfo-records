@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/m5x3-3a09-04e8-sk84",
+    "short_id": "m5x33a",
+    "identifier": "cell-type:m5x3-3a09-04e8-sk84",
+    "name": "TENPOWER INR18650-29HE",
+    "model": "INR18650-29HE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 30.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.046,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-29HE.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "0491e0db18fecce1ac75efe5750edb897a7ffbfa279a2638814339878f92c15b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

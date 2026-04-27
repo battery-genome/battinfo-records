@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/qpm8-70g1-xfqv-8hmf",
+    "short_id": "qpm870",
+    "identifier": "cell-type:qpm8-70g1-xfqv-8hmf",
+    "name": "LG JF1",
+    "model": "JF1",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P16/100/353",
+    "iec_code": "IFpP16/100/353",
+    "year": 2024
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 56.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.22,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 182.25,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 320.4,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 165.68,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 90.6,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 90.6,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1100.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 100.2,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 352.5,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 16.1,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": -10.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 50.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -20.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 50.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Did not map the internal resistance row because the datasheet reports a range rather than a single scalar value.",
+    "Did not map the continuous discharge performance row because the datasheet reports it as a C-rate plus duration condition rather than a single current limit."
+  ]
+}

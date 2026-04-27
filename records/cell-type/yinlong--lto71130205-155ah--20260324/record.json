@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/sewt-dy3x-pyrj-nnnx",
+    "short_id": "sewtdy",
+    "identifier": "cell-type:sewt-dy3x-pyrj-nnnx",
+    "name": "YINLONG LTO71130205-155Ah",
+    "model": "LTO71130205-155Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__LTO71130205-155Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "c35f5cdb73b4dc6ba816ba36a277ada091c39fed37c426adf0a448e204498115"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

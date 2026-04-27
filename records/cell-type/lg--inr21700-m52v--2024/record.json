@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/h6nx-bcxe-v636-x2nb",
+    "short_id": "h6nxbc",
+    "identifier": "cell-type:h6nx-bcxe-v636-x2nb",
+    "name": "LG INR21700-M52V",
+    "model": "INR21700-M52V",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMCA",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "R21700",
+    "year": 2024
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.07,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.69,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 18.73,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 763.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 278.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 17.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 48.0,
+      "unit": "A"
+    },
+    "internal_resistance": {
+      "value": 24.0,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 67.4,
+      "unit": "g"
+    },
+    "diameter": {
+      "value": 21.15,
+      "unit": "mm"
+    },
+    "height": {
+      "value": 70.6,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": 0.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 50.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -20.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 70.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -20.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Mapped datasheet chemistry label 'NCMA/Graphite' to BattINFO basis values 'NCA' and 'Graphite'.",
+    "Preferred canonical LG-family record for INR21700-M52V; merge overlapping datasheet evidence from lg-inr21700-m52v.json before curation if needed."
+  ]
+}

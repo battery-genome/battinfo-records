@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/7cbc-zf95-3m3n-tkze",
+    "short_id": "7cbczf",
+    "identifier": "cell-type:7cbc-zf95-3m3n-tkze",
+    "name": "CALB L148N58A",
+    "model": "L148N58A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "CALB"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "year": 2015
+  },
+  "specs": {
+    "charging_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.06,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/CALB__L148N58A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "93f8ad62f4fb8d34bd526ebefebb0e22ac373ce37ed63cfdafcce8ad2ee5fea8"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

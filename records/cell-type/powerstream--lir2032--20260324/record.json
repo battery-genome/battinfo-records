@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/8a4s-fr24-eh8k-hxte",
+    "short_id": "8a4sfr",
+    "identifier": "cell-type:8a4s-fr24-eh8k-hxte",
+    "name": "POWERSTREAM Lir2032",
+    "model": "Lir2032",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "POWERSTREAM"
+    },
+    "cell_format": "coin",
+    "chemistry": "Li-ion"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 600.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.0025,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/POWERSTREAM__Lir2032.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "1af7cf79225ea4452a552951340d5744453253b9147e6f2c48fc1ef077146263"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

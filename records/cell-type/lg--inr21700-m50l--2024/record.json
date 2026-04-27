@@ -1,0 +1,102 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/kka0-fpt7-kc4v-3cg7",
+    "short_id": "kka0fp",
+    "identifier": "cell-type:kka0-fpt7-kc4v-3cg7",
+    "name": "LG INR21700-M50L",
+    "model": "INR21700-M50L",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMCA",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "R21700",
+    "year": 2024
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.93,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.69,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 18.2,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 746.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 270.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 13.2,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 28.5,
+      "unit": "A"
+    },
+    "internal_resistance": {
+      "value": 23.0,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 67.2,
+      "unit": "g"
+    },
+    "diameter": {
+      "value": 21.15,
+      "unit": "mm"
+    },
+    "height": {
+      "value": 70.2,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": 0.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 70.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -20.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Mapped datasheet chemistry label 'NCMA/Graphite' to BattINFO basis values 'NCA' and 'Graphite'.",
+    "Preferred canonical LG-family record for INR21700-M50L; merge overlapping datasheet evidence from lg-inr21700-m50l.json before curation if needed."
+  ]
+}

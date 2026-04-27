@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zz2p-6sq4-ytdt-1y9t",
+    "short_id": "zz2p6s",
+    "identifier": "cell-type:zz2p-6sq4-ytdt-1y9t",
+    "name": "KODAK LR1130",
+    "model": "LR1130",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "cell_format": "coin",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR1130.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "9c7e873522f3a26852ed530d34358776699f4973da2a87abe7c23bb829ba2db4"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

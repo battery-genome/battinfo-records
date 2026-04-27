@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/r265-mwz8-g6h6-gg7f",
+    "short_id": "r265mw",
+    "identifier": "cell-type:r265-mwz8-g6h6-gg7f",
+    "name": "Saft VL 32600-125",
+    "model": "VL 32600-125",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 200.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.9,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.139,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.9,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.06185,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.032049999999999995,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_VL_32600-125.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "a32ed212d49531e3143acedd17c1f7283f2183c5907f826985d7ed404f460f27"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

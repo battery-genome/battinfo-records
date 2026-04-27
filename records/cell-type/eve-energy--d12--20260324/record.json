@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zwc0-syzf-7kdn-8t5m",
+    "short_id": "zwc0sy",
+    "identifier": "cell-type:zwc0-syzf-7kdn-8t5m",
+    "name": "EVE Energy D12",
+    "model": "D12",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE Energy"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 30.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 3000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.68,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 6.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.552,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 6.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0072,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.165,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.227,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/EVE_Energy_D12.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "924041a027c6a58ee0cf1cf4a0adedc717e4ca525b7e37e49ed8fe37ad45e5f2"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

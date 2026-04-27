@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/5b2z-z4zb-8p1z-bffc",
+    "short_id": "5b2zz4",
+    "identifier": "cell-type:5b2z-z4zb-8p1z-bffc",
+    "name": "YINLONG YLE-LTO-66160-30Ah",
+    "model": "YLE-LTO-66160-30Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "LTO",
+    "size_code": "R66160"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__YLE-LTO-66160-30Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "45e76a7b561a2d5bcbc0d939b6e9118f06971f34c6533d9cf4833597f85a993a"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

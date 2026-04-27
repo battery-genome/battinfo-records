@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/f2ne-hb1j-wkf2-drxd",
+    "short_id": "f2nehb",
+    "identifier": "cell-type:f2ne-hb1j-wkf2-drxd",
+    "name": "EVE LF105",
+    "model": "LF105",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2019
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 105.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.05,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__LF105.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "0edf5f5ab134e9753939c06f5355dec638c1773340a54342486a61fdd0431d73"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/702x-j20h-xhf9-e0hg",
+    "short_id": "702xj2",
+    "identifier": "cell-type:702x-j20h-xhf9-e0hg",
+    "name": "LITHIUMWERKS IFpR18650-E",
+    "model": "IFpR18650-E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LITHIUMWERKS"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "size_code": "R18650",
+    "year": 2025
+  },
+  "specs": {
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "diameter": {
+      "value": 0.0001,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LITHIUMWERKS__IFpR18650-E.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "ad8141f4340b59c6691d5409477c02f3191bfe0ca87de32ab3597aa64c22eb0c"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LITHIUMWERKS__IFpR18650-E.pdf."
+  ]
+}

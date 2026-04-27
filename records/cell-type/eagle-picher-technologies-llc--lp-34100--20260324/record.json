@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/aff8-qkgd-34p5-db5v",
+    "short_id": "aff8qk",
+    "identifier": "cell-type:aff8-qkgd-34p5-db5v",
+    "name": "Eagle Picher Technologies LLC LP 34100",
+    "model": "LP 34100",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eagle Picher Technologies LLC"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 500.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.275,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 2.5,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0074,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.10590000000000001,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.1432,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eagle_Picher_Technologies_LLC_LP_34100.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "0e1f55cf8f2f051d8a80a3102f84c89ef475206317d0dadf9531bd0ebb71d087"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Skipped DischargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped MaximumContinuousChargingCurrent: numeric value missing or NaN.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

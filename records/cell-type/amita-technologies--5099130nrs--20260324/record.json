@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/8g5r-68ye-rfge-zycb",
+    "short_id": "8g5r68",
+    "identifier": "cell-type:8g5r-68ye-rfge-zycb",
+    "name": "Amita Technologies 5099130NRS",
+    "model": "5099130NRS",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Amita Technologies"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.8,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 44.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.141,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 27.5,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.00523,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.098,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.13,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Amita_Technologies_5099130NRS.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "1036c8b30f119d1ab9406792d6365df69417ae6d8f20390aa880eee4e48f1b0b"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Skipped DischargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped ChargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

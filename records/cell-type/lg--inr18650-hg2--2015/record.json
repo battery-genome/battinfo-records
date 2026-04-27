@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zabt-gj9b-6wx3-06wj",
+    "short_id": "zabtgj",
+    "identifier": "cell-type:zabt-gj9b-6wx3-06wj",
+    "name": "LG INR18650-HG2",
+    "model": "INR18650-HG2",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2015
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 3.0,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 3.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 3.1,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 0.0027,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0003,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-HG2.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "13a74b9690c20f28f6ac36e12b06f8cce7b944d57c78682ff92131292f303b4f"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

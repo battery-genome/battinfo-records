@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/mxht-t4hp-5392-zz8q",
+    "short_id": "mxhtt4",
+    "identifier": "cell-type:mxht-t4hp-5392-zz8q",
+    "name": "BAK N18650CR-35E",
+    "model": "N18650CR-35E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2022
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 3.5,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 3.38,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 35.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.05,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.032,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650CR-35E.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "edbbebc3c0de37e70b5771a8348cfe5692d58cc840c82de85f3075ce12461d3a"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

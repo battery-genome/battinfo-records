@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/7jze-gen3-w5wm-qte1",
+    "short_id": "7jzege",
+    "identifier": "cell-type:7jze-gen3-w5wm-qte1",
+    "name": "RSPRO LIR2032",
+    "model": "LIR2032",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "RSPRO"
+    },
+    "cell_format": "coin",
+    "chemistry": "Li-ion"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 600.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.0025,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/RSPRO__LIR2032.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "ecd51ec45d2b42657cf125a224a8d2f8fd255627a2d3201b1ab8c5290981e1a6"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

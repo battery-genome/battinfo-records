@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ss5g-kq5m-sgvz-8wd9",
+    "short_id": "ss5gkq",
+    "identifier": "cell-type:ss5g-kq5m-sgvz-8wd9",
+    "name": "BAK N18650CL-29",
+    "model": "N18650CL-29",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2017
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.9,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.8,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 35.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.00015,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650CL-29.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "19696a2d4a8a5d376f9bfbfe4d7934d46489d5075fbbdbebb0927bd5a0f7b8f9"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

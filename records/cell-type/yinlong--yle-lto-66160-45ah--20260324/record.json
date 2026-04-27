@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gjgr-ttfq-ypf6-009p",
+    "short_id": "gjgrtt",
+    "identifier": "cell-type:gjgr-ttfq-ypf6-009p",
+    "name": "YINLONG YLE-LTO-66160-45Ah",
+    "model": "YLE-LTO-66160-45Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "LTO",
+    "size_code": "R66160"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__YLE-LTO-66160-45Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "32acab216e4f9173ca5560fd29d8572e1d42680a138ac2d801a3559a2b1e19b7"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

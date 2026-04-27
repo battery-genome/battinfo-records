@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/yqex-braj-ekys-tzf6",
+    "short_id": "yqexbr",
+    "identifier": "cell-type:yqex-braj-ekys-tzf6",
+    "name": "LG INR21700M50T",
+    "model": "INR21700M50T",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700",
+    "year": 2026
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.63,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR21700M50T.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "c90ea9f29c4dc7384067827d9e407e84279234ee5ce602095622e53fb7114b52"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

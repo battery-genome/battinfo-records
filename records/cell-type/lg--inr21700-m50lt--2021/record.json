@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/kqdp-4rxj-kase-psvn",
+    "short_id": "kqdp4r",
+    "identifier": "cell-type:kqdp-4rxj-kase-psvn",
+    "name": "LG INR21700-M50LT",
+    "model": "INR21700-M50LT",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R21700",
+    "year": 2021
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.69,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 6.0,
+      "unit": "mohm"
+    },
+    "continuous_charging_current": {
+      "value": 0.0029,
+      "unit": "A"
+    },
+    "charging_time": {
+      "value": 2.8,
+      "unit": "min"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.001,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.02144,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR21700-M50LT.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "cabd4c89d8e00321e34e8420b295fe244d14ba4c4fe65682ea74ef798cd3ba24"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

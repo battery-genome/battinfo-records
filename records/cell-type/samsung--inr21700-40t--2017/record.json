@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/q7gq-kf5m-ks6a-2wkj",
+    "short_id": "q7gqkf",
+    "identifier": "cell-type:q7gq-kf5m-ks6a-2wkj",
+    "name": "Samsung INR21700-40T",
+    "model": "INR21700-40T",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700",
+    "year": 2017
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 250.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.635,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.8,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 2.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 3.9,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 3.9,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 12.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 70.0,
+      "unit": "min"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Samsung_INR21700-40T.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "e2725f397cdb259ba764955073aa33c03b138804c87171b3bf5c7c3f3fdc1de4"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet SAMSUNG__INR21700-40T.pdf reports rated_capacity=2.4 Ah but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-40T.pdf reports nominal_voltage=3.6 V but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-40T.pdf reports charging_voltage=8.2 V but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-40T.pdf reports continuous_discharging_current=6.0 A but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-40T.pdf reports diameter=0.02122 m but existing value was kept.",
+    "Supplemented from datasheet SAMSUNG__INR21700-40T.pdf."
+  ]
+}

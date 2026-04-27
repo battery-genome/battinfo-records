@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/emt1-f151-0j4y-bdn9",
+    "short_id": "emt1f1",
+    "identifier": "cell-type:emt1-f151-0j4y-bdn9",
+    "name": "Eagle Picher Technologies LLC SLC-16050-003",
+    "model": "SLC-16050-003",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eagle Picher Technologies LLC"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 62.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 31.25,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 2.02,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 31.25,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0584,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0815,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.1727,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eagle_Picher_Technologies_LLC_SLC-16050-003.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "f089ee61d2189f7e863710df4dc6d9a9c09ab710943da99be8c4b9adce15c7ad"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

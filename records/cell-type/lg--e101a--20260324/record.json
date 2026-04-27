@@ -1,0 +1,101 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/b5fp-hj5z-d9td-tdkf",
+    "short_id": "b5fphj",
+    "identifier": "cell-type:b5fp-hj5z-d9td-tdkf",
+    "name": "LG E101A",
+    "model": "E101A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P9/112/580"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 101.8,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.67,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 374.0,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 637.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 287.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 395.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 590.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1303.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 112.4,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 580.0,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 9.0,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Mapped datasheet chemistry label 'NCMA/Graphite' to BattINFO basis values 'NCA' and 'Graphite'.",
+    "Skipped internal resistance because the datasheet reports a range rather than a single scalar value."
+  ]
+}

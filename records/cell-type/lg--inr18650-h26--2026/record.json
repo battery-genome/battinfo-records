@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/yqb5-53gy-92s7-05r2",
+    "short_id": "yqb553",
+    "identifier": "cell-type:yqb5-53gy-92s7-05r2",
+    "name": "LG INR18650-H26",
+    "model": "INR18650-H26",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2026
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.045399999999999996,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-H26.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "e643785b94a68c30552480656b44510f706ac95e15cc139f66cb471dbf62ebe1"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

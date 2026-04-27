@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/h1ae-p95h-34wf-67r9",
+    "short_id": "h1aep9",
+    "identifier": "cell-type:h1ae-p95h-34wf-67r9",
+    "name": "Samsung INR21700-48G",
+    "model": "INR21700-48G",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700",
+    "year": 2015
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.8,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.635,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.96,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.44,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 4.7,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 4.7,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 35.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 5.0,
+      "unit": "h"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Samsung_INR21700-48G.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "5673dd1a9525920ccc42f433e8ea4ec4cf0d6719dcfc453446541a5066733f19"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet SAMSUNG__INR21700-48G.pdf reports nominal_voltage=3.6 V but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-48G.pdf reports mass=0.069 kg but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-48G.pdf reports diameter=0.0211 m but existing value was kept.",
+    "Supplemented from datasheet SAMSUNG__INR21700-48G.pdf."
+  ]
+}

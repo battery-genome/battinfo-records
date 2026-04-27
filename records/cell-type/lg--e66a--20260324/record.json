@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/c0aw-3g9v-cmr8-h65k",
+    "short_id": "c0aw3g",
+    "identifier": "cell-type:c0aw-3g9v-cmr8-h65k",
+    "name": "LG E66A",
+    "model": "E66A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 65.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.657,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 32.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.897,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 21.45,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.011699999999999999,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.104,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.35,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LG_Chem_E66A.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "40f98fc0a1aaf441450ec13b50ba3e7231bb9d1971ceff8f8fb3a06cd4218d7c"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Normalized LG-family manufacturer label to parent company LG.",
+    "Preferred E66A record pending source review; compare against lg-e66a.json before curation because that record points to a misfetched PDF."
+  ]
+}

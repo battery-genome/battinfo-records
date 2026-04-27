@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/brr1-nes1-4cwp-5y53",
+    "short_id": "brr1ne",
+    "identifier": "cell-type:brr1-nes1-4cwp-5y53",
+    "name": "YINLONG LTO51130205-110Ah",
+    "model": "LTO51130205-110Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__LTO51130205-110Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "31440b100fc33cb7f2c7d43c5ab569b870e63d045ebf3bcd32c6529327ed8446"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

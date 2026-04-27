@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/d20k-ppbq-42dd-f8x0",
+    "short_id": "d20kpp",
+    "identifier": "cell-type:d20k-ppbq-42dd-f8x0",
+    "name": "EVE INR18650-25P",
+    "model": "INR18650-25P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2018
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.45,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 8.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 18.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0001,
+      "unit": "m"
+    },
+    "minimum_charging_temperature": {
+      "value": 0.0,
+      "unit": "°C"
+    },
+    "maximum_charging_temperature": {
+      "value": 45.0,
+      "unit": "°C"
+    },
+    "minimum_discharging_temperature": {
+      "value": -20.0,
+      "unit": "°C"
+    },
+    "maximum_discharging_temperature": {
+      "value": 60.0,
+      "unit": "°C"
+    },
+    "minimum_storage_temperature": {
+      "value": 0.0,
+      "unit": "°C"
+    },
+    "maximum_storage_temperature": {
+      "value": 45.0,
+      "unit": "°C"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__INR18650-25P.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "6c2b03b1e38a0678c1065ad59e3cb011915d8bff6affc35147d30427ed5b0a5c"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

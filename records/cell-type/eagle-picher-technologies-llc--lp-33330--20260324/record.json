@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/pmqc-kx64-7n46-2g3y",
+    "short_id": "pmqckx",
+    "identifier": "cell-type:pmqc-kx64-7n46-2g3y",
+    "name": "Eagle Picher Technologies LLC LP 33330",
+    "model": "LP 33330",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eagle Picher Technologies LLC"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 6.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.2,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.222,
+      "unit": "kg"
+    },
+    "thickness": {
+      "value": 0.0222,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0498,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.0778,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eagle_Picher_Technologies_LLC_LP_33330.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "ebe162969bc63b5ffda0423c651c0b84a4e6183e741fbbb21330c42692e04e9c"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Skipped ChargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped MaximumContinuousChargingCurrent: numeric value missing or NaN.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

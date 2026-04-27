@@ -1,0 +1,106 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gcbw-dqkm-3d6n-vgpj",
+    "short_id": "gcbwdq",
+    "identifier": "cell-type:gcbw-dqkm-3d6n-vgpj",
+    "name": "LG JP3",
+    "model": "JP3",
+    "year": 2024,
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "graphite",
+    "size_code": "P16/102/354",
+    "iec_code": "INP16/102/354"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 62.4,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.68,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "specific_energy": {
+      "value": 184,
+      "unit": "Wh/kg"
+    },
+    "energy_density": {
+      "value": 389,
+      "unit": "Wh/L"
+    },
+    "internal_resistance": {
+      "value": 0.88,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 1245,
+      "unit": "g"
+    },
+    "width": {
+      "value": 101.7,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 353.5,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 16.4,
+      "unit": "mm"
+    },
+    "pulse_charging_current": {
+      "value": 192,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 192,
+      "unit": "A"
+    },
+    "minimum_charging_temperature": {
+      "value": -10,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 50,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -10,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 50,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Removed legacy continuous current placeholders during migration to explicit nominal/maximum current fields; no source-backed continuous current claim is retained yet for this draft."
+  ]
+}

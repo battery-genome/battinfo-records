@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/sms4-gg7h-e3zs-14we",
+    "short_id": "sms4gg",
+    "identifier": "cell-type:sms4-gg7h-e3zs-14we",
+    "name": "Molicel INR18650-P28A",
+    "model": "INR18650-P28A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.046,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Molicel__INR18650-P28A.html",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "f66d5d7fe8d4bcfb92828489be567b1d8e474c95b218fe8e78e895d20a0cc56b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

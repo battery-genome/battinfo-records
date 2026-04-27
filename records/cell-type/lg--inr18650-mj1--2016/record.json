@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/n2vd-am8k-799a-wnjc",
+    "short_id": "n2vdam",
+    "identifier": "cell-type:n2vd-am8k-799a-wnjc",
+    "name": "LG INR18650-MJ1",
+    "model": "INR18650-MJ1",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2016
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 3.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.635,
+      "unit": "V"
+    },
+    "continuous_charging_current": {
+      "value": 0.0027,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 400.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.049,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0003,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-MJ1.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "c18d138d3fc9d7fc6cfa9d266516d03caa661a18cd63ab33449bd62e9cc7000b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Likely duplicate of lg-chem-inr18650-mj1.json; keep only if this datasheet preserves distinct evidence not captured in the canonical LG record."
+  ]
+}

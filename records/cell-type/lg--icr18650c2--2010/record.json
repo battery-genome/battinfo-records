@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/d3hh-g7b2-yfne-e33z",
+    "short_id": "d3hhg7",
+    "identifier": "cell-type:d3hh-g7b2-yfne-e33z",
+    "name": "LG ICR18650C2",
+    "model": "ICR18650C2",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2010
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 2.8,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.72,
+      "unit": "V"
+    },
+    "continuous_charging_current": {
+      "value": 0.0027,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.003,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.00011,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__ICR18650C2.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "96725e20c04356d257abfc9dac16b2884d4be731f7b81446f2f0483340e9722b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

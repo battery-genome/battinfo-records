@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/jyyg-657v-k3n9-n127",
+    "short_id": "jyyg65",
+    "identifier": "cell-type:jyyg-657v-k3n9-n127",
+    "name": "LG E63B",
+    "model": "E63B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 63.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1200.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 31.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.882,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 18.9,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0145,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.1,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.301,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LG_Chem_E63B.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "fc5003c554e01fd83107fbcd238de6a1e2111ca285bff25043792fe9bcf8ee35"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Normalized LG-family manufacturer label to parent company LG."
+  ]
+}

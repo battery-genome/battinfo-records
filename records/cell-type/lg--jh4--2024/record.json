@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zr31-5g8w-pyss-hd6v",
+    "short_id": "zr315g",
+    "identifier": "cell-type:zr31-5g8w-pyss-hd6v",
+    "name": "LG JH4",
+    "model": "JH4",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P16/102/354",
+    "iec_code": "INP16/102/354",
+    "year": 2024
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 70.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 4.0,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 266.0,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 467.8,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 213.7,
+      "unit": "Wh/kg"
+    },
+    "pulse_discharging_current": {
+      "value": 120.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1245.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 101.7,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 353.5,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 16.4,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": 5.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 50.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": 0.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 50.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Used the maximum shipping-state dimensions reported without lead tab.",
+    "Did not map the internal resistance row because the datasheet reports a bounded range rather than a single scalar value."
+  ]
+}

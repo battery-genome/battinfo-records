@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/b6m7-3dtj-vdsx-svaj",
+    "short_id": "b6m73d",
+    "identifier": "cell-type:b6m7-3dtj-vdsx-svaj",
+    "name": "Sunwoda BM68",
+    "model": "BM68",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Sunwoda"
+    },
+    "chemistry": "Li-ion",
+    "year": 2024,
+    "cell_format": "prismatic",
+    "positive_electrode_basis": "LCO",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P6/64/81",
+    "iec_code": "ICP6/64/81",
+    "country_of_origin": "China"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 6.2,
+      "unit": "Ah"
+    },
+    "rated_capacity": {
+      "value": 6.06,
+      "unit": "Ah"
+    },
+    "nominal_energy": {
+      "value": 23.87,
+      "unit": "Wh"
+    },
+    "rated_energy": {
+      "value": 23.34,
+      "unit": "Wh"
+    },
+    "nominal_voltage": {
+      "value": 3.85,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.53,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 72,
+      "unit": "g"
+    },
+    "width": {
+      "value": 64,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 81,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 6,
+      "unit": "mm"
+    }
+  },
+  "provenance": {
+    "source_type": "label",
+    "source_file": "sunwoda--bm68--2024.json",
+    "source_url": null,
+    "retrieved_at": 1774280883
+  },
+  "notes": [
+    "Values are taken from the label of a BM68 battery cell manufactured on 2024-09-05 and purchased in 2025"
+  ]
+}

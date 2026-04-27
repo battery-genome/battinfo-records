@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/qwhc-eahq-w81e-nkyr",
+    "short_id": "qwhcea",
+    "identifier": "cell-type:qwhc-eahq-w81e-nkyr",
+    "name": "LG ICR18650-HE4",
+    "model": "ICR18650-HE4",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2013
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.5,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 3.1,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 0.0027,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0003,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__ICR18650-HE4.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "0fc6d98e148bf30ab469ac426fe2b337432ec3aea4d0a3ac8b83b103a138979f"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/6n35-6kv8-4n2y-3vqp",
+    "short_id": "6n356k",
+    "identifier": "cell-type:6n35-6kv8-4n2y-3vqp",
+    "name": "Melasta MB-IFR26650",
+    "model": "MB-IFR26650",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Melasta"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R26650"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.8,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.76,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.092,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.76,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.06520000000000001,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0265,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Melasta_MB-IFR26650.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "1ebcbc25c6d0c9031051caeafad97ae604c80e81935fa8b30506c3cdbd26f103"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

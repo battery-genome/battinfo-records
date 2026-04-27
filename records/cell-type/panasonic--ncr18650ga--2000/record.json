@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/whs5-4bba-w3ew-c9wa",
+    "short_id": "whs54b",
+    "identifier": "cell-type:whs5-4bba-w3ew-c9wa",
+    "name": "PANASONIC NCR18650GA",
+    "model": "NCR18650GA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2000
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__NCR18650GA.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "1d8049c93dc437cc68ed2831a9d84f66133f7bf1277aa10ef445e18027f8466a"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

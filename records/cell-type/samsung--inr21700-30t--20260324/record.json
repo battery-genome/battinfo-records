@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/5par-raa3-e4dn-1j4c",
+    "short_id": "5parra",
+    "identifier": "cell-type:5par-raa3-e4dn-1j4c",
+    "name": "Samsung INR21700-30T",
+    "model": "INR21700-30T",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 250.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.6,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.069,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.5,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0703,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.02122,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 2.95,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 60.0,
+      "unit": "min"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Samsung_INR21700-30T.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "f02a67c483299e780cf78e583bd7a6fbcfb470db485ed6913e0b781d95ecd67f"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports rated_capacity=2.9 Ah but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports charging_voltage=8.2 V but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports continuous_discharging_current=1.8 A but existing value was kept.",
+    "Supplemented from datasheet SAMSUNG__INR21700-30T.pdf."
+  ]
+}

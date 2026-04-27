@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/v4jf-c81p-g67k-1pnx",
+    "short_id": "v4jfc8",
+    "identifier": "cell-type:v4jf-c81p-g67k-1pnx",
+    "name": "Murata US21700VTC6A",
+    "model": "US21700VTC6A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Murata"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.8,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.0727,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 3.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.02155,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 4.1,
+      "unit": "Ah"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Murata_US21700VTC6A.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "5a779311c7cbc17486f5fb43e24cc051b1b540eed24a2d0105eac60435285e8a"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet MURATA__US21700VTC6A.pdf reports mass=0.0675 kg but existing value was kept.",
+    "Supplemented from datasheet MURATA__US21700VTC6A.pdf."
+  ]
+}

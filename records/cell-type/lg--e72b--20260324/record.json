@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/vavj-913d-6z0f-a8fm",
+    "short_id": "vavj91",
+    "identifier": "cell-type:vavj-913d-6z0f-a8fm",
+    "name": "LG E72B",
+    "model": "E72B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P11/102/354"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 72.2,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.67,
+      "unit": "V"
+    },
+    "nominal_energy": {
+      "value": 264.0,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 625.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 287.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 316.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 550.0,
+      "unit": "A"
+    },
+    "internal_resistance": {
+      "value": 1.09,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 906.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 101.65,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 354.0,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 11.44,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__E101A__E72B__E79__JP3__JF1__JF2__JH4__M50L__M52V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "82f9bc5a10503dba4350f271eceade57d549c8d198d18fb8d4c7828b6f920d75"
+  },
+  "notes": [
+    "Completed from the LG multi-cell datasheet comparison table.",
+    "Mapped datasheet chemistry label 'NCMA/Graphite+SiO' to BattINFO basis values 'NCA' and 'Graphite'.",
+    "Did not map the continuous discharge performance row because the datasheet reports it as a duty/elapsed-time condition rather than a single current limit."
+  ]
+}

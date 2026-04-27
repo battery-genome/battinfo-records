@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/rd7q-jsad-vs3f-xqpg",
+    "short_id": "rd7qjs",
+    "identifier": "cell-type:rd7q-jsad-vs3f-xqpg",
+    "name": "TENPOWER INR18650-25SG",
+    "model": "INR18650-25SG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 16.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.01855,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-25SG.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "4e76a72684a2e605bc1f858a94ca09f5ff29c98859b1de6e686a5bb8f336d7de"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

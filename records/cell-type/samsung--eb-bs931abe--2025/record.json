@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/m6b3-tdz5-mvb4-qt4s",
+    "short_id": "m6b3td",
+    "identifier": "cell-type:m6b3-tdz5-mvb4-qt4s",
+    "name": "Samsung EB-BS931ABE",
+    "model": "EB-BS931ABE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "chemistry": "Li-ion",
+    "year": 2025,
+    "cell_format": "prismatic",
+    "positive_electrode_basis": "LCO",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P5/63/69",
+    "iec_code": "ICP5/63/69",
+    "country_of_origin": "Vietnam"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 4.0,
+      "unit": "Ah"
+    },
+    "rated_capacity": {
+      "value": 3.885,
+      "unit": "Ah"
+    },
+    "nominal_energy": {
+      "value": 15.6,
+      "unit": "Wh"
+    },
+    "rated_energy": {
+      "value": 15.16,
+      "unit": "Wh"
+    },
+    "nominal_voltage": {
+      "value": 3.9,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.5,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 50,
+      "unit": "g"
+    },
+    "width": {
+      "value": 63,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 69,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 5,
+      "unit": "mm"
+    }
+  },
+  "provenance": {
+    "source_type": "label",
+    "source_file": "samsung--eb-bs931abe--2025.json",
+    "source_url": null,
+    "retrieved_at": 1774280879
+  },
+  "notes": [
+    "Values are taken from the label of a EB-BS931ABE battery cell manufactured on 2025-01-03 and purchased in 2025"
+  ]
+}

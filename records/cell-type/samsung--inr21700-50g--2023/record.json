@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/5dfq-yg2a-tex7-f8tn",
+    "short_id": "5dfqyg",
+    "identifier": "cell-type:5dfq-yg2a-tex7-f8tn",
+    "name": "SAMSUNG INR21700-50G",
+    "model": "INR21700-50G",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700",
+    "year": 2023
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.753,
+      "unit": "Ah"
+    },
+    "nominal_capacity": {
+      "value": 4.9,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.63,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 18.0,
+      "unit": "mohm"
+    },
+    "continuous_discharging_current": {
+      "value": 14.7,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 2.45,
+      "unit": "A"
+    },
+    "charging_time": {
+      "value": 4.0,
+      "unit": "h"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.071,
+      "unit": "kg"
+    },
+    "minimum_charging_temperature": {
+      "value": 0.0,
+      "unit": "°C"
+    },
+    "maximum_charging_temperature": {
+      "value": 45.0,
+      "unit": "°C"
+    },
+    "minimum_discharging_temperature": {
+      "value": -20.0,
+      "unit": "°C"
+    },
+    "maximum_discharging_temperature": {
+      "value": 60.0,
+      "unit": "°C"
+    },
+    "diameter": {
+      "value": 0.0215,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__INR21700-50G.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "da0ccd173224798e53c0912e90b92314bb60a59a7b4058a98dc5606cc8a82dfc"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet SAMSUNG__INR21700-50G.pdf."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/cwhq-e2gz-frmy-kf2f",
+    "short_id": "cwhqe2",
+    "identifier": "cell-type:cwhq-e2gz-frmy-kf2f",
+    "name": "LG INR18650-M29",
+    "model": "INR18650-M29",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2026
+  },
+  "specs": {
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0184,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-M29.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "67593a01dea076996af377dbc8338421d322cfbe8f51a8d6904e20952422ba4e"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LG__INR18650-M29.pdf."
+  ]
+}

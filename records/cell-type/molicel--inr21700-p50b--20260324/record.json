@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/8axq-qgg3-4rns-akhf",
+    "short_id": "8axqqg",
+    "identifier": "cell-type:8axq-qgg3-4rns-akhf",
+    "name": "Molicel INR21700-P50B",
+    "model": "INR21700-P50B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.071,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.02155,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Molicel__INR21700-P50B.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "29c425c1c3a93ee7a169d9008d8f5eddcdcf66c6ba893272f125c724e51adcfc"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

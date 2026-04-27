@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/7rcd-n9t9-1a56-jgxv",
+    "short_id": "7rcdn9",
+    "identifier": "cell-type:7rcd-n9t9-1a56-jgxv",
+    "name": "EVE LF230",
+    "model": "LF230",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "year": 2020
+  },
+  "specs": {
+    "cycle_life": {
+      "value": 3500.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.1,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__LF230.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "2ef7f85dbd4ed66ea26e24b80a9b8c0637fe470341e70d46fc140e0923442c87"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/rbsy-0f99-pvx5-1c9k",
+    "short_id": "rbsy0f",
+    "identifier": "cell-type:rbsy-0f99-pvx5-1c9k",
+    "name": "ATL Amperex Technology 8845135",
+    "model": "8845135",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ATL Amperex Technology"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.75,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.95,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.105,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 2.375,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.009,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.045,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.135,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ATL_Amperex_Technology_8845135.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "5cc31c3fb6f5237411f49e3143b65bca16f5d9f216ac6ff635ac877e5db3f124"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

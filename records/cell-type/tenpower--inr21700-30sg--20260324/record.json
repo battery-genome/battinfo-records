@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/rps5-xfpd-675r-7fkt",
+    "short_id": "rps5xf",
+    "identifier": "cell-type:rps5-xfpd-675r-7fkt",
+    "name": "TENPOWER INR21700-30SG",
+    "model": "INR21700-30SG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.069,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0213,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR21700-30SG.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "a30c3cd624883293d95498910f6f7e9b709f9031c1e8f6fa7fbcf05070138d63"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

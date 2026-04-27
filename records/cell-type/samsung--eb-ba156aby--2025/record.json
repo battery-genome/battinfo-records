@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/phfh-9qkn-sy60-hqdr",
+    "short_id": "phfh9q",
+    "identifier": "cell-type:phfh-9qkn-sy60-hqdr",
+    "name": "Samsung EB-BA156ABY",
+    "model": "EB-BA156ABY",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "chemistry": "Li-ion",
+    "year": 2025,
+    "cell_format": "prismatic",
+    "positive_electrode_basis": "LCO",
+    "negative_electrode_basis": "Graphite",
+    "size_code": "P6/64/86",
+    "iec_code": "ICP6/64/86",
+    "country_of_origin": "China"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 5.0,
+      "unit": "Ah"
+    },
+    "rated_capacity": {
+      "value": 4.9,
+      "unit": "Ah"
+    },
+    "nominal_energy": {
+      "value": 19.25,
+      "unit": "Wh"
+    },
+    "rated_energy": {
+      "value": 18.87,
+      "unit": "Wh"
+    },
+    "nominal_voltage": {
+      "value": 3.85,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.4,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 67,
+      "unit": "g"
+    },
+    "width": {
+      "value": 64,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 86,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 6,
+      "unit": "mm"
+    }
+  },
+  "provenance": {
+    "source_type": "label",
+    "source_file": "samsung--eb-ba156aby--2025.json",
+    "source_url": null,
+    "retrieved_at": 1774280875
+  },
+  "notes": [
+    "Values are taken from the label of a EB-BA156ABY battery cell manufactured on 2025-08-14 and purchased in 2025"
+  ]
+}

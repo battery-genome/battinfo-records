@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/e1mw-17a1-w3vd-r68q",
+    "short_id": "e1mw17",
+    "identifier": "cell-type:e1mw-17a1-w3vd-r68q",
+    "name": "Chengdu Jianzhong Lithium Battery Company Ltd ICR26650",
+    "model": "ICR26650",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Chengdu Jianzhong Lithium Battery Company Ltd"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R26650"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.64,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.09,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.8,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.065,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.026,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Chengdu_Jianzhong_Lithium_Battery_Company_Ltd_ICR26650.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "12bf23513f1295bf622b3393c32c0b7184507b854bf0e58eae34fc16cbcd09a5"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

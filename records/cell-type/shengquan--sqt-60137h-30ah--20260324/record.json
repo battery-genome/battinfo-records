@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/6144-848s-k12b-4dkz",
+    "short_id": "614484",
+    "identifier": "cell-type:6144-848s-k12b-4dkz",
+    "name": "Shengquan SQT-60137H-30Ah",
+    "model": "SQT-60137H-30Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Shengquan"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Shengquan__SQT-60137H-30Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "3bccdf5b9b0bbf08b76e112799d98c83f807e6d5369ffc3738c9dacc1a7b34cb"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

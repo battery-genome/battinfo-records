@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/w3fr-m1ed-t5c3-cpjd",
+    "short_id": "w3frm1",
+    "identifier": "cell-type:w3fr-m1ed-t5c3-cpjd",
+    "name": "YINLONG YLE-LTO-20130205-33Ah",
+    "model": "YLE-LTO-20130205-33Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "LTO"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__YLE-LTO-20130205-33Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "ca20ca24e55cf9600cbc89b8373107ee6c51762a3e61e04eec4d74837bf982f9"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

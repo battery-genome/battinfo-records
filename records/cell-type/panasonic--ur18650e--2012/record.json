@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/3wwc-7nk2-yj4c-ps8m",
+    "short_id": "3wwc7n",
+    "identifier": "cell-type:3wwc-7nk2-yj4c-ps8m",
+    "name": "PANASONIC UR18650E",
+    "model": "UR18650E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2012
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.0455,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__UR18650E.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "73d08648c86eda968046e4c65660f69e38984c5c99b734b045cef1137fc6094e"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

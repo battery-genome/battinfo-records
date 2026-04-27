@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/m0m8-q0nv-3p4s-edkv",
+    "short_id": "m0m8q0",
+    "identifier": "cell-type:m0m8-q0nv-3p4s-edkv",
+    "name": "Shengquan SQT-32145H-10Ah",
+    "model": "SQT-32145H-10Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Shengquan"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Shengquan__SQT-32145H-10Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "b3dcaf55b960f23a0bcd34692135ba189c724225ad4f3911500bec524a6f1dca"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

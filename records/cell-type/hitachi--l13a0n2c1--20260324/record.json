@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gfew-e8gy-ns2v-dkz9",
+    "short_id": "gfewe8",
+    "identifier": "cell-type:gfew-e8gy-ns2v-dkz9",
+    "name": "Hitachi L13A0N2C1",
+    "model": "L13A0N2C1",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Hitachi"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 13.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 2.6,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.27,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 2.6,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0067,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.1,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.222,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Hitachi_L13A0N2C1.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "6cc8fbcf926b8a80181636e1a2787074ab56f4007332b7a9385e13c83321bfe6"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

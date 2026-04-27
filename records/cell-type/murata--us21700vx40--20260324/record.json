@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/y3nb-3as4-k28b-jdr5",
+    "short_id": "y3nb3a",
+    "identifier": "cell-type:y3nb-3as4-k28b-jdr5",
+    "name": "MURATA US21700VX40",
+    "model": "US21700VX40",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MURATA"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 4.1,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.0659,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MURATA__US21700VX40.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "94a8012b38da834f8fba7c64ad704c0574704f4216c7499e87af26e655007497"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

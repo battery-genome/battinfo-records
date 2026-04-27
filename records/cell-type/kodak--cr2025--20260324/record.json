@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/cvat-fc3g-j4rx-dr3p",
+    "short_id": "cvatfc",
+    "identifier": "cell-type:cvat-fc3g-j4rx-dr3p",
+    "name": "KODAK CR2025",
+    "model": "CR2025",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "cell_format": "coin",
+    "chemistry": "Li-primary",
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Li-metal"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__CR2025.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "8a51af332002b00e36ff36e4d73acf1429d0bdfcbe6198401b70820511789050"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

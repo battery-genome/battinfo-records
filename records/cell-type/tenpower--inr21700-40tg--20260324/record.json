@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gw28-1g5q-jwfn-z3tw",
+    "short_id": "gw281g",
+    "identifier": "cell-type:gw28-1g5q-jwfn-z3tw",
+    "name": "TENPOWER INR21700-40TG",
+    "model": "INR21700-40TG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 10.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0213,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR21700-40TG.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "e85a539813d7e7ccc6277eae59af38a51597fd3ca98c499c8c900416e27f8a77"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

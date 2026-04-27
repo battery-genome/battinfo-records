@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ap20-31fx-e0p7-19dv",
+    "short_id": "ap2031",
+    "identifier": "cell-type:ap20-31fx-e0p7-19dv",
+    "name": "MELASTA HP49C260",
+    "model": "HP49C260",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MELASTA"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 1.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 1.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 60.0,
+      "unit": "mohm"
+    },
+    "continuous_charging_current": {
+      "value": 5.0,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MELASTA__HP49C260.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "25c5e1e1d3bcfc26c65e619fdc2b81e295f475c68362e1492b859f68ad12a571"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/sfd1-m19w-ek9c-3myd",
+    "short_id": "sfd1m1",
+    "identifier": "cell-type:sfd1-m19w-ek9c-3myd",
+    "name": "LG ICR18650HB2",
+    "model": "ICR18650HB2",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2012
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 1.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 3.1,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 0.0028,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 400.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0003,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__ICR18650HB2.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "47d04131fda2e4179f6b8d53f792710a0f7bb5a196dbb0afd74226c9a9c69565"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

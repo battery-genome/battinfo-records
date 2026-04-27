@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2w95-rbvc-zcd9-4z46",
+    "short_id": "2w95rb",
+    "identifier": "cell-type:2w95-rbvc-zcd9-4z46",
+    "name": "MURATA US18650FTC1-air-boat",
+    "model": "US18650FTC1-air-boat",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MURATA"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-metal",
+    "negative_electrode_basis": "Li-metal",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.0015,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MURATA__US18650FTC1-air-boat.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "b6d12fc3b36186ad70923cd9b1ade74620945afdbdbca16cabbd0df0de751f6c"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

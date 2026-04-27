@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/c9cj-dg53-y93z-nh5r",
+    "short_id": "c9cjdg",
+    "identifier": "cell-type:c9cj-dg53-y93z-nh5r",
+    "name": "LG INR18650-HJ2",
+    "model": "INR18650-HJ2",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2026
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.046,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0182,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-HJ2.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "23961738a8d08a0a15f0fefde18bfdc750ece8eb0b608ed19839e6da0476cac7"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LG__INR18650-HJ2.pdf."
+  ]
+}

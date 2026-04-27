@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/vx6r-vw1w-jbya-0hn5",
+    "short_id": "vx6rvw",
+    "identifier": "cell-type:vx6r-vw1w-jbya-0hn5",
+    "name": "TINYCIRCUITS INR18650-2500A",
+    "model": "INR18650-2500A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TINYCIRCUITS"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2022
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 2.45,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 60.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.05,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 5e-05,
+      "unit": "m"
+    },
+    "height": {
+      "value": 0.0001,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TINYCIRCUITS__INR18650-2500A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "1cccb625105d7b38294b70d0a8c68fc9a20ff27b21201bd414cdf0852253842d"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet TINYCIRCUITS__INR18650-2500A.pdf."
+  ]
+}

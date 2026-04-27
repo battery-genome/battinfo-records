@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/a5e0-v689-nhnb-w4x8",
+    "short_id": "a5e0v6",
+    "identifier": "cell-type:a5e0-v689-nhnb-w4x8",
+    "name": "KODAK LR621",
+    "model": "LR621",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "cell_format": "coin",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR621.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "a0ab61fea4b1ed719127a310f3a560772c32955b0807bbe82c449308f3196651"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

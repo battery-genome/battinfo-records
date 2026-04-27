@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zfs0-20my-3b3w-gzjc",
+    "short_id": "zfs020",
+    "identifier": "cell-type:zfs0-20my-3b3w-gzjc",
+    "name": "BAK N18650CH-26S",
+    "model": "N18650CH-26S",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2025
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 2.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 20.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 9.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.032,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650CH-26S.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "44d6d858caea1e7dddff7e8576af434e0cdea246b89c4c3d59ae3efcdca4c9eb"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

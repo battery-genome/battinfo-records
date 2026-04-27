@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/1dh6-ph8c-fjty-y2wp",
+    "short_id": "1dh6ph",
+    "identifier": "cell-type:1dh6-ph8c-fjty-y2wp",
+    "name": "Molicel INR21700-M50A",
+    "model": "INR21700-M50A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.068,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.007,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Molicel__INR21700-M50A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "3dc4d2333b83c169ecb2aa21bb37f124d2dad9540f8b4e0305fe8b0e231735b5"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

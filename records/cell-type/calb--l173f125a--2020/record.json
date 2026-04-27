@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/a52h-qz8t-vh7z-c8hd",
+    "short_id": "a52hqz",
+    "identifier": "cell-type:a52h-qz8t-vh7z-c8hd",
+    "name": "CALB L173F125A",
+    "model": "L173F125A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "CALB"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2020
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 125.0,
+      "unit": "Ah"
+    },
+    "charging_voltage": {
+      "value": 8.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.8,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 5.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 60.0,
+      "unit": "min"
+    },
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/CALB__L173F125A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "fd8a0afa3817f85b78510c291cbedad4075e5db0a01cb529a2184cae820f1b29"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

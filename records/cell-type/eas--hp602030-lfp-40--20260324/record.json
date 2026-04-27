@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/c6ct-bayq-94jy-rxba",
+    "short_id": "c6ctba",
+    "identifier": "cell-type:c6ct-bayq-94jy-rxba",
+    "name": "EAS HP602030-LFP-40",
+    "model": "HP602030-LFP-40",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EAS"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EAS__HP602030-LFP-40.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "0c1de1d995e23b01e6bca786ae9509162737a5a1918c1301eee9cac8c9def43b"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

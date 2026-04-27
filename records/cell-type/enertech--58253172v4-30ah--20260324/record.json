@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/n5wh-vh82-wjem-h1mt",
+    "short_id": "n5whvh",
+    "identifier": "cell-type:n5wh-vh82-wjem-h1mt",
+    "name": "ENERTECH 58253172V4_30Ah",
+    "model": "58253172V4_30Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERTECH"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 25.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 10.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.52,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 10.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0058,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.172,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.253,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ENERTECH_58253172V4_30Ah.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "dad9cb6005ffbcb7b53b434907b707949c9369ab1b8f151a5a81d6692d6986f2"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

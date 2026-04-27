@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/c8q5-k6hn-t71n-20qb",
+    "short_id": "c8q5k6",
+    "identifier": "cell-type:c8q5-k6hn-t71n-20qb",
+    "name": "Thunder-Sky WB-LYP700AHA",
+    "model": "WB-LYP700AHA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Thunder-Sky"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 700.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 7000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 350.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 21.0,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 350.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.067,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.306,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.627,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Thunder-Sky_WB-LYP700AHA.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "7b04572f4a8a7ff3957afd5cb503b427732bba9829369d85ed511b86491e3837"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

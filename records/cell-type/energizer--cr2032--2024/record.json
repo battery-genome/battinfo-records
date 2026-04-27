@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/wa3w-j2fg-ewf3-1b4c",
+    "short_id": "wa3wj2",
+    "identifier": "cell-type:wa3w-j2fg-ewf3-1b4c",
+    "name": "Energizer CR2032",
+    "model": "CR2032",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Energizer"
+    },
+    "chemistry": "Li-primary",
+    "year": 2024,
+    "cell_format": "coin",
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Lithium",
+    "size_code": "R2032",
+    "iec_code": "CR2032",
+    "country_of_origin": "China"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "nominal_capacity": {
+      "value": 0.235,
+      "unit": "Ah"
+    },
+    "diameter": {
+      "value": 20.0,
+      "unit": "mm"
+    },
+    "height": {
+      "value": 3.2,
+      "unit": "mm"
+    },
+    "mass": {
+      "value": 3,
+      "unit": "g"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "nominal_continuous_discharging_current": {
+      "value": 0.00019,
+      "unit": "A"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "ENERGIZER__CR2032.pdf",
+    "source_url": null,
+    "retrieved_at": 1774280868
+  },
+  "notes": [
+    "Second manual cell-type draft for batch loading."
+  ]
+}

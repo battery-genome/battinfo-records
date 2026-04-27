@@ -1,0 +1,53 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/pge5-wer6-2q82-v9k0",
+    "short_id": "pge5we",
+    "identifier": "cell-type:pge5-wer6-2q82-v9k0",
+    "name": "A123 ANR26650M1-B",
+    "model": "ANR26650M1-B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "A123"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "negative_electrode_basis": "graphite",
+    "size_code": "R26650",
+    "iec_code": "IFpR26650",
+    "country_of_origin": "United States",
+    "year": 2012
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.3,
+      "unit": "V"
+    },
+    "diameter": {
+      "value": 26.0,
+      "unit": "mm"
+    },
+    "height": {
+      "value": 65.0,
+      "unit": "mm"
+    },
+    "mass": {
+      "value": 76.0,
+      "unit": "g"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "a123-anr26650m1-b-2012.json",
+    "source_url": null,
+    "retrieved_at": 1777315785
+  },
+  "notes": [
+    "Manual cell-type authoring draft. Canonical IDs and default provenance are added when the workspace saves the record."
+  ]
+}

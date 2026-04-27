@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2vsr-1n5n-cdz3-t3c0",
+    "short_id": "2vsr1n",
+    "identifier": "cell-type:2vsr-1n5n-cdz3-t3c0",
+    "name": "CALB L148N50B",
+    "model": "L148N50B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "CALB"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 50.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.66,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.35,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 25.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.861,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 25.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0265,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0975,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.148,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/CALB_L148N50B.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "06922f776264888febe6aec8a820a6b823b7802ea4020db3914a5174d47c16e4"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

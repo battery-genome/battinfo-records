@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/j98h-pe7c-2b5p-qjd3",
+    "short_id": "j98hpe",
+    "identifier": "cell-type:j98h-pe7c-2b5p-qjd3",
+    "name": "ENERTECH SPB 58253172V3_25Ah",
+    "model": "SPB 58253172V3_25Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERTECH"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 25.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 8.3,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.48,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 8.3,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0058,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.172,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.253,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ENERTECH_SPB_58253172V3_25Ah.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "13e7ffd8f191f35706b56040f35955e0d80c3d6ea88c7d66d8582d4f0221b21f"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

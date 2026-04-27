@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/dw9n-2p1h-a26s-7va6",
+    "short_id": "dw9n2p",
+    "identifier": "cell-type:dw9n-2p1h-a26s-7va6",
+    "name": "TENPOWER INR18650-26ME",
+    "model": "INR18650-26ME",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 25.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-26ME.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "8a1e6aee4813fd1f1a3162da572d27082afd709184f4728768da1ad504d58605"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

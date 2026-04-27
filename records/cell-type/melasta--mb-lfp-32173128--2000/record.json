@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/8bqj-kxy2-ky1n-dqz7",
+    "short_id": "8bqjkx",
+    "identifier": "cell-type:8bqj-kxy2-ky1n-dqz7",
+    "name": "Melasta MB-LFP-32173128",
+    "model": "MB-LFP-32173128",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Melasta"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "negative_electrode_basis": "unknown",
+    "year": 2000
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 60.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.41,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.032,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.124,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.173,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 60.0,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 2.0,
+      "unit": "mohm"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Melasta_MB-LFP-32173128.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "441fc87a196cdd5e562c9c58bb1054becc592c217476c1c2281f6a7bc7409131"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet MELASTA__MB-LFP-32173128.pdf reports continuous_charging_current=5.0 A but existing value was kept.",
+    "Supplemented from datasheet MELASTA__MB-LFP-32173128.pdf."
+  ]
+}

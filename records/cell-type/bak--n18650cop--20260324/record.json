@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/bfcx-sja2-kcg0-jq2t",
+    "short_id": "bfcxsj",
+    "identifier": "cell-type:bfcx-sja2-kcg0-jq2t",
+    "name": "BAK N18650COP",
+    "model": "N18650COP",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "diameter": {
+      "value": 0.00015,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650COP.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "aa024a0cc35167e599ef839a9f54e9e37de5cb091c581ffbefc4bebe05f70815"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}
