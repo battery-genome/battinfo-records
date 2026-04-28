@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/8cks-6fgz-n7ce-3zf2",
+    "short_id": "8cks6fgz",
+    "type": "Organization",
+    "name": "Hypercell"
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+  }
+}

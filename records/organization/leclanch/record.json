@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/553k-998c-1d10-y74y",
+    "short_id": "553k998c",
+    "type": "Organization",
+    "name": "LECLANCHÉ"
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+  }
+}

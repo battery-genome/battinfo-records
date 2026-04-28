@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/8z6j-n7vw-e73w-smh7",
+    "short_id": "8z6jn7vw",
+    "type": "Organization",
+    "name": "A123"
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+  }
+}

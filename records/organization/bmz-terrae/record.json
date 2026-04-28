@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/2x8g-9z3w-grwe-5x8r",
+    "short_id": "2x8g9z3w",
+    "type": "Organization",
+    "name": "BMZ_TerraE"
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+  }
+}

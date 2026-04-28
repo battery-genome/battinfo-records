@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/qjsc-92zn-da5d-76sp",
+    "short_id": "qjsc92zn",
+    "type": "Organization",
+    "name": "EAS"
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+  }
+}
