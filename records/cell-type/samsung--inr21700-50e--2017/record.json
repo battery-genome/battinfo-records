@@ -124,5 +124,34 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.apenergy.2021.118498"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2021.102257"
+    },
+    {
+      "url": "https://doi.org/10.1007/s00502-020-00814-9"
+    },
+    {
+      "url": "https://doi.org/10.3390/en14175434"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ace1a7"
+    },
+    {
+      "url": "https://doi.org/10.3390/batteries9060309"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/acb669"
+    },
+    {
+      "url": "https://doi.org/10.3390/en15072431"
+    },
+    {
+      "url": "https://doi.org/10.1007/s10694-023-01425-4"
+    }
+  ]
 }

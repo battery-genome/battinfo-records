@@ -83,5 +83,40 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.est.2021.103669"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.applthermaleng.2022.118530"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ijheatmasstransfer.2021.121918"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2012.03.015"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2022.104585"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2021.230034"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ab8f5a"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ab90ac"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ab6985"
+    },
+    {
+      "url": "https://doi.org/10.1149/2.0191912jes"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ac79d3"
+    }
+  ]
 }

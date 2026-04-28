@@ -82,5 +82,16 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1051/e3sconf/20171606001"
+    },
+    {
+      "url": "https://doi.org/10.1109/acc.2010.5530710"
+    },
+    {
+      "url": "https://www.semanticscholar.org/paper/18b337d7e53fa2e7de07c3fab3c2059e208b8301"
+    }
+  ]
 }

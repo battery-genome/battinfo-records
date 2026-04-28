@@ -79,5 +79,13 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2012.04.055"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.engfailanal.2015.03.025"
+    }
+  ]
 }

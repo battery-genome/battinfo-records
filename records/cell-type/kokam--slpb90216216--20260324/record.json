@@ -82,5 +82,19 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1109/tie.2017.2714118"
+    },
+    {
+      "url": "https://doi.org/10.3390/en13174518"
+    },
+    {
+      "url": "https://doi.org/10.1149/06609.0203ecst"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.ijhydene.2020.01.067"
+    }
+  ]
 }

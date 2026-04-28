@@ -83,5 +83,19 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.electacta.2018.04.203"
+    },
+    {
+      "url": "https://doi.org/10.1149/1945-7111/ab78ff"
+    },
+    {
+      "url": "https://doi.org/10.3390/BATTERIES7010009"
+    },
+    {
+      "url": "https://doi.org/10.1149/2.0401707jes"
+    }
+  ]
 }

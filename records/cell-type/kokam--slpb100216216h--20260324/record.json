@@ -83,5 +83,22 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.est.2022.105467"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.apenergy.2012.09.030"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.applthermaleng.2017.06.094"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2013.05.111"
+    },
+    {
+      "url": "https://doi.org/10.3390/en13174518"
+    }
+  ]
 }

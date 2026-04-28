@@ -78,5 +78,52 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1007/s42452-020-2675-6"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2021.229463"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.sna.2021.113061"
+    },
+    {
+      "url": "https://doi.org/10.3390/en11051073"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.egyr.2023.04.148"
+    },
+    {
+      "url": "https://doi.org/10.1155/2017/2579084"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.compeleceng.2021.107306"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.applthermaleng.2017.04.017"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.applthermaleng.2020.116338"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.renene.2019.08.077"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.energy.2023.128126"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2020.228189"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.egyr.2021.11.089"
+    },
+    {
+      "url": "https://doi.org/10.3390/en10091284"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2021.102466"
+    }
+  ]
 }

@@ -81,5 +81,52 @@
     "review_status": "auto-promoted",
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
-  }
+  },
+  "publications": [
+    {
+      "url": "https://doi.org/10.1016/j.dib.2020.106033"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2019.226834"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2023.108029"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2019.03.109"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.egyai.2021.100081"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2019.100900"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2018.11.043"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2022.105303"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2022.231296"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.electacta.2022.139878"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2021.230645"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jpowsour.2021.230030"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2019.101170"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2022.106146"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.est.2023.108241"
+    }
+  ]
 }
