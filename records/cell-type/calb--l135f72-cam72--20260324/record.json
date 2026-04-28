@@ -84,9 +84,12 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1007/978-3-319-69950-9/8"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1007/978-3-319-69950-9/8",
+        "doi": "10.1007/978-3-319-69950-9/8"
+      }
+    ]
+  }
 }

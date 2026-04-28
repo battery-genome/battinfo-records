@@ -1,0 +1,55 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/dxtn-5vjp-jj5n-w040",
+    "short_id": "dxtn5v",
+    "identifier": "cell-type:dxtn-5vjp-jj5n-w040",
+    "name": "PANASONIC UR18650AA",
+    "model": "UR18650AA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "year": 2000,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.15,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 0.03,
+      "unit": "V"
+    },
+    "charging_time": {
+      "value": 3.0,
+      "unit": "h"
+    },
+    "cycle_life": {
+      "value": 300.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.043,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__UR18650AA.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d0b1ee64543561ccaf10d7981931a2656a321fcbb335ea61ecb7ae9cfa5d10aa"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

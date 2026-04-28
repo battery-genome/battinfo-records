@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/bqmd-b0be-w637-m2aw",
+    "short_id": "bqmdb0",
+    "identifier": "cell-type:bqmd-b0be-w637-m2aw",
+    "name": "Saft VL 45E FE",
+    "model": "VL 45E FE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 44.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 6.285714286,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.9,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 6.285714286,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.208,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.054,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_VL_45E_FE.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "b2d9a22e4c9c714d913c36c125a127719119c9c630c33e8e84ad73f63dd4ba49",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.2172/925388",
+        "doi": "10.2172/925388",
+        "type": "Article",
+        "headline": "Developments in lithium-ion battery technology in the Peoples Republic of China.",
+        "author": "P. G. Patil",
+        "date_published": 2008
+      }
+    ]
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

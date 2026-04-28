@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/t1x8-t8ag-0k9y-mg2f",
+    "short_id": "t1x8t8",
+    "identifier": "cell-type:t1x8-t8ag-0k9y-mg2f",
+    "name": "Yinglong LithiumTitanate 9Ah",
+    "model": "LithiumTitanate 9Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Yinglong"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LTO"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 9.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 16000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 2.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 1.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.8,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.27,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.8,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.14,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0332,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Yinglong_LithiumTitanate_9Ah.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "4f5c8d3c0fd212d0917449b46a09400e552af843b31050b5e7ab58535ae5eee2",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

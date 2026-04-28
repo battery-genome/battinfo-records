@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/wj74-skyw-03p5-94h8",
+    "short_id": "wj74sk",
+    "identifier": "cell-type:wj74-skyw-03p5-94h8",
+    "name": "Saft VL 37570",
+    "model": "VL 37570",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 7.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.4,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.149,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.4,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0595,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.037399999999999996,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_VL_37570.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "8d0fbb06743d39c9bd491cc66da8fc6341d7ea2abc9fd00ed678277ee5618ad7",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

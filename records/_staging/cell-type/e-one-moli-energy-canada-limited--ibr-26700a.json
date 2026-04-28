@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/04zm-zxtb-x17v-d691",
+    "short_id": "04zmzx",
+    "identifier": "cell-type:04zm-zxtb-x17v-d691",
+    "name": "E-One Moli Energy (Canada) Limited IBR-26700A",
+    "model": "IBR-26700A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "E-One Moli Energy (Canada) Limited"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.75,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.7,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.095,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.7,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0264,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/E-One_Moli_Energy_(Canada)_Limited_IBR-26700A.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "351e84e99368134c7c5c3d0e81666456697ed71c22bc7e28976509f08f88dd87",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

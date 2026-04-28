@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/3h8g-cs74-jqqn-8bg4",
+    "short_id": "3h8gcs",
+    "identifier": "cell-type:3h8g-cs74-jqqn-8bg4",
+    "name": "MOLICEL INR-18650-M35A",
+    "model": "INR-18650-M35A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MOLICEL"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MOLICEL__INR-18650-M35A.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "3e9929f1891e168d9a850270addc745266ae697106bc1fef684cd8c3e96b17aa"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

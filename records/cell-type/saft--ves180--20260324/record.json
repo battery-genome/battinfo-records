@@ -79,9 +79,32 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.11591/IJAAS.V8.I1.PP54-63"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2013.07.003",
+        "doi": "10.1016/j.jpowsour.2013.07.003",
+        "author": "Yan, et al.",
+        "headline": "Metal free nitrogen doped hollow mesoporous graphene-analogous spheres as effective electrocatalyst for oxygen reduction reaction",
+        "date_published": 2014,
+        "description": "Yan, et al. Metal free nitrogen doped hollow mesoporous graphene-analogous spheres as effective electrocatalyst for oxygen reduction reaction, Journal of Power Sources, Volume 245, January 2014, 772-778, https://doi.org/10.1016/j.jpowsour.2013.07.003."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2014.08.015",
+        "doi": "10.1016/j.jpowsour.2014.08.015",
+        "author": "Niketic, et al.",
+        "headline": "Improving the performance of high voltage LiMn1.5Ni0.5O4 cathode material by carbon coating",
+        "date_published": 2014,
+        "description": "Niketic, et al. Improving the performance of high voltage LiMn1.5Ni0.5O4 cathode material by carbon coating, Journal of Power Sources, Volume 271, December 2014, 285-290, https://doi.org/10.1016/j.jpowsour.2014.08.015."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2019.101067",
+        "doi": "10.1016/j.est.2019.101067",
+        "author": "Martínez, et al.",
+        "headline": "EIS study on metal hydride electrodes using a porous model: Fitting methodology and SOC effects.",
+        "date_published": 2020,
+        "description": "Martínez, et al. EIS study on metal hydride electrodes using a porous model: Fitting methodology and SOC effects., Journal of Energy Storage, Volume 27, February 2020, 101067, https://doi.org/10.1016/j.est.2019.101067."
+      }
+    ]
+  }
 }

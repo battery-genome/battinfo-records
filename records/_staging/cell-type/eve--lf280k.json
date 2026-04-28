@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/k4j2-6d8j-t2v2-mthz",
+    "short_id": "k4j26d",
+    "identifier": "cell-type:k4j2-6d8j-t2v2-mthz",
+    "name": "EVE LF280K",
+    "model": "LF280K",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 280.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 0.25,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.2,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__LF280K.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "f728c7f60632618a7fda7edd2ff2ee2cdc26c49984e5334e999458b199c1d3c7"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

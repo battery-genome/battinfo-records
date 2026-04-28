@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/f9m9-vks8-vxmv-ynef",
+    "short_id": "f9m9vk",
+    "identifier": "cell-type:f9m9-vks8-vxmv-ynef",
+    "name": "Shengquan SQT-32700H-5Ah",
+    "model": "SQT-32700H-5Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Shengquan"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R32700"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Shengquan__SQT-32700H-5Ah.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "2ff0999008bcbcf626f5a5bebbd6543c301576067d7c2e69bdc96f33a3910ed3"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

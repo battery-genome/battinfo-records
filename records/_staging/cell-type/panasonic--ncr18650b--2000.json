@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2q5a-72xq-w0qx-ph2h",
+    "short_id": "2q5a72",
+    "identifier": "cell-type:2q5a-72xq-w0qx-ph2h",
+    "name": "Panasonic NCR18650B",
+    "model": "NCR18650B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Panasonic"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2000,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 3.35,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.045,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Panasonic__NCR18650B.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "fd4a44102e6c34589256774d0d6643a758105ab6e36e55cd118331c6708cfd82"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet Panasonic__NCR18650B.pdf."
+  ]
+}

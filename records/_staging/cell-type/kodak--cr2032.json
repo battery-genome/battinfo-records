@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/qet4-6dcy-b1m0-7mp3",
+    "short_id": "qet46d",
+    "identifier": "cell-type:qet4-6dcy-b1m0-7mp3",
+    "name": "KODAK CR2032",
+    "model": "CR2032",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "category": "battery cell",
+    "cell_format": "coin",
+    "chemistry": "Li-primary",
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Li-metal"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__CR2032.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "ff13546dc43fa0cb4ce5e0bf4f8ebcaf8a1fb62e620568dcc19adcf24680d1ba"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

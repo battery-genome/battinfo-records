@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.12783/dtetr/mcee2016/6395"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.12783/dtetr/mcee2016/6395",
+        "doi": "10.12783/dtetr/mcee2016/6395",
+        "author": "Xu, et al.",
+        "headline": "Model Study of Lithium-Ion Battery Temperature Field",
+        "date_published": 2017,
+        "description": "Xu, et al. Model Study of Lithium-Ion Battery Temperature Field, DEStech Transactions on Engineering and Technology Research, March 2017, https://doi.org/10.12783/dtetr/mcee2016/6395."
+      }
+    ]
+  }
 }

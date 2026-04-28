@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/d2xr-f1ph-tw22-tg68",
+    "short_id": "d2xrf1",
+    "identifier": "cell-type:d2xr-f1ph-tw22-tg68",
+    "name": "BAK N21700CB-48",
+    "model": "N21700CB-48",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.8,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.96,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.96,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/BAK_N21700CB-48.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "3359ed291892d15ef6403f55e6a9aa06b786bec9fce63a5771664648659124c0",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/7k7z-7zva-bn73-rm9j",
+    "short_id": "7k7z7z",
+    "identifier": "cell-type:7k7z-7zva-bn73-rm9j",
+    "name": "VAPCELL INR21700",
+    "model": "INR21700",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "VAPCELL"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.5,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.9,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.072,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.5,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/VAPCELL_INR21700.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "3e19a9cd317b7d4a5fcda0058b73bf51d7623c8baf97e06cf66cb41d9446cc52",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

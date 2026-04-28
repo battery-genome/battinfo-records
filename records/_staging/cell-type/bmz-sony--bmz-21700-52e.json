@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/de2r-jnnd-kp2r-y4m1",
+    "short_id": "de2rjn",
+    "identifier": "cell-type:de2r-jnnd-kp2r-y4m1",
+    "name": "BMZ_Sony BMZ 21700 52E",
+    "model": "BMZ 21700 52E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BMZ_Sony"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NCA",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.2,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 350.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.05,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.05,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0698,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.02135,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/BMZ_Sony_BMZ_21700_52E.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "9863afd18a358a0a5e2450eca203283557dfcb70d74fc361cee11a73f9f4f437",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

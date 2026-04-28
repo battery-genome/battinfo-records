@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/c0aw-3g9v-cmr8-h65k",
+    "short_id": "c0aw3g",
+    "identifier": "cell-type:c0aw-3g9v-cmr8-h65k",
+    "name": "LG E66A",
+    "model": "E66A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/_misfetched/LG__E66A__actually-INR21700M50T.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "8088b8c6a8d8336a590bee0ab43b495128e0a98c1f208874bc8f9460bc62c76d"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Review candidate rather than canonical record; current provenance points to a misfetched PDF and likely overlaps with lg-chem-e66a.json."
+  ]
+}

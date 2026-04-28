@@ -79,51 +79,140 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1007/s42452-020-2675-6"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2021.229463"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.sna.2021.113061"
-    },
-    {
-      "url": "https://doi.org/10.3390/en11051073"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.egyr.2023.04.148"
-    },
-    {
-      "url": "https://doi.org/10.1155/2017/2579084"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.compeleceng.2021.107306"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.applthermaleng.2017.04.017"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.applthermaleng.2020.116338"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.renene.2019.08.077"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.energy.2023.128126"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2020.228189"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.egyr.2021.11.089"
-    },
-    {
-      "url": "https://doi.org/10.3390/en10091284"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2021.102466"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1007/s42452-020-2675-6",
+        "doi": "10.1007/s42452-020-2675-6",
+        "author": "Stübler, et al.",
+        "headline": "Lithium-ion battery modeling using CC–CV and impedance spectroscopy characterizations",
+        "date_published": 2020,
+        "description": "Stübler, et al. Lithium-ion battery modeling using CC–CV and impedance spectroscopy characterizations, SN Applied Sciences, Volume 2, April 2020, 817, https://doi.org/10.1007/s42452-020-2675-6."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2021.229463",
+        "doi": "10.1016/j.jpowsour.2021.229463",
+        "author": "Landinger, et al.",
+        "headline": "High frequency impedance characteristics of cylindrical lithium-ion cells: Physical-based modeling of cell state and cell design dependencies",
+        "date_published": 2021,
+        "description": "Landinger, et al. High frequency impedance characteristics of cylindrical lithium-ion cells: Physical-based modeling of cell state and cell design dependencies, Journal of Power Sources, Volume 488, March 2021, 229463, https://doi.org/10.1016/j.jpowsour.2021.229463."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.sna.2021.113061",
+        "doi": "10.1016/j.sna.2021.113061",
+        "author": "Alcock, et al.",
+        "headline": "An accessible method of embedding fibre optic sensors on lithium-ion battery surface for in-situ thermal monitoring",
+        "date_published": 2021,
+        "description": "Alcock, et al. An accessible method of embedding fibre optic sensors on lithium-ion battery surface for in-situ thermal monitoring, Sensors and Actuators A: Physical, Volume 332, December 2021, 113061, https://doi.org/10.1016/j.sna.2021.113061."
+      },
+      {
+        "id": "https://doi.org/10.3390/en11051073",
+        "doi": "10.3390/en11051073",
+        "author": "Bao, et al.",
+        "headline": "Online Internal Resistance Measurement Application in Lithium Ion Battery Capacity and State of Charge Estimation",
+        "date_published": 2018,
+        "description": "Bao, et al. Online Internal Resistance Measurement Application in Lithium Ion Battery Capacity and State of Charge Estimation, Energies, Volume 11, April 2018, 1073, https://doi.org/10.3390/en11051073."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.egyr.2023.04.148",
+        "doi": "10.1016/j.egyr.2023.04.148",
+        "author": "Liu, et al.",
+        "headline": "Internal short circuit fault diagnosis based on 1DVCNN in lithium battery storage system",
+        "date_published": 2023,
+        "description": "Liu, et al. Internal short circuit fault diagnosis based on 1DVCNN in lithium battery storage system, Energy Reports, Volume 9, September 2023, 1470-1479, https://doi.org/10.1016/j.egyr.2023.04.148."
+      },
+      {
+        "id": "https://doi.org/10.1155/2017/2579084",
+        "doi": "10.1155/2017/2579084",
+        "author": "Song, et al.",
+        "headline": "A Novel Electric Bicycle Battery Monitoring System Based on Android Client",
+        "date_published": 2017,
+        "description": "Song, et al. A Novel Electric Bicycle Battery Monitoring System Based on Android Client, Journal of Engineering, Volume 2017, 2017, 1-11, https://doi.org/10.1155/2017/2579084."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.compeleceng.2021.107306",
+        "doi": "10.1016/j.compeleceng.2021.107306",
+        "author": "Mohammed, et al.",
+        "headline": "Programmable logic controller based lithium-ion battery management system for accurate state of charge estimation",
+        "date_published": 2021,
+        "description": "Mohammed, et al. Programmable logic controller based lithium-ion battery management system for accurate state of charge estimation, Computers &amp; Electrical Engineering, Volume 93, July 2021, 107306, https://doi.org/10.1016/j.compeleceng.2021.107306."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.applthermaleng.2017.04.017",
+        "doi": "10.1016/j.applthermaleng.2017.04.017",
+        "author": "Gümüşsu, et al.",
+        "headline": "3-D CFD modeling and experimental testing of thermal behavior of a Li-Ion battery",
+        "date_published": 2017,
+        "description": "Gümüşsu, et al. 3-D CFD modeling and experimental testing of thermal behavior of a Li-Ion battery, Applied Thermal Engineering, Volume 120, June 2017, 484-495, https://doi.org/10.1016/j.applthermaleng.2017.04.017."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.applthermaleng.2020.116338",
+        "doi": "10.1016/j.applthermaleng.2020.116338",
+        "author": "Amini, et al.",
+        "headline": "A thermal model for Li-ion batteries operating under dynamic conditions",
+        "date_published": 2021,
+        "description": "Amini, et al. A thermal model for Li-ion batteries operating under dynamic conditions, Applied Thermal Engineering, Volume 185, February 2021, 116338, https://doi.org/10.1016/j.applthermaleng.2020.116338."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.renene.2019.08.077",
+        "doi": "10.1016/j.renene.2019.08.077",
+        "author": "Li, et al.",
+        "headline": "Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current–constant voltage charging strategy",
+        "date_published": 2020,
+        "description": "Li, et al. Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current–constant voltage charging strategy, Renewable Energy, Volume 146, February 2020, 2688-2699, https://doi.org/10.1016/j.renene.2019.08.077."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.energy.2023.128126",
+        "doi": "10.1016/j.energy.2023.128126",
+        "author": "Zha, et al.",
+        "headline": "Heat dissipation performance research between drop contact and immersion contact of lithium-ion battery cooling",
+        "date_published": 2023,
+        "description": "Zha, et al. Heat dissipation performance research between drop contact and immersion contact of lithium-ion battery cooling, Energy, Volume 279, September 2023, 128126, https://doi.org/10.1016/j.energy.2023.128126."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2020.228189",
+        "doi": "10.1016/j.jpowsour.2020.228189",
+        "author": "Shafiei Sabet, et al.",
+        "headline": "Non-invasive investigation of predominant processes in the impedance spectra of high energy lithium-ion batteries with nickel–cobalt–aluminum cathodes",
+        "date_published": 2020,
+        "description": "Shafiei Sabet, et al. Non-invasive investigation of predominant processes in the impedance spectra of high energy lithium-ion batteries with nickel–cobalt–aluminum cathodes, Journal of Power Sources, Volume 472, October 2020, 228189, https://doi.org/10.1016/j.jpowsour.2020.228189."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.egyr.2021.11.089",
+        "doi": "10.1016/j.egyr.2021.11.089",
+        "author": "Saechan, et al.",
+        "headline": "Numerical study on the air-cooled thermal management of Lithium-ion battery pack for electrical vehicles",
+        "date_published": 2022,
+        "description": "Saechan, et al. Numerical study on the air-cooled thermal management of Lithium-ion battery pack for electrical vehicles, Energy Reports, Volume 8, April 2022, 1264-1270, https://doi.org/10.1016/j.egyr.2021.11.089."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105272",
+        "doi": "10.1016/j.est.2022.105272",
+        "author": "El Sharkawy, et al.",
+        "headline": "FeMoO4 nanoparticles as functional negative electrode material for high performance supercapacitor devices over a wide pH range",
+        "date_published": 2022,
+        "description": "El Sharkawy, et al. FeMoO4 nanoparticles as functional negative electrode material for high performance supercapacitor devices over a wide pH range, Journal of Energy Storage, Volume 54, October 2022, 105272, https://doi.org/10.1016/j.est.2022.105272."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries9010056",
+        "doi": "10.3390/batteries9010056",
+        "author": "Wu, et al.",
+        "headline": "Advances in Vanadium-Redoxed Polyanions for High-Voltage Sodium-Ion Batteries",
+        "date_published": 2023,
+        "description": "Wu, et al. Advances in Vanadium-Redoxed Polyanions for High-Voltage Sodium-Ion Batteries, Batteries, Volume 9, January 2023, 56, https://doi.org/10.3390/batteries9010056."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.ijheatmasstransfer.2022.122879",
+        "doi": "10.1016/j.ijheatmasstransfer.2022.122879"
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.232430",
+        "doi": "10.1016/j.jpowsour.2022.232430",
+        "author": "Hwang, et al.",
+        "headline": "Reduced TiO2 quantum dots/graphene for solar light driven CO2 reduction into precisely controlled C1 vs C2 hydrocarbon products without noble Co-catalyst",
+        "date_published": 2023,
+        "description": "Hwang, et al. Reduced TiO2 quantum dots/graphene for solar light driven CO2 reduction into precisely controlled C1 vs C2 hydrocarbon products without noble Co-catalyst, Journal of Power Sources, Volume 556, February 2023, 232430, https://doi.org/10.1016/j.jpowsour.2022.232430."
+      }
+    ]
+  }
 }

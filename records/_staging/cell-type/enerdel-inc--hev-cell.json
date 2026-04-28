@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/jjq9-ma8x-a7j8-g7mf",
+    "short_id": "jjq9ma",
+    "identifier": "cell-type:jjq9-ma8x-a7j8-g7mf",
+    "name": "EnerDel. INC HEV CELL",
+    "model": "HEV CELL",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EnerDel. INC"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 16.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 3.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.446,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 3.5,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0063,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.184,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.253,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/EnerDel._INC_HEV_CELL.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "8592881ebed653c3390d0134d0ed42a7284b97fc4e927e63c6e8bd687944c674",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

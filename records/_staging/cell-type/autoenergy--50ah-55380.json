@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/j3ra-kwr4-wpvs-ccwz",
+    "short_id": "j3rakw",
+    "identifier": "cell-type:j3ra-kwr4-wpvs-ccwz",
+    "name": "AutoEnergy 50Ah 55380",
+    "model": "50Ah 55380",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "AutoEnergy"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 50.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 10.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.55,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 10.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.38,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.055,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/AutoEnergy_50Ah_55380.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "bf14a7ac62f2a4c0bc8419edc3dbc4fcdffe6f79b30ee9d972aebc67c10146d8",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped MaximumContinuousDischargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped MaximumContinuousChargingCurrent: numeric value missing or NaN.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

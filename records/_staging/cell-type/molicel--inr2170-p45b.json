@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ycek-4qa3-d4v3-rm6r",
+    "short_id": "ycek4q",
+    "identifier": "cell-type:ycek-4qa3-d4v3-rm6r",
+    "name": "Molicel INR2170-P45B",
+    "model": "INR2170-P45B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Molicel__INR2170-P45B.html",
+    "retrieved_at": 1774381923,
+    "file_hash": "d79f4a1250bb803e80e582c68a8dccfa5623ce5bfdd34f0facc468d2bca51adc"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

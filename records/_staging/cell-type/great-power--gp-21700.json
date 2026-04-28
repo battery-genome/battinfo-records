@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/hek8-jzeq-waxf-gdkp",
+    "short_id": "hek8jz",
+    "identifier": "cell-type:hek8-jzeq-waxf-gdkp",
+    "name": "Great Power GP 21700",
+    "model": "GP 21700",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Great Power"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.7,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.94,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.14,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.96,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0705,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0218,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Great_Power_GP_21700.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "02540261044316d159a9a8219b95a5539351324630620ba566dcb06b132611a9",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

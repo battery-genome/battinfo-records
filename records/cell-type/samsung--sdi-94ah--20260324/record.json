@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.3390/wevj14040094"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/wevj14040094",
+        "doi": "10.3390/wevj14040094",
+        "author": "Hassini, et al.",
+        "headline": "Second-Life Batteries Modeling for Performance Tracking in a Mobile Charging Station",
+        "date_published": 2023,
+        "description": "Hassini, et al. Second-Life Batteries Modeling for Performance Tracking in a Mobile Charging Station, World Electric Vehicle Journal, Volume 14, April 2023, 94, https://doi.org/10.3390/wevj14040094."
+      }
+    ]
+  }
 }

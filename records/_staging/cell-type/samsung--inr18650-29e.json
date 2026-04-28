@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/11gd-fkk3-2hgs-bpc3",
+    "short_id": "11gdfk",
+    "identifier": "cell-type:11gd-fkk3-2hgs-bpc3",
+    "name": "SAMSUNG INR18650-29E",
+    "model": "INR18650-29E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.2,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.05,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.002,
+      "unit": "kg"
+    },
+    "minimum_storage_temperature": {
+      "value": 0.0,
+      "unit": "\u00b0C"
+    },
+    "maximum_storage_temperature": {
+      "value": 45.0,
+      "unit": "\u00b0C"
+    },
+    "diameter": {
+      "value": 7.000000000000001e-05,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__INR18650-29E.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d796c8b1c941fef400158dc6bdd7179c4a7aefaf8243a1633a76464de4ca9367"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet SAMSUNG__INR18650-29E.pdf."
+  ]
+}

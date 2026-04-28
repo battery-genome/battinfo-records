@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ma89-zt21-792j-w631",
+    "short_id": "ma89zt",
+    "identifier": "cell-type:ma89-zt21-792j-w631",
+    "name": "AMITA 120155250N-AM44E",
+    "model": "120155250N-AM44E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "AMITA"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/AMITA__120155250N-AM44E.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "08aef0d176ec25f12494b207c35e7db174c4eabb3ed05b16a319a77c21d75dce"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

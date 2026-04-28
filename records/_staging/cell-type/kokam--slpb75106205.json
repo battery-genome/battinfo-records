@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/088e-0chz-08xm-8jy5",
+    "short_id": "088e0c",
+    "identifier": "cell-type:088e-0chz-08xm-8jy5",
+    "name": "Kokam SLPB75106205",
+    "model": "SLPB75106205",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 16.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 8.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.33,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 3.2,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0075,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.106,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.205,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB75106205.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "d68a051bf0984d0f2cf94c3ddf22714d34b2f5461f8a47f02d94dd00fddd302e",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.etran.2020.100045",
+        "doi": "10.1016/j.etran.2020.100045",
+        "type": "Article",
+        "headline": "Advanced diagnostics to evaluate heterogeneity in lithium-ion battery modules",
+        "author": "Tanvir R. Tanim and Eric J. Dufek and Lee K. Walker and Chinh D. Ho and Christopher E. Hendricks and Jon P. Christophersen",
+        "date_published": 2020
+      },
+      {
+        "id": "https://doi.org/10.1016/j.enconman.2022.116015",
+        "doi": "10.1016/j.enconman.2022.116015",
+        "type": "Article",
+        "headline": "Development of a hybrid battery thermal management system coupled with phase change material under fast charging conditions",
+        "author": "Seunghoon Lee and Ukmin Han and Hoseong Lee",
+        "date_published": 2022
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2015.02.130",
+        "doi": "10.1016/j.jpowsour.2015.02.130",
+        "type": "Article",
+        "headline": "Discrimination of degradation processes in lithium-ion cells based on the sensitivity of aging indicators towards capacity loss",
+        "author": "Marius Bauer and Clemens Guenther and Michael Kasper and Mathias Petzl and Michael A. Danzer",
+        "date_published": 2015
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

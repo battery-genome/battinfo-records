@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/fehx-bdfg-e44v-3kwc",
+    "short_id": "fehxbd",
+    "identifier": "cell-type:fehx-bdfg-e44v-3kwc",
+    "name": "Saft MP174865",
+    "model": "MP174865",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.3,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.75,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.1,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.124,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.58,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.019,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.048,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.065,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_MP174865.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "4385133cac5b4ce8cffeeb035d7abc553d3a8f5043203b1bcd1671120958bfc7",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

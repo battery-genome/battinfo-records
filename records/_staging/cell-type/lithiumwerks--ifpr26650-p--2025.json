@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/yxjw-3jmd-1y6e-38eb",
+    "short_id": "yxjw3j",
+    "identifier": "cell-type:yxjw-3jmd-1y6e-38eb",
+    "name": "LITHIUMWERKS IFpR26650-P",
+    "model": "IFpR26650-P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LITHIUMWERKS"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2025,
+    "size_code": "R26650"
+  },
+  "specs": {
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    },
+    "diameter": {
+      "value": 0.0005,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LITHIUMWERKS__IFpR26650-P.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "19daf60af5d1d256321e7a756948053dd84d29b189f12069ad7dc8ab1a12f4a9"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LITHIUMWERKS__IFpR26650-P.pdf."
+  ]
+}

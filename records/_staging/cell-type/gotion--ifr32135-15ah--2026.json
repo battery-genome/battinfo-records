@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/twze-nrd2-cnyp-9c7r",
+    "short_id": "twzenr",
+    "identifier": "cell-type:twze-nrd2-cnyp-9c7r",
+    "name": "GOTION IFR32135-15Ah",
+    "model": "IFR32135-15Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "GOTION"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2026,
+    "size_code": "R32135"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 15.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "cycle_life": {
+      "value": 5000.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.005,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/GOTION__IFR32135-15Ah.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "b06722f65294cf79c5a5491e4099fddf54d5c9e47398f0756ee26aff7474ae23"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

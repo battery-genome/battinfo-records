@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/4jt9-tzdn-6qkh-s9jz",
+    "short_id": "4jt9tz",
+    "identifier": "cell-type:4jt9-tzdn-6qkh-s9jz",
+    "name": "LG INR18650-MH1",
+    "model": "INR18650-MH1",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2026,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.0471,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.01841,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-MH1.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "b0fa08efa214cfa1c80ca91cff612d0f3b5b795b85ef2f2302e00c4c2394acf0"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LG__INR18650-MH1.pdf."
+  ]
+}

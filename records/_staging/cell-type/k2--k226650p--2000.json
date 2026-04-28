@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/dxrr-pmny-45ky-7qdf",
+    "short_id": "dxrrpm",
+    "identifier": "cell-type:dxrr-pmny-45ky-7qdf",
+    "name": "K2 K226650P",
+    "model": "K226650P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "K2"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "year": 2000,
+    "size_code": "R26650"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/K2__K226650P.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "78d6deb43707117150c7df80d3371303a3e2dd14596f2ea84760e3a542503f24"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

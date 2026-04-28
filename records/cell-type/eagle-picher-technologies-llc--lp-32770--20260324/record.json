@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.commatsci.2021.110343"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.commatsci.2021.110343",
+        "doi": "10.1016/j.commatsci.2021.110343",
+        "author": "Ghalami Choobar, et al.",
+        "headline": "Electrodeposition of lithium metal on lithium anode surface, a simulation study by: Kinetic Monte Carlo-embedded atom method",
+        "date_published": 2021,
+        "description": "Ghalami Choobar, et al. Electrodeposition of lithium metal on lithium anode surface, a simulation study by: Kinetic Monte Carlo-embedded atom method, Computational Materials Science, Volume 192, May 2021, 110343, https://doi.org/10.1016/j.commatsci.2021.110343."
+      }
+    ]
+  }
 }

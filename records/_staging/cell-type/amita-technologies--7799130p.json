@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/nbv8-01zy-s3a2-kqnk",
+    "short_id": "nbv801",
+    "identifier": "cell-type:nbv8-01zy-s3a2-kqnk",
+    "name": "Amita Technologies 7799130P",
+    "model": "7799130P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Amita Technologies"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 7.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 3000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 37.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.195,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 15.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0079,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.098,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.13,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Amita_Technologies_7799130P.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "a28650070edd6c020ab8d414562e19423d39d6b1da6a440ec6b67f79c749b501",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Skipped DischargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped ChargingCurrent: numeric value missing or NaN.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

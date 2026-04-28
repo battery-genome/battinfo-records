@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/zhft-sytr-hpk5-6630",
+    "short_id": "zhftsy",
+    "identifier": "bdc:bdc_000001",
+    "name": "Eunicell LIR2032 EIS performance dataset",
+    "description": "Performance dataset containing 20,000 electrochemical impedance spectra and discharge-capacity measurements for 12 Eunicell LIR2032 coin cells.",
+    "access_url": "https://doi.org/10.5281/zenodo.3633834",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "keywords": [
+      "battery_data_commons",
+      "performance_data",
+      "battery_cell",
+      "coin_case",
+      "eunicell",
+      "lir2032",
+      "icr2032",
+      "lithium_cobalt_oxide",
+      "carbon"
+    ],
+    "creators": [
+      {
+        "type": "Organization",
+        "name": "Univ. of Cambridge and Newcastle"
+      }
+    ],
+    "citations": [
+      {
+        "type": "Dataset",
+        "url": "https://doi.org/10.5281/zenodo.3633834",
+        "doi": "10.5281/zenodo.3633834",
+        "citation_key": "bdc_000001_dataset"
+      },
+      {
+        "type": "Article",
+        "url": "https://doi.org/10.1038/s41467-020-15235-7",
+        "doi": "10.1038/s41467-020-15235-7",
+        "citation_key": "zhang2020identifying"
+      }
+    ],
+    "additional_type": [
+      "time_series_dataset"
+    ],
+    "measurement_techniques": [
+      "cycling",
+      "electrochemical_impedance_spectroscopy"
+    ],
+    "measurement_methods": [
+      "galvanostatic_cycling"
+    ],
+    "variable_measured": [
+      {
+        "name": "discharge_capacity",
+        "unit_text": "Ah"
+      },
+      {
+        "name": "impedance",
+        "unit_text": "Ohm"
+      }
+    ],
+    "is_accessible_for_free": true,
+    "in_language": "en",
+    "published_at": 1577836800,
+    "included_in_data_catalog": {
+      "type": "DataCatalog",
+      "name": "Battery Data Commons"
+    },
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "Zenodo files archive",
+        "content_url": "https://zenodo.org/api/records/3633835/files-archive",
+        "encoding_format": "application/zip",
+        "access_level": "open"
+      }
+    ]
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_name": "Battery Data Commons",
+    "source_url": "https://doi.org/10.5281/zenodo.3633834",
+    "source_file": "shiyun/BatteryDataCommons/canonical/datasets/bdc_000001.json",
+    "source_sheet": "Performance data",
+    "source_workbook_sha256": "76B4DA23BC1F307EE98881529CF00F20BD8D0EBC3CD52BE7490B2C20AE963128",
+    "source_dataset_key": "bdc_000001",
+    "ingest_status": "ready",
+    "quality_flags": [],
+    "retrieved_at": 1774310400,
+    "curated_by": "bdc_to_battinfo_dataset_staging",
+    "workflow_version": "bdc-v2026.02.11__draft-2026-03-24",
+    "citation": "https://doi.org/10.5281/zenodo.3633834"
+  },
+  "notes": [
+    "Derived from shiyun/BatteryDataCommons canonical dataset bdc_000001.",
+    "Associated code: https://github.com/YunweiZhang/ML-identify-battery-degradation"
+  ]
+}

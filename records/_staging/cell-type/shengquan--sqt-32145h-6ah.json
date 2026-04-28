@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/dv91-4tqp-96rh-q3ja",
+    "short_id": "dv914t",
+    "identifier": "cell-type:dv91-4tqp-96rh-q3ja",
+    "name": "Shengquan SQT-32145H-6Ah",
+    "model": "SQT-32145H-6Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Shengquan"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Shengquan__SQT-32145H-6Ah.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "6bb89aff75d55b2fe0e28982f12b8558a85494a04bb6823d1711f253cc5b725c"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

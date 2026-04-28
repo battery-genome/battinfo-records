@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/wyss-xxjj-vpws-bm67",
+    "short_id": "wyssxx",
+    "identifier": "cell-type:wyss-xxjj-vpws-bm67",
+    "name": "LG NX2.1",
+    "model": "NX2.1",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 60.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.82,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0165,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.1,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.33,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LG_Chem_NX2.1.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "8e8985a91f0b780777a3eb57e41e8079b4e0697ae40f1d1010dfdfcc7a003574",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Normalized LG-family manufacturer label to parent company LG."
+  ]
+}

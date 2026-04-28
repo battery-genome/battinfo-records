@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/aa4h-kbm7-9v6q-410s",
+    "short_id": "aa4hkb",
+    "identifier": "cell-type:aa4h-kbm7-9v6q-410s",
+    "name": "LECLANCH\u00c9 GL60 (936A04)",
+    "model": "GL60 (936A04)",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LECLANCH\u00c9"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 60.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 4500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.12,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.012,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.1785,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.286,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCH\u00c9_GL60_(936A04).json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "56d4eef017ec73c9e0626d698494b0558f2e605edc518d8fd788bd85e2b6848c",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

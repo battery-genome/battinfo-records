@@ -82,9 +82,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.est.2023.107580"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2023.107580",
+        "doi": "10.1016/j.est.2023.107580",
+        "author": "Adeniran, et al.",
+        "headline": "Optimized cooling and thermal analysis of lithium-ion pouch cell under fast charging cycles for electric vehicles",
+        "date_published": 2023,
+        "description": "Adeniran, et al. Optimized cooling and thermal analysis of lithium-ion pouch cell under fast charging cycles for electric vehicles, Journal of Energy Storage, Volume 68, September 2023, 107580, https://doi.org/10.1016/j.est.2023.107580."
+      }
+    ]
+  }
 }

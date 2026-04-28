@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/g0z8-1h9m-san2-6z26",
+    "short_id": "g0z81h",
+    "identifier": "cell-type:g0z8-1h9m-san2-6z26",
+    "name": "Kokam SLPB78216216H",
+    "model": "SLPB78216216H",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 31.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 15.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.86,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 6.2,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.008400000000000001,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.215,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.22,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB78216216H.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "f0ace99d587008c05d0afa824e8e511f958ca6c212fde88c3bec8cda4fc1c024",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.electacta.2020.137487",
+        "doi": "10.1016/j.electacta.2020.137487",
+        "type": "Article",
+        "headline": "In-operando Raman study of lithium plating on graphite electrodes of lithium ion batteries",
+        "author": "M.A. Caba\u00f1ero and M Hagen and E. Quiroga-Gonz\u00e1lez",
+        "date_published": 2021
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

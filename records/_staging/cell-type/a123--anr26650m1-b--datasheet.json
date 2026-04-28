@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/9qtc-0e54-pr27-e0gm",
+    "short_id": "9qtc0e",
+    "identifier": "cell-type:9qtc-0e54-pr27-e0gm",
+    "name": "A123 ANR26650M1-B",
+    "model": "ANR26650M1-B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "A123"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2012,
+    "size_code": "R26650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.5,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.4,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 6.0,
+      "unit": "mohm"
+    },
+    "continuous_discharging_current": {
+      "value": 50.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 120.0,
+      "unit": "A"
+    },
+    "continuous_charging_current": {
+      "value": 2.5,
+      "unit": "A"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.076,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.026,
+      "unit": "m"
+    },
+    "height": {
+      "value": 0.065,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/A123__ANR26650M1-B.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "b5069f48e121de3a1308af66215e7a97a1c8c6a87227da089c83e352f1ddf35e"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet A123__ANR26650M1-B.pdf."
+  ]
+}

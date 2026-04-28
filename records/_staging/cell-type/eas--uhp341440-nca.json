@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/eyr1-b17n-vnak-f9wz",
+    "short_id": "eyr1b1",
+    "identifier": "cell-type:eyr1-b17n-vnak-f9wz",
+    "name": "EAS UHP341440-NCA",
+    "model": "UHP341440-NCA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EAS"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EAS__UHP341440-NCA.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "ce80a6391a13f704a141398480e3b06c864c987aaa9d9081ed8126092c430da3"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

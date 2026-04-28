@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/g8aa-wp9v-psjf-xpte",
+    "short_id": "g8aawp",
+    "identifier": "cell-type:g8aa-wp9v-psjf-xpte",
+    "name": "Kokam SLPB55205130H",
+    "model": "SLPB55205130H",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 11.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 5.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.292,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 2.2,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0056,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.13,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.206,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB55205130H.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "1ec586324072707ecf3b84e128f9f5574308af3dcd71cffcb6d372cc78f9aae8",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/electronics8121395",
+        "doi": "10.3390/electronics8121395",
+        "type": "Article",
+        "headline": "Power Capability Analysis of Lithium Battery and Supercapacitor by Pulse Duration",
+        "author": "Seongjun Lee and Jonghoon Kim",
+        "description": "<jats:p>In this report, a method for estimating pulse power performance according to pulse duration is proposed. This approach can be used for power control logic in an environmentally friendly power generation system such as electric vehicles and an energy storage system (ESS). Although there have been studies on pulse power capability, we are unaware of any publications on the estimation of the magnitude of pulse power according to the power usage time, and the verification of the estimation result. Therefore, we propose a method to predict power performance according to the pulse duration of batteries and supercapacitors that are used in eco-friendly power generation systems. The proposed method is systematically presented using both a lithium-ion battery module with a nominal voltage of 44 V, 11 Ah, and a supercapacitor module with a maximum voltage of 36 V and a capacitance of 30 F.</jats:p>",
+        "date_published": 2019
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

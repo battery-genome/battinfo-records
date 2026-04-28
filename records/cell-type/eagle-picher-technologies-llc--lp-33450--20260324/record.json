@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.3390/en16114422"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/en16114422",
+        "doi": "10.3390/en16114422",
+        "author": "Ayodele, et al.",
+        "headline": "A Micro-Nuclear Power Generator for Space Missions",
+        "date_published": 2023,
+        "description": "Ayodele, et al. A Micro-Nuclear Power Generator for Space Missions, Energies, Volume 16, May 2023, 4422, https://doi.org/10.3390/en16114422."
+      }
+    ]
+  }
 }

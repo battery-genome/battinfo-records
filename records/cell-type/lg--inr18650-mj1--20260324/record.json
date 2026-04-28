@@ -82,51 +82,128 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.dib.2020.106033"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2019.226834"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2023.108029"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2019.03.109"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.egyai.2021.100081"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2019.100900"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2018.11.043"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.105303"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2022.231296"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.electacta.2022.139878"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2021.230645"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2021.230030"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2019.101170"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.106146"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2023.108241"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.dib.2020.106033",
+        "doi": "10.1016/j.dib.2020.106033",
+        "author": "Heenan, et al.",
+        "headline": "Data for an Advanced Microstructural and Electrochemical Datasheet on 18650 Li-ion Batteries with Nickel-Rich NMC811 Cathodes and Graphite-Silicon Anodes",
+        "date_published": 2020,
+        "description": "Heenan, et al. Data for an Advanced Microstructural and Electrochemical Datasheet on 18650 Li-ion Batteries with Nickel-Rich NMC811 Cathodes and Graphite-Silicon Anodes, Data in Brief, Volume 32, October 2020, 106033, https://doi.org/10.1016/j.dib.2020.106033."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2019.226834",
+        "doi": "10.1016/j.jpowsour.2019.226834",
+        "author": "Sturm, et al.",
+        "headline": "Suitability of physicochemical models for embedded systems regarding a nickel-rich, silicon-graphite lithium-ion battery",
+        "date_published": 2019,
+        "description": "Sturm, et al. Suitability of physicochemical models for embedded systems regarding a nickel-rich, silicon-graphite lithium-ion battery, Journal of Power Sources, Volume 436, October 2019, 226834, https://doi.org/10.1016/j.jpowsour.2019.226834."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2023.108029",
+        "doi": "10.1016/j.est.2023.108029",
+        "author": "Spielbauer, et al.",
+        "headline": "An analysis of the current state and obstacles in discrete layered finite element simulation of crushing cylindrical lithium-ion cells",
+        "date_published": 2023,
+        "description": "Spielbauer, et al. An analysis of the current state and obstacles in discrete layered finite element simulation of crushing cylindrical lithium-ion cells, Journal of Energy Storage, Volume 72, November 2023, 108029, https://doi.org/10.1016/j.est.2023.108029."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2019.03.109",
+        "doi": "10.1016/j.jpowsour.2019.03.109",
+        "author": "Zilberman, et al.",
+        "headline": "Reversible self-discharge and calendar aging of 18650 nickel-rich, silicon-graphite lithium-ion cells",
+        "date_published": 2019,
+        "description": "Zilberman, et al. Reversible self-discharge and calendar aging of 18650 nickel-rich, silicon-graphite lithium-ion cells, Journal of Power Sources, Volume 425, June 2019, 217-226, https://doi.org/10.1016/j.jpowsour.2019.03.109."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.egyai.2021.100081",
+        "doi": "10.1016/j.egyai.2021.100081",
+        "author": "dos Reis, et al.",
+        "headline": "Lithium-ion battery data and where to find it",
+        "date_published": 2021,
+        "description": "dos Reis, et al. Lithium-ion battery data and where to find it, Energy and AI, Volume 5, September 2021, 100081, https://doi.org/10.1016/j.egyai.2021.100081."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2019.100900",
+        "doi": "10.1016/j.est.2019.100900",
+        "author": "Zilberman, et al.",
+        "headline": "Cell-to-cell variation of calendar aging and reversible self-discharge in 18650 nickel-rich, silicon–graphite lithium-ion cells",
+        "date_published": 2019,
+        "description": "Zilberman, et al. Cell-to-cell variation of calendar aging and reversible self-discharge in 18650 nickel-rich, silicon–graphite lithium-ion cells, Journal of Energy Storage, Volume 26, December 2019, 100900, https://doi.org/10.1016/j.est.2019.100900."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2018.11.043",
+        "doi": "10.1016/j.jpowsour.2018.11.043",
+        "author": "Sturm, et al.",
+        "headline": "Modeling and simulation of inhomogeneities in a 18650 nickel-rich, silicon-graphite lithium-ion cell during fast charging",
+        "date_published": 2019,
+        "description": "Sturm, et al. Modeling and simulation of inhomogeneities in a 18650 nickel-rich, silicon-graphite lithium-ion cell during fast charging, Journal of Power Sources, Volume 412, February 2019, 204-223, https://doi.org/10.1016/j.jpowsour.2018.11.043."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105303",
+        "doi": "10.1016/j.est.2022.105303",
+        "author": "LeBel, et al.",
+        "headline": "Lithium-ion cell equivalent circuit model identification by galvanostatic intermittent titration technique",
+        "date_published": 2022,
+        "description": "LeBel, et al. Lithium-ion cell equivalent circuit model identification by galvanostatic intermittent titration technique, Journal of Energy Storage, Volume 54, October 2022, 105303, https://doi.org/10.1016/j.est.2022.105303."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.231296",
+        "doi": "10.1016/j.jpowsour.2022.231296",
+        "author": "Schmitt, et al.",
+        "headline": "Determination of degradation modes of lithium-ion batteries considering aging-induced changes in the half-cell open-circuit potential curve of silicon–graphite",
+        "date_published": 2022,
+        "description": "Schmitt, et al. Determination of degradation modes of lithium-ion batteries considering aging-induced changes in the half-cell open-circuit potential curve of silicon–graphite, Journal of Power Sources, Volume 532, June 2022, 231296, https://doi.org/10.1016/j.jpowsour.2022.231296."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.electacta.2022.139878",
+        "doi": "10.1016/j.electacta.2022.139878",
+        "author": "Mu, et al.",
+        "headline": "Impacts of negative to positive capacities ratios on the performance of next-generation lithium-ion batteries",
+        "date_published": 2022,
+        "description": "Mu, et al. Impacts of negative to positive capacities ratios on the performance of next-generation lithium-ion batteries, Electrochimica Acta, Volume 406, February 2022, 139878, https://doi.org/10.1016/j.electacta.2022.139878."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2021.230645",
+        "doi": "10.1016/j.jpowsour.2021.230645",
+        "author": "Walker, et al.",
+        "headline": "The effect of cell geometry and trigger method on the risks associated with thermal runaway of lithium-ion batteries",
+        "date_published": 2022,
+        "description": "Walker, et al. The effect of cell geometry and trigger method on the risks associated with thermal runaway of lithium-ion batteries, Journal of Power Sources, Volume 524, March 2022, 230645, https://doi.org/10.1016/j.jpowsour.2021.230645."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2021.230030",
+        "doi": "10.1016/j.jpowsour.2021.230030",
+        "author": "Jocher, et al.",
+        "headline": "A novel measurement technique for parallel-connected lithium-ion cells with controllable interconnection resistance",
+        "date_published": 2021,
+        "description": "Jocher, et al. A novel measurement technique for parallel-connected lithium-ion cells with controllable interconnection resistance, Journal of Power Sources, Volume 503, August 2021, 230030, https://doi.org/10.1016/j.jpowsour.2021.230030."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2019.101170",
+        "doi": "10.1016/j.est.2019.101170",
+        "author": "Zilberman, et al.",
+        "headline": "Online aging determination in lithium-ion battery module with forced temperature gradient",
+        "date_published": 2020,
+        "description": "Zilberman, et al. Online aging determination in lithium-ion battery module with forced temperature gradient, Journal of Energy Storage, Volume 28, April 2020, 101170, https://doi.org/10.1016/j.est.2019.101170."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.106146",
+        "doi": "10.1016/j.est.2022.106146",
+        "author": "Zhang, et al.",
+        "headline": "In-situ explosion limit analysis and hazards research of vent gas from lithium-ion battery thermal runaway",
+        "date_published": 2022,
+        "description": "Zhang, et al. In-situ explosion limit analysis and hazards research of vent gas from lithium-ion battery thermal runaway, Journal of Energy Storage, Volume 56, December 2022, 106146, https://doi.org/10.1016/j.est.2022.106146."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2023.108241",
+        "doi": "10.1016/j.est.2023.108241",
+        "author": "Liu, et al.",
+        "headline": "A novel Kalman-filter-based battery internal temperature estimation method based on an enhanced electro-thermal coupling model",
+        "date_published": 2023,
+        "description": "Liu, et al. A novel Kalman-filter-based battery internal temperature estimation method based on an enhanced electro-thermal coupling model, Journal of Energy Storage, Volume 71, November 2023, 108241, https://doi.org/10.1016/j.est.2023.108241."
+      }
+    ]
+  }
 }

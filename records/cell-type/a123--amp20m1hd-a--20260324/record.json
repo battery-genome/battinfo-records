@@ -84,36 +84,83 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.etran.2020.100073"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.apenergy.2017.04.022"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.apenergy.2021.116737"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.enconman.2020.113715"
-    },
-    {
-      "url": "https://doi.org/10.3390/en14175434"
-    },
-    {
-      "url": "https://doi.org/10.1088/1755-1315/268/1/012103"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2017.11.011"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries5040070"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/abff35"
-    },
-    {
-      "url": "https://www.semanticscholar.org/paper/61f62eca106796d592d9cac19339b989bf5fde9b"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.etran.2020.100073",
+        "doi": "10.1016/j.etran.2020.100073",
+        "author": "Dondelewski, et al.",
+        "headline": "The role of cell geometry when selecting tab or surface cooling to minimise cell degradation",
+        "date_published": 2020,
+        "description": "Dondelewski, et al. The role of cell geometry when selecting tab or surface cooling to minimise cell degradation, eTransportation, Volume 5, August 2020, 100073, https://doi.org/10.1016/j.etran.2020.100073."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.apenergy.2017.04.022",
+        "doi": "10.1016/j.apenergy.2017.04.022",
+        "author": "Saw, et al.",
+        "headline": "Computational fluid dynamics simulation on open cell aluminium foams for Li-ion battery cooling system",
+        "date_published": 2017,
+        "description": "Saw, et al. Computational fluid dynamics simulation on open cell aluminium foams for Li-ion battery cooling system, Applied Energy, Volume 204, October 2017, 1489-1499, https://doi.org/10.1016/j.apenergy.2017.04.022."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.apenergy.2021.116737",
+        "doi": "10.1016/j.apenergy.2021.116737",
+        "author": "Lander, et al.",
+        "headline": "Cost and carbon footprint reduction of electric vehicle lithium-ion batteries through efficient thermal management",
+        "date_published": 2021,
+        "description": "Lander, et al. Cost and carbon footprint reduction of electric vehicle lithium-ion batteries through efficient thermal management, Applied Energy, Volume 289, May 2021, 116737, https://doi.org/10.1016/j.apenergy.2021.116737."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.enconman.2020.113715",
+        "doi": "10.1016/j.enconman.2020.113715",
+        "author": "Suresh Patil, et al.",
+        "headline": "A novel dielectric fluid immersion cooling technology for Li-ion battery thermal management",
+        "date_published": 2021,
+        "description": "Suresh Patil, et al. A novel dielectric fluid immersion cooling technology for Li-ion battery thermal management, Energy Conversion and Management, Volume 229, February 2021, 113715, https://doi.org/10.1016/j.enconman.2020.113715."
+      },
+      {
+        "id": "https://doi.org/10.3390/en14175434",
+        "doi": "10.3390/en14175434",
+        "author": "Diao, et al.",
+        "headline": "Development of an Informative Lithium-Ion Battery Datasheet",
+        "date_published": 2021,
+        "description": "Diao, et al. Development of an Informative Lithium-Ion Battery Datasheet, Energies, Volume 14, September 2021, 5434, https://doi.org/10.3390/en14175434."
+      },
+      {
+        "id": "https://doi.org/10.1088/1755-1315/268/1/012103",
+        "doi": "10.1088/1755-1315/268/1/012103",
+        "author": "Saw, et al.",
+        "headline": "Numerical modelling of the power pack system for remote islands electrification",
+        "date_published": 2019,
+        "description": "Saw, et al. Numerical modelling of the power pack system for remote islands electrification, IOP Conference Series: Earth and Environmental Science, Volume 268, June 2019, 012103, https://doi.org/10.1088/1755-1315/268/1/012103."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2017.11.011",
+        "doi": "10.1016/j.jpowsour.2017.11.011",
+        "author": "Shibagaki, et al.",
+        "headline": "Tracking degradation in lithium iron phosphate batteries using differential thermal voltammetry",
+        "date_published": 2018,
+        "description": "Shibagaki, et al. Tracking degradation in lithium iron phosphate batteries using differential thermal voltammetry, Journal of Power Sources, Volume 374, January 2018, 188-195, https://doi.org/10.1016/j.jpowsour.2017.11.011."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries5040070",
+        "doi": "10.3390/batteries5040070",
+        "author": "Arora, et al.",
+        "headline": "Experimental Study of Heat Generation Rate during Discharge of LiFePO4 Pouch Cells of Different Nominal Capacities and Thickness",
+        "date_published": 2019,
+        "description": "Arora, et al. Experimental Study of Heat Generation Rate during Discharge of LiFePO4 Pouch Cells of Different Nominal Capacities and Thickness, Batteries, Volume 5, November 2019, 70, https://doi.org/10.3390/batteries5040070."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/abff35",
+        "doi": "10.1149/1945-7111/abff35",
+        "author": "Attia, et al.",
+        "headline": "Benefits of Fast Battery Formation in a Model System",
+        "date_published": 2021,
+        "description": "Attia, et al. Benefits of Fast Battery Formation in a Model System, Journal of The Electrochemical Society, Volume 168, May 2021, 050543, https://doi.org/10.1149/1945-7111/abff35."
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/61f62eca106796d592d9cac19339b989bf5fde9b"
+      }
+    ]
+  }
 }

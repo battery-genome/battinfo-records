@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/jsh6-tmcr-dmjg-x32t",
+    "short_id": "jsh6tm",
+    "identifier": "cell-type:jsh6-tmcr-dmjg-x32t",
+    "name": "SAMSUNG INR18650-15L",
+    "model": "INR18650-15L",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "year": 2010,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 1.5,
+      "unit": "Ah"
+    },
+    "nominal_capacity": {
+      "value": 1.5,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 1.45,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 0.05,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 30.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 150.0,
+      "unit": "min"
+    },
+    "cycle_life": {
+      "value": 250.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.043,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0001,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__INR18650-15L.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "303e438b49e1859a69f9acb28480dbe90a3c9dbfe89ffd62cdc7c60a698b6ddb"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/z689-gs4b-eh67-bdk0",
+    "short_id": "z689gs",
+    "identifier": "cell-type:z689-gs4b-eh67-bdk0",
+    "name": "Lishen LR2170SA",
+    "model": "LR2170SA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Lishen"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NCA"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 4.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 2.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.068,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.8,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Lishen_LR2170SA.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "8732479b4e8f96111d90ec71abc9065f2dc5bcd672600810cd7183f96cbc80d0",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/batteries8100145",
+        "doi": "10.3390/batteries8100145",
+        "type": "Article",
+        "headline": "State of Charge Estimation of Lithium-Ion Battery for Electric Vehicles under Extreme Operating Temperatures Based on an Adaptive Temporal Convolutional Network",
+        "author": "Jiazhi Miao and Zheming Tong and Shuiguang Tong and Jun Zhang and Jiale Mao",
+        "description": "<jats:p>The accurate estimation of state of charge (SOC) under various conditions is critical to the research and application of batteries, especially at extreme temperatures. However, few studies have examined the SOC estimation performance of estimation algorithms for several types of batteries under such conditions. In this study, a new method was derived for SOC estimation and a series of experiments were conducted covering five types of lithium-ion batteries with three kinds of cathode materials (i.e., LiFePO4, Li(Ni0.5Co0.2Mn0.3)O2, and LiCoO2), three test temperatures, and four real driving cycles to verify the proposed method. The test temperatures for battery operation ranges from \u221220 to 60 \u00b0C. Then, an adaptive machine learning (ML) framework based on the deep temporal convolutional network (TCN) and Coulomb counting method was proposed, and the structure of the estimation model was designed through the Taguchi method. The accuracy and generalizability of the proposed method were evaluated by calculating the estimation errors and their standard deviations (SDs), its average errors showed a decline of at least 49.66%, and its SDs showed a decline of at least 45.88% when compared to four popular ML methods. These traditional ML methods performed poor accuracy and stability at extreme temperatures (\u221220 and 60 \u00b0C) when compared to 25 \u00b0C, while the proposed adaptive method exhibited stable and high performances at different temperatures.</jats:p>",
+        "date_published": 2022
+      }
+    ]
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

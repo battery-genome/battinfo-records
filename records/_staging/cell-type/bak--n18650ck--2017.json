@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/g0kf-1nw5-rt5b-nhd7",
+    "short_id": "g0kf1n",
+    "identifier": "cell-type:g0kf-1nw5-rt5b-nhd7",
+    "name": "BAK N18650CK",
+    "model": "N18650CK",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2017,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 3.05,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.95,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 35.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.00015,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650CK.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "b769b8d248ef6118a957fb8c731fb40603376bf58943e6c8671b410ba7c8e20b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

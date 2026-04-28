@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/23aj-edxr-tg64-xn6f",
+    "short_id": "23ajed",
+    "identifier": "cell-type:23aj-edxr-tg64-xn6f",
+    "name": "SES 50Ah-Lithium-Metal-Cell",
+    "model": "50Ah-Lithium-Metal-Cell",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SES"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-metal",
+    "negative_electrode_basis": "Li-metal"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SES__50Ah-Lithium-Metal-Cell.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "a5e62c0bdd0ae07c506cc82ca75822e6d80ecb256295a51a9ce6b9bfb49c1f68"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

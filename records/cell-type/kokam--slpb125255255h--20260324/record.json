@@ -84,12 +84,24 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.3390/en13174518"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries8050042"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/en13174518",
+        "doi": "10.3390/en13174518",
+        "author": "Paul, et al.",
+        "headline": "Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle",
+        "date_published": 2020,
+        "description": "Paul, et al. Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle, Energies, Volume 13, September 2020, 4518, https://doi.org/10.3390/en13174518."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8050042",
+        "doi": "10.3390/batteries8050042",
+        "author": "Vorwerk, et al.",
+        "headline": "Detection of Critical Conditions in Pouch Cells Based on Their Expansion Behavior",
+        "date_published": 2022,
+        "description": "Vorwerk, et al. Detection of Critical Conditions in Pouch Cells Based on Their Expansion Behavior, Batteries, Volume 8, May 2022, 42, https://doi.org/10.3390/batteries8050042."
+      }
+    ]
+  }
 }

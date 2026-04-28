@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/cya2-nyz7-42eg-x9d2",
+    "short_id": "cya2ny",
+    "identifier": "cell-type:cya2-nyz7-42eg-x9d2",
+    "name": "PANASONIC NCR18650A",
+    "model": "NCR18650A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2010,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__NCR18650A.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "a988e9659bcae9bb0799944e4c8354d03b80f362de035b92e5b43b6fbe5de2aa"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

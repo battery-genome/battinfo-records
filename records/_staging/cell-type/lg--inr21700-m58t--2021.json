@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/pjhb-gnjv-hdcs-bbxm",
+    "short_id": "pjhbgn",
+    "identifier": "cell-type:pjhb-gnjv-hdcs-bbxm",
+    "name": "LG INR21700-M58T",
+    "model": "INR21700-M58T",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "year": 2021,
+    "size_code": "R21700"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.59,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "continuous_charging_current": {
+      "value": 0.0029,
+      "unit": "A"
+    },
+    "charging_time": {
+      "value": 2.8,
+      "unit": "min"
+    },
+    "cycle_life": {
+      "value": 10.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.0732,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0218,
+      "unit": "m"
+    },
+    "minimum_storage_temperature": {
+      "value": -20.0,
+      "unit": "\u00b0C"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "\u00b0C"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR21700-M58T.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "e3460a7695d8cc39abfafd720d1cde6b11b713ffcaf7bae1aca3b43257b2140e"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

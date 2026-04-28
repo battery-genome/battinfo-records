@@ -84,15 +84,32 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.etran.2020.100045"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.enconman.2022.116015"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2015.02.130"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.etran.2020.100045",
+        "doi": "10.1016/j.etran.2020.100045",
+        "author": "Tanim, et al.",
+        "headline": "Advanced diagnostics to evaluate heterogeneity in lithium-ion battery modules",
+        "date_published": 2020,
+        "description": "Tanim, et al. Advanced diagnostics to evaluate heterogeneity in lithium-ion battery modules, eTransportation, Volume 3, February 2020, 100045, https://doi.org/10.1016/j.etran.2020.100045."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.enconman.2022.116015",
+        "doi": "10.1016/j.enconman.2022.116015",
+        "author": "Lee, et al.",
+        "headline": "Development of a hybrid battery thermal management system coupled with phase change material under fast charging conditions",
+        "date_published": 2022,
+        "description": "Lee, et al. Development of a hybrid battery thermal management system coupled with phase change material under fast charging conditions, Energy Conversion and Management, Volume 268, September 2022, 116015, https://doi.org/10.1016/j.enconman.2022.116015."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2015.02.130",
+        "doi": "10.1016/j.jpowsour.2015.02.130",
+        "author": "Bauer, et al.",
+        "headline": "Discrimination of degradation processes in lithium-ion cells based on the sensitivity of aging indicators towards capacity loss",
+        "date_published": 2015,
+        "description": "Bauer, et al. Discrimination of degradation processes in lithium-ion cells based on the sensitivity of aging indicators towards capacity loss, Journal of Power Sources, Volume 283, June 2015, 494-504, https://doi.org/10.1016/j.jpowsour.2015.02.130."
+      }
+    ]
+  }
 }

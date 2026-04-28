@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/fx49-p8gw-k7b5-gvyp",
+    "short_id": "fx49p8",
+    "identifier": "cell-type:fx49-p8gw-k7b5-gvyp",
+    "name": "MELASTA SLPBA842124HVR",
+    "model": "SLPBA842124HVR",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MELASTA"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MELASTA__SLPBA842124HVR.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "927361b98664b2def0b31a529fdcdbe75b3b63ec2f13a0e624722e6cfaf38d24"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

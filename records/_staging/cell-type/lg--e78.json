@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/w3y1-ct3q-q6qh-7tmg",
+    "short_id": "w3y1ct",
+    "identifier": "cell-type:w3y1-ct3q-q6qh-7tmg",
+    "name": "LG E78",
+    "model": "E78",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "size_code": "P9/100/548",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 78.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.67,
+      "unit": "V"
+    },
+    "rated_energy": {
+      "value": 286.0,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 602.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 265.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 184.0,
+      "unit": "A"
+    },
+    "maximum_continuous_discharging_current": {
+      "value": 234.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 496.0,
+      "unit": "A"
+    },
+    "internal_resistance": {
+      "value": 1.48,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 1083.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 100.0,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 548.0,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 8.65,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "conversation attachment: LG power and energy cell comparison table screenshot (2026-04-08)"
+  },
+  "notes": [
+    "Created from a user-provided screenshot of an LG power and energy cell comparison table.",
+    "Original PDF or source URL was not recorded.",
+    "cell_format was inferred from the flat-tabbed form factor shown in the comparison image.",
+    "size_code was inferred from the L*W*T row using the BattINFO pouch convention P<thickness>/<width>/<length> with rounded millimeter values.",
+    "This draft may overlap with the existing lg--e79.json staging record; the screenshot labels the model as E78 and that identity should be checked against the underlying LG source document."
+  ]
+}

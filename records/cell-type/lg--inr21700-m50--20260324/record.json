@@ -82,39 +82,96 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.dib.2021.106894"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2020.102133"
-    },
-    {
-      "url": "https://doi.org/10.3390/en13020489"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.104362"
-    },
-    {
-      "url": "https://doi.org/10.1109/icmect.2019.8932115"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.104291"
-    },
-    {
-      "url": "https://doi.org/10.1007/s00502-020-00814-9"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries9050274"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries9010006"
-    },
-    {
-      "url": "https://doi.org/10.1002/ente.202200547"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries8110204"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.dib.2021.106894",
+        "doi": "10.1016/j.dib.2021.106894",
+        "author": "Catenaro, et al.",
+        "headline": "Experimental data of lithium-ion batteries under galvanostatic discharge tests at different rates and temperatures of operation",
+        "date_published": 2021,
+        "description": "Catenaro, et al. Experimental data of lithium-ion batteries under galvanostatic discharge tests at different rates and temperatures of operation, Data in Brief, Volume 35, April 2021, 106894, https://doi.org/10.1016/j.dib.2021.106894."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2020.102133",
+        "doi": "10.1016/j.est.2020.102133",
+        "author": "Wang, et al.",
+        "headline": "Temperature estimation from current and voltage measurements in lithium-ion battery systems",
+        "date_published": 2021,
+        "description": "Wang, et al. Temperature estimation from current and voltage measurements in lithium-ion battery systems, Journal of Energy Storage, Volume 34, February 2021, 102133, https://doi.org/10.1016/j.est.2020.102133."
+      },
+      {
+        "id": "https://doi.org/10.3390/en13020489",
+        "doi": "10.3390/en13020489",
+        "author": "Amamra, et al.",
+        "headline": "Electric Vehicle Battery Performance Investigation Based on Real World Current Harmonics",
+        "date_published": 2020,
+        "description": "Amamra, et al. Electric Vehicle Battery Performance Investigation Based on Real World Current Harmonics, Energies, Volume 13, January 2020, 489, https://doi.org/10.3390/en13020489."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.104362",
+        "doi": "10.1016/j.est.2022.104362",
+        "author": "Zhang, et al.",
+        "headline": "Real-time estimation of negative electrode potential and state of charge of lithium-ion battery based on a half-cell-level equivalent circuit model",
+        "date_published": 2022,
+        "description": "Zhang, et al. Real-time estimation of negative electrode potential and state of charge of lithium-ion battery based on a half-cell-level equivalent circuit model, Journal of Energy Storage, Volume 51, July 2022, 104362, https://doi.org/10.1016/j.est.2022.104362."
+      },
+      {
+        "id": "https://doi.org/10.1109/icmect.2019.8932115",
+        "doi": "10.1109/icmect.2019.8932115",
+        "author": "Bui, et al.",
+        "headline": "An Advanced Hardware-in-the-Loop Battery Simulation Platform for the Experimental Testing of Battery Management System",
+        "date_published": 2019,
+        "description": "Bui, et al. An Advanced Hardware-in-the-Loop Battery Simulation Platform for the Experimental Testing of Battery Management System, 2019 23rd International Conference on Mechatronics Technology (ICMT), October 2019, 1-6, https://doi.org/10.1109/icmect.2019.8932115."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.104291",
+        "doi": "10.1016/j.est.2022.104291",
+        "author": "Yu, et al.",
+        "headline": "Distributed internal thermal monitoring of lithium ion batteries with fibre sensors",
+        "date_published": 2022,
+        "description": "Yu, et al. Distributed internal thermal monitoring of lithium ion batteries with fibre sensors, Journal of Energy Storage, Volume 50, June 2022, 104291, https://doi.org/10.1016/j.est.2022.104291."
+      },
+      {
+        "id": "https://doi.org/10.1007/s00502-020-00814-9",
+        "doi": "10.1007/s00502-020-00814-9",
+        "author": "Popp, et al.",
+        "headline": "Ante-mortem analysis, electrical, thermal, and ageing testing of state-of-the-art cylindrical lithium-ion cells",
+        "date_published": 2020,
+        "description": "Popp, et al. Ante-mortem analysis, electrical, thermal, and ageing testing of state-of-the-art cylindrical lithium-ion cells, e &amp; i Elektrotechnik und Informationstechnik, Volume 137, June 2020, 169-176, https://doi.org/10.1007/s00502-020-00814-9."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries9050274",
+        "doi": "10.3390/batteries9050274",
+        "author": "Auch, et al.",
+        "headline": "Influence of Lithium-Ion-Battery Equivalent Circuit Model Parameter Dependencies and Architectures on the Predicted Heat Generation in Real-Life Drive Cycles",
+        "date_published": 2023,
+        "description": "Auch, et al. Influence of Lithium-Ion-Battery Equivalent Circuit Model Parameter Dependencies and Architectures on the Predicted Heat Generation in Real-Life Drive Cycles, Batteries, Volume 9, May 2023, 274, https://doi.org/10.3390/batteries9050274."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries9010006",
+        "doi": "10.3390/batteries9010006",
+        "author": "Spielbauer, et al.",
+        "headline": "Influence of Breathing and Swelling on the Jelly-Roll Case Gap of Cylindrical Lithium-Ion Battery Cells",
+        "date_published": 2022,
+        "description": "Spielbauer, et al. Influence of Breathing and Swelling on the Jelly-Roll Case Gap of Cylindrical Lithium-Ion Battery Cells, Batteries, Volume 9, December 2022, 6, https://doi.org/10.3390/batteries9010006."
+      },
+      {
+        "id": "https://doi.org/10.1002/ente.202200547",
+        "doi": "10.1002/ente.202200547",
+        "author": "Iurilli, et al.",
+        "headline": "Detection of Lithium‐Ion Cells’ Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time",
+        "date_published": 2022,
+        "description": "Iurilli, et al. Detection of Lithium‐Ion Cells’ Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time, Energy Technology, Volume 10, August 2022, 2200547, https://doi.org/10.1002/ente.202200547."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8110204",
+        "doi": "10.3390/batteries8110204",
+        "author": "Iurilli, et al.",
+        "headline": "Physics-Based SoH Estimation for Li-Ion Cells",
+        "date_published": 2022,
+        "description": "Iurilli, et al. Physics-Based SoH Estimation for Li-Ion Cells, Batteries, Volume 8, November 2022, 204, https://doi.org/10.3390/batteries8110204."
+      }
+    ]
+  }
 }

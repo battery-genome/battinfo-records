@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/kjaz-mhsm-dyba-69z7",
+    "short_id": "kjazmh",
+    "identifier": "cell-type:kjaz-mhsm-dyba-69z7",
+    "name": "Kayo battery co.. ltd KFL 32650-10P",
+    "model": "KFL 32650-10P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kayo battery co.. ltd"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP",
+    "size_code": "R32650"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.8,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.76,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.12,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.52,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.065,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0325,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kayo_battery_co.._ltd_KFL_32650-10P.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "899ba5184dbcc9cf5375e41769c3a53a627745a1d52fb696f08839e96e6be24c",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

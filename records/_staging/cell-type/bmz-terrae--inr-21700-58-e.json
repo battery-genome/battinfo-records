@@ -1,0 +1,78 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/x8aq-48q1-rmtp-1sqw",
+    "short_id": "x8aq48",
+    "identifier": "cell-type:x8aq-48q1-rmtp-1sqw",
+    "name": "BMZ_TerraE INR 21700 58 E",
+    "model": "INR 21700 58 E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BMZ_TerraE"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.7,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.14,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.075,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.14,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0709,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.0217,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/BMZ_TerraE_INR_21700_58_E.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "b5512350f34ba1ca6d28636dc7cd87bbf5ad56b047b046850d77a1d878c3536d",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

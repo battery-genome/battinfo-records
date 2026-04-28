@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/3p53-hcde-b3sw-pk68",
+    "short_id": "3p53hc",
+    "identifier": "cell-type:3p53-hcde-b3sw-pk68",
+    "name": "SAMSUNG ICR18650-22P",
+    "model": "ICR18650-22P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__ICR18650-22P.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "9897a61b6f8c4ef154a0a93834d12c9c7a19259a251608ee63a9ddba85b40c57"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

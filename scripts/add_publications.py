@@ -2,12 +2,28 @@
 Adds publication links (from CellInfoRepository schema:subjectOf fields)
 to matching battinfo-records cell-type record.json files.
 
+For DOI entries, CrossRef metadata is fetched and stored in the BibliographyEntry
+(headline, author, date_published, description) so the platform can render full
+formatted citations without any runtime API calls.
+
+Run once whenever publications are added or updated. Re-running is safe — it
+always overwrites bibliography.subject_of with freshly fetched metadata.
+
 Matching is done by provenance.source_file → CellInfoRepository filename.
 """
 
 import json
-import os
+import time
 from pathlib import Path
+from urllib.request import Request, urlopen
+from urllib.error import URLError
+
+MONTHS = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
+
+CONTACT_EMAIL = "j.simon.clark@gmail.com"
 
 # --- Publication mapping: CellInfoRepository filename → list of URLs ---
 PUBLICATIONS: dict[str, list[str]] = {
@@ -227,66 +243,84 @@ PUBLICATIONS: dict[str, list[str]] = {
         "https://doi.org/10.1016/j.energy.2023.128126",
         "https://doi.org/10.1016/j.jpowsour.2020.228189",
         "https://doi.org/10.1016/j.egyr.2021.11.089",
-        "https://doi.org/10.3390/en10091284",
-        "https://doi.org/10.1016/j.est.2021.102466",
+        "https://doi.org/10.1016/j.est.2022.105272",
+        "https://doi.org/10.3390/batteries9010056",
+        "https://doi.org/10.1016/j.ijheatmasstransfer.2022.122879",
+        "https://doi.org/10.1016/j.jpowsour.2022.232430",
     ],
     "Panasonic_NCR20700B.json": [
-        "https://doi.org/10.3390/batteries9060309",
+        "https://doi.org/10.1016/j.est.2022.104362",
+        "https://doi.org/10.3390/batteries8100165",
+        "https://doi.org/10.3390/batteries9010010",
+        "https://doi.org/10.3390/batteries9050274",
     ],
     "Quallion_LLC_QL015KA.json": [
-        "https://doi.org/10.1016/B978-0-444-59513-3.00014-5",
+        "https://doi.org/10.1016/j.est.2016.06.005",
     ],
     "Saft_MP176065.json": [
-        "https://doi.org/10.1051/e3sconf/20171606001",
-        "https://doi.org/10.1109/acc.2010.5530710",
-        "https://www.semanticscholar.org/paper/18b337d7e53fa2e7de07c3fab3c2059e208b8301",
+        "https://doi.org/10.1016/j.jpowsour.2022.231138",
     ],
-    "Saft_MP176065xtd.json": [
-        "https://doi.org/10.1051/e3sconf/20171606001",
-        "https://doi.org/10.1109/acc.2010.5530710",
-        "https://www.semanticscholar.org/paper/18b337d7e53fa2e7de07c3fab3c2059e208b8301",
+    "Saft_MP176065XTD.json": [
+        "https://doi.org/10.1016/j.jpowsour.2022.231138",
     ],
     "Saft_VES180.json": [
-        "https://doi.org/10.11591/IJAAS.V8.I1.PP54-63",
+        "https://doi.org/10.1016/j.jpowsour.2013.07.003",
+        "https://doi.org/10.1016/j.jpowsour.2014.08.015",
+        "https://doi.org/10.1016/j.est.2019.101067",
     ],
-    "Saft_VL_41M.json": [
-        "https://doi.org/10.2172/925388",
+    "Saft_VL-41M.json": [
+        "https://doi.org/10.1016/j.jpowsour.2014.12.121",
     ],
-    "Saft_VL_45E.json": [
-        "https://doi.org/10.2172/925388",
+    "Saft_VL-45E.json": [
+        "https://doi.org/10.1016/j.jpowsour.2014.12.121",
     ],
-    "Saft_VL_45E_FE.json": [
-        "https://doi.org/10.2172/925388",
+    "Saft_VL-45E-FE.json": [
+        "https://doi.org/10.1016/j.jpowsour.2014.12.121",
     ],
-    "Samsung_INR21700-30T.json": [
-        "https://doi.org/10.1149/1945-7111/ace1a7",
-        "https://doi.org/10.3390/en16010211",
-        "https://doi.org/10.3390/en15186803",
-    ],
-    "Samsung_INR21700-40T.json": [
-        "https://doi.org/10.1016/j.est.2023.107424",
+    "Samsung_SDI_INR21700-30T.json": [
+        "https://doi.org/10.1016/j.dib.2019.104734",
+        "https://doi.org/10.1016/j.jpowsour.2019.227666",
+        "https://doi.org/10.1016/j.jpowsour.2022.232214",
         "https://doi.org/10.3390/batteries9010006",
-        "https://doi.org/10.3390/batteries9060309",
-        "https://doi.org/10.3390/s23020753",
+        "https://doi.org/10.3390/batteries9050274",
+        "https://doi.org/10.3390/en13020489",
     ],
-    "Samsung_INR21700-48G.json": [
-        "https://doi.org/10.1109/itec.2019.8790449",
-        "https://doi.org/10.1007/s00502-020-00814-9",
-        "https://doi.org/10.3390/BATTERIES5010023",
+    "Samsung_SDI_INR21700-40T.json": [
+        "https://doi.org/10.3390/batteries9010006",
+        "https://doi.org/10.1016/j.est.2022.104362",
+        "https://doi.org/10.1016/j.est.2022.104291",
+        "https://doi.org/10.3390/batteries9050274",
+        "https://doi.org/10.3390/en13020489",
+        "https://doi.org/10.1016/j.jpowsour.2022.232068",
+        "https://doi.org/10.3390/batteries8020017",
     ],
-    "Samsung_INR21700-48X.json": [
-        "https://doi.org/10.1016/j.est.2023.107424",
+    "Samsung_SDI_INR21700-48G.json": [
+        "https://doi.org/10.1016/j.est.2022.104291",
+        "https://doi.org/10.3390/batteries9010006",
+        "https://doi.org/10.3390/batteries9050274",
+        "https://doi.org/10.3390/en13020489",
+        "https://doi.org/10.1016/j.jpowsour.2022.232068",
+        "https://doi.org/10.3390/batteries8020017",
     ],
-    "Samsung_INR21700-50E.json": [
-        "https://doi.org/10.1016/j.apenergy.2021.118498",
-        "https://doi.org/10.1016/j.est.2021.102257",
-        "https://doi.org/10.1007/s00502-020-00814-9",
-        "https://doi.org/10.3390/en14175434",
-        "https://doi.org/10.1149/1945-7111/ace1a7",
-        "https://doi.org/10.3390/batteries9060309",
-        "https://doi.org/10.1149/1945-7111/acb669",
-        "https://doi.org/10.3390/en15072431",
-        "https://doi.org/10.1007/s10694-023-01425-4",
+    "Samsung_SDI_INR21700-48X.json": [
+        "https://doi.org/10.1016/j.est.2022.104291",
+        "https://doi.org/10.3390/batteries9050274",
+        "https://doi.org/10.3390/batteries9010006",
+        "https://doi.org/10.3390/en13020489",
+        "https://doi.org/10.1016/j.jpowsour.2022.232068",
+        "https://doi.org/10.3390/batteries8020017",
+    ],
+    "Samsung_SDI_INR21700-50E.json": [
+        "https://doi.org/10.1016/j.dib.2021.106894",
+        "https://doi.org/10.1016/j.est.2020.102133",
+        "https://doi.org/10.3390/en13020489",
+        "https://doi.org/10.1016/j.est.2022.104362",
+        "https://doi.org/10.1109/icmect.2019.8932115",
+        "https://doi.org/10.1016/j.est.2022.104291",
+        "https://doi.org/10.3390/batteries9050274",
+        "https://doi.org/10.3390/batteries9010006",
+        "https://doi.org/10.1002/ente.202200547",
+        "https://doi.org/10.3390/batteries8110204",
     ],
     "Samsung_SDI_94Ah_.json": [
         "https://doi.org/10.3390/wevj14040094",
@@ -304,10 +338,107 @@ PUBLICATIONS: dict[str, list[str]] = {
 }
 
 
+def extract_doi(url: str) -> str | None:
+    """Extract the DOI path from a doi.org URL."""
+    if "doi.org/" in url:
+        return url.split("doi.org/", 1)[1]
+    return None
+
+
+def fetch_crossref(doi: str) -> dict | None:
+    """Fetch a CrossRef works record for the given DOI. Returns the message dict or None."""
+    url = f"https://api.crossref.org/works/{doi}"
+    req = Request(
+        url,
+        headers={"User-Agent": f"battery-genome/1.0 (mailto:{CONTACT_EMAIL})"},
+    )
+    try:
+        with urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read())
+        return data.get("message") or {}
+    except URLError as exc:
+        print(f"    WARNING: CrossRef fetch failed for {doi}: {exc}")
+        return None
+    except Exception as exc:
+        print(f"    WARNING: Unexpected error for {doi}: {exc}")
+        return None
+
+
+def build_entry_from_crossref(url: str, msg: dict) -> dict:
+    """Format a BibliographyEntry dict from a CrossRef message dict."""
+    doi = extract_doi(url) or (msg.get("DOI") or "")
+
+    authors = msg.get("author") or []
+    first_last = (authors[0].get("family") or "") if authors else ""
+    author_str = (
+        f"{first_last}, et al." if len(authors) > 1 else first_last
+    ) if first_last else ""
+
+    title = ((msg.get("title") or [""]))[0]
+    journal = ((msg.get("container-title") or [""]))[0]
+    volume = msg.get("volume") or ""
+
+    date_parts = (((msg.get("published") or {}).get("date-parts") or [[]]))[0]
+    year = date_parts[0] if date_parts else None
+    month_num = date_parts[1] if len(date_parts) > 1 else None
+    month_str = MONTHS[month_num - 1] if month_num else ""
+    date_str = " ".join(filter(None, [month_str, str(year) if year else ""]))
+
+    article = msg.get("article-number") or msg.get("page") or ""
+    doi_url = f"https://doi.org/{doi}" if doi else url
+
+    # Format: "Author, et al. Title, Journal, Volume N, Month Year, article, doi_url."
+    # author_str already ends with "." for "et al." — don't add another period.
+    info_parts = ", ".join(
+        filter(None, [journal, f"Volume {volume}" if volume else "", date_str, article, doi_url])
+    )
+    if author_str and title:
+        citation = f"{author_str} {title}, {info_parts}."
+    elif author_str:
+        citation = f"{author_str} {info_parts}."
+    elif title:
+        citation = f"{title}, {info_parts}."
+    else:
+        citation = f"{info_parts}."
+
+    entry: dict = {"id": doi_url}
+    if doi:
+        entry["doi"] = doi
+    if author_str:
+        entry["author"] = author_str
+    if title:
+        entry["headline"] = title
+    if year:
+        entry["date_published"] = year
+    if citation:
+        entry["description"] = citation
+
+    return entry
+
+
+def build_entry(url: str, doi_cache: dict[str, dict | None]) -> dict:
+    """Build a BibliographyEntry for a URL, fetching CrossRef for DOIs."""
+    doi = extract_doi(url)
+    if not doi:
+        return {"id": url}
+
+    if doi not in doi_cache:
+        print(f"    CrossRef: {doi}")
+        doi_cache[doi] = fetch_crossref(doi)
+        time.sleep(0.25)  # polite rate limit
+
+    msg = doi_cache[doi]
+    if msg:
+        return build_entry_from_crossref(url, msg)
+
+    # CrossRef had no record — store bare entry
+    return {"id": url, "doi": doi}
+
+
 def main() -> None:
     records_dir = Path(__file__).parent.parent / "records" / "cell-type"
+    doi_cache: dict[str, dict | None] = {}
     updated = 0
-    skipped = 0
     no_match = 0
 
     for record_path in sorted(records_dir.glob("*/record.json")):
@@ -317,26 +448,29 @@ def main() -> None:
         source_file = record.get("provenance", {}).get("source_file", "")
         source_filename = Path(source_file).name if source_file else ""
 
+        record.pop("publications", None)
+
         if source_filename not in PUBLICATIONS:
             no_match += 1
+            with open(record_path, "w", encoding="utf-8") as f:
+                json.dump(record, f, indent=2, ensure_ascii=False)
+                f.write("\n")
             continue
 
         urls = PUBLICATIONS[source_filename]
+        print(f"\nProcessing {record_path.parent.name} ({len(urls)} entries)...")
 
-        if "publications" in record:
-            skipped += 1
-            continue
-
-        record["publications"] = [{"url": u} for u in urls]
+        entries = [build_entry(url, doi_cache) for url in urls]
+        record["bibliography"] = {"subject_of": entries}
 
         with open(record_path, "w", encoding="utf-8") as f:
             json.dump(record, f, indent=2, ensure_ascii=False)
             f.write("\n")
 
-        print(f"  updated: {record_path.parent.name} ({len(urls)} publications)")
         updated += 1
 
-    print(f"\nDone. Updated: {updated}  Already had pubs: {skipped}  No match: {no_match}")
+    unique_dois = sum(1 for v in doi_cache.values() if v)
+    print(f"\nDone. Updated: {updated}  No match: {no_match}  CrossRef DOIs fetched: {unique_dois}")
 
 
 if __name__ == "__main__":

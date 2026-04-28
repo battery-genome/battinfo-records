@@ -1,0 +1,68 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2wt9-yex3-w4st-ad7k",
+    "short_id": "2wt9ye",
+    "identifier": "cell-type:2wt9-yex3-w4st-ad7k",
+    "name": "SAMSUNG ICR18650-22F",
+    "model": "ICR18650-22F",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2009,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.15,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.75,
+      "unit": "V"
+    },
+    "continuous_charging_current": {
+      "value": 1.1,
+      "unit": "A"
+    },
+    "charging_time": {
+      "value": 3.0,
+      "unit": "h"
+    },
+    "cycle_life": {
+      "value": 299.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.0445,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0184,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__ICR18650-22F.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d3bff4548e4e3615ebf6e61a71a81e03f464f674dfafcd1b3c45ee8449f57e74"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet SAMSUNG__ICR18650-22F.pdf."
+  ]
+}

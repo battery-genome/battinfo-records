@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/53p2-wgdk-0d49-tqxx",
+    "short_id": "53p2wg",
+    "identifier": "cell-type:53p2-wgdk-0d49-tqxx",
+    "name": "PANASONIC NCR18500A",
+    "model": "NCR18500A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18500"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.0335,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__NCR18500A.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "5852847d7af8b75fec84479cf2ee4a878e43353958970ca51afe6ffbebaf5956"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

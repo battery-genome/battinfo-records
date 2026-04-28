@@ -1,0 +1,95 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/62h3-k5x7-8jen-1y8c",
+    "short_id": "62h3k5",
+    "identifier": "cell-type:62h3-k5x7-8jen-1y8c",
+    "name": "Eagle Picher Technologies LLC LP 32770",
+    "model": "LP 32770",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eagle Picher Technologies LLC"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NCA"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 55.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 11.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.68,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 11.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.034,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.1377,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.141,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eagle_Picher_Technologies_LLC_LP_32770.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "fc277b0d3c951e264148a635e910424f6f0ee7a09332e1ecafa7f43edf9a6efd",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.commatsci.2021.110343",
+        "doi": "10.1016/j.commatsci.2021.110343",
+        "type": "Article",
+        "headline": "Electrodeposition of lithium metal on lithium anode surface, a simulation study by: Kinetic Monte Carlo-embedded atom method",
+        "author": "Behnam Ghalami Choobar and Hamid Modarress and Rouein Halladj and Sepideh Amjad-Iranagh",
+        "date_published": 2021
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

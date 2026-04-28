@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.electacta.2020.137487"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.electacta.2020.137487",
+        "doi": "10.1016/j.electacta.2020.137487",
+        "author": "Cabañero, et al.",
+        "headline": "In-operando Raman study of lithium plating on graphite electrodes of lithium ion batteries",
+        "date_published": 2021,
+        "description": "Cabañero, et al. In-operando Raman study of lithium plating on graphite electrodes of lithium ion batteries, Electrochimica Acta, Volume 374, April 2021, 137487, https://doi.org/10.1016/j.electacta.2020.137487."
+      }
+    ]
+  }
 }

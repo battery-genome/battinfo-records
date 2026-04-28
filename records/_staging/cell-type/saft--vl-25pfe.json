@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/33ws-8c1k-988c-pp52",
+    "short_id": "33ws8c",
+    "identifier": "cell-type:33ws-8c1k-988c-pp52",
+    "name": "Saft VL 25PFE",
+    "model": "VL 25PFE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 25.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 25.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.94,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 5.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.195,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.054,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_VL_25PFE.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "5a421796f16ca7499036174f1191de52865f6643795705efaea763dfdf164bbb",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ztjd-ksav-g8ye-n5ew",
+    "short_id": "ztjdks",
+    "identifier": "cell-type:ztjd-ksav-g8ye-n5ew",
+    "name": "Yinglong LithiumTitanate 33Ah",
+    "model": "LithiumTitanate 33Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Yinglong"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LTO"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 33.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 16000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 2.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 1.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 6.6,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.245,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 6.6,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.205,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.021,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Yinglong_LithiumTitanate_33Ah.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "07e21ff44a90fd7632aa432667771e9b3cff64557f2c81507593b47378a076af",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Skipped Length: numeric value missing or NaN.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/snxr-p3mr-tges-03ys",
+    "short_id": "snxrp3",
+    "identifier": "cell-type:snxr-p3mr-tges-03ys",
+    "name": "HINA NACR32140-MP10",
+    "model": "NACR32140-MP10",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "HINA"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R32140"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 10.0,
+      "unit": "Ah"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.005,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/HINA__NACR32140-MP10.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "342f906b3ed0fd4c933a6c08bc31bd77c67dd87060fde0c8bce883ca410c72e1"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet HINA__NACR32140-MP10.pdf."
+  ]
+}

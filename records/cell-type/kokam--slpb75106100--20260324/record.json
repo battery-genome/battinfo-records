@@ -84,39 +84,96 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.est.2021.103669"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.applthermaleng.2022.118530"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.ijheatmasstransfer.2021.121918"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2012.03.015"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.104585"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2021.230034"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/ab8f5a"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/ab90ac"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/ab6985"
-    },
-    {
-      "url": "https://doi.org/10.1149/2.0191912jes"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/ac79d3"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2021.103669",
+        "doi": "10.1016/j.est.2021.103669",
+        "author": "Chen, et al.",
+        "headline": "Peak-tracking method to quantify degradation modes in lithium-ion batteries via differential voltage and incremental capacity",
+        "date_published": 2022,
+        "description": "Chen, et al. Peak-tracking method to quantify degradation modes in lithium-ion batteries via differential voltage and incremental capacity, Journal of Energy Storage, Volume 45, January 2022, 103669, https://doi.org/10.1016/j.est.2021.103669."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.applthermaleng.2022.118530",
+        "doi": "10.1016/j.applthermaleng.2022.118530",
+        "author": "Gungor, et al.",
+        "headline": "Thermal and electrical characterization of an electric vehicle battery cell, an experimental investigation",
+        "date_published": 2022,
+        "description": "Gungor, et al. Thermal and electrical characterization of an electric vehicle battery cell, an experimental investigation, Applied Thermal Engineering, Volume 212, July 2022, 118530, https://doi.org/10.1016/j.applthermaleng.2022.118530."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.ijheatmasstransfer.2021.121918",
+        "doi": "10.1016/j.ijheatmasstransfer.2021.121918",
+        "author": "Gungor, et al.",
+        "headline": "Canopy-to-canopy liquid cooling for the thermal management of lithium-ion batteries, a constructal approach",
+        "date_published": 2022,
+        "description": "Gungor, et al. Canopy-to-canopy liquid cooling for the thermal management of lithium-ion batteries, a constructal approach, International Journal of Heat and Mass Transfer, Volume 182, January 2022, 121918, https://doi.org/10.1016/j.ijheatmasstransfer.2021.121918."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2012.03.015",
+        "doi": "10.1016/j.jpowsour.2012.03.015",
+        "author": "Kim, et al.",
+        "headline": "Fail-safe design for large capacity lithium-ion battery systems",
+        "date_published": 2012,
+        "description": "Kim, et al. Fail-safe design for large capacity lithium-ion battery systems, Journal of Power Sources, Volume 210, July 2012, 243-253, https://doi.org/10.1016/j.jpowsour.2012.03.015."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.104585",
+        "doi": "10.1016/j.est.2022.104585",
+        "author": "Huang, et al.",
+        "headline": "Quantitative characterisation of the layered structure within lithium-ion batteries using ultrasonic resonance",
+        "date_published": 2022,
+        "description": "Huang, et al. Quantitative characterisation of the layered structure within lithium-ion batteries using ultrasonic resonance, Journal of Energy Storage, Volume 50, June 2022, 104585, https://doi.org/10.1016/j.est.2022.104585."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2021.230034",
+        "doi": "10.1016/j.jpowsour.2021.230034",
+        "author": "Li, et al.",
+        "headline": "Physics-informed neural networks for electrode-level state estimation in lithium-ion batteries",
+        "date_published": 2021,
+        "description": "Li, et al. Physics-informed neural networks for electrode-level state estimation in lithium-ion batteries, Journal of Power Sources, Volume 506, September 2021, 230034, https://doi.org/10.1016/j.jpowsour.2021.230034."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/ab8f5a",
+        "doi": "10.1149/1945-7111/ab8f5a",
+        "author": "Ringbeck, et al.",
+        "headline": "Identification of Lithium Plating in Lithium-Ion Batteries by Electrical and Optical Methods",
+        "date_published": 2020,
+        "description": "Ringbeck, et al. Identification of Lithium Plating in Lithium-Ion Batteries by Electrical and Optical Methods, Journal of The Electrochemical Society, Volume 167, January 2020, 090536, https://doi.org/10.1149/1945-7111/ab8f5a."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/ab90ac",
+        "doi": "10.1149/1945-7111/ab90ac",
+        "author": "O’Kane, et al.",
+        "headline": "Physical Origin of the Differential Voltage Minimum Associated with Lithium Plating in Li-Ion Batteries",
+        "date_published": 2020,
+        "description": "O’Kane, et al. Physical Origin of the Differential Voltage Minimum Associated with Lithium Plating in Li-Ion Batteries, Journal of The Electrochemical Society, Volume 167, January 2020, 090540, https://doi.org/10.1149/1945-7111/ab90ac."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/ab6985",
+        "doi": "10.1149/1945-7111/ab6985",
+        "author": "Hales, et al.",
+        "headline": "The Surface Cell Cooling Coefficient: A Standard to Define Heat Rejection from Lithium Ion Battery Pouch Cells",
+        "date_published": 2020,
+        "description": "Hales, et al. The Surface Cell Cooling Coefficient: A Standard to Define Heat Rejection from Lithium Ion Battery Pouch Cells, Journal of The Electrochemical Society, Volume 167, January 2020, 020524, https://doi.org/10.1149/1945-7111/ab6985."
+      },
+      {
+        "id": "https://doi.org/10.1149/2.0191912jes",
+        "doi": "10.1149/2.0191912jes",
+        "author": "Hales, et al.",
+        "headline": "The Cell Cooling Coefficient: A Standard to Define Heat Rejection from Lithium-Ion Batteries",
+        "date_published": 2019,
+        "description": "Hales, et al. The Cell Cooling Coefficient: A Standard to Define Heat Rejection from Lithium-Ion Batteries, Journal of The Electrochemical Society, Volume 166, 2019, A2383-A2395, https://doi.org/10.1149/2.0191912jes."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/ac79d3",
+        "doi": "10.1149/1945-7111/ac79d3",
+        "author": "Tomaszewska, et al.",
+        "headline": "The Effects of Temperature and Cell Parameters on Lithium-Ion Battery Fast Charging Protocols: A Model-Driven Investigation",
+        "date_published": 2022,
+        "description": "Tomaszewska, et al. The Effects of Temperature and Cell Parameters on Lithium-Ion Battery Fast Charging Protocols: A Model-Driven Investigation, Journal of The Electrochemical Society, Volume 169, June 2022, 060542, https://doi.org/10.1149/1945-7111/ac79d3."
+      }
+    ]
+  }
 }

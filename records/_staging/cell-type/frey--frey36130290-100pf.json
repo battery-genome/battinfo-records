@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/py8y-76xs-mt7q-1d43",
+    "short_id": "py8y76",
+    "identifier": "cell-type:py8y-76xs-mt7q-1d43",
+    "name": "FREY FREY36130290-100PF",
+    "model": "FREY36130290-100PF",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "FREY"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/FREY__FREY36130290-100PF.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "c23b8b34a0c016e30a33a1e9240c1b5b41aa16618fed89528a58b600973c2979"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

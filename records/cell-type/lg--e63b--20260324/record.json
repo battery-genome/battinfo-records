@@ -84,15 +84,27 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1149/2.0501913jes"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.105676"
-    },
-    {
-      "url": "https://www.semanticscholar.org/paper/4af78e654e570c4a68fc66ff8d41111af3652cd0"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1149/2.0501913jes",
+        "doi": "10.1149/2.0501913jes",
+        "author": "Zhao, et al.",
+        "headline": "How to Cool Lithium Ion Batteries: Optimising Cell Design using a Thermally Coupled Model",
+        "date_published": 2019,
+        "description": "Zhao, et al. How to Cool Lithium Ion Batteries: Optimising Cell Design using a Thermally Coupled Model, Journal of The Electrochemical Society, Volume 166, 2019, A2849-A2859, https://doi.org/10.1149/2.0501913jes."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105676",
+        "doi": "10.1016/j.est.2022.105676",
+        "author": "Saldaña, et al.",
+        "headline": "Empirical calendar ageing model for electric vehicles and energy storage systems batteries",
+        "date_published": 2022,
+        "description": "Saldaña, et al. Empirical calendar ageing model for electric vehicles and energy storage systems batteries, Journal of Energy Storage, Volume 55, November 2022, 105676, https://doi.org/10.1016/j.est.2022.105676."
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/4af78e654e570c4a68fc66ff8d41111af3652cd0"
+      }
+    ]
+  }
 }

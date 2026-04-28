@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/90r7-ged3-f4th-hxf9",
+    "short_id": "90r7ge",
+    "identifier": "cell-type:90r7-ged3-f4th-hxf9",
+    "name": "KODAK LR41",
+    "model": "LR41",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR41.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "03d039288174050487bb18fbcfd1ed6590b5237da6664ec077d8152bee924d81"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

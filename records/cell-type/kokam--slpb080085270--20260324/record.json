@@ -84,9 +84,11 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://www.semanticscholar.org/paper/47f0a69588a997c00a57c4908c3132b06e440779"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://www.semanticscholar.org/paper/47f0a69588a997c00a57c4908c3132b06e440779"
+      }
+    ]
+  }
 }

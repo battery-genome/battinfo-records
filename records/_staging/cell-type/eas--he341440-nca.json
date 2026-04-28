@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/f1x9-nczy-xgct-et0m",
+    "short_id": "f1x9nc",
+    "identifier": "cell-type:f1x9-nczy-xgct-et0m",
+    "name": "EAS HE341440-NCA",
+    "model": "HE341440-NCA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EAS"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EAS__HE341440-NCA.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "6724409b76631373d33a92a9d49bc4634015e9b4ae28048964be20ab41dc63ba"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

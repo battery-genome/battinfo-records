@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/xs2s-rjc7-gyjs-rfsy",
+    "short_id": "xs2srj",
+    "identifier": "bdc:bdc_000004",
+    "name": "AA Portable Power Corp PL-325085-2C performance dataset",
+    "description": "Performance dataset for 144 AA Portable Power Corp PL-325085-2C pouch cells with discharge-capacity measurements curated by the University of Maryland.",
+    "access_url": "https://web.calce.umd.edu/batteries/data/",
+    "keywords": [
+      "battery_data_commons",
+      "performance_data",
+      "battery_cell",
+      "pouch_case",
+      "aa_portable_power_corp",
+      "pl-325085-2c",
+      "lithium_cobalt_oxide",
+      "carbon"
+    ],
+    "creators": [
+      {
+        "type": "Organization",
+        "name": "University of Maryland"
+      }
+    ],
+    "citations": [
+      {
+        "type": "Article",
+        "url": "https://doi.org/10.1016/j.ijepes.2018.12.016",
+        "doi": "10.1016/j.ijepes.2018.12.016",
+        "citation_key": "saxena2019accelerated"
+      }
+    ],
+    "additional_type": [
+      "time_series_dataset"
+    ],
+    "measurement_techniques": [
+      "cycling"
+    ],
+    "measurement_methods": [
+      "galvanostatic_cycling"
+    ],
+    "variable_measured": [
+      {
+        "name": "discharge_capacity",
+        "unit_text": "Ah"
+      }
+    ],
+    "is_accessible_for_free": true,
+    "in_language": "en",
+    "published_at": 1546300800,
+    "included_in_data_catalog": {
+      "type": "DataCatalog",
+      "name": "Battery Data Commons"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_name": "Battery Data Commons",
+    "source_url": "https://web.calce.umd.edu/batteries/data/",
+    "source_file": "shiyun/BatteryDataCommons/canonical/datasets/bdc_000004.json",
+    "source_sheet": "Performance data",
+    "source_workbook_sha256": "76B4DA23BC1F307EE98881529CF00F20BD8D0EBC3CD52BE7490B2C20AE963128",
+    "source_dataset_key": "bdc_000004",
+    "ingest_status": "needs_review",
+    "quality_flags": [
+      "missing_license"
+    ],
+    "retrieved_at": 1774310400,
+    "curated_by": "bdc_to_battinfo_dataset_staging",
+    "workflow_version": "bdc-v2026.02.11__draft-2026-03-24",
+    "citation": "https://web.calce.umd.edu/batteries/data/"
+  },
+  "notes": [
+    "Derived from shiyun/BatteryDataCommons canonical dataset bdc_000004.",
+    "License is not stated in the BDC source record.",
+    "Associated code: https://github.com/wang-fujin/Battery-dataset-preprocessing-code-library",
+    "Associated code: https://github.com/nicolet5/DiffCapAnalyzer"
+  ]
+}

@@ -41,7 +41,7 @@
       "unit": "kg"
     },
     "diameter": {
-      "value": 5E-05,
+      "value": 5e-05,
       "unit": "m"
     },
     "height": {

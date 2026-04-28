@@ -1,0 +1,129 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/r9k0-797w-jrgn-hhgg",
+    "short_id": "r9k079",
+    "identifier": "cell-type:r9k0-797w-jrgn-hhgg",
+    "name": "Saft MP176065xtd",
+    "model": "MP176065xtd",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Saft"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.6,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.18,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.136,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.18,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0605,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.0687,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Saft_MP176065xtd.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "462b9e9f139c2ab29c4a2de0ae603b42268ef923ed27e805f9c038221879c4dd",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1051/e3sconf/20171606001",
+        "doi": "10.1051/e3sconf/20171606001",
+        "type": "Article",
+        "headline": "Battery for Extended Temperature Range Exomars Rover Mission",
+        "author": "Steve Amos and Paul Brochard",
+        "date_published": 2017
+      },
+      {
+        "id": "https://doi.org/10.1109/acc.2010.5530710",
+        "doi": "10.1109/acc.2010.5530710",
+        "type": "Article",
+        "headline": "Cell equalization in battery stacks through State Of Charge estimation polling",
+        "author": "C Speltino and A Stefanopoulou and G Fiengo",
+        "date_published": 2010
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/18b337d7e53fa2e7de07c3fab3c2059e208b8301"
+      },
+      {
+        "id": "https://doi.org/10.1051/e3sconf/20171606001",
+        "doi": "10.1051/e3sconf/20171606001",
+        "type": "Article",
+        "headline": "Battery for Extended Temperature Range Exomars Rover Mission",
+        "author": "Steve Amos and Paul Brochard",
+        "date_published": 2017
+      },
+      {
+        "id": "https://doi.org/10.1109/ACC.2010.5530710",
+        "doi": "10.1109/ACC.2010.5530710",
+        "type": "Article",
+        "headline": "Cell equalization in battery stacks through State Of Charge estimation polling",
+        "author": "C Speltino and A Stefanopoulou and G Fiengo",
+        "date_published": 2010
+      },
+      {
+        "id": "https://doi.org/10.1051/E3SCONF/20171606001",
+        "doi": "10.1051/E3SCONF/20171606001",
+        "type": "Article",
+        "headline": "Battery for Extended Temperature Range Exomars Rover Mission",
+        "author": "Steve Amos and Paul Brochard",
+        "date_published": 2017
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

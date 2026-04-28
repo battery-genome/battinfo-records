@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/es1v-1h4e-wrse-t6wm",
+    "short_id": "es1v1h",
+    "identifier": "cell-type:es1v-1h4e-wrse-t6wm",
+    "name": "Gaia HP 602030",
+    "model": "HP 602030",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Gaia"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NCA"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 45.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 90.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.5,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 45.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.232,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.06,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Gaia_HP_602030.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "996bd045f01ac5c49a5e0a4c21b07370d0f2bac0f700812951f94092cb7940d7",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2012.04.055",
+        "doi": "10.1016/j.jpowsour.2012.04.055",
+        "type": "Article",
+        "headline": "Mechanical testing and macro-mechanical finite element simulation of the deformation, fracture, and short circuit initiation of cylindrical Lithium ion battery cells",
+        "author": "Lars Greve and Clemens Fehrenbach",
+        "date_published": 2012
+      },
+      {
+        "id": "https://doi.org/10.1016/j.engfailanal.2015.03.025",
+        "doi": "10.1016/j.engfailanal.2015.03.025",
+        "type": "Article",
+        "headline": "Dynamic mechanical integrity of cylindrical lithium-ion battery cell upon crushing",
+        "author": "Jun Xu and Binghe Liu and Lubing Wang and Shi Shang",
+        "date_published": 2015
+      }
+    ]
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

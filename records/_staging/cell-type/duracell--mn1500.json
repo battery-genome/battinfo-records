@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/y51q-91pk-x3m9-crxy",
+    "short_id": "y51q91",
+    "identifier": "cell-type:y51q-91pk-x3m9-crxy",
+    "name": "DURACELL MN1500",
+    "model": "MN1500",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "DURACELL"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/DURACELL__MN1500.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "1d819c5eea6666b704f89f7f25a0e9c4bc469f5f6cbf6ce8dc6d30b9c29861fb"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

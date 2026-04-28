@@ -1,0 +1,67 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/4reg-0why-5ttp-nk6e",
+    "short_id": "4reg0w",
+    "identifier": "cell-type:4reg-0why-5ttp-nk6e",
+    "name": "SAMSUNG INR21700-33J",
+    "model": "INR21700-33J",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2016,
+    "size_code": "R21700"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 3.27,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 3.27,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.56,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 5.0,
+      "unit": "mohm"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "mass": {
+      "value": 0.0015,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0211,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__INR21700-33J.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "3220424bb0a44e6abd0ae298061b9dcb02680851cb887455b0cadc7b8365072c"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

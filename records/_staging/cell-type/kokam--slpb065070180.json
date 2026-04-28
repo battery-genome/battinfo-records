@@ -1,0 +1,113 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2fep-zhyv-40eh-hwj7",
+    "short_id": "2fepzh",
+    "identifier": "cell-type:2fep-zhyv-40eh-hwj7",
+    "name": "Kokam SLPB065070180",
+    "model": "SLPB065070180",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 11.6,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 3000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.67,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.16,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.175,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.16,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0066,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.084,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.185,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB065070180.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "b1f7634485b21c5cba4a12b197c030a82a38049b8da79c52398df6f73ce01047",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2023.233295",
+        "doi": "10.1016/j.jpowsour.2023.233295",
+        "type": "Article",
+        "headline": "In situ tomography of lithium-ion battery cells enabled by scanning acoustic imaging",
+        "author": "David Wasylowski and Sven Neubauer and Matthias Faber and Heinrich Ditler and Morian Sonnet and Alexander Bl\u00f6meke and Philipp Dechent and Alexander Gitis and Dirk Uwe Sauer",
+        "date_published": 2023
+      },
+      {
+        "id": "https://doi.org/10.1002/batt.202200518",
+        "doi": "10.1002/batt.202200518",
+        "type": "Article",
+        "headline": "Interplay between Elastic and Electrochemical Properties during Active Material Transitions and Aging of a Lithium\u2010Ion Battery",
+        "author": "Simon Feiler and Philip Daubinger and Lukas Gold and Sarah Hartmann and Guinevere A. Giffin",
+        "description": "<jats:title>Abstract</jats:title><jats:p>The interplay between the internal mechanical properties and external mechanical conditions of a battery cell, e.\u2009g., Young's modulus and thickness change, has a crucial impact on the cell performance and lifetime, and thus, needs to be fully understood. In this work, 12\u2005Ah lithium\u2010ion battery pouch cells were studied during cycling and aging by non\u2010invasive operando ultrasonic and dilation measurements. The effective Young's modulus increases and the thickness varies the most within a single cycle during the graphite transition from stage\u20051L to 4, at the beginning of the 2 to 1\u2005stage transition and at the phase transition of the nickel\u2010rich NCM from H2 to H3. After 1000\u2005cycles of aging, the overall effective Young's modulus of the lithium\u2010ion battery decreases by \u223c11\u2009%\u201312\u2009% and the cell thickness increases irreversibly by \u223c3\u2009%\u20134\u2009%, which is mostly related to a thicker and possibly softer, more porous solid electrolyte interphase layer.</jats:p>",
+        "date_published": 2023
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/acdd1e",
+        "doi": "10.1149/1945-7111/acdd1e",
+        "type": "Article",
+        "headline": "Influence of Low Pressures on the Performance of Lithium Ion Batteries for Airplane Applications",
+        "author": "P. Hoenicke and R. Khatri and C. Bauer and M. Osama and J. Kallo and C. Willich",
+        "description": "<jats:p>The electrification of aircrafts is a recent trend in aviation and with it the use of batteries as energy carriers at high altitudes. These batteries can be exposed to low pressures and it is crucial to understand the influence of low pressures on the battery behavior. In this study, commercially available lithium ion batteries were examined experimentally at low pressures down to 25 kPa. Discharge curves and impedance measurements were performed at 23 \u00b0C for each pressure level. Cylindrical Lithium Nickel-Cobalt-Aluminum Oxide (NCA) and Iron-Phosphate (LFP) cells did not show any pressure influence, while Lithium Nickel-Manganese-Cobalt Oxide (NMC) pouch cells showed some performance variation with reduced pressure. The ohmic resistance increased by around 0.1 m\u03a9 per 25 kPa and at 25 kPa the charge transfer impedance increased for low SOCs. The results show that no strong change in performance is to be expected for low pressure applications in airplanes, however further research is needed with respect to long term effects, thermal management and safety.</jats:p>",
+        "date_published": 2023
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

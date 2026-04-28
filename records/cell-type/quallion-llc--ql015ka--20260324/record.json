@@ -83,9 +83,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/B978-0-444-59513-3.00014-5"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2016.06.005",
+        "doi": "10.1016/j.est.2016.06.005",
+        "author": "Sindhuja, et al.",
+        "headline": "Equivalent circuit modeling of microbial fuel cells using impedance spectroscopy",
+        "date_published": 2016,
+        "description": "Sindhuja, et al. Equivalent circuit modeling of microbial fuel cells using impedance spectroscopy, Journal of Energy Storage, Volume 7, August 2016, 136-146, https://doi.org/10.1016/j.est.2016.06.005."
+      }
+    ]
+  }
 }

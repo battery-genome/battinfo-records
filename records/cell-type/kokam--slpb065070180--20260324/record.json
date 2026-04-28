@@ -84,15 +84,32 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2023.233295"
-    },
-    {
-      "url": "https://doi.org/10.1002/batt.202200518"
-    },
-    {
-      "url": "https://doi.org/10.1149/1945-7111/acdd1e"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2023.233295",
+        "doi": "10.1016/j.jpowsour.2023.233295",
+        "author": "Wasylowski, et al.",
+        "headline": "In situ tomography of lithium-ion battery cells enabled by scanning acoustic imaging",
+        "date_published": 2023,
+        "description": "Wasylowski, et al. In situ tomography of lithium-ion battery cells enabled by scanning acoustic imaging, Journal of Power Sources, Volume 580, October 2023, 233295, https://doi.org/10.1016/j.jpowsour.2023.233295."
+      },
+      {
+        "id": "https://doi.org/10.1002/batt.202200518",
+        "doi": "10.1002/batt.202200518",
+        "author": "Feiler, et al.",
+        "headline": "Interplay between Elastic and Electrochemical Properties during Active Material Transitions and Aging of a Lithium‐Ion Battery",
+        "date_published": 2023,
+        "description": "Feiler, et al. Interplay between Elastic and Electrochemical Properties during Active Material Transitions and Aging of a Lithium‐Ion Battery, Batteries &amp; Supercaps, Volume 6, February 2023, e202200518, https://doi.org/10.1002/batt.202200518."
+      },
+      {
+        "id": "https://doi.org/10.1149/1945-7111/acdd1e",
+        "doi": "10.1149/1945-7111/acdd1e",
+        "author": "Hoenicke, et al.",
+        "headline": "Influence of Low Pressures on the Performance of Lithium Ion Batteries for Airplane Applications",
+        "date_published": 2023,
+        "description": "Hoenicke, et al. Influence of Low Pressures on the Performance of Lithium Ion Batteries for Airplane Applications, Journal of The Electrochemical Society, Volume 170, June 2023, 060541, https://doi.org/10.1149/1945-7111/acdd1e."
+      }
+    ]
+  }
 }

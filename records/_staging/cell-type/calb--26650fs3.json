@@ -1,0 +1,77 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/kvtw-a3sy-68yx-q8ak",
+    "short_id": "kvtwa3",
+    "identifier": "cell-type:kvtw-a3sy-68yx-q8ak",
+    "name": "CALB 26650FS3",
+    "model": "26650FS3",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "CALB"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.6,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.8,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.089,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.8,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.065,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/CALB_26650FS3.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "29288e5c69352db05d5a83ec0fc378f4cdfe871834ecae9a1126a0552d7c5aec",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Skipped Width: numeric value missing or NaN.",
+    "Skipped Length: numeric value missing or NaN.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

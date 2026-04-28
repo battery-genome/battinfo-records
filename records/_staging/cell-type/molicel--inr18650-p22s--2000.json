@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/1t4y-5jfz-8m7q-nvfe",
+    "short_id": "1t4y5j",
+    "identifier": "cell-type:1t4y-5jfz-8m7q-nvfe",
+    "name": "Molicel INR18650-P22S",
+    "model": "INR18650-P22S",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2000,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.049,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Molicel__INR18650-P22S.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "12108efd8e4f2b3540484a221d45ea5d19df9813c79fde634bba1802f1b7f997"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

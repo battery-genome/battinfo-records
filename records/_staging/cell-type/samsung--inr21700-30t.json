@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/5par-raa3-e4dn-1j4c",
+    "short_id": "5parra",
+    "identifier": "cell-type:5par-raa3-e4dn-1j4c",
+    "name": "Samsung INR21700-30T",
+    "model": "INR21700-30T",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Samsung"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 3.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 250.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.6,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.069,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.5,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.0703,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.02122,
+      "unit": "m"
+    },
+    "nominal_capacity": {
+      "value": 2.95,
+      "unit": "Ah"
+    },
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 60.0,
+      "unit": "min"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Samsung_INR21700-30T.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "f02a67c483299e780cf78e583bd7a6fbcfb470db485ed6913e0b781d95ecd67f",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1149/1945-7111/ace1a7",
+        "doi": "10.1149/1945-7111/ace1a7",
+        "type": "Article",
+        "headline": "Full Parameterization Study of a High-Energy and High-Power Li-Ion Cell for Physicochemical Models",
+        "author": "Christina Schmitt and Martina Gerle and Dennis Kopljar and K. Andreas Friedrich",
+        "description": "<jats:p>For physicochemical modelling of lithium ion batteries, an extensive parametrization is necessary. These parameters need to be derived cell specifically as they vary with cell design. In this study, two cells from the same manufacturer are investigated which are optimized for high power and high energy applications. After opening the cells under argon atmosphere, the battery materials are extracted to conduct various chemical and physical measurements to define the active material type, microstructure, conductivity and mass loading of the electrodes. Furthermore, laboratory cells were built from the extracted materials to evaluate tortuosity and exchange current density by electrochemical impedance spectroscopy, open circuit voltages and solid diffusion coefficient by galvanostatic intermittent titration technique (GITT). The differences and similarities of these parameters for both cell types are discussed and compared to literature. Main differences are the electrode area, thickness, porosity, and thus, mass loading and areal capacity of the electrodes. Both cells have a NCA cathode, but only the high energy cell has a blend anode consisting of graphite and Si/SiO<jats:sub>x</jats:sub> whereas the anode active material of the high power cell is only made of graphite. The derived parameters are finally used for the parameterization of a P2D model.</jats:p>",
+        "date_published": 2023
+      },
+      {
+        "id": "https://doi.org/10.3390/en16010211",
+        "doi": "10.3390/en16010211",
+        "type": "Article",
+        "headline": "An Experimental and Numerical Study on Charged 21700 Lithium-Ion Battery Cells under Dynamic and High Mechanical Loads",
+        "author": "Marian Bulla and Christopher Schmandt and Stefan Kolling and Thomas Kisters and Elham Sahraei",
+        "description": "<jats:p>The need for higher capacity battery cells has increased significantly during the past years. Therefore, the subject of this study is to investigate the behavior of high performance 21700 Lithium-Ion cylindric battery cells under several abuse conditions, represented by high mechanical loads with different velocities and states of charge (SoC), and to develop a finite element analysis (FEA) model, using the OpenRadioss\u2019 explicit solver capabilities. The present study is focused on the investigation of the behavior of these cells under high mechanical loads with different loading velocities and different states of charge. The aim of the study is to provide a tool to predict the point of an internal short circuit in FEA, with a very good approximation. Experiments were completed using a hydraulic flat-compression test, set up at four different states of charge, 40%, 60%, 80% and 100%, and three different loading velocities of 10 mms\u22121, 100 mms\u22121 and 1000 mms\u22121. A homogenized FEA model is developed to predict the internal damage of the separator, which can lead to a short circuit with a possible thermal runaway under abusive load conditions. The present model, in combination with well identified material and fracture parameters, succeeded in the prediction of the mechanical behavior at various states of charge and mechanical loading conditions; it can also be used for further crashworthiness analysis within a full-car FEA model. This accurate cell model will be the first building block to optimize the protective structures of batteries in electric vehicles, and reduce their weight through a deeper understanding of their overall behavior during the different crash cases.</jats:p>",
+        "date_published": 2022
+      },
+      {
+        "id": "https://doi.org/10.3390/en15186803",
+        "doi": "10.3390/en15186803",
+        "type": "Article",
+        "headline": "Open-Circuit Voltage Models for Battery Management Systems: A Review",
+        "author": "Prarthana Pillai and Sneha Sundaresan and Pradeep Kumar and Krishna R. Pattipati and Balakumar Balasingam",
+        "description": "<jats:p>A battery management system (BMS) plays a crucial role to ensure the safety, efficiency, and reliability of a rechargeable Li-ion battery pack. State of charge (SOC) estimation is an important operation within a BMS. Estimated SOC is required in several BMS operations, such as remaining power and mileage estimation, battery capacity estimation, charge termination, and cell balancing. The open-circuit voltage (OCV) look-up-based SOC estimation approach is widely used in battery management systems. For OCV lookup, the OCV\u2013SOC characteristic is empirically measured and parameterized a priori. The literature shows numerous OCV\u2013SOC models and approaches to characterize them and use them in SOC estimation. However, the selection of an OCV\u2013SOC model must consider several factors: (i) Modeling errors due to approximations, age/temperature effects, and cell-to-cell variations; (ii) Likelihood and severity of errors when the OCV\u2013SOC parameters are rounded; (iii) Computing system requirements to store and process OCV parameters; and (iv) The required computational complexity of real-time OCV lookup algorithms. This paper presents a review of existing OCV\u2013SOC models and proposes a systematic approach to select a suitable OCV\u2013SOC for implementation based on various constraints faced by a BMS designer in practical application.</jats:p>",
+        "date_published": 2022
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports rated_capacity=2.9 Ah but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports charging_voltage=8.2 V but existing value was kept.",
+    "Datasheet SAMSUNG__INR21700-30T.pdf reports continuous_discharging_current=1.8 A but existing value was kept.",
+    "Supplemented from datasheet SAMSUNG__INR21700-30T.pdf."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/b3fy-z439-8sx1-c522",
+    "short_id": "b3fyz4",
+    "identifier": "cell-type:b3fy-z439-8sx1-c522",
+    "name": "ENAX ENW-LM08",
+    "model": "ENW-LM08",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENAX"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 8.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 400.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.8,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.66,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.22,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.66,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0055,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.16,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.161,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ENAX_ENW-LM08.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "1b09f16b707495c4ab3edc3e249a3f5bc631d3eaacabe7443d3c5ea8b234af68",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

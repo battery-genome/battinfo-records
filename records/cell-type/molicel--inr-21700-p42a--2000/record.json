@@ -82,21 +82,48 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2022.232068"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2022.232214"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries8020017"
-    },
-    {
-      "url": "https://doi.org/10.3390/app13084681"
-    },
-    {
-      "url": "https://doi.org/10.3390/batteries8080076"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.232068",
+        "doi": "10.1016/j.jpowsour.2022.232068",
+        "author": "Yang, et al.",
+        "headline": "Numerical and experimental study on thermal management of NCM-21700 Li-ion battery",
+        "date_published": 2022,
+        "description": "Yang, et al. Numerical and experimental study on thermal management of NCM-21700 Li-ion battery, Journal of Power Sources, Volume 548, November 2022, 232068, https://doi.org/10.1016/j.jpowsour.2022.232068."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.232214",
+        "doi": "10.1016/j.jpowsour.2022.232214",
+        "author": "Sahin, et al.",
+        "headline": "Thermal management system for air-cooled battery packs with flow-disturbing structures",
+        "date_published": 2022,
+        "description": "Sahin, et al. Thermal management system for air-cooled battery packs with flow-disturbing structures, Journal of Power Sources, Volume 551, December 2022, 232214, https://doi.org/10.1016/j.jpowsour.2022.232214."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8020017",
+        "doi": "10.3390/batteries8020017",
+        "author": "Richards, et al.",
+        "headline": "Effect of Internal AC Heating on the Temperature Homogeneity of Different Size Battery Cells",
+        "date_published": 2022,
+        "description": "Richards, et al. Effect of Internal AC Heating on the Temperature Homogeneity of Different Size Battery Cells, Batteries, Volume 8, February 2022, 17, https://doi.org/10.3390/batteries8020017."
+      },
+      {
+        "id": "https://doi.org/10.3390/app13084681",
+        "doi": "10.3390/app13084681",
+        "author": "Connor, et al.",
+        "headline": "Adaptive Thermal Control of Cell Groups to Extend Cycle Life of Lithium-Ion Battery Packs",
+        "date_published": 2023,
+        "description": "Connor, et al. Adaptive Thermal Control of Cell Groups to Extend Cycle Life of Lithium-Ion Battery Packs, Applied Sciences, Volume 13, April 2023, 4681, https://doi.org/10.3390/app13084681."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8080076",
+        "doi": "10.3390/batteries8080076",
+        "author": "Falcone, et al.",
+        "headline": "Life Cycle Assessment of a Lithium-Ion Battery Pack Unit Made of Cylindrical Cells",
+        "date_published": 2022,
+        "description": "Falcone, et al. Life Cycle Assessment of a Lithium-Ion Battery Pack Unit Made of Cylindrical Cells, Batteries, Volume 8, July 2022, 76, https://doi.org/10.3390/batteries8080076."
+      }
+    ]
+  }
 }

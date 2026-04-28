@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/z6xk-0dza-f7hq-8j7g",
+    "short_id": "z6xk0d",
+    "identifier": "cell-type:z6xk-0dza-f7hq-8j7g",
+    "name": "Amprius_Wuxi Lead E485795CH",
+    "model": "E485795CH",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Amprius_Wuxi Lead"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.85,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.4,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.98,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 65,
+      "unit": "g"
+    },
+    "continuous_charging_current": {
+      "value": 1.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 4.9,
+      "unit": "mm"
+    },
+    "width": {
+      "value": 57.5,
+      "unit": "m."
+    },
+    "length": {
+      "value": 96.5,
+      "unit": "mm"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Amprius_Wuxi_Lead_E485795CH.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "f14a06502528f1499b574642da331dc45a45f22efe8c8dbec381720e42073253",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

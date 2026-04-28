@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/0f58-w4dg-p2cs-4217",
+    "short_id": "0f58w4",
+    "identifier": "cell-type:0f58-w4dg-p2cs-4217",
+    "name": "EVE Energy LF280-72174",
+    "model": "LF280-72174",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE Energy"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 280.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 140.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 5.22,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 140.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.072,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.174,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.205,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/EVE_Energy_LF280-72174.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "9913691a34e575e3fe4a29456c71d0c8ad5cfbe5c5b7301c5563d6d1051de943",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

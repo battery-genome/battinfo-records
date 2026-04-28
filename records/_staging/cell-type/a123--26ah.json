@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gej0-sem5-34mg-y980",
+    "short_id": "gej0se",
+    "identifier": "cell-type:gej0-sem5-34mg-y980",
+    "name": "A123 26AH",
+    "model": "26AH",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "A123"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 26.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 5.2,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.55,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 5.2,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0075,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.161,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.227,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/A123_26AH.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "0013e8e41d5ded85b77899a5ec4eae49d635f38cae2799b280bdcdc9c373037d",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

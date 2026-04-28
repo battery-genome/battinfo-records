@@ -64,7 +64,7 @@ $repoRoot = Split-Path -Parent $scriptRoot
 $parentRoot = Split-Path -Parent $repoRoot
 
 if ([string]::IsNullOrWhiteSpace($CuratedRoot)) {
-    $CuratedRoot = Join-Path $repoRoot "records\cell-types"
+    $CuratedRoot = Join-Path $repoRoot "records\cell-type"
 }
 if ([string]::IsNullOrWhiteSpace($BattinfoExe)) {
     $BattinfoExe = Join-Path $parentRoot "BattINFO\.venv\Scripts\battinfo.exe"
@@ -105,7 +105,7 @@ $args = @(
     "editorial",
     "publish-curated-cell-type",
     "--input", $resolvedInput,
-    "--project-id", $ProjectId,
+    "--workspace-id", $ProjectId,
     "--publisher-id", $PublisherId,
     "--source-version", $SourceVersion,
     "--registry-url", $RegistryUrl,

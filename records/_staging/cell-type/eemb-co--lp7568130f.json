@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/sqca-8w31-9rvr-kywm",
+    "short_id": "sqca8w",
+    "identifier": "cell-type:sqca-8w31-9rvr-kywm",
+    "name": "Eemb Co LP7568130F",
+    "model": "LP7568130F",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eemb Co"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 5.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 2000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 1.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.125,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 0.73,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0078,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0685,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.131,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eemb_Co_LP7568130F.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "fd4e374fd98fdeacfaf2ce695c3ff4f6192521fe22576762bb367cdd8ce7cf60",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

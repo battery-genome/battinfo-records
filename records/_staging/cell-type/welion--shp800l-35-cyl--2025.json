@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/qp9k-rnb3-5jwm-c15n",
+    "short_id": "qp9krn",
+    "identifier": "cell-type:qp9k-rnb3-5jwm-c15n",
+    "name": "WELION SHP800L-35-CYL",
+    "model": "SHP800L-35-CYL",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "WELION"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "year": 2025
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/WELION__SHP800L-35-CYL.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d23f9ab63379bfb12220116495bbbf7a83eb095000788aa69d73069713a8de6e"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

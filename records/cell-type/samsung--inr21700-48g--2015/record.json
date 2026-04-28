@@ -101,15 +101,17 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1109/itec.2019.8790449"
-    },
-    {
-      "url": "https://doi.org/10.1007/s00502-020-00814-9"
-    },
-    {
-      "url": "https://doi.org/10.3390/BATTERIES5010023"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1109/itec.2019.8790449"
+      },
+      {
+        "id": "https://doi.org/10.1007/s00502-020-00814-9"
+      },
+      {
+        "id": "https://doi.org/10.3390/BATTERIES5010023"
+      }
+    ]
+  }
 }

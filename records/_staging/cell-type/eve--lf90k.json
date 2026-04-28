@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/vx8k-bws1-wghk-m635",
+    "short_id": "vx8kbw",
+    "identifier": "cell-type:vx8k-bws1-wghk-m635",
+    "name": "EVE LF90K",
+    "model": "LF90K",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__LF90K.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "2266be054e29114a2b0c4dfc959ecb96c64782973535131b66dfe1a7533ad8ea"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

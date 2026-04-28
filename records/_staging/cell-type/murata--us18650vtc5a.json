@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gwpw-564f-yeax-058a",
+    "short_id": "gwpw56",
+    "identifier": "cell-type:gwpw-564f-yeax-058a",
+    "name": "MURATA US18650VTC5A",
+    "model": "US18650VTC5A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MURATA"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.6,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.044899999999999995,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MURATA__US18650VTC5A.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "14bc22eca63ad8ab88379ccbbadad3f62c2a9075a4f8555ff23debbe727ea7a4"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

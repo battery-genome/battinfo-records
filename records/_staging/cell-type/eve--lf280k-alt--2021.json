@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/1gm2-anrq-5et1-958t",
+    "short_id": "1gm2an",
+    "identifier": "cell-type:1gm2-anrq-5et1-958t",
+    "name": "EVE LF280K alt",
+    "model": "LF280K alt",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "year": 2021
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 280.0,
+      "unit": "Ah"
+    },
+    "mass": {
+      "value": 0.3,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__LF280K_alt.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "81250e19140a6f5e66ade2efca1631d155bad50cf4848e6e92b3c9ec344afed8"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

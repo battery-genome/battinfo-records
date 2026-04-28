@@ -84,21 +84,33 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://www.semanticscholar.org/paper/107b1d0eb9a2f79f6bf1614771ffed155eaca1da"
-    },
-    {
-      "url": "https://www.semanticscholar.org/paper/5057b0c72900ef3d90a9b9f93fe0d564abaf0ce7"
-    },
-    {
-      "url": "https://www.semanticscholar.org/paper/7b9d934eaf10114c091e1229ed4d65de3a1002a0"
-    },
-    {
-      "url": "https://doi.org/10.3390/EN9030123"
-    },
-    {
-      "url": "https://doi.org/10.1088/1757-899X/53/1/012014"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://www.semanticscholar.org/paper/107b1d0eb9a2f79f6bf1614771ffed155eaca1da"
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/5057b0c72900ef3d90a9b9f93fe0d564abaf0ce7"
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/7b9d934eaf10114c091e1229ed4d65de3a1002a0"
+      },
+      {
+        "id": "https://doi.org/10.3390/EN9030123",
+        "doi": "10.3390/EN9030123",
+        "author": "Zhou, et al.",
+        "headline": "Parameter Sensitivity Analysis for Fractional-Order Modeling of Lithium-Ion Batteries",
+        "date_published": 2016,
+        "description": "Zhou, et al. Parameter Sensitivity Analysis for Fractional-Order Modeling of Lithium-Ion Batteries, Energies, Volume 9, February 2016, 123, https://doi.org/10.3390/EN9030123."
+      },
+      {
+        "id": "https://doi.org/10.1088/1757-899X/53/1/012014",
+        "doi": "10.1088/1757-899X/53/1/012014",
+        "author": "Ismail, et al.",
+        "headline": "Simplified Heat Generation Model for Lithium ion battery used in Electric Vehicle",
+        "date_published": 2013,
+        "description": "Ismail, et al. Simplified Heat Generation Model for Lithium ion battery used in Electric Vehicle, IOP Conference Series: Materials Science and Engineering, Volume 53, December 2013, 012014, https://doi.org/10.1088/1757-899X/53/1/012014."
+      }
+    ]
+  }
 }

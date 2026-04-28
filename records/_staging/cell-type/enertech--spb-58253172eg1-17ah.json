@@ -1,0 +1,82 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/qhx2-esvm-6ngp-p1sh",
+    "short_id": "qhx2es",
+    "identifier": "cell-type:qhx2-esvm-6ngp-p1sh",
+    "name": "ENERTECH SPB 58253172EG1_17Ah",
+    "model": "SPB 58253172EG1_17Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERTECH"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 17.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 5.833,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.43,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 5.833,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0058,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.172,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.253,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ENERTECH_SPB_58253172EG1_17Ah.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "ae0e5b58f189be8221aa0e40730a9f39ea2f1786a307f08ac6c2e1b7de243c6e",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

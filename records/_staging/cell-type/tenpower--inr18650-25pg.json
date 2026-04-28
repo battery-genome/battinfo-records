@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gc4g-7btn-65xg-1x57",
+    "short_id": "gc4g7b",
+    "identifier": "cell-type:gc4g-7btn-65xg-1x57",
+    "name": "TENPOWER INR18650-25PG",
+    "model": "INR18650-25PG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 20.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-25PG.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "83553c45e2fa1f96c91767c7d4824d60f3cafce7a2065c9d0b3eea13db8e8f46"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

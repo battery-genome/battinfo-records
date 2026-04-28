@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/0zfr-c74n-qq6b-f7fm",
+    "short_id": "0zfrc7",
+    "identifier": "cell-type:0zfr-c74n-qq6b-f7fm",
+    "name": "LG P41",
+    "model": "P41",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "pouch",
+    "chemistry": "Li-ion",
+    "size_code": "P22/138/267",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "minimum_capacity": {
+      "value": 40.8,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.63,
+      "unit": "V"
+    },
+    "rated_energy": {
+      "value": 148.0,
+      "unit": "Wh"
+    },
+    "energy_density": {
+      "value": 486.0,
+      "unit": "Wh/L"
+    },
+    "specific_energy": {
+      "value": 226.0,
+      "unit": "Wh/kg"
+    },
+    "pulse_charging_current": {
+      "value": 380.0,
+      "unit": "A"
+    },
+    "maximum_continuous_discharging_current": {
+      "value": 204.0,
+      "unit": "A"
+    },
+    "pulse_discharging_current": {
+      "value": 380.0,
+      "unit": "A"
+    },
+    "internal_resistance": {
+      "value": 1.28,
+      "unit": "mOhm"
+    },
+    "mass": {
+      "value": 663.0,
+      "unit": "g"
+    },
+    "width": {
+      "value": 138.0,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 266.5,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 22.0,
+      "unit": "mm"
+    },
+    "minimum_charging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_charging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_discharging_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_discharging_temperature": {
+      "value": 55.0,
+      "unit": "degC"
+    },
+    "minimum_storage_temperature": {
+      "value": -30.0,
+      "unit": "degC"
+    },
+    "maximum_storage_temperature": {
+      "value": 60.0,
+      "unit": "degC"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "conversation attachment: LG power and energy cell comparison table screenshot (2026-04-08)"
+  },
+  "notes": [
+    "Created from a user-provided screenshot of an LG power and energy cell comparison table.",
+    "Original PDF or source URL was not recorded.",
+    "cell_format was inferred from the flat-tabbed form factor shown in the comparison image.",
+    "size_code was inferred from the L*W*T row using the BattINFO pouch convention P<thickness>/<width>/<length> with rounded millimeter values."
+  ]
+}

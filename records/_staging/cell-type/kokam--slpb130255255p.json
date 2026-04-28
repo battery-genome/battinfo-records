@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/1b0b-jxqx-53qq-wgdj",
+    "short_id": "1b0bjx",
+    "identifier": "cell-type:1b0b-jxqx-53qq-wgdj",
+    "name": "Kokam SLPB130255255P",
+    "model": "SLPB130255255P",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 75.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 6000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 15.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.83,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 15.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.013699999999999999,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.268,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.265,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB130255255P.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "3ea61edfb21d744743e3c4f795d755cfaf8849689ef58b795eec543a8d0e851b",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

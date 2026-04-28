@@ -82,9 +82,40 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.3390/batteries9060309"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.104362",
+        "doi": "10.1016/j.est.2022.104362",
+        "author": "Zhang, et al.",
+        "headline": "Real-time estimation of negative electrode potential and state of charge of lithium-ion battery based on a half-cell-level equivalent circuit model",
+        "date_published": 2022,
+        "description": "Zhang, et al. Real-time estimation of negative electrode potential and state of charge of lithium-ion battery based on a half-cell-level equivalent circuit model, Journal of Energy Storage, Volume 51, July 2022, 104362, https://doi.org/10.1016/j.est.2022.104362."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8100165",
+        "doi": "10.3390/batteries8100165",
+        "author": "Koraag, et al.",
+        "headline": "Covalently Bonded Ball-Milled Silicon/CNT Nanocomposite as Lithium-Ion Battery Anode Material",
+        "date_published": 2022,
+        "description": "Koraag, et al. Covalently Bonded Ball-Milled Silicon/CNT Nanocomposite as Lithium-Ion Battery Anode Material, Batteries, Volume 8, October 2022, 165, https://doi.org/10.3390/batteries8100165."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries9010010",
+        "doi": "10.3390/batteries9010010",
+        "author": "Pires, et al.",
+        "headline": "The Assessment of Electric Vehicle Storage Lifetime Using Battery Thermal Management System",
+        "date_published": 2022,
+        "description": "Pires, et al. The Assessment of Electric Vehicle Storage Lifetime Using Battery Thermal Management System, Batteries, Volume 9, December 2022, 10, https://doi.org/10.3390/batteries9010010."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries9050274",
+        "doi": "10.3390/batteries9050274",
+        "author": "Auch, et al.",
+        "headline": "Influence of Lithium-Ion-Battery Equivalent Circuit Model Parameter Dependencies and Architectures on the Predicted Heat Generation in Real-Life Drive Cycles",
+        "date_published": 2023,
+        "description": "Auch, et al. Influence of Lithium-Ion-Battery Equivalent Circuit Model Parameter Dependencies and Architectures on the Predicted Heat Generation in Real-Life Drive Cycles, Batteries, Volume 9, May 2023, 274, https://doi.org/10.3390/batteries9050274."
+      }
+    ]
+  }
 }

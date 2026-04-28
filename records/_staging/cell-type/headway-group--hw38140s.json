@@ -1,0 +1,79 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/7gs2-0byz-cppt-h1nq",
+    "short_id": "7gs20b",
+    "identifier": "cell-type:7gs2-0byz-cppt-h1nq",
+    "name": "Headway Group HW38140S",
+    "model": "HW38140S",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Headway Group"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 12.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1500.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.2,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.395,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.142,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.038,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Headway_Group_HW38140S.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "cc4b373cb76e367756adc2945cb25dfd709b67a5b71e90ba1b3aa5f710dc7184",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Could not infer cell_format from hasCase or model name; defaulted to unknown.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

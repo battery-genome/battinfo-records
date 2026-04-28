@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/gypk-tb8r-e28q-gcx7",
+    "short_id": "gypktb",
+    "identifier": "cell-type:gypk-tb8r-e28q-gcx7",
+    "name": "LG INR18650-F1L",
+    "model": "INR18650-F1L",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-F1L.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "ce5a76569ab3abde0739f3df282bf2cb93b36839b388e49c367656e55eb4c49b"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

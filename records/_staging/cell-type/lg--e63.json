@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/evec-epy9-0136-04ah",
+    "short_id": "evecep",
+    "identifier": "cell-type:evec-epy9-0136-04ah",
+    "name": "LG E63",
+    "model": "E63",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 65.6,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 1000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 32.8,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.964,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 21.648,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0115,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.125,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.325,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LG_Chem_E63.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "5c053afe8d7cbdaa4eea923ddaabf4dfb569697fb344eeb27271db4fff2964c0",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1149/2.0501913jes",
+        "doi": "10.1149/2.0501913jes",
+        "type": "Article",
+        "headline": "How to Cool Lithium Ion Batteries: Optimising Cell Design using a Thermally Coupled Model",
+        "author": "Yan Zhao and Laura Bravo Diaz and Yatish Patel and Teng Zhang and Gregory J. Offer",
+        "date_published": 2019
+      },
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105676",
+        "doi": "10.1016/j.est.2022.105676",
+        "type": "Article",
+        "headline": "Empirical calendar ageing model for electric vehicles and energy storage systems batteries",
+        "author": "Gaizka Salda\u00f1a and Jos\u00e9 Ignacio San Mart\u00edn and Inmaculada Zamora and Francisco Javier Asensio and Oier O\u00f1ederra and Mikel Gonz\u00e1lez-P\u00e9rez",
+        "date_published": 2022
+      },
+      {
+        "id": "https://doi.org/10.1149/2.0501913JES",
+        "doi": "10.1149/2.0501913JES",
+        "type": "Article",
+        "headline": "How to Cool Lithium Ion Batteries: Optimising Cell Design using a Thermally Coupled Model",
+        "author": "Yan Zhao and Laura Bravo Diaz and Yatish Patel and Teng Zhang and Gregory J. Offer",
+        "date_published": 2019
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/4af78e654e570c4a68fc66ff8d41111af3652cd0"
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Normalized LG-family manufacturer label to parent company LG."
+  ]
+}

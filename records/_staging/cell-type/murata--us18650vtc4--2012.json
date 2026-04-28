@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/bhan-e7bw-9by0-jyzx",
+    "short_id": "bhane7",
+    "identifier": "cell-type:bhan-e7bw-9by0-jyzx",
+    "name": "MURATA US18650VTC4",
+    "model": "US18650VTC4",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MURATA"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "year": 2012,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_capacity": {
+      "value": 2.1,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.002,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.045,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.01835,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MURATA__US18650VTC4.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "eeae6f2f5e4819c887e4c6f38ff5ffb363ae25a7c8f7d7a3154914e3c7dafcf1"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

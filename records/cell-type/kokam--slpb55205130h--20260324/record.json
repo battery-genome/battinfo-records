@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.3390/electronics8121395"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.3390/electronics8121395",
+        "doi": "10.3390/electronics8121395",
+        "author": "Lee, et al.",
+        "headline": "Power Capability Analysis of Lithium Battery and Supercapacitor by Pulse Duration",
+        "date_published": 2019,
+        "description": "Lee, et al. Power Capability Analysis of Lithium Battery and Supercapacitor by Pulse Duration, Electronics, Volume 8, November 2019, 1395, https://doi.org/10.3390/electronics8121395."
+      }
+    ]
+  }
 }

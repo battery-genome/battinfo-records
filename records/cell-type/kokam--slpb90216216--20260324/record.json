@@ -83,18 +83,40 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1109/tie.2017.2714118"
-    },
-    {
-      "url": "https://doi.org/10.3390/en13174518"
-    },
-    {
-      "url": "https://doi.org/10.1149/06609.0203ecst"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.ijhydene.2020.01.067"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1109/tie.2017.2714118",
+        "doi": "10.1109/tie.2017.2714118",
+        "author": "Mesbahi, et al.",
+        "headline": "Dynamic Model of Li-Ion Batteries Incorporating Electrothermal and Ageing Aspects for Electric Vehicle Applications",
+        "date_published": 2018,
+        "description": "Mesbahi, et al. Dynamic Model of Li-Ion Batteries Incorporating Electrothermal and Ageing Aspects for Electric Vehicle Applications, IEEE Transactions on Industrial Electronics, Volume 65, February 2018, 1298-1305, https://doi.org/10.1109/tie.2017.2714118."
+      },
+      {
+        "id": "https://doi.org/10.3390/en13174518",
+        "doi": "10.3390/en13174518",
+        "author": "Paul, et al.",
+        "headline": "Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle",
+        "date_published": 2020,
+        "description": "Paul, et al. Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle, Energies, Volume 13, September 2020, 4518, https://doi.org/10.3390/en13174518."
+      },
+      {
+        "id": "https://doi.org/10.1149/06609.0203ecst",
+        "doi": "10.1149/06609.0203ecst",
+        "author": "Serincan, et al.",
+        "headline": "Thermofluids Analysis of the Coolant Flow during Lithium-Ion Battery Operation",
+        "date_published": 2015,
+        "description": "Serincan, et al. Thermofluids Analysis of the Coolant Flow during Lithium-Ion Battery Operation, ECS Transactions, Volume 66, August 2015, 203-213, https://doi.org/10.1149/06609.0203ecst."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.ijhydene.2020.01.067",
+        "doi": "10.1016/j.ijhydene.2020.01.067",
+        "author": "El-Sehiemy, et al.",
+        "headline": "Parameter identification and state-of-charge estimation for lithium-polymer battery cells using enhanced sunflower optimization algorithm",
+        "date_published": 2020,
+        "description": "El-Sehiemy, et al. Parameter identification and state-of-charge estimation for lithium-polymer battery cells using enhanced sunflower optimization algorithm, International Journal of Hydrogen Energy, Volume 45, March 2020, 8833-8842, https://doi.org/10.1016/j.ijhydene.2020.01.067."
+      }
+    ]
+  }
 }

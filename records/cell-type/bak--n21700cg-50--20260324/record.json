@@ -84,9 +84,16 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.energy.2021.120072"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.energy.2021.120072",
+        "doi": "10.1016/j.energy.2021.120072",
+        "author": "Wang, et al.",
+        "headline": "Over-heating triggered thermal runaway behavior for lithium-ion battery with high nickel content in positive electrode",
+        "date_published": 2021,
+        "description": "Wang, et al. Over-heating triggered thermal runaway behavior for lithium-ion battery with high nickel content in positive electrode, Energy, Volume 224, June 2021, 120072, https://doi.org/10.1016/j.energy.2021.120072."
+      }
+    ]
+  }
 }

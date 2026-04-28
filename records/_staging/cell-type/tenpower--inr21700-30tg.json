@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/68rs-9t27-jhyn-ctap",
+    "short_id": "68rs9t",
+    "identifier": "cell-type:68rs-9t27-jhyn-ctap",
+    "name": "TENPOWER INR21700-30TG",
+    "model": "INR21700-30TG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R21700"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0214,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR21700-30TG.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "097a3bf4e32b2832e82524c80a613b02233cb70062a417f0ddc12cb230b5e198"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

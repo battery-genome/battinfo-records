@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/rgyx-7f1a-9p8c-k6dm",
+    "short_id": "rgyx7f",
+    "identifier": "cell-type:rgyx-7f1a-9p8c-k6dm",
+    "name": "PANASONIC NCR18650BD",
+    "model": "NCR18650BD",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "year": 2026,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "mass": {
+      "value": 0.049,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0185,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__NCR18650BD.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "81bd6b0a531d31c969428717300c9df1aa56dc9f9be6ed75592d3d15779947da"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet PANASONIC__NCR18650BD.pdf."
+  ]
+}

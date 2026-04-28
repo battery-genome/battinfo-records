@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/e3s3-k63j-hstj-3w47",
+    "short_id": "e3s3k6",
+    "identifier": "cell-type:e3s3-k63j-hstj-3w47",
+    "name": "Quallion LLC QL015KA",
+    "model": "QL015KA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Quallion LLC"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 15.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 3000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 15.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.38,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 1.5,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0375,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0545,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.0883,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Quallion_LLC_QL015KA.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "aac4aaa2b05d623c8586f366c99d67657c820067479fc6c0ca0076d799762bbe",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/B978-0-444-59513-3.00014-5",
+        "doi": "10.1016/B978-0-444-59513-3.00014-5",
+        "type": "Article",
+        "headline": "Satellite Lithium-Ion Batteries",
+        "author": "Yannick Borthomieu",
+        "date_published": 2014
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

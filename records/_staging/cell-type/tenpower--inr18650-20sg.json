@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/81c8-v3ke-nsjf-vmb4",
+    "short_id": "81c8v3",
+    "identifier": "cell-type:81c8-v3ke-nsjf-vmb4",
+    "name": "TENPOWER INR18650-20SG",
+    "model": "INR18650-20SG",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "specs": {
+    "internal_resistance": {
+      "value": 20.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.045,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-20SG.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d42077c7ec808ec10d10c0adccd9810a5a1a4677c49fd9e93df8107000939030"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

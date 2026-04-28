@@ -84,12 +84,19 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://www.semanticscholar.org/paper/5c79160b70f3d10ea832ae5ffbc21ac0d9c94660"
-    },
-    {
-      "url": "https://doi.org/10.6113/jpe.2013.13.4.516"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://www.semanticscholar.org/paper/5c79160b70f3d10ea832ae5ffbc21ac0d9c94660"
+      },
+      {
+        "id": "https://doi.org/10.6113/jpe.2013.13.4.516",
+        "doi": "10.6113/jpe.2013.13.4.516",
+        "author": "Fleischer, et al.",
+        "headline": "Adaptive On-line State-of-available-power Prediction of Lithium-ion Batteries",
+        "date_published": 2013,
+        "description": "Fleischer, et al. Adaptive On-line State-of-available-power Prediction of Lithium-ion Batteries, Journal of Power Electronics, Volume 13, July 2013, 516-527, https://doi.org/10.6113/jpe.2013.13.4.516."
+      }
+    ]
+  }
 }

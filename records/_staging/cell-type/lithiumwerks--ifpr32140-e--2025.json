@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/jtsc-em2q-96qq-9f4e",
+    "short_id": "jtscem",
+    "identifier": "cell-type:jtsc-em2q-96qq-9f4e",
+    "name": "LITHIUMWERKS IFpR32140-E",
+    "model": "IFpR32140-E",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LITHIUMWERKS"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "year": 2025,
+    "size_code": "R32140"
+  },
+  "specs": {
+    "cycle_life": {
+      "value": 3500.0,
+      "unit": "count"
+    },
+    "diameter": {
+      "value": 0.0002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LITHIUMWERKS__IFpR32140-E.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "2630bf3069e18a74c6dff908354d7f2f09978b550fd92b88659840a12c3abbc3"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet LITHIUMWERKS__IFpR32140-E.pdf."
+  ]
+}

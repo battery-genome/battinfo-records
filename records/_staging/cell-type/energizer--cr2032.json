@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/bnj2-h9ht-p6hc-wk2x",
+    "short_id": "bnj2h9",
+    "identifier": "cell-type:bnj2-h9ht-p6hc-wk2x",
+    "name": "ENERGIZER CR2032",
+    "model": "CR2032",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERGIZER"
+    },
+    "category": "battery cell",
+    "cell_format": "coin",
+    "chemistry": "Li-primary",
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Li-metal"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/ENERGIZER__CR2032.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "ff05548e1efc6164fc779836976b0de4859ddcfa0c4f058dd55147bdc239d41f"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

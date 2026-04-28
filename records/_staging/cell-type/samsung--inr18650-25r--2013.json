@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/5yej-zmkk-rpbz-rrep",
+    "short_id": "5yejzm",
+    "identifier": "cell-type:5yej-zmkk-rpbz-rrep",
+    "name": "SAMSUNG INR18650-25R",
+    "model": "INR18650-25R",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SAMSUNG"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NCA",
+    "year": 2013,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 0.05,
+      "unit": "V"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SAMSUNG__INR18650-25R.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "d87c7e33879ad4ebc116d7dbc21964939f691e4827f4f9419842fe7a6bed44ea"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

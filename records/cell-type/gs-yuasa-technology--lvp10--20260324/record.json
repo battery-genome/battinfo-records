@@ -83,9 +83,15 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.15368/theses.2014.127"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.15368/theses.2014.127",
+        "doi": "10.15368/theses.2014.127",
+        "author": "Shushnar",
+        "headline": "BATTERY ELECTRIC AIRCRAFT FEASIBILITY INVESTIGATION INCLUDING A BATTERY-IN-WING CONCEPTUAL DESIGN",
+        "description": "Shushnar BATTERY ELECTRIC AIRCRAFT FEASIBILITY INVESTIGATION INCLUDING A BATTERY-IN-WING CONCEPTUAL DESIGN, https://doi.org/10.15368/theses.2014.127."
+      }
+    ]
+  }
 }

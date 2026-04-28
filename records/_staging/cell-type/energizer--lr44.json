@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/jyzq-ttx7-hza5-gj3v",
+    "short_id": "jyzqtt",
+    "identifier": "cell-type:jyzq-ttx7-hza5-gj3v",
+    "name": "ENERGIZER LR44",
+    "model": "LR44",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERGIZER"
+    },
+    "category": "battery cell",
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/ENERGIZER__LR44.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "aee4b7c17eb3b146904e01b922e3692f1c4f40644889fc26a8c7d254fb347b35"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

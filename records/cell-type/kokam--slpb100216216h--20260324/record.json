@@ -84,21 +84,48 @@
     "promoted_at": "2026-04-27",
     "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
   },
-  "publications": [
-    {
-      "url": "https://doi.org/10.1016/j.est.2022.105467"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.apenergy.2012.09.030"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.applthermaleng.2017.06.094"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jpowsour.2013.05.111"
-    },
-    {
-      "url": "https://doi.org/10.3390/en13174518"
-    }
-  ]
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105467",
+        "doi": "10.1016/j.est.2022.105467",
+        "author": "Mussi, et al.",
+        "headline": "An online state of health estimation method for lithium-ion batteries based on time partitioning and data-driven model identification",
+        "date_published": 2022,
+        "description": "Mussi, et al. An online state of health estimation method for lithium-ion batteries based on time partitioning and data-driven model identification, Journal of Energy Storage, Volume 55, November 2022, 105467, https://doi.org/10.1016/j.est.2022.105467."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.apenergy.2012.09.030",
+        "doi": "10.1016/j.apenergy.2012.09.030",
+        "author": "Waag, et al.",
+        "headline": "Experimental investigation of the lithium-ion battery impedance characteristic at various conditions and aging states and its influence on the application",
+        "date_published": 2013,
+        "description": "Waag, et al. Experimental investigation of the lithium-ion battery impedance characteristic at various conditions and aging states and its influence on the application, Applied Energy, Volume 102, February 2013, 885-897, https://doi.org/10.1016/j.apenergy.2012.09.030."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.applthermaleng.2017.06.094",
+        "doi": "10.1016/j.applthermaleng.2017.06.094",
+        "author": "Martín-Martín, et al.",
+        "headline": "Modeling based on design of a dual thermal management system for the battery pack of a full electric minibus",
+        "date_published": 2017,
+        "description": "Martín-Martín, et al. Modeling based on design of a dual thermal management system for the battery pack of a full electric minibus, Applied Thermal Engineering, Volume 124, September 2017, 1142-1158, https://doi.org/10.1016/j.applthermaleng.2017.06.094."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2013.05.111",
+        "doi": "10.1016/j.jpowsour.2013.05.111",
+        "author": "Waag, et al.",
+        "headline": "Adaptive on-line prediction of the available power of lithium-ion batteries",
+        "date_published": 2013,
+        "description": "Waag, et al. Adaptive on-line prediction of the available power of lithium-ion batteries, Journal of Power Sources, Volume 242, November 2013, 548-559, https://doi.org/10.1016/j.jpowsour.2013.05.111."
+      },
+      {
+        "id": "https://doi.org/10.3390/en13174518",
+        "doi": "10.3390/en13174518",
+        "author": "Paul, et al.",
+        "headline": "Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle",
+        "date_published": 2020,
+        "description": "Paul, et al. Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle, Energies, Volume 13, September 2020, 4518, https://doi.org/10.3390/en13174518."
+      }
+    ]
+  }
 }

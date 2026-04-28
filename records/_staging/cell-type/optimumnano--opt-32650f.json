@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/zvpf-ef37-gafh-zvh0",
+    "short_id": "zvpfef",
+    "identifier": "cell-type:zvpf-ef37-gafh-zvh0",
+    "name": "OPTIMUMNANO OPT-32650F",
+    "model": "OPT-32650F",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "OPTIMUMNANO"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R32650"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/OPTIMUMNANO__OPT-32650F.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "e18303ef86b82de86a22fc3298bf6a9a33d736fba0ca4f19a74d9e9098dca536"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}

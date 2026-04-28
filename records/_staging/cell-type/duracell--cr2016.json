@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/n0qr-ttke-etsg-0hdx",
+    "short_id": "n0qrtt",
+    "identifier": "cell-type:n0qr-ttke-etsg-0hdx",
+    "name": "DURACELL CR2016",
+    "model": "CR2016",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "DURACELL"
+    },
+    "category": "battery cell",
+    "cell_format": "coin",
+    "chemistry": "Li-primary",
+    "positive_electrode_basis": "MnO2",
+    "negative_electrode_basis": "Li-metal"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/DURACELL__CR2016.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "4840c5104d432f0e7f60ec771827859febf0de492fed737107d69df786e20f8b"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

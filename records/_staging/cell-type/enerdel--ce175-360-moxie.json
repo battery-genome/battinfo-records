@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/27rt-sd7m-2jmd-68hw",
+    "short_id": "27rtsd",
+    "identifier": "cell-type:27rt-sd7m-2jmd-68hw",
+    "name": "ENERDEL CE175-360 Moxie+",
+    "model": "CE175-360 Moxie+",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "ENERDEL"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "NMC"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 17.5,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 4000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 3.5,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.43,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 3.5,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0058,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.172,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.253,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/ENERDEL_CE175-360_Moxie+.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "30ce4e5f8c2e81634e697e9271125375bbcb89c2a57b114a6ee1ae1bc82c7ba3",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

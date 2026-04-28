@@ -1,0 +1,116 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/2anw-djp8-p1sq-caes",
+    "short_id": "2anwdj",
+    "identifier": "cell-type:2anw-djp8-p1sq-caes",
+    "name": "Thunder-Sky WB-LYP40AHA",
+    "model": "WB-LYP40AHA",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Thunder-Sky"
+    },
+    "category": "battery cell",
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "LFP"
+  },
+  "specs": {
+    "rated_capacity": {
+      "value": 40.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 7000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.3,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 3.65,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 12.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.5,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 20.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.046,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.116,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.183,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Thunder-Sky_WB-LYP40AHA.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "file_hash": "33439253b558fc3c4ca0223cb6bac91f43f5e76df182c8030f357a1f483453a2",
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx"
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://www.semanticscholar.org/paper/107b1d0eb9a2f79f6bf1614771ffed155eaca1da"
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/5057b0c72900ef3d90a9b9f93fe0d564abaf0ce7"
+      },
+      {
+        "id": "https://www.semanticscholar.org/paper/7b9d934eaf10114c091e1229ed4d65de3a1002a0"
+      },
+      {
+        "id": "https://doi.org/10.3390/EN9030123",
+        "doi": "10.3390/EN9030123",
+        "type": "Article",
+        "headline": "Parameter Sensitivity Analysis for Fractional-Order Modeling of Lithium-Ion Batteries",
+        "author": "Daming Zhou and Ke Zhang and Alexandre Ravey and Fei Gao and Abdellatif Miraoui",
+        "description": "<jats:p>This paper presents a novel-fractional-order lithium-ion battery model that is suitable for use in embedded applications. The proposed model uses fractional calculus with an improved Oustaloup approximation method to describe all the internal battery dynamic behaviors. The fractional-order model parameters, such as equivalent circuit component coefficients and fractional-order values, are identified by a genetic algorithm. A modeling parameters sensitivity study using the statistical Multi-Parameter Sensitivity Analysis (MPSA) method is then performed and discussed in detail. Through the analysis, the dynamic effects of parameters on the model output performance are obtained. It has been found out from the analysis that the fractional-order values and their corresponding internal dynamics have different degrees of impact on model outputs. Thus, they are considered as crucial parameters to accurately describe a battery\u2019s dynamic voltage responses. To experimentally verify the accuracy of developed fractional-order model and evaluate its performance, the experimental tests are conducted with a hybrid pulse test and a dynamic stress test (DST) on two different types of lithium-ion batteries. The results demonstrate the accuracy and usefulness of the proposed fractional-order model on battery dynamic behavior prediction.</jats:p>",
+        "date_published": 2016
+      },
+      {
+        "id": "https://doi.org/10.1088/1757-899X/53/1/012014",
+        "doi": "10.1088/1757-899X/53/1/012014",
+        "type": "Article",
+        "headline": "Simplified Heat Generation Model for Lithium ion battery used in Electric Vehicle",
+        "author": "Nur Hazima Faezaa Ismail and Siti Fauziah Toha and Nor Aziah Mohd Azubir and Nizam Hanis Md Ishak and Mohd Khair Hassan and Babul Salam KSM Ibrahim",
+        "date_published": 2013
+      },
+      {
+        "id": "https://doi.org/hFanuo8BADpm3NYuYJ/i"
+      }
+    ]
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ]
+}

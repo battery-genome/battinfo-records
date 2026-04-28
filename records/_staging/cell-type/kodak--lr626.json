@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/ajqb-gggn-68sg-7mym",
+    "short_id": "ajqbgg",
+    "identifier": "cell-type:ajqb-gggn-68sg-7mym",
+    "name": "KODAK LR626",
+    "model": "LR626",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK"
+    },
+    "category": "battery cell",
+    "cell_format": "coin",
+    "chemistry": "unknown"
+  },
+  "specs": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR626.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "47d24662ab85aac3469dc26f8a25d092ebf2fa8d8c4fcfb3a0035f4c6672de30"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ]
+}

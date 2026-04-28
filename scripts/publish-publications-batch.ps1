@@ -12,7 +12,7 @@ param(
     [string]$RegistryUrl  = "https://battinfo-registry.onrender.com",
     [string]$ProjectId    = "battinfo-records",
     [string]$PublisherId  = "battinfo-records-bot",
-    [string]$SourceVersion = (Get-Date -Format "yyyy-MM-dd")
+    [string]$SourceVersion = "2026-04-28-citations"
 )
 
 if (-not $ApiKey) {
@@ -84,20 +84,21 @@ $fail = 0
 
 foreach ($id in $records) {
     Write-Host -NoNewline "Publishing $id ... "
-    & $publishScript `
+    $null = & $publishScript `
         -InputPath    $id `
         -ProjectId    $ProjectId `
         -PublisherId  $PublisherId `
         -SourceVersion $SourceVersion `
         -RegistryUrl  $RegistryUrl `
         -ApiKey       $ApiKey `
-        -Format       table 2>&1 | Out-Null
+        -Format       table 2>&1
+    $exitCode = $LASTEXITCODE
 
-    if ($LASTEXITCODE -eq 0) {
+    if ($exitCode -eq 0) {
         Write-Host "ok" -ForegroundColor Green
         $ok++
     } else {
-        Write-Host "FAILED (exit $LASTEXITCODE)" -ForegroundColor Red
+        Write-Host "FAILED (exit $exitCode)" -ForegroundColor Red
         $fail++
     }
 }

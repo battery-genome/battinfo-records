@@ -1,0 +1,62 @@
+{
+  "manufacturer": "Samsung",
+  "model": "EB-BA156ABY",
+  "year": 2025,
+  "format": "prismatic",
+  "chemistry": "Li-ion",
+  "size_code": "P6/64/86",
+  "iec_code": "ICP6/64/86",
+  "positive_electrode_basis": "LCO",
+  "negative_electrode_basis": "Graphite",
+  "country_of_origin": "China",
+  "specs": {
+    "nominal_capacity": {
+      "value": 5.000,
+      "unit": "Ah"
+    },
+    "rated_capacity": {
+      "value": 4.900,
+      "unit": "Ah"
+    },
+    "nominal_energy": {
+      "value": 19.25,
+      "unit": "Wh"
+    },
+    "rated_energy": {
+      "value": 18.87,
+      "unit": "Wh"
+    },
+    "nominal_voltage": {
+      "value": 3.85,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.4,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 67,
+      "unit": "g"
+    },
+    "width": {
+      "value": 64,
+      "unit": "mm"
+    },
+    "length": {
+      "value": 86,
+      "unit": "mm"
+    },
+    "thickness": {
+      "value": 6,
+      "unit": "mm"
+    }
+  },
+  "provenance": {
+    "source_type": "label"
+  },
+  "comment": "Values are taken from the label of a EB-BA156ABY battery cell manufactured on 2025-08-14 and purchased in 2025"
+}

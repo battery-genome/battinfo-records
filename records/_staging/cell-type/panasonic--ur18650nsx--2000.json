@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1.0",
+  "product": {
+    "id": "https://w3id.org/battinfo/cell-type/8we0-8g5v-dpjs-5g13",
+    "short_id": "8we08g",
+    "identifier": "cell-type:8we0-8g5v-dpjs-5g13",
+    "name": "PANASONIC UR18650NSX",
+    "model": "UR18650NSX",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC"
+    },
+    "category": "battery cell",
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "year": 2000,
+    "size_code": "R18650"
+  },
+  "specs": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.0458,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__UR18650NSX.pdf",
+    "retrieved_at": 1774381923,
+    "file_hash": "98d098425c8ca2ee0584a71dd24b3f8ffd11dad8db0bf883177e0f0a621c4f15"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ]
+}
