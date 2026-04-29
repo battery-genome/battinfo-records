@@ -38,7 +38,7 @@
       "unit": "V"
     },
     "mass": {
-      "value": 0.001101,
+      "value": 1.101,
       "unit": "kg"
     },
     "continuous_charging_current": {
