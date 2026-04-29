@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/fbny-ts4m-b2zc-n33j",
+    "short_id": "fbnyts4m",
+    "type": "EducationalOrganization",
+    "name": "College de France",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW2a84fced17d04fbdba741f0d1da07990"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498209
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

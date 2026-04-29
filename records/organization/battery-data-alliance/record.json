@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/2cqa-88kj-p9ka-j5fm",
+    "short_id": "2cqa88kj",
+    "type": "Organization",
+    "name": "Battery Data Alliance",
+    "url": "https://lfenergy.org/projects/battery-data-alliance/",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW477fba7373e04e81acfd724d33743768"],
+    "alternateName": ["BDA"],
+    "description": "LF Energy organisation focused on standardisation and analysis of battery data."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

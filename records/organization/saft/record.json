@@ -10,7 +10,10 @@
       "addressCountry": "FR",
       "addressLocality": "Bagnolet"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q1380143",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q1380143",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW02175fb2d4044c1c8253436e80876dbb"
+    ],
     "description": "French manufacturer of high-performance batteries for industrial, defence, and space applications. Subsidiary of TotalEnergies since 2016."
   },
   "provenance": {

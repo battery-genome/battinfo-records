@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/7x6e-gxmc-a50m-eqyy",
+    "short_id": "7x6egxmc",
+    "type": "Manufacturer",
+    "name": "AutomotiveCellsCompany",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWa162a11097de4eed99a9c35085c75502"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498194
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

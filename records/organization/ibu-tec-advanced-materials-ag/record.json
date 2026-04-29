@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/yvmp-3abd-fpn6-ahm7",
+    "short_id": "yvmp3abd",
+    "type": "Manufacturer",
+    "name": "IBU-tec advanced materials AG",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW150100a857a84616ae0deda91f41cf51"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498231
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/nffk-3zvs-h1h8-dp72",
+    "short_id": "nffk3zvs",
+    "type": "Manufacturer",
+    "name": "Umicore N.V.",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWeca5fd1a51004198a950c0c473f4e8b4"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498267
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

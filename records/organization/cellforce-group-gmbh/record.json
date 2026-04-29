@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/212x-821d-36td-7jwt",
+    "short_id": "212x821d",
+    "type": "Manufacturer",
+    "name": "Cellforce Group GmbH",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW99f4df52eca04f6cb3e443899a950fdd"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498204
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

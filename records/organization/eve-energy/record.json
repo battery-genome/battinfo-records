@@ -14,7 +14,10 @@
       "EVE",
       "亿纬锂能"
     ],
-    "description": "Chinese manufacturer of primary lithium and lithium-ion batteries."
+    "description": "Chinese manufacturer of primary lithium and lithium-ion batteries.",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW2dbce34758a645c1a57e5849089efe0b"
+    ]
   },
   "provenance": {
     "source_type": "inferred",

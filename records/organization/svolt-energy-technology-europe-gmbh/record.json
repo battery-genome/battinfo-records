@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/1mz7-4dxs-528y-9303",
+    "short_id": "1mz74dxs",
+    "type": "Manufacturer",
+    "name": "SVOLT Energy Technology (Europe) GmbH",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW86c107fdc0d64761a031545c7a7c01fd"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498259
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

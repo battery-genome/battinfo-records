@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/sasf-fqwz-3cv2-dtms",
+    "short_id": "sasffqwz",
+    "type": "Organization",
+    "name": "Battery Associates",
+    "url": "https://www.battery.associates/",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW652327a5d54b48c1992dc1121cfd422b",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW33726bfbbe21401a9416b4112fa96f8b"
+    ],
+    "alternateName": [
+      "BA"
+    ],
+    "description": "Professional association of persons and organisations working in the battery industry."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

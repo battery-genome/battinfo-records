@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/cc6y-sdkt-k5bb-1mk6",
+    "short_id": "cc6ysdkt",
+    "type": "Manufacturer",
+    "name": "NXP",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW286dcd1b77d34620856805f2dddeacc9"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498249
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

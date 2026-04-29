@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/86m5-hkv7-ma9r-c5gc",
+    "short_id": "86m5hkv7",
+    "type": "Manufacturer",
+    "name": "24M Technologies",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWbff614195de74ab384e1cea1bda1cf19"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498189
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/90ps-kh23-dz4j-kcca",
+    "short_id": "90pskh23",
+    "type": "EducationalOrganization",
+    "name": "Aalborg University",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW2a7e0fd493164e938d876a485b968e74"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498190
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

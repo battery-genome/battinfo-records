@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/txft-c8z1-w5z8-rvdp",
+    "short_id": "txftc8z1",
+    "type": "Manufacturer",
+    "name": "Ionworks",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWb9c827b861f24b079840100249be1a49"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498237
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

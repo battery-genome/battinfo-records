@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/rvgs-d7v3-2fzb-8gxp",
+    "short_id": "rvgsd7v3",
+    "type": "Organization",
+    "name": "Volta Foundation",
+    "url": "https://volta.foundation/",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWf5b056548710406b84b0a1d31614a382"],
+    "alternateName": ["VF"],
+    "description": "A global network of battery professionals spanning industry, academia, and government."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

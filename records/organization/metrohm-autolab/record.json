@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/dvj2-axgh-0n8c-8frm",
+    "short_id": "dvj2axgh",
+    "type": "Manufacturer",
+    "name": "Metrohm Autolab",
+    "legalName": "Metrohm Autolab B.V.",
+    "location": {
+      "addressLocality": "Utrecht",
+      "addressCountry": "NL"
+    },
+    "foundingDate": "1986",
+    "url": "https://www.metrohm.com/electrochemistry",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW6d41a315076945a483f754f88dd994ea",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW33726bfbbe21401a9416b4112fa96f8b"
+    ],
+    "alternateName": [
+      "Eco Chemie"
+    ],
+    "description": "Manufacturer of high-performance potentiostat/galvanostat systems for electrochemical research; fully-owned subsidiary of Metrohm Group since 1999."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

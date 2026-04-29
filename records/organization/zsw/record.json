@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/kx0z-89en-jnyb-ks5v",
+    "short_id": "kx0z89en",
+    "type": "ResearchOrganization",
+    "name": "ZSW",
+    "legalName": "Zentrum für Sonnenenergie- und Wasserstoff-Forschung Baden-Württemberg",
+    "location": {"addressLocality":"Ulm","addressCountry":"DE"},
+    "url": "https://www.zsw-bw.de/en.html",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW9ecad32b44a14954b908476c116fc3da","https://ror.org/014x8q810"],
+    "alternateName": ["Center for Solar Energy and Hydrogen Research","ZSW Baden-Württemberg"],
+    "description": "German energy research institute focused on solar energy, hydrogen, and battery technologies."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

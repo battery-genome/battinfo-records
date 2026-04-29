@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/y627-xabx-5704-c3m3",
+    "short_id": "y627xabx",
+    "type": "Manufacturer",
+    "name": "Evyon",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW945115ebcba947b4ab258399069f2472"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498221
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

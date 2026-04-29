@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/6w3v-vq36-sg9v-yae7",
+    "short_id": "6w3vvq36",
+    "type": "Manufacturer",
+    "name": "InoBat",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW371c781777e441c9ba63b6ccd26fd3d1"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498234
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

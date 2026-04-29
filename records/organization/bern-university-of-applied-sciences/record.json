@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/bmr7-x8na-m93q-kzhy",
+    "short_id": "bmr7x8na",
+    "type": "EducationalOrganization",
+    "name": "Bern University of Applied Sciences",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW7fb734574e8846eb96015438e8c68485"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498200
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

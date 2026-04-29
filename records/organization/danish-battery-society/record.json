@@ -1,0 +1,25 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/r1qq-b8dz-dzt1-rvgh",
+    "short_id": "r1qqb8dz",
+    "type": "Organization",
+    "name": "Danish Battery Society",
+    "legalName": "Dansk Batteriselskab",
+    "location": {"addressCountry":"DK"},
+    "url": "http://batteriselskab.dk/",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW85613e41bfb148a8b6345ace4aa2e1fd"],
+    "alternateName": ["DBS","Dansk Batteriselskab"],
+    "description": "Independent professional organisation of persons, institutions, and companies working with batteries in Denmark."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

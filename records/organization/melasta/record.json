@@ -4,7 +4,10 @@
     "id": "https://w3id.org/battinfo/organization/7t5k-fzsr-4h6d-2gyr",
     "short_id": "7t5kfzsr",
     "type": "Organization",
-    "name": "MELASTA"
+    "name": "MELASTA",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWfa3172d098cb4b8098260499e3c92bf8"
+    ]
   },
   "provenance": {
     "source_type": "inferred",

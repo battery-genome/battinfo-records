@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/h559-mbta-jdae-rb16",
+    "short_id": "h559mbta",
+    "type": "ResearchOrganization",
+    "name": "Institut Laue Langevin",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW2c69d8932eaa470cbcd89f706dc558b4"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498235
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

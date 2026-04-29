@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/2nph-2qdp-n3tc-918v",
+    "short_id": "2nph2qdp",
+    "type": "ResearchOrganization",
+    "name": "POLIS",
+    "legalName": "POLIS Post Lithium Storage Cluster of Excellence",
+    "location": {"addressLocality":"Ulm","addressCountry":"DE"},
+    "url": "https://www.postlithiumstorage.org/en/",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW2701a6e221c64522ac094dcb96dfaf10"],
+    "description": "German Cluster of Excellence developing new battery materials and technology concepts for sustainable electrical energy storage."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

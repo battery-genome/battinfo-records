@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/w3yj-nm6w-e8dt-2h7m",
+    "short_id": "w3yjnm6w",
+    "type": "EducationalOrganization",
+    "name": "Delft University of Technology",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW30c1258975874f8a88c1a69921bab669"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498213
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

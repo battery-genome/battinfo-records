@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/wfh1-v3k7-rxye-zyy8",
+    "short_id": "wfh1v3k7",
+    "type": "ResearchOrganization",
+    "name": "Faraday Institution",
+    "location": {
+      "addressCountry": "GB"
+    },
+    "foundingDate": "2017",
+    "url": "https://www.faraday.ac.uk/",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWe4f3da13a6f04b61adce64d8105f43d8",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW33726bfbbe21401a9416b4112fa96f8b"
+    ],
+    "description": "The UK's independent institute for electrochemical energy storage research, skills development, market analysis, and early-stage commercialisation."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

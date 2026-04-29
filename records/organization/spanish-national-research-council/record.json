@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/jgg7-wmgf-hpy9-whc8",
+    "short_id": "jgg7wmgf",
+    "type": "ResearchOrganization",
+    "name": "Spanish National Research Council",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW1eccfd8ba56c4b5e9f0d391d5d5c73cb"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498258
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

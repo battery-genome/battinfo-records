@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/04yd-fxs8-n9pw-av27",
+    "short_id": "04ydfxs8",
+    "type": "EducationalOrganization",
+    "name": "Institut National des Sciences Appliquees de Lyon",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW4eec8497d8ca4392a1001a682b31b80c"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498235
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

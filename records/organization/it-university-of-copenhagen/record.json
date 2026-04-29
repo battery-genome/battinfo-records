@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/jwwe-2527-m1n6-wc8q",
+    "short_id": "jwwe2527",
+    "type": "EducationalOrganization",
+    "name": "IT University of Copenhagen",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWf598fb5d73cc4186b80a272a421497dc"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498238
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

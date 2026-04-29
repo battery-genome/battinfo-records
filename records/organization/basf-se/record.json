@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/9jrg-k7sh-k9hq-xvy3",
+    "short_id": "9jrgk7sh",
+    "type": "Manufacturer",
+    "name": "BASF SE",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW3450becf18874dd9b1d36db311300bd8"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498195
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

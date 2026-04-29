@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/dfr1-0vg1-g9a2-g3md",
+    "short_id": "dfr10vg1",
+    "type": "Manufacturer",
+    "name": "Bayerische Motoren Werke AG",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW285c9149ddd544bfb81622b9780d0da7"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498198
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

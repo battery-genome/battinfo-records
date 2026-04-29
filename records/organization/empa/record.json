@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/kt6e-pp3d-3j1x-3nt9",
+    "short_id": "kt6epp3d",
+    "type": "ResearchOrganization",
+    "name": "Empa",
+    "legalName": "Empa - Swiss Federal Laboratories for Materials Science and Technology",
+    "location": {"addressCountry":"CH"},
+    "url": "https://www.empa.ch/empa",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW25ae50eb4e0d491fb76d82c95c34329b"],
+    "description": "Interdisciplinary materials science research institute of the ETH Domain in Switzerland."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

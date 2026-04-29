@@ -10,7 +10,10 @@
       "addressCountry": "KR",
       "addressLocality": "Yongin"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q491229",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q491229",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWf08bf158ee0f4cecb2a4705d166d26d6"
+    ],
     "alternateName": [
       "Samsung",
       "삼성SDI"

@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/vhkb-65ff-5mbb-d03v",
+    "short_id": "vhkb65ff",
+    "type": "EducationalOrganization",
+    "name": "University of Picardie Jules Verne",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWa99ba288b5f34c19b9af0551007f7fe6"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498272
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

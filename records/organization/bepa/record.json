@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/4c80-vy7g-pw6a-9p6y",
+    "short_id": "4c80vy7g",
+    "type": "Organization",
+    "name": "BEPA",
+    "legalName": "Batteries European Partnership Association AISBL",
+    "url": "https://bepassociation.eu/about/bepa/",
+    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWd5bfd25b959c4386bbfe493d32e2e43b"],
+    "alternateName": ["Batteries European Partnership Association","BATT4EU"],
+    "description": "International non-profit association representing the private side of the BATT4EU Partnership."
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777497254
+  },
+  "editorial": {
+    "review_status": "curated",
+    "promoted_at": "2026-04-29",
+    "note": "Ingested from Battery Knowledge Graph (CC BY-SA 4.0)."
+  }
+}

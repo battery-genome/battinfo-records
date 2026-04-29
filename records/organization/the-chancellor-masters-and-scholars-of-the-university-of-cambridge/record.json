@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/mbhr-5zw4-gyjy-r61j",
+    "short_id": "mbhr5zw4",
+    "type": "EducationalOrganization",
+    "name": "The Chancellor, Masters and Scholars of the University of Cambridge",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWd1a25ceb893241c1a9e429b4efd172ab"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498264
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

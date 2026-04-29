@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/11at-x7qt-z2zw-8xqs",
+    "short_id": "11atx7qt",
+    "type": "ResearchOrganization",
+    "name": "CIC energiGUNE",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW34e25b1b10d548a0bfb46f44f67722eb"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498207
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

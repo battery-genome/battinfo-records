@@ -10,7 +10,10 @@
       "addressCountry": "CH",
       "addressLocality": "Yverdon-les-Bains"
     },
-    "sameAs": "https://www.wikidata.org/wiki/Q2724618",
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q2724618",
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWdf9d1defddf44041abb8c4162ab9159b"
+    ],
     "alternateName": [
       "LECLANCHÉ",
       "Leclanche"

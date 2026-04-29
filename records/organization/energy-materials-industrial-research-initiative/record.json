@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/p9tn-hy5h-9yq0-j1ke",
+    "short_id": "p9tnhy5h",
+    "type": "Organization",
+    "name": "Energy Materials Industrial Research Initiative",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW689cede3db8342a9b300f790db53da97"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498217
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

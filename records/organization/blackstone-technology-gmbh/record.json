@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/cgym-2s3c-69dh-ghya",
+    "short_id": "cgym2s3c",
+    "type": "Manufacturer",
+    "name": "Blackstone Technology GmbH",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW248e67d8db64456c8c4edf6e8bfd8f3b"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498202
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

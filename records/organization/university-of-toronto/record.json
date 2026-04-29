@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/p28w-k9be-nhdv-jbvk",
+    "short_id": "p28wk9be",
+    "type": "EducationalOrganization",
+    "name": "University of Toronto",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSWef072c1867da4a1eaf6c35cb0a2e7189"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498274
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

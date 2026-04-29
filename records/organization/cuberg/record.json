@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/w1j7-bgj4-hc6m-arpw",
+    "short_id": "w1j7bgj4",
+    "type": "Manufacturer",
+    "name": "Cuberg",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW7949c1cc1d5e4d31b5fbecfae5ed5ea1"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498210
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}

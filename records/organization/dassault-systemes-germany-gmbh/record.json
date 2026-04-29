@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/0csp-fbsa-4gkn-v0vj",
+    "short_id": "0cspfbsa",
+    "type": "Manufacturer",
+    "name": "Dassault Systemes Germany GmbH",
+    "sameAs": [
+      "https://battery.knowledge-graph.eu/wiki/Item:OSW94fd634726264498a7d55c245e42825a"
+    ]
+  },
+  "provenance": {
+    "source_type": "knowledge_base",
+    "source_url": "https://battery.knowledge-graph.eu/wiki/Category:OSW1969007d5acf40539642877659a02c23",
+    "retrieved_at": 1777498212
+  },
+  "editorial": {
+    "review_status": "stub",
+    "promoted_at": "2026-04-29",
+    "note": "Auto-generated stub from Battery Knowledge Graph (CC BY-SA 4.0). Review and enrich."
+  }
+}
