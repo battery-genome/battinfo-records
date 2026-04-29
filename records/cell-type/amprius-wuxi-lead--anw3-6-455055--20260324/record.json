@@ -8,7 +8,8 @@
     "model": "ANW3.6-455055",
     "manufacturer": {
       "type": "Organization",
-      "name": "Amprius_Wuxi Lead"
+      "name": "Amprius_Wuxi Lead",
+      "id": "https://w3id.org/battinfo/organization/znfd-xkjd-64r8-8fww"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

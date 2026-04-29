@@ -8,7 +8,8 @@
     "model": "SLPB100216216H",
     "manufacturer": {
       "type": "Organization",
-      "name": "Kokam"
+      "name": "Kokam",
+      "id": "https://w3id.org/battinfo/organization/10y0-nymg-csg9-7se4"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

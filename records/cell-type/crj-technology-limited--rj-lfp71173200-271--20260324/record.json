@@ -8,7 +8,8 @@
     "model": "RJ-LFP71173200-271",
     "manufacturer": {
       "type": "Organization",
-      "name": "CRJ Technology Limited"
+      "name": "CRJ Technology Limited",
+      "id": "https://w3id.org/battinfo/organization/k3s7-6fav-ztvr-0d0s"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

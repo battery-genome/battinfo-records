@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/yegv-1ktb-7g6g-1010",
     "short_id": "yegv1ktb",
-    "type": "Organization",
-    "name": "EVE Energy"
+    "type": "Manufacturer",
+    "name": "EVE Energy",
+    "legalName": "EVE Energy Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Huizhou"
+    },
+    "alternateName": [
+      "EVE",
+      "亿纬锂能"
+    ],
+    "description": "Chinese manufacturer of primary lithium and lithium-ion batteries."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

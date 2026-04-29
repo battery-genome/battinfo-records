@@ -8,7 +8,8 @@
     "model": "L0578G1A1",
     "manufacturer": {
       "type": "Organization",
-      "name": "Hitachi"
+      "name": "Hitachi",
+      "id": "https://w3id.org/battinfo/organization/hqvk-jmhb-n0gq-ayag"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

@@ -8,7 +8,8 @@
     "model": "48173125-100Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "GFB"
+      "name": "GFB",
+      "id": "https://w3id.org/battinfo/organization/5jg8-7q7s-skax-0tah"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

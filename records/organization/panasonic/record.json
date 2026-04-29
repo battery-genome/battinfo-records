@@ -3,8 +3,19 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8",
     "short_id": "en1av2t1",
-    "type": "Organization",
-    "name": "Panasonic"
+    "type": "Manufacturer",
+    "name": "Panasonic",
+    "legalName": "Panasonic Holdings Corporation",
+    "location": {
+      "addressCountry": "JP",
+      "addressLocality": "Osaka"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q183230",
+    "alternateName": [
+      "パナソニック",
+      "Panasonic Energy"
+    ],
+    "description": "Japanese electronics manufacturer and major global producer of lithium-ion cylindrical cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +23,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

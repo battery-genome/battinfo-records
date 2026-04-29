@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/fda7-fas3-hv5s-kwx2",
     "short_id": "fda7fas3",
-    "type": "Organization",
-    "name": "DURACELL"
+    "type": "Manufacturer",
+    "name": "Duracell",
+    "legalName": "Duracell Inc.",
+    "location": {
+      "addressCountry": "US"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q672808",
+    "alternateName": [
+      "DURACELL"
+    ],
+    "description": "US consumer battery brand, owned by Berkshire Hathaway."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

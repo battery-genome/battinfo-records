@@ -3,8 +3,23 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/xsa9-ke9k-e8d2-0nrn",
     "short_id": "xsa9ke9k",
-    "type": "Organization",
-    "name": "LG"
+    "type": "Manufacturer",
+    "name": "LG Energy Solution",
+    "legalName": "LG Energy Solution, Ltd.",
+    "location": {
+      "addressCountry": "KR",
+      "addressLocality": "Seoul"
+    },
+    "foundingDate": "2020",
+    "sameAs": "https://www.wikidata.org/wiki/Q104997810",
+    "alternateName": [
+      "LG",
+      "LG Chem",
+      "LG Chem Battery",
+      "LGCS",
+      "LGES"
+    ],
+    "description": "South Korean battery manufacturer, spun off from LG Chem in 2020. Records predating 2020 may reference LG Chem."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +27,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/qzqr-rvd2-qfkp-j6fp",
     "short_id": "qzqrrvd2",
-    "type": "Organization",
-    "name": "Headway Group"
+    "type": "Manufacturer",
+    "name": "Headway",
+    "legalName": "Headway Group Co., Ltd.",
+    "location": {
+      "addressCountry": "CN"
+    },
+    "alternateName": [
+      "Headway Group"
+    ],
+    "description": "Chinese manufacturer of large-format cylindrical LFP cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

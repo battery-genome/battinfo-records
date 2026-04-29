@@ -8,7 +8,8 @@
     "model": "VL 34570",
     "manufacturer": {
       "type": "Organization",
-      "name": "Saft"
+      "name": "Saft",
+      "id": "https://w3id.org/battinfo/organization/fnsx-jxx9-fp7j-ja1j"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

@@ -12,7 +12,10 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "needs-review",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
-  }
+  },
+  "notes": [
+    "Name 'Amprius_Wuxi Lead' in source records reflects silicon-anode cells developed by Amprius (US) manufactured by Wuxi Lead (CN)."
+  ]
 }

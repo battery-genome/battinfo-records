@@ -8,7 +8,8 @@
     "model": "AE8867220PMHRE",
     "manufacturer": {
       "type": "Organization",
-      "name": "Advanced Electronics Energy"
+      "name": "Advanced Electronics Energy",
+      "id": "https://w3id.org/battinfo/organization/ga96-h04q-gmq0-kqat"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

@@ -8,7 +8,8 @@
     "model": "N18650CP",
     "manufacturer": {
       "type": "Organization",
-      "name": "BAK"
+      "name": "BAK",
+      "id": "https://w3id.org/battinfo/organization/9hkp-kfvx-hawe-fb0e"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

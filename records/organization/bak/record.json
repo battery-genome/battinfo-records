@@ -3,8 +3,19 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/9hkp-kfvx-hawe-fb0e",
     "short_id": "9hkpkfvx",
-    "type": "Organization",
-    "name": "BAK"
+    "type": "Manufacturer",
+    "name": "BAK Power",
+    "legalName": "Shenzhen BAK Power Battery Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Shenzhen"
+    },
+    "alternateName": [
+      "BAK",
+      "Shenzhen BAK Battery",
+      "China BAK Battery"
+    ],
+    "description": "Chinese manufacturer of lithium-ion cylindrical and prismatic cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +23,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

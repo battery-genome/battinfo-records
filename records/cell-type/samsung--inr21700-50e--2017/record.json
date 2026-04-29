@@ -8,7 +8,8 @@
     "model": "INR21700-50E",
     "manufacturer": {
       "type": "Organization",
-      "name": "Samsung"
+      "name": "Samsung",
+      "id": "https://w3id.org/battinfo/organization/dv6v-e44p-9xak-s2kn"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

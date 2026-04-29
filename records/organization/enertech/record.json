@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/j1e8-na4x-69sq-gtag",
     "short_id": "j1e8na4x",
-    "type": "Organization",
-    "name": "ENERTECH"
+    "type": "Manufacturer",
+    "name": "Enertech International",
+    "legalName": "Enertech International Inc.",
+    "location": {
+      "addressCountry": "KR"
+    },
+    "alternateName": [
+      "ENERTECH"
+    ],
+    "description": "South Korean manufacturer of lithium-ion polymer cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

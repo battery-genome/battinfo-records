@@ -8,7 +8,8 @@
     "model": "ICP225069S",
     "manufacturer": {
       "type": "Organization",
-      "name": "Wuhan Lisun Power Corp. Ltd"
+      "name": "Wuhan Lisun Power Corp. Ltd",
+      "id": "https://w3id.org/battinfo/organization/415k-fbwr-5qy1-eev5"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

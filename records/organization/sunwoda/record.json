@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/dd8c-s6fr-qa6g-5b5w",
     "short_id": "dd8cs6fr",
-    "type": "Organization",
-    "name": "Sunwoda"
+    "type": "Manufacturer",
+    "name": "Sunwoda",
+    "legalName": "Sunwoda Electronic Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Shenzhen"
+    },
+    "alternateName": [
+      "新旺达"
+    ]
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

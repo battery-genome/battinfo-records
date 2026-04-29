@@ -8,7 +8,8 @@
     "model": "UR18650",
     "manufacturer": {
       "type": "Organization",
-      "name": "SANYO"
+      "name": "SANYO",
+      "id": "https://w3id.org/battinfo/organization/wp63-p0pv-en3e-2bfs"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

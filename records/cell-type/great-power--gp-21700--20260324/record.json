@@ -8,7 +8,8 @@
     "model": "GP 21700",
     "manufacturer": {
       "type": "Organization",
-      "name": "Great Power"
+      "name": "Great Power",
+      "id": "https://w3id.org/battinfo/organization/hmjj-hf3s-24d3-agee"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

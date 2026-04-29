@@ -8,7 +8,8 @@
     "model": "FREY36130290-100PF",
     "manufacturer": {
       "type": "Organization",
-      "name": "Jiangsu FREY"
+      "name": "Jiangsu FREY",
+      "id": "https://w3id.org/battinfo/organization/9fmx-scn8-whq0-qjmr"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

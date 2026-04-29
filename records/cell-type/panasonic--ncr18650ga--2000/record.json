@@ -8,7 +8,8 @@
     "model": "NCR18650GA",
     "manufacturer": {
       "type": "Organization",
-      "name": "PANASONIC"
+      "name": "PANASONIC",
+      "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

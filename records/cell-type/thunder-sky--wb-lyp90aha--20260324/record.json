@@ -8,7 +8,8 @@
     "model": "WB-LYP90AHA",
     "manufacturer": {
       "type": "Organization",
-      "name": "Thunder-Sky"
+      "name": "Thunder-Sky",
+      "id": "https://w3id.org/battinfo/organization/f7ra-wv4w-05nw-hsyw"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

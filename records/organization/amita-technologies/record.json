@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/v8m2-ptpw-jtrv-gh53",
     "short_id": "v8m2ptpw",
-    "type": "Organization",
-    "name": "Amita Technologies"
+    "type": "Manufacturer",
+    "name": "AMITA Technologies",
+    "legalName": "AMITA Technologies, Inc.",
+    "location": {
+      "addressCountry": "TW"
+    },
+    "alternateName": [
+      "AMITA"
+    ],
+    "description": "Taiwanese manufacturer of lithium-ion battery cells and packs."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

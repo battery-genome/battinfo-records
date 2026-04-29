@@ -3,8 +3,20 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/6nzg-2gay-cksk-gjm4",
     "short_id": "6nzg2gay",
-    "type": "Organization",
-    "name": "MURATA"
+    "type": "Manufacturer",
+    "name": "Murata",
+    "legalName": "Murata Manufacturing Co., Ltd.",
+    "location": {
+      "addressCountry": "JP",
+      "addressLocality": "Kyoto"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q696128",
+    "alternateName": [
+      "MURATA",
+      "村田製作所",
+      "Sony Energy Devices"
+    ],
+    "description": "Japanese electronics manufacturer that acquired Sony's battery business in 2017. Cells previously sold under the Sony brand are now Murata-branded."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +24,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

@@ -3,8 +3,15 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/fnsx-jxx9-fp7j-ja1j",
     "short_id": "fnsxjxx9",
-    "type": "Organization",
-    "name": "Saft"
+    "type": "Manufacturer",
+    "name": "Saft",
+    "legalName": "Saft Groupe S.A.",
+    "location": {
+      "addressCountry": "FR",
+      "addressLocality": "Bagnolet"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q1380143",
+    "description": "French manufacturer of high-performance batteries for industrial, defence, and space applications. Subsidiary of TotalEnergies since 2016."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +19,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

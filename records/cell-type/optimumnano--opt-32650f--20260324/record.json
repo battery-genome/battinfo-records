@@ -8,7 +8,8 @@
     "model": "OPT-32650F",
     "manufacturer": {
       "type": "Organization",
-      "name": "OPTIMUMNANO"
+      "name": "OPTIMUMNANO",
+      "id": "https://w3id.org/battinfo/organization/aebt-pc5e-tfww-sbmv"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

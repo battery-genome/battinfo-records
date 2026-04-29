@@ -8,7 +8,8 @@
     "model": "KFL 32650-10P",
     "manufacturer": {
       "type": "Organization",
-      "name": "Kayo battery co.. ltd"
+      "name": "Kayo battery co.. ltd",
+      "id": "https://w3id.org/battinfo/organization/kn64-b59t-k89j-95f9"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

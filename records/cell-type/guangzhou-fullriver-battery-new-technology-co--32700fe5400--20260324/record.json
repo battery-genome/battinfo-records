@@ -8,7 +8,8 @@
     "model": "32700Fe5400",
     "manufacturer": {
       "type": "Organization",
-      "name": "Guangzhou FULLRIVER Battery New Technology Co"
+      "name": "Guangzhou FULLRIVER Battery New Technology Co",
+      "id": "https://w3id.org/battinfo/organization/ksyb-gphp-r4ad-dt22"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

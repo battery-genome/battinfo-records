@@ -8,7 +8,8 @@
     "model": "MP174865",
     "manufacturer": {
       "type": "Organization",
-      "name": "Saft"
+      "name": "Saft",
+      "id": "https://w3id.org/battinfo/organization/fnsx-jxx9-fp7j-ja1j"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

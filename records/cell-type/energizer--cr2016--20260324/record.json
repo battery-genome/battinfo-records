@@ -8,7 +8,8 @@
     "model": "CR2016",
     "manufacturer": {
       "type": "Organization",
-      "name": "ENERGIZER"
+      "name": "ENERGIZER",
+      "id": "https://w3id.org/battinfo/organization/0c4x-5xh3-5138-2em6"
     },
     "cell_format": "coin",
     "chemistry": "Li-primary",

@@ -8,7 +8,8 @@
     "model": "LP71173207-272Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "Lishen"
+      "name": "Lishen",
+      "id": "https://w3id.org/battinfo/organization/0xka-61sk-0kyq-85nj"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

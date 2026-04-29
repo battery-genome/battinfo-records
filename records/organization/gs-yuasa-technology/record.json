@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/r14k-hhk0-y5s0-rdhg",
     "short_id": "r14khhk0",
-    "type": "Organization",
-    "name": "GS Yuasa Technology"
+    "type": "Manufacturer",
+    "name": "GS Yuasa",
+    "legalName": "GS Yuasa Technology Ltd.",
+    "location": {
+      "addressCountry": "JP"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q1571799",
+    "alternateName": [
+      "GS Yuasa Technology",
+      "ジーエス・ユアサ"
+    ],
+    "description": "Japanese battery manufacturer producing lead-acid and lithium-ion cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

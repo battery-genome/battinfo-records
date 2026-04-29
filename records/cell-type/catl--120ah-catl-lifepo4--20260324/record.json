@@ -8,7 +8,8 @@
     "model": "120Ah CATL LiFePO4",
     "manufacturer": {
       "type": "Organization",
-      "name": "CATL"
+      "name": "CATL",
+      "id": "https://w3id.org/battinfo/organization/crv1-jj1e-38q8-3bk7"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

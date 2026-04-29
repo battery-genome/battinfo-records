@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/f7ra-wv4w-05nw-hsyw",
     "short_id": "f7rawv4w",
-    "type": "Organization",
-    "name": "Thunder-Sky"
+    "type": "Manufacturer",
+    "name": "Thunder Sky Winston Battery",
+    "legalName": "Thunder Sky Winston Battery Limited",
+    "location": {
+      "addressCountry": "CN"
+    },
+    "alternateName": [
+      "Thunder-Sky",
+      "Winston Battery"
+    ],
+    "description": "Chinese manufacturer of large-format lithium iron yttrium (LiFeYPO4) cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

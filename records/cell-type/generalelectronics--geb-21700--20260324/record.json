@@ -8,7 +8,8 @@
     "model": "GEB 21700",
     "manufacturer": {
       "type": "Organization",
-      "name": "GeneralElectronics"
+      "name": "GeneralElectronics",
+      "id": "https://w3id.org/battinfo/organization/hjqy-p8fr-1pgf-jf5a"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

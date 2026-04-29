@@ -8,7 +8,8 @@
     "model": "KP 21700",
     "manufacturer": {
       "type": "Organization",
-      "name": "KeepPower"
+      "name": "KeepPower",
+      "id": "https://w3id.org/battinfo/organization/ekrp-6w9z-8jrx-k6j3"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

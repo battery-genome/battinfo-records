@@ -8,7 +8,8 @@
     "model": "QL015KA",
     "manufacturer": {
       "type": "Organization",
-      "name": "Quallion LLC"
+      "name": "Quallion LLC",
+      "id": "https://w3id.org/battinfo/organization/jfd1-asnh-1gsd-1fgn"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

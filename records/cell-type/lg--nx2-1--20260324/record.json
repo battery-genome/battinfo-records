@@ -8,7 +8,8 @@
     "model": "NX2.1",
     "manufacturer": {
       "type": "Organization",
-      "name": "LG"
+      "name": "LG",
+      "id": "https://w3id.org/battinfo/organization/xsa9-ke9k-e8d2-0nrn"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

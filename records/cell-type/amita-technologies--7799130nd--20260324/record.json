@@ -8,7 +8,8 @@
     "model": "7799130ND",
     "manufacturer": {
       "type": "Organization",
-      "name": "Amita Technologies"
+      "name": "Amita Technologies",
+      "id": "https://w3id.org/battinfo/organization/v8m2-ptpw-jtrv-gh53"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

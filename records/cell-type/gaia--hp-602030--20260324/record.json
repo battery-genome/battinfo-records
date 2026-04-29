@@ -8,7 +8,8 @@
     "model": "HP 602030",
     "manufacturer": {
       "type": "Organization",
-      "name": "Gaia"
+      "name": "Gaia",
+      "id": "https://w3id.org/battinfo/organization/dx7g-7ww2-3jha-crqk"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

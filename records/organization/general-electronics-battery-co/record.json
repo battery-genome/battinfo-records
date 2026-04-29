@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/hjqy-p8fr-1pgf-jf5a",
     "short_id": "hjqyp8fr",
-    "type": "Organization",
-    "name": "General Electronics Battery Co"
+    "type": "Manufacturer",
+    "name": "General Electronics Battery",
+    "legalName": "General Electronics Battery Co.",
+    "location": {
+      "addressCountry": "US"
+    },
+    "alternateName": [
+      "General Electronics Battery Co",
+      "GeneralElectronics",
+      "GEB"
+    ]
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

@@ -8,7 +8,8 @@
     "model": "LP6848166",
     "manufacturer": {
       "type": "Organization",
-      "name": "Eemb Co"
+      "name": "Eemb Co",
+      "id": "https://w3id.org/battinfo/organization/61eg-epnz-8kk2-hxrk"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

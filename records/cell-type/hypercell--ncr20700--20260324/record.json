@@ -8,7 +8,8 @@
     "model": "NCR20700",
     "manufacturer": {
       "type": "Organization",
-      "name": "Hypercell"
+      "name": "Hypercell",
+      "id": "https://w3id.org/battinfo/organization/8cks-6fgz-n7ce-3zf2"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

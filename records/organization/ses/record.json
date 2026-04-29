@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/dbs8-zvmc-d96y-xexh",
     "short_id": "dbs8zvmc",
-    "type": "Organization",
-    "name": "SES"
+    "type": "Manufacturer",
+    "name": "SES AI",
+    "legalName": "SES AI Corporation",
+    "location": {
+      "addressCountry": "US",
+      "addressLocality": "Boston, MA"
+    },
+    "alternateName": [
+      "SES",
+      "Solid Energy Systems"
+    ],
+    "description": "US developer of lithium-metal batteries."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

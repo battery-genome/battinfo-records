@@ -3,8 +3,19 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/tms4-y54d-xh86-wr5m",
     "short_id": "tms4y54d",
-    "type": "Organization",
-    "name": "MOLICEL"
+    "type": "Manufacturer",
+    "name": "Molicel",
+    "legalName": "E-One Moli Energy (Canada) Limited",
+    "location": {
+      "addressCountry": "CA",
+      "addressLocality": "Maple Ridge, BC"
+    },
+    "alternateName": [
+      "MOLICEL",
+      "E-One Moli Energy (Canada) Limited",
+      "Moli Energy"
+    ],
+    "description": "Canadian manufacturer of high-rate lithium-ion cylindrical cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +23,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

@@ -8,7 +8,8 @@
     "model": "HP601300-LFP-22",
     "manufacturer": {
       "type": "Organization",
-      "name": "EAS"
+      "name": "EAS",
+      "id": "https://w3id.org/battinfo/organization/yzcq-9crh-ay58-frbm"
     },
     "cell_format": "unknown",
     "chemistry": "unknown"

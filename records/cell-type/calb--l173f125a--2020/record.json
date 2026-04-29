@@ -8,7 +8,8 @@
     "model": "L173F125A",
     "manufacturer": {
       "type": "Organization",
-      "name": "CALB"
+      "name": "CALB",
+      "id": "https://w3id.org/battinfo/organization/tmqg-3g69-sf8d-yb36"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

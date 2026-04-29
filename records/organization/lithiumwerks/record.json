@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/s687-avf9-wxcf-d69s",
     "short_id": "s687avf9",
-    "type": "Organization",
-    "name": "LITHIUMWERKS"
+    "type": "Manufacturer",
+    "name": "LithiumWerks",
+    "legalName": "LithiumWerks B.V.",
+    "location": {
+      "addressCountry": "NL"
+    },
+    "alternateName": [
+      "LITHIUMWERKS"
+    ],
+    "description": "Dutch company that acquired A123 Systems' LFP cell manufacturing operations in 2017."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

@@ -8,7 +8,8 @@
     "model": "INR18650-30P",
     "manufacturer": {
       "type": "Organization",
-      "name": "EVE"
+      "name": "EVE",
+      "id": "https://w3id.org/battinfo/organization/yegv-1ktb-7g6g-1010"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

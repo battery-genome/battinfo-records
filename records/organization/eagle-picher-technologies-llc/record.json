@@ -3,8 +3,20 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/f5ps-78gp-9j11-3x7y",
     "short_id": "f5ps78gp",
-    "type": "Organization",
-    "name": "Eagle Picher Technologies LLC"
+    "type": "Manufacturer",
+    "name": "EaglePicher Technologies",
+    "legalName": "EaglePicher Technologies, LLC",
+    "location": {
+      "addressCountry": "US",
+      "addressLocality": "Joplin, MO"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q3050826",
+    "alternateName": [
+      "Eagle Picher Technologies LLC",
+      "EAGLE PICHER",
+      "EaglePicher"
+    ],
+    "description": "US manufacturer of specialty batteries for defence, space, and medical applications."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +24,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

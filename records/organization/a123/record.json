@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/8z6j-n7vw-e73w-smh7",
     "short_id": "8z6jn7vw",
-    "type": "Organization",
-    "name": "A123"
+    "type": "Manufacturer",
+    "name": "A123 Systems",
+    "legalName": "A123 Systems LLC",
+    "location": {
+      "addressCountry": "US"
+    },
+    "foundingDate": "2001",
+    "sameAs": "https://www.wikidata.org/wiki/Q193793",
+    "alternateName": [
+      "A123"
+    ],
+    "description": "US manufacturer of lithium iron phosphate (LFP) batteries, founded at MIT. Acquired by Wanxiang Group (China) in 2013."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

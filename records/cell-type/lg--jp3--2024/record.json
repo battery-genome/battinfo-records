@@ -9,7 +9,8 @@
     "year": 2024,
     "manufacturer": {
       "type": "Organization",
-      "name": "LG"
+      "name": "LG",
+      "id": "https://w3id.org/battinfo/organization/xsa9-ke9k-e8d2-0nrn"
     },
     "cell_format": "pouch",
     "chemistry": "Li-ion",

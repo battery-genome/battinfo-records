@@ -8,7 +8,8 @@
     "model": "GL60 (936A04)",
     "manufacturer": {
       "type": "Organization",
-      "name": "LECLANCHÉ"
+      "name": "LECLANCHÉ",
+      "id": "https://w3id.org/battinfo/organization/553k-998c-1d10-y74y"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

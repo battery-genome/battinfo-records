@@ -3,8 +3,19 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/553k-998c-1d10-y74y",
     "short_id": "553k998c",
-    "type": "Organization",
-    "name": "LECLANCHÉ"
+    "type": "Manufacturer",
+    "name": "Leclanché",
+    "legalName": "Leclanché SA",
+    "location": {
+      "addressCountry": "CH",
+      "addressLocality": "Yverdon-les-Bains"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q2724618",
+    "alternateName": [
+      "LECLANCHÉ",
+      "Leclanche"
+    ],
+    "description": "Swiss manufacturer of lithium-ion cells and energy storage systems."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +23,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

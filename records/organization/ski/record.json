@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/670e-m5fw-c5rz-q8av",
     "short_id": "670em5fw",
-    "type": "Organization",
-    "name": "SKI"
+    "type": "Manufacturer",
+    "name": "SK Innovation",
+    "legalName": "SK Innovation Co., Ltd.",
+    "location": {
+      "addressCountry": "KR"
+    },
+    "alternateName": [
+      "SKI",
+      "SK On"
+    ],
+    "description": "South Korean energy company; battery division spun off as SK On in 2021."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

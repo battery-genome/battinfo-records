@@ -8,7 +8,8 @@
     "model": "HTPFR26650-3000mAh-3.2V",
     "manufacturer": {
       "type": "Organization",
-      "name": "JGNE"
+      "name": "JGNE",
+      "id": "https://w3id.org/battinfo/organization/q7cf-3x8c-98m7-1sfs"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

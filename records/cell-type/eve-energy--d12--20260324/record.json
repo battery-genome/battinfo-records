@@ -8,7 +8,8 @@
     "model": "D12",
     "manufacturer": {
       "type": "Organization",
-      "name": "EVE Energy"
+      "name": "EVE Energy",
+      "id": "https://w3id.org/battinfo/organization/yegv-1ktb-7g6g-1010"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

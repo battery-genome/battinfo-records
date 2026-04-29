@@ -8,7 +8,8 @@
     "model": "IFR32135-15Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "GOTION"
+      "name": "GOTION",
+      "id": "https://w3id.org/battinfo/organization/e4an-rcy8-189y-ny04"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

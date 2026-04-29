@@ -8,7 +8,8 @@
     "model": "LCB8570170EC1",
     "manufacturer": {
       "type": "Organization",
-      "name": "Battronix"
+      "name": "Battronix",
+      "id": "https://w3id.org/battinfo/organization/18pd-6hnq-gn76-edpw"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

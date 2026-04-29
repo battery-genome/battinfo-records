@@ -8,7 +8,8 @@
     "model": "SHP800L-35-CYL",
     "manufacturer": {
       "type": "Organization",
-      "name": "WELION"
+      "name": "WELION",
+      "id": "https://w3id.org/battinfo/organization/jfvm-2z8y-h2k1-k3q3"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

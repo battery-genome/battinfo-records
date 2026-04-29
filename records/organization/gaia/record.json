@@ -3,8 +3,13 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/dx7g-7ww2-3jha-crqk",
     "short_id": "dx7g7ww2",
-    "type": "Organization",
-    "name": "Gaia"
+    "type": "Manufacturer",
+    "name": "Gaia",
+    "legalName": "Gaia Akkumulatorenwerke GmbH",
+    "location": {
+      "addressCountry": "DE"
+    },
+    "description": "German manufacturer of large-format lithium-ion cells (now inactive)."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +17,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

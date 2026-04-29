@@ -8,7 +8,8 @@
     "model": "HEV CELL",
     "manufacturer": {
       "type": "Organization",
-      "name": "EnerDel. INC"
+      "name": "EnerDel. INC",
+      "id": "https://w3id.org/battinfo/organization/patr-1zfk-z7q2-29m1"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

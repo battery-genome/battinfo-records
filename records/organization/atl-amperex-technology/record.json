@@ -3,8 +3,20 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/04pb-8bz7-tvb9-h4tz",
     "short_id": "04pb8bz7",
-    "type": "Organization",
-    "name": "ATL Amperex Technology"
+    "type": "Manufacturer",
+    "name": "Amperex Technology Limited",
+    "legalName": "Amperex Technology Limited",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Hong Kong"
+    },
+    "foundingDate": "1999",
+    "sameAs": "https://www.wikidata.org/wiki/Q4756494",
+    "alternateName": [
+      "ATL",
+      "ATL Amperex Technology"
+    ],
+    "description": "Leading manufacturer of lithium-ion polymer batteries, subsidiary of TDK Corporation (Japan)."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +24,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

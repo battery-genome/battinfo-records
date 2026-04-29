@@ -8,7 +8,8 @@
     "model": "INR21700P-4000mAh",
     "manufacturer": {
       "type": "Organization",
-      "name": "Dongguan K-Tech New Energy"
+      "name": "Dongguan K-Tech New Energy",
+      "id": "https://w3id.org/battinfo/organization/rxmd-mj9c-em9n-3egg"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

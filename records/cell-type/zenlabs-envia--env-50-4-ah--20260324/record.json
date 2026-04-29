@@ -8,7 +8,8 @@
     "model": "ENV 50.4 Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "Zenlabs_Envia"
+      "name": "Zenlabs_Envia",
+      "id": "https://w3id.org/battinfo/organization/qdcd-zdfp-qjw8-q3t1"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

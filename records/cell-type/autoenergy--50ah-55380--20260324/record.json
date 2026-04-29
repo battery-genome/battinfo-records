@@ -8,7 +8,8 @@
     "model": "50Ah 55380",
     "manufacturer": {
       "type": "Organization",
-      "name": "AutoEnergy"
+      "name": "AutoEnergy",
+      "id": "https://w3id.org/battinfo/organization/det5-0zxs-vea8-wcse"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

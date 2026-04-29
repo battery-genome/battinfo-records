@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/n72j-0pkf-02tq-saha",
     "short_id": "n72j0pkf",
-    "type": "Organization",
-    "name": "ENAX"
+    "type": "Manufacturer",
+    "name": "ENAX",
+    "legalName": "ENAX, Inc.",
+    "location": {
+      "addressCountry": "JP"
+    },
+    "alternateName": [
+      "ENAX"
+    ],
+    "description": "Japanese manufacturer of large-format lithium-ion pouch cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

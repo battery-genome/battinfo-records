@@ -8,7 +8,8 @@
     "model": "APR18650M1B",
     "manufacturer": {
       "type": "Organization",
-      "name": "LITHIUMWERKS"
+      "name": "LITHIUMWERKS",
+      "id": "https://w3id.org/battinfo/organization/s687-avf9-wxcf-d69s"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

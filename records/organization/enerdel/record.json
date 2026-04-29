@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/patr-1zfk-z7q2-29m1",
     "short_id": "patr1zfk",
-    "type": "Organization",
-    "name": "ENERDEL"
+    "type": "Manufacturer",
+    "name": "EnerDel",
+    "legalName": "EnerDel, Inc.",
+    "location": {
+      "addressCountry": "US",
+      "addressLocality": "Indianapolis, IN"
+    },
+    "alternateName": [
+      "ENERDEL",
+      "EnerDel. INC"
+    ],
+    "description": "US manufacturer of lithium-ion battery modules and packs."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

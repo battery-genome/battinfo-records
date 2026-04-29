@@ -3,8 +3,16 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/n0n3-w5h7-hhr9-bhqy",
     "short_id": "n0n3w5h7",
-    "type": "Organization",
-    "name": "Sinopoly"
+    "type": "Manufacturer",
+    "name": "Sinopoly Battery",
+    "legalName": "Sinopoly Battery Limited",
+    "location": {
+      "addressCountry": "HK"
+    },
+    "alternateName": [
+      "Sinopoly"
+    ],
+    "description": "Hong Kong-listed manufacturer of large-format LFP batteries."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +20,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

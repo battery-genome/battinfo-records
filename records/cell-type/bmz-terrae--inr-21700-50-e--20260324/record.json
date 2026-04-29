@@ -8,7 +8,8 @@
     "model": "INR 21700 50 E",
     "manufacturer": {
       "type": "Organization",
-      "name": "BMZ_TerraE"
+      "name": "BMZ_TerraE",
+      "id": "https://w3id.org/battinfo/organization/2x8g-9z3w-grwe-5x8r"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

@@ -8,7 +8,8 @@
     "model": "INR21700",
     "manufacturer": {
       "type": "Organization",
-      "name": "VAPCELL"
+      "name": "VAPCELL",
+      "id": "https://w3id.org/battinfo/organization/ewps-rcgb-5rn1-jv9t"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

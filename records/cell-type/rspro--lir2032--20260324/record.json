@@ -8,7 +8,8 @@
     "model": "LIR2032",
     "manufacturer": {
       "type": "Organization",
-      "name": "RSPRO"
+      "name": "RSPRO",
+      "id": "https://w3id.org/battinfo/organization/t7r9-k0s9-hwtb-q6wb"
     },
     "cell_format": "coin",
     "chemistry": "Li-ion"

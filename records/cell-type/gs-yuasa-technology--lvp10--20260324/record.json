@@ -8,7 +8,8 @@
     "model": "LVP10",
     "manufacturer": {
       "type": "Organization",
-      "name": "GS Yuasa Technology"
+      "name": "GS Yuasa Technology",
+      "id": "https://w3id.org/battinfo/organization/r14k-hhk0-y5s0-rdhg"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

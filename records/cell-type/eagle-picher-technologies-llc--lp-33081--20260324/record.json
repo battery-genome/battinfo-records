@@ -8,7 +8,8 @@
     "model": "LP 33081",
     "manufacturer": {
       "type": "Organization",
-      "name": "Eagle Picher Technologies LLC"
+      "name": "Eagle Picher Technologies LLC",
+      "id": "https://w3id.org/battinfo/organization/f5ps-78gp-9j11-3x7y"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

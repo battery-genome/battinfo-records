@@ -3,8 +3,15 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/61eg-epnz-8kk2-hxrk",
     "short_id": "61egepnz",
-    "type": "Organization",
-    "name": "Eemb Co"
+    "type": "Manufacturer",
+    "name": "EEMB",
+    "legalName": "EEMB Co., Ltd.",
+    "location": {
+      "addressCountry": "CN"
+    },
+    "alternateName": [
+      "Eemb Co"
+    ]
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +19,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

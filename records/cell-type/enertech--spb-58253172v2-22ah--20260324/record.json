@@ -8,7 +8,8 @@
     "model": "SPB 58253172V2_22Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "ENERTECH"
+      "name": "ENERTECH",
+      "id": "https://w3id.org/battinfo/organization/j1e8-na4x-69sq-gtag"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

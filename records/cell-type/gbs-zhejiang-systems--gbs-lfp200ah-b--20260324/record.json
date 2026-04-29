@@ -8,7 +8,8 @@
     "model": "GBS-LFP200Ah-B",
     "manufacturer": {
       "type": "Organization",
-      "name": "GBS ZhEJIANG Systems"
+      "name": "GBS ZhEJIANG Systems",
+      "id": "https://w3id.org/battinfo/organization/zsxq-d5w3-fmvf-3tn4"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

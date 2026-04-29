@@ -8,7 +8,8 @@
     "model": "INR18650-26ME",
     "manufacturer": {
       "type": "Organization",
-      "name": "TENPOWER"
+      "name": "TENPOWER",
+      "id": "https://w3id.org/battinfo/organization/aes2-fjpq-xbzy-25a4"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

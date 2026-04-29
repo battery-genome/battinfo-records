@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/e4an-rcy8-189y-ny04",
     "short_id": "e4anrcy8",
-    "type": "Organization",
-    "name": "GOTION"
+    "type": "Manufacturer",
+    "name": "Gotion High-tech",
+    "legalName": "Gotion High-tech Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Hefei"
+    },
+    "alternateName": [
+      "GOTION",
+      "国轩高科"
+    ],
+    "description": "Chinese manufacturer of LFP and NCM cells for EV and energy storage."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

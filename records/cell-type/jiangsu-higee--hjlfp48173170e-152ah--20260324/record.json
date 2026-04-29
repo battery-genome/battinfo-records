@@ -8,7 +8,8 @@
     "model": "HJLFP48173170E-152Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "JIANGSU HIGEE"
+      "name": "JIANGSU HIGEE",
+      "id": "https://w3id.org/battinfo/organization/6mzn-z45h-75y3-kdmz"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

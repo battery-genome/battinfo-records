@@ -8,7 +8,8 @@
     "model": "OPT-32650F",
     "manufacturer": {
       "type": "Organization",
-      "name": "Optimum Battery Co Ltd"
+      "name": "Optimum Battery Co Ltd",
+      "id": "https://w3id.org/battinfo/organization/6c9y-2mty-sj5a-96v7"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

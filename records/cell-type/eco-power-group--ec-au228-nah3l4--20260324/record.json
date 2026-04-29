@@ -8,7 +8,8 @@
     "model": "EC-AU228-NAH3L4",
     "manufacturer": {
       "type": "Organization",
-      "name": "ECO POWER GROUP"
+      "name": "ECO POWER GROUP",
+      "id": "https://w3id.org/battinfo/organization/zabs-626p-faff-dvvp"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

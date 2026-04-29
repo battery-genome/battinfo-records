@@ -8,7 +8,8 @@
     "model": "8235135",
     "manufacturer": {
       "type": "Organization",
-      "name": "Yoku Energy (Shenzhen) Co"
+      "name": "Yoku Energy (Shenzhen) Co",
+      "id": "https://w3id.org/battinfo/organization/38sx-4he4-9y5p-18dt"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

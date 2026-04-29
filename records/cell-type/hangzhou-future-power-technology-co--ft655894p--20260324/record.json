@@ -8,7 +8,8 @@
     "model": "FT655894P",
     "manufacturer": {
       "type": "Organization",
-      "name": "Hangzhou Future Power Technology Co"
+      "name": "Hangzhou Future Power Technology Co",
+      "id": "https://w3id.org/battinfo/organization/etnn-b54p-6s8s-66mh"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

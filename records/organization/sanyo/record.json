@@ -3,8 +3,23 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/wp63-p0pv-en3e-2bfs",
     "short_id": "wp63p0pv",
-    "type": "Organization",
-    "name": "SANYO"
+    "type": "Manufacturer",
+    "name": "Sanyo",
+    "legalName": "Sanyo Electric Co., Ltd.",
+    "location": {
+      "addressCountry": "JP"
+    },
+    "foundingDate": "1947",
+    "dissolutionDate": "2012",
+    "sameAs": "https://www.wikidata.org/wiki/Q186168",
+    "alternateName": [
+      "SANYO"
+    ],
+    "parentOrganization": {
+      "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8",
+      "name": "Panasonic"
+    },
+    "description": "Japanese electronics and battery manufacturer, fully absorbed into Panasonic by 2012."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +27,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

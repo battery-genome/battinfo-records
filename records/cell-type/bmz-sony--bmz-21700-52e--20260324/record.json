@@ -8,7 +8,8 @@
     "model": "BMZ 21700 52E",
     "manufacturer": {
       "type": "Organization",
-      "name": "BMZ_Sony"
+      "name": "BMZ_Sony",
+      "id": "https://w3id.org/battinfo/organization/phj1-pwnc-p544-99st"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

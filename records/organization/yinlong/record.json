@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/0a06-q83v-kjmq-ryh2",
     "short_id": "0a06q83v",
-    "type": "Organization",
-    "name": "YINLONG"
+    "type": "Manufacturer",
+    "name": "Yinlong",
+    "legalName": "Guangzhou Yinlong New Energy Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Guangzhou"
+    },
+    "alternateName": [
+      "YINLONG",
+      "银隆新能源"
+    ],
+    "description": "Chinese manufacturer of lithium titanate (LTO) batteries."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

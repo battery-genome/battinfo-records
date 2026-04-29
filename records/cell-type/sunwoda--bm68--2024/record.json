@@ -8,7 +8,8 @@
     "model": "BM68",
     "manufacturer": {
       "type": "Organization",
-      "name": "Sunwoda"
+      "name": "Sunwoda",
+      "id": "https://w3id.org/battinfo/organization/dd8c-s6fr-qa6g-5b5w"
     },
     "chemistry": "Li-ion",
     "year": 2024,

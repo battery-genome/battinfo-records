@@ -8,7 +8,8 @@
     "model": "K226650P",
     "manufacturer": {
       "type": "Organization",
-      "name": "K2"
+      "name": "K2",
+      "id": "https://w3id.org/battinfo/organization/5jkm-ve8q-1dtw-4v81"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

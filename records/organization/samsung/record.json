@@ -3,8 +3,19 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/dv6v-e44p-9xak-s2kn",
     "short_id": "dv6ve44p",
-    "type": "Organization",
-    "name": "Samsung"
+    "type": "Manufacturer",
+    "name": "Samsung SDI",
+    "legalName": "Samsung SDI Co., Ltd.",
+    "location": {
+      "addressCountry": "KR",
+      "addressLocality": "Yongin"
+    },
+    "sameAs": "https://www.wikidata.org/wiki/Q491229",
+    "alternateName": [
+      "Samsung",
+      "삼성SDI"
+    ],
+    "description": "South Korean battery manufacturer and subsidiary of Samsung Group. Produces cylindrical, prismatic, and pouch lithium-ion cells."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +23,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

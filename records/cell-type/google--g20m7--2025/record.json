@@ -8,7 +8,8 @@
     "model": "G20M7",
     "manufacturer": {
       "type": "Organization",
-      "name": "Google"
+      "name": "Google",
+      "id": "https://w3id.org/battinfo/organization/f77z-0g9d-87pf-2ws8"
     },
     "chemistry": "Li-ion",
     "year": 2025,

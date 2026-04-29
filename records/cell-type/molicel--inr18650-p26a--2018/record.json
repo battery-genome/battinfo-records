@@ -8,7 +8,8 @@
     "model": "INR18650-P26A",
     "manufacturer": {
       "type": "Organization",
-      "name": "Molicel"
+      "name": "Molicel",
+      "id": "https://w3id.org/battinfo/organization/tms4-y54d-xh86-wr5m"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

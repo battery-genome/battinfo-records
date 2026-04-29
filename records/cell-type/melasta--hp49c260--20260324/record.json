@@ -8,7 +8,8 @@
     "model": "HP49C260",
     "manufacturer": {
       "type": "Organization",
-      "name": "MELASTA"
+      "name": "MELASTA",
+      "id": "https://w3id.org/battinfo/organization/7t5k-fzsr-4h6d-2gyr"
     },
     "cell_format": "unknown",
     "chemistry": "unknown"

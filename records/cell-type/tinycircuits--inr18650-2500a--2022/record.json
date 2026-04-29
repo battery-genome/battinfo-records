@@ -8,7 +8,8 @@
     "model": "INR18650-2500A",
     "manufacturer": {
       "type": "Organization",
-      "name": "TINYCIRCUITS"
+      "name": "TINYCIRCUITS",
+      "id": "https://w3id.org/battinfo/organization/c38g-fy5b-fhmt-fyxs"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

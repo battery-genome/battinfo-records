@@ -3,8 +3,18 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/tmqg-3g69-sf8d-yb36",
     "short_id": "tmqg3g69",
-    "type": "Organization",
-    "name": "CALB"
+    "type": "Manufacturer",
+    "name": "CALB",
+    "legalName": "China Aviation Lithium Battery Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Luoyang"
+    },
+    "alternateName": [
+      "China Aviation Lithium Battery",
+      "中航锂电"
+    ],
+    "description": "Major Chinese manufacturer of lithium iron phosphate batteries."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +22,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

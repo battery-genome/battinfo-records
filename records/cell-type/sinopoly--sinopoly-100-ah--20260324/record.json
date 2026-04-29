@@ -8,7 +8,8 @@
     "model": "Sinopoly 100 Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "Sinopoly"
+      "name": "Sinopoly",
+      "id": "https://w3id.org/battinfo/organization/n0n3-w5h7-hhr9-bhqy"
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",

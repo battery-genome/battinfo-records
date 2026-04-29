@@ -8,7 +8,8 @@
     "model": "LR2170SC",
     "manufacturer": {
       "type": "Organization",
-      "name": "Lishen"
+      "name": "Lishen",
+      "id": "https://w3id.org/battinfo/organization/0xka-61sk-0kyq-85nj"
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",

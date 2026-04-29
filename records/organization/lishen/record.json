@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/0xka-61sk-0kyq-85nj",
     "short_id": "0xka61sk",
-    "type": "Organization",
-    "name": "Lishen"
+    "type": "Manufacturer",
+    "name": "Lishen",
+    "legalName": "Tianjin Lishen Battery Joint-Stock Co., Ltd.",
+    "location": {
+      "addressCountry": "CN",
+      "addressLocality": "Tianjin"
+    },
+    "alternateName": [
+      "天津力神"
+    ],
+    "description": "One of China's oldest lithium-ion battery manufacturers."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

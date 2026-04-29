@@ -3,8 +3,17 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/qdcd-zdfp-qjw8-q3t1",
     "short_id": "qdcdzdfp",
-    "type": "Organization",
-    "name": "Zenlabs_Envia"
+    "type": "Manufacturer",
+    "name": "Zenlabs Energy",
+    "legalName": "Zenlabs Energy, Inc.",
+    "location": {
+      "addressCountry": "US"
+    },
+    "alternateName": [
+      "Zenlabs_Envia",
+      "Envia Systems"
+    ],
+    "description": "US developer of high-energy lithium-ion cells; successor to Envia Systems."
   },
   "provenance": {
     "source_type": "inferred",
@@ -12,7 +21,7 @@
     "retrieved_at": 1777412785
   },
   "editorial": {
-    "review_status": "stub",
+    "review_status": "curated",
     "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
   }
 }

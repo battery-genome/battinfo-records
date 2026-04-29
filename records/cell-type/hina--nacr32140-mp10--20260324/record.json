@@ -8,7 +8,8 @@
     "model": "NACR32140-MP10",
     "manufacturer": {
       "type": "Organization",
-      "name": "HINA"
+      "name": "HINA",
+      "id": "https://w3id.org/battinfo/organization/0aem-363e-b5a8-t4en"
     },
     "cell_format": "cylindrical",
     "chemistry": "unknown",

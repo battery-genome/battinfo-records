@@ -8,7 +8,8 @@
     "model": "LTO51130205-110Ah",
     "manufacturer": {
       "type": "Organization",
-      "name": "YINLONG"
+      "name": "YINLONG",
+      "id": "https://w3id.org/battinfo/organization/0a06-q83v-kjmq-ryh2"
     },
     "cell_format": "unknown",
     "chemistry": "unknown"

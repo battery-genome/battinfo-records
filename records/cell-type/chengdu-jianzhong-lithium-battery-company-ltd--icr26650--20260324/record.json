@@ -8,7 +8,8 @@
     "model": "ICR26650",
     "manufacturer": {
       "type": "Organization",
-      "name": "Chengdu Jianzhong Lithium Battery Company Ltd"
+      "name": "Chengdu Jianzhong Lithium Battery Company Ltd",
+      "id": "https://w3id.org/battinfo/organization/r72h-74q7-rgjt-qd62"
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",

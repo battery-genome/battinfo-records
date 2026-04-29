@@ -8,7 +8,8 @@
     "model": "LR626",
     "manufacturer": {
       "type": "Organization",
-      "name": "KODAK"
+      "name": "KODAK",
+      "id": "https://w3id.org/battinfo/organization/fw54-fz4n-krpj-8e2n"
     },
     "cell_format": "coin",
     "chemistry": "unknown"
