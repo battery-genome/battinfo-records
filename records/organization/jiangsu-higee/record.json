@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/organization/6mzn-z45h-75y3-kdmz",
     "short_id": "6mznz45h",
     "type": "Organization",
-    "name": "JIANGSU HIGEE"
+    "name": "Jiangsu Higee",
+    "legalName": "Jiangsu Higee Energy Co.,Ltd"
   },
   "provenance": {
     "source_type": "inferred",
