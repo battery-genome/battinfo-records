@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/phj1-pwnc-p544-99st",
+    "short_id": "phj1pwnc",
+    "type": "Manufacturer",
+    "name": "BMZ Group",
+    "legalName": "BMZ GmbH",
+    "location": {
+      "addressCountry": "DE",
+      "addressLocality": "Karlstein am Main"
+    },
+    "alternateName": [
+      "BMZ",
+      "BMZ_Sony",
+      "BMZ_TerraE"
+    ],
+    "description": "German battery pack integrator and manufacturer. Assembles lithium-ion battery systems using cells from various suppliers (historically Sony/Murata and TerraE among others)."
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "curated",
+    "note": "Merged from bmz-sony and bmz-terrae. Canonical IRI from bmz-sony (phj1-pwnc-p544-99st). bmz-terrae IRI (2x8g-9z3w-grwe-5x8r) retired."
+  }
+}

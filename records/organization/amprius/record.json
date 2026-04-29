@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/znfd-xkjd-64r8-8fww",
+    "short_id": "znfdxkjd",
+    "type": "Manufacturer",
+    "name": "Amprius",
+    "legalName": "Amprius Technologies, Inc.",
+    "location": {
+      "addressCountry": "US",
+      "addressLocality": "Fremont, CA"
+    },
+    "alternateName": [
+      "Amprius_Wuxi Lead"
+    ],
+    "description": "US developer of silicon-anode lithium-ion cells for high-energy applications. Cells in this dataset were manufactured in partnership with Wuxi Lead (CN)."
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": null,
+    "retrieved_at": 1777412785
+  },
+  "editorial": {
+    "review_status": "curated",
+    "note": "Renamed from amprius-wuxi-lead. IRI unchanged."
+  }
+}

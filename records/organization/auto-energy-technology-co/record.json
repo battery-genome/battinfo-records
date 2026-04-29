@@ -3,8 +3,12 @@
   "organization": {
     "id": "https://w3id.org/battinfo/organization/x4zh-p8cq-nh2a-1f6q",
     "short_id": "x4zhp8cq",
-    "type": "Organization",
-    "name": "Auto Energy Technology Co"
+    "type": "Manufacturer",
+    "name": "Auto Energy Technology",
+    "alternateName": [
+      "Auto Energy Technology Co",
+      "AutoEnergy"
+    ]
   },
   "provenance": {
     "source_type": "inferred",
@@ -13,6 +17,6 @@
   },
   "editorial": {
     "review_status": "stub",
-    "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type."
+    "note": "Merged autoenergy into auto-energy-technology-co. IRI x4zh-p8cq-nh2a-1f6q canonical. autoenergy IRI (det5-0zxs-vea8-wcse) retired."
   }
 }
