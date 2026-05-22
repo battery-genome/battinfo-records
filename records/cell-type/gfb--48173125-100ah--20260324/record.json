@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vmch-wpjc-e9qe-sc2g",
+    "id": "https://w3id.org/battinfo/spec/vmch-wpjc-e9qe-sc2g",
     "short_id": "vmchwp",
     "identifier": "cell-type:vmch-wpjc-e9qe-sc2g",
     "name": "GFB 48173125-100Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sqca-8w31-9rvr-kywm",
+    "id": "https://w3id.org/battinfo/spec/sqca-8w31-9rvr-kywm",
     "short_id": "sqca8w",
     "identifier": "cell-type:sqca-8w31-9rvr-kywm",
     "name": "Eemb Co LP7568130F",

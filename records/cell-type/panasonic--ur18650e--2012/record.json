@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3wwc-7nk2-yj4c-ps8m",
+    "id": "https://w3id.org/battinfo/spec/3wwc-7nk2-yj4c-ps8m",
     "short_id": "3wwc7n",
     "identifier": "cell-type:3wwc-7nk2-yj4c-ps8m",
     "name": "PANASONIC UR18650E",

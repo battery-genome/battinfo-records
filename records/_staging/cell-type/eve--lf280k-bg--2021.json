@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/t4xh-yb6d-c663-yh8j",
+    "id": "https://w3id.org/battinfo/spec/t4xh-yb6d-c663-yh8j",
     "short_id": "t4xhyb",
     "identifier": "cell-type:t4xh-yb6d-c663-yh8j",
     "name": "EVE LF280K bg",

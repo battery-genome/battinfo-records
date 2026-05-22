@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/nkyg-ewjd-69yc-4mvx",
+    "id": "https://w3id.org/battinfo/spec/nkyg-ewjd-69yc-4mvx",
     "short_id": "nkygew",
     "identifier": "cell-type:nkyg-ewjd-69yc-4mvx",
     "name": "SAMSUNG INR18650-25S",

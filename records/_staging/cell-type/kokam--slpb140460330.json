@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zfmr-b2q6-7gq2-3rx4",
+    "id": "https://w3id.org/battinfo/spec/zfmr-b2q6-7gq2-3rx4",
     "short_id": "zfmrb2",
     "identifier": "cell-type:zfmr-b2q6-7gq2-3rx4",
     "name": "Kokam SLPB140460330",

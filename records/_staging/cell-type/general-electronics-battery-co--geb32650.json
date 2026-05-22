@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k1rd-09xy-b9d3-n7q7",
+    "id": "https://w3id.org/battinfo/spec/k1rd-09xy-b9d3-n7q7",
     "short_id": "k1rd09",
     "identifier": "cell-type:k1rd-09xy-b9d3-n7q7",
     "name": "General Electronics Battery Co GEB32650",

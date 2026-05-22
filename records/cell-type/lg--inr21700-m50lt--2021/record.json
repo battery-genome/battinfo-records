@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kqdp-4rxj-kase-psvn",
+    "id": "https://w3id.org/battinfo/spec/kqdp-4rxj-kase-psvn",
     "short_id": "kqdp4r",
     "identifier": "cell-type:kqdp-4rxj-kase-psvn",
     "name": "LG INR21700-M50LT",

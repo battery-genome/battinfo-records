@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m6b3-tdz5-mvb4-qt4s",
+    "id": "https://w3id.org/battinfo/spec/m6b3-tdz5-mvb4-qt4s",
     "short_id": "m6b3td",
     "identifier": "cell-type:m6b3-tdz5-mvb4-qt4s",
     "name": "Samsung EB-BS931ABE",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8fbz-45jj-xm2n-2fna",
+    "id": "https://w3id.org/battinfo/spec/8fbz-45jj-xm2n-2fna",
     "short_id": "8fbz45",
     "identifier": "cell-type:8fbz-45jj-xm2n-2fna",
     "name": "COSLIGHT FP45173209A",

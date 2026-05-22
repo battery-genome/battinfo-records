@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mxht-t4hp-5392-zz8q",
+    "id": "https://w3id.org/battinfo/spec/mxht-t4hp-5392-zz8q",
     "short_id": "mxhtt4",
     "identifier": "cell-type:mxht-t4hp-5392-zz8q",
     "name": "BAK N18650CR-35E",

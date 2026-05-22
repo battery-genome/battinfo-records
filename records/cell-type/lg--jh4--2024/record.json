@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zr31-5g8w-pyss-hd6v",
+    "id": "https://w3id.org/battinfo/spec/zr31-5g8w-pyss-hd6v",
     "short_id": "zr315g",
     "identifier": "cell-type:zr31-5g8w-pyss-hd6v",
     "name": "LG JH4",

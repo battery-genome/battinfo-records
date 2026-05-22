@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ksp3-sfzw-yvhf-s0we",
+    "id": "https://w3id.org/battinfo/spec/ksp3-sfzw-yvhf-s0we",
     "short_id": "ksp3sf",
     "identifier": "cell-type:ksp3-sfzw-yvhf-s0we",
     "name": "LG ICR18650-HD2C",

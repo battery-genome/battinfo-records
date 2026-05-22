@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3a41-jwfw-1xn6-gppt",
+    "id": "https://w3id.org/battinfo/spec/3a41-jwfw-1xn6-gppt",
     "short_id": "3a41jw",
     "identifier": "cell-type:3a41-jwfw-1xn6-gppt",
     "name": "ENERTECH SPB 70115145_12 Ah",

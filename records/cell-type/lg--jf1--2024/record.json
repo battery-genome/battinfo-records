@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qpm8-70g1-xfqv-8hmf",
+    "id": "https://w3id.org/battinfo/spec/qpm8-70g1-xfqv-8hmf",
     "short_id": "qpm870",
     "identifier": "cell-type:qpm8-70g1-xfqv-8hmf",
     "name": "LG JF1",

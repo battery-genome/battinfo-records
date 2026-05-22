@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/702x-j20h-xhf9-e0hg",
+    "id": "https://w3id.org/battinfo/spec/702x-j20h-xhf9-e0hg",
     "short_id": "702xj2",
     "identifier": "cell-type:702x-j20h-xhf9-e0hg",
     "name": "LITHIUMWERKS IFpR18650-E",

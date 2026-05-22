@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2k4b-dd21-8gff-kqd0",
+    "id": "https://w3id.org/battinfo/spec/2k4b-dd21-8gff-kqd0",
     "short_id": "2k4bdd",
     "identifier": "cell-type:2k4b-dd21-8gff-kqd0",
     "name": "A123 AMP20M1HD-A",
@@ -77,7 +77,7 @@
         "doi": "10.1016/j.etran.2020.100073",
         "type": "Article",
         "headline": "The role of cell geometry when selecting tab or surface cooling to minimise cell degradation",
-        "author": "Oskar Dondelewski and Teddy Szemberg O\u2019Connor and Yan Zhao and Ian A. Hunt and Alexander Holland and Alastair Hales and Gregory J. Offer and Yatish Patel",
+        "author": "Oskar Dondelewski and Teddy Szemberg O’Connor and Yan Zhao and Ian A. Hunt and Alexander Holland and Alastair Hales and Gregory J. Offer and Yatish Patel",
         "date_published": 2020
       },
       {
@@ -110,7 +110,7 @@
         "type": "Article",
         "headline": "Development of an Informative Lithium-Ion Battery Datasheet",
         "author": "Weiping Diao and Chetan Kulkarni and Michael Pecht",
-        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery\u2019s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
+        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery’s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
         "date_published": 2021
       },
       {
@@ -136,7 +136,7 @@
         "type": "Article",
         "headline": "Experimental Study of Heat Generation Rate during Discharge of LiFePO4 Pouch Cells of Different Nominal Capacities and Thickness",
         "author": "Shashank Arora and Ajay Kapoor",
-        "description": "<jats:p>High manufacturing cost and thermal stability of Li-ion battery cells are currently the two main deterrents to prolific demand for electric vehicles. A plausible solution to this issue is a modular/scalable battery thermal management system (TMS). A modular TMS can ensure thermal reliability for battery cells of different capacities and size without needing major structural revision besides facilitating mass-production. However, understanding the relationship of heat generation rates with cell capacity and thickness is essential for developing a scalable TMS. The present paper discusses results derived from an experimental investigation undertaken with this purpose. Heat generation rates for LiFePO4 pouch cells of different nominal capacities are measured at discharge rates of 0.33C, 1C and 3C in ambient temperatures ranging between \u221210 and 50 \u00b0C using a custom-designed calorimeter. It is observed that heat generation rates of the LiFePO4 pouch cells become independent of their nominal capacity and thickness if the ambient temperature is regulated at 35 \u00b0C. In ambient temperatures lower than 35 \u00b0C though, the thin battery cells are found to be generating heat at rates greater than those of thick battery cells and vice-versa at temperatures over 35 \u00b0C for all discharge rates.</jats:p>",
+        "description": "<jats:p>High manufacturing cost and thermal stability of Li-ion battery cells are currently the two main deterrents to prolific demand for electric vehicles. A plausible solution to this issue is a modular/scalable battery thermal management system (TMS). A modular TMS can ensure thermal reliability for battery cells of different capacities and size without needing major structural revision besides facilitating mass-production. However, understanding the relationship of heat generation rates with cell capacity and thickness is essential for developing a scalable TMS. The present paper discusses results derived from an experimental investigation undertaken with this purpose. Heat generation rates for LiFePO4 pouch cells of different nominal capacities are measured at discharge rates of 0.33C, 1C and 3C in ambient temperatures ranging between −10 and 50 °C using a custom-designed calorimeter. It is observed that heat generation rates of the LiFePO4 pouch cells become independent of their nominal capacity and thickness if the ambient temperature is regulated at 35 °C. In ambient temperatures lower than 35 °C though, the thin battery cells are found to be generating heat at rates greater than those of thick battery cells and vice-versa at temperatures over 35 °C for all discharge rates.</jats:p>",
         "date_published": 2019
       },
       {
@@ -145,7 +145,7 @@
         "type": "Article",
         "headline": "Benefits of Fast Battery Formation in a Model System",
         "author": "Peter M. Attia and Stephen J. Harris and William C. Chueh",
-        "description": "<jats:p>Lithium-ion battery formation affects battery cost, energy density, and lifetime. An improved understanding of the first cycle of solid-electrolyte interphase (SEI) growth on carbonaceous negative electrodes could aid in the design of optimized formation protocols. In this work, we systematically study SEI growth during the formation of carbon black negative electrodes in a standard carbonate electrolyte. We show that the initial ethylene carbonate (EC) reduction reaction occurs at \u223c0.5\u20131.2 V during the first lithiation, except under fast lithiation rates (\u226510C). The products of this EC reduction reaction do not passivate the electrode; only the SEI formed at lower potentials affects the second-cycle Coulombic efficiency. Thus, cycling quickly through the voltage regime of this reaction can decrease both formation time and first-cycle capacity loss, without an increase in subsequent-cycle capacity loss. We also show that the capacity consumed by this reaction is minimized at low temperatures and low salt concentrations. Finally, we discuss the mechanism behind our experimental results. This work reveals the fundamental processes underlying initial SEI growth on carbonaceous negative electrodes and provides insights for both optimizing the battery formation process and enabling novel electrolytes.</jats:p>",
+        "description": "<jats:p>Lithium-ion battery formation affects battery cost, energy density, and lifetime. An improved understanding of the first cycle of solid-electrolyte interphase (SEI) growth on carbonaceous negative electrodes could aid in the design of optimized formation protocols. In this work, we systematically study SEI growth during the formation of carbon black negative electrodes in a standard carbonate electrolyte. We show that the initial ethylene carbonate (EC) reduction reaction occurs at ∼0.5–1.2 V during the first lithiation, except under fast lithiation rates (≥10C). The products of this EC reduction reaction do not passivate the electrode; only the SEI formed at lower potentials affects the second-cycle Coulombic efficiency. Thus, cycling quickly through the voltage regime of this reaction can decrease both formation time and first-cycle capacity loss, without an increase in subsequent-cycle capacity loss. We also show that the capacity consumed by this reaction is minimized at low temperatures and low salt concentrations. Finally, we discuss the mechanism behind our experimental results. This work reveals the fundamental processes underlying initial SEI growth on carbonaceous negative electrodes and provides insights for both optimizing the battery formation process and enabling novel electrolytes.</jats:p>",
         "date_published": 2021
       },
       {

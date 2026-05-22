@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jyyg-657v-k3n9-n127",
+    "id": "https://w3id.org/battinfo/spec/jyyg-657v-k3n9-n127",
     "short_id": "jyyg65",
     "identifier": "cell-type:jyyg-657v-k3n9-n127",
     "name": "LG E63B",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/33jw-cstp-tq00-3rm8",
+    "id": "https://w3id.org/battinfo/spec/33jw-cstp-tq00-3rm8",
     "short_id": "33jwcs",
     "identifier": "cell-type:33jw-cstp-tq00-3rm8",
     "name": "HYB Battery Co IMP206990S",

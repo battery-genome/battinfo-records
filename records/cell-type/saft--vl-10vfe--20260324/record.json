@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sgda-wjr1-d7jk-766h",
+    "id": "https://w3id.org/battinfo/spec/sgda-wjr1-d7jk-766h",
     "short_id": "sgdawj",
     "identifier": "cell-type:sgda-wjr1-d7jk-766h",
     "name": "Saft VL 10VFE",

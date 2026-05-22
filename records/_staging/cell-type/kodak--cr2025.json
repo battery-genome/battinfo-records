@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cvat-fc3g-j4rx-dr3p",
+    "id": "https://w3id.org/battinfo/spec/cvat-fc3g-j4rx-dr3p",
     "short_id": "cvatfc",
     "identifier": "cell-type:cvat-fc3g-j4rx-dr3p",
     "name": "KODAK CR2025",

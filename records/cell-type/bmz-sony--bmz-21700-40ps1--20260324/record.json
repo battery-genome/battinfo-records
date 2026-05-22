@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7ajp-rq3e-25m6-bkex",
+    "id": "https://w3id.org/battinfo/spec/7ajp-rq3e-25m6-bkex",
     "short_id": "7ajprq",
     "identifier": "cell-type:7ajp-rq3e-25m6-bkex",
     "name": "BMZ_Sony BMZ 21700 40PS1",

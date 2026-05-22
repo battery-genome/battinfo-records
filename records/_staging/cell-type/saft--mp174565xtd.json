@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vq41-wkk9-vzv4-vpc3",
+    "id": "https://w3id.org/battinfo/spec/vq41-wkk9-vzv4-vpc3",
     "short_id": "vq41wk",
     "identifier": "cell-type:vq41-wkk9-vzv4-vpc3",
     "name": "Saft MP174565xtd",

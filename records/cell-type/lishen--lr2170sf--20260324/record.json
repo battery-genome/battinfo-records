@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/awe0-3p86-tmt7-86q5",
+    "id": "https://w3id.org/battinfo/spec/awe0-3p86-tmt7-86q5",
     "short_id": "awe03p",
     "identifier": "cell-type:awe0-3p86-tmt7-86q5",
     "name": "Lishen LR2170SF",

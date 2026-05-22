@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/meg7-115w-7wzp-wjce",
+    "id": "https://w3id.org/battinfo/spec/meg7-115w-7wzp-wjce",
     "short_id": "meg711",
     "identifier": "cell-type:meg7-115w-7wzp-wjce",
     "name": "Eagle Picher Technologies LLC LP 33037",

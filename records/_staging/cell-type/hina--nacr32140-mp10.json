@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/snxr-p3mr-tges-03ys",
+    "id": "https://w3id.org/battinfo/spec/snxr-p3mr-tges-03ys",
     "short_id": "snxrp3",
     "identifier": "cell-type:snxr-p3mr-tges-03ys",
     "name": "HINA NACR32140-MP10",

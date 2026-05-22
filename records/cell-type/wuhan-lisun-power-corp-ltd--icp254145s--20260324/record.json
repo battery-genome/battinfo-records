@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rp1x-27yg-s0zn-ka3f",
+    "id": "https://w3id.org/battinfo/spec/rp1x-27yg-s0zn-ka3f",
     "short_id": "rp1x27",
     "identifier": "cell-type:rp1x-27yg-s0zn-ka3f",
     "name": "Wuhan Lisun Power Corp. Ltd ICP254145S",

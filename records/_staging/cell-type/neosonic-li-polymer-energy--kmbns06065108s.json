@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1dgx-5ft1-tmv8-m1w5",
+    "id": "https://w3id.org/battinfo/spec/1dgx-5ft1-tmv8-m1w5",
     "short_id": "1dgx5f",
     "identifier": "cell-type:1dgx-5ft1-tmv8-m1w5",
     "name": "Neosonic Li-Polymer Energy KMBNS06065108S",

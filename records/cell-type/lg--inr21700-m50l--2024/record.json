@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kka0-fpt7-kc4v-3cg7",
+    "id": "https://w3id.org/battinfo/spec/kka0-fpt7-kc4v-3cg7",
     "short_id": "kka0fp",
     "identifier": "cell-type:kka0-fpt7-kc4v-3cg7",
     "name": "LG INR21700-M50L",

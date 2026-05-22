@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gej0-sem5-34mg-y980",
+    "id": "https://w3id.org/battinfo/spec/gej0-sem5-34mg-y980",
     "short_id": "gej0se",
     "identifier": "cell-type:gej0-sem5-34mg-y980",
     "name": "A123 26AH",

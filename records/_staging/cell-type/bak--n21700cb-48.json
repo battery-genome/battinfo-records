@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/d2xr-f1ph-tw22-tg68",
+    "id": "https://w3id.org/battinfo/spec/d2xr-f1ph-tw22-tg68",
     "short_id": "d2xrf1",
     "identifier": "cell-type:d2xr-f1ph-tw22-tg68",
     "name": "BAK N21700CB-48",

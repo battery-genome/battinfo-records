@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/888x-85ec-y2e1-4r04",
+    "id": "https://w3id.org/battinfo/spec/888x-85ec-y2e1-4r04",
     "short_id": "888x85",
     "identifier": "cell-type:888x-85ec-y2e1-4r04",
     "name": "Neosonic Li-Polymer Energy KMBNS45065144S",

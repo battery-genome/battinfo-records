@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/tt1e-1be6-2wq9-e2ad",
+    "id": "https://w3id.org/battinfo/spec/tt1e-1be6-2wq9-e2ad",
     "short_id": "tt1e1b",
     "identifier": "cell-type:tt1e-1be6-2wq9-e2ad",
     "name": "EVE Energy LF90K",

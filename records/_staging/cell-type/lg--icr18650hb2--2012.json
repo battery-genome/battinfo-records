@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sfd1-m19w-ek9c-3myd",
+    "id": "https://w3id.org/battinfo/spec/sfd1-m19w-ek9c-3myd",
     "short_id": "sfd1m1",
     "identifier": "cell-type:sfd1-m19w-ek9c-3myd",
     "name": "LG ICR18650HB2",

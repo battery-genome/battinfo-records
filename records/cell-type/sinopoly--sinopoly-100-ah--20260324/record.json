@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ws34-2v8s-m84x-bdgh",
+    "id": "https://w3id.org/battinfo/spec/ws34-2v8s-m84x-bdgh",
     "short_id": "ws342v",
     "identifier": "cell-type:ws34-2v8s-m84x-bdgh",
     "name": "Sinopoly Sinopoly 100 Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/caz1-ck3b-xwnh-xg3r",
+    "id": "https://w3id.org/battinfo/spec/caz1-ck3b-xwnh-xg3r",
     "short_id": "caz1ck",
     "identifier": "cell-type:caz1-ck3b-xwnh-xg3r",
     "name": "Kokam SLPB50106100",

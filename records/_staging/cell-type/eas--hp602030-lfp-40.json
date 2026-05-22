@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c6ct-bayq-94jy-rxba",
+    "id": "https://w3id.org/battinfo/spec/c6ct-bayq-94jy-rxba",
     "short_id": "c6ctba",
     "identifier": "cell-type:c6ct-bayq-94jy-rxba",
     "name": "EAS HP602030-LFP-40",

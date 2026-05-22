@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2qs8-x9jf-wfra-va04",
+    "id": "https://w3id.org/battinfo/spec/2qs8-x9jf-wfra-va04",
     "short_id": "2qs8x9",
     "identifier": "cell-type:2qs8-x9jf-wfra-va04",
     "name": "Wuhan Lisun Power Corp. Ltd ICP225054S",

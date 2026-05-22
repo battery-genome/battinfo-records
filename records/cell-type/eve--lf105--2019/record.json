@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f2ne-hb1j-wkf2-drxd",
+    "id": "https://w3id.org/battinfo/spec/f2ne-hb1j-wkf2-drxd",
     "short_id": "f2nehb",
     "identifier": "cell-type:f2ne-hb1j-wkf2-drxd",
     "name": "EVE LF105",

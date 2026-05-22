@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/999d-w9zs-g94w-q4wj",
+    "id": "https://w3id.org/battinfo/spec/999d-w9zs-g94w-q4wj",
     "short_id": "999dw9",
     "identifier": "cell-type:999d-w9zs-g94w-q4wj",
     "name": "HYB Battery Co IMP50110140S",

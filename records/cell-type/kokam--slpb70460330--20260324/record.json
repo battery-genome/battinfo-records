@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7gs0-ny5f-xqt9-7bfa",
+    "id": "https://w3id.org/battinfo/spec/7gs0-ny5f-xqt9-7bfa",
     "short_id": "7gs0ny",
     "identifier": "cell-type:7gs0-ny5f-xqt9-7bfa",
     "name": "Kokam SLPB70460330",

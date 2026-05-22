@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/e0c6-8v6x-4cxj-cw2e",
+    "id": "https://w3id.org/battinfo/spec/e0c6-8v6x-4cxj-cw2e",
     "short_id": "e0c68v",
     "identifier": "cell-type:e0c6-8v6x-4cxj-cw2e",
     "name": "BMZ_TerraE INR 21700 50 E",

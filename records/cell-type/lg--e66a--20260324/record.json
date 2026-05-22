@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c0aw-3g9v-cmr8-h65k",
+    "id": "https://w3id.org/battinfo/spec/c0aw-3g9v-cmr8-h65k",
     "short_id": "c0aw3g",
     "identifier": "cell-type:c0aw-3g9v-cmr8-h65k",
     "name": "LG E66A",

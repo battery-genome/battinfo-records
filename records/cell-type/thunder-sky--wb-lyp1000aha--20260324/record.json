@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9ntt-2hw1-saz6-zv4t",
+    "id": "https://w3id.org/battinfo/spec/9ntt-2hw1-saz6-zv4t",
     "short_id": "9ntt2h",
     "identifier": "cell-type:9ntt-2hw1-saz6-zv4t",
     "name": "Thunder-Sky WB-LYP1000AHA",

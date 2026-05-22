@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m895-g1ja-3efb-2s4x",
+    "id": "https://w3id.org/battinfo/spec/m895-g1ja-3efb-2s4x",
     "short_id": "m895g1",
     "identifier": "cell-type:m895-g1ja-3efb-2s4x",
     "name": "Hitachi L0578G1A1",

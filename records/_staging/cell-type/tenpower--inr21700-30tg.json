@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/68rs-9t27-jhyn-ctap",
+    "id": "https://w3id.org/battinfo/spec/68rs-9t27-jhyn-ctap",
     "short_id": "68rs9t",
     "identifier": "cell-type:68rs-9t27-jhyn-ctap",
     "name": "TENPOWER INR21700-30TG",

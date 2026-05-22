@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qp9k-rnb3-5jwm-c15n",
+    "id": "https://w3id.org/battinfo/spec/qp9k-rnb3-5jwm-c15n",
     "short_id": "qp9krn",
     "identifier": "cell-type:qp9k-rnb3-5jwm-c15n",
     "name": "WELION SHP800L-35-CYL",

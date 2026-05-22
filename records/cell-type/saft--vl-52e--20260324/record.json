@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/t0tm-vfwp-qw84-dtnw",
+    "id": "https://w3id.org/battinfo/spec/t0tm-vfwp-qw84-dtnw",
     "short_id": "t0tmvf",
     "identifier": "cell-type:t0tm-vfwp-qw84-dtnw",
     "name": "Saft VL 52E",

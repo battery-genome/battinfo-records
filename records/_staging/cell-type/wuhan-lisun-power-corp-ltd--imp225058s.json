@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/xyh1-21yd-b9gz-r8vy",
+    "id": "https://w3id.org/battinfo/spec/xyh1-21yd-b9gz-r8vy",
     "short_id": "xyh121",
     "identifier": "cell-type:xyh1-21yd-b9gz-r8vy",
     "name": "Wuhan Lisun Power Corp. Ltd IMP225058S",

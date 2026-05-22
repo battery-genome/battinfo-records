@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bjvz-yrjg-d3c2-3n92",
+    "id": "https://w3id.org/battinfo/spec/bjvz-yrjg-d3c2-3n92",
     "short_id": "bjvzyr",
     "identifier": "cell-type:bjvz-yrjg-d3c2-3n92",
     "name": "Hangzhou Future Power Technology Co FT655894P",

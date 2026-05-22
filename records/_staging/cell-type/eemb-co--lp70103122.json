@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6bf9-pbqx-20kh-a62v",
+    "id": "https://w3id.org/battinfo/spec/6bf9-pbqx-20kh-a62v",
     "short_id": "6bf9pb",
     "identifier": "cell-type:6bf9-pbqx-20kh-a62v",
     "name": "Eemb Co LP70103122",

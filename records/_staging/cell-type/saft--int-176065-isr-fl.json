@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m8wv-xpyg-j2a2-qq03",
+    "id": "https://w3id.org/battinfo/spec/m8wv-xpyg-j2a2-qq03",
     "short_id": "m8wvxp",
     "identifier": "cell-type:m8wv-xpyg-j2a2-qq03",
     "name": "Saft INT 176065 ISR FL",

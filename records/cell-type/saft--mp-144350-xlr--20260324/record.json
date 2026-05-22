@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jca2-n0c5-nt03-vk4y",
+    "id": "https://w3id.org/battinfo/spec/jca2-n0c5-nt03-vk4y",
     "short_id": "jca2n0",
     "identifier": "cell-type:jca2-n0c5-nt03-vk4y",
     "name": "Saft MP 144350 XLR",

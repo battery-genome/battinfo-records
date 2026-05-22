@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dcy9-j262-w8vb-gxp8",
+    "id": "https://w3id.org/battinfo/spec/dcy9-j262-w8vb-gxp8",
     "short_id": "dcy9j2",
     "identifier": "cell-type:dcy9-j262-w8vb-gxp8",
     "name": "Samsung SDI 94Ah",

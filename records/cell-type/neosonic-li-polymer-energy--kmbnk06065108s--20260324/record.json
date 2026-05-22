@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/chxf-pvb8-9z45-xq3g",
+    "id": "https://w3id.org/battinfo/spec/chxf-pvb8-9z45-xq3g",
     "short_id": "chxfpv",
     "identifier": "cell-type:chxf-pvb8-9z45-xq3g",
     "name": "Neosonic Li-Polymer Energy KMBNK06065108S",

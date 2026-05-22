@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gpcn-xna5-tgvp-prv2",
+    "id": "https://w3id.org/battinfo/spec/gpcn-xna5-tgvp-prv2",
     "short_id": "gpcnxn",
     "identifier": "cell-type:gpcn-xna5-tgvp-prv2",
     "name": "CATL LEP54H4K1",

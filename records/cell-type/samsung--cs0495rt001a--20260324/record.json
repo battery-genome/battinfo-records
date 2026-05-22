@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jhs3-f2qx-98c8-4qzs",
+    "id": "https://w3id.org/battinfo/spec/jhs3-f2qx-98c8-4qzs",
     "short_id": "jhs3f2",
     "identifier": "cell-type:jhs3-f2qx-98c8-4qzs",
     "name": "Samsung CS0495RT001A",

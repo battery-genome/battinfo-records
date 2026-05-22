@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/fx49-p8gw-k7b5-gvyp",
+    "id": "https://w3id.org/battinfo/spec/fx49-p8gw-k7b5-gvyp",
     "short_id": "fx49p8",
     "identifier": "cell-type:fx49-p8gw-k7b5-gvyp",
     "name": "MELASTA SLPBA842124HVR",

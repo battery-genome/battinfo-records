@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/p1c5-wbqm-a2fe-d80m",
+    "id": "https://w3id.org/battinfo/spec/p1c5-wbqm-a2fe-d80m",
     "short_id": "p1c5wb",
     "identifier": "cell-type:p1c5-wbqm-a2fe-d80m",
     "name": "Eemb Co LP38103122",

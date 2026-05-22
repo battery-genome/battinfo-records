@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/myn1-vwe5-gypj-q3xy",
+    "id": "https://w3id.org/battinfo/spec/myn1-vwe5-gypj-q3xy",
     "short_id": "myn1vw",
     "identifier": "cell-type:myn1-vwe5-gypj-q3xy",
     "name": "Guangzhou FULLRIVER Battery New Technology Co 32700Fe5400",

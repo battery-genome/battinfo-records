@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5par-raa3-e4dn-1j4c",
+    "id": "https://w3id.org/battinfo/spec/5par-raa3-e4dn-1j4c",
     "short_id": "5parra",
     "identifier": "cell-type:5par-raa3-e4dn-1j4c",
     "name": "Samsung INR21700-30T",

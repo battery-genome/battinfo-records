@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/xjt7-v6hz-0bc1-wwmd",
+    "id": "https://w3id.org/battinfo/spec/xjt7-v6hz-0bc1-wwmd",
     "short_id": "xjt7v6",
     "identifier": "cell-type:xjt7-v6hz-0bc1-wwmd",
     "name": "Saft VES100",

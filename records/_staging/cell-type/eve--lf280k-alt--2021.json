@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1gm2-anrq-5et1-958t",
+    "id": "https://w3id.org/battinfo/spec/1gm2-anrq-5et1-958t",
     "short_id": "1gm2an",
     "identifier": "cell-type:1gm2-anrq-5et1-958t",
     "name": "EVE LF280K alt",

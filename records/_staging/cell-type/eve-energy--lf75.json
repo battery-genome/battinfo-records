@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cwj8-8nvp-kvg9-z27w",
+    "id": "https://w3id.org/battinfo/spec/cwj8-8nvp-kvg9-z27w",
     "short_id": "cwj88n",
     "identifier": "cell-type:cwj8-8nvp-kvg9-z27w",
     "name": "EVE Energy LF75",

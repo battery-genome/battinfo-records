@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mm5w-z2hh-yf3z-h4kp",
+    "id": "https://w3id.org/battinfo/spec/mm5w-z2hh-yf3z-h4kp",
     "short_id": "mm5wz2",
     "identifier": "cell-type:mm5w-z2hh-yf3z-h4kp",
     "name": "Kokam SLPB41205130H",

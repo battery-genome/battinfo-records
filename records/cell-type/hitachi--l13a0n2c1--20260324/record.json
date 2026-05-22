@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gfew-e8gy-ns2v-dkz9",
+    "id": "https://w3id.org/battinfo/spec/gfew-e8gy-ns2v-dkz9",
     "short_id": "gfewe8",
     "identifier": "cell-type:gfew-e8gy-ns2v-dkz9",
     "name": "Hitachi L13A0N2C1",

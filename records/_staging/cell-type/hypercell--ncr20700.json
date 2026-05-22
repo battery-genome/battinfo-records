@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cffg-2jke-d30c-3hwj",
+    "id": "https://w3id.org/battinfo/spec/cffg-2jke-d30c-3hwj",
     "short_id": "cffg2j",
     "identifier": "cell-type:cffg-2jke-d30c-3hwj",
     "name": "Hypercell NCR20700",

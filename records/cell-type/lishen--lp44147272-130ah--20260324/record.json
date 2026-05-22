@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k4sj-y4rp-4fm0-p9kf",
+    "id": "https://w3id.org/battinfo/spec/k4sj-y4rp-4fm0-p9kf",
     "short_id": "k4sjy4",
     "identifier": "cell-type:k4sj-y4rp-4fm0-p9kf",
     "name": "Lishen LP44147272-130Ah",

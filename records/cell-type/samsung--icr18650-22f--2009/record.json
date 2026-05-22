@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2wt9-yex3-w4st-ad7k",
+    "id": "https://w3id.org/battinfo/spec/2wt9-yex3-w4st-ad7k",
     "short_id": "2wt9ye",
     "identifier": "cell-type:2wt9-yex3-w4st-ad7k",
     "name": "SAMSUNG ICR18650-22F",

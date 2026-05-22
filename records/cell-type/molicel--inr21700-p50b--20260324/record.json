@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8axq-qgg3-4rns-akhf",
+    "id": "https://w3id.org/battinfo/spec/8axq-qgg3-4rns-akhf",
     "short_id": "8axqqg",
     "identifier": "cell-type:8axq-qgg3-4rns-akhf",
     "name": "Molicel INR21700-P50B",

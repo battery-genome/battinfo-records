@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k2fy-mvhb-04jj-e0qd",
+    "id": "https://w3id.org/battinfo/spec/k2fy-mvhb-04jj-e0qd",
     "short_id": "k2fymv",
     "identifier": "cell-type:k2fy-mvhb-04jj-e0qd",
     "name": "Saft MP176065",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/r5pg-fmph-7h9p-814f",
+    "id": "https://w3id.org/battinfo/spec/r5pg-fmph-7h9p-814f",
     "short_id": "r5pgfm",
     "identifier": "cell-type:r5pg-fmph-7h9p-814f",
     "name": "CALB LFP176Ah",

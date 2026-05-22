@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dxtn-5vjp-jj5n-w040",
+    "id": "https://w3id.org/battinfo/spec/dxtn-5vjp-jj5n-w040",
     "short_id": "dxtn5v",
     "identifier": "cell-type:dxtn-5vjp-jj5n-w040",
     "name": "PANASONIC UR18650AA",

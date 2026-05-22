@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/t1x8-t8ag-0k9y-mg2f",
+    "id": "https://w3id.org/battinfo/spec/t1x8-t8ag-0k9y-mg2f",
     "short_id": "t1x8t8",
     "identifier": "cell-type:t1x8-t8ag-0k9y-mg2f",
     "name": "Yinglong LithiumTitanate 9Ah",

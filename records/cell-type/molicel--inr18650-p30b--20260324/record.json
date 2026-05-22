@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hn5h-3a0e-hfjf-46vb",
+    "id": "https://w3id.org/battinfo/spec/hn5h-3a0e-hfjf-46vb",
     "short_id": "hn5h3a",
     "identifier": "cell-type:hn5h-3a0e-hfjf-46vb",
     "name": "Molicel INR18650-P30B",

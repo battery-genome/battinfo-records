@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/81c8-v3ke-nsjf-vmb4",
+    "id": "https://w3id.org/battinfo/spec/81c8-v3ke-nsjf-vmb4",
     "short_id": "81c8v3",
     "identifier": "cell-type:81c8-v3ke-nsjf-vmb4",
     "name": "TENPOWER INR18650-20SG",

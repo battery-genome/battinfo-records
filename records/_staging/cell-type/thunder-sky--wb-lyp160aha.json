@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3mdq-pc2y-fvt0-m15z",
+    "id": "https://w3id.org/battinfo/spec/3mdq-pc2y-fvt0-m15z",
     "short_id": "3mdqpc",
     "identifier": "cell-type:3mdq-pc2y-fvt0-m15z",
     "name": "Thunder-Sky WB-LYP160AHA",

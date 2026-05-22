@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/byjf-1aam-h9f3-wb9m",
+    "id": "https://w3id.org/battinfo/spec/byjf-1aam-h9f3-wb9m",
     "short_id": "byjf1a",
     "identifier": "cell-type:byjf-1aam-h9f3-wb9m",
     "name": "Kokam SLPB130255255G1",

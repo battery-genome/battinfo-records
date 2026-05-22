@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vd6r-wc7h-adat-h4y7",
+    "id": "https://w3id.org/battinfo/spec/vd6r-wc7h-adat-h4y7",
     "short_id": "vd6rwc",
     "identifier": "cell-type:vd6r-wc7h-adat-h4y7",
     "name": "LITHIUMWERKS APR18650M1B",

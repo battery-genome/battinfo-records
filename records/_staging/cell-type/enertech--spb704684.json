@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hnd6-01ye-4qem-xm6z",
+    "id": "https://w3id.org/battinfo/spec/hnd6-01ye-4qem-xm6z",
     "short_id": "hnd601",
     "identifier": "cell-type:hnd6-01ye-4qem-xm6z",
     "name": "ENERTECH SPB704684",

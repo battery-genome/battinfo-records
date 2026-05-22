@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kvtw-a3sy-68yx-q8ak",
+    "id": "https://w3id.org/battinfo/spec/kvtw-a3sy-68yx-q8ak",
     "short_id": "kvtwa3",
     "identifier": "cell-type:kvtw-a3sy-68yx-q8ak",
     "name": "CALB 26650FS3",

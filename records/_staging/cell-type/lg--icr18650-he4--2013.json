@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qwhc-eahq-w81e-nkyr",
+    "id": "https://w3id.org/battinfo/spec/qwhc-eahq-w81e-nkyr",
     "short_id": "qwhcea",
     "identifier": "cell-type:qwhc-eahq-w81e-nkyr",
     "name": "LG ICR18650-HE4",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rps5-xfpd-675r-7fkt",
+    "id": "https://w3id.org/battinfo/spec/rps5-xfpd-675r-7fkt",
     "short_id": "rps5xf",
     "identifier": "cell-type:rps5-xfpd-675r-7fkt",
     "name": "TENPOWER INR21700-30SG",

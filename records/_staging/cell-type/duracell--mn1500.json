@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/y51q-91pk-x3m9-crxy",
+    "id": "https://w3id.org/battinfo/spec/y51q-91pk-x3m9-crxy",
     "short_id": "y51q91",
     "identifier": "cell-type:y51q-91pk-x3m9-crxy",
     "name": "DURACELL MN1500",

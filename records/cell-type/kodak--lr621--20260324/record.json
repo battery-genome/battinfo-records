@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/a5e0-v689-nhnb-w4x8",
+    "id": "https://w3id.org/battinfo/spec/a5e0-v689-nhnb-w4x8",
     "short_id": "a5e0v6",
     "identifier": "cell-type:a5e0-v689-nhnb-w4x8",
     "name": "KODAK LR621",

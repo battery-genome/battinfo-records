@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/py8y-76xs-mt7q-1d43",
+    "id": "https://w3id.org/battinfo/spec/py8y-76xs-mt7q-1d43",
     "short_id": "py8y76",
     "identifier": "cell-type:py8y-76xs-mt7q-1d43",
     "name": "FREY FREY36130290-100PF",

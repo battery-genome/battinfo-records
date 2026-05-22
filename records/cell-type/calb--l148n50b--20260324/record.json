@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2vsr-1n5n-cdz3-t3c0",
+    "id": "https://w3id.org/battinfo/spec/2vsr-1n5n-cdz3-t3c0",
     "short_id": "2vsr1n",
     "identifier": "cell-type:2vsr-1n5n-cdz3-t3c0",
     "name": "CALB L148N50B",

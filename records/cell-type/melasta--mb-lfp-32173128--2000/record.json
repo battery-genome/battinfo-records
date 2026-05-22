@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8bqj-kxy2-ky1n-dqz7",
+    "id": "https://w3id.org/battinfo/spec/8bqj-kxy2-ky1n-dqz7",
     "short_id": "8bqjkx",
     "identifier": "cell-type:8bqj-kxy2-ky1n-dqz7",
     "name": "Melasta MB-LFP-32173128",

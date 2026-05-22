@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rd7q-jsad-vs3f-xqpg",
+    "id": "https://w3id.org/battinfo/spec/rd7q-jsad-vs3f-xqpg",
     "short_id": "rd7qjs",
     "identifier": "cell-type:rd7q-jsad-vs3f-xqpg",
     "name": "TENPOWER INR18650-25SG",

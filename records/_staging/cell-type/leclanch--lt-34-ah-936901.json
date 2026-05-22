@@ -1,14 +1,14 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/j50c-vcr9-wd8m-1h8w",
+    "id": "https://w3id.org/battinfo/spec/j50c-vcr9-wd8m-1h8w",
     "short_id": "j50cvc",
     "identifier": "cell-type:j50c-vcr9-wd8m-1h8w",
-    "name": "LECLANCH\u00c9 LT 34 Ah (936901)",
+    "name": "LECLANCHÉ LT 34 Ah (936901)",
     "model": "LT 34 Ah (936901)",
     "manufacturer": {
       "type": "Organization",
-      "name": "LECLANCH\u00c9"
+      "name": "LECLANCHÉ"
     },
     "category": "battery cell",
     "cell_format": "prismatic",
@@ -64,7 +64,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCH\u00c9_LT_34_Ah_(936901).json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCHÉ_LT_34_Ah_(936901).json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "a2f914aae24df3e6aab5d34884201e41b4ab89bf91d6f1126c2147380c76fc77",

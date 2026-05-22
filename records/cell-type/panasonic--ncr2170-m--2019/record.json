@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/v0mc-7s30-rgej-apb1",
+    "id": "https://w3id.org/battinfo/spec/v0mc-7s30-rgej-apb1",
     "short_id": "v0mc7s",
     "identifier": "cell-type:v0mc-7s30-rgej-apb1",
     "name": "Panasonic NCR2170‑M",

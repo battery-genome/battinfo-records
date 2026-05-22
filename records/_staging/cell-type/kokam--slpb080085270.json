@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/s56s-s6wh-vj9p-z6d0",
+    "id": "https://w3id.org/battinfo/spec/s56s-s6wh-vj9p-z6d0",
     "short_id": "s56ss6",
     "identifier": "cell-type:s56s-s6wh-vj9p-z6d0",
     "name": "Kokam SLPB080085270",

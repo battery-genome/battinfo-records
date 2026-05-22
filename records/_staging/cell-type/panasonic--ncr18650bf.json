@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2jcm-vsjh-crdx-5v7q",
+    "id": "https://w3id.org/battinfo/spec/2jcm-vsjh-crdx-5v7q",
     "short_id": "2jcmvs",
     "identifier": "cell-type:2jcm-vsjh-crdx-5v7q",
     "name": "Panasonic NCR18650BF",
@@ -72,8 +72,8 @@
         "id": "https://doi.org/10.1007/s42452-020-2675-6",
         "doi": "10.1007/s42452-020-2675-6",
         "type": "Article",
-        "headline": "Lithium-ion battery modeling using CC\u2013CV and impedance spectroscopy characterizations",
-        "author": "Tillmann St\u00fcbler and Amine Lahyani and Amen Allah Zayoud",
+        "headline": "Lithium-ion battery modeling using CC–CV and impedance spectroscopy characterizations",
+        "author": "Tillmann Stübler and Amine Lahyani and Amen Allah Zayoud",
         "date_published": 2020
       },
       {
@@ -89,7 +89,7 @@
         "doi": "10.1016/j.sna.2021.113061",
         "type": "Article",
         "headline": "An accessible method of embedding fibre optic sensors on lithium-ion battery surface for in-situ thermal monitoring",
-        "author": "Keith M. Alcock and Markus Grammel and \u00c1lvaro Gonz\u00e1lez-Vila and Leonardo Binetti and Keng Goh and Lourdes S.M. Alwis",
+        "author": "Keith M. Alcock and Markus Grammel and Álvaro González-Vila and Leonardo Binetti and Keng Goh and Lourdes S.M. Alwis",
         "date_published": 2021
       },
       {
@@ -131,7 +131,7 @@
         "doi": "10.1016/j.applthermaleng.2017.04.017",
         "type": "Article",
         "headline": "3-D CFD modeling and experimental testing of thermal behavior of a Li-Ion battery",
-        "author": "Emre G\u00fcm\u00fc\u015fsu and \u00d6zg\u00fcr Ekici and Murat K\u00f6ksal",
+        "author": "Emre Gümüşsu and Özgür Ekici and Murat Köksal",
         "date_published": 2017
       },
       {
@@ -139,14 +139,14 @@
         "doi": "10.1016/j.applthermaleng.2020.116338",
         "type": "Article",
         "headline": "A thermal model for Li-ion batteries operating under dynamic conditions",
-        "author": "Ali Amini and Tan\u0131lay \u00d6zdemir and \u00d6zg\u00fcr Ekici and S. \u00c7a\u011flar Ba\u015flam\u0131\u015fl\u0131 and Murat K\u00f6ksal",
+        "author": "Ali Amini and Tanılay Özdemir and Özgür Ekici and S. Çağlar Başlamışlı and Murat Köksal",
         "date_published": 2021
       },
       {
         "id": "https://doi.org/10.1016/j.renene.2019.08.077",
         "doi": "10.1016/j.renene.2019.08.077",
         "type": "Article",
-        "headline": "Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current\u2013constant voltage charging strategy",
+        "headline": "Optimized charging of lithium-ion battery for electric vehicles: Adaptive multistage constant current–constant voltage charging strategy",
         "author": "Yunjian Li and Kuining Li and Yi Xie and Jiangyan Liu and Chunyun Fu and Bin Liu",
         "date_published": 2020
       },
@@ -162,7 +162,7 @@
         "id": "https://doi.org/10.1016/j.jpowsour.2020.228189",
         "doi": "10.1016/j.jpowsour.2020.228189",
         "type": "Article",
-        "headline": "Non-invasive investigation of predominant processes in the impedance spectra of high energy lithium-ion batteries with nickel\u2013cobalt\u2013aluminum cathodes",
+        "headline": "Non-invasive investigation of predominant processes in the impedance spectra of high energy lithium-ion batteries with nickel–cobalt–aluminum cathodes",
         "author": "Pouyan Shafiei Sabet and Gereon Stahl and Dirk Uwe Sauer",
         "date_published": 2020
       },
@@ -239,8 +239,8 @@
         "id": "https://doi.org/10.1016/j.jpowsour.2019.227466",
         "doi": "10.1016/j.jpowsour.2019.227466",
         "type": "Article",
-        "headline": "Lithium heterogeneities in cylinder-type Li-ion batteries \u2013 fatigue induced by cycling",
-        "author": "D. Petz and M.J. M\u00fchlbauer and V. Baran and M. Frost and A. Sch\u00f6kel and C. Paulmann and Y. Chen and D. Garc\u00e9s and A. Senyshyn",
+        "headline": "Lithium heterogeneities in cylinder-type Li-ion batteries – fatigue induced by cycling",
+        "author": "D. Petz and M.J. Mühlbauer and V. Baran and M. Frost and A. Schökel and C. Paulmann and Y. Chen and D. Garcés and A. Senyshyn",
         "date_published": 2020
       },
       {
@@ -264,7 +264,7 @@
         "doi": "10.1016/j.jpowsour.2020.228690",
         "type": "Article",
         "headline": "Inhomogeneous distribution of lithium and electrolyte in aged Li-ion cylindrical cells",
-        "author": "M.J. M\u00fchlbauer and D. Petz and V. Baran and O. Dolotko and M. Hofmann and R. Kostecki and A. Senyshyn",
+        "author": "M.J. Mühlbauer and D. Petz and V. Baran and O. Dolotko and M. Hofmann and R. Kostecki and A. Senyshyn",
         "date_published": 2020
       },
       {
@@ -431,9 +431,9 @@
         "id": "https://doi.org/10.1002/advs.201700369",
         "doi": "10.1002/advs.201700369",
         "type": "Article",
-        "headline": "Identifying the Cause of Rupture of Li\u2010Ion Batteries during Thermal Runaway",
+        "headline": "Identifying the Cause of Rupture of Li‐Ion Batteries during Thermal Runaway",
         "author": "Donal P. Finegan and Eric Darcy and Matthew Keyser and Bernhard Tjaden and Thomas M. M. Heenan and Rhodri Jervis and Josh J. Bailey and Nghia T. Vo and Oxana V. Magdysyuk and Michael Drakopoulos and Marco Di Michiel and Alexander Rack and Gareth Hinds and Dan J. L. Brett and Paul R. Shearing",
-        "description": "<jats:title>Abstract</jats:title><jats:p>As the energy density of lithium\u2010ion cells and batteries increases, controlling the outcomes of thermal runaway becomes more challenging. If the high rate of gas generation during thermal runaway is not adequately vented, commercial cell designs can rupture and explode, presenting serious safety concerns. Here, ultra\u2010high\u2010speed synchrotron X\u2010ray imaging is used at &gt;20 000 frames per second to characterize the venting processes of six different 18650 cell designs undergoing thermal runaway. For the first time, the mechanisms that lead to the most catastrophic type of cell failure, rupture, and explosion are identified and elucidated in detail. The practical application of the technique is highlighted by evaluating a novel 18650 cell design with a second vent at the base, which is shown to avoid the critical stages that lead to rupture. The insights yielded in this study shed new light on battery failure and are expected to guide the development of safer commercial cell designs.</jats:p>",
+        "description": "<jats:title>Abstract</jats:title><jats:p>As the energy density of lithium‐ion cells and batteries increases, controlling the outcomes of thermal runaway becomes more challenging. If the high rate of gas generation during thermal runaway is not adequately vented, commercial cell designs can rupture and explode, presenting serious safety concerns. Here, ultra‐high‐speed synchrotron X‐ray imaging is used at &gt;20 000 frames per second to characterize the venting processes of six different 18650 cell designs undergoing thermal runaway. For the first time, the mechanisms that lead to the most catastrophic type of cell failure, rupture, and explosion are identified and elucidated in detail. The practical application of the technique is highlighted by evaluating a novel 18650 cell design with a second vent at the base, which is shown to avoid the critical stages that lead to rupture. The insights yielded in this study shed new light on battery failure and are expected to guide the development of safer commercial cell designs.</jats:p>",
         "date_published": 2017
       },
       {
@@ -497,14 +497,14 @@
         "doi": "10.1016/j.actaastro.2021.04.042",
         "type": "Article",
         "headline": "Energy storage selection and operation for night-time survival of small lunar surface systems",
-        "author": "J\u00e1nos Biswas and Pietro Queiroga Malzone and Felix R\u00f6\u00dfler",
+        "author": "János Biswas and Pietro Queiroga Malzone and Felix Rößler",
         "date_published": 2021
       },
       {
         "id": "https://doi.org/10.1149/2.0241512jes",
         "doi": "10.1149/2.0241512jes",
         "type": "Article",
-        "headline": "Comment on \u201cA Comparative Testing Study of Commercial 18650-Format Lithium-Ion Battery Cells\u201d [<i>J. Electrochem. Soc.</i>, 162, A1592 (2015)]",
+        "headline": "Comment on “A Comparative Testing Study of Commercial 18650-Format Lithium-Ion Battery Cells” [<i>J. Electrochem. Soc.</i>, 162, A1592 (2015)]",
         "author": "Valentin Muenzel and Anthony F. Hollenkamp and Anand I. Bhatt and Julian de Hoog and Marcus Brazil and Doreen A. Thomas and Iven Mareels",
         "date_published": 2015
       },
@@ -536,9 +536,9 @@
         "id": "https://doi.org/10.1002/est2.141",
         "doi": "10.1002/est2.141",
         "type": "Article",
-        "headline": "Adaptive fast charging methodology for commercial Li\u2010ion batteries based on the internal resistance spectrum",
+        "headline": "Adaptive fast charging methodology for commercial Li‐ion batteries based on the internal resistance spectrum",
         "author": "Sandeep S. Sebastian and Bo Dong and Taner Zerrin and Pedro A. Pena and Amirali S. Akhavi and Yige Li and Cengiz S. Ozkan and Mihrimah Ozkan",
-        "description": "<jats:title>Abstract</jats:title><jats:p>Development of lithium\u2010ion batteries (LIBs) with high energy density has brought a promising future for the next generation of electric vehicles (EV). In order to make EVs more competitive with combustion engine vehicles, development of an effective fast charging technique is inevitable. However, improper employment of fast charging can damage the battery and bring safety hazards. Herein, industry based along with our proposed internal resistance (IR) based fast charging techniques were performed on commercial Panasonic NCR 18650B cylindrical batteries. To further investigate the fast charging impact and electrode degradation mechanisms, electrochemical analysis and material characterization techniques including EIS (electrochemical impedance spectroscopy), GITT (galvanostatic intermittent titration technique), SEM (scanning electron microscopy), and XRD (X\u2010ray diffraction) were implemented. Batteries that were cycled under industry based fast charging showed 78% increase in internal resistance after 120\u2009cycles along with rapid capacity fading. Mechanical distortion of the battery case occurred around the 60th cycle for industry based fast charging. In contrast, IR based fast charged batteries showed 29.4% increase in internal resistance over 120\u2009cycles. In addition, mechanical distortion was not observed and the relative capacity fading was on a moderate level. Furthermore, this work could pave the way for the optimization of fast charging techniques to secure the lifespan and safety of various types of lithium\u2010ion batteries.</jats:p>",
+        "description": "<jats:title>Abstract</jats:title><jats:p>Development of lithium‐ion batteries (LIBs) with high energy density has brought a promising future for the next generation of electric vehicles (EV). In order to make EVs more competitive with combustion engine vehicles, development of an effective fast charging technique is inevitable. However, improper employment of fast charging can damage the battery and bring safety hazards. Herein, industry based along with our proposed internal resistance (IR) based fast charging techniques were performed on commercial Panasonic NCR 18650B cylindrical batteries. To further investigate the fast charging impact and electrode degradation mechanisms, electrochemical analysis and material characterization techniques including EIS (electrochemical impedance spectroscopy), GITT (galvanostatic intermittent titration technique), SEM (scanning electron microscopy), and XRD (X‐ray diffraction) were implemented. Batteries that were cycled under industry based fast charging showed 78% increase in internal resistance after 120 cycles along with rapid capacity fading. Mechanical distortion of the battery case occurred around the 60th cycle for industry based fast charging. In contrast, IR based fast charged batteries showed 29.4% increase in internal resistance over 120 cycles. In addition, mechanical distortion was not observed and the relative capacity fading was on a moderate level. Furthermore, this work could pave the way for the optimization of fast charging techniques to secure the lifespan and safety of various types of lithium‐ion batteries.</jats:p>",
         "date_published": 2020
       },
       {
@@ -553,7 +553,7 @@
         "id": "https://doi.org/10.3390/en10122107",
         "doi": "10.3390/en10122107",
         "type": "Article",
-        "headline": "Lithium-Ion Battery Storage for the Grid\u2014A Review of Stationary Battery Storage System Design Tailored for Applications in Modern Power Grids",
+        "headline": "Lithium-Ion Battery Storage for the Grid—A Review of Stationary Battery Storage System Design Tailored for Applications in Modern Power Grids",
         "author": "Holger Hesse and Michael Schimpe and Daniel Kucevic and Andreas Jossen",
         "description": "<jats:p>Battery energy storage systems have gained increasing interest for serving grid support in various application tasks. In particular, systems based on lithium-ion batteries have evolved rapidly with a wide range of cell technologies and system architectures available on the market. On the application side, different tasks for storage deployment demand distinct properties of the storage system. This review aims to serve as a guideline for best choice of battery technology, system design and operation for lithium-ion based storage systems to match a specific system application. Starting with an overview to lithium-ion battery technologies and their characteristics with respect to performance and aging, the storage system design is analyzed in detail based on an evaluation of real-world projects. Typical storage system applications are grouped and classified with respect to the challenges posed to the battery system. Publicly available modeling tools for technical and economic analysis are presented. A brief analysis of optimization approaches aims to point out challenges and potential solution techniques for system sizing, positioning and dispatch operation. For all areas reviewed herein, expected improvements and possible future developments are highlighted. In order to extract the full potential of stationary battery storage systems and to enable increased profitability of systems, future research should aim to a holistic system level approach combining not only performance tuning on a battery cell level and careful analysis of the application requirements, but also consider a proper selection of storage sub-components as well as an optimized system operation strategy.</jats:p>",
         "date_published": 2017
@@ -564,7 +564,7 @@
         "type": "Article",
         "headline": "Development of an Informative Lithium-Ion Battery Datasheet",
         "author": "Weiping Diao and Chetan Kulkarni and Michael Pecht",
-        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery\u2019s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
+        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery’s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
         "date_published": 2021
       }
     ]

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qhx2-esvm-6ngp-p1sh",
+    "id": "https://w3id.org/battinfo/spec/qhx2-esvm-6ngp-p1sh",
     "short_id": "qhx2es",
     "identifier": "cell-type:qhx2-esvm-6ngp-p1sh",
     "name": "ENERTECH SPB 58253172EG1_17Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c9g2-kj3e-mqsg-2rjp",
+    "id": "https://w3id.org/battinfo/spec/c9g2-kj3e-mqsg-2rjp",
     "short_id": "c9g2kj",
     "identifier": "cell-type:c9g2-kj3e-mqsg-2rjp",
     "name": "Kokam SLPB75106100",

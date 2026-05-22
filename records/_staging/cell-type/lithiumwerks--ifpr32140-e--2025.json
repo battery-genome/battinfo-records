@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jtsc-em2q-96qq-9f4e",
+    "id": "https://w3id.org/battinfo/spec/jtsc-em2q-96qq-9f4e",
     "short_id": "jtscem",
     "identifier": "cell-type:jtsc-em2q-96qq-9f4e",
     "name": "LITHIUMWERKS IFpR32140-E",

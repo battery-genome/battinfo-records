@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vy8e-aq24-2xcq-pcc1",
+    "id": "https://w3id.org/battinfo/spec/vy8e-aq24-2xcq-pcc1",
     "short_id": "vy8eaq",
     "identifier": "cell-type:vy8e-aq24-2xcq-pcc1",
     "name": "Kokam SLPB60460330H",

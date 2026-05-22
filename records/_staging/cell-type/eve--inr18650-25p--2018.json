@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/d20k-ppbq-42dd-f8x0",
+    "id": "https://w3id.org/battinfo/spec/d20k-ppbq-42dd-f8x0",
     "short_id": "d20kpp",
     "identifier": "cell-type:d20k-ppbq-42dd-f8x0",
     "name": "EVE INR18650-25P",
@@ -47,27 +47,27 @@
     },
     "minimum_charging_temperature": {
       "value": 0.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_charging_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_discharging_temperature": {
       "value": -20.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_discharging_temperature": {
       "value": 60.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_storage_temperature": {
       "value": 0.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_storage_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     }
   },
   "provenance": {

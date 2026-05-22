@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ejky-4dqz-tsqc-5wqm",
+    "id": "https://w3id.org/battinfo/spec/ejky-4dqz-tsqc-5wqm",
     "short_id": "ejky4d",
     "identifier": "cell-type:ejky-4dqz-tsqc-5wqm",
     "name": "CALB SE180AHA",

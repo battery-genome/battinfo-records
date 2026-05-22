@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/n2vd-am8k-799a-wnjc",
+    "id": "https://w3id.org/battinfo/spec/n2vd-am8k-799a-wnjc",
     "short_id": "n2vdam",
     "identifier": "cell-type:n2vd-am8k-799a-wnjc",
     "name": "LG INR18650-MJ1",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mdsv-b5tn-vjn8-a0qp",
+    "id": "https://w3id.org/battinfo/spec/mdsv-b5tn-vjn8-a0qp",
     "short_id": "mdsvb5",
     "identifier": "cell-type:mdsv-b5tn-vjn8-a0qp",
     "name": "EVE INR18650-33V",

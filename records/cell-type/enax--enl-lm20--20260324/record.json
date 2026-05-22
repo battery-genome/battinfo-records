@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f67m-nex7-qbbp-pdnd",
+    "id": "https://w3id.org/battinfo/spec/f67m-nex7-qbbp-pdnd",
     "short_id": "f67mne",
     "identifier": "cell-type:f67m-nex7-qbbp-pdnd",
     "name": "ENAX ENL-LM20",

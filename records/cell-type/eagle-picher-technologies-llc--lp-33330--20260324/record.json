@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pmqc-kx64-7n46-2g3y",
+    "id": "https://w3id.org/battinfo/spec/pmqc-kx64-7n46-2g3y",
     "short_id": "pmqckx",
     "identifier": "cell-type:pmqc-kx64-7n46-2g3y",
     "name": "Eagle Picher Technologies LLC LP 33330",

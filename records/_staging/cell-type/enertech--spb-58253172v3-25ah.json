@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/j98h-pe7c-2b5p-qjd3",
+    "id": "https://w3id.org/battinfo/spec/j98h-pe7c-2b5p-qjd3",
     "short_id": "j98hpe",
     "identifier": "cell-type:j98h-pe7c-2b5p-qjd3",
     "name": "ENERTECH SPB 58253172V3_25Ah",

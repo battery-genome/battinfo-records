@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jb0z-a5qj-k5w9-8dca",
+    "id": "https://w3id.org/battinfo/spec/jb0z-a5qj-k5w9-8dca",
     "short_id": "jb0za5",
     "identifier": "cell-type:jb0z-a5qj-k5w9-8dca",
     "name": "EAS Batteries HP-601300 NCA",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/w3y1-ct3q-q6qh-7tmg",
+    "id": "https://w3id.org/battinfo/spec/w3y1-ct3q-q6qh-7tmg",
     "short_id": "w3y1ct",
     "identifier": "cell-type:w3y1-ct3q-q6qh-7tmg",
     "name": "LG E78",

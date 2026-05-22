@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cd0y-s5kf-br3c-zvx0",
+    "id": "https://w3id.org/battinfo/spec/cd0y-s5kf-br3c-zvx0",
     "short_id": "cd0ys5",
     "identifier": "cell-type:cd0y-s5kf-br3c-zvx0",
     "name": "EVE Energy INP60E",

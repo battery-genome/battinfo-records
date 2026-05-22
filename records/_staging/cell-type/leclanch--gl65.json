@@ -1,14 +1,14 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jjeg-j9ss-n4a4-03qa",
+    "id": "https://w3id.org/battinfo/spec/jjeg-j9ss-n4a4-03qa",
     "short_id": "jjegj9",
     "identifier": "cell-type:jjeg-j9ss-n4a4-03qa",
-    "name": "LECLANCH\u00c9 GL65",
+    "name": "LECLANCHÉ GL65",
     "model": "GL65",
     "manufacturer": {
       "type": "Organization",
-      "name": "LECLANCH\u00c9"
+      "name": "LECLANCHÉ"
     },
     "category": "battery cell",
     "cell_format": "prismatic",
@@ -64,7 +64,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCH\u00c9_GL65.json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCHÉ_GL65.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "fc2b4221f41922730ac99c8e836b50ec1a4be6953e2341166308989b6738f514",

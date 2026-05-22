@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/756r-m5mb-1y5x-b9hf",
+    "id": "https://w3id.org/battinfo/spec/756r-m5mb-1y5x-b9hf",
     "short_id": "756rm5",
     "identifier": "cell-type:756r-m5mb-1y5x-b9hf",
     "name": "BMZ_Sony BMZ 21700 52EM",

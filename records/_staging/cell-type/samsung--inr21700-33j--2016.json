@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/4reg-0why-5ttp-nk6e",
+    "id": "https://w3id.org/battinfo/spec/4reg-0why-5ttp-nk6e",
     "short_id": "4reg0w",
     "identifier": "cell-type:4reg-0why-5ttp-nk6e",
     "name": "SAMSUNG INR21700-33J",

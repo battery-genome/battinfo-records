@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/91r8-ryev-gh2k-9ghv",
+    "id": "https://w3id.org/battinfo/spec/91r8-ryev-gh2k-9ghv",
     "short_id": "91r8ry",
     "identifier": "cell-type:91r8-ryev-gh2k-9ghv",
     "name": "EAS Batteries HE-341440 NCA",

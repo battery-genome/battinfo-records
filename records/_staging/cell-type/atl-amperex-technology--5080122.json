@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vyaj-kanb-p0rp-9ew8",
+    "id": "https://w3id.org/battinfo/spec/vyaj-kanb-p0rp-9ew8",
     "short_id": "vyajka",
     "identifier": "cell-type:vyaj-kanb-p0rp-9ew8",
     "name": "ATL Amperex Technology 5080122",

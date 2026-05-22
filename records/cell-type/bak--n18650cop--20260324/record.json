@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bfcx-sja2-kcg0-jq2t",
+    "id": "https://w3id.org/battinfo/spec/bfcx-sja2-kcg0-jq2t",
     "short_id": "bfcxsj",
     "identifier": "cell-type:bfcx-sja2-kcg0-jq2t",
     "name": "BAK N18650COP",

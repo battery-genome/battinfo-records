@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g99p-ajbm-4cj1-ksqx",
+    "id": "https://w3id.org/battinfo/spec/g99p-ajbm-4cj1-ksqx",
     "short_id": "g99paj",
     "identifier": "cell-type:g99p-ajbm-4cj1-ksqx",
     "name": "CALB L135F72 (CAM72)",

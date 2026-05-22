@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m5jy-70hb-3qn9-cd04",
+    "id": "https://w3id.org/battinfo/spec/m5jy-70hb-3qn9-cd04",
     "short_id": "m5jy70",
     "identifier": "cell-type:m5jy-70hb-3qn9-cd04",
     "name": "CATL 100Ah CATL LiFePO4",

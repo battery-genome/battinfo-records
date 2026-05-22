@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/84tm-4e56-tbef-j04a",
+    "id": "https://w3id.org/battinfo/spec/84tm-4e56-tbef-j04a",
     "short_id": "84tm4e",
     "identifier": "cell-type:84tm-4e56-tbef-j04a",
     "name": "Eemb Co LP8545135-PCM-LD",

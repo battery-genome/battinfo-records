@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qet4-6dcy-b1m0-7mp3",
+    "id": "https://w3id.org/battinfo/spec/qet4-6dcy-b1m0-7mp3",
     "short_id": "qet46d",
     "identifier": "cell-type:qet4-6dcy-b1m0-7mp3",
     "name": "KODAK CR2032",

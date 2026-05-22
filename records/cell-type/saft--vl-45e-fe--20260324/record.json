@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bqmd-b0be-w637-m2aw",
+    "id": "https://w3id.org/battinfo/spec/bqmd-b0be-w637-m2aw",
     "short_id": "bqmdb0",
     "identifier": "cell-type:bqmd-b0be-w637-m2aw",
     "name": "Saft VL 45E FE",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/y6yw-6knj-14na-a3na",
+    "id": "https://w3id.org/battinfo/spec/y6yw-6knj-14na-a3na",
     "short_id": "y6yw6k",
     "identifier": "cell-type:y6yw-6knj-14na-a3na",
     "name": "Melasta SLPBB042126",

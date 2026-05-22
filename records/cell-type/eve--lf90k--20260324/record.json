@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vx8k-bws1-wghk-m635",
+    "id": "https://w3id.org/battinfo/spec/vx8k-bws1-wghk-m635",
     "short_id": "vx8kbw",
     "identifier": "cell-type:vx8k-bws1-wghk-m635",
     "name": "EVE LF90K",

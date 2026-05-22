@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gf7f-4y7w-k6a5-7c9a",
+    "id": "https://w3id.org/battinfo/spec/gf7f-4y7w-k6a5-7c9a",
     "short_id": "gf7f4y",
     "identifier": "cell-type:gf7f-4y7w-k6a5-7c9a",
     "name": "EVE Energy D13",

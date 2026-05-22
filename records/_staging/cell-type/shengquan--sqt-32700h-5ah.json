@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f9m9-vks8-vxmv-ynef",
+    "id": "https://w3id.org/battinfo/spec/f9m9-vks8-vxmv-ynef",
     "short_id": "f9m9vk",
     "identifier": "cell-type:f9m9-vks8-vxmv-ynef",
     "name": "Shengquan SQT-32700H-5Ah",

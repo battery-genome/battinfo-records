@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2csz-3ptn-bjcg-ht96",
+    "id": "https://w3id.org/battinfo/spec/2csz-3ptn-bjcg-ht96",
     "short_id": "2csz3p",
     "identifier": "cell-type:2csz-3ptn-bjcg-ht96",
     "name": "CATL 50Ah CATL 811",

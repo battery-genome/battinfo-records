@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gwpw-564f-yeax-058a",
+    "id": "https://w3id.org/battinfo/spec/gwpw-564f-yeax-058a",
     "short_id": "gwpw56",
     "identifier": "cell-type:gwpw-564f-yeax-058a",
     "name": "MURATA US18650VTC5A",

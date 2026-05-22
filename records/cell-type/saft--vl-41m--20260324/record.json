@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/t069-dqm2-drj0-h6se",
+    "id": "https://w3id.org/battinfo/spec/t069-dqm2-drj0-h6se",
     "short_id": "t069dq",
     "identifier": "cell-type:t069-dqm2-drj0-h6se",
     "name": "Saft VL 41M",

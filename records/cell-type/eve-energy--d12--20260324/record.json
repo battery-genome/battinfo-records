@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zwc0-syzf-7kdn-8t5m",
+    "id": "https://w3id.org/battinfo/spec/zwc0-syzf-7kdn-8t5m",
     "short_id": "zwc0sy",
     "identifier": "cell-type:zwc0-syzf-7kdn-8t5m",
     "name": "EVE Energy D12",

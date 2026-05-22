@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7qqm-51jt-nn78-wew4",
+    "id": "https://w3id.org/battinfo/spec/7qqm-51jt-nn78-wew4",
     "short_id": "7qqm51",
     "identifier": "cell-type:7qqm-51jt-nn78-wew4",
     "name": "Eemb Co LP1167220F",

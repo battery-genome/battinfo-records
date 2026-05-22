@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wkxp-j64y-jtpt-f2ba",
+    "id": "https://w3id.org/battinfo/spec/wkxp-j64y-jtpt-f2ba",
     "short_id": "wkxpj6",
     "identifier": "cell-type:wkxp-j64y-jtpt-f2ba",
     "name": "EVE Energy LF50",

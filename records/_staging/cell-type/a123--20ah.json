@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ye25-rvjv-m7k5-hgkq",
+    "id": "https://w3id.org/battinfo/spec/ye25-rvjv-m7k5-hgkq",
     "short_id": "ye25rv",
     "identifier": "cell-type:ye25-rvjv-m7k5-hgkq",
     "name": "A123 20AH",

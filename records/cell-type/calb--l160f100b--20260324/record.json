@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9zk0-0ky2-v6t1-q0r9",
+    "id": "https://w3id.org/battinfo/spec/9zk0-0ky2-v6t1-q0r9",
     "short_id": "9zk00k",
     "identifier": "cell-type:9zk0-0ky2-v6t1-q0r9",
     "name": "CALB L160F100B",

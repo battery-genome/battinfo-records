@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/w3fr-m1ed-t5c3-cpjd",
+    "id": "https://w3id.org/battinfo/spec/w3fr-m1ed-t5c3-cpjd",
     "short_id": "w3frm1",
     "identifier": "cell-type:w3fr-m1ed-t5c3-cpjd",
     "name": "YINLONG YLE-LTO-20130205-33Ah",

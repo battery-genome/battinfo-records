@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ay3w-12wm-2jh5-75rg",
+    "id": "https://w3id.org/battinfo/spec/ay3w-12wm-2jh5-75rg",
     "short_id": "ay3w12",
     "identifier": "cell-type:ay3w-12wm-2jh5-75rg",
     "name": "EVE Energy LF105-73103",

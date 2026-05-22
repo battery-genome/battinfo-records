@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rbsy-0f99-pvx5-1c9k",
+    "id": "https://w3id.org/battinfo/spec/rbsy-0f99-pvx5-1c9k",
     "short_id": "rbsy0f",
     "identifier": "cell-type:rbsy-0f99-pvx5-1c9k",
     "name": "ATL Amperex Technology 8845135",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8nfx-ff8r-cjnv-xe60",
+    "id": "https://w3id.org/battinfo/spec/8nfx-ff8r-cjnv-xe60",
     "short_id": "8nfxff",
     "identifier": "cell-type:8nfx-ff8r-cjnv-xe60",
     "name": "GeneralElectronics GEB 21700",

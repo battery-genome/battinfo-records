@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ef4f-6266-fvms-t86a",
+    "id": "https://w3id.org/battinfo/spec/ef4f-6266-fvms-t86a",
     "short_id": "ef4f62",
     "identifier": "cell-type:ef4f-6266-fvms-t86a",
     "name": "Saft VL 34570",

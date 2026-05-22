@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/tev4-nm87-dz82-s12z",
+    "id": "https://w3id.org/battinfo/spec/tev4-nm87-dz82-s12z",
     "short_id": "tev4nm",
     "identifier": "cell-type:tev4-nm87-dz82-s12z",
     "name": "GeneralElectronics GEB 32650",

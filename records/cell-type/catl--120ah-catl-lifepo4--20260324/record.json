@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7me6-wxp9-cw22-5b94",
+    "id": "https://w3id.org/battinfo/spec/7me6-wxp9-cw22-5b94",
     "short_id": "7me6wx",
     "identifier": "cell-type:7me6-wxp9-cw22-5b94",
     "name": "CATL 120Ah CATL LiFePO4",

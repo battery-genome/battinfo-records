@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2anw-djp8-p1sq-caes",
+    "id": "https://w3id.org/battinfo/spec/2anw-djp8-p1sq-caes",
     "short_id": "2anwdj",
     "identifier": "cell-type:2anw-djp8-p1sq-caes",
     "name": "Thunder-Sky WB-LYP40AHA",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zfs0-20my-3b3w-gzjc",
+    "id": "https://w3id.org/battinfo/spec/zfs0-20my-3b3w-gzjc",
     "short_id": "zfs020",
     "identifier": "cell-type:zfs0-20my-3b3w-gzjc",
     "name": "BAK N18650CH-26S",

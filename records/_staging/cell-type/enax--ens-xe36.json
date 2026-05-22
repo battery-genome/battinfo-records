@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ebv9-t7fr-mmr8-x6k3",
+    "id": "https://w3id.org/battinfo/spec/ebv9-t7fr-mmr8-x6k3",
     "short_id": "ebv9t7",
     "identifier": "cell-type:ebv9-t7fr-mmr8-x6k3",
     "name": "ENAX ENS-XE36",

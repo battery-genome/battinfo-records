@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1h3y-bhdz-318w-n4f7",
+    "id": "https://w3id.org/battinfo/spec/1h3y-bhdz-318w-n4f7",
     "short_id": "1h3ybh",
     "identifier": "cell-type:1h3y-bhdz-318w-n4f7",
     "name": "Kokam SLPB125255255G1H",

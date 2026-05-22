@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sdh2-1cp5-8x51-5xx4",
+    "id": "https://w3id.org/battinfo/spec/sdh2-1cp5-8x51-5xx4",
     "short_id": "sdh21c",
     "identifier": "cell-type:sdh2-1cp5-8x51-5xx4",
     "name": "LG JF2",

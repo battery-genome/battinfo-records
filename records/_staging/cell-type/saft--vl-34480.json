@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0zwg-rsd6-vv2x-mmw3",
+    "id": "https://w3id.org/battinfo/spec/0zwg-rsd6-vv2x-mmw3",
     "short_id": "0zwgrs",
     "identifier": "cell-type:0zwg-rsd6-vv2x-mmw3",
     "name": "Saft VL 34480",

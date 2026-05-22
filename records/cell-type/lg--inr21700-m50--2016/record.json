@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zb7b-26kn-2exm-20w4",
+    "id": "https://w3id.org/battinfo/spec/zb7b-26kn-2exm-20w4",
     "short_id": "zb7b26",
     "identifier": "cell-type:zb7b-26kn-2exm-20w4",
     "name": "LG INR21700-M50",

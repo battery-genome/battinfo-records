@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6a2m-935m-5w0m-27zf",
+    "id": "https://w3id.org/battinfo/spec/6a2m-935m-5w0m-27zf",
     "short_id": "6a2m93",
     "identifier": "cell-type:6a2m-935m-5w0m-27zf",
     "name": "BAK N21700CG-50E",

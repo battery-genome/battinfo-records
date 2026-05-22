@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bkhb-f48v-s0qf-frzg",
+    "id": "https://w3id.org/battinfo/spec/bkhb-f48v-s0qf-frzg",
     "short_id": "bkhbf4",
     "identifier": "cell-type:bkhb-f48v-s0qf-frzg",
     "name": "Amita Technologies 7799130ND",

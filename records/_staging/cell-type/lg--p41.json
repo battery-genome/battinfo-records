@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0zfr-c74n-qq6b-f7fm",
+    "id": "https://w3id.org/battinfo/spec/0zfr-c74n-qq6b-f7fm",
     "short_id": "0zfrc7",
     "identifier": "cell-type:0zfr-c74n-qq6b-f7fm",
     "name": "LG P41",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/q7gq-kf5m-ks6a-2wkj",
+    "id": "https://w3id.org/battinfo/spec/q7gq-kf5m-ks6a-2wkj",
     "short_id": "q7gqkf",
     "identifier": "cell-type:q7gq-kf5m-ks6a-2wkj",
     "name": "Samsung INR21700-40T",
@@ -90,7 +90,7 @@
         "id": "https://doi.org/10.1016/j.est.2023.107424",
         "doi": "10.1016/j.est.2023.107424",
         "type": "Article",
-        "headline": "A new method to perform lithium-ion battery pack fault diagnostics \u2013 Part 3: Adaptation for fast charging",
+        "headline": "A new method to perform lithium-ion battery pack fault diagnostics – Part 3: Adaptation for fast charging",
         "author": "Anubhav Singh and Andrew Lodge and Yi Li and Widanalage Dhammika Widanage and Anup Barai",
         "date_published": 2023
       },
@@ -99,7 +99,7 @@
         "doi": "10.3390/batteries9010006",
         "type": "Article",
         "headline": "Influence of Breathing and Swelling on the Jelly-Roll Case Gap of Cylindrical Lithium-Ion Battery Cells",
-        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschl\u00e4ger and Oliver Bohlen and Andreas Jossen",
+        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschläger and Oliver Bohlen and Andreas Jossen",
         "description": "<jats:p>Cylindrical 18650 and 21700 lithium-ion batteries are produced with small gaps between the jelly roll and the case. The size of these gaps and the mechanical attachment of the jelly roll to the case can have a significant impact on the thermal and mechanical properties of cells. To investigate the influence of the state of charge (SOC) and state of health (SOH) on the size of the gap, computed tomography (CT) and gray-value analysis was conducted with various cell types at 0% and 100% SOC and after cycling. The results show a significant influence of the SOC on the gap for new cells and a substantial reduction in the gap during the first cycles.</jats:p>",
         "date_published": 2022
       },
@@ -107,7 +107,7 @@
         "id": "https://doi.org/10.3390/batteries9060309",
         "doi": "10.3390/batteries9060309",
         "type": "Article",
-        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells\u2014A Generic Overview",
+        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells—A Generic Overview",
         "author": "Sabri Baazouzi and Niklas Feistel and Johannes Wanner and Inga Landwehr and Alexander Fill and Kai Peter Birke",
         "description": "<jats:p>Battery cells are the main components of a battery system for electric vehicle batteries. Depending on the manufacturer, three different cell formats are used in the automotive sector (pouch, prismatic, and cylindrical). In the last 3 years, cylindrical cells have gained strong relevance and popularity among automotive manufacturers, mainly driven by innovative cell designs, such as the Tesla tabless design. This paper investigates 19 Li-ion cylindrical battery cells from four cell manufacturers in four formats (18650, 20700, 21700, and 4680). We aim to systematically capture the design features, such as tab design and quality parameters, such as manufacturing tolerances and generically describe cylindrical cells. We identified the basic designs and assigned example cells to them. In addition, we show a comprehensive definition of a tabless design considering the current and heat transport paths. Our findings show that the Tesla 4680 design is quasi-tabless. In addition, we found that 25% of the cathode and 30% of the anode are not notched, resulting in long electrical and thermal transport paths. Based on CT and post-mortem analyses, we show that jelly rolls can be approximated very well with the Archimedean spiral. Furthermore, we compare the gravimetric and volumetric energy density, the impedance, and the heating behavior at the surface and in the center of the jelly rolls. From the generic description, we present and discuss production processes focusing on format and design flexible manufacturing of jelly rolls.</jats:p>",
         "date_published": 2023

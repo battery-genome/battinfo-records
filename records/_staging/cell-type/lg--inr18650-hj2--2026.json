@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c9cj-dg53-y93z-nh5r",
+    "id": "https://w3id.org/battinfo/spec/c9cj-dg53-y93z-nh5r",
     "short_id": "c9cjdg",
     "identifier": "cell-type:c9cj-dg53-y93z-nh5r",
     "name": "LG INR18650-HJ2",

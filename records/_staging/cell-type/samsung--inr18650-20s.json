@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/y3kt-rqk0-nvej-1fqt",
+    "id": "https://w3id.org/battinfo/spec/y3kt-rqk0-nvej-1fqt",
     "short_id": "y3ktrq",
     "identifier": "cell-type:y3kt-rqk0-nvej-1fqt",
     "name": "SAMSUNG INR18650-20S",

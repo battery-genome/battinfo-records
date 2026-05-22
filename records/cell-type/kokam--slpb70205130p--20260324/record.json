@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/herm-b8zp-gfaj-hy9q",
+    "id": "https://w3id.org/battinfo/spec/herm-b8zp-gfaj-hy9q",
     "short_id": "hermb8",
     "identifier": "cell-type:herm-b8zp-gfaj-hy9q",
     "name": "Kokam SLPB70205130P",

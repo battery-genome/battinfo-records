@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/4jpk-0z4n-rdnz-nnkx",
+    "id": "https://w3id.org/battinfo/spec/4jpk-0z4n-rdnz-nnkx",
     "short_id": "4jpk0z",
     "identifier": "cell-type:4jpk-0z4n-rdnz-nnkx",
     "name": "CALB CA100",

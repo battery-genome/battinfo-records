@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/de2r-jnnd-kp2r-y4m1",
+    "id": "https://w3id.org/battinfo/spec/de2r-jnnd-kp2r-y4m1",
     "short_id": "de2rjn",
     "identifier": "cell-type:de2r-jnnd-kp2r-y4m1",
     "name": "BMZ_Sony BMZ 21700 52E",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g0z8-1h9m-san2-6z26",
+    "id": "https://w3id.org/battinfo/spec/g0z8-1h9m-san2-6z26",
     "short_id": "g0z81h",
     "identifier": "cell-type:g0z8-1h9m-san2-6z26",
     "name": "Kokam SLPB78216216H",

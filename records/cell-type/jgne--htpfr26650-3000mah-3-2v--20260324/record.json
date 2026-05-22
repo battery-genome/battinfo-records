@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/na8g-ddc6-dk73-zghq",
+    "id": "https://w3id.org/battinfo/spec/na8g-ddc6-dk73-zghq",
     "short_id": "na8gdd",
     "identifier": "cell-type:na8g-ddc6-dk73-zghq",
     "name": "JGNE HTPFR26650-3000mAh-3.2V",

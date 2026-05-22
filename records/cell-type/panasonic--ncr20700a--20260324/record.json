@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/r0z1-626s-vjn0-1c9j",
+    "id": "https://w3id.org/battinfo/spec/r0z1-626s-vjn0-1c9j",
     "short_id": "r0z162",
     "identifier": "cell-type:r0z1-626s-vjn0-1c9j",
     "name": "Panasonic NCR20700A",

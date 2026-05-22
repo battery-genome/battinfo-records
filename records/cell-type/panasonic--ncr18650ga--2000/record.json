@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/whs5-4bba-w3ew-c9wa",
+    "id": "https://w3id.org/battinfo/spec/whs5-4bba-w3ew-c9wa",
     "short_id": "whs54b",
     "identifier": "cell-type:whs5-4bba-w3ew-c9wa",
     "name": "PANASONIC NCR18650GA",

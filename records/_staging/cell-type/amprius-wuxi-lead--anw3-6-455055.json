@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/w4v0-50w0-bmyt-g19m",
+    "id": "https://w3id.org/battinfo/spec/w4v0-50w0-bmyt-g19m",
     "short_id": "w4v050",
     "identifier": "cell-type:w4v0-50w0-bmyt-g19m",
     "name": "Amprius_Wuxi Lead ANW3.6-455055",

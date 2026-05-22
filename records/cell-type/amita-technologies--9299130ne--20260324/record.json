@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wb3p-y4g3-253p-qw1f",
+    "id": "https://w3id.org/battinfo/spec/wb3p-y4g3-253p-qw1f",
     "short_id": "wb3py4",
     "identifier": "cell-type:wb3p-y4g3-253p-qw1f",
     "name": "Amita Technologies 9299130NE",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sdt2-j67v-fw3e-d5fs",
+    "id": "https://w3id.org/battinfo/spec/sdt2-j67v-fw3e-d5fs",
     "short_id": "sdt2j6",
     "identifier": "cell-type:sdt2-j67v-fw3e-d5fs",
     "name": "Eemb Co LP90100160F",

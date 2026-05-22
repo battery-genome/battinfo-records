@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/da30-88nc-57md-0p2x",
+    "id": "https://w3id.org/battinfo/spec/da30-88nc-57md-0p2x",
     "short_id": "da3088",
     "identifier": "cell-type:da30-88nc-57md-0p2x",
     "name": "ATL Amperex Technology 8235138",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/q7gq-kf5m-ks6a-2wkj",
+    "id": "https://w3id.org/battinfo/spec/q7gq-kf5m-ks6a-2wkj",
     "short_id": "q7gqkf",
     "identifier": "cell-type:q7gq-kf5m-ks6a-2wkj",
     "name": "Samsung INR21700-40T",

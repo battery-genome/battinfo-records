@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/45wf-t3gy-pd5b-91qm",
+    "id": "https://w3id.org/battinfo/spec/45wf-t3gy-pd5b-91qm",
     "short_id": "45wft3",
     "identifier": "cell-type:45wf-t3gy-pd5b-91qm",
     "name": "Kokam SLPB65216216",

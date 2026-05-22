@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ajqb-gggn-68sg-7mym",
+    "id": "https://w3id.org/battinfo/spec/ajqb-gggn-68sg-7mym",
     "short_id": "ajqbgg",
     "identifier": "cell-type:ajqb-gggn-68sg-7mym",
     "name": "KODAK LR626",

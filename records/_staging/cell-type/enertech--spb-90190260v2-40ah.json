@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/byyt-tsgd-zznt-g8m2",
+    "id": "https://w3id.org/battinfo/spec/byyt-tsgd-zznt-g8m2",
     "short_id": "byytts",
     "identifier": "cell-type:byyt-tsgd-zznt-g8m2",
     "name": "ENERTECH SPB 90190260V2_40Ah",

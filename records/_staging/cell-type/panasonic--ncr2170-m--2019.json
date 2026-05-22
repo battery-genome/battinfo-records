@@ -1,11 +1,11 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/v0mc-7s30-rgej-apb1",
+    "id": "https://w3id.org/battinfo/spec/v0mc-7s30-rgej-apb1",
     "short_id": "v0mc7s",
     "identifier": "cell-type:v0mc-7s30-rgej-apb1",
-    "name": "Panasonic NCR2170\u2011M",
-    "model": "NCR2170\u2011M",
+    "name": "Panasonic NCR2170‑M",
+    "model": "NCR2170‑M",
     "manufacturer": {
       "type": "Organization",
       "name": "Panasonic"
@@ -56,7 +56,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Panasonic_NCR2170\u2011M.json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Panasonic_NCR2170‑M.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "add959cd6e9f2e5b76c723299c7b0c7a75749bcf369d5ca2e211457b68d541e7",

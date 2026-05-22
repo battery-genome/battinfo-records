@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6d3e-gy4w-r68r-51rg",
+    "id": "https://w3id.org/battinfo/spec/6d3e-gy4w-r68r-51rg",
     "short_id": "6d3egy",
     "identifier": "cell-type:6d3e-gy4w-r68r-51rg",
     "name": "Lishen LP37173207-150Ah",

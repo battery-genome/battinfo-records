@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bzac-kx7f-pm21-1nyn",
+    "id": "https://w3id.org/battinfo/spec/bzac-kx7f-pm21-1nyn",
     "short_id": "bzackx",
     "identifier": "cell-type:bzac-kx7f-pm21-1nyn",
     "name": "Wuhan Lisun Power Corp. Ltd ICP226769S",

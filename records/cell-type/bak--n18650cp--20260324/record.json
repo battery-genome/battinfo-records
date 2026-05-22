@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0y0d-0vbt-5bj9-0x1m",
+    "id": "https://w3id.org/battinfo/spec/0y0d-0vbt-5bj9-0x1m",
     "short_id": "0y0d0v",
     "identifier": "cell-type:0y0d-0vbt-5bj9-0x1m",
     "name": "BAK N18650CP",

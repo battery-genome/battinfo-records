@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/caz1-ck3b-xwnh-xg3r",
+    "id": "https://w3id.org/battinfo/spec/caz1-ck3b-xwnh-xg3r",
     "short_id": "caz1ck",
     "identifier": "cell-type:caz1-ck3b-xwnh-xg3r",
     "name": "Kokam SLPB50106100",
@@ -85,8 +85,8 @@
         "doi": "10.1149/1945-7111/ab78ff",
         "type": "Article",
         "headline": "Development of a New Procedure for Nail Penetration of Lithium-Ion Cells to Obtain Meaningful and Reproducible Results",
-        "author": "Jan Diekmann and Stefan Doose and Svenja Weber and Swantje M\u00fcnch and Wolfgang Haselrieder and Arno Kwade",
-        "description": "<jats:p>Internal short circuit tests of Lithium-Ion Batteries (LIBs) are used to test battery safety behavior in a custom made battery cell stressing chamber. However, systematic investigations regarding the test setup and test procedure are rare. In our research commercially available pouch cells (5 Ah) are employed for the method development and validation of nail penetration tests including measurement of gaseous reaction products. The effects of the thermal insulation material, the nail material (conductive and non-conductive), the influence of the penetration depth and the nail velocity were examined. It was observed that low penetration velocities (1 mm s<jats:sup>\u22121</jats:sup>) in combination with a conductive nail and a nail motion control, which is based on monitoring the temporal evaluation of the cell voltage change, provide the most promising results in terms of reproducibility at low standard deviation. By applying this method, only the energy required for a Thermal Runaway (TR) is released, which makes it possible to determine a novel key value for the assessment of battery safety. Based on this, a proposal has been made for a nail penetration test method which would allow the results to be compared between different test facilities.</jats:p>",
+        "author": "Jan Diekmann and Stefan Doose and Svenja Weber and Swantje Münch and Wolfgang Haselrieder and Arno Kwade",
+        "description": "<jats:p>Internal short circuit tests of Lithium-Ion Batteries (LIBs) are used to test battery safety behavior in a custom made battery cell stressing chamber. However, systematic investigations regarding the test setup and test procedure are rare. In our research commercially available pouch cells (5 Ah) are employed for the method development and validation of nail penetration tests including measurement of gaseous reaction products. The effects of the thermal insulation material, the nail material (conductive and non-conductive), the influence of the penetration depth and the nail velocity were examined. It was observed that low penetration velocities (1 mm s<jats:sup>−1</jats:sup>) in combination with a conductive nail and a nail motion control, which is based on monitoring the temporal evaluation of the cell voltage change, provide the most promising results in terms of reproducibility at low standard deviation. By applying this method, only the energy required for a Thermal Runaway (TR) is released, which makes it possible to determine a novel key value for the assessment of battery safety. Based on this, a proposal has been made for a nail penetration test method which would allow the results to be compared between different test facilities.</jats:p>",
         "date_published": 2020
       },
       {

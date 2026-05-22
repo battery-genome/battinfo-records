@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3kj7-kzhq-f585-0xgj",
+    "id": "https://w3id.org/battinfo/spec/3kj7-kzhq-f585-0xgj",
     "short_id": "3kj7kz",
     "identifier": "cell-type:3kj7-kzhq-f585-0xgj",
     "name": "Amita Technologies 120155250NH-NH04",

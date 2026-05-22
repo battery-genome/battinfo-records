@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vaje-e6s8-kwz7-8n96",
+    "id": "https://w3id.org/battinfo/spec/vaje-e6s8-kwz7-8n96",
     "short_id": "vajee6",
     "identifier": "cell-type:vaje-e6s8-kwz7-8n96",
     "name": "EVE Energy LF56K",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dv91-4tqp-96rh-q3ja",
+    "id": "https://w3id.org/battinfo/spec/dv91-4tqp-96rh-q3ja",
     "short_id": "dv914t",
     "identifier": "cell-type:dv91-4tqp-96rh-q3ja",
     "name": "Shengquan SQT-32145H-6Ah",

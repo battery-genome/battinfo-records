@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/d20k-ppbq-42dd-f8x0",
+    "id": "https://w3id.org/battinfo/spec/d20k-ppbq-42dd-f8x0",
     "short_id": "d20kpp",
     "identifier": "cell-type:d20k-ppbq-42dd-f8x0",
     "name": "EVE INR18650-25P",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2k4b-dd21-8gff-kqd0",
+    "id": "https://w3id.org/battinfo/spec/2k4b-dd21-8gff-kqd0",
     "short_id": "2k4bdd",
     "identifier": "cell-type:2k4b-dd21-8gff-kqd0",
     "name": "A123 AMP20M1HD-A",

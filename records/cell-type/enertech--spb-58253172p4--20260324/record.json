@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1kgr-rgrg-rtg5-g56s",
+    "id": "https://w3id.org/battinfo/spec/1kgr-rgrg-rtg5-g56s",
     "short_id": "1kgrrg",
     "identifier": "cell-type:1kgr-rgrg-rtg5-g56s",
     "name": "ENERTECH SPB 58253172P4",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f3f3-m6sb-55z2-wetb",
+    "id": "https://w3id.org/battinfo/spec/f3f3-m6sb-55z2-wetb",
     "short_id": "f3f3m6",
     "identifier": "cell-type:f3f3-m6sb-55z2-wetb",
     "name": "TENPOWER INR21700-50ME",

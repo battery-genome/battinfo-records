@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m5x3-3a09-04e8-sk84",
+    "id": "https://w3id.org/battinfo/spec/m5x3-3a09-04e8-sk84",
     "short_id": "m5x33a",
     "identifier": "cell-type:m5x3-3a09-04e8-sk84",
     "name": "TENPOWER INR18650-29HE",

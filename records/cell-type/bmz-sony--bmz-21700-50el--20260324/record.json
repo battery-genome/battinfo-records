@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/df1m-pkf0-xq7s-hcm2",
+    "id": "https://w3id.org/battinfo/spec/df1m-pkf0-xq7s-hcm2",
     "short_id": "df1mpk",
     "identifier": "cell-type:df1m-pkf0-xq7s-hcm2",
     "name": "BMZ_Sony BMZ 21700 50EL",

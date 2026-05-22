@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rykp-d3zt-4bjg-0m1y",
+    "id": "https://w3id.org/battinfo/spec/rykp-d3zt-4bjg-0m1y",
     "short_id": "rykpd3",
     "identifier": "cell-type:rykp-d3zt-4bjg-0m1y",
     "name": "Saft VL 5U",

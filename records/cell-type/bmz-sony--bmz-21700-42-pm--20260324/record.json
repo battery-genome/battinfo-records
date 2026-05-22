@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qkjm-pb5d-y09d-b8q3",
+    "id": "https://w3id.org/battinfo/spec/qkjm-pb5d-y09d-b8q3",
     "short_id": "qkjmpb",
     "identifier": "cell-type:qkjm-pb5d-y09d-b8q3",
     "name": "BMZ_Sony BMZ 21700 42 PM",

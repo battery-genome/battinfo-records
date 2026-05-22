@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/np0j-a9xt-wzw0-c4y8",
+    "id": "https://w3id.org/battinfo/spec/np0j-a9xt-wzw0-c4y8",
     "short_id": "np0ja9",
     "identifier": "cell-type:np0j-a9xt-wzw0-c4y8",
     "name": "Wuhan Lisun Power Corp. Ltd ICP226754M",

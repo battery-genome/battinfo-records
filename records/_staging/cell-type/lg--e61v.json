@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ewra-se7j-xpb0-w3m8",
+    "id": "https://w3id.org/battinfo/spec/ewra-se7j-xpb0-w3m8",
     "short_id": "ewrase",
     "identifier": "cell-type:ewra-se7j-xpb0-w3m8",
     "name": "LG E61V",

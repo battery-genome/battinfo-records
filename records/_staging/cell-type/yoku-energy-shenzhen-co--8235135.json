@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gwhv-wggs-w4jx-6hr2",
+    "id": "https://w3id.org/battinfo/spec/gwhv-wggs-w4jx-6hr2",
     "short_id": "gwhvwg",
     "identifier": "cell-type:gwhv-wggs-w4jx-6hr2",
     "name": "Yoku Energy (Shenzhen) Co 8235135",

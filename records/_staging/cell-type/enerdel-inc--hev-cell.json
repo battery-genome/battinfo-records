@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jjq9-ma8x-a7j8-g7mf",
+    "id": "https://w3id.org/battinfo/spec/jjq9-ma8x-a7j8-g7mf",
     "short_id": "jjq9ma",
     "identifier": "cell-type:jjq9-ma8x-a7j8-g7mf",
     "name": "EnerDel. INC HEV CELL",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0m3c-jtra-92s0-8353",
+    "id": "https://w3id.org/battinfo/spec/0m3c-jtra-92s0-8353",
     "short_id": "0m3cjt",
     "identifier": "cell-type:0m3c-jtra-92s0-8353",
     "name": "Kokam SLPB120216216G2",

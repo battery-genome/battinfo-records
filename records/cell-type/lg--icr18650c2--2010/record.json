@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/d3hh-g7b2-yfne-e33z",
+    "id": "https://w3id.org/battinfo/spec/d3hh-g7b2-yfne-e33z",
     "short_id": "d3hhg7",
     "identifier": "cell-type:d3hh-g7b2-yfne-e33z",
     "name": "LG ICR18650C2",

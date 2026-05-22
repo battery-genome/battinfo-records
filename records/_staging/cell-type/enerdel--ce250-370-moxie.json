@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/r3m8-7vwd-gvyp-njm5",
+    "id": "https://w3id.org/battinfo/spec/r3m8-7vwd-gvyp-njm5",
     "short_id": "r3m87v",
     "identifier": "cell-type:r3m8-7vwd-gvyp-njm5",
     "name": "ENERDEL CE250-370 Moxie+",

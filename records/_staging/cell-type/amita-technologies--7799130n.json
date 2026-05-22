@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ryzb-ad3k-yf5t-f76s",
+    "id": "https://w3id.org/battinfo/spec/ryzb-ad3k-yf5t-f76s",
     "short_id": "ryzbad",
     "identifier": "cell-type:ryzb-ad3k-yf5t-f76s",
     "name": "Amita Technologies 7799130N",

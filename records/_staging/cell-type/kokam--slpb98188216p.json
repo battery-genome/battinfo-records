@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/stbt-208w-evyc-tct1",
+    "id": "https://w3id.org/battinfo/spec/stbt-208w-evyc-tct1",
     "short_id": "stbt20",
     "identifier": "cell-type:stbt-208w-evyc-tct1",
     "name": "Kokam SLPB98188216P",

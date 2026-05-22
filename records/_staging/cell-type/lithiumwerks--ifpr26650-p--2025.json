@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/yxjw-3jmd-1y6e-38eb",
+    "id": "https://w3id.org/battinfo/spec/yxjw-3jmd-1y6e-38eb",
     "short_id": "yxjw3j",
     "identifier": "cell-type:yxjw-3jmd-1y6e-38eb",
     "name": "LITHIUMWERKS IFpR26650-P",

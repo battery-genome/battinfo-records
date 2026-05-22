@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/27rt-sd7m-2jmd-68hw",
+    "id": "https://w3id.org/battinfo/spec/27rt-sd7m-2jmd-68hw",
     "short_id": "27rtsd",
     "identifier": "cell-type:27rt-sd7m-2jmd-68hw",
     "name": "ENERDEL CE175-360 Moxie+",

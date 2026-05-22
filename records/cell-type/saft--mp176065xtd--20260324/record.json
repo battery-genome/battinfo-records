@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/r9k0-797w-jrgn-hhgg",
+    "id": "https://w3id.org/battinfo/spec/r9k0-797w-jrgn-hhgg",
     "short_id": "r9k079",
     "identifier": "cell-type:r9k0-797w-jrgn-hhgg",
     "name": "Saft MP176065xtd",

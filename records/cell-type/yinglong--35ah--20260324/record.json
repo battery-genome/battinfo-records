@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hvjp-8a2m-fv05-mjr6",
+    "id": "https://w3id.org/battinfo/spec/hvjp-8a2m-fv05-mjr6",
     "short_id": "hvjp8a",
     "identifier": "cell-type:hvjp-8a2m-fv05-mjr6",
     "name": "Yinglong 35Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/56ch-krxd-2jnt-z6g9",
+    "id": "https://w3id.org/battinfo/spec/56ch-krxd-2jnt-z6g9",
     "short_id": "56chkr",
     "identifier": "cell-type:56ch-krxd-2jnt-z6g9",
     "name": "Saft VL 8V",

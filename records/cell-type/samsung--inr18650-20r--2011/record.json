@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7tm6-x0xd-f4pf-nb8c",
+    "id": "https://w3id.org/battinfo/spec/7tm6-x0xd-f4pf-nb8c",
     "short_id": "7tm6x0",
     "identifier": "cell-type:7tm6-x0xd-f4pf-nb8c",
     "name": "SAMSUNG INR18650-20R",

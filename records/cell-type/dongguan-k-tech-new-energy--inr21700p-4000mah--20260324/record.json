@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/nb97-kv7f-bgnk-cma4",
+    "id": "https://w3id.org/battinfo/spec/nb97-kv7f-bgnk-cma4",
     "short_id": "nb97kv",
     "identifier": "cell-type:nb97-kv7f-bgnk-cma4",
     "name": "Dongguan K-Tech New Energy INR21700P-4000mAh",

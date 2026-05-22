@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0vqv-sw15-8xvn-3nwt",
+    "id": "https://w3id.org/battinfo/spec/0vqv-sw15-8xvn-3nwt",
     "short_id": "0vqvsw",
     "identifier": "cell-type:0vqv-sw15-8xvn-3nwt",
     "name": "EVE Energy LF280N-72174",

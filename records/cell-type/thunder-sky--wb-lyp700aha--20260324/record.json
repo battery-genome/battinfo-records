@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c8q5-k6hn-t71n-20qb",
+    "id": "https://w3id.org/battinfo/spec/c8q5-k6hn-t71n-20qb",
     "short_id": "c8q5k6",
     "identifier": "cell-type:c8q5-k6hn-t71n-20qb",
     "name": "Thunder-Sky WB-LYP700AHA",

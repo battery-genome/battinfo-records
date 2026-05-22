@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hva7-24s5-85fd-qdjt",
+    "id": "https://w3id.org/battinfo/spec/hva7-24s5-85fd-qdjt",
     "short_id": "hva724",
     "identifier": "cell-type:hva7-24s5-85fd-qdjt",
     "name": "Kokam SLPB30205130H",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/fke6-1n8s-z604-02ft",
+    "id": "https://w3id.org/battinfo/spec/fke6-1n8s-z604-02ft",
     "short_id": "fke61n",
     "identifier": "cell-type:fke6-1n8s-z604-02ft",
     "name": "GeneralElectronics GEB 126090",

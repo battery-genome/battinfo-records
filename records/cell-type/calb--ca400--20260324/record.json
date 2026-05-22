@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qhgs-ebjd-hf0c-8b7q",
+    "id": "https://w3id.org/battinfo/spec/qhgs-ebjd-hf0c-8b7q",
     "short_id": "qhgseb",
     "identifier": "cell-type:qhgs-ebjd-hf0c-8b7q",
     "name": "CALB CA400",

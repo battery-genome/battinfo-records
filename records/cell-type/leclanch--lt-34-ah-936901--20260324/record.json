@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/j50c-vcr9-wd8m-1h8w",
+    "id": "https://w3id.org/battinfo/spec/j50c-vcr9-wd8m-1h8w",
     "short_id": "j50cvc",
     "identifier": "cell-type:j50c-vcr9-wd8m-1h8w",
     "name": "LECLANCHÉ LT 34 Ah (936901)",

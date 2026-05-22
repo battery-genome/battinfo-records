@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hek8-jzeq-waxf-gdkp",
+    "id": "https://w3id.org/battinfo/spec/hek8-jzeq-waxf-gdkp",
     "short_id": "hek8jz",
     "identifier": "cell-type:hek8-jzeq-waxf-gdkp",
     "name": "Great Power GP 21700",

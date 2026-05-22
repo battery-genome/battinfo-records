@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/aff8-qkgd-34p5-db5v",
+    "id": "https://w3id.org/battinfo/spec/aff8-qkgd-34p5-db5v",
     "short_id": "aff8qk",
     "identifier": "cell-type:aff8-qkgd-34p5-db5v",
     "name": "Eagle Picher Technologies LLC LP 34100",

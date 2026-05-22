@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zgp5-9rdq-1d65-y3aq",
+    "id": "https://w3id.org/battinfo/spec/zgp5-9rdq-1d65-y3aq",
     "short_id": "zgp59r",
     "identifier": "cell-type:zgp5-9rdq-1d65-y3aq",
     "name": "Panasonic NCA596080",

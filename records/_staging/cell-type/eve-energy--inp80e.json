@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ys6g-h04h-zveh-tnaf",
+    "id": "https://w3id.org/battinfo/spec/ys6g-h04h-zveh-tnaf",
     "short_id": "ys6gh0",
     "identifier": "cell-type:ys6g-h04h-zveh-tnaf",
     "name": "EVE Energy INP80E",

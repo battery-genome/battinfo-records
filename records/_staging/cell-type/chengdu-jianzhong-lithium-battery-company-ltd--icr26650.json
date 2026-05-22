@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/e1mw-17a1-w3vd-r68q",
+    "id": "https://w3id.org/battinfo/spec/e1mw-17a1-w3vd-r68q",
     "short_id": "e1mw17",
     "identifier": "cell-type:e1mw-17a1-w3vd-r68q",
     "name": "Chengdu Jianzhong Lithium Battery Company Ltd ICR26650",

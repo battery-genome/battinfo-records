@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sjem-aqex-ypgy-mrev",
+    "id": "https://w3id.org/battinfo/spec/sjem-aqex-ypgy-mrev",
     "short_id": "sjemaq",
     "identifier": "cell-type:sjem-aqex-ypgy-mrev",
     "name": "Eagle Picher Technologies LLC SLC-21060-001",

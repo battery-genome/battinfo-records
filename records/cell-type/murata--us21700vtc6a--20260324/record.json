@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/v4jf-c81p-g67k-1pnx",
+    "id": "https://w3id.org/battinfo/spec/v4jf-c81p-g67k-1pnx",
     "short_id": "v4jfc8",
     "identifier": "cell-type:v4jf-c81p-g67k-1pnx",
     "name": "Murata US21700VTC6A",

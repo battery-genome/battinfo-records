@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ks7x-5955-atv9-e7ep",
+    "id": "https://w3id.org/battinfo/spec/ks7x-5955-atv9-e7ep",
     "short_id": "ks7x59",
     "identifier": "cell-type:ks7x-5955-atv9-e7ep",
     "name": "Kokam SLPB11043140H",

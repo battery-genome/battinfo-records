@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/y3nb-3as4-k28b-jdr5",
+    "id": "https://w3id.org/battinfo/spec/y3nb-3as4-k28b-jdr5",
     "short_id": "y3nb3a",
     "identifier": "cell-type:y3nb-3as4-k28b-jdr5",
     "name": "MURATA US21700VX40",

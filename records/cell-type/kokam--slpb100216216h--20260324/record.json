@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/fa7e-t3gd-wq0r-yr18",
+    "id": "https://w3id.org/battinfo/spec/fa7e-t3gd-wq0r-yr18",
     "short_id": "fa7et3",
     "identifier": "cell-type:fa7e-t3gd-wq0r-yr18",
     "name": "Kokam SLPB100216216H",

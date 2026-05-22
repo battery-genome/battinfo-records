@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kjaz-mhsm-dyba-69z7",
+    "id": "https://w3id.org/battinfo/spec/kjaz-mhsm-dyba-69z7",
     "short_id": "kjazmh",
     "identifier": "cell-type:kjaz-mhsm-dyba-69z7",
     "name": "Kayo battery co.. ltd KFL 32650-10P",

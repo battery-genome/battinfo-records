@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/x6sn-mxr5-gg3k-70hh",
+    "id": "https://w3id.org/battinfo/spec/x6sn-mxr5-gg3k-70hh",
     "short_id": "x6snmx",
     "identifier": "cell-type:x6sn-mxr5-gg3k-70hh",
     "name": "ENERTECH SPB 58253172P3_23Ah",

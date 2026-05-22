@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g1f0-6x0w-4t9r-x3m6",
+    "id": "https://w3id.org/battinfo/spec/g1f0-6x0w-4t9r-x3m6",
     "short_id": "g1f06x",
     "identifier": "cell-type:g1f0-6x0w-4t9r-x3m6",
     "name": "EVE Energy INP72P",

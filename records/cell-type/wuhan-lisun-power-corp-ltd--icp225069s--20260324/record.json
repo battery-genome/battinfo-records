@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3rn0-3avc-eq3k-ccss",
+    "id": "https://w3id.org/battinfo/spec/3rn0-3avc-eq3k-ccss",
     "short_id": "3rn03a",
     "identifier": "cell-type:3rn0-3avc-eq3k-ccss",
     "name": "Wuhan Lisun Power Corp. Ltd ICP225069S",

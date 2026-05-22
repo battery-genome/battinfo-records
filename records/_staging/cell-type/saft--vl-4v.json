@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hzvw-2p8p-fper-a3xs",
+    "id": "https://w3id.org/battinfo/spec/hzvw-2p8p-fper-a3xs",
     "short_id": "hzvw2p",
     "identifier": "cell-type:hzvw-2p8p-fper-a3xs",
     "name": "Saft VL 4V",

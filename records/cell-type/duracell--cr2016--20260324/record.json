@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/n0qr-ttke-etsg-0hdx",
+    "id": "https://w3id.org/battinfo/spec/n0qr-ttke-etsg-0hdx",
     "short_id": "n0qrtt",
     "identifier": "cell-type:n0qr-ttke-etsg-0hdx",
     "name": "DURACELL CR2016",

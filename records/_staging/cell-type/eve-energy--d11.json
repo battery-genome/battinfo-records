@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2d9a-new7-ec4m-pb15",
+    "id": "https://w3id.org/battinfo/spec/2d9a-new7-ec4m-pb15",
     "short_id": "2d9ane",
     "identifier": "cell-type:2d9a-new7-ec4m-pb15",
     "name": "EVE Energy D11",

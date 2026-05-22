@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mcph-bb7c-3xvb-wgdg",
+    "id": "https://w3id.org/battinfo/spec/mcph-bb7c-3xvb-wgdg",
     "short_id": "mcphbb",
     "identifier": "cell-type:mcph-bb7c-3xvb-wgdg",
     "name": "Amita Technologies 120155250N-AM44E",

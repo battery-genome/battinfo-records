@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/z689-gs4b-eh67-bdk0",
+    "id": "https://w3id.org/battinfo/spec/z689-gs4b-eh67-bdk0",
     "short_id": "z689gs",
     "identifier": "cell-type:z689-gs4b-eh67-bdk0",
     "name": "Lishen LR2170SA",

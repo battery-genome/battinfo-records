@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ak1y-kjz3-b024-x77e",
+    "id": "https://w3id.org/battinfo/spec/ak1y-kjz3-b024-x77e",
     "short_id": "ak1ykj",
     "identifier": "cell-type:ak1y-kjz3-b024-x77e",
     "name": "SAMSUNG INR18650-30Q",

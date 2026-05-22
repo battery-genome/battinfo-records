@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/t7jx-4v83-vesn-dk6s",
+    "id": "https://w3id.org/battinfo/spec/t7jx-4v83-vesn-dk6s",
     "short_id": "t7jx4v",
     "identifier": "cell-type:t7jx-4v83-vesn-dk6s",
     "name": "BAK N21700CD-53E",

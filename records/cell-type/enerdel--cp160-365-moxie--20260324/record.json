@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6ayk-dat1-t5h3-c5j7",
+    "id": "https://w3id.org/battinfo/spec/6ayk-dat1-t5h3-c5j7",
     "short_id": "6aykda",
     "identifier": "cell-type:6ayk-dat1-t5h3-c5j7",
     "name": "ENERDEL CP160-365 Moxie+",

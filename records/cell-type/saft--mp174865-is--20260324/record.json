@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7hbw-p5c8-tga4-sf22",
+    "id": "https://w3id.org/battinfo/spec/7hbw-p5c8-tga4-sf22",
     "short_id": "7hbwp5",
     "identifier": "cell-type:7hbw-p5c8-tga4-sf22",
     "name": "Saft MP174865 IS",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b0ys-ng16-99kv-w7y5",
+    "id": "https://w3id.org/battinfo/spec/b0ys-ng16-99kv-w7y5",
     "short_id": "b0ysng",
     "identifier": "cell-type:b0ys-ng16-99kv-w7y5",
     "name": "SANYO UR18650",

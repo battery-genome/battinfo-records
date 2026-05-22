@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/11gd-fkk3-2hgs-bpc3",
+    "id": "https://w3id.org/battinfo/spec/11gd-fkk3-2hgs-bpc3",
     "short_id": "11gdfk",
     "identifier": "cell-type:11gd-fkk3-2hgs-bpc3",
     "name": "SAMSUNG INR18650-29E",

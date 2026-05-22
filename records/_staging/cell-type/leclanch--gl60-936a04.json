@@ -1,14 +1,14 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/aa4h-kbm7-9v6q-410s",
+    "id": "https://w3id.org/battinfo/spec/aa4h-kbm7-9v6q-410s",
     "short_id": "aa4hkb",
     "identifier": "cell-type:aa4h-kbm7-9v6q-410s",
-    "name": "LECLANCH\u00c9 GL60 (936A04)",
+    "name": "LECLANCHÉ GL60 (936A04)",
     "model": "GL60 (936A04)",
     "manufacturer": {
       "type": "Organization",
-      "name": "LECLANCH\u00c9"
+      "name": "LECLANCHÉ"
     },
     "category": "battery cell",
     "cell_format": "prismatic",
@@ -64,7 +64,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCH\u00c9_GL60_(936A04).json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCHÉ_GL60_(936A04).json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "56d4eef017ec73c9e0626d698494b0558f2e605edc518d8fd788bd85e2b6848c",

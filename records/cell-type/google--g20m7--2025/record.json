@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/nm6t-ceph-frax-1mk1",
+    "id": "https://w3id.org/battinfo/spec/nm6t-ceph-frax-1mk1",
     "short_id": "nm6tce",
     "identifier": "cell-type:nm6t-ceph-frax-1mk1",
     "name": "Google G20M7",

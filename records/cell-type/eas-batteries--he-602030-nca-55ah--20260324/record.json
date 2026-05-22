@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/776a-rphh-p7n8-f065",
+    "id": "https://w3id.org/battinfo/spec/776a-rphh-p7n8-f065",
     "short_id": "776arp",
     "identifier": "cell-type:776a-rphh-p7n8-f065",
     "name": "EAS Batteries HE-602030 NCA 55AH",

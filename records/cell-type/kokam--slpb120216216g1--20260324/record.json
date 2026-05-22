@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/07we-c2td-as11-kq0a",
+    "id": "https://w3id.org/battinfo/spec/07we-c2td-as11-kq0a",
     "short_id": "07wec2",
     "identifier": "cell-type:07we-c2td-as11-kq0a",
     "name": "Kokam SLPB120216216G1",

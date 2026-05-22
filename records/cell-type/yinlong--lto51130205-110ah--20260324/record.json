@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/brr1-nes1-4cwp-5y53",
+    "id": "https://w3id.org/battinfo/spec/brr1-nes1-4cwp-5y53",
     "short_id": "brr1ne",
     "identifier": "cell-type:brr1-nes1-4cwp-5y53",
     "name": "YINLONG LTO51130205-110Ah",

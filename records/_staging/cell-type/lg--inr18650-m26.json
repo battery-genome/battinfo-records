@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/e71g-d3gp-eds1-56e8",
+    "id": "https://w3id.org/battinfo/spec/e71g-d3gp-eds1-56e8",
     "short_id": "e71gd3",
     "identifier": "cell-type:e71g-d3gp-eds1-56e8",
     "name": "LG INR18650-M26",

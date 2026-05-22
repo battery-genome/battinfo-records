@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hsax-7kxh-3ss7-57eb",
+    "id": "https://w3id.org/battinfo/spec/hsax-7kxh-3ss7-57eb",
     "short_id": "hsax7k",
     "identifier": "cell-type:hsax-7kxh-3ss7-57eb",
     "name": "Thunder-Sky WB-LYP300AHA",

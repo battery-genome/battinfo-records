@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6pwf-58xm-bha1-fdde",
+    "id": "https://w3id.org/battinfo/spec/6pwf-58xm-bha1-fdde",
     "short_id": "6pwf58",
     "identifier": "cell-type:6pwf-58xm-bha1-fdde",
     "name": "ATL Amperex Technology 5048168",

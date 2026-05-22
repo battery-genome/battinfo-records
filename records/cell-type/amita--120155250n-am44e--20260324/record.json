@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ma89-zt21-792j-w631",
+    "id": "https://w3id.org/battinfo/spec/ma89-zt21-792j-w631",
     "short_id": "ma89zt",
     "identifier": "cell-type:ma89-zt21-792j-w631",
     "name": "AMITA 120155250N-AM44E",

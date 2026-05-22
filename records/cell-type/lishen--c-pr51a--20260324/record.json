@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5grh-9jft-09bp-4xa7",
+    "id": "https://w3id.org/battinfo/spec/5grh-9jft-09bp-4xa7",
     "short_id": "5grh9j",
     "identifier": "cell-type:5grh-9jft-09bp-4xa7",
     "name": "Lishen C‑PR51A",

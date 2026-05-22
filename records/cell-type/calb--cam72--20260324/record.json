@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g7kp-6mnh-c6q0-0mpv",
+    "id": "https://w3id.org/battinfo/spec/g7kp-6mnh-c6q0-0mpv",
     "short_id": "g7kp6m",
     "identifier": "cell-type:g7kp-6mnh-c6q0-0mpv",
     "name": "CALB CAM72",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/p8zm-68fd-184p-gjfr",
+    "id": "https://w3id.org/battinfo/spec/p8zm-68fd-184p-gjfr",
     "short_id": "p8zm68",
     "identifier": "cell-type:p8zm-68fd-184p-gjfr",
     "name": "SAMSUNG INR18650-15Q",

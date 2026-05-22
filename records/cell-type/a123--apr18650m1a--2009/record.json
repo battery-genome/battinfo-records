@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9bx9-2skj-he83-5448",
+    "id": "https://w3id.org/battinfo/spec/9bx9-2skj-he83-5448",
     "short_id": "9bx92s",
     "identifier": "cell-type:9bx9-2skj-he83-5448",
     "name": "A123 APR18650M1A",

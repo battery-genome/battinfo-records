@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zyf9-76rn-tpbt-n9mw",
+    "id": "https://w3id.org/battinfo/spec/zyf9-76rn-tpbt-n9mw",
     "short_id": "zyf976",
     "identifier": "cell-type:zyf9-76rn-tpbt-n9mw",
     "name": "TENPOWER INR18650-35HE",

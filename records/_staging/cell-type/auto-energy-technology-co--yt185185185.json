@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f569-t9pm-3t7d-sr61",
+    "id": "https://w3id.org/battinfo/spec/f569-t9pm-3t7d-sr61",
     "short_id": "f569t9",
     "identifier": "cell-type:f569-t9pm-3t7d-sr61",
     "name": "Auto Energy Technology Co YT185185185",

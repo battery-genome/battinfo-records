@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6qf5-jzp7-par2-s2vd",
+    "id": "https://w3id.org/battinfo/spec/6qf5-jzp7-par2-s2vd",
     "short_id": "6qf5jz",
     "identifier": "cell-type:6qf5-jzp7-par2-s2vd",
     "name": "Molicel INR-21700-P42B",

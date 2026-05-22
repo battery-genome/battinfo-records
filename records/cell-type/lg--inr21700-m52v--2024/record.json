@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h6nx-bcxe-v636-x2nb",
+    "id": "https://w3id.org/battinfo/spec/h6nx-bcxe-v636-x2nb",
     "short_id": "h6nxbc",
     "identifier": "cell-type:h6nx-bcxe-v636-x2nb",
     "name": "LG INR21700-M52V",

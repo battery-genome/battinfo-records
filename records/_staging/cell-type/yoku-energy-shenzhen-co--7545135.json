@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vn6v-2vfs-45br-n1vq",
+    "id": "https://w3id.org/battinfo/spec/vn6v-2vfs-45br-n1vq",
     "short_id": "vn6v2v",
     "identifier": "cell-type:vn6v-2vfs-45br-n1vq",
     "name": "Yoku Energy (Shenzhen) Co 7545135",

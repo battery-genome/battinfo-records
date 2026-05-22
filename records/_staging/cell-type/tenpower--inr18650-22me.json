@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/74cb-d6r9-ks16-7c35",
+    "id": "https://w3id.org/battinfo/spec/74cb-d6r9-ks16-7c35",
     "short_id": "74cbd6",
     "identifier": "cell-type:74cb-d6r9-ks16-7c35",
     "name": "TENPOWER INR18650-22ME",

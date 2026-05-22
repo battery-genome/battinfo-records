@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/90r7-ged3-f4th-hxf9",
+    "id": "https://w3id.org/battinfo/spec/90r7-ged3-f4th-hxf9",
     "short_id": "90r7ge",
     "identifier": "cell-type:90r7-ged3-f4th-hxf9",
     "name": "KODAK LR41",

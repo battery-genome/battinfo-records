@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/fbtm-t6pr-gfmc-tnpr",
+    "id": "https://w3id.org/battinfo/spec/fbtm-t6pr-gfmc-tnpr",
     "short_id": "fbtmt6",
     "identifier": "cell-type:fbtm-t6pr-gfmc-tnpr",
     "name": "EVE Energy INP42P",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/js93-wp4f-0jcp-ecgn",
+    "id": "https://w3id.org/battinfo/spec/js93-wp4f-0jcp-ecgn",
     "short_id": "js93wp",
     "identifier": "cell-type:js93-wp4f-0jcp-ecgn",
     "name": "SAMSUNG INR18650-35E",
@@ -72,27 +72,27 @@
     },
     "minimum_charging_temperature": {
       "value": 0.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_charging_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_discharging_temperature": {
       "value": -10.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_discharging_temperature": {
       "value": 60.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_storage_temperature": {
       "value": -20.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_storage_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     }
   },
   "provenance": {

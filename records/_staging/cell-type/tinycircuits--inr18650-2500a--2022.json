@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vx6r-vw1w-jbya-0hn5",
+    "id": "https://w3id.org/battinfo/spec/vx6r-vw1w-jbya-0hn5",
     "short_id": "vx6rvw",
     "identifier": "cell-type:vx6r-vw1w-jbya-0hn5",
     "name": "TINYCIRCUITS INR18650-2500A",

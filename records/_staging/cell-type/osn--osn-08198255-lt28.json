@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mtkc-qet1-zc8c-7y4x",
+    "id": "https://w3id.org/battinfo/spec/mtkc-qet1-zc8c-7y4x",
     "short_id": "mtkcqe",
     "identifier": "cell-type:mtkc-qet1-zc8c-7y4x",
     "name": "OSN OSN-08198255-LT28",

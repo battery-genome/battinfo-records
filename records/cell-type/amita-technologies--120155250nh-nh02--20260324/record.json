@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ebnj-6fr0-c79f-pjg0",
+    "id": "https://w3id.org/battinfo/spec/ebnj-6fr0-c79f-pjg0",
     "short_id": "ebnj6f",
     "identifier": "cell-type:ebnj-6fr0-c79f-pjg0",
     "name": "Amita Technologies 120155250NH-NH02",

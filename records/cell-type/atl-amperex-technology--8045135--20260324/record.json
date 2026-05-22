@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ys3e-bevm-586a-4hrw",
+    "id": "https://w3id.org/battinfo/spec/ys3e-bevm-586a-4hrw",
     "short_id": "ys3ebe",
     "identifier": "cell-type:ys3e-bevm-586a-4hrw",
     "name": "ATL Amperex Technology 8045135",

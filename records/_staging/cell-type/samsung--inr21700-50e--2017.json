@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/27p5-216g-0vyc-98he",
+    "id": "https://w3id.org/battinfo/spec/27p5-216g-0vyc-98he",
     "short_id": "27p521",
     "identifier": "cell-type:27p5-216g-0vyc-98he",
     "name": "Samsung INR21700-50E",
@@ -77,27 +77,27 @@
     },
     "minimum_charging_temperature": {
       "value": 0.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_charging_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_discharging_temperature": {
       "value": -20.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_discharging_temperature": {
       "value": 60.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "minimum_storage_temperature": {
       "value": -20.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_storage_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     }
   },
   "provenance": {
@@ -141,7 +141,7 @@
         "type": "Article",
         "headline": "Development of an Informative Lithium-Ion Battery Datasheet",
         "author": "Weiping Diao and Chetan Kulkarni and Michael Pecht",
-        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery\u2019s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
+        "description": "<jats:p>Lithium-ion battery datasheets, also known as specification sheets, are documents that battery manufacturers provide to define the battery’s function, operational limit, performance, reliability, safety, cautions, prohibitions, and warranty. Product manufacturers and customers rely on the datasheets for battery selection and battery management. However, battery datasheets often have ambiguous and, in many cases, misleading terminology and data. This paper reviews and evaluates the datasheets of 25 different lithium-ion battery types from eleven major battery manufacturers. Issues that customers may face are discussed, and recommendations for developing an informative and valuable datasheet that will help customers procure suitable batteries are presented.</jats:p>",
         "date_published": 2021
       },
       {
@@ -157,7 +157,7 @@
         "id": "https://doi.org/10.3390/batteries9060309",
         "doi": "10.3390/batteries9060309",
         "type": "Article",
-        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells\u2014A Generic Overview",
+        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells—A Generic Overview",
         "author": "Sabri Baazouzi and Niklas Feistel and Johannes Wanner and Inga Landwehr and Alexander Fill and Kai Peter Birke",
         "description": "<jats:p>Battery cells are the main components of a battery system for electric vehicle batteries. Depending on the manufacturer, three different cell formats are used in the automotive sector (pouch, prismatic, and cylindrical). In the last 3 years, cylindrical cells have gained strong relevance and popularity among automotive manufacturers, mainly driven by innovative cell designs, such as the Tesla tabless design. This paper investigates 19 Li-ion cylindrical battery cells from four cell manufacturers in four formats (18650, 20700, 21700, and 4680). We aim to systematically capture the design features, such as tab design and quality parameters, such as manufacturing tolerances and generically describe cylindrical cells. We identified the basic designs and assigned example cells to them. In addition, we show a comprehensive definition of a tabless design considering the current and heat transport paths. Our findings show that the Tesla 4680 design is quasi-tabless. In addition, we found that 25% of the cathode and 30% of the anode are not notched, resulting in long electrical and thermal transport paths. Based on CT and post-mortem analyses, we show that jelly rolls can be approximated very well with the Archimedean spiral. Furthermore, we compare the gravimetric and volumetric energy density, the impedance, and the heating behavior at the surface and in the center of the jelly rolls. From the generic description, we present and discuss production processes focusing on format and design flexible manufacturing of jelly rolls.</jats:p>",
         "date_published": 2023
@@ -168,7 +168,7 @@
         "type": "Article",
         "headline": "Relaxation Effects in Self-Discharge Measurements of Lithium-Ion Batteries",
         "author": "Thomas Roth and Luiza Streck and Andreas Graule and Philipp Niehoff and Andreas Jossen",
-        "description": "<jats:p>In order to determine the quality of newly produced lithium-ion cells, self-discharge measurements are performed after manufacturing during the so-called aging step. The aging step is a time-consuming and cost-intensive process due to relaxation effects disturbing the self-discharge measuremtens. Relaxation effects are mainly attributed to voltage relaxation and anode overhang equalization. In this work, different methods for electrical self-discharge measurement, such as the voltage decay method, the voltage hold method, and the capacity loss method, were investigated using commercial Samsung INR21700\u201350E cylindrical cells (NCA/silicon-graphite) and non-commercial pouch-cells (NMC622/graphite). Various preconditioning methods allowed a distinction to be made between undisturbed, short-term, and long-term disturbed cells. While short-term disturbances subsided after several hours, long-term disturbances due to anode overhang were found to significantly disturb all electrical self-discharge measurements for several weeks. A theoretical explanation was introduced, describing the lithium inventory change due to anode and coupled side reactions being measured differently by voltage- and capacity-based methods. Experimental results confirmed this notion and showed that voltage-based self-discharge measurements underestimated the anode overhang equalization. A comparison to the initial cell aging data indicated that the self-discharge measurement performed shortly after cell formation was disturbed by the anode overhang equalization.</jats:p>",
+        "description": "<jats:p>In order to determine the quality of newly produced lithium-ion cells, self-discharge measurements are performed after manufacturing during the so-called aging step. The aging step is a time-consuming and cost-intensive process due to relaxation effects disturbing the self-discharge measuremtens. Relaxation effects are mainly attributed to voltage relaxation and anode overhang equalization. In this work, different methods for electrical self-discharge measurement, such as the voltage decay method, the voltage hold method, and the capacity loss method, were investigated using commercial Samsung INR21700–50E cylindrical cells (NCA/silicon-graphite) and non-commercial pouch-cells (NMC622/graphite). Various preconditioning methods allowed a distinction to be made between undisturbed, short-term, and long-term disturbed cells. While short-term disturbances subsided after several hours, long-term disturbances due to anode overhang were found to significantly disturb all electrical self-discharge measurements for several weeks. A theoretical explanation was introduced, describing the lithium inventory change due to anode and coupled side reactions being measured differently by voltage- and capacity-based methods. Experimental results confirmed this notion and showed that voltage-based self-discharge measurements underestimated the anode overhang equalization. A comparison to the initial cell aging data indicated that the self-discharge measurement performed shortly after cell formation was disturbed by the anode overhang equalization.</jats:p>",
         "date_published": 2023
       },
       {
@@ -186,7 +186,7 @@
         "type": "Article",
         "headline": "Determination of Hydrofluoric Acid Formation During Fire Accidents of Lithium-Ion Batteries with a Direct Cooling System Based on the Refrigeration Liquids",
         "author": "G. Lombardo and Mark R. St. J. Foreman and B. Ebin and L. W. Y. Yeung and B. M. Steenari and M. Petranikova",
-        "description": "<jats:title>Abstract</jats:title><jats:p>To avoid overheating of the batteries, which could lead to a fire, Lithium-ion batteries are provided with a thermal management system using refrigeration liquids. Since some of the commercial dielectric liquids used as refrigeration liquids contain halogens, their presence will contribute to a formation of hazardous emissions such as hydrofluoric acid during a potential fire. In this study, a simulation of a high temperature accident has been performed for lithium-ion batteries cooled with the direct immersion cooling systems using single-phase dielectric liquids to define their contribution to HF formation. Four commercial refrigeration liquids based on perfluoropolyethers, hydrofluoroether and polyalphaolefin were investigated in this work. By simulation of a fire, it was observed that the refrigeration liquids delayed the smoke formation by a factor of 2 to 2.5 in comparison to the case when the battery was burned without the cooling liquid. By analysis of the fluoride concentration in the washing system, it was determined that without the refrigeration liquid approximately 46.8\u00a0mmol/l of [F] was captured after the fire. When refrigeration liquids based on two perfluoropolyethers and hydrofluoroether were applied, the fluoride concentration in the washing system was 259\u00a0mmol/l, 173\u00a0mmol/l and 145\u00a0mmol/l, respectively. This work also proposed the reaction mechanisms of the refrigeration liquid\u00b4s decomposition during a fire. It was concluded that the refrigeration liquid based on polyalphaolefin does not contribute to the additional formation of hydrofluoric acid due to the chemical stability and low content of fluoride and can be considered as a more sustainable alternative for a direct cooling system for Lithium-ion batteries. \n</jats:p>",
+        "description": "<jats:title>Abstract</jats:title><jats:p>To avoid overheating of the batteries, which could lead to a fire, Lithium-ion batteries are provided with a thermal management system using refrigeration liquids. Since some of the commercial dielectric liquids used as refrigeration liquids contain halogens, their presence will contribute to a formation of hazardous emissions such as hydrofluoric acid during a potential fire. In this study, a simulation of a high temperature accident has been performed for lithium-ion batteries cooled with the direct immersion cooling systems using single-phase dielectric liquids to define their contribution to HF formation. Four commercial refrigeration liquids based on perfluoropolyethers, hydrofluoroether and polyalphaolefin were investigated in this work. By simulation of a fire, it was observed that the refrigeration liquids delayed the smoke formation by a factor of 2 to 2.5 in comparison to the case when the battery was burned without the cooling liquid. By analysis of the fluoride concentration in the washing system, it was determined that without the refrigeration liquid approximately 46.8 mmol/l of [F] was captured after the fire. When refrigeration liquids based on two perfluoropolyethers and hydrofluoroether were applied, the fluoride concentration in the washing system was 259 mmol/l, 173 mmol/l and 145 mmol/l, respectively. This work also proposed the reaction mechanisms of the refrigeration liquid´s decomposition during a fire. It was concluded that the refrigeration liquid based on polyalphaolefin does not contribute to the additional formation of hydrofluoric acid due to the chemical stability and low content of fluoride and can be considered as a more sustainable alternative for a direct cooling system for Lithium-ion batteries. \n</jats:p>",
         "date_published": 2023
       },
       {
@@ -202,8 +202,8 @@
         "doi": "10.3390/batteries9020132",
         "type": "Article",
         "headline": "Introducing the Loewner Method as a Data-Driven and Regularization-Free Approach for the Distribution of Relaxation Times Analysis of Lithium-Ion Batteries",
-        "author": "Tom R\u00fcther and Ion Victor Gosea and Leonard Jahn and Athanasios C. Antoulas and Michael A. Danzer",
-        "description": "<jats:p>For the identification of processes in lithium-ion batteries (LIB) by electrochemical impedance spectroscopy, frequency data is often transferred into the time domain using the method of distribution of relaxation times (DRT). As this requires regularization due to the ill-conditioned optimization problem, the investigation of data-driven methods becomes of interest. One promising approach is the Loewner method (LM), which has already had a number of applications in different fields of science but has not been applied to batteries yet. In this work, it is first deployed on synthetic data with predefined time constants and gains. The results are analyzed concerning the choice of model order, the type of processes , i.e., distributed and discrete, and the signal-to-noise ratio. Afterwards, the LM is used to identify and analyze the processes of a cylindrical LIB. To verify the results of this assessment a comparison is made with the generalized DRT at two different states of health of the LIB. It is shown that both methods lead to the same qualitative results. For the assignment of processes as well as for the interpretation of minor gains, the LM shows advantageous behavior, whereas the generalized DRT shows better results for the determination of lumped elements and resistive\u2013inductive processes.</jats:p>",
+        "author": "Tom Rüther and Ion Victor Gosea and Leonard Jahn and Athanasios C. Antoulas and Michael A. Danzer",
+        "description": "<jats:p>For the identification of processes in lithium-ion batteries (LIB) by electrochemical impedance spectroscopy, frequency data is often transferred into the time domain using the method of distribution of relaxation times (DRT). As this requires regularization due to the ill-conditioned optimization problem, the investigation of data-driven methods becomes of interest. One promising approach is the Loewner method (LM), which has already had a number of applications in different fields of science but has not been applied to batteries yet. In this work, it is first deployed on synthetic data with predefined time constants and gains. The results are analyzed concerning the choice of model order, the type of processes , i.e., distributed and discrete, and the signal-to-noise ratio. Afterwards, the LM is used to identify and analyze the processes of a cylindrical LIB. To verify the results of this assessment a comparison is made with the generalized DRT at two different states of health of the LIB. It is shown that both methods lead to the same qualitative results. For the assignment of processes as well as for the interpretation of minor gains, the LM shows advantageous behavior, whereas the generalized DRT shows better results for the determination of lumped elements and resistive–inductive processes.</jats:p>",
         "date_published": 2023
       }
     ]

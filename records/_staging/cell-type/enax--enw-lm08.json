@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b3fy-z439-8sx1-c522",
+    "id": "https://w3id.org/battinfo/spec/b3fy-z439-8sx1-c522",
     "short_id": "b3fyz4",
     "identifier": "cell-type:b3fy-z439-8sx1-c522",
     "name": "ENAX ENW-LM08",

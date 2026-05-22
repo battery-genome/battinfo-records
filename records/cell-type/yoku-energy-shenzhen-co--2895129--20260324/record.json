@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1cnw-4p8k-mc8s-ky0t",
+    "id": "https://w3id.org/battinfo/spec/1cnw-4p8k-mc8s-ky0t",
     "short_id": "1cnw4p",
     "identifier": "cell-type:1cnw-4p8k-mc8s-ky0t",
     "name": "Yoku Energy (Shenzhen) Co 2895129",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g5ry-j413-5nb8-t75e",
+    "id": "https://w3id.org/battinfo/spec/g5ry-j413-5nb8-t75e",
     "short_id": "g5ryj4",
     "identifier": "cell-type:g5ry-j413-5nb8-t75e",
     "name": "CATL LEP71H3L7-01",

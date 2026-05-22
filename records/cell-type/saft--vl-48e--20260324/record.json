@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/eh0p-kg08-grfn-52k6",
+    "id": "https://w3id.org/battinfo/spec/eh0p-kg08-grfn-52k6",
     "short_id": "eh0pkg",
     "identifier": "cell-type:eh0p-kg08-grfn-52k6",
     "name": "Saft VL 48E",

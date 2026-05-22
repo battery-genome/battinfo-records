@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/eztw-4h41-s8xy-q37x",
+    "id": "https://w3id.org/battinfo/spec/eztw-4h41-s8xy-q37x",
     "short_id": "eztw4h",
     "identifier": "cell-type:eztw-4h41-s8xy-q37x",
     "name": "Eagle Picher Technologies LLC LP 33450",

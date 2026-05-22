@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pge5-wer6-2q82-v9k0",
+    "id": "https://w3id.org/battinfo/spec/pge5-wer6-2q82-v9k0",
     "short_id": "pge5we",
     "identifier": "cell-type:pge5-wer6-2q82-v9k0",
     "name": "A123 ANR26650M1-B",

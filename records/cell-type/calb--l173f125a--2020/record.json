@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/a52h-qz8t-vh7z-c8hd",
+    "id": "https://w3id.org/battinfo/spec/a52h-qz8t-vh7z-c8hd",
     "short_id": "a52hqz",
     "identifier": "cell-type:a52h-qz8t-vh7z-c8hd",
     "name": "CALB L173F125A",

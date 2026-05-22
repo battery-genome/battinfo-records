@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pjhb-gnjv-hdcs-bbxm",
+    "id": "https://w3id.org/battinfo/spec/pjhb-gnjv-hdcs-bbxm",
     "short_id": "pjhbgn",
     "identifier": "cell-type:pjhb-gnjv-hdcs-bbxm",
     "name": "LG INR21700-M58T",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/y2ws-6hna-0ck6-rxm6",
+    "id": "https://w3id.org/battinfo/spec/y2ws-6hna-0ck6-rxm6",
     "short_id": "y2ws6h",
     "identifier": "cell-type:y2ws-6hna-0ck6-rxm6",
     "name": "EVE LF304",

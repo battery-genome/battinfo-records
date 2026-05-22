@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jyyg-657v-k3n9-n127",
+    "id": "https://w3id.org/battinfo/spec/jyyg-657v-k3n9-n127",
     "short_id": "jyyg65",
     "identifier": "cell-type:jyyg-657v-k3n9-n127",
     "name": "LG E63B",
@@ -84,7 +84,7 @@
         "doi": "10.1016/j.est.2022.105676",
         "type": "Article",
         "headline": "Empirical calendar ageing model for electric vehicles and energy storage systems batteries",
-        "author": "Gaizka Salda\u00f1a and Jos\u00e9 Ignacio San Mart\u00edn and Inmaculada Zamora and Francisco Javier Asensio and Oier O\u00f1ederra and Mikel Gonz\u00e1lez-P\u00e9rez",
+        "author": "Gaizka Saldaña and José Ignacio San Martín and Inmaculada Zamora and Francisco Javier Asensio and Oier Oñederra and Mikel González-Pérez",
         "date_published": 2022
       },
       {

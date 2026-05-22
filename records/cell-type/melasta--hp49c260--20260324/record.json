@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ap20-31fx-e0p7-19dv",
+    "id": "https://w3id.org/battinfo/spec/ap20-31fx-e0p7-19dv",
     "short_id": "ap2031",
     "identifier": "cell-type:ap20-31fx-e0p7-19dv",
     "name": "MELASTA HP49C260",

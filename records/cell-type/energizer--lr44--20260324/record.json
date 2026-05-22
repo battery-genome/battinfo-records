@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jyzq-ttx7-hza5-gj3v",
+    "id": "https://w3id.org/battinfo/spec/jyzq-ttx7-hza5-gj3v",
     "short_id": "jyzqtt",
     "identifier": "cell-type:jyzq-ttx7-hza5-gj3v",
     "name": "ENERGIZER LR44",

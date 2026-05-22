@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gjgr-ttfq-ypf6-009p",
+    "id": "https://w3id.org/battinfo/spec/gjgr-ttfq-ypf6-009p",
     "short_id": "gjgrtt",
     "identifier": "cell-type:gjgr-ttfq-ypf6-009p",
     "name": "YINLONG YLE-LTO-66160-45Ah",

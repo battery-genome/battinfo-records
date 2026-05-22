@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wa3w-j2fg-ewf3-1b4c",
+    "id": "https://w3id.org/battinfo/spec/wa3w-j2fg-ewf3-1b4c",
     "short_id": "wa3wj2",
     "identifier": "cell-type:wa3w-j2fg-ewf3-1b4c",
     "name": "Energizer CR2032",

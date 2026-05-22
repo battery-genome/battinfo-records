@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8xvg-8165-06d5-m0e6",
+    "id": "https://w3id.org/battinfo/spec/8xvg-8165-06d5-m0e6",
     "short_id": "8xvg81",
     "identifier": "cell-type:8xvg-8165-06d5-m0e6",
     "name": "Yinglong LithiumTitanate 40Ah",

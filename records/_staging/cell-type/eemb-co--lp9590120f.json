@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zc4d-mzc0-p4bn-3wh8",
+    "id": "https://w3id.org/battinfo/spec/zc4d-mzc0-p4bn-3wh8",
     "short_id": "zc4dmz",
     "identifier": "cell-type:zc4d-mzc0-p4bn-3wh8",
     "name": "Eemb Co LP9590120F",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dc8v-mc21-v1j8-5zwy",
+    "id": "https://w3id.org/battinfo/spec/dc8v-mc21-v1j8-5zwy",
     "short_id": "dc8vmc",
     "identifier": "cell-type:dc8v-mc21-v1j8-5zwy",
     "name": "Neosonic Li-Polymer Energy KMBNS08035130S",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/m0m8-q0nv-3p4s-edkv",
+    "id": "https://w3id.org/battinfo/spec/m0m8-q0nv-3p4s-edkv",
     "short_id": "m0m8q0",
     "identifier": "cell-type:m0m8-q0nv-3p4s-edkv",
     "name": "Shengquan SQT-32145H-10Ah",

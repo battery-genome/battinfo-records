@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h9rn-6x6r-2p7p-nb1g",
+    "id": "https://w3id.org/battinfo/spec/h9rn-6x6r-2p7p-nb1g",
     "short_id": "h9rn6x",
     "identifier": "cell-type:h9rn-6x6r-2p7p-nb1g",
     "name": "Saft VL 30P",

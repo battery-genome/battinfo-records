@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k4j2-6d8j-t2v2-mthz",
+    "id": "https://w3id.org/battinfo/spec/k4j2-6d8j-t2v2-mthz",
     "short_id": "k4j26d",
     "identifier": "cell-type:k4j2-6d8j-t2v2-mthz",
     "name": "EVE LF280K",

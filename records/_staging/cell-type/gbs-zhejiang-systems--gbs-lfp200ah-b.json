@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/q0ye-gyg0-ea4x-cx6a",
+    "id": "https://w3id.org/battinfo/spec/q0ye-gyg0-ea4x-cx6a",
     "short_id": "q0yegy",
     "identifier": "cell-type:q0ye-gyg0-ea4x-cx6a",
     "name": "GBS ZhEJIANG Systems GBS-LFP200Ah-B",

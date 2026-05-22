@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2c16-qpzn-d6xc-3shs",
+    "id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs",
     "short_id": "2c16qp",
     "identifier": "cell-type:2c16-qpzn-d6xc-3shs",
     "name": "LG INR21700 M50",
@@ -149,7 +149,7 @@
         "doi": "10.3390/batteries9010006",
         "type": "Article",
         "headline": "Influence of Breathing and Swelling on the Jelly-Roll Case Gap of Cylindrical Lithium-Ion Battery Cells",
-        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschl\u00e4ger and Oliver Bohlen and Andreas Jossen",
+        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschläger and Oliver Bohlen and Andreas Jossen",
         "description": "<jats:p>Cylindrical 18650 and 21700 lithium-ion batteries are produced with small gaps between the jelly roll and the case. The size of these gaps and the mechanical attachment of the jelly roll to the case can have a significant impact on the thermal and mechanical properties of cells. To investigate the influence of the state of charge (SOC) and state of health (SOH) on the size of the gap, computed tomography (CT) and gray-value analysis was conducted with various cell types at 0% and 100% SOC and after cycling. The results show a significant influence of the SOC on the gap for new cells and a substantial reduction in the gap during the first cycles.</jats:p>",
         "date_published": 2022
       },
@@ -157,9 +157,9 @@
         "id": "https://doi.org/10.1002/ente.202200547",
         "doi": "10.1002/ente.202200547",
         "type": "Article",
-        "headline": "Detection of Lithium\u2010Ion Cells\u2019 Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time",
+        "headline": "Detection of Lithium‐Ion Cells’ Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time",
         "author": "Pietro Iurilli and Claudio Brivio and Vanessa Wood",
-        "description": "<jats:sec><jats:label /><jats:p>Herein, a methodology to investigate aging of commercial cylindrical Li\u2010ion cells is introduced. Distribution of relaxation time (DRT) method is applied to deconvolute electrochemical impedance spectroscopy (EIS) measurements and separate those polarization effects that are usually overlapped in the frequency domain by means of a peak\u2010based representation. Half\u2010cells are built at the beginning and end of life to link the electrochemical and aging processes occurring at anode and/or the cathode sides. Moreover, lab\u2010made full\u2010cells are exploited to verify the reproducibility when compared with cylindrical cells. The results of an extensive analysis of around 500 EIS spectra return an unambiguous attribution of different electrochemical processes to different time constants and ultimately to different DRT peaks. Digital imaging validates graphite degradation, mainly related to lithium plating. Scanning electron microscopy validates the degradation at NMC cathode, mainly attributed to particle cracking. It is concluded that DRT peaks allow to characterize cell aging and their tracking can help to develop more reliable state of health estimators.</jats:p></jats:sec>",
+        "description": "<jats:sec><jats:label /><jats:p>Herein, a methodology to investigate aging of commercial cylindrical Li‐ion cells is introduced. Distribution of relaxation time (DRT) method is applied to deconvolute electrochemical impedance spectroscopy (EIS) measurements and separate those polarization effects that are usually overlapped in the frequency domain by means of a peak‐based representation. Half‐cells are built at the beginning and end of life to link the electrochemical and aging processes occurring at anode and/or the cathode sides. Moreover, lab‐made full‐cells are exploited to verify the reproducibility when compared with cylindrical cells. The results of an extensive analysis of around 500 EIS spectra return an unambiguous attribution of different electrochemical processes to different time constants and ultimately to different DRT peaks. Digital imaging validates graphite degradation, mainly related to lithium plating. Scanning electron microscopy validates the degradation at NMC cathode, mainly attributed to particle cracking. It is concluded that DRT peaks allow to characterize cell aging and their tracking can help to develop more reliable state of health estimators.</jats:p></jats:sec>",
         "date_published": 2022
       },
       {
@@ -168,7 +168,7 @@
         "type": "Article",
         "headline": "Physics-Based SoH Estimation for Li-Ion Cells",
         "author": "Pietro Iurilli and Claudio Brivio and Rafael E. Carrillo and Vanessa Wood",
-        "description": "<jats:p>Accurate state of health (SoH) estimation is crucial to optimize the lifetime of Li-ion cells while ensuring safety during operations. This work introduces a methodology to track Li-ion cells degradation and estimate SoH based on electrochemical impedance spectroscopy (EIS) measurements. Distribution of relaxation times (DRT) were exploited to derive indicators linked to the so-called degradation modes (DMs), which group the different aging mechanisms. The combination of these indicators was used to model the aging progression over the whole lifetime (both in the \u201cpre-knee\u201d and \u201cafter-knee\u201d regions), enabling a physics-based SoH estimation. The methodology was applied to commercial cylindrical cells (NMC811|Graphite SiOx). The results showed that loss of lithium inventory (LLI) is the main driving factor for cell degradation, followed by loss of cathode active material (LAMC). SoH estimation was achievable with a mean absolute error lower than 0.75% for SoH values higher than 85% and lower than 3.70% SoH values between 85% and 80% (end of life). The analyses of the results will allow for guidelines to be defined to replicate the presented methodology, characterize new Li-ion cell types, and perform onboard SoH estimation in battery management system (BMS) solutions.</jats:p>",
+        "description": "<jats:p>Accurate state of health (SoH) estimation is crucial to optimize the lifetime of Li-ion cells while ensuring safety during operations. This work introduces a methodology to track Li-ion cells degradation and estimate SoH based on electrochemical impedance spectroscopy (EIS) measurements. Distribution of relaxation times (DRT) were exploited to derive indicators linked to the so-called degradation modes (DMs), which group the different aging mechanisms. The combination of these indicators was used to model the aging progression over the whole lifetime (both in the “pre-knee” and “after-knee” regions), enabling a physics-based SoH estimation. The methodology was applied to commercial cylindrical cells (NMC811|Graphite SiOx). The results showed that loss of lithium inventory (LLI) is the main driving factor for cell degradation, followed by loss of cathode active material (LAMC). SoH estimation was achievable with a mean absolute error lower than 0.75% for SoH values higher than 85% and lower than 3.70% SoH values between 85% and 80% (end of life). The analyses of the results will allow for guidelines to be defined to replicate the presented methodology, characterize new Li-ion cell types, and perform onboard SoH estimation in battery management system (BMS) solutions.</jats:p>",
         "date_published": 2022
       }
     ]

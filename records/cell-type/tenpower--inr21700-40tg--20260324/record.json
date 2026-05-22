@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gw28-1g5q-jwfn-z3tw",
+    "id": "https://w3id.org/battinfo/spec/gw28-1g5q-jwfn-z3tw",
     "short_id": "gw281g",
     "identifier": "cell-type:gw28-1g5q-jwfn-z3tw",
     "name": "TENPOWER INR21700-40TG",

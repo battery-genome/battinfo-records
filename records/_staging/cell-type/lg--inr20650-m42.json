@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8h3j-gz4b-045j-wxh1",
+    "id": "https://w3id.org/battinfo/spec/8h3j-gz4b-045j-wxh1",
     "short_id": "8h3jgz",
     "identifier": "cell-type:8h3j-gz4b-045j-wxh1",
     "name": "LG INR20650 M42",

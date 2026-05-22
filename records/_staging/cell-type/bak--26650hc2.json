@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7xma-q4tr-1h9e-j0tq",
+    "id": "https://w3id.org/battinfo/spec/7xma-q4tr-1h9e-j0tq",
     "short_id": "7xmaq4",
     "identifier": "cell-type:7xma-q4tr-1h9e-j0tq",
     "name": "BAK 26650HC2",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g0kf-1nw5-rt5b-nhd7",
+    "id": "https://w3id.org/battinfo/spec/g0kf-1nw5-rt5b-nhd7",
     "short_id": "g0kf1n",
     "identifier": "cell-type:g0kf-1nw5-rt5b-nhd7",
     "name": "BAK N18650CK",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/j8qe-emqy-x4e1-4kmw",
+    "id": "https://w3id.org/battinfo/spec/j8qe-emqy-x4e1-4kmw",
     "short_id": "j8qeem",
     "identifier": "cell-type:j8qe-emqy-x4e1-4kmw",
     "name": "Eagle Picher Technologies LLC LiBG18EV-1",

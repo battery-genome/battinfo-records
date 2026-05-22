@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/614f-xmbw-c52c-rdp5",
+    "id": "https://w3id.org/battinfo/spec/614f-xmbw-c52c-rdp5",
     "short_id": "614fxm",
     "identifier": "cell-type:614f-xmbw-c52c-rdp5",
     "name": "EVE EVE-INR18650-29V",

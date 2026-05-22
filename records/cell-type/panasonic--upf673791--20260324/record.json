@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5yrq-ebty-57qr-hv3d",
+    "id": "https://w3id.org/battinfo/spec/5yrq-ebty-57qr-hv3d",
     "short_id": "5yrqeb",
     "identifier": "cell-type:5yrq-ebty-57qr-hv3d",
     "name": "Panasonic UPF673791",

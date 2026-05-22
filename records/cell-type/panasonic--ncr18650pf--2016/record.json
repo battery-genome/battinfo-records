@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gjr9-jyhc-t3sd-m1zn",
+    "id": "https://w3id.org/battinfo/spec/gjr9-jyhc-t3sd-m1zn",
     "short_id": "gjr9jy",
     "identifier": "cell-type:gjr9-jyhc-t3sd-m1zn",
     "name": "PANASONIC NCR18650PF",

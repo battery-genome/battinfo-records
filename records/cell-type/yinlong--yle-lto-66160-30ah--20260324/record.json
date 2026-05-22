@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5b2z-z4zb-8p1z-bffc",
+    "id": "https://w3id.org/battinfo/spec/5b2z-z4zb-8p1z-bffc",
     "short_id": "5b2zz4",
     "identifier": "cell-type:5b2z-z4zb-8p1z-bffc",
     "name": "YINLONG YLE-LTO-66160-30Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/aa4h-kbm7-9v6q-410s",
+    "id": "https://w3id.org/battinfo/spec/aa4h-kbm7-9v6q-410s",
     "short_id": "aa4hkb",
     "identifier": "cell-type:aa4h-kbm7-9v6q-410s",
     "name": "LECLANCHÉ GL60 (936A04)",

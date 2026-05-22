@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1t4y-5jfz-8m7q-nvfe",
+    "id": "https://w3id.org/battinfo/spec/1t4y-5jfz-8m7q-nvfe",
     "short_id": "1t4y5j",
     "identifier": "cell-type:1t4y-5jfz-8m7q-nvfe",
     "name": "Molicel INR18650-P22S",

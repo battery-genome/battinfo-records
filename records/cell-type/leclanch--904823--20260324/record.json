@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3js1-5rsc-9czz-2ydb",
+    "id": "https://w3id.org/battinfo/spec/3js1-5rsc-9czz-2ydb",
     "short_id": "3js15r",
     "identifier": "cell-type:3js1-5rsc-9czz-2ydb",
     "name": "LECLANCHÉ 904823",

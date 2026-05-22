@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3h8g-cs74-jqqn-8bg4",
+    "id": "https://w3id.org/battinfo/spec/3h8g-cs74-jqqn-8bg4",
     "short_id": "3h8gcs",
     "identifier": "cell-type:3h8g-cs74-jqqn-8bg4",
     "name": "MOLICEL INR-18650-M35A",

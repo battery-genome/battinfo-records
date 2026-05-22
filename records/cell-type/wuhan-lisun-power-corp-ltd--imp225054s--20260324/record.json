@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/501g-af7a-nckf-qzeg",
+    "id": "https://w3id.org/battinfo/spec/501g-af7a-nckf-qzeg",
     "short_id": "501gaf",
     "identifier": "cell-type:501g-af7a-nckf-qzeg",
     "name": "Wuhan Lisun Power Corp. Ltd IMP225054S",

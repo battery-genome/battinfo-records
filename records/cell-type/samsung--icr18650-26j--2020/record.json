@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bcd9-xg9h-v8ps-0467",
+    "id": "https://w3id.org/battinfo/spec/bcd9-xg9h-v8ps-0467",
     "short_id": "bcd9xg",
     "identifier": "cell-type:bcd9-xg9h-v8ps-0467",
     "name": "SAMSUNG ICR18650-26J",

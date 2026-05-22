@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/nbv8-01zy-s3a2-kqnk",
+    "id": "https://w3id.org/battinfo/spec/nbv8-01zy-s3a2-kqnk",
     "short_id": "nbv801",
     "identifier": "cell-type:nbv8-01zy-s3a2-kqnk",
     "name": "Amita Technologies 7799130P",

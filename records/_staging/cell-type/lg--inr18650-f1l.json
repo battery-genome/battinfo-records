@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gypk-tb8r-e28q-gcx7",
+    "id": "https://w3id.org/battinfo/spec/gypk-tb8r-e28q-gcx7",
     "short_id": "gypktb",
     "identifier": "cell-type:gypk-tb8r-e28q-gcx7",
     "name": "LG INR18650-F1L",

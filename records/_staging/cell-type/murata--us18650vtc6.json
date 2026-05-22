@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vp3y-sbk0-4p0w-7s7e",
+    "id": "https://w3id.org/battinfo/spec/vp3y-sbk0-4p0w-7s7e",
     "short_id": "vp3ysb",
     "identifier": "cell-type:vp3y-sbk0-4p0w-7s7e",
     "name": "MURATA US18650VTC6",

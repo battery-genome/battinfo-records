@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cmcy-cyp8-ajxx-27rg",
+    "id": "https://w3id.org/battinfo/spec/cmcy-cyp8-ajxx-27rg",
     "short_id": "cmcycy",
     "identifier": "cell-type:cmcy-cyp8-ajxx-27rg",
     "name": "EVE Energy LF280K-72174",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9ygp-mb6r-09zz-26tk",
+    "id": "https://w3id.org/battinfo/spec/9ygp-mb6r-09zz-26tk",
     "short_id": "9ygpmb",
     "identifier": "cell-type:9ygp-mb6r-09zz-26tk",
     "name": "EVE Energy LF304-72174",

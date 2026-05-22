@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wj74-skyw-03p5-94h8",
+    "id": "https://w3id.org/battinfo/spec/wj74-skyw-03p5-94h8",
     "short_id": "wj74sk",
     "identifier": "cell-type:wj74-skyw-03p5-94h8",
     "name": "Saft VL 37570",

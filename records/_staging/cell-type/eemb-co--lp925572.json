@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/v8xs-7t9k-ga52-q6wa",
+    "id": "https://w3id.org/battinfo/spec/v8xs-7t9k-ga52-q6wa",
     "short_id": "v8xs7t",
     "identifier": "cell-type:v8xs-7t9k-ga52-q6wa",
     "name": "Eemb Co LP925572",

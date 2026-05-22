@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6bv9-ar4v-p7m7-mmy1",
+    "id": "https://w3id.org/battinfo/spec/6bv9-ar4v-p7m7-mmy1",
     "short_id": "6bv9ar",
     "identifier": "cell-type:6bv9-ar4v-p7m7-mmy1",
     "name": "CALB CA40",

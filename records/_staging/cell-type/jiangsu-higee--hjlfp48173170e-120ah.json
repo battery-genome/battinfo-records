@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zxwh-z4x5-g9x3-a45m",
+    "id": "https://w3id.org/battinfo/spec/zxwh-z4x5-g9x3-a45m",
     "short_id": "zxwhz4",
     "identifier": "cell-type:zxwh-z4x5-g9x3-a45m",
     "name": "JIANGSU HIGEE HJLFP48173170E-120Ah",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/xej9-tenj-s54v-h3d4",
+    "id": "https://w3id.org/battinfo/spec/xej9-tenj-s54v-h3d4",
     "short_id": "xej9te",
     "identifier": "cell-type:xej9-tenj-s54v-h3d4",
     "name": "Yinglong LTO66160H/40Ah",

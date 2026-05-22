@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mjeb-0w0m-4z2v-nhvz",
+    "id": "https://w3id.org/battinfo/spec/mjeb-0w0m-4z2v-nhvz",
     "short_id": "mjeb0w",
     "identifier": "cell-type:mjeb-0w0m-4z2v-nhvz",
     "name": "Kayo battery co.. ltd KFL 32650",

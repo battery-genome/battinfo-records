@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jkx9-zq2e-1m0s-j7tv",
+    "id": "https://w3id.org/battinfo/spec/jkx9-zq2e-1m0s-j7tv",
     "short_id": "jkx9zq",
     "identifier": "cell-type:jkx9-zq2e-1m0s-j7tv",
     "name": "LG A7",

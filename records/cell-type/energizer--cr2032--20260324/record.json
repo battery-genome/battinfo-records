@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/bnj2-h9ht-p6hc-wk2x",
+    "id": "https://w3id.org/battinfo/spec/bnj2-h9ht-p6hc-wk2x",
     "short_id": "bnj2h9",
     "identifier": "cell-type:bnj2-h9ht-p6hc-wk2x",
     "name": "ENERGIZER CR2032",

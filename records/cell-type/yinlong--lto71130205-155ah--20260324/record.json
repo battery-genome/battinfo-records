@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sewt-dy3x-pyrj-nnnx",
+    "id": "https://w3id.org/battinfo/spec/sewt-dy3x-pyrj-nnnx",
     "short_id": "sewtdy",
     "identifier": "cell-type:sewt-dy3x-pyrj-nnnx",
     "name": "YINLONG LTO71130205-155Ah",

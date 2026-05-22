@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b2k4-rjsq-ajwh-7m1y",
+    "id": "https://w3id.org/battinfo/spec/b2k4-rjsq-ajwh-7m1y",
     "short_id": "b2k4rj",
     "identifier": "cell-type:b2k4-rjsq-ajwh-7m1y",
     "name": "Neosonic Li-Polymer Energy KMBNK08035130S",

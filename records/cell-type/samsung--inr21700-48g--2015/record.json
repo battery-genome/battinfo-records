@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h1ae-p95h-34wf-67r9",
+    "id": "https://w3id.org/battinfo/spec/h1ae-p95h-34wf-67r9",
     "short_id": "h1aep9",
     "identifier": "cell-type:h1ae-p95h-34wf-67r9",
     "name": "Samsung INR21700-48G",

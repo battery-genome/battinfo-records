@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/s0af-0em2-mskv-wqnr",
+    "id": "https://w3id.org/battinfo/spec/s0af-0em2-mskv-wqnr",
     "short_id": "s0af0e",
     "identifier": "cell-type:s0af-0em2-mskv-wqnr",
     "name": "Kokam SLPB11543140H5",

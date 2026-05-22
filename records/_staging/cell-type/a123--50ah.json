@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3ry6-xtff-ssq6-t3te",
+    "id": "https://w3id.org/battinfo/spec/3ry6-xtff-ssq6-t3te",
     "short_id": "3ry6xt",
     "identifier": "cell-type:3ry6-xtff-ssq6-t3te",
     "name": "A123 50AH",

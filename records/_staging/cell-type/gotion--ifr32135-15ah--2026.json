@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/twze-nrd2-cnyp-9c7r",
+    "id": "https://w3id.org/battinfo/spec/twze-nrd2-cnyp-9c7r",
     "short_id": "twzenr",
     "identifier": "cell-type:twze-nrd2-cnyp-9c7r",
     "name": "GOTION IFR32135-15Ah",

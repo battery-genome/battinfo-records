@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gh35-vhg4-1k2r-6nth",
+    "id": "https://w3id.org/battinfo/spec/gh35-vhg4-1k2r-6nth",
     "short_id": "gh35vh",
     "identifier": "cell-type:gh35-vhg4-1k2r-6nth",
     "name": "EVE INR18650-30P",

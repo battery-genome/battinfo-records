@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1zkm-qa8e-4az6-z4ck",
+    "id": "https://w3id.org/battinfo/spec/1zkm-qa8e-4az6-z4ck",
     "short_id": "1zkmqa",
     "identifier": "cell-type:1zkm-qa8e-4az6-z4ck",
     "name": "ENERGIZER CR2016",

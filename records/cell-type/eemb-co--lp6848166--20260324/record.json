@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pgxn-6hc0-rgyy-83ws",
+    "id": "https://w3id.org/battinfo/spec/pgxn-6hc0-rgyy-83ws",
     "short_id": "pgxn6h",
     "identifier": "cell-type:pgxn-6hc0-rgyy-83ws",
     "name": "Eemb Co LP6848166",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ez9d-44nt-smpy-6nsf",
+    "id": "https://w3id.org/battinfo/spec/ez9d-44nt-smpy-6nsf",
     "short_id": "ez9d44",
     "identifier": "cell-type:ez9d-44nt-smpy-6nsf",
     "name": "Battronix LCB8570170EC1",

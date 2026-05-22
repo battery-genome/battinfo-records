@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mxta-zv49-rnrv-hr3a",
+    "id": "https://w3id.org/battinfo/spec/mxta-zv49-rnrv-hr3a",
     "short_id": "mxtazv",
     "identifier": "cell-type:mxta-zv49-rnrv-hr3a",
     "name": "SKI SKI Kia Niro",

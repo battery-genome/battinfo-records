@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3p2a-1jh9-9k1f-a4kh",
+    "id": "https://w3id.org/battinfo/spec/3p2a-1jh9-9k1f-a4kh",
     "short_id": "3p2a1j",
     "identifier": "cell-type:3p2a-1jh9-9k1f-a4kh",
     "name": "Kokam SPLB160460330H",

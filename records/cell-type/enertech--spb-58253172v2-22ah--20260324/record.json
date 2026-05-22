@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/eqt6-4map-3487-9qpx",
+    "id": "https://w3id.org/battinfo/spec/eqt6-4map-3487-9qpx",
     "short_id": "eqt64m",
     "identifier": "cell-type:eqt6-4map-3487-9qpx",
     "name": "ENERTECH SPB 58253172V2_22Ah",

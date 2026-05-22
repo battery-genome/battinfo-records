@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dymt-gabn-ybc6-tvej",
+    "id": "https://w3id.org/battinfo/spec/dymt-gabn-ybc6-tvej",
     "short_id": "dymtga",
     "identifier": "cell-type:dymt-gabn-ybc6-tvej",
     "name": "Yinglong LithiumTitanate 30Ah",

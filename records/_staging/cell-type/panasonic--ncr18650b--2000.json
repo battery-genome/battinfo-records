@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/2q5a-72xq-w0qx-ph2h",
+    "id": "https://w3id.org/battinfo/spec/2q5a-72xq-w0qx-ph2h",
     "short_id": "2q5a72",
     "identifier": "cell-type:2q5a-72xq-w0qx-ph2h",
     "name": "Panasonic NCR18650B",

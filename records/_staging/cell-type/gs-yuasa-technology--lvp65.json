@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wap3-7pb0-5307-arbb",
+    "id": "https://w3id.org/battinfo/spec/wap3-7pb0-5307-arbb",
     "short_id": "wap37p",
     "identifier": "cell-type:wap3-7pb0-5307-arbb",
     "name": "GS Yuasa Technology LVP65",

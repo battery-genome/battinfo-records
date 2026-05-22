@@ -1,11 +1,11 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5grh-9jft-09bp-4xa7",
+    "id": "https://w3id.org/battinfo/spec/5grh-9jft-09bp-4xa7",
     "short_id": "5grh9j",
     "identifier": "cell-type:5grh-9jft-09bp-4xa7",
-    "name": "Lishen C\u2011PR51A",
-    "model": "C\u2011PR51A",
+    "name": "Lishen C‑PR51A",
+    "model": "C‑PR51A",
     "manufacturer": {
       "type": "Organization",
       "name": "Lishen"
@@ -59,7 +59,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Lishen_C\u2011PR51A.json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Lishen_C‑PR51A.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "8c532929ca146ad9b4889f55aa2ec69229e86e0cc2a4c70c60aa3416a7305cf1",

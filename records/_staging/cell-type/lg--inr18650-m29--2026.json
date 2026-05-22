@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cwhq-e2gz-frmy-kf2f",
+    "id": "https://w3id.org/battinfo/spec/cwhq-e2gz-frmy-kf2f",
     "short_id": "cwhqe2",
     "identifier": "cell-type:cwhq-e2gz-frmy-kf2f",
     "name": "LG INR18650-M29",

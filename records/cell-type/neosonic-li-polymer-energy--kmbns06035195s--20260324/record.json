@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wrc4-pkms-3cgz-tv5a",
+    "id": "https://w3id.org/battinfo/spec/wrc4-pkms-3cgz-tv5a",
     "short_id": "wrc4pk",
     "identifier": "cell-type:wrc4-pkms-3cgz-tv5a",
     "name": "Neosonic Li-Polymer Energy KMBNS06035195S",

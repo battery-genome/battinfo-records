@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/e9ke-z9r3-a1b1-s3a4",
+    "id": "https://w3id.org/battinfo/spec/e9ke-z9r3-a1b1-s3a4",
     "short_id": "e9kez9",
     "identifier": "cell-type:e9ke-z9r3-a1b1-s3a4",
     "name": "Yinglong LithiumTitanate 45Ah",

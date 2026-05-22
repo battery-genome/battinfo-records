@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wyss-xxjj-vpws-bm67",
+    "id": "https://w3id.org/battinfo/spec/wyss-xxjj-vpws-bm67",
     "short_id": "wyssxx",
     "identifier": "cell-type:wyss-xxjj-vpws-bm67",
     "name": "LG NX2.1",

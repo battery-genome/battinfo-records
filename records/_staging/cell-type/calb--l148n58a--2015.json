@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7cbc-zf95-3m3n-tkze",
+    "id": "https://w3id.org/battinfo/spec/7cbc-zf95-3m3n-tkze",
     "short_id": "7cbczf",
     "identifier": "cell-type:7cbc-zf95-3m3n-tkze",
     "name": "CALB L148N58A",

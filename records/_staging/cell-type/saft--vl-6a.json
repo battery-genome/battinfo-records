@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6d8y-xy1z-av4d-904e",
+    "id": "https://w3id.org/battinfo/spec/6d8y-xy1z-av4d-904e",
     "short_id": "6d8yxy",
     "identifier": "cell-type:6d8y-xy1z-av4d-904e",
     "name": "Saft VL 6A",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/p2vm-vjz8-nn94-q8pd",
+    "id": "https://w3id.org/battinfo/spec/p2vm-vjz8-nn94-q8pd",
     "short_id": "p2vmvj",
     "identifier": "cell-type:p2vm-vjz8-nn94-q8pd",
     "name": "EVE Energy INP50E",

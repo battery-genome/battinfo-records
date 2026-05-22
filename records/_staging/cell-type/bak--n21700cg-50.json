@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/yxk7-669c-bevp-mj3e",
+    "id": "https://w3id.org/battinfo/spec/yxk7-669c-bevp-mj3e",
     "short_id": "yxk766",
     "identifier": "cell-type:yxk7-669c-bevp-mj3e",
     "name": "BAK N21700CG-50",
@@ -23,7 +23,7 @@
       "unit": "Ah"
     },
     "nominal_capacity": {
-      "value": 5.00,
+      "value": 5.0,
       "unit": "Ah"
     },
     "cycle_life": {

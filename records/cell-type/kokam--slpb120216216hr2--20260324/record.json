@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wat3-mcwt-xj9f-c1a8",
+    "id": "https://w3id.org/battinfo/spec/wat3-mcwt-xj9f-c1a8",
     "short_id": "wat3mc",
     "identifier": "cell-type:wat3-mcwt-xj9f-c1a8",
     "name": "Kokam SLPB120216216HR2",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/mdbg-m905-ggkq-a5qt",
+    "id": "https://w3id.org/battinfo/spec/mdbg-m905-ggkq-a5qt",
     "short_id": "mdbgm9",
     "identifier": "cell-type:mdbg-m905-ggkq-a5qt",
     "name": "Sinopoly Sinopoly 400 Ah",

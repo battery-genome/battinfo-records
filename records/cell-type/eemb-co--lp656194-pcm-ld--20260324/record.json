@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f4hy-x1v1-j8ys-1hak",
+    "id": "https://w3id.org/battinfo/spec/f4hy-x1v1-j8ys-1hak",
     "short_id": "f4hyx1",
     "identifier": "cell-type:f4hy-x1v1-j8ys-1hak",
     "name": "Eemb Co LP656194-PCM-LD",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5yej-zmkk-rpbz-rrep",
+    "id": "https://w3id.org/battinfo/spec/5yej-zmkk-rpbz-rrep",
     "short_id": "5yejzm",
     "identifier": "cell-type:5yej-zmkk-rpbz-rrep",
     "name": "SAMSUNG INR18650-25R",

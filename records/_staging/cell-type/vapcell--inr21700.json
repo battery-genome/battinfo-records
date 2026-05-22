@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7k7z-7zva-bn73-rm9j",
+    "id": "https://w3id.org/battinfo/spec/7k7z-7zva-bn73-rm9j",
     "short_id": "7k7z7z",
     "identifier": "cell-type:7k7z-7zva-bn73-rm9j",
     "name": "VAPCELL INR21700",

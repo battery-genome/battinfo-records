@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5dfq-yg2a-tex7-f8tn",
+    "id": "https://w3id.org/battinfo/spec/5dfq-yg2a-tex7-f8tn",
     "short_id": "5dfqyg",
     "identifier": "cell-type:5dfq-yg2a-tex7-f8tn",
     "name": "SAMSUNG INR21700-50G",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zpnk-n0y8-8n5w-6j7n",
+    "id": "https://w3id.org/battinfo/spec/zpnk-n0y8-8n5w-6j7n",
     "short_id": "zpnkn0",
     "identifier": "cell-type:zpnk-n0y8-8n5w-6j7n",
     "name": "EAS Batteries UHP-341440 NCA",

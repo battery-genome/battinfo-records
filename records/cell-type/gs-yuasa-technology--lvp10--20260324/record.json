@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ee0t-jc71-8qk4-khp0",
+    "id": "https://w3id.org/battinfo/spec/ee0t-jc71-8qk4-khp0",
     "short_id": "ee0tjc",
     "identifier": "cell-type:ee0t-jc71-8qk4-khp0",
     "name": "GS Yuasa Technology LVP10",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f61j-3n6p-23h9-qsme",
+    "id": "https://w3id.org/battinfo/spec/f61j-3n6p-23h9-qsme",
     "short_id": "f61j3n",
     "identifier": "cell-type:f61j-3n6p-23h9-qsme",
     "name": "MURATA US18650VTC5D",

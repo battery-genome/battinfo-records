@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hjs5-xczj-dn5j-xyqg",
+    "id": "https://w3id.org/battinfo/spec/hjs5-xczj-dn5j-xyqg",
     "short_id": "hjs5xc",
     "identifier": "cell-type:hjs5-xczj-dn5j-xyqg",
     "name": "Yoku Energy (Shenzhen) Co 656096",

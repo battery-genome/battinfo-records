@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rb3m-qrec-qsys-ycta",
+    "id": "https://w3id.org/battinfo/spec/rb3m-qrec-qsys-ycta",
     "short_id": "rb3mqr",
     "identifier": "cell-type:rb3m-qrec-qsys-ycta",
     "name": "Optimum Battery Co Ltd OPT-32650F",

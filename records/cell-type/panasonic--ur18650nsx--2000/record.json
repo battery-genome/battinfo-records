@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8we0-8g5v-dpjs-5g13",
+    "id": "https://w3id.org/battinfo/spec/8we0-8g5v-dpjs-5g13",
     "short_id": "8we08g",
     "identifier": "cell-type:8we0-8g5v-dpjs-5g13",
     "name": "PANASONIC UR18650NSX",

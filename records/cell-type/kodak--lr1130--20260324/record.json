@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zz2p-6sq4-ytdt-1y9t",
+    "id": "https://w3id.org/battinfo/spec/zz2p-6sq4-ytdt-1y9t",
     "short_id": "zz2p6s",
     "identifier": "cell-type:zz2p-6sq4-ytdt-1y9t",
     "name": "KODAK LR1130",

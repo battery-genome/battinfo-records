@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3p53-hcde-b3sw-pk68",
+    "id": "https://w3id.org/battinfo/spec/3p53-hcde-b3sw-pk68",
     "short_id": "3p53hc",
     "identifier": "cell-type:3p53-hcde-b3sw-pk68",
     "name": "SAMSUNG ICR18650-22P",

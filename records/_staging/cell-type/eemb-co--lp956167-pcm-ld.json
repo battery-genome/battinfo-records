@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g205-0zs5-xj8a-hevt",
+    "id": "https://w3id.org/battinfo/spec/g205-0zs5-xj8a-hevt",
     "short_id": "g2050z",
     "identifier": "cell-type:g205-0zs5-xj8a-hevt",
     "name": "Eemb Co LP956167-PCM-LD",

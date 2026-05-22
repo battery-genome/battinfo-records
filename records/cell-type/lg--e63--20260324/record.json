@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/evec-epy9-0136-04ah",
+    "id": "https://w3id.org/battinfo/spec/evec-epy9-0136-04ah",
     "short_id": "evecep",
     "identifier": "cell-type:evec-epy9-0136-04ah",
     "name": "LG E63",

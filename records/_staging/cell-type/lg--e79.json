@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/wzgk-fgrg-tt6w-wg3q",
+    "id": "https://w3id.org/battinfo/spec/wzgk-fgrg-tt6w-wg3q",
     "short_id": "wzgkfg",
     "identifier": "cell-type:wzgk-fgrg-tt6w-wg3q",
     "name": "LG E79",

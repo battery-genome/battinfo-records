@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k65h-7hmz-s22s-h55w",
+    "id": "https://w3id.org/battinfo/spec/k65h-7hmz-s22s-h55w",
     "short_id": "k65h7h",
     "identifier": "cell-type:k65h-7hmz-s22s-h55w",
     "name": "Thunder-Sky WB-LYP100AHA",

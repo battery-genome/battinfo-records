@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b1zw-20tf-hjme-aqwt",
+    "id": "https://w3id.org/battinfo/spec/b1zw-20tf-hjme-aqwt",
     "short_id": "b1zw20",
     "identifier": "cell-type:b1zw-20tf-hjme-aqwt",
     "name": "Eemb Co LP50100100",

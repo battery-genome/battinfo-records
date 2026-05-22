@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/n5wh-vh82-wjem-h1mt",
+    "id": "https://w3id.org/battinfo/spec/n5wh-vh82-wjem-h1mt",
     "short_id": "n5whvh",
     "identifier": "cell-type:n5wh-vh82-wjem-h1mt",
     "name": "ENERTECH 58253172V4_30Ah",

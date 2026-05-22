@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/x8sy-v6h6-byb7-2vr8",
+    "id": "https://w3id.org/battinfo/spec/x8sy-v6h6-byb7-2vr8",
     "short_id": "x8syv6",
     "identifier": "cell-type:x8sy-v6h6-byb7-2vr8",
     "name": "Saft VL 7P",

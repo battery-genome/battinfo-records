@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1yvk-gpys-f08t-j3pw",
+    "id": "https://w3id.org/battinfo/spec/1yvk-gpys-f08t-j3pw",
     "short_id": "1yvkgp",
     "identifier": "cell-type:1yvk-gpys-f08t-j3pw",
     "name": "Headway Group HW40152S",

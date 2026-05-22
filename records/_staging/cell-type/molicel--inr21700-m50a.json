@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1dh6-ph8c-fjty-y2wp",
+    "id": "https://w3id.org/battinfo/spec/1dh6-ph8c-fjty-y2wp",
     "short_id": "1dh6ph",
     "identifier": "cell-type:1dh6-ph8c-fjty-y2wp",
     "name": "Molicel INR21700-M50A",

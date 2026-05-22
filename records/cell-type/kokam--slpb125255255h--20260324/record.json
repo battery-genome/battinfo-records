@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/xy99-seat-4667-a6vq",
+    "id": "https://w3id.org/battinfo/spec/xy99-seat-4667-a6vq",
     "short_id": "xy99se",
     "identifier": "cell-type:xy99-seat-4667-a6vq",
     "name": "Kokam SLPB125255255H",

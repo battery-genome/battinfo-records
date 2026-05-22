@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7gs2-0byz-cppt-h1nq",
+    "id": "https://w3id.org/battinfo/spec/7gs2-0byz-cppt-h1nq",
     "short_id": "7gs20b",
     "identifier": "cell-type:7gs2-0byz-cppt-h1nq",
     "name": "Headway Group HW38140S",

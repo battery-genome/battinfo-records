@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h3tx-3p30-70jw-ceqz",
+    "id": "https://w3id.org/battinfo/spec/h3tx-3p30-70jw-ceqz",
     "short_id": "h3tx3p",
     "identifier": "cell-type:h3tx-3p30-70jw-ceqz",
     "name": "BAK N21700CGP",

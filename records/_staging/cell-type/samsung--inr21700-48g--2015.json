@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h1ae-p95h-34wf-67r9",
+    "id": "https://w3id.org/battinfo/spec/h1ae-p95h-34wf-67r9",
     "short_id": "h1aep9",
     "identifier": "cell-type:h1ae-p95h-34wf-67r9",
     "name": "Samsung INR21700-48G",
@@ -116,7 +116,7 @@
         "doi": "10.3390/BATTERIES5010023",
         "type": "Article",
         "headline": "Eco-Efficiency of a Lithium-Ion Battery for Electric Vehicles: Influence of Manufacturing Country and Commodity Prices on GHG Emissions and Costs",
-        "author": "Maeva Philippot and Garbi\u00f1e Alvarez and Elixabete Ayerbe and Joeri Van Mierlo and Maarten Messagie",
+        "author": "Maeva Philippot and Garbiñe Alvarez and Elixabete Ayerbe and Joeri Van Mierlo and Maarten Messagie",
         "description": "<jats:p>Lithium-ion battery packs inside electric vehicles represents a high share of the final price. Nevertheless, with technology advances and the growth of the market, the price of the battery is getting more competitive. The greenhouse gas emissions and the battery cost have been studied previously, but coherent boundaries between environmental and economic assessments are needed to assess the eco-efficiency of batteries. In this research, a detailed study is presented, providing an environmental and economic assessment of the manufacturing of one specific lithium-ion battery chemistry. The relevance of parameters is pointed out, including the manufacturing place, the production volume, the commodity prices, and the energy density. The inventory is obtained by dismantling commercial cells. The correlation between the battery cost and the commodity price is much lower than the correlation between the battery cost and the production volume. The developed life cycle assessment concludes that the electricity mix that is used to power the battery factory is a key parameter for the impact of the battery manufacturing on climate change. To improve the battery manufacturing eco-efficiency, a high production capacity and an electricity mix with low carbon intensity are suggested. Optimizing the process by reducing the electricity consumption during the manufacturing is also suggested, and combined with higher pack energy density, the impact on climate change of the pack manufacturing is as low as 39.5 kg CO2 eq/kWh.</jats:p>",
         "date_published": 2019
       }

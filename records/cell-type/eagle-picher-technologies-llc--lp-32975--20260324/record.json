@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sqyn-djn2-hk60-5baq",
+    "id": "https://w3id.org/battinfo/spec/sqyn-djn2-hk60-5baq",
     "short_id": "sqyndj",
     "identifier": "cell-type:sqyn-djn2-hk60-5baq",
     "name": "Eagle Picher Technologies LLC LP 32975",

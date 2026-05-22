@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dzhh-xd6k-ad2a-q4r7",
+    "id": "https://w3id.org/battinfo/spec/dzhh-xd6k-ad2a-q4r7",
     "short_id": "dzhhxd",
     "identifier": "cell-type:dzhh-xd6k-ad2a-q4r7",
     "name": "SAMSUNG INR18650-29E6",
@@ -42,11 +42,11 @@
     },
     "minimum_storage_temperature": {
       "value": 0.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "maximum_storage_temperature": {
       "value": 45.0,
-      "unit": "\u00b0C"
+      "unit": "°C"
     },
     "diameter": {
       "value": 7.000000000000001e-05,

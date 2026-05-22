@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jh6t-5adq-2r6d-snmm",
+    "id": "https://w3id.org/battinfo/spec/jh6t-5adq-2r6d-snmm",
     "short_id": "jh6t5a",
     "identifier": "cell-type:jh6t-5adq-2r6d-snmm",
     "name": "ENERGIZER CR2450",

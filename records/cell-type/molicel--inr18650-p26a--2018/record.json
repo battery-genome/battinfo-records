@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pdb9-s5br-xm11-cjfg",
+    "id": "https://w3id.org/battinfo/spec/pdb9-s5br-xm11-cjfg",
     "short_id": "pdb9s5",
     "identifier": "cell-type:pdb9-s5br-xm11-cjfg",
     "name": "Molicel INR18650-P26A",

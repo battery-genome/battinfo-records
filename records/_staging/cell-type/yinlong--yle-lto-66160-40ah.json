@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3t3c-q1sp-px14-r4cf",
+    "id": "https://w3id.org/battinfo/spec/3t3c-q1sp-px14-r4cf",
     "short_id": "3t3cq1",
     "identifier": "cell-type:3t3c-q1sp-px14-r4cf",
     "name": "YINLONG YLE-LTO-66160-40Ah",

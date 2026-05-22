@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/a0z8-0v30-5j3g-58aa",
+    "id": "https://w3id.org/battinfo/spec/a0z8-0v30-5j3g-58aa",
     "short_id": "a0z80v",
     "identifier": "cell-type:a0z8-0v30-5j3g-58aa",
     "name": "KeepPower KP 21700",

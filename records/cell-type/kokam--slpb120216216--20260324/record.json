@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/c8rr-rhcq-6020-vvw4",
+    "id": "https://w3id.org/battinfo/spec/c8rr-rhcq-6020-vvw4",
     "short_id": "c8rrrh",
     "identifier": "cell-type:c8rr-rhcq-6020-vvw4",
     "name": "Kokam SLPB120216216",

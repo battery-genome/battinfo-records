@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8j81-ect6-w435-8nxk",
+    "id": "https://w3id.org/battinfo/spec/8j81-ect6-w435-8nxk",
     "short_id": "8j81ec",
     "identifier": "cell-type:8j81-ect6-w435-8nxk",
     "name": "Eemb Co LP61100100",

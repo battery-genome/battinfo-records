@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b3zr-wwa6-5vrf-c62y",
+    "id": "https://w3id.org/battinfo/spec/b3zr-wwa6-5vrf-c62y",
     "short_id": "b3zrww",
     "identifier": "cell-type:b3zr-wwa6-5vrf-c62y",
     "name": "Amita Technologies 120155250P-LF01",

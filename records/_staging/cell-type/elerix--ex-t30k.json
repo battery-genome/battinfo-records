@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/xaft-jtkk-vvbg-6qaa",
+    "id": "https://w3id.org/battinfo/spec/xaft-jtkk-vvbg-6qaa",
     "short_id": "xaftjt",
     "identifier": "cell-type:xaft-jtkk-vvbg-6qaa",
     "name": "ELERIX EX-T30K",

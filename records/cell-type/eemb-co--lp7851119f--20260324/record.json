@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/eft0-pvtf-nksh-zh42",
+    "id": "https://w3id.org/battinfo/spec/eft0-pvtf-nksh-zh42",
     "short_id": "eft0pv",
     "identifier": "cell-type:eft0-pvtf-nksh-zh42",
     "name": "Eemb Co LP7851119F",

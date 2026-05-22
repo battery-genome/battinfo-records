@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/pjpv-vy9b-ejrw-r250",
+    "id": "https://w3id.org/battinfo/spec/pjpv-vy9b-ejrw-r250",
     "short_id": "pjpvvy",
     "identifier": "cell-type:pjpv-vy9b-ejrw-r250",
     "name": "Saft VES180",

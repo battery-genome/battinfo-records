@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3yxn-jwt8-d54r-m1sc",
+    "id": "https://w3id.org/battinfo/spec/3yxn-jwt8-d54r-m1sc",
     "short_id": "3yxnjw",
     "identifier": "cell-type:3yxn-jwt8-d54r-m1sc",
     "name": "EAGLE PICHER LP32975",

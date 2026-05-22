@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/rgyx-7f1a-9p8c-k6dm",
+    "id": "https://w3id.org/battinfo/spec/rgyx-7f1a-9p8c-k6dm",
     "short_id": "rgyx7f",
     "identifier": "cell-type:rgyx-7f1a-9p8c-k6dm",
     "name": "PANASONIC NCR18650BD",

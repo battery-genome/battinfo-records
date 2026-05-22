@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/yqex-braj-ekys-tzf6",
+    "id": "https://w3id.org/battinfo/spec/yqex-braj-ekys-tzf6",
     "short_id": "yqexbr",
     "identifier": "cell-type:yqex-braj-ekys-tzf6",
     "name": "LG INR21700M50T",

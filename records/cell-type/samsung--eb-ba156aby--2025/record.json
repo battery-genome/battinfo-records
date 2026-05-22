@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/phfh-9qkn-sy60-hqdr",
+    "id": "https://w3id.org/battinfo/spec/phfh-9qkn-sy60-hqdr",
     "short_id": "phfh9q",
     "identifier": "cell-type:phfh-9qkn-sy60-hqdr",
     "name": "Samsung EB-BA156ABY",

@@ -1,14 +1,14 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/3js1-5rsc-9czz-2ydb",
+    "id": "https://w3id.org/battinfo/spec/3js1-5rsc-9czz-2ydb",
     "short_id": "3js15r",
     "identifier": "cell-type:3js1-5rsc-9czz-2ydb",
-    "name": "LECLANCH\u00c9 904823",
+    "name": "LECLANCHÉ 904823",
     "model": "904823",
     "manufacturer": {
       "type": "Organization",
-      "name": "LECLANCH\u00c9"
+      "name": "LECLANCHÉ"
     },
     "category": "battery cell",
     "cell_format": "prismatic",
@@ -64,7 +64,7 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCH\u00c9_904823.json",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/LECLANCHÉ_904823.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "retrieved_at": 1774380439,
     "file_hash": "aada3ea3f65269c96397cc3cc899a66c31743100b333479d2d70f0713c69e90a",

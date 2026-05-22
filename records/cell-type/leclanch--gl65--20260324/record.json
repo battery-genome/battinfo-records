@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jjeg-j9ss-n4a4-03qa",
+    "id": "https://w3id.org/battinfo/spec/jjeg-j9ss-n4a4-03qa",
     "short_id": "jjegj9",
     "identifier": "cell-type:jjeg-j9ss-n4a4-03qa",
     "name": "LECLANCHÉ GL65",

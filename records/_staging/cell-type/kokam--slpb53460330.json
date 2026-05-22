@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0tyz-vyd4-ryt7-9sr3",
+    "id": "https://w3id.org/battinfo/spec/0tyz-vyd4-ryt7-9sr3",
     "short_id": "0tyzvy",
     "identifier": "cell-type:0tyz-vyd4-ryt7-9sr3",
     "name": "Kokam SLPB53460330",

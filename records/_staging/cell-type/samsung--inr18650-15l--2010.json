@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jsh6-tmcr-dmjg-x32t",
+    "id": "https://w3id.org/battinfo/spec/jsh6-tmcr-dmjg-x32t",
     "short_id": "jsh6tm",
     "identifier": "cell-type:jsh6-tmcr-dmjg-x32t",
     "name": "SAMSUNG INR18650-15L",

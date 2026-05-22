@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/a7eg-hdzw-6whf-qr9g",
+    "id": "https://w3id.org/battinfo/spec/a7eg-hdzw-6whf-qr9g",
     "short_id": "a7eghd",
     "identifier": "cell-type:a7eg-hdzw-6whf-qr9g",
     "name": "Amita Technologies 120155250L-AL40",

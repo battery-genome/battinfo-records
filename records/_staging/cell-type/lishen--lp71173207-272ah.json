@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1ngw-d6jd-rs3r-ekzc",
+    "id": "https://w3id.org/battinfo/spec/1ngw-d6jd-rs3r-ekzc",
     "short_id": "1ngwd6",
     "identifier": "cell-type:1ngw-d6jd-rs3r-ekzc",
     "name": "Lishen LP71173207-272Ah",

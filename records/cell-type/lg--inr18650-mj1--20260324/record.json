@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9ppa-wmzq-ek22-sm6k",
+    "id": "https://w3id.org/battinfo/spec/9ppa-wmzq-ek22-sm6k",
     "short_id": "9ppawm",
     "identifier": "cell-type:9ppa-wmzq-ek22-sm6k",
     "name": "LG INR18650 MJ1",

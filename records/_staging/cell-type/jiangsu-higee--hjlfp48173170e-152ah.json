@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dpay-a7f9-d8r7-3vte",
+    "id": "https://w3id.org/battinfo/spec/dpay-a7f9-d8r7-3vte",
     "short_id": "dpaya7",
     "identifier": "cell-type:dpay-a7f9-d8r7-3vte",
     "name": "JIANGSU HIGEE HJLFP48173170E-152Ah",

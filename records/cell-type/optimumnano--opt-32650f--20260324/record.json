@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zvpf-ef37-gafh-zvh0",
+    "id": "https://w3id.org/battinfo/spec/zvpf-ef37-gafh-zvh0",
     "short_id": "zvpfef",
     "identifier": "cell-type:zvpf-ef37-gafh-zvh0",
     "name": "OPTIMUMNANO OPT-32650F",

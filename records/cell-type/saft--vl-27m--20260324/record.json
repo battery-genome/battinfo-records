@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ak1r-zec7-pfc7-k8yg",
+    "id": "https://w3id.org/battinfo/spec/ak1r-zec7-pfc7-k8yg",
     "short_id": "ak1rze",
     "identifier": "cell-type:ak1r-zec7-pfc7-k8yg",
     "name": "Saft VL 27M",

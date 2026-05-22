@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/4jt9-tzdn-6qkh-s9jz",
+    "id": "https://w3id.org/battinfo/spec/4jt9-tzdn-6qkh-s9jz",
     "short_id": "4jt9tz",
     "identifier": "cell-type:4jt9-tzdn-6qkh-s9jz",
     "name": "LG INR18650-MH1",

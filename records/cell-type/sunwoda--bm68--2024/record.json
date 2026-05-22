@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/b6m7-3dtj-vdsx-svaj",
+    "id": "https://w3id.org/battinfo/spec/b6m7-3dtj-vdsx-svaj",
     "short_id": "b6m73d",
     "identifier": "cell-type:b6m7-3dtj-vdsx-svaj",
     "name": "Sunwoda BM68",

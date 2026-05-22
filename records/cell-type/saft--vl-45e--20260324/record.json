@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0vkn-d7ep-9xk0-5axj",
+    "id": "https://w3id.org/battinfo/spec/0vkn-d7ep-9xk0-5axj",
     "short_id": "0vknd7",
     "identifier": "cell-type:0vkn-d7ep-9xk0-5axj",
     "name": "Saft VL 45E",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/np61-4zw6-ejzr-4jtz",
+    "id": "https://w3id.org/battinfo/spec/np61-4zw6-ejzr-4jtz",
     "short_id": "np614z",
     "identifier": "cell-type:np61-4zw6-ejzr-4jtz",
     "name": "EVE INR18650-35V",

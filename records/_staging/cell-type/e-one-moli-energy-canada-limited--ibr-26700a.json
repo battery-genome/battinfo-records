@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/04zm-zxtb-x17v-d691",
+    "id": "https://w3id.org/battinfo/spec/04zm-zxtb-x17v-d691",
     "short_id": "04zmzx",
     "identifier": "cell-type:04zm-zxtb-x17v-d691",
     "name": "E-One Moli Energy (Canada) Limited IBR-26700A",

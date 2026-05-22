@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1b0b-jxqx-53qq-wgdj",
+    "id": "https://w3id.org/battinfo/spec/1b0b-jxqx-53qq-wgdj",
     "short_id": "1b0bjx",
     "identifier": "cell-type:1b0b-jxqx-53qq-wgdj",
     "name": "Kokam SLPB130255255P",

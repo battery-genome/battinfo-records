@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/hz1r-09n2-ktkd-8ase",
+    "id": "https://w3id.org/battinfo/spec/hz1r-09n2-ktkd-8ase",
     "short_id": "hz1r09",
     "identifier": "cell-type:hz1r-09n2-ktkd-8ase",
     "name": "EAS HP601300-LFP-22",

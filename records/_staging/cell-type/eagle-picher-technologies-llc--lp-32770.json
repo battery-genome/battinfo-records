@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/62h3-k5x7-8jen-1y8c",
+    "id": "https://w3id.org/battinfo/spec/62h3-k5x7-8jen-1y8c",
     "short_id": "62h3k5",
     "identifier": "cell-type:62h3-k5x7-8jen-1y8c",
     "name": "Eagle Picher Technologies LLC LP 32770",

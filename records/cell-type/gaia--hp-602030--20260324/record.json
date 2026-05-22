@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/es1v-1h4e-wrse-t6wm",
+    "id": "https://w3id.org/battinfo/spec/es1v-1h4e-wrse-t6wm",
     "short_id": "es1v1h",
     "identifier": "cell-type:es1v-1h4e-wrse-t6wm",
     "name": "Gaia HP 602030",

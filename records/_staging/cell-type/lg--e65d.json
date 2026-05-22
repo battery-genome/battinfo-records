@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h28n-656n-e5ha-y5px",
+    "id": "https://w3id.org/battinfo/spec/h28n-656n-e5ha-y5px",
     "short_id": "h28n65",
     "identifier": "cell-type:h28n-656n-e5ha-y5px",
     "name": "LG E65D",

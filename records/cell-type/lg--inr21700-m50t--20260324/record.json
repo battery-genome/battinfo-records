@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kxvq-z6n3-tmjb-39mj",
+    "id": "https://w3id.org/battinfo/spec/kxvq-z6n3-tmjb-39mj",
     "short_id": "kxvqz6",
     "identifier": "cell-type:kxvq-z6n3-tmjb-39mj",
     "name": "LG INR21700 M50T",

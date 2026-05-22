@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/kxvq-z6n3-tmjb-39mj",
+    "id": "https://w3id.org/battinfo/spec/kxvq-z6n3-tmjb-39mj",
     "short_id": "kxvqz6",
     "identifier": "cell-type:kxvq-z6n3-tmjb-39mj",
     "name": "LG INR21700 M50T",
@@ -155,7 +155,7 @@
         "doi": "10.1016/j.est.2023.108046",
         "type": "Article",
         "headline": "Capacity estimation of lithium-ion batteries based on adaptive empirical wavelet transform and long short-term memory neural network",
-        "author": "Ma\u2019d El-Dalahmeh and Maher Al-Greer and Mo\u2019ath El-Dalahmeh and Imran Bashir",
+        "author": "Ma’d El-Dalahmeh and Maher Al-Greer and Mo’ath El-Dalahmeh and Imran Bashir",
         "date_published": 2023
       },
       {
@@ -189,7 +189,7 @@
         "doi": "10.3390/batteries9010006",
         "type": "Article",
         "headline": "Influence of Breathing and Swelling on the Jelly-Roll Case Gap of Cylindrical Lithium-Ion Battery Cells",
-        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschl\u00e4ger and Oliver Bohlen and Andreas Jossen",
+        "author": "Markus Spielbauer and Marco Steinhardt and Jan Singer and Andreas Aufschläger and Oliver Bohlen and Andreas Jossen",
         "description": "<jats:p>Cylindrical 18650 and 21700 lithium-ion batteries are produced with small gaps between the jelly roll and the case. The size of these gaps and the mechanical attachment of the jelly roll to the case can have a significant impact on the thermal and mechanical properties of cells. To investigate the influence of the state of charge (SOC) and state of health (SOH) on the size of the gap, computed tomography (CT) and gray-value analysis was conducted with various cell types at 0% and 100% SOC and after cycling. The results show a significant influence of the SOC on the gap for new cells and a substantial reduction in the gap during the first cycles.</jats:p>",
         "date_published": 2022
       },
@@ -197,9 +197,9 @@
         "id": "https://doi.org/10.1002/ente.202200547",
         "doi": "10.1002/ente.202200547",
         "type": "Article",
-        "headline": "Detection of Lithium\u2010Ion Cells\u2019 Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time",
+        "headline": "Detection of Lithium‐Ion Cells’ Degradation through Deconvolution of Electrochemical Impedance Spectroscopy with Distribution of Relaxation Time",
         "author": "Pietro Iurilli and Claudio Brivio and Vanessa Wood",
-        "description": "<jats:sec><jats:label /><jats:p>Herein, a methodology to investigate aging of commercial cylindrical Li\u2010ion cells is introduced. Distribution of relaxation time (DRT) method is applied to deconvolute electrochemical impedance spectroscopy (EIS) measurements and separate those polarization effects that are usually overlapped in the frequency domain by means of a peak\u2010based representation. Half\u2010cells are built at the beginning and end of life to link the electrochemical and aging processes occurring at anode and/or the cathode sides. Moreover, lab\u2010made full\u2010cells are exploited to verify the reproducibility when compared with cylindrical cells. The results of an extensive analysis of around 500 EIS spectra return an unambiguous attribution of different electrochemical processes to different time constants and ultimately to different DRT peaks. Digital imaging validates graphite degradation, mainly related to lithium plating. Scanning electron microscopy validates the degradation at NMC cathode, mainly attributed to particle cracking. It is concluded that DRT peaks allow to characterize cell aging and their tracking can help to develop more reliable state of health estimators.</jats:p></jats:sec>",
+        "description": "<jats:sec><jats:label /><jats:p>Herein, a methodology to investigate aging of commercial cylindrical Li‐ion cells is introduced. Distribution of relaxation time (DRT) method is applied to deconvolute electrochemical impedance spectroscopy (EIS) measurements and separate those polarization effects that are usually overlapped in the frequency domain by means of a peak‐based representation. Half‐cells are built at the beginning and end of life to link the electrochemical and aging processes occurring at anode and/or the cathode sides. Moreover, lab‐made full‐cells are exploited to verify the reproducibility when compared with cylindrical cells. The results of an extensive analysis of around 500 EIS spectra return an unambiguous attribution of different electrochemical processes to different time constants and ultimately to different DRT peaks. Digital imaging validates graphite degradation, mainly related to lithium plating. Scanning electron microscopy validates the degradation at NMC cathode, mainly attributed to particle cracking. It is concluded that DRT peaks allow to characterize cell aging and their tracking can help to develop more reliable state of health estimators.</jats:p></jats:sec>",
         "date_published": 2022
       },
       {
@@ -208,14 +208,14 @@
         "type": "Article",
         "headline": "Physics-Based SoH Estimation for Li-Ion Cells",
         "author": "Pietro Iurilli and Claudio Brivio and Rafael E. Carrillo and Vanessa Wood",
-        "description": "<jats:p>Accurate state of health (SoH) estimation is crucial to optimize the lifetime of Li-ion cells while ensuring safety during operations. This work introduces a methodology to track Li-ion cells degradation and estimate SoH based on electrochemical impedance spectroscopy (EIS) measurements. Distribution of relaxation times (DRT) were exploited to derive indicators linked to the so-called degradation modes (DMs), which group the different aging mechanisms. The combination of these indicators was used to model the aging progression over the whole lifetime (both in the \u201cpre-knee\u201d and \u201cafter-knee\u201d regions), enabling a physics-based SoH estimation. The methodology was applied to commercial cylindrical cells (NMC811|Graphite SiOx). The results showed that loss of lithium inventory (LLI) is the main driving factor for cell degradation, followed by loss of cathode active material (LAMC). SoH estimation was achievable with a mean absolute error lower than 0.75% for SoH values higher than 85% and lower than 3.70% SoH values between 85% and 80% (end of life). The analyses of the results will allow for guidelines to be defined to replicate the presented methodology, characterize new Li-ion cell types, and perform onboard SoH estimation in battery management system (BMS) solutions.</jats:p>",
+        "description": "<jats:p>Accurate state of health (SoH) estimation is crucial to optimize the lifetime of Li-ion cells while ensuring safety during operations. This work introduces a methodology to track Li-ion cells degradation and estimate SoH based on electrochemical impedance spectroscopy (EIS) measurements. Distribution of relaxation times (DRT) were exploited to derive indicators linked to the so-called degradation modes (DMs), which group the different aging mechanisms. The combination of these indicators was used to model the aging progression over the whole lifetime (both in the “pre-knee” and “after-knee” regions), enabling a physics-based SoH estimation. The methodology was applied to commercial cylindrical cells (NMC811|Graphite SiOx). The results showed that loss of lithium inventory (LLI) is the main driving factor for cell degradation, followed by loss of cathode active material (LAMC). SoH estimation was achievable with a mean absolute error lower than 0.75% for SoH values higher than 85% and lower than 3.70% SoH values between 85% and 80% (end of life). The analyses of the results will allow for guidelines to be defined to replicate the presented methodology, characterize new Li-ion cell types, and perform onboard SoH estimation in battery management system (BMS) solutions.</jats:p>",
         "date_published": 2022
       },
       {
         "id": "https://doi.org/10.3390/batteries9060309",
         "doi": "10.3390/batteries9060309",
         "type": "Article",
-        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells\u2014A Generic Overview",
+        "headline": "Design, Properties, and Manufacturing of Cylindrical Li-Ion Battery Cells—A Generic Overview",
         "author": "Sabri Baazouzi and Niklas Feistel and Johannes Wanner and Inga Landwehr and Alexander Fill and Kai Peter Birke",
         "description": "<jats:p>Battery cells are the main components of a battery system for electric vehicle batteries. Depending on the manufacturer, three different cell formats are used in the automotive sector (pouch, prismatic, and cylindrical). In the last 3 years, cylindrical cells have gained strong relevance and popularity among automotive manufacturers, mainly driven by innovative cell designs, such as the Tesla tabless design. This paper investigates 19 Li-ion cylindrical battery cells from four cell manufacturers in four formats (18650, 20700, 21700, and 4680). We aim to systematically capture the design features, such as tab design and quality parameters, such as manufacturing tolerances and generically describe cylindrical cells. We identified the basic designs and assigned example cells to them. In addition, we show a comprehensive definition of a tabless design considering the current and heat transport paths. Our findings show that the Tesla 4680 design is quasi-tabless. In addition, we found that 25% of the cathode and 30% of the anode are not notched, resulting in long electrical and thermal transport paths. Based on CT and post-mortem analyses, we show that jelly rolls can be approximated very well with the Archimedean spiral. Furthermore, we compare the gravimetric and volumetric energy density, the impedance, and the heating behavior at the surface and in the center of the jelly rolls. From the generic description, we present and discuss production processes focusing on format and design flexible manufacturing of jelly rolls.</jats:p>",
         "date_published": 2023

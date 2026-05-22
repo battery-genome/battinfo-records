@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/v3d6-rsfh-7z51-2f04",
+    "id": "https://w3id.org/battinfo/spec/v3d6-rsfh-7z51-2f04",
     "short_id": "v3d6rs",
     "identifier": "cell-type:v3d6-rsfh-7z51-2f04",
     "name": "Eemb Co LP9051109-PCM-NTC-LD",

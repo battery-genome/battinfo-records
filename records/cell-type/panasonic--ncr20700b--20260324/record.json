@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7far-cdr7-ygcx-rsjp",
+    "id": "https://w3id.org/battinfo/spec/7far-cdr7-ygcx-rsjp",
     "short_id": "7farcd",
     "identifier": "cell-type:7far-cdr7-ygcx-rsjp",
     "name": "Panasonic NCR20700B",

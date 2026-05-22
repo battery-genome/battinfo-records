@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/eyr1-b17n-vnak-f9wz",
+    "id": "https://w3id.org/battinfo/spec/eyr1-b17n-vnak-f9wz",
     "short_id": "eyr1b1",
     "identifier": "cell-type:eyr1-b17n-vnak-f9wz",
     "name": "EAS UHP341440-NCA",

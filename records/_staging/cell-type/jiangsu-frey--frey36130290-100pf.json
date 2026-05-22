@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vn7f-ew6g-8v5e-x2tb",
+    "id": "https://w3id.org/battinfo/spec/vn7f-ew6g-8v5e-x2tb",
     "short_id": "vn7few",
     "identifier": "cell-type:vn7f-ew6g-8v5e-x2tb",
     "name": "Jiangsu FREY FREY36130290-100PF",

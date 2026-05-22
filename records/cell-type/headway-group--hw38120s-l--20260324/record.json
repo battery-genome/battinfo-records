@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dxzf-xegc-kw6a-9jwh",
+    "id": "https://w3id.org/battinfo/spec/dxzf-xegc-kw6a-9jwh",
     "short_id": "dxzfxe",
     "identifier": "cell-type:dxzf-xegc-kw6a-9jwh",
     "name": "Headway Group HW38120S/L",

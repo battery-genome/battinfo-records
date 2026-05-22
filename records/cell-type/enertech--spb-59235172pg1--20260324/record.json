@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/7x0r-8gae-z83t-qy6c",
+    "id": "https://w3id.org/battinfo/spec/7x0r-8gae-z83t-qy6c",
     "short_id": "7x0r8g",
     "identifier": "cell-type:7x0r-8gae-z83t-qy6c",
     "name": "ENERTECH SPB 59235172PG1",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/e3s3-k63j-hstj-3w47",
+    "id": "https://w3id.org/battinfo/spec/e3s3-k63j-hstj-3w47",
     "short_id": "e3s3k6",
     "identifier": "cell-type:e3s3-k63j-hstj-3w47",
     "name": "Quallion LLC QL015KA",

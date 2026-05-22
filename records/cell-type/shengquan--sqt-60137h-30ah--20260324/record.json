@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/6144-848s-k12b-4dkz",
+    "id": "https://w3id.org/battinfo/spec/6144-848s-k12b-4dkz",
     "short_id": "614484",
     "identifier": "cell-type:6144-848s-k12b-4dkz",
     "name": "Shengquan SQT-60137H-30Ah",

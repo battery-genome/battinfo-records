@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gcbw-dqkm-3d6n-vgpj",
+    "id": "https://w3id.org/battinfo/spec/gcbw-dqkm-3d6n-vgpj",
     "short_id": "gcbwdq",
     "identifier": "cell-type:gcbw-dqkm-3d6n-vgpj",
     "name": "LG JP3",

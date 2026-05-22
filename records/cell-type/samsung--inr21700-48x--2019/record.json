@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9nvq-rk2k-nn00-3qr0",
+    "id": "https://w3id.org/battinfo/spec/9nvq-rk2k-nn00-3qr0",
     "short_id": "9nvqrk",
     "identifier": "cell-type:9nvq-rk2k-nn00-3qr0",
     "name": "Samsung INR21700-48X",

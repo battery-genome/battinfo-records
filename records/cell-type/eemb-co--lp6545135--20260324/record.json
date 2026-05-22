@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ntws-8a1c-jpjs-very",
+    "id": "https://w3id.org/battinfo/spec/ntws-8a1c-jpjs-very",
     "short_id": "ntws8a",
     "identifier": "cell-type:ntws-8a1c-jpjs-very",
     "name": "Eemb Co LP6545135",

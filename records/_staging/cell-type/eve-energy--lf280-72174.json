@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/0f58-w4dg-p2cs-4217",
+    "id": "https://w3id.org/battinfo/spec/0f58-w4dg-p2cs-4217",
     "short_id": "0f58w4",
     "identifier": "cell-type:0f58-w4dg-p2cs-4217",
     "name": "EVE Energy LF280-72174",

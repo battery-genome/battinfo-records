@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/r265-mwz8-g6h6-gg7f",
+    "id": "https://w3id.org/battinfo/spec/r265-mwz8-g6h6-gg7f",
     "short_id": "r265mw",
     "identifier": "cell-type:r265-mwz8-g6h6-gg7f",
     "name": "Saft VL 32600-125",

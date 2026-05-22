@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/285v-ac18-893s-z8xn",
+    "id": "https://w3id.org/battinfo/spec/285v-ac18-893s-z8xn",
     "short_id": "285vac",
     "identifier": "cell-type:285v-ac18-893s-z8xn",
     "name": "Zenlabs_Envia ENV35011-CRC",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/sms4-gg7h-e3zs-14we",
+    "id": "https://w3id.org/battinfo/spec/sms4-gg7h-e3zs-14we",
     "short_id": "sms4gg",
     "identifier": "cell-type:sms4-gg7h-e3zs-14we",
     "name": "Molicel INR18650-P28A",

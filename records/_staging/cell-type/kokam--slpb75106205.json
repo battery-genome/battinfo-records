@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/088e-0chz-08xm-8jy5",
+    "id": "https://w3id.org/battinfo/spec/088e-0chz-08xm-8jy5",
     "short_id": "088e0c",
     "identifier": "cell-type:088e-0chz-08xm-8jy5",
     "name": "Kokam SLPB75106205",

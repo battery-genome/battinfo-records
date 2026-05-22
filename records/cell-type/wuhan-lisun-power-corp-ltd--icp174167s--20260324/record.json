@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k0py-ztcn-rpzf-hzkj",
+    "id": "https://w3id.org/battinfo/spec/k0py-ztcn-rpzf-hzkj",
     "short_id": "k0pyzt",
     "identifier": "cell-type:k0py-ztcn-rpzf-hzkj",
     "name": "Wuhan Lisun Power Corp. Ltd ICP174167S",

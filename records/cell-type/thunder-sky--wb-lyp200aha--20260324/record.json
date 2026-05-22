@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/9fg4-sss4-z5h9-s4wt",
+    "id": "https://w3id.org/battinfo/spec/9fg4-sss4-z5h9-s4wt",
     "short_id": "9fg4ss",
     "identifier": "cell-type:9fg4-sss4-z5h9-s4wt",
     "name": "Thunder-Sky WB-LYP200AHA",

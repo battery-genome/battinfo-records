@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/g8aa-wp9v-psjf-xpte",
+    "id": "https://w3id.org/battinfo/spec/g8aa-wp9v-psjf-xpte",
     "short_id": "g8aawp",
     "identifier": "cell-type:g8aa-wp9v-psjf-xpte",
     "name": "Kokam SLPB55205130H",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ffd0-6tv5-hx5a-ydr7",
+    "id": "https://w3id.org/battinfo/spec/ffd0-6tv5-hx5a-ydr7",
     "short_id": "ffd06t",
     "identifier": "cell-type:ffd0-6tv5-hx5a-ydr7",
     "name": "Saft MP 176065 ISE",

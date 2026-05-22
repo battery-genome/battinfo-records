@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/abm2-5w8n-1fxp-6fhy",
+    "id": "https://w3id.org/battinfo/spec/abm2-5w8n-1fxp-6fhy",
     "short_id": "abm25w",
     "identifier": "cell-type:abm2-5w8n-1fxp-6fhy",
     "name": "Eemb Co LP8867220",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/02p6-60pe-32rs-4tq0",
+    "id": "https://w3id.org/battinfo/spec/02p6-60pe-32rs-4tq0",
     "short_id": "02p660",
     "identifier": "cell-type:02p6-60pe-32rs-4tq0",
     "name": "Thunder-Sky WB-LYP90AHA",

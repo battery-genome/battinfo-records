@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/h15k-vhjx-akh8-x24e",
+    "id": "https://w3id.org/battinfo/spec/h15k-vhjx-akh8-x24e",
     "short_id": "h15kvh",
     "identifier": "cell-type:h15k-vhjx-akh8-x24e",
     "name": "Eemb Co LP7548166",

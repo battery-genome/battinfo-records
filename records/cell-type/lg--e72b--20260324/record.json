@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/vavj-913d-6z0f-a8fm",
+    "id": "https://w3id.org/battinfo/spec/vavj-913d-6z0f-a8fm",
     "short_id": "vavj91",
     "identifier": "cell-type:vavj-913d-6z0f-a8fm",
     "name": "LG E72B",

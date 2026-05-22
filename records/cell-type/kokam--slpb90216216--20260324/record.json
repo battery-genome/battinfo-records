@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/enqr-hd4k-nkyh-0eyr",
+    "id": "https://w3id.org/battinfo/spec/enqr-hd4k-nkyh-0eyr",
     "short_id": "enqrhd",
     "identifier": "cell-type:enqr-hd4k-nkyh-0eyr",
     "name": "Kokam SLPB90216216",

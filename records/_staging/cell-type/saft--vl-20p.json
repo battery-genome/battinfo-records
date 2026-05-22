@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/f8bq-ytgz-jj12-evjk",
+    "id": "https://w3id.org/battinfo/spec/f8bq-ytgz-jj12-evjk",
     "short_id": "f8bqyt",
     "identifier": "cell-type:f8bq-ytgz-jj12-evjk",
     "name": "Saft VL 20P",

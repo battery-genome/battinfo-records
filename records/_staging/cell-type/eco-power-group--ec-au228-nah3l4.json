@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/d5wc-b50n-sb5a-xbww",
+    "id": "https://w3id.org/battinfo/spec/d5wc-b50n-sb5a-xbww",
     "short_id": "d5wcb5",
     "identifier": "cell-type:d5wc-b50n-sb5a-xbww",
     "name": "ECO POWER GROUP EC-AU228-NAH3L4",

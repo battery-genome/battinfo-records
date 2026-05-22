@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zabt-gj9b-6wx3-06wj",
+    "id": "https://w3id.org/battinfo/spec/zabt-gj9b-6wx3-06wj",
     "short_id": "zabtgj",
     "identifier": "cell-type:zabt-gj9b-6wx3-06wj",
     "name": "LG INR18650-HG2",

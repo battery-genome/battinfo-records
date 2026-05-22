@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8a4s-fr24-eh8k-hxte",
+    "id": "https://w3id.org/battinfo/spec/8a4s-fr24-eh8k-hxte",
     "short_id": "8a4sfr",
     "identifier": "cell-type:8a4s-fr24-eh8k-hxte",
     "name": "POWERSTREAM Lir2032",

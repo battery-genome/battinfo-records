@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/jx6v-ydpd-q220-vn23",
+    "id": "https://w3id.org/battinfo/spec/jx6v-ydpd-q220-vn23",
     "short_id": "jx6vyd",
     "identifier": "cell-type:jx6v-ydpd-q220-vn23",
     "name": "A123 39AH",

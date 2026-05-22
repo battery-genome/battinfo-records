@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/a10g-rxfc-t5zx-209d",
+    "id": "https://w3id.org/battinfo/spec/a10g-rxfc-t5zx-209d",
     "short_id": "a10grx",
     "identifier": "cell-type:a10g-rxfc-t5zx-209d",
     "name": "Advanced Electronics Energy AE8867220PMHRE",

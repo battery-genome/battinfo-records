@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/emt1-f151-0j4y-bdn9",
+    "id": "https://w3id.org/battinfo/spec/emt1-f151-0j4y-bdn9",
     "short_id": "emt1f1",
     "identifier": "cell-type:emt1-f151-0j4y-bdn9",
     "name": "Eagle Picher Technologies LLC SLC-16050-003",

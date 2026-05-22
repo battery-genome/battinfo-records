@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/j3ra-kwr4-wpvs-ccwz",
+    "id": "https://w3id.org/battinfo/spec/j3ra-kwr4-wpvs-ccwz",
     "short_id": "j3rakw",
     "identifier": "cell-type:j3ra-kwr4-wpvs-ccwz",
     "name": "AutoEnergy 50Ah 55380",

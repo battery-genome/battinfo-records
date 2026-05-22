@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ety0-t7ds-456v-j744",
+    "id": "https://w3id.org/battinfo/spec/ety0-t7ds-456v-j744",
     "short_id": "ety0t7",
     "identifier": "cell-type:ety0-t7ds-456v-j744",
     "name": "GeneralElectronics GEB 26650",

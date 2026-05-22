@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/dw9n-2p1h-a26s-7va6",
+    "id": "https://w3id.org/battinfo/spec/dw9n-2p1h-a26s-7va6",
     "short_id": "dw9n2p",
     "identifier": "cell-type:dw9n-2p1h-a26s-7va6",
     "name": "TENPOWER INR18650-26ME",

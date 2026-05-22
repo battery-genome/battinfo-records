@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zqr8-jbvy-v37t-q94j",
+    "id": "https://w3id.org/battinfo/spec/zqr8-jbvy-v37t-q94j",
     "short_id": "zqr8jb",
     "identifier": "cell-type:zqr8-jbvy-v37t-q94j",
     "name": "SAMSUNG INR21700-58E",

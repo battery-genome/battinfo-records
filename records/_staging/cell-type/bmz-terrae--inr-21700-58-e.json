@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/x8aq-48q1-rmtp-1sqw",
+    "id": "https://w3id.org/battinfo/spec/x8aq-48q1-rmtp-1sqw",
     "short_id": "x8aq48",
     "identifier": "cell-type:x8aq-48q1-rmtp-1sqw",
     "name": "BMZ_TerraE INR 21700 58 E",

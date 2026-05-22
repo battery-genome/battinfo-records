@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/ck1t-wgy4-m858-z2g3",
+    "id": "https://w3id.org/battinfo/spec/ck1t-wgy4-m858-z2g3",
     "short_id": "ck1twg",
     "identifier": "cell-type:ck1t-wgy4-m858-z2g3",
     "name": "Amita Technologies 8399130NE",

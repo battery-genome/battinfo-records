@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/5yh1-btz7-tpeq-37ry",
+    "id": "https://w3id.org/battinfo/spec/5yh1-btz7-tpeq-37ry",
     "short_id": "5yh1bt",
     "identifier": "cell-type:5yh1-btz7-tpeq-37ry",
     "name": "Hitachi L15A0N2C1",

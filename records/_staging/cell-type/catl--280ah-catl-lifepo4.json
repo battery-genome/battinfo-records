@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1fhf-aq22-a0gq-nqv2",
+    "id": "https://w3id.org/battinfo/spec/1fhf-aq22-a0gq-nqv2",
     "short_id": "1fhfaq",
     "identifier": "cell-type:1fhf-aq22-a0gq-nqv2",
     "name": "CATL 280Ah CATL LiFePO4",

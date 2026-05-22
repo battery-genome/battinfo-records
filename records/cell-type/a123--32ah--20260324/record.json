@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/1bjy-y6r4-apnk-r84y",
+    "id": "https://w3id.org/battinfo/spec/1bjy-y6r4-apnk-r84y",
     "short_id": "1bjyy6",
     "identifier": "cell-type:1bjy-y6r4-apnk-r84y",
     "name": "A123 32AH",

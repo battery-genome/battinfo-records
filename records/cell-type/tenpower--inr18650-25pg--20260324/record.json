@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/gc4g-7btn-65xg-1x57",
+    "id": "https://w3id.org/battinfo/spec/gc4g-7btn-65xg-1x57",
     "short_id": "gc4g7b",
     "identifier": "cell-type:gc4g-7btn-65xg-1x57",
     "name": "TENPOWER INR18650-25PG",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/qahy-dfqt-5aet-12ks",
+    "id": "https://w3id.org/battinfo/spec/qahy-dfqt-5aet-12ks",
     "short_id": "qahydf",
     "identifier": "cell-type:qahy-dfqt-5aet-12ks",
     "name": "ATL Amperex Technology 7048168",

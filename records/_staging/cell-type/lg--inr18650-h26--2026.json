@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/yqb5-53gy-92s7-05r2",
+    "id": "https://w3id.org/battinfo/spec/yqb5-53gy-92s7-05r2",
     "short_id": "yqb553",
     "identifier": "cell-type:yqb5-53gy-92s7-05r2",
     "name": "LG INR18650-H26",

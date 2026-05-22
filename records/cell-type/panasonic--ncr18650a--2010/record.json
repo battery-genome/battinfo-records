@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/cya2-nyz7-42eg-x9d2",
+    "id": "https://w3id.org/battinfo/spec/cya2-nyz7-42eg-x9d2",
     "short_id": "cya2ny",
     "identifier": "cell-type:cya2-nyz7-42eg-x9d2",
     "name": "PANASONIC NCR18650A",

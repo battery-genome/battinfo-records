@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/41dz-nvw8-fv7r-r1pf",
+    "id": "https://w3id.org/battinfo/spec/41dz-nvw8-fv7r-r1pf",
     "short_id": "41dznv",
     "identifier": "cell-type:41dz-nvw8-fv7r-r1pf",
     "name": "LG E66A",

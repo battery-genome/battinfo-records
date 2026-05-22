@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/k3ej-j0cp-kmjm-hm9x",
+    "id": "https://w3id.org/battinfo/spec/k3ej-j0cp-kmjm-hm9x",
     "short_id": "k3ejj0",
     "identifier": "cell-type:k3ej-j0cp-kmjm-hm9x",
     "name": "Kokam SLPB60216216",

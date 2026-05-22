@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/8g5r-68ye-rfge-zycb",
+    "id": "https://w3id.org/battinfo/spec/8g5r-68ye-rfge-zycb",
     "short_id": "8g5r68",
     "identifier": "cell-type:8g5r-68ye-rfge-zycb",
     "name": "Amita Technologies 5099130NRS",

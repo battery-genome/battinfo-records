@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/fwgr-0d4c-2nt1-bvcy",
+    "id": "https://w3id.org/battinfo/spec/fwgr-0d4c-2nt1-bvcy",
     "short_id": "fwgr0d",
     "identifier": "cell-type:fwgr-0d4c-2nt1-bvcy",
     "name": "EAS MP602030-LFP-50",

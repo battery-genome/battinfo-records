@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/zssy-1zdf-5bgn-ky0z",
+    "id": "https://w3id.org/battinfo/spec/zssy-1zdf-5bgn-ky0z",
     "short_id": "zssy1z",
     "identifier": "cell-type:zssy-1zdf-5bgn-ky0z",
     "name": "Thunder-Sky WB-LYP400AHA",

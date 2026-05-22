@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/53p2-wgdk-0d49-tqxx",
+    "id": "https://w3id.org/battinfo/spec/53p2-wgdk-0d49-tqxx",
     "short_id": "53p2wg",
     "identifier": "cell-type:53p2-wgdk-0d49-tqxx",
     "name": "PANASONIC NCR18500A",

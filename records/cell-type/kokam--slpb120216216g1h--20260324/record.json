@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "product": {
-    "id": "https://w3id.org/battinfo/cell-type/avzz-633y-hhxs-hmks",
+    "id": "https://w3id.org/battinfo/spec/avzz-633y-hhxs-hmks",
     "short_id": "avzz63",
     "identifier": "cell-type:avzz-633y-hhxs-hmks",
     "name": "Kokam SLPB120216216G1H",
