@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NMC",
     "size_code": "R18650",
-    "year": 2010
+    "year": 2010,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

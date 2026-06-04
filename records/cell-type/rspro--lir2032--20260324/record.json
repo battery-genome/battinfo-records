@@ -12,7 +12,8 @@
       "id": "https://w3id.org/battinfo/organization/t7r9-k0s9-hwtb-q6wb"
     },
     "cell_format": "coin",
-    "chemistry": "Li-ion"
+    "chemistry": "Li-ion",
+    "rechargeable": true
   },
   "specs": {
     "nominal_voltage": {

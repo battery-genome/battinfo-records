@@ -17,7 +17,8 @@
     "negative_electrode_basis": "Graphite",
     "size_code": "P16/100/353",
     "iec_code": "IFpP16/100/353",
-    "year": 2024
+    "year": 2024,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

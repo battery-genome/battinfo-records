@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "LFP",
     "negative_electrode_basis": "unknown",
-    "size_code": "R32650"
+    "size_code": "R32650",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

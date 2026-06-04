@@ -13,7 +13,8 @@
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",
-    "positive_electrode_basis": "LFP"
+    "positive_electrode_basis": "LFP",
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

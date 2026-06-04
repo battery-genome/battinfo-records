@@ -12,7 +12,8 @@
       "id": "https://w3id.org/battinfo/organization/0a8v-7846-mmw0-721g"
     },
     "cell_format": "coin",
-    "chemistry": "Li-ion"
+    "chemistry": "Li-ion",
+    "rechargeable": true
   },
   "specs": {
     "nominal_voltage": {

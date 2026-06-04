@@ -16,7 +16,8 @@
     "positive_electrode_basis": "NCA",
     "negative_electrode_basis": "unknown",
     "size_code": "R21700",
-    "year": 2015
+    "year": 2015,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

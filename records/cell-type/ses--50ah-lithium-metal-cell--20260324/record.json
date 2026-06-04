@@ -13,7 +13,8 @@
     },
     "cell_format": "unknown",
     "chemistry": "Li-metal",
-    "negative_electrode_basis": "Li-metal"
+    "negative_electrode_basis": "Li-metal",
+    "rechargeable": true
   },
   "specs": {},
   "provenance": {

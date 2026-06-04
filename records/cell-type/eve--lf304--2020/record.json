@@ -13,7 +13,8 @@
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",
-    "year": 2020
+    "year": 2020,
+    "rechargeable": true
   },
   "specs": {
     "cycle_life": {

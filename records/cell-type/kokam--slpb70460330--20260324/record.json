@@ -14,7 +14,8 @@
     "cell_format": "prismatic",
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NMC",
-    "negative_electrode_basis": "unknown"
+    "negative_electrode_basis": "unknown",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

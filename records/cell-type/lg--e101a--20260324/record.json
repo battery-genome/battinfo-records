@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NCA",
     "negative_electrode_basis": "Graphite",
-    "size_code": "P9/112/580"
+    "size_code": "P9/112/580",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

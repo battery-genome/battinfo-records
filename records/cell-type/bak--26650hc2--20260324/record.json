@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NMC",
     "negative_electrode_basis": "unknown",
-    "size_code": "R26650"
+    "size_code": "R26650",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

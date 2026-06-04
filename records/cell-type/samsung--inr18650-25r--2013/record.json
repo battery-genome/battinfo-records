@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NCA",
     "size_code": "R18650",
-    "year": 2013
+    "year": 2013,
+    "rechargeable": true
   },
   "specs": {
     "nominal_voltage": {

@@ -14,7 +14,8 @@
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",
     "size_code": "R18650",
-    "year": 2011
+    "year": 2011,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

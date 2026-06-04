@@ -14,7 +14,8 @@
     "cell_format": "cylindrical",
     "chemistry": "Li-metal",
     "negative_electrode_basis": "Li-metal",
-    "size_code": "R18650"
+    "size_code": "R18650",
+    "rechargeable": true
   },
   "specs": {
     "mass": {

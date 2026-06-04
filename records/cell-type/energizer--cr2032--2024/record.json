@@ -18,7 +18,8 @@
     "negative_electrode_basis": "Lithium",
     "size_code": "R2032",
     "iec_code": "CR2032",
-    "country_of_origin": "China"
+    "country_of_origin": "China",
+    "rechargeable": false
   },
   "specs": {
     "nominal_voltage": {

@@ -14,7 +14,8 @@
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",
     "size_code": "R18650",
-    "year": 2026
+    "year": 2026,
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

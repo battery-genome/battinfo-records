@@ -13,7 +13,8 @@
     },
     "cell_format": "unknown",
     "chemistry": "Li-ion",
-    "negative_electrode_basis": "unknown"
+    "negative_electrode_basis": "unknown",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

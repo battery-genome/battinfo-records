@@ -18,7 +18,8 @@
     "negative_electrode_basis": "Graphite",
     "size_code": "P6/64/81",
     "iec_code": "ICP6/64/81",
-    "country_of_origin": "China"
+    "country_of_origin": "China",
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

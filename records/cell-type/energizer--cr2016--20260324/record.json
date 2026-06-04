@@ -14,7 +14,8 @@
     "cell_format": "coin",
     "chemistry": "Li-primary",
     "positive_electrode_basis": "MnO2",
-    "negative_electrode_basis": "Li-metal"
+    "negative_electrode_basis": "Li-metal",
+    "rechargeable": false
   },
   "specs": {},
   "provenance": {

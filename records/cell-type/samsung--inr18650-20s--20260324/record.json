@@ -14,7 +14,8 @@
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NCA",
-    "size_code": "R18650"
+    "size_code": "R18650",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

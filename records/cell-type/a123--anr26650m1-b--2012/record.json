@@ -18,7 +18,8 @@
     "size_code": "R26650",
     "iec_code": "IFpR26650",
     "country_of_origin": "United States",
-    "year": 2012
+    "year": 2012,
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

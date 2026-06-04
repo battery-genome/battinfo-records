@@ -14,7 +14,8 @@
     "cell_format": "prismatic",
     "chemistry": "Li-ion",
     "positive_electrode_basis": "LFP",
-    "year": 2020
+    "year": 2020,
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

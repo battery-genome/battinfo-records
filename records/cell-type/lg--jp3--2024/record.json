@@ -17,7 +17,8 @@
     "positive_electrode_basis": "NMC",
     "negative_electrode_basis": "graphite",
     "size_code": "P16/102/354",
-    "iec_code": "INP16/102/354"
+    "iec_code": "INP16/102/354",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

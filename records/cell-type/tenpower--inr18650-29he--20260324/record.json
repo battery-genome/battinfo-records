@@ -13,7 +13,8 @@
     },
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",
-    "size_code": "R18650"
+    "size_code": "R18650",
+    "rechargeable": true
   },
   "specs": {
     "internal_resistance": {

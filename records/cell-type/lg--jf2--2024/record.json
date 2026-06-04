@@ -17,7 +17,8 @@
     "negative_electrode_basis": "Graphite",
     "size_code": "P18/125/601",
     "iec_code": "IFpP18/125/601",
-    "year": 2024
+    "year": 2024,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

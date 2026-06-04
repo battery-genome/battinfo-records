@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "LFP",
     "size_code": "R32140",
-    "year": 2025
+    "year": 2025,
+    "rechargeable": true
   },
   "specs": {
     "cycle_life": {

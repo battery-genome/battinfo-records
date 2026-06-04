@@ -18,7 +18,8 @@
     "negative_electrode_basis": "Graphite",
     "size_code": "P5/63/69",
     "iec_code": "ICP5/63/69",
-    "country_of_origin": "Vietnam"
+    "country_of_origin": "Vietnam",
+    "rechargeable": true
   },
   "specs": {
     "nominal_capacity": {

@@ -17,7 +17,8 @@
     "negative_electrode_basis": "Graphite",
     "size_code": "P16/102/354",
     "iec_code": "INP16/102/354",
-    "year": 2024
+    "year": 2024,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

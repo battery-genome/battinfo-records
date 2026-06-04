@@ -14,7 +14,8 @@
     "cell_format": "unknown",
     "chemistry": "Li-ion",
     "negative_electrode_basis": "unknown",
-    "year": 2019
+    "year": 2019,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

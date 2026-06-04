@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NCA",
     "negative_electrode_basis": "Graphite",
-    "size_code": "P11/102/354"
+    "size_code": "P11/102/354",
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {

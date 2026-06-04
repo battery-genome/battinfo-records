@@ -14,7 +14,8 @@
     "cell_format": "unknown",
     "chemistry": "Li-ion",
     "positive_electrode_basis": "NMC",
-    "year": 2025
+    "year": 2025,
+    "rechargeable": true
   },
   "specs": {},
   "provenance": {

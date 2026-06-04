@@ -14,7 +14,8 @@
     "cell_format": "cylindrical",
     "chemistry": "Li-ion",
     "negative_electrode_basis": "LTO",
-    "size_code": "R66160"
+    "size_code": "R66160",
+    "rechargeable": true
   },
   "specs": {},
   "provenance": {

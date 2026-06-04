@@ -15,7 +15,8 @@
     "chemistry": "Li-ion",
     "positive_electrode_basis": "LFP",
     "negative_electrode_basis": "unknown",
-    "year": 2000
+    "year": 2000,
+    "rechargeable": true
   },
   "specs": {
     "rated_capacity": {
