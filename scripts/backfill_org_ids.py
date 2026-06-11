@@ -93,7 +93,7 @@ def main() -> None:
         print("No organization records found. Run extract_organizations.py first.")
         return
 
-    print(f"Loaded {len(org_index)} name → IRI mappings from organization records.\n")
+    print(f"Loaded {len(org_index)} name -> IRI mappings from organization records.\n")
 
     updated = 0
     unmatched: set[str] = set()

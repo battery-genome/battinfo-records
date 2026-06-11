@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/vpur-rh16-p809-u3yk",
+    "short_id": "vpurrh16",
+    "type": "Manufacturer",
+    "name": "KYS Battery",
+    "legalName": "Huizhou Kaiyesheng Energy Co., LTD",
+    "alternateName": ["Kaiyesheng", "凯业盛"],
+    "url": "http://en.kysbattery.com/",
+    "location": {
+      "addressCountry": "CN",
+      "addressRegion": "Guangdong",
+      "addressLocality": "Huizhou"
+    },
+    "description": "Chinese manufacturer of polymer pouch lithium-ion cells and AA/AAA rechargeable lithium batteries. Products serve consumer electronics: smart wearables, Bluetooth audio, cameras, GPS, medical devices, and power banks. Factory of 30,000 m² with 600+ employees and annual output exceeding 100 million cells."
+  },
+  "provenance": {
+    "source_type": "inferred",
+    "source_url": "http://en.kysbattery.com/",
+    "retrieved_at": 1749600000
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Auto-generated stub. Website uses self-signed TLS — product specs to be added once datasheets are accessible. Add sameAs (Wikidata/LEI), foundingDate, specific product lines."
+  }
+}
