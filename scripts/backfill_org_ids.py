@@ -120,7 +120,7 @@ def main() -> None:
     verb = "would update" if args.dry_run else "updated"
     print(f"\nDone. {verb}: {updated} records.")
     if unmatched:
-        print(f"\nUnmatched org names (add to alternateName in org records):")
+        print("\nUnmatched org names (add to alternateName in org records):")
         for name in sorted(unmatched):
             print(f"  - {name!r}")
 

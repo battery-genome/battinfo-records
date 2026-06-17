@@ -281,7 +281,7 @@ def _search_bkg(name: str) -> str | None:
         results = data.get("query", {}).get("search", [])
         if results:
             title = results[0]["title"]  # e.g. "Item:OSWabc123..."
-            slug = title.replace("Item:", "")
+            title.replace("Item:", "")
             return f"https://battery.knowledge-graph.eu/wiki/{title}"
     except Exception as e:
         print(f"  [warn] BKG search failed for '{name}': {e}")
@@ -438,7 +438,7 @@ def main() -> None:
         # 1. Find BKG URL
         bkg_url = _search_bkg(name)
         if not bkg_url:
-            print(f"  [warn] Could not find BKG URL — skipping")
+            print("  [warn] Could not find BKG URL — skipping")
             skipped += 1
             continue
 
