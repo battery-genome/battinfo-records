@@ -27,13 +27,13 @@
     ],
     "citations": [
       {
-        "type": "Dataset",
+        "kind": "dataset",
         "url": "https://doi.org/10.5281/zenodo.3633834",
         "doi": "10.5281/zenodo.3633834",
         "citation_key": "bdc_000001_dataset"
       },
       {
-        "type": "Article",
+        "kind": "article",
         "url": "https://doi.org/10.1038/s41467-020-15235-7",
         "doi": "10.1038/s41467-020-15235-7",
         "citation_key": "zhang2020identifying"

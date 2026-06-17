@@ -1,12 +1,15 @@
 {
   "schema_version": "0.1.0",
   "organization": {
-    "id": "https://w3id.org/battinfo/organization/vpur-rh16-p809-u3yk",
-    "short_id": "vpurrh16",
+    "id": "https://w3id.org/battinfo/organization/4pw4-j3y7-5g0s-md6g",
+    "short_id": "4pw4j3y7",
     "type": "Manufacturer",
     "name": "KYS Battery",
     "legalName": "Huizhou Kaiyesheng Energy Co., LTD",
-    "alternateName": ["Kaiyesheng", "凯业盛"],
+    "alternateName": [
+      "Kaiyesheng",
+      "凯业盛"
+    ],
     "url": "http://en.kysbattery.com/",
     "location": {
       "addressCountry": "CN",

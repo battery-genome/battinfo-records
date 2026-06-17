@@ -23,7 +23,7 @@
       "unit": "Ah"
     },
     "charging_voltage": {
-      "value": 8.1,
+      "value": 3.65,
       "unit": "V"
     },
     "discharging_cutoff_voltage": {
@@ -51,7 +51,8 @@
     "file_hash": "fd8a0afa3817f85b78510c291cbedad4075e5db0a01cb529a2184cae820f1b29"
   },
   "notes": [
-    "Created from local datasheet intake."
+    "Created from local datasheet intake.",
+    "QA correction: charging_voltage 8.1 V was physically implausible (datasheet-extraction error); set to 3.65 V (LFP prismatic standard charge voltage)."
   ],
   "editorial": {
     "review_status": "auto-promoted",

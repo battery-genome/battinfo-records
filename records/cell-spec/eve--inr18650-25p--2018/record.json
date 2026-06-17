@@ -27,7 +27,7 @@
       "unit": "V"
     },
     "charging_voltage": {
-      "value": 8.2,
+      "value": 4.2,
       "unit": "V"
     },
     "internal_resistance": {
@@ -80,7 +80,8 @@
   },
   "notes": [
     "Created from local datasheet intake.",
-    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "QA correction: charging_voltage 8.2 V was physically implausible (datasheet-extraction error); set to 4.2 V (NMC 18650 standard charge voltage)."
   ],
   "editorial": {
     "review_status": "auto-promoted",

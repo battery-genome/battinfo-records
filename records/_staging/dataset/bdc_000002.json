@@ -24,19 +24,19 @@
     ],
     "citations": [
       {
-        "type": "Article",
+        "kind": "article",
         "url": "https://doi.org/10.1016/j.ijepes.2018.12.016",
         "doi": "10.1016/j.ijepes.2018.12.016",
         "citation_key": "saxena2019accelerated"
       },
       {
-        "type": "Article",
+        "kind": "article",
         "url": "https://doi.org/10.1109/ACCESS.2019.2899793",
         "doi": "10.1109/ACCESS.2019.2899793",
         "citation_key": "Yao2019"
       },
       {
-        "type": "Article",
+        "kind": "article",
         "url": "https://doi.org/10.3390/app8101786",
         "doi": "10.3390/app8101786",
         "citation_key": "Diao2018"

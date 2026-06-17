@@ -20,7 +20,7 @@
   },
   "properties": {
     "nominal_voltage": {
-      "value": 0.05,
+      "value": 3.6,
       "unit": "V"
     }
   },
@@ -33,7 +33,8 @@
   },
   "notes": [
     "Created from local datasheet intake.",
-    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "QA correction: nominal_voltage 0.05 V was physically implausible (datasheet-extraction error); set to 3.6 V (NCA 18650 standard nominal voltage)."
   ],
   "editorial": {
     "review_status": "auto-promoted",

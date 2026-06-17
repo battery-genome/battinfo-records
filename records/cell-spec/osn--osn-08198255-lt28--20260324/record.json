@@ -13,8 +13,8 @@
     },
     "cell_format": "prismatic",
     "chemistry": "Li-ion",
-    "positive_electrode_basis": "LTO",
-    "negative_electrode_basis": "unknown",
+    "positive_electrode_basis": "unknown",
+    "negative_electrode_basis": "LTO",
     "rechargeable": true
   },
   "properties": {
@@ -76,7 +76,8 @@
     "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
     "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
     "Mapped Height to thickness for non-cylindrical cell format.",
-    "Converted from CellInfoRepository BatteryTypeJson format."
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "QA correction: relocated LTO (lithium titanate) from positive_electrode_basis to negative_electrode_basis — LTO is an anode material. Cathode unspecified in source."
   ],
   "editorial": {
     "review_status": "auto-promoted",

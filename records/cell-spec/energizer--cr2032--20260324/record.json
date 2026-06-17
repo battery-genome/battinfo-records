@@ -17,7 +17,36 @@
     "negative_electrode_basis": "Li-metal",
     "rechargeable": false
   },
-  "properties": {},
+  "properties": {
+    "nominal_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "nominal_capacity": {
+      "value": 0.235,
+      "unit": "Ah"
+    },
+    "diameter": {
+      "value": 20.0,
+      "unit": "mm"
+    },
+    "height": {
+      "value": 3.2,
+      "unit": "mm"
+    },
+    "mass": {
+      "value": 3,
+      "unit": "g"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 0.00019,
+      "unit": "A"
+    }
+  },
   "provenance": {
     "source_type": "datasheet",
     "source_file": "D:/datasheets/ENERGIZER__CR2032.pdf",
@@ -26,7 +55,8 @@
     "file_hash": "ff05548e1efc6164fc779836976b0de4859ddcfa0c4f058dd55147bdc239d41f"
   },
   "notes": [
-    "Created from local datasheet intake."
+    "Created from local datasheet intake.",
+    "QA: recovered electrical/physical properties (capacity, voltage, dimensions, mass) from pre-migration staging draft — they were lost during cell-spec migration."
   ],
   "editorial": {
     "review_status": "auto-promoted",

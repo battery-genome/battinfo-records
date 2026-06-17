@@ -26,7 +26,7 @@
     ],
     "citations": [
       {
-        "type": "Dataset",
+        "kind": "dataset",
         "url": "https://doi.org/10.6078/D1MS3X",
         "doi": "10.6078/D1MS3X",
         "citation_key": "bdc_000005_dataset"

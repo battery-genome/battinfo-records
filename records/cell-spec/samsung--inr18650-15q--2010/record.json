@@ -35,7 +35,7 @@
       "unit": "V"
     },
     "charging_voltage": {
-      "value": 0.05,
+      "value": 4.2,
       "unit": "V"
     },
     "discharging_cutoff_voltage": {
@@ -69,7 +69,8 @@
   "notes": [
     "Created from local datasheet intake.",
     "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
-    "Supplemented from datasheet SAMSUNG__INR18650-15Q.pdf."
+    "Supplemented from datasheet SAMSUNG__INR18650-15Q.pdf.",
+    "QA correction: charging_voltage 0.05 V was physically implausible (datasheet-extraction error); set to 4.2 V (NMC 18650 standard charge voltage)."
   ],
   "editorial": {
     "review_status": "auto-promoted",
