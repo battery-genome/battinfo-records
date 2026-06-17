@@ -20,7 +20,7 @@
   },
   "workspace": {
     "editorial": {
-      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-types\\samsung-eb-ba156aby-2025\\record.json",
+      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-type\\samsung-eb-ba156aby-2025\\record.json",
       "record_id": "samsung-eb-ba156aby-2025"
     }
   },
@@ -132,3 +132,4 @@
     "policy": "default"
   }
 }
+

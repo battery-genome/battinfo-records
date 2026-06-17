@@ -1,5 +1,12 @@
+WORK_LOG.md
+CLAUDE.md
 .DS_Store
 Thumbs.db
 *.swp
 *.tmp
 *.bak
+
+# Generated / local
+.battinfo/
+.search-index.json
+*.log

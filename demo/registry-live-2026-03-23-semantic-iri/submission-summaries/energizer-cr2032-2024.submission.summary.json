@@ -2,10 +2,10 @@
   "schema_version": "0.1.0",
   "kind": "BattinfoSubmission",
   "submission_mode": "resource",
-  "generated_at": "2026-03-23T18:05:10.013089+00:00",
+  "generated_at": "2026-03-23T21:22:03.059696+00:00",
   "project_id": "brct",
   "publisher_id": "de",
-  "source_version": "live-2026-03-23",
+  "source_version": "live-2026-03-23-semantic-iri",
   "title": "Energizer CR2032",
   "publication_intent": {
     "mode": "canonical-publication"
@@ -13,10 +13,10 @@
   "provenance": {
     "source_system": "battinfo-records",
     "workflow_name": "curated-cell-type-publication",
-    "generated_at": "2026-03-23T18:05:10.013089+00:00"
+    "generated_at": "2026-03-23T21:22:03.059696+00:00"
   },
   "release": {
-    "version": "live-2026-03-23"
+    "version": "live-2026-03-23-semantic-iri"
   },
   "workspace": {
     "editorial": {

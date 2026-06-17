@@ -3,7 +3,7 @@
   "kind": "BattinfoSubmission",
   "submission_mode": "resource",
   "generated_at": "2026-03-20T11:18:45.643388+00:00",
-  "project_id": "battinfo-records-cell-types",
+  "project_id": "battinfo-records-cell-type",
   "publisher_id": "demo-editorial",
   "source_version": "demo-2026-03-20",
   "title": "Google G20M7",
@@ -20,13 +20,13 @@
   },
   "workspace": {
     "editorial": {
-      "record_path": "records\\cell-types\\google-g20m7-2025\\record.json",
-      "record_id": "google-g20m7-2025"
+      "record_path": "records\\cell-type\\google--g20m7--2025\\record.json",
+      "record_id": "google--g20m7--2025"
     }
   },
   "resource": {
     "resource_type": "cell_type",
-    "source_local_id": "google-g20m7-2025",
+    "source_local_id": "google--g20m7--2025",
     "title": "Google G20M7",
     "semantic_payload": {
       "@type": "CellType",
@@ -112,7 +112,7 @@
           },
           "provenance": {
             "source_type": "label",
-            "source_file": "google-g20m7-2025.json",
+            "source_file": "google--g20m7--2025.json",
             "source_url": null,
             "retrieved_at": 1774005501
           },
@@ -132,3 +132,5 @@
     "policy": "default"
   }
 }
+
+

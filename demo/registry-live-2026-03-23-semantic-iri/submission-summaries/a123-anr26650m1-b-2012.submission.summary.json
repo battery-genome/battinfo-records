@@ -2,10 +2,10 @@
   "schema_version": "0.1.0",
   "kind": "BattinfoSubmission",
   "submission_mode": "resource",
-  "generated_at": "2026-03-23T18:05:06.920652+00:00",
+  "generated_at": "2026-03-23T21:21:56.728751+00:00",
   "project_id": "brct",
   "publisher_id": "de",
-  "source_version": "live-2026-03-23",
+  "source_version": "live-2026-03-23-semantic-iri",
   "title": "A123 ANR26650M1-B",
   "publication_intent": {
     "mode": "canonical-publication"
@@ -13,10 +13,10 @@
   "provenance": {
     "source_system": "battinfo-records",
     "workflow_name": "curated-cell-type-publication",
-    "generated_at": "2026-03-23T18:05:06.920652+00:00"
+    "generated_at": "2026-03-23T21:21:56.728751+00:00"
   },
   "release": {
-    "version": "live-2026-03-23"
+    "version": "live-2026-03-23-semantic-iri"
   },
   "workspace": {
     "editorial": {

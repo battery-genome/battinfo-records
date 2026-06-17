@@ -23,12 +23,12 @@ param(
 $ErrorActionPreference = "Stop"
 
 $records = @(
-    @{ RecordId = "a123-anr26650m1-b-2012"; Title = "A123 ANR26650M1-B" },
-    @{ RecordId = "energizer-cr2032-2024"; Title = "Energizer CR2032" },
-    @{ RecordId = "google-g20m7-2025"; Title = "Google G20M7" },
-    @{ RecordId = "samsung-eb-ba156aby-2025"; Title = "Samsung EB-BA156ABY" },
-    @{ RecordId = "samsung-eb-bs931abe-2025"; Title = "Samsung EB-BS931ABE" },
-    @{ RecordId = "sunwoda-bm68-2024"; Title = "Sunwoda BM68" }
+    @{ RecordId = "a123--anr26650m1-b--2012"; Title = "A123 ANR26650M1-B" },
+    @{ RecordId = "energizer--cr2032--2024"; Title = "Energizer CR2032" },
+    @{ RecordId = "google--g20m7--2025"; Title = "Google G20M7" },
+    @{ RecordId = "samsung--eb-ba156aby--2025"; Title = "Samsung EB-BA156ABY" },
+    @{ RecordId = "samsung--eb-bs931abe--2025"; Title = "Samsung EB-BS931ABE" },
+    @{ RecordId = "sunwoda--bm68--2024"; Title = "Sunwoda BM68" }
 )
 
 $repoRoot = Split-Path -Parent $PSScriptRoot

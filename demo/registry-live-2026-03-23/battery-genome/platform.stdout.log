@@ -27,3 +27,44 @@
  ✓ Compiled in 635ms (474 modules)
  ✓ Compiled in 162ms (203 modules)
  ✓ Compiled in 331ms (271 modules)
+   Reload env: .env.local
+ ✓ Compiled in 334ms (460 modules)
+   Reload env: .env.local
+ ✓ Compiled in 109ms (460 modules)
+   Reload env: .env.local
+ ✓ Compiled in 149ms (460 modules)
+   Reload env: .env.local
+ ✓ Compiled in 125ms (460 modules)
+ ✓ Compiled in 991ms (474 modules)
+ ✓ Compiled in 816ms (474 modules)
+   Reload env: .env.local
+ ✓ Compiled in 206ms (460 modules)
+   Reload env: .env.local
+ ✓ Compiled in 187ms (460 modules)
+ ✓ Compiled in 764ms (474 modules)
+   Reload env: .env.local
+ ✓ Compiled in 141ms (460 modules)
+ ✓ Compiled in 1259ms (474 modules)
+ ✓ Compiled in 1100ms (460 modules)
+ ✓ Compiled in 557ms (271 modules)
+ ✓ Compiled in 1029ms (271 modules)
+ ✓ Compiled in 275ms (271 modules)
+ ✓ Compiled in 1153ms (474 modules)
+ ✓ Compiled in 1021ms (460 modules)
+ ✓ Compiled in 1220ms (271 modules)
+ ✓ Compiled in 1208ms (474 modules)
+ ✓ Compiled in 926ms (460 modules)
+ ✓ Compiled in 1189ms (271 modules)
+ ✓ Compiled in 624ms (271 modules)
+ ✓ Compiled in 966ms (474 modules)
+ ✓ Compiled in 977ms (460 modules)
+ ✓ Compiled in 1252ms (216 modules)
+ ✓ Compiled in 203ms (216 modules)
+  ▲ Next.js 14.2.35
+  - Local:        http://127.0.0.1:3001
+  - Network:      http://127.0.0.1:3001
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 6.4s
+   Reload env: .env.local

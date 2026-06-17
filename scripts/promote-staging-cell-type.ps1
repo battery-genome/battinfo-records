@@ -23,7 +23,9 @@ param(
 
     [string]$BattinfoExe,
 
-    [switch]$DryRun
+    [switch]$DryRun,
+
+    [switch]$DeleteStagingOnSuccess
 )
 
 $ErrorActionPreference = "Stop"
@@ -58,6 +60,19 @@ function Normalize-RecordToken {
     return $normalized
 }
 
+function Normalize-RecordId {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Value
+    )
+
+    $segments = $Value -split "-{2,}" | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+    if ($segments.Count -eq 0) {
+        throw "Could not derive a record id from '$Value'."
+    }
+    return (($segments | ForEach-Object { Normalize-RecordToken -Value $_ }) -join "--")
+}
+
 function Normalize-EvidenceDateToken {
     param(
         [Parameter(Mandatory = $true)]
@@ -79,27 +94,42 @@ function Normalize-EvidenceDateToken {
     }
 }
 
-function Resolve-BaseRecordId {
+function Get-StagingRecordParts {
     param(
         [Parameter(Mandatory = $true)]
-        $ValidationPayload
+        [string]$JsonPath
     )
 
-    $hint = [string]$ValidationPayload.record_id_hint
-    if (-not [string]::IsNullOrWhiteSpace($hint) -and $hint -match "^(.*)-<[^>]+>$") {
-        return $Matches[1]
-    }
-    if (-not [string]::IsNullOrWhiteSpace([string]$ValidationPayload.record_id)) {
-        $recordId = [string]$ValidationPayload.record_id
-        $basis = [string]$ValidationPayload.record_id_basis
-        if ($basis -eq "year" -and $recordId -match "^(.*)-\d{4}$") {
-            return $Matches[1]
+    $record = Get-Content -LiteralPath $JsonPath -Raw | ConvertFrom-Json
+
+    if ($null -ne $record.product) {
+        $manufacturer = [string]$record.product.manufacturer.name
+        $model = [string]$record.product.model
+        if ([string]::IsNullOrWhiteSpace($model)) {
+            $model = [string]$record.product.name
         }
-        if ($basis -eq "evidence_date" -and $recordId -match "^(.*)-\d{8}$") {
-            return $Matches[1]
-        }
+        $year = [string]$record.product.year
     }
-    return $null
+    else {
+        $manufacturer = [string]$record.manufacturer
+        $model = [string]$record.model
+        if ([string]::IsNullOrWhiteSpace($model)) {
+            $model = [string]$record.name
+        }
+        $year = [string]$record.year
+    }
+
+    if ([string]::IsNullOrWhiteSpace($manufacturer)) {
+        throw "Could not derive a manufacturer token from '$JsonPath'."
+    }
+    if ([string]::IsNullOrWhiteSpace($model)) {
+        throw "Could not derive a model token from '$JsonPath'."
+    }
+
+    return [pscustomobject]@{
+        BaseId = "$(Normalize-RecordToken -Value $manufacturer)--$(Normalize-RecordToken -Value $model)"
+        Year = $year
+    }
 }
 
 $scriptRoot = $PSScriptRoot
@@ -115,10 +145,10 @@ $repoRoot = if ([string]::IsNullOrWhiteSpace($repoRoot)) { (Get-Location).Path }
 $parentRoot = Split-Path -Parent $repoRoot
 
 if ([string]::IsNullOrWhiteSpace($StagingRoot)) {
-    $StagingRoot = Join-Path $repoRoot "records\_staging\cell-types"
+    $StagingRoot = Join-Path $repoRoot "records\_staging\cell-type"
 }
 if ([string]::IsNullOrWhiteSpace($CuratedRoot)) {
-    $CuratedRoot = Join-Path $repoRoot "records\cell-types"
+    $CuratedRoot = Join-Path $repoRoot "records\cell-type"
 }
 if ([string]::IsNullOrWhiteSpace($BattinfoExe)) {
     $BattinfoExe = Join-Path $parentRoot "BattINFO\.venv\Scripts\battinfo.exe"
@@ -166,35 +196,43 @@ $validation = $validationJson | ConvertFrom-Json
 $resolvedRecordId = $null
 $manualRecordId = $false
 if (-not [string]::IsNullOrWhiteSpace($RecordId)) {
-    $resolvedRecordId = Normalize-RecordToken -Value $RecordId
+    $resolvedRecordId = Normalize-RecordId -Value $RecordId
     $manualRecordId = $true
 }
 elseif (-not [bool]$validation.requires_record_id) {
-    $resolvedRecordId = [string]$validation.record_id
+    $stagingParts = Get-StagingRecordParts -JsonPath $resolvedInput
+    if (-not [string]::IsNullOrWhiteSpace($stagingParts.Year)) {
+        if ($stagingParts.Year -notmatch "^\d{4}$") {
+            throw "Year must be a 4-digit value."
+        }
+        $resolvedRecordId = "$($stagingParts.BaseId)--$($stagingParts.Year)"
+    }
+    else {
+        $resolvedRecordId = $stagingParts.BaseId
+    }
+    $manualRecordId = $true
 }
 else {
-    $baseRecordId = Resolve-BaseRecordId -ValidationPayload $validation
-    if ([string]::IsNullOrWhiteSpace($baseRecordId)) {
-        throw "Could not derive a base record id from the validation payload."
-    }
+    $stagingParts = Get-StagingRecordParts -JsonPath $resolvedInput
+    $baseRecordId = $stagingParts.BaseId
 
     if (-not [string]::IsNullOrWhiteSpace($Year)) {
         if ($Year -notmatch "^\d{4}$") {
             throw "Year must be a 4-digit value."
         }
-        $resolvedRecordId = "$baseRecordId-$Year"
+        $resolvedRecordId = "$baseRecordId--$Year"
         $manualRecordId = $true
     }
     elseif (-not [string]::IsNullOrWhiteSpace($Revision)) {
-        $resolvedRecordId = "$baseRecordId-$(Normalize-RecordToken -Value $Revision)"
+        $resolvedRecordId = "$baseRecordId--$(Normalize-RecordToken -Value $Revision)"
         $manualRecordId = $true
     }
     elseif (-not [string]::IsNullOrWhiteSpace($EvidenceDate)) {
-        $resolvedRecordId = "$baseRecordId-$(Normalize-EvidenceDateToken -Value $EvidenceDate)"
+        $resolvedRecordId = "$baseRecordId--$(Normalize-EvidenceDateToken -Value $EvidenceDate)"
         $manualRecordId = $true
     }
     else {
-        throw "This staging draft needs an explicit curated id. Provide -RecordId, -Year, -Revision, or -EvidenceDate. Suggested pattern: $($validation.record_id_hint)"
+        throw "This staging draft needs an explicit curated id. Provide -RecordId, -Year, -Revision, or -EvidenceDate. Suggested pattern: $baseRecordId--<year-or-revision>"
     }
 }
 
@@ -217,4 +255,22 @@ if ($DryRun) {
 
 Write-Host "Using record id: $resolvedRecordId"
 & $resolvedBattinfoExe @promoteArgs
-exit $LASTEXITCODE
+$exitCode = $LASTEXITCODE
+
+if (
+    $exitCode -eq 0 -and
+    -not $DryRun -and
+    $DeleteStagingOnSuccess -and
+    (Test-Path -LiteralPath $resolvedInput -PathType Leaf)
+) {
+    $stagingRootWithSeparator = [System.IO.Path]::TrimEndingDirectorySeparator($resolvedStagingRoot) + [System.IO.Path]::DirectorySeparatorChar
+    if ($resolvedInput.StartsWith($stagingRootWithSeparator, [System.StringComparison]::OrdinalIgnoreCase)) {
+        Remove-Item -LiteralPath $resolvedInput
+        Write-Host "Deleted staging draft: $resolvedInput"
+    }
+    else {
+        Write-Warning "DeleteStagingOnSuccess was requested, but '$resolvedInput' is outside staging root '$resolvedStagingRoot'. Skipping delete."
+    }
+}
+
+exit $exitCode

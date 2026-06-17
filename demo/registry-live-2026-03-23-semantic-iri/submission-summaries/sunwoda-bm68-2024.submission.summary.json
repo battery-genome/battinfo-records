@@ -2,43 +2,43 @@
   "schema_version": "0.1.0",
   "kind": "BattinfoSubmission",
   "submission_mode": "resource",
-  "generated_at": "2026-03-20T11:18:45.643388+00:00",
-  "project_id": "battinfo-records-cell-types",
-  "publisher_id": "demo-editorial",
-  "source_version": "demo-2026-03-20",
-  "title": "Google G20M7",
+  "generated_at": "2026-03-23T21:22:26.564169+00:00",
+  "project_id": "brct",
+  "publisher_id": "de",
+  "source_version": "live-2026-03-23-semantic-iri",
+  "title": "Sunwoda BM68",
   "publication_intent": {
     "mode": "canonical-publication"
   },
   "provenance": {
     "source_system": "battinfo-records",
     "workflow_name": "curated-cell-type-publication",
-    "generated_at": "2026-03-20T11:18:45.643388+00:00"
+    "generated_at": "2026-03-23T21:22:26.564169+00:00"
   },
   "release": {
-    "version": "demo-2026-03-20"
+    "version": "live-2026-03-23-semantic-iri"
   },
   "workspace": {
     "editorial": {
-      "record_path": "records\\cell-types\\google-g20m7-2025\\record.json",
-      "record_id": "google-g20m7-2025"
+      "record_path": "C:\\Users\\simonc\\Documents\\Github-local\\battery-genome\\battinfo-records\\records\\cell-type\\sunwoda-bm68-2024\\record.json",
+      "record_id": "sunwoda-bm68-2024"
     }
   },
   "resource": {
     "resource_type": "cell_type",
-    "source_local_id": "google-g20m7-2025",
-    "title": "Google G20M7",
+    "source_local_id": "sunwoda-bm68-2024",
+    "title": "Sunwoda BM68",
     "semantic_payload": {
       "@type": "CellType",
       "metadata": {
-        "manufacturer": "Google",
-        "model": "G20M7",
+        "manufacturer": "Sunwoda",
+        "model": "BM68",
         "format": "prismatic",
         "chemistry": "Li-ion",
-        "size_code": "P6/65/75",
-        "iec_code": "ICP6/65/75",
-        "country_of_origin": "Vietnam",
-        "year": 2025,
+        "size_code": "P6/64/81",
+        "iec_code": "ICP6/64/81",
+        "country_of_origin": "China",
+        "year": 2024,
         "positive_electrode_basis": "LCO",
         "negative_electrode_basis": "Graphite"
       },
@@ -46,47 +46,47 @@
         "cell_type": {
           "schema_version": "0.1.0",
           "product": {
-            "id": "https://w3id.org/battinfo/cell-type/pwkw-5qgx-swzr-0qyr",
-            "short_id": "pwkw5q",
-            "identifier": "cell-type:pwkw-5qgx-swzr-0qyr",
-            "name": "Google G20M7",
-            "model": "G20M7",
+            "id": "https://w3id.org/battinfo/cell-type/b6m7-3dtj-vdsx-svaj",
+            "short_id": "b6m73d",
+            "identifier": "cell-type:b6m7-3dtj-vdsx-svaj",
+            "name": "Sunwoda BM68",
+            "model": "BM68",
             "manufacturer": {
               "type": "Organization",
-              "name": "Google"
+              "name": "Sunwoda"
             },
             "cellFormat": "prismatic",
             "chemistry": "Li-ion",
             "positiveElectrodeBasis": "LCO",
             "negativeElectrodeBasis": "Graphite",
-            "sizeCode": "P6/65/75",
-            "iecCode": "ICP6/65/75",
-            "countryOfOrigin": "Vietnam",
-            "year": 2025
+            "sizeCode": "P6/64/81",
+            "iecCode": "ICP6/64/81",
+            "countryOfOrigin": "China",
+            "year": 2024
           },
           "specs": {
             "nominal_capacity": {
-              "value": 4.97,
+              "value": 6.2,
               "unit": "Ah"
             },
             "rated_capacity": {
-              "value": 4.835,
+              "value": 6.06,
               "unit": "Ah"
             },
             "nominal_energy": {
-              "value": 19.39,
+              "value": 23.87,
               "unit": "Wh"
             },
             "rated_energy": {
-              "value": 18.86,
+              "value": 23.34,
               "unit": "Wh"
             },
             "nominal_voltage": {
-              "value": 3.9,
+              "value": 3.85,
               "unit": "V"
             },
             "charging_voltage": {
-              "value": 4.5,
+              "value": 4.53,
               "unit": "V"
             },
             "discharging_cutoff_voltage": {
@@ -94,15 +94,15 @@
               "unit": "V"
             },
             "mass": {
-              "value": 63,
+              "value": 72,
               "unit": "g"
             },
             "width": {
-              "value": 65,
+              "value": 64,
               "unit": "mm"
             },
             "length": {
-              "value": 75,
+              "value": 81,
               "unit": "mm"
             },
             "thickness": {
@@ -112,12 +112,12 @@
           },
           "provenance": {
             "source_type": "label",
-            "source_file": "google-g20m7-2025.json",
+            "source_file": "sunwoda-bm68-2024.json",
             "source_url": null,
-            "retrieved_at": 1774005501
+            "retrieved_at": 1774280883
           },
           "notes": [
-            "Values are taken from the label of a G20M7 battery cell purchased from ifixit.com in 2025"
+            "Values are taken from the label of a BM68 battery cell manufactured on 2024-09-05 and purchased in 2025"
           ]
         }
       }
@@ -132,3 +132,4 @@
     "policy": "default"
   }
 }
+

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-03-23T22:31:24.2004406+01:00",
+  "url": "http://127.0.0.1:3002/registry/cell-type/nm6t-ceph-frax-1mk1",
+  "status_code": 200,
+  "content_length": 46167,
+  "contains_title": true,
+  "contains_registry": true,
+  "contains_canonical_id": true,
+  "expected_canonical_iri": "https://w3id.org/battinfo/cell-type/nm6t-ceph-frax-1mk1"
+}

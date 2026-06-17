@@ -15,9 +15,9 @@ Create a new record id when the underlying curated entity has changed identity, 
 
 For cell types, a changed physical design behind the same marketed model name should usually get a new disambiguated id such as:
 
-- `google-g20m7-2025`
-- `google-g20m7-sd12`
-- `google-g20m7-20260320`
+- `google--g20m7--2025`
+- `google--g20m7--sd12`
+- `google--g20m7--20260320`
 
 ## Revision Style
 
