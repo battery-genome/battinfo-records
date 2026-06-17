@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/3t3c-q1sp-px14-r4cf",
+    "short_id": "3t3cq1",
+    "identifier": "cell-spec:3t3c-q1sp-px14-r4cf",
+    "name": "YINLONG YLE-LTO-66160-40Ah",
+    "model": "YLE-LTO-66160-40Ah",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "YINLONG",
+      "id": "https://w3id.org/battinfo/organization/0a06-q83v-kjmq-ryh2"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "LTO",
+    "size_code": "R66160",
+    "rechargeable": true
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/YINLONG__YLE-LTO-66160-40Ah.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "1abe04cb3daa7870a7bd828d165d4b7d7a3ea209183eccfb46fa7b279ed531c9"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/cya2-nyz7-42eg-x9d2",
+    "short_id": "cya2ny",
+    "identifier": "cell-spec:cya2-nyz7-42eg-x9d2",
+    "name": "PANASONIC NCR18650A",
+    "model": "NCR18650A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC",
+      "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2010,
+    "rechargeable": true
+  },
+  "properties": {
+    "nominal_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__NCR18650A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "a988e9659bcae9bb0799944e4c8354d03b80f362de035b92e5b43b6fbe5de2aa"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

@@ -37,32 +37,32 @@ This repo is the maintained editorial source for canonical BattINFO records that
 |-- metadata/
 |   |-- review-status/
 |   |   |-- README.md
-|   |   `-- cell-type/
-|   |       `-- _template-cell-type.review.yaml
+|   |   `-- cell-spec/
+|   |       `-- _template-cell-spec.review.yaml
 |   `-- sources/
 |       |-- README.md
-|       `-- cell-type/
-|           `-- _template-cell-type.sources.yaml
+|       `-- cell-spec/
+|           `-- _template-cell-spec.sources.yaml
 `-- records/
     |-- _staging/
     |   |-- README.md
-    |   `-- cell-type/
+    |   `-- cell-spec/
     |       `-- README.md
-    `-- cell-type/
+    `-- cell-spec/
         |-- README.md
-        `-- _template-cell-type/
+        `-- _template-cell-spec/
             `-- record.json
 ```
 
 ## Record Convention
 
-For a staging cell-type submission, use a single JSON file:
+For a staging cell-spec submission, use a single JSON file:
 
-- `records/_staging/cell-type/<submission-name>.json`
+- `records/_staging/cell-spec/<submission-name>.json`
 
-For a curated cell-type record, use:
+For a curated cell-spec record, use:
 
-- `records/cell-type/<record-id>/record.json`
+- `records/cell-spec/<record-id>/record.json`
 
 The `record.json` file is the canonical curated artifact. Metadata sidecars under `metadata/` are optional and should not be required for routine submission or promotion.
 For record ids, prefer `manufacturer--model--year` when the year is known. Keep single `-` inside each slug segment and use `--` only between major segments. If year is unavailable, use a revision or evidence-backed date before falling back to editorial sequence suffixes.
@@ -71,22 +71,22 @@ When the intended curated id is already known, use the same value for the stagin
 ## Recommended Workflow
 
 1. Start in `records/_staging/` when a candidate record is being promoted from a local draft into shared editorial review.
-2. Add a single staging JSON draft under `records/_staging/cell-type/`.
+2. Add a single staging JSON draft under `records/_staging/cell-spec/`.
 3. Use BattINFO tooling to validate the staging draft and promote it into the canonical curated `record.json`.
-4. Move the promoted record into `records/cell-type/<record-id>/` when editorial review says it belongs in the curated corpus.
+4. Move the promoted record into `records/cell-spec/<record-id>/` when editorial review says it belongs in the curated corpus.
 5. Publish to the registry through BattINFO/registry processes. Do not treat a Git merge alone as registry publication.
 
-For convenience inside this repo, `scripts/promote-staging-cell-type.ps1` wraps the BattINFO promotion command and can derive an explicit curated id from `-Year`, `-Revision`, or `-EvidenceDate` when the staging draft is ambiguous.
+For convenience inside this repo, `scripts/promote-staging-cell-spec.ps1` wraps the BattINFO promotion command and can derive an explicit curated id from `-Year`, `-Revision`, or `-EvidenceDate` when the staging draft is ambiguous.
 If the staging draft has been accepted and you want the state transition to be explicit in one step, pass `-DeleteStagingOnSuccess` to remove the staging JSON after a successful non-dry-run promotion.
-For registry publication, `scripts/publish-curated-cell-type.ps1` wraps the BattINFO curated publication command and accepts either a curated record id or a path to `record.json`.
+For registry publication, `scripts/publish-curated-cell-spec.ps1` wraps the BattINFO curated publication command and accepts either a curated record id or a path to `record.json`.
 
 Example:
 
 ```powershell
-.\scripts\promote-staging-cell-type.ps1 -Input google--g20m7--2025.json
-.\scripts\publish-curated-cell-type.ps1 `
+.\scripts\promote-staging-cell-spec.ps1 -Input google--g20m7--2025.json
+.\scripts\publish-curated-cell-spec.ps1 `
   -Input google--g20m7--2025 `
-  -ProjectId battinfo-records-cell-type `
+  -ProjectId battinfo-records-cell-spec `
   -PublisherId demo-editorial `
   -SourceVersion demo-2026-03-20 `
   -RegistryUrl http://127.0.0.1:8000 `
@@ -94,6 +94,6 @@ Example:
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [docs/repo-scope.md](docs/repo-scope.md), and [docs/record-lifecycle.md](docs/record-lifecycle.md) for the operating rules.
-For the concrete shared review -> promote -> publish loop, see [docs/editorial-cell-type-workflow.md](docs/editorial-cell-type-workflow.md).
+For the concrete shared review -> promote -> publish loop, see [docs/editorial-cell-spec-workflow.md](docs/editorial-cell-spec-workflow.md).
 
 

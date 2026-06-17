@@ -1,0 +1,131 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/0ank-3b0h-5px9-zm27",
+    "short_id": "0ank3b",
+    "identifier": "cell-spec:0ank-3b0h-5px9-zm27",
+    "name": "Molicel INR-21700-P42A",
+    "model": "INR-21700-P42A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Molicel",
+      "id": "https://w3id.org/battinfo/organization/tms4-y54d-xh86-wr5m"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "size_code": "R21700",
+    "year": 2000,
+    "rechargeable": true
+  },
+  "properties": {
+    "rated_capacity": {
+      "value": 4.2,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 4.2,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.07,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 4.2,
+      "unit": "A"
+    },
+    "height": {
+      "value": 0.07,
+      "unit": "m"
+    },
+    "diameter": {
+      "value": 0.021,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Molicel_INR-21700-P42A.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "5447886544929d6a50387bb7e936f65f64d7e12870a9352d18a9ef360d38ec99"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Converted from CellInfoRepository BatteryTypeJson format.",
+    "Datasheet Molicel__INR21700-P42A.html reports diameter=0.0217 m but existing value was kept.",
+    "Supplemented from datasheet Molicel__INR21700-P42A.html."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.232068",
+        "doi": "10.1016/j.jpowsour.2022.232068",
+        "author": "Yang, et al.",
+        "headline": "Numerical and experimental study on thermal management of NCM-21700 Li-ion battery",
+        "date_published": 2022,
+        "description": "Yang, et al. Numerical and experimental study on thermal management of NCM-21700 Li-ion battery, Journal of Power Sources, Volume 548, November 2022, 232068, https://doi.org/10.1016/j.jpowsour.2022.232068."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2022.232214",
+        "doi": "10.1016/j.jpowsour.2022.232214",
+        "author": "Sahin, et al.",
+        "headline": "Thermal management system for air-cooled battery packs with flow-disturbing structures",
+        "date_published": 2022,
+        "description": "Sahin, et al. Thermal management system for air-cooled battery packs with flow-disturbing structures, Journal of Power Sources, Volume 551, December 2022, 232214, https://doi.org/10.1016/j.jpowsour.2022.232214."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8020017",
+        "doi": "10.3390/batteries8020017",
+        "author": "Richards, et al.",
+        "headline": "Effect of Internal AC Heating on the Temperature Homogeneity of Different Size Battery Cells",
+        "date_published": 2022,
+        "description": "Richards, et al. Effect of Internal AC Heating on the Temperature Homogeneity of Different Size Battery Cells, Batteries, Volume 8, February 2022, 17, https://doi.org/10.3390/batteries8020017."
+      },
+      {
+        "id": "https://doi.org/10.3390/app13084681",
+        "doi": "10.3390/app13084681",
+        "author": "Connor, et al.",
+        "headline": "Adaptive Thermal Control of Cell Groups to Extend Cycle Life of Lithium-Ion Battery Packs",
+        "date_published": 2023,
+        "description": "Connor, et al. Adaptive Thermal Control of Cell Groups to Extend Cycle Life of Lithium-Ion Battery Packs, Applied Sciences, Volume 13, April 2023, 4681, https://doi.org/10.3390/app13084681."
+      },
+      {
+        "id": "https://doi.org/10.3390/batteries8080076",
+        "doi": "10.3390/batteries8080076",
+        "author": "Falcone, et al.",
+        "headline": "Life Cycle Assessment of a Lithium-Ion Battery Pack Unit Made of Cylindrical Cells",
+        "date_published": 2022,
+        "description": "Falcone, et al. Life Cycle Assessment of a Lithium-Ion Battery Pack Unit Made of Cylindrical Cells, Batteries, Volume 8, July 2022, 76, https://doi.org/10.3390/batteries8080076."
+      }
+    ]
+  }
+}

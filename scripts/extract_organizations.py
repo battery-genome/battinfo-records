@@ -1,9 +1,9 @@
 """
-Scans all cell-type records, extracts unique organizations (manufacturer + brand),
+Scans all cell-spec records, extracts unique organizations (manufacturer + brand),
 and writes organization record stubs under records/organization/<slug>/record.json.
 
 Existing org records are preserved — only missing ones are created.
-Run after adding new cell-type records to keep the org list up to date.
+Run after adding new cell-spec records to keep the org list up to date.
 
 Usage:
     python scripts/extract_organizations.py [--dry-run]
@@ -16,7 +16,7 @@ import time
 from pathlib import Path
 
 RECORDS_DIR = Path(__file__).parent.parent / "records"
-CELL_TYPE_DIR = RECORDS_DIR / "cell-type"
+CELL_SPEC_DIR = RECORDS_DIR / "cell-spec"
 ORG_DIR = RECORDS_DIR / "organization"
 
 IRI_BASE = "https://w3id.org/battinfo/organization/"
@@ -54,18 +54,18 @@ def load_existing_orgs() -> dict[str, dict]:
     return existing
 
 
-def extract_orgs_from_cell_types() -> dict[str, dict]:
+def extract_orgs_from_cell_specs() -> dict[str, dict]:
     """
-    Walk all cell-type records and collect unique organizations.
+    Walk all cell-spec records and collect unique organizations.
     Returns {name_lower: {"name": ..., "url": ..., "source_ids": [...]}}.
     """
     orgs: dict[str, dict] = {}
 
-    for record_path in sorted(CELL_TYPE_DIR.glob("*/record.json")):
+    for record_path in sorted(CELL_SPEC_DIR.glob("*/record.json")):
         with open(record_path, encoding="utf-8") as f:
             rec = json.load(f)
 
-        product = rec.get("product", {})
+        product = rec.get("cell_spec", {})
         record_id = record_path.parent.name
 
         for field in ("manufacturer", "brand"):
@@ -133,7 +133,7 @@ def main() -> None:
     ORG_DIR.mkdir(parents=True, exist_ok=True)
 
     existing = load_existing_orgs()
-    extracted = extract_orgs_from_cell_types()
+    extracted = extract_orgs_from_cell_specs()
 
     created = 0
     skipped = 0
@@ -144,7 +144,7 @@ def main() -> None:
         n_records = len(set(info["source_ids"]))
 
         if key in existing:
-            print(f"  skip  {name!r}  ({n_records} cell-type records)")
+            print(f"  skip  {name!r}  ({n_records} cell-spec records)")
             skipped += 1
             continue
 
@@ -157,10 +157,10 @@ def main() -> None:
             counter += 1
 
         if args.dry_run:
-            print(f"  would create  {slug}/record.json  ({name!r}, {n_records} cell-type records)")
+            print(f"  would create  {slug}/record.json  ({name!r}, {n_records} cell-spec records)")
         else:
             path = write_org_stub(slug, name, url)
-            print(f"  created  {path.relative_to(RECORDS_DIR)}  ({name!r}, {n_records} cell-type records)")
+            print(f"  created  {path.relative_to(RECORDS_DIR)}  ({name!r}, {n_records} cell-spec records)")
         created += 1
 
     noun = "would create" if args.dry_run else "created"
@@ -168,7 +168,7 @@ def main() -> None:
     if created and not args.dry_run:
         print("\nNext steps:")
         print("  1. Curate each stub: add legalName, sameAs (Wikidata IRI), location, type.")
-        print("  2. Run scripts/backfill_org_ids.py to add manufacturer.id to cell-type records.")
+        print("  2. Run scripts/backfill_org_ids.py to add manufacturer.id to cell-spec records.")
 
 
 if __name__ == "__main__":

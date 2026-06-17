@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Republishes the 52 cell-type records that received publication links.
+Republishes the 52 cell-spec records that received publication links.
 
 .EXAMPLE
   $env:BATTINFO_API_KEY = "your-key-here"
@@ -22,7 +22,7 @@ if (-not $ApiKey) {
 
 $scriptDir   = $PSScriptRoot
 $repoRoot    = Split-Path -Parent $scriptDir
-$publishScript = Join-Path $scriptDir "publish-curated-cell-type.ps1"
+$publishScript = Join-Path $scriptDir "publish-curated-cell-spec.ps1"
 
 $records = @(
     "a123--amp20m1hd-a--20260324",

@@ -10,3 +10,5 @@ Thumbs.db
 .battinfo/
 .search-index.json
 *.log
+__pycache__/
+*.pyc

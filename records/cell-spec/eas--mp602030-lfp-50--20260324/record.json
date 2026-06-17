@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/fwgr-0d4c-2nt1-bvcy",
+    "short_id": "fwgr0d",
+    "identifier": "cell-spec:fwgr-0d4c-2nt1-bvcy",
+    "name": "EAS MP602030-LFP-50",
+    "model": "MP602030-LFP-50",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EAS",
+      "id": "https://w3id.org/battinfo/organization/yzcq-9crh-ay58-frbm"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EAS__MP602030-LFP-50.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "d0741b9739e220be7af5d521bfb61cdd0c2e7d7bb7972c59b28c40b8371229e9"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

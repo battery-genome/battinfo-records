@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/a5e0-v689-nhnb-w4x8",
+    "short_id": "a5e0v6",
+    "identifier": "cell-spec:a5e0-v689-nhnb-w4x8",
+    "name": "KODAK LR621",
+    "model": "LR621",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK",
+      "id": "https://w3id.org/battinfo/organization/fw54-fz4n-krpj-8e2n"
+    },
+    "cell_format": "coin",
+    "chemistry": "unknown"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR621.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "a0ab61fea4b1ed719127a310f3a560772c32955b0807bbe82c449308f3196651"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

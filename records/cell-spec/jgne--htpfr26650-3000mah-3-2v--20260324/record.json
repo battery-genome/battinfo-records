@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/na8g-ddc6-dk73-zghq",
+    "short_id": "na8gdd",
+    "identifier": "cell-spec:na8g-ddc6-dk73-zghq",
+    "name": "JGNE HTPFR26650-3000mAh-3.2V",
+    "model": "HTPFR26650-3000mAh-3.2V",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "JGNE",
+      "id": "https://w3id.org/battinfo/organization/q7cf-3x8c-98m7-1sfs"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "LFP",
+    "size_code": "R26650",
+    "rechargeable": true
+  },
+  "properties": {
+    "minimum_capacity": {
+      "value": 2.9,
+      "unit": "Ah"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.5,
+      "unit": "V"
+    },
+    "internal_resistance": {
+      "value": 15.0,
+      "unit": "mohm"
+    },
+    "charging_time": {
+      "value": 10.0,
+      "unit": "min"
+    },
+    "mass": {
+      "value": 0.0815,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.0158,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/JGNE__HTPFR26650-3000mAh-3.2V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "fa7f0826a93910ea1fcc72224d85891c233ac36db0c71ff0728f116f429653e6"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet JGNE__HTPFR26650-3000mAh-3.2V.pdf."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

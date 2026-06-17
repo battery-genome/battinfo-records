@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/8we0-8g5v-dpjs-5g13",
+    "short_id": "8we08g",
+    "identifier": "cell-spec:8we0-8g5v-dpjs-5g13",
+    "name": "PANASONIC UR18650NSX",
+    "model": "UR18650NSX",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "PANASONIC",
+      "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2000
+  },
+  "properties": {
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.0458,
+      "unit": "kg"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/PANASONIC__UR18650NSX.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "98d098425c8ca2ee0584a71dd24b3f8ffd11dad8db0bf883177e0f0a621c4f15"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

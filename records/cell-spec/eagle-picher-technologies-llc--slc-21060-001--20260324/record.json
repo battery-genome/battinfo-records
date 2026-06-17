@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/sjem-aqex-ypgy-mrev",
+    "short_id": "sjemaq",
+    "identifier": "cell-spec:sjem-aqex-ypgy-mrev",
+    "name": "Eagle Picher Technologies LLC SLC-21060-001",
+    "model": "SLC-21060-001",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Eagle Picher Technologies LLC",
+      "id": "https://w3id.org/battinfo/organization/f5ps-78gp-9j11-3x7y"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "rechargeable": true
+  },
+  "properties": {
+    "rated_capacity": {
+      "value": 72.0,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.1,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 36.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 1.974,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 36.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0569,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.0815,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.173,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Eagle_Picher_Technologies_LLC_SLC-21060-001.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "cc41a4fa2d938761320ec6d3e73009cfc9860ac4bb6c82a3988c96967300de0c"
+  },
+  "notes": [
+    "Skipped CycleLife: numeric value missing or NaN.",
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

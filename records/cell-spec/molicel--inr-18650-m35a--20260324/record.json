@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/3h8g-cs74-jqqn-8bg4",
+    "short_id": "3h8gcs",
+    "identifier": "cell-spec:3h8g-cs74-jqqn-8bg4",
+    "name": "MOLICEL INR-18650-M35A",
+    "model": "INR-18650-M35A",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MOLICEL",
+      "id": "https://w3id.org/battinfo/organization/tms4-y54d-xh86-wr5m"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "rechargeable": true
+  },
+  "properties": {
+    "mass": {
+      "value": 0.048,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MOLICEL__INR-18650-M35A.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "3e9929f1891e168d9a850270addc745266ae697106bc1fef684cd8c3e96b17aa"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

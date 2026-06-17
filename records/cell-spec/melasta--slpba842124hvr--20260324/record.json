@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/fx49-p8gw-k7b5-gvyp",
+    "short_id": "fx49p8",
+    "identifier": "cell-spec:fx49-p8gw-k7b5-gvyp",
+    "name": "MELASTA SLPBA842124HVR",
+    "model": "SLPBA842124HVR",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MELASTA",
+      "id": "https://w3id.org/battinfo/organization/7t5k-fzsr-4h6d-2gyr"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MELASTA__SLPBA842124HVR.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "927361b98664b2def0b31a529fdcdbe75b3b63ec2f13a0e624722e6cfaf38d24"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

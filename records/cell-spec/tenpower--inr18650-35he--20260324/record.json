@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/zyf9-76rn-tpbt-n9mw",
+    "short_id": "zyf976",
+    "identifier": "cell-spec:zyf9-76rn-tpbt-n9mw",
+    "name": "TENPOWER INR18650-35HE",
+    "model": "INR18650-35HE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER",
+      "id": "https://w3id.org/battinfo/organization/aes2-fjpq-xbzy-25a4"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-35HE.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "d4dd7d9aa1282cbb749c244c8121e81715cb341cf4ccc5d83216a6d5187a7595"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

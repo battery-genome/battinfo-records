@@ -10,7 +10,7 @@ Keep file and directory names predictable so the repo scales cleanly.
 - Make the directory name match the record id exactly.
 - Prefer a real-world disambiguator in the id when the manufacturer model name may map to multiple physical designs.
 
-Use this precedence for curated cell-type ids:
+Use this precedence for curated cell-spec ids:
 
 1. `manufacturer--model--year`
 2. `manufacturer--model--revision`
@@ -31,7 +31,7 @@ Use descriptive revision tokens for duplicate review drafts when needed, for exa
 For each staging submission:
 
 ```text
-records/_staging/cell-type/<submission-name>.json
+records/_staging/cell-spec/<submission-name>.json
 ```
 
 Use the intended curated record id as `<submission-name>` when it is already known.
@@ -40,14 +40,14 @@ If the draft is still ambiguous, a provisional descriptive filename is acceptabl
 For each curated cell type:
 
 ```text
-records/cell-type/<record-id>/record.json
+records/cell-spec/<record-id>/record.json
 ```
 
 ## Directory Rules
 
-- One directory per curated record under `records/cell-type/`.
+- One directory per curated record under `records/cell-spec/`.
 - The main content artifact is always `record.json`.
-- Single-file staging drafts live directly under `records/_staging/cell-type/`.
+- Single-file staging drafts live directly under `records/_staging/cell-spec/`.
 - Metadata files under `metadata/` are optional, not required.
 - Names beginning with `_` are reserved for repo-internal examples or process folders, not real curated records.
 

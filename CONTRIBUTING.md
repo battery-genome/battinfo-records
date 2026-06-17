@@ -12,12 +12,12 @@ This repo is for curated shared BattINFO records. Contribute here when a record 
 
 1. Choose a stable record id using the naming rules in [docs/naming-and-layout.md](docs/naming-and-layout.md). Prefer `manufacturer--model--year` when the year is known.
 2. If the record is still under editorial review, start under `records/_staging/`.
-3. Put a single JSON draft in `records/_staging/cell-type/<submission-name>.json`.
+3. Put a single JSON draft in `records/_staging/cell-spec/<submission-name>.json`.
    When the intended curated id is already known, use it as the staging filename too.
-4. Use BattINFO repo tooling to validate the staging draft and promote it to `records/cell-type/<record-id>/record.json`.
+4. Use BattINFO repo tooling to validate the staging draft and promote it to `records/cell-spec/<record-id>/record.json`.
    BattINFO can auto-suggest an id from year, revision, or evidence date, but ambiguous drafts should be promoted with an explicit `--record-id`.
-   The repo wrapper `scripts/promote-staging-cell-type.ps1` can derive that explicit id from `-Year`, `-Revision`, or `-EvidenceDate`.
-5. Publish curated records to the registry through BattINFO. The repo wrapper `scripts/publish-curated-cell-type.ps1` accepts a curated record id or a path to `record.json` and forwards the registry settings.
+   The repo wrapper `scripts/promote-staging-cell-spec.ps1` can derive that explicit id from `-Year`, `-Revision`, or `-EvidenceDate`.
+5. Publish curated records to the registry through BattINFO. The repo wrapper `scripts/publish-curated-cell-spec.ps1` accepts a curated record id or a path to `record.json` and forwards the registry settings.
 5. Add optional metadata under `metadata/` only when it materially helps editorial review or provenance tracking.
 
 ## Editorial review status
@@ -46,7 +46,7 @@ To promote a record from `auto-promoted` to `reviewed`:
 1. Read the record against its primary source (check specs, units, provenance).
 2. Correct any errors in `record.json`.
 3. Set `review_status` to `"reviewed"` and update the `note`.
-4. Re-publish to create a new registry version: `scripts/publish-curated-cell-type.ps1 -Input <record-id> ...`
+4. Re-publish to create a new registry version: `scripts/publish-curated-cell-spec.ps1 -Input <record-id> ...`
 5. Commit with a message describing what was verified or corrected.
 
 ## Update an Existing Curated Record
@@ -69,15 +69,15 @@ Use the following progression unless there is a documented exception:
 
 1. Local draft outside this repo.
 2. Shared editorial single-file staging in `records/_staging/`.
-3. Reviewed curated record in `records/cell-type/`.
+3. Reviewed curated record in `records/cell-spec/`.
 4. Published in the registry through external publication workflow.
 
 The repository location should reflect the lifecycle. A record in the curated area should not still look like an unowned draft.
-For the concrete checklist used during review and later edits, see [docs/editorial-cell-type-workflow.md](docs/editorial-cell-type-workflow.md).
+For the concrete checklist used during review and later edits, see [docs/editorial-cell-spec-workflow.md](docs/editorial-cell-spec-workflow.md).
 
 ## Minimal File Set Per Curated Cell Type
 
-- `records/cell-type/<record-id>/record.json`
+- `records/cell-spec/<record-id>/record.json`
 
 That is the baseline. Add more only when there is a clear editorial need.
 

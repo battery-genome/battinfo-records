@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/mdsv-b5tn-vjn8-a0qp",
+    "short_id": "mdsvb5",
+    "identifier": "cell-spec:mdsv-b5tn-vjn8-a0qp",
+    "name": "EVE INR18650-33V",
+    "model": "INR18650-33V",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "EVE",
+      "id": "https://w3id.org/battinfo/organization/yegv-1ktb-7g6g-1010"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/EVE__INR18650-33V.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "892d9bcf1e1e635c8e54f0e8a34cc7d7843765a86c05462b0e8aaa3a3c55b1e3"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/bhan-e7bw-9by0-jyzx",
+    "short_id": "bhane7",
+    "identifier": "cell-spec:bhan-e7bw-9by0-jyzx",
+    "name": "MURATA US18650VTC4",
+    "model": "US18650VTC4",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "MURATA",
+      "id": "https://w3id.org/battinfo/organization/6nzg-2gay-cksk-gjm4"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650",
+    "year": 2012
+  },
+  "properties": {
+    "nominal_capacity": {
+      "value": 2.1,
+      "unit": "Ah"
+    },
+    "minimum_capacity": {
+      "value": 2.002,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.045,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.01835,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/MURATA__US18650VTC4.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "eeae6f2f5e4819c887e4c6f38ff5ffb363ae25a7c8f7d7a3154914e3c7dafcf1"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

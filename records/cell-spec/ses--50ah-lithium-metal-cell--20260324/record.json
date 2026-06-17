@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/23aj-edxr-tg64-xn6f",
+    "short_id": "23ajed",
+    "identifier": "cell-spec:23aj-edxr-tg64-xn6f",
+    "name": "SES 50Ah-Lithium-Metal-Cell",
+    "model": "50Ah-Lithium-Metal-Cell",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SES",
+      "id": "https://w3id.org/battinfo/organization/dbs8-zvmc-d96y-xexh"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-metal",
+    "negative_electrode_basis": "Li-metal",
+    "rechargeable": true
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/SES__50Ah-Lithium-Metal-Cell.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "a5e62c0bdd0ae07c506cc82ca75822e6d80ecb256295a51a9ce6b9bfb49c1f68"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

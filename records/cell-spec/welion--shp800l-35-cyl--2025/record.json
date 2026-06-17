@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/qp9k-rnb3-5jwm-c15n",
+    "short_id": "qp9krn",
+    "identifier": "cell-spec:qp9k-rnb3-5jwm-c15n",
+    "name": "WELION SHP800L-35-CYL",
+    "model": "SHP800L-35-CYL",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "WELION",
+      "id": "https://w3id.org/battinfo/organization/jfvm-2z8y-h2k1-k3q3"
+    },
+    "cell_format": "unknown",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "year": 2025,
+    "rechargeable": true
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/WELION__SHP800L-35-CYL.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "d23f9ab63379bfb12220116495bbbf7a83eb095000788aa69d73069713a8de6e"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

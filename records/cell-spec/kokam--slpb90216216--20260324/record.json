@@ -1,0 +1,124 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/enqr-hd4k-nkyh-0eyr",
+    "short_id": "enqrhd",
+    "identifier": "cell-spec:enqr-hd4k-nkyh-0eyr",
+    "name": "Kokam SLPB90216216",
+    "model": "SLPB90216216",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam",
+      "id": "https://w3id.org/battinfo/organization/10y0-nymg-csg9-7se4"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "negative_electrode_basis": "unknown",
+    "rechargeable": true
+  },
+  "properties": {
+    "rated_capacity": {
+      "value": 40.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 800.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 40.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.935,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 40.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.215,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.009,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.22,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB90216216.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "5122f8379ab6c881823e3ab7dd7df68cc88ffdd01654df3bc5f40a70f9437926"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1109/tie.2017.2714118",
+        "doi": "10.1109/tie.2017.2714118",
+        "author": "Mesbahi, et al.",
+        "headline": "Dynamic Model of Li-Ion Batteries Incorporating Electrothermal and Ageing Aspects for Electric Vehicle Applications",
+        "date_published": 2018,
+        "description": "Mesbahi, et al. Dynamic Model of Li-Ion Batteries Incorporating Electrothermal and Ageing Aspects for Electric Vehicle Applications, IEEE Transactions on Industrial Electronics, Volume 65, February 2018, 1298-1305, https://doi.org/10.1109/tie.2017.2714118."
+      },
+      {
+        "id": "https://doi.org/10.3390/en13174518",
+        "doi": "10.3390/en13174518",
+        "author": "Paul, et al.",
+        "headline": "Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle",
+        "date_published": 2020,
+        "description": "Paul, et al. Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle, Energies, Volume 13, September 2020, 4518, https://doi.org/10.3390/en13174518."
+      },
+      {
+        "id": "https://doi.org/10.1149/06609.0203ecst",
+        "doi": "10.1149/06609.0203ecst",
+        "author": "Serincan, et al.",
+        "headline": "Thermofluids Analysis of the Coolant Flow during Lithium-Ion Battery Operation",
+        "date_published": 2015,
+        "description": "Serincan, et al. Thermofluids Analysis of the Coolant Flow during Lithium-Ion Battery Operation, ECS Transactions, Volume 66, August 2015, 203-213, https://doi.org/10.1149/06609.0203ecst."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.ijhydene.2020.01.067",
+        "doi": "10.1016/j.ijhydene.2020.01.067",
+        "author": "El-Sehiemy, et al.",
+        "headline": "Parameter identification and state-of-charge estimation for lithium-polymer battery cells using enhanced sunflower optimization algorithm",
+        "date_published": 2020,
+        "description": "El-Sehiemy, et al. Parameter identification and state-of-charge estimation for lithium-polymer battery cells using enhanced sunflower optimization algorithm, International Journal of Hydrogen Energy, Volume 45, March 2020, 8833-8842, https://doi.org/10.1016/j.ijhydene.2020.01.067."
+      }
+    ]
+  }
+}

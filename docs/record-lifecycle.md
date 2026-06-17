@@ -9,7 +9,7 @@ This repo separates editorial curation from registry publication.
 2. Staging
    Candidate shared record under editorial review in `records/_staging/`.
 3. Reviewed curated record
-   Accepted shared record in `records/cell-type/`.
+   Accepted shared record in `records/cell-spec/`.
 4. Published
    Registry publication has occurred through an external process.
 
@@ -18,7 +18,7 @@ This repo separates editorial curation from registry publication.
 The default state signal is repository location:
 
 - `records/_staging/` means shared editorial review is still in progress.
-- `records/cell-type/` means the record is accepted into the curated corpus.
+- `records/cell-spec/` means the record is accepted into the curated corpus.
 - Registry publication is tracked in the registry and release process, not by default in repo sidecars.
 
 If an editorial process needs explicit state files later, add them sparingly under `metadata/`. They are optional, not required.
@@ -27,7 +27,7 @@ If an editorial process needs explicit state files later, add them sparingly und
 
 - Do not commit private scratch work directly into the curated area.
 - Start shared review material in staging when it is not yet accepted into the curated corpus.
-- Validate and promote staging drafts through BattINFO before moving them into `records/cell-type/`.
+- Validate and promote staging drafts through BattINFO before moving them into `records/cell-spec/`.
 - Mark registry publication separately after the publication workflow completes.
 
 ## Operational Guidance

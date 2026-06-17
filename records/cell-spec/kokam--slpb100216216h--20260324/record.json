@@ -1,0 +1,133 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/fa7e-t3gd-wq0r-yr18",
+    "short_id": "fa7et3",
+    "identifier": "cell-spec:fa7e-t3gd-wq0r-yr18",
+    "name": "Kokam SLPB100216216H",
+    "model": "SLPB100216216H",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Kokam",
+      "id": "https://w3id.org/battinfo/organization/10y0-nymg-csg9-7se4"
+    },
+    "cell_format": "prismatic",
+    "chemistry": "Li-ion",
+    "positive_electrode_basis": "NMC",
+    "negative_electrode_basis": "unknown",
+    "rechargeable": true
+  },
+  "properties": {
+    "rated_capacity": {
+      "value": 40.0,
+      "unit": "Ah"
+    },
+    "cycle_life": {
+      "value": 6000.0,
+      "unit": "count"
+    },
+    "nominal_voltage": {
+      "value": 3.7,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 2.7,
+      "unit": "V"
+    },
+    "continuous_discharging_current": {
+      "value": 8.0,
+      "unit": "A"
+    },
+    "mass": {
+      "value": 0.94,
+      "unit": "kg"
+    },
+    "continuous_charging_current": {
+      "value": 8.0,
+      "unit": "A"
+    },
+    "thickness": {
+      "value": 0.0103,
+      "unit": "m"
+    },
+    "width": {
+      "value": 0.226,
+      "unit": "m"
+    },
+    "length": {
+      "value": 0.227,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "catalog",
+    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Kokam_SLPB100216216H.json",
+    "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "retrieved_at": 1774380439,
+    "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "file_hash": "6ec88bada50717c1d8ce27c78ff90ab631e6e3f9f1c3bca9cb28700ddf846a23"
+  },
+  "notes": [
+    "Mapped UpperVoltageLimit to charging_voltage.",
+    "Mapped LowerVoltageLimit to discharging_cutoff_voltage.",
+    "Mapped MaximumContinuousDischargingCurrent to continuous_discharging_current.",
+    "Skipped duplicate mapping for MaximumContinuousDischargingCurrent -> continuous_discharging_current.",
+    "Mapped MaximumContinuousChargingCurrent to continuous_charging_current.",
+    "Skipped duplicate mapping for MaximumContinuousChargingCurrent -> continuous_charging_current.",
+    "Mapped Height to thickness for non-cylindrical cell format.",
+    "Converted from CellInfoRepository BatteryTypeJson format."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  },
+  "bibliography": {
+    "subject_of": [
+      {
+        "id": "https://doi.org/10.1016/j.est.2022.105467",
+        "doi": "10.1016/j.est.2022.105467",
+        "author": "Mussi, et al.",
+        "headline": "An online state of health estimation method for lithium-ion batteries based on time partitioning and data-driven model identification",
+        "date_published": 2022,
+        "description": "Mussi, et al. An online state of health estimation method for lithium-ion batteries based on time partitioning and data-driven model identification, Journal of Energy Storage, Volume 55, November 2022, 105467, https://doi.org/10.1016/j.est.2022.105467."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.apenergy.2012.09.030",
+        "doi": "10.1016/j.apenergy.2012.09.030",
+        "author": "Waag, et al.",
+        "headline": "Experimental investigation of the lithium-ion battery impedance characteristic at various conditions and aging states and its influence on the application",
+        "date_published": 2013,
+        "description": "Waag, et al. Experimental investigation of the lithium-ion battery impedance characteristic at various conditions and aging states and its influence on the application, Applied Energy, Volume 102, February 2013, 885-897, https://doi.org/10.1016/j.apenergy.2012.09.030."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.applthermaleng.2017.06.094",
+        "doi": "10.1016/j.applthermaleng.2017.06.094",
+        "author": "Martín-Martín, et al.",
+        "headline": "Modeling based on design of a dual thermal management system for the battery pack of a full electric minibus",
+        "date_published": 2017,
+        "description": "Martín-Martín, et al. Modeling based on design of a dual thermal management system for the battery pack of a full electric minibus, Applied Thermal Engineering, Volume 124, September 2017, 1142-1158, https://doi.org/10.1016/j.applthermaleng.2017.06.094."
+      },
+      {
+        "id": "https://doi.org/10.1016/j.jpowsour.2013.05.111",
+        "doi": "10.1016/j.jpowsour.2013.05.111",
+        "author": "Waag, et al.",
+        "headline": "Adaptive on-line prediction of the available power of lithium-ion batteries",
+        "date_published": 2013,
+        "description": "Waag, et al. Adaptive on-line prediction of the available power of lithium-ion batteries, Journal of Power Sources, Volume 242, November 2013, 548-559, https://doi.org/10.1016/j.jpowsour.2013.05.111."
+      },
+      {
+        "id": "https://doi.org/10.3390/en13174518",
+        "doi": "10.3390/en13174518",
+        "author": "Paul, et al.",
+        "headline": "Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle",
+        "date_published": 2020,
+        "description": "Paul, et al. Sizing of Lithium-Ion Battery/Supercapacitor Hybrid Energy Storage System for Forklift Vehicle, Energies, Volume 13, September 2020, 4518, https://doi.org/10.3390/en13174518."
+      }
+    ]
+  }
+}

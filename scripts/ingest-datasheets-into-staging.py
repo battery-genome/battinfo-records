@@ -34,7 +34,7 @@ class StagedRecord:
 
     @property
     def manufacturer(self) -> str:
-        product = self.payload.get("product", {})
+        product = self.payload.get("cell_spec", {})
         manufacturer = product.get("manufacturer", {})
         if isinstance(manufacturer, dict):
             return str(manufacturer.get("name", "")).strip()
@@ -42,7 +42,7 @@ class StagedRecord:
 
     @property
     def model(self) -> str:
-        return str(self.payload.get("product", {}).get("model", "")).strip()
+        return str(self.payload.get("cell_spec", {}).get("model", "")).strip()
 
 
 @dataclass
@@ -55,10 +55,10 @@ class DatasheetCandidate:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Supplement BattINFO staging cell-type records from local datasheets.")
+    parser = argparse.ArgumentParser(description="Supplement BattINFO staging cell-spec records from local datasheets.")
     parser.add_argument(
         "--staging-dir",
-        default=r"c:\Users\simonc\Documents\Github-local\battery-genome\battinfo-records\records\_staging\cell-type",
+        default=r"c:\Users\simonc\Documents\Github-local\battery-genome\battinfo-records\records\_staging\cell-spec",
     )
     parser.add_argument("--datasheets-dir", default=r"D:\datasheets")
     parser.add_argument(
@@ -467,12 +467,12 @@ def choose_source_text(candidate: DatasheetCandidate) -> str:
 
 def supplement_record(record: StagedRecord, candidate: DatasheetCandidate, parsed: dict[str, Any]) -> bool:
     changed = False
-    product = record.payload.setdefault("product", {})
-    specs = record.payload.setdefault("specs", {})
+    product = record.payload.setdefault("cell_spec", {})
+    specs = record.payload.setdefault("properties", {})
     for key in ["cell_format", "chemistry", "positive_electrode_basis", "negative_electrode_basis", "size_code", "year"]:
         if set_if_missing(product, key, parsed.get(key)):
             changed = True
-    for key, value in parsed["specs"].items():
+    for key, value in parsed["properties"].items():
         if key not in specs:
             specs[key] = value
             changed = True
@@ -487,7 +487,7 @@ def build_new_record(candidate: DatasheetCandidate, parsed: dict[str, Any], retr
     uid = stable_uid(f"datasheet::{candidate.manufacturer.lower()}::{candidate.model.lower()}")
     record: dict[str, Any] = {
         "schema_version": "0.1.0",
-        "product": {
+        "cell_spec": {
             "id": f"https://w3id.org/battinfo/spec/{uid}",
             "short_id": uid.replace("-", "")[:6],
             "identifier": f"datasheet:{candidate.stem}::{candidate.model}" if "__" in candidate.stem else f"datasheet:{candidate.stem}",
@@ -498,7 +498,7 @@ def build_new_record(candidate: DatasheetCandidate, parsed: dict[str, Any], retr
             "cell_format": parsed["cell_format"],
             "chemistry": parsed["chemistry"],
         },
-        "specs": parsed["specs"],
+        "properties": parsed["properties"],
         "provenance": {
             "source_type": "datasheet",
             "source_file": candidate.source_path.as_posix(),
@@ -510,7 +510,7 @@ def build_new_record(candidate: DatasheetCandidate, parsed: dict[str, Any], retr
     for key in ["positive_electrode_basis", "negative_electrode_basis", "size_code", "year"]:
         value = parsed.get(key)
         if value not in (None, "", "unknown"):
-            record["product"][key] = value
+            record["cell_spec"][key] = value
     return record
 
 
@@ -526,7 +526,7 @@ def parse_candidate(candidate: DatasheetCandidate) -> dict[str, Any]:
         "positive_electrode_basis": positive_electrode_basis,
         "negative_electrode_basis": negative_electrode_basis,
         "year": parse_year(text),
-        "specs": specs,
+        "properties": specs,
     }
 
 
@@ -536,7 +536,7 @@ def load_staged_records(staging_dir: Path) -> list[StagedRecord]:
         payload = json.loads(path.read_text(encoding="utf-8"))
         if not isinstance(payload, dict):
             continue
-        if "product" not in payload:
+        if "cell_spec" not in payload:
             continue
         records.append(StagedRecord(path=path, payload=payload))
     return records

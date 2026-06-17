@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/90r7-ged3-f4th-hxf9",
+    "short_id": "90r7ge",
+    "identifier": "cell-spec:90r7-ged3-f4th-hxf9",
+    "name": "KODAK LR41",
+    "model": "LR41",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "KODAK",
+      "id": "https://w3id.org/battinfo/organization/fw54-fz4n-krpj-8e2n"
+    },
+    "cell_format": "unknown",
+    "chemistry": "unknown"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/KODAK__LR41.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "03d039288174050487bb18fbcfd1ed6590b5237da6664ec077d8152bee924d81"
+  },
+  "notes": [
+    "Created from local datasheet intake."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

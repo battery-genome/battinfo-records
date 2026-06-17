@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/e71g-d3gp-eds1-56e8",
+    "short_id": "e71gd3",
+    "identifier": "cell-spec:e71g-d3gp-eds1-56e8",
+    "name": "LG INR18650-M26",
+    "model": "INR18650-M26",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LG",
+      "id": "https://w3id.org/battinfo/organization/xsa9-ke9k-e8d2-0nrn"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LG__INR18650-M26.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "b410970987148f915887aa82931449c9eb8e986e8df842977e42dee2610129b3"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

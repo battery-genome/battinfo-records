@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/6pvg-smj5-t4tx-fz3d",
+    "short_id": "6pvgsm",
+    "identifier": "cell-spec:6pvg-smj5-t4tx-fz3d",
+    "name": "TENPOWER INR18650-32HE",
+    "model": "INR18650-32HE",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "TENPOWER",
+      "id": "https://w3id.org/battinfo/organization/aes2-fjpq-xbzy-25a4"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {
+    "internal_resistance": {
+      "value": 35.0,
+      "unit": "mohm"
+    },
+    "mass": {
+      "value": 0.047,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/TENPOWER__INR18650-32HE.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "bd1ed45b13f3be4eb71583ad09dbd5661c19caef072f6f194d86b3c7e9a3223c"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

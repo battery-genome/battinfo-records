@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/2q5a-72xq-w0qx-ph2h",
+    "short_id": "2q5a72",
+    "identifier": "cell-spec:2q5a-72xq-w0qx-ph2h",
+    "name": "Panasonic NCR18650B",
+    "model": "NCR18650B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Panasonic",
+      "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "Li-ion",
+    "size_code": "R18650",
+    "year": 2000,
+    "rechargeable": true
+  },
+  "properties": {
+    "nominal_capacity": {
+      "value": 3.35,
+      "unit": "Ah"
+    },
+    "nominal_voltage": {
+      "value": 3.6,
+      "unit": "V"
+    },
+    "charging_voltage": {
+      "value": 4.2,
+      "unit": "V"
+    },
+    "mass": {
+      "value": 0.045,
+      "unit": "kg"
+    },
+    "diameter": {
+      "value": 0.018600000000000002,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/Panasonic__NCR18650B.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "fd4a44102e6c34589256774d0d6643a758105ab6e36e55cd118331c6708cfd82"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup.",
+    "Supplemented from datasheet Panasonic__NCR18650B.pdf."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/vd6r-wc7h-adat-h4y7",
+    "short_id": "vd6rwc",
+    "identifier": "cell-spec:vd6r-wc7h-adat-h4y7",
+    "name": "LITHIUMWERKS APR18650M1B",
+    "model": "APR18650M1B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "LITHIUMWERKS",
+      "id": "https://w3id.org/battinfo/organization/s687-avf9-wxcf-d69s"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/LITHIUMWERKS__APR18650M1B.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "d8a55cc02c1ad1b5395dbc0466412f900f299c7975f546721254654adb7d0ee8"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

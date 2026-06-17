@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/bfcx-sja2-kcg0-jq2t",
+    "short_id": "bfcxsj",
+    "identifier": "cell-spec:bfcx-sja2-kcg0-jq2t",
+    "name": "BAK N18650COP",
+    "model": "N18650COP",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "BAK",
+      "id": "https://w3id.org/battinfo/organization/9hkp-kfvx-hawe-fb0e"
+    },
+    "cell_format": "cylindrical",
+    "chemistry": "unknown",
+    "size_code": "R18650"
+  },
+  "properties": {
+    "diameter": {
+      "value": 0.00015,
+      "unit": "m"
+    }
+  },
+  "provenance": {
+    "source_type": "datasheet",
+    "source_file": "D:/datasheets/BAK__N18650COP.pdf",
+    "source_url": null,
+    "retrieved_at": 1774381923,
+    "file_hash": "aa024a0cc35167e599ef839a9f54e9e37de5cb091c581ffbefc4bebe05f70815"
+  },
+  "notes": [
+    "Created from local datasheet intake.",
+    "Normalized cylindrical format and size_code from embedded model code during datasheet cleanup."
+  ],
+  "editorial": {
+    "review_status": "auto-promoted",
+    "promoted_at": "2026-04-27",
+    "note": "Auto-promoted from staging. Passed strict BattINFO validation. Not individually reviewed against primary source."
+  }
+}

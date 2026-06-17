@@ -1,5 +1,5 @@
 """
-Backfills manufacturer.id (and brand.id where applicable) in cell-type records
+Backfills manufacturer.id (and brand.id where applicable) in cell-spec records
 by matching product.manufacturer.name against organization record names and alternateName.
 
 Run after curating organization records. Safe to re-run — only adds missing id fields,
@@ -14,7 +14,7 @@ import json
 from pathlib import Path
 
 RECORDS_DIR = Path(__file__).parent.parent / "records"
-CELL_TYPE_DIR = RECORDS_DIR / "cell-type"
+CELL_SPEC_DIR = RECORDS_DIR / "cell-spec"
 ORG_DIR = RECORDS_DIR / "organization"
 
 
@@ -47,13 +47,13 @@ def load_org_index() -> dict[str, str]:
 
 def backfill_record(record_path: Path, org_index: dict[str, str], dry_run: bool) -> bool:
     """
-    Adds manufacturer.id / brand.id to a cell-type record where a match is found.
+    Adds manufacturer.id / brand.id to a cell-spec record where a match is found.
     Returns True if the record was modified.
     """
     with open(record_path, encoding="utf-8") as f:
         rec = json.load(f)
 
-    product = rec.get("product", {})
+    product = rec.get("cell_spec", {})
     modified = False
 
     for field in ("manufacturer", "brand"):
@@ -98,8 +98,8 @@ def main() -> None:
     updated = 0
     unmatched: set[str] = set()
 
-    for record_path in sorted(CELL_TYPE_DIR.glob("*/record.json")):
-        product = json.loads(record_path.read_text(encoding="utf-8")).get("product", {})
+    for record_path in sorted(CELL_SPEC_DIR.glob("*/record.json")):
+        product = json.loads(record_path.read_text(encoding="utf-8")).get("cell_spec", {})
 
         for field in ("manufacturer", "brand"):
             org_block = product.get(field)

@@ -1,6 +1,6 @@
 """
 Adds publication links (from CellInfoRepository schema:subjectOf fields)
-to matching battinfo-records cell-type record.json files.
+to matching battinfo-records cell-spec record.json files.
 
 For DOI entries, CrossRef metadata is fetched and stored in the BibliographyEntry
 (headline, author, date_published, description) so the platform can render full
@@ -436,7 +436,7 @@ def build_entry(url: str, doi_cache: dict[str, dict | None]) -> dict:
 
 
 def main() -> None:
-    records_dir = Path(__file__).parent.parent / "records" / "cell-type"
+    records_dir = Path(__file__).parent.parent / "records" / "cell-spec"
     doi_cache: dict[str, dict | None] = {}
     updated = 0
     no_match = 0
