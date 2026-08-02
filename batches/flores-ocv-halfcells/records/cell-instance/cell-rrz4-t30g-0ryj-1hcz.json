@@ -1,0 +1,130 @@
+{
+  "schema_version": "0.2.0",
+  "cell_instance": {
+    "id": "https://w3id.org/battinfo/cell/rrz4-t30g-0ryj-1hcz",
+    "short_id": "rrz4t3",
+    "cell_spec_id": "https://w3id.org/battinfo/spec/9jtk-4fxn-r8hr-jebs",
+    "name": "LFP-NMP-1",
+    "serial_number": "b89ab5",
+    "manufactured_at": 1749254400
+  },
+  "provenance": {
+    "source_type": "lab",
+    "citation": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1785705389,
+    "battinfo_version": "0.7.0"
+  },
+  "datasets": [
+    {
+      "id": "https://w3id.org/battinfo/dataset/33zm-8kjk-y6rs-sr0v",
+      "role": "raw"
+    }
+  ],
+  "notes": [
+    "Public label LFP-NMP-1; NMP/organic-solvent-processed; electrode source Gelon LIB (commercial electrode).",
+    "As-built electrode figures for this specific cell (from metadata.csv):",
+    "  active_material_mass = 20.66812 mg",
+    "  electrode_coating_mass = 0.02175599 g",
+    "  active_material_mass_fraction = 95.0 %",
+    "  electrode_diameter = 14.0 mm",
+    "  dry_thickness = 78.0 um",
+    "  nominal_areal_capacity = 2.0 mAh/cm2",
+    "  electrode_loading = 0.0134267 g/cm2"
+  ],
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

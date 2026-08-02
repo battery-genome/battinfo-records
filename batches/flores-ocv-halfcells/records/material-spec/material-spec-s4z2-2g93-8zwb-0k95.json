@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.2.0",
+  "material_spec": {
+    "id": "https://w3id.org/battinfo/spec/s4z2-2g93-8zwb-0k95",
+    "short_id": "s4z22g",
+    "name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
+    "material_class": "active_material",
+    "electrode_polarity": "positive",
+    "formula": "LiNi0.5Mn0.3Co0.2O2",
+    "chemistry_family": "nmc",
+    "description": "LiNi0.5Mn0.3Co0.2O2 layered oxide positive-electrode active material (commercial electrode)."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1785705389,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  }
+}

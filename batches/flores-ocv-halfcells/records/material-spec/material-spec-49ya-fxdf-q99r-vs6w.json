@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.2.0",
+  "material_spec": {
+    "id": "https://w3id.org/battinfo/spec/49ya-fxdf-q99r-vs6w",
+    "short_id": "49yafx",
+    "name": "NMC111 (LiNi1/3Mn1/3Co1/3O2)",
+    "material_class": "active_material",
+    "electrode_polarity": "positive",
+    "formula": "LiNi0.33Mn0.33Co0.33O2",
+    "chemistry_family": "nmc",
+    "description": "LiNi1/3Mn1/3Co1/3O2 layered oxide positive-electrode active material (commercial electrode)."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1785705389,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  }
+}
