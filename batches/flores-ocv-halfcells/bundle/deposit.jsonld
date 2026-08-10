@@ -1102,7 +1102,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e"
           },
-          "schema:sha256": "7e779f63372291ad56b2e01de6639cc7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "7e779f63372291ad56b2e01de6639cc7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "448521798"
         },
@@ -1114,7 +1119,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0hg5-mk4b-defj-q8js"
           },
-          "schema:sha256": "d49c62d3cd030c38bdeb4d4f9f061e4f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d49c62d3cd030c38bdeb4d4f9f061e4f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "1776555"
         },
@@ -1126,7 +1136,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0mhj-teyc-7rw9-cdm9"
           },
-          "schema:sha256": "50f225fe5b3a00472f8f41665ba0d2cc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "50f225fe5b3a00472f8f41665ba0d2cc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3236907"
         },
@@ -1138,7 +1153,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0p0r-755c-j3ys-44jn"
           },
-          "schema:sha256": "80be7c96c4c7124a74eed799e88f4336",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "80be7c96c4c7124a74eed799e88f4336"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3398008"
         },
@@ -1150,7 +1170,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/2az8-5xcc-r2rg-npt9"
           },
-          "schema:sha256": "4068f36575b9066e0ebe2dfc91d79187",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "4068f36575b9066e0ebe2dfc91d79187"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "304747549"
         },
@@ -1162,7 +1187,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/2k1x-6ndw-wj3p-wspj"
           },
-          "schema:sha256": "56f451fa947c8aca09e1af9a940b4b24",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "56f451fa947c8aca09e1af9a940b4b24"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "315773404"
         },
@@ -1174,7 +1204,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/34cj-ecdk-414d-4h6w"
           },
-          "schema:sha256": "5d99b4fbaf00fd8729a90e35a29f6588",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5d99b4fbaf00fd8729a90e35a29f6588"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3310531"
         },
@@ -1186,7 +1221,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3asp-cmph-hx59-pcmz"
           },
-          "schema:sha256": "b45a89cbeeb3578e817ceab5162c365f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "b45a89cbeeb3578e817ceab5162c365f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3217250"
         },
@@ -1198,7 +1238,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3dfm-wp3e-zbv4-g463"
           },
-          "schema:sha256": "efdaead64731358029cca57e80f6dd0b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "efdaead64731358029cca57e80f6dd0b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "295875179"
         },
@@ -1210,7 +1255,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3fm6-cjrh-hbpd-frpg"
           },
-          "schema:sha256": "d09c2d87808424ee505cf3ce897d42db",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d09c2d87808424ee505cf3ce897d42db"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "409015698"
         },
@@ -1222,7 +1272,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3hy8-wn75-pj9j-1k05"
           },
-          "schema:sha256": "282e9881c0e0bb7cbc802f52e2aae6be",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "282e9881c0e0bb7cbc802f52e2aae6be"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "352164379"
         },
@@ -1234,7 +1289,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3jnp-3tde-khfr-hxmv"
           },
-          "schema:sha256": "a0594cc3621b3d03fdf146eb53634384",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a0594cc3621b3d03fdf146eb53634384"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "104642974"
         },
@@ -1246,7 +1306,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3m3r-fcmb-1xj4-8b8v"
           },
-          "schema:sha256": "5f02c48bbe87383cb5bc365da39ff394",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5f02c48bbe87383cb5bc365da39ff394"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "317114459"
         },
@@ -1258,7 +1323,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3q18-65k4-tm3t-httm"
           },
-          "schema:sha256": "1b185bc2eb4427090b1dc94cab938d71",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1b185bc2eb4427090b1dc94cab938d71"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3390982"
         },
@@ -1270,7 +1340,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3rag-z9p9-5f46-m27y"
           },
-          "schema:sha256": "748fe4a65746e254ca8b64e4c0643510",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "748fe4a65746e254ca8b64e4c0643510"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "360937387"
         },
@@ -1282,7 +1357,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4r3r-5qat-z7x1-nkyf"
           },
-          "schema:sha256": "44a08f26029af598db6b1f4c390870ee",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "44a08f26029af598db6b1f4c390870ee"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "377330629"
         },
@@ -1294,7 +1374,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4v2w-cbfn-e3d0-rexf"
           },
-          "schema:sha256": "ed9097159a7fbf62f885e38fc6bd0526",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ed9097159a7fbf62f885e38fc6bd0526"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "397441787"
         },
@@ -1306,7 +1391,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4ywg-49fr-1hyt-p1hr"
           },
-          "schema:sha256": "8faee80fd07c4a87ea3486eb56b425c0",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8faee80fd07c4a87ea3486eb56b425c0"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3027101"
         },
@@ -1318,7 +1408,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/54s2-jq55-bkyx-gbpv"
           },
-          "schema:sha256": "c15963d82ea8f4b5a26b1795378cf700",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c15963d82ea8f4b5a26b1795378cf700"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3595145"
         },
@@ -1330,7 +1425,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5rj0-7jpd-r8yq-0mej"
           },
-          "schema:sha256": "dd2fd01836d61eb10a0e5eb7ab1f38d3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "dd2fd01836d61eb10a0e5eb7ab1f38d3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "348183374"
         },
@@ -1342,7 +1442,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5tt7-9gy3-yjye-s7f1"
           },
-          "schema:sha256": "20e8f367ef71c570c1d5a172b5c321d7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "20e8f367ef71c570c1d5a172b5c321d7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2876555"
         },
@@ -1354,7 +1459,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5xnn-g8vy-66yh-8mg3"
           },
-          "schema:sha256": "66246fb7b2d872ec3f6fd032613ea096",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "66246fb7b2d872ec3f6fd032613ea096"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "356076285"
         },
@@ -1366,7 +1476,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5znt-3fev-2rv0-r1n9"
           },
-          "schema:sha256": "57b0a9d5ed052556a7d518944f70289c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "57b0a9d5ed052556a7d518944f70289c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3422895"
         },
@@ -1378,7 +1493,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6721-0dt8-vtr3-z7v5"
           },
-          "schema:sha256": "cab55b3c4a15bdf7d126e3e9ada6ebec",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "cab55b3c4a15bdf7d126e3e9ada6ebec"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3275670"
         },
@@ -1390,7 +1510,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/67ny-yj72-ywms-kr2t"
           },
-          "schema:sha256": "c01e2ea0331c019977931248a53d3737",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c01e2ea0331c019977931248a53d3737"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3088087"
         },
@@ -1402,7 +1527,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6apx-93qw-y3wj-9ps0"
           },
-          "schema:sha256": "c9c05240b12634366d1ee8efcc8f78a7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c9c05240b12634366d1ee8efcc8f78a7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3072213"
         },
@@ -1414,7 +1544,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6smz-ectt-adch-vc49"
           },
-          "schema:sha256": "f6b4477abdd60b39af5ddc9cb34c47ea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f6b4477abdd60b39af5ddc9cb34c47ea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "381844249"
         },
@@ -1426,7 +1561,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/70m8-7gg1-c29v-qf2q"
           },
-          "schema:sha256": "8c9fe600a806b3290518f4d1138be98c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8c9fe600a806b3290518f4d1138be98c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2731706"
         },
@@ -1438,7 +1578,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/744m-pk0j-4a65-m475"
           },
-          "schema:sha256": "0d9122c66589b9913198ba864614a904",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0d9122c66589b9913198ba864614a904"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3380953"
         },
@@ -1450,7 +1595,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/7ajx-91kx-rydg-nx9g"
           },
-          "schema:sha256": "330d741b309fb6459d80932ec3add83f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "330d741b309fb6459d80932ec3add83f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "319131538"
         },
@@ -1462,7 +1612,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/7qj7-5f15-r7zq-9vd6"
           },
-          "schema:sha256": "e4d239b81f32740bbe4a0871a7dc9ee8",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e4d239b81f32740bbe4a0871a7dc9ee8"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "213644367"
         },
@@ -1474,7 +1629,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/8neh-7v76-32p2-b7dg"
           },
-          "schema:sha256": "6faffc98a40ae2b3fa4092b44501af48",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "6faffc98a40ae2b3fa4092b44501af48"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "356039608"
         },
@@ -1486,7 +1646,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/90wy-7j7t-3xse-eacq"
           },
-          "schema:sha256": "198ae2080f7c17c805dbf55a9db86061",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "198ae2080f7c17c805dbf55a9db86061"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "203386041"
         },
@@ -1498,7 +1663,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/a868-1kpb-vkfp-5c4c"
           },
-          "schema:sha256": "144f2814e2af4d845d9a007d99b02046",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "144f2814e2af4d845d9a007d99b02046"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "335095378"
         },
@@ -1510,7 +1680,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/ajnf-fgs6-st7z-td9v"
           },
-          "schema:sha256": "2ed16f1e796b4ac265e975502c60507a",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "2ed16f1e796b4ac265e975502c60507a"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2829110"
         },
@@ -1522,7 +1697,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/b93n-k3q0-w7pj-gswz"
           },
-          "schema:sha256": "42d8dba0fd7a218dc4c44b537956e602",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "42d8dba0fd7a218dc4c44b537956e602"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "395754492"
         },
@@ -1534,7 +1714,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/br5k-t9g0-9kz2-xc9n"
           },
-          "schema:sha256": "5d49dce797a02b9465966c1348728da9",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5d49dce797a02b9465966c1348728da9"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "333352184"
         },
@@ -1546,7 +1731,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/bs46-6ewk-pqat-xafn"
           },
-          "schema:sha256": "158082e2231dda577e8749621f514cfc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "158082e2231dda577e8749621f514cfc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "308356545"
         },
@@ -1558,7 +1748,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/c013-hz5e-g8h9-8025"
           },
-          "schema:sha256": "5127891144ae474658ca943835d3a56d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5127891144ae474658ca943835d3a56d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3462862"
         },
@@ -1570,7 +1765,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/cmxa-sn8z-a80x-3w12"
           },
-          "schema:sha256": "665b485d93153e6f47b1c7ce25c8da5d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "665b485d93153e6f47b1c7ce25c8da5d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "332647458"
         },
@@ -1582,7 +1782,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/cxe2-g31q-nrbz-9kjn"
           },
-          "schema:sha256": "fe7aa147d794f22ca466da2e5d597fb7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fe7aa147d794f22ca466da2e5d597fb7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "320204224"
         },
@@ -1594,7 +1799,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/d0ht-kf1r-4tvr-gehm"
           },
-          "schema:sha256": "e26d80e600269804b8b10e0f9072f5b2",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e26d80e600269804b8b10e0f9072f5b2"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2668120"
         },
@@ -1606,7 +1816,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/dgbg-b33d-hsv0-a95t"
           },
-          "schema:sha256": "e28c007c6c1192acf013f464f815abea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e28c007c6c1192acf013f464f815abea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2036779"
         },
@@ -1618,7 +1833,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/f032-baz8-v3nc-1kpj"
           },
-          "schema:sha256": "c6f9b0ccd2249f18e394bd5f75abb2b4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c6f9b0ccd2249f18e394bd5f75abb2b4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2692110"
         },
@@ -1630,7 +1850,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/fsn5-r1mf-01na-bzqx"
           },
-          "schema:sha256": "278e279ac0739f1d211a6233fd4fab3e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "278e279ac0739f1d211a6233fd4fab3e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3312256"
         },
@@ -1642,7 +1867,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/g357-c7p3-d0f8-t319"
           },
-          "schema:sha256": "0b7ef0c932ac323e99b0dc46d7f5e80b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0b7ef0c932ac323e99b0dc46d7f5e80b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2912212"
         },
@@ -1654,7 +1884,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gby4-ez35-p2f1-58qe"
           },
-          "schema:sha256": "75980678d8452820f5528a37a5e243d4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "75980678d8452820f5528a37a5e243d4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "219578283"
         },
@@ -1666,7 +1901,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gd93-v11s-d3zk-bkp4"
           },
-          "schema:sha256": "c6b9f890e107ff8cb811d9cac93a4605",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c6b9f890e107ff8cb811d9cac93a4605"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "303240905"
         },
@@ -1678,7 +1918,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gj2x-sx6z-jjkx-1ncg"
           },
-          "schema:sha256": "a2a66f72b5b85342c8c3ba1bc2a86ab3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a2a66f72b5b85342c8c3ba1bc2a86ab3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "307924666"
         },
@@ -1690,7 +1935,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/h3r3-afpd-gsfk-5whv"
           },
-          "schema:sha256": "f9c6c5146d7651b1d569a895f6215409",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f9c6c5146d7651b1d569a895f6215409"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "328752157"
         },
@@ -1702,7 +1952,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/h63y-vnek-g4r1-5kvx"
           },
-          "schema:sha256": "5dd8d0ce233185f5563e26976fa0f941",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5dd8d0ce233185f5563e26976fa0f941"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3710432"
         },
@@ -1714,7 +1969,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/hymr-1a46-ceax-0tsm"
           },
-          "schema:sha256": "142c43921f53c56fb6b03fbe57fa8667",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "142c43921f53c56fb6b03fbe57fa8667"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2798338"
         },
@@ -1726,7 +1986,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/jmpm-nzas-4cgw-2xjj"
           },
-          "schema:sha256": "fa3e699b8ac65daa493fd2aeff170037",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fa3e699b8ac65daa493fd2aeff170037"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "240339378"
         },
@@ -1738,7 +2003,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/jzsv-6aqy-1d13-5sft"
           },
-          "schema:sha256": "35c470b1ae07aff28839ab252237a395",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "35c470b1ae07aff28839ab252237a395"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "325232028"
         },
@@ -1750,7 +2020,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/k38y-xfdr-mdna-004q"
           },
-          "schema:sha256": "fa2bdc86275a19a551495cda90acb287",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fa2bdc86275a19a551495cda90acb287"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3026597"
         },
@@ -1762,7 +2037,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/k7yq-05ky-6m6v-1845"
           },
-          "schema:sha256": "d7bb915cc9f8dbde6ab9551655278b19",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d7bb915cc9f8dbde6ab9551655278b19"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3665556"
         },
@@ -1774,7 +2054,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kgh4-yye2-36fz-t0g5"
           },
-          "schema:sha256": "28c7a4d94006e2c71ec3c43282d3eefd",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "28c7a4d94006e2c71ec3c43282d3eefd"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3111811"
         },
@@ -1786,7 +2071,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kt2j-e6az-72hb-65cp"
           },
-          "schema:sha256": "f1de5e40351e372ff7d8e007d7bbc8dc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f1de5e40351e372ff7d8e007d7bbc8dc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "363973843"
         },
@@ -1798,7 +2088,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kxa9-p9vd-78cg-vatm"
           },
-          "schema:sha256": "fefc5c67ce3e8ecbfad05090ec5e3084",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fefc5c67ce3e8ecbfad05090ec5e3084"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "338117291"
         },
@@ -1810,7 +2105,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/m874-2djx-xz93-qab3"
           },
-          "schema:sha256": "e391b3eb73064ba7efe4376c4f321088",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e391b3eb73064ba7efe4376c4f321088"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2085522"
         },
@@ -1822,7 +2122,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/mkdd-864w-73hr-pyy3"
           },
-          "schema:sha256": "f875674c607fe898a7c6f5a75c03a1d6",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f875674c607fe898a7c6f5a75c03a1d6"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3504698"
         },
@@ -1834,7 +2139,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/mr19-8rww-0svx-9ca9"
           },
-          "schema:sha256": "0fb63510cbcad34da9c7400de8f61363",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0fb63510cbcad34da9c7400de8f61363"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "350336391"
         },
@@ -1846,7 +2156,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/n1h3-q5f0-86ms-yta4"
           },
-          "schema:sha256": "e3518acc300a012b01cda62ed5d15c53",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e3518acc300a012b01cda62ed5d15c53"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "319718804"
         },
@@ -1858,7 +2173,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/n7rx-efcg-dc1w-8nbm"
           },
-          "schema:sha256": "094fa7d5647e11a880199d65da426644",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "094fa7d5647e11a880199d65da426644"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3029857"
         },
@@ -1870,7 +2190,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/prsq-s728-7cwt-186n"
           },
-          "schema:sha256": "8b9edf603efcdce0c4825bbf9a0b0e45",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8b9edf603efcdce0c4825bbf9a0b0e45"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "373103529"
         },
@@ -1882,7 +2207,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/pxhb-w7r4-mm4r-7xh7"
           },
-          "schema:sha256": "3bba6863d83c120221cfc85ea669c81d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "3bba6863d83c120221cfc85ea669c81d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "353923456"
         },
@@ -1894,7 +2224,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/qm7k-a52p-sbxy-dx6p"
           },
-          "schema:sha256": "3efea83aa4a59c500bde5723a67e3c3c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "3efea83aa4a59c500bde5723a67e3c3c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2845751"
         },
@@ -1906,7 +2241,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r52j-75c3-5nsh-yk82"
           },
-          "schema:sha256": "ad72a20a54cbda20b31407f72a3ce3b7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ad72a20a54cbda20b31407f72a3ce3b7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3434948"
         },
@@ -1918,7 +2258,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r5qf-v48k-rmnf-dfqz"
           },
-          "schema:sha256": "1fa1539e2ed3312f555993b07118d366",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1fa1539e2ed3312f555993b07118d366"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3085726"
         },
@@ -1930,7 +2275,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r6p0-6x3z-enp4-97sb"
           },
-          "schema:sha256": "6120ac14596d517552f00f325f12db0e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "6120ac14596d517552f00f325f12db0e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2704933"
         },
@@ -1942,7 +2292,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/rdnr-6emx-dsnp-9etd"
           },
-          "schema:sha256": "9cd846ccff927b7ddf1f712eb291bd3b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "9cd846ccff927b7ddf1f712eb291bd3b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "308761095"
         },
@@ -1954,7 +2309,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/s9fb-w89g-9324-j0gb"
           },
-          "schema:sha256": "88287c399e481341d9cffc46158b1390",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "88287c399e481341d9cffc46158b1390"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "314704889"
         },
@@ -1966,7 +2326,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/sfd6-mp02-zyj1-yzzg"
           },
-          "schema:sha256": "c9e8b54892144f05c92aab6f54e6a04e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c9e8b54892144f05c92aab6f54e6a04e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "234764577"
         },
@@ -1978,7 +2343,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/stad-s5pk-j61w-qzbd"
           },
-          "schema:sha256": "15a57327564ba34d9542041223dfd991",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "15a57327564ba34d9542041223dfd991"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "339875848"
         },
@@ -1990,7 +2360,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/t86z-srrk-8jy9-zeay"
           },
-          "schema:sha256": "ffbfa768d28bea6e02d425aef5c2a7dd",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ffbfa768d28bea6e02d425aef5c2a7dd"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3683267"
         },
@@ -2002,7 +2377,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/t9k1-m53j-9473-kndk"
           },
-          "schema:sha256": "00a49bd5bb388ea046924071ec2f86b5",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "00a49bd5bb388ea046924071ec2f86b5"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2030427"
         },
@@ -2014,7 +2394,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/tjqt-7rq5-wx7a-64he"
           },
-          "schema:sha256": "251c6977b9606e6791c871b9bffe7595",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "251c6977b9606e6791c871b9bffe7595"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2998706"
         },
@@ -2026,7 +2411,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/vp5s-f4xj-ahst-4ff0"
           },
-          "schema:sha256": "86307ce960da6429ddf32661c61e41b5",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "86307ce960da6429ddf32661c61e41b5"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2994141"
         },
@@ -2038,7 +2428,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/w6qp-dj7j-yvmn-vyhe"
           },
-          "schema:sha256": "a846c83063a6b3c181e089816d7bcf52",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a846c83063a6b3c181e089816d7bcf52"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3074202"
         },
@@ -2050,7 +2445,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/x2wj-eqqj-mdm3-tca3"
           },
-          "schema:sha256": "9fc25802d38df020288a8674a2daaee4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "9fc25802d38df020288a8674a2daaee4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "357611393"
         },
@@ -2062,7 +2462,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/x9qa-b80e-ags5-0eyk"
           },
-          "schema:sha256": "ebdc96c281f058563255ddc1030d0398",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ebdc96c281f058563255ddc1030d0398"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2918690"
         },
@@ -2074,7 +2479,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xb4r-awft-epz5-fvkk"
           },
-          "schema:sha256": "e1ec3f7690abee20f353a596247be148",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e1ec3f7690abee20f353a596247be148"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3708035"
         },
@@ -2086,7 +2496,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xevf-5hwh-n7ya-yqmb"
           },
-          "schema:sha256": "1a75497fd8a59359f522f8460c74a647",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1a75497fd8a59359f522f8460c74a647"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2932912"
         },
@@ -2098,7 +2513,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xskp-wcgn-rpmv-jz79"
           },
-          "schema:sha256": "2da35d9df5afccaa6d93876dbe7523f3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "2da35d9df5afccaa6d93876dbe7523f3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2730796"
         },
@@ -2110,7 +2530,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xvpm-54m5-55sg-g47k"
           },
-          "schema:sha256": "0a710d36da9238c5ad212e7b5028e3ea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0a710d36da9238c5ad212e7b5028e3ea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3731498"
         },
@@ -2122,7 +2547,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xvt1-z51a-jskf-rbxb"
           },
-          "schema:sha256": "a78836bbd2e319b3dcc864f7cf189b17",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a78836bbd2e319b3dcc864f7cf189b17"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2815229"
         },
@@ -2134,7 +2564,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xy0c-dyrv-q8x6-gfkg"
           },
-          "schema:sha256": "fcdaeda82e4dabe9de40e184f51ac36e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fcdaeda82e4dabe9de40e184f51ac36e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "389552692"
         },
@@ -2146,7 +2581,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y62v-6js9-afpn-6515"
           },
-          "schema:sha256": "a014f11ce3a2dbe6d71a23b322bd8998",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a014f11ce3a2dbe6d71a23b322bd8998"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "299109815"
         },
@@ -2158,7 +2598,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y6bs-pham-d2tj-aj03"
           },
-          "schema:sha256": "86816e092136b77053fc3917ab8e5627",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "86816e092136b77053fc3917ab8e5627"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "362041386"
         },
@@ -2170,7 +2615,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y6m8-rwv1-hb9b-w9fa"
           },
-          "schema:sha256": "934846a01bfccd4058aaa3d19424ee4f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "934846a01bfccd4058aaa3d19424ee4f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3386890"
         },
@@ -2182,7 +2632,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/yvwr-sj3p-k3ye-f424"
           },
-          "schema:sha256": "22cddf70cdf1a4432440cf94c19e3e6a",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "22cddf70cdf1a4432440cf94c19e3e6a"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2995529"
         },
@@ -2194,7 +2649,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/z5dp-4g73-5yvs-e0j6"
           },
-          "schema:sha256": "ad174523bbf2de33ffc00cbb742c2dc8",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ad174523bbf2de33ffc00cbb742c2dc8"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "337769418"
         },
@@ -2206,7 +2666,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/z89x-3wxx-dmgd-5yp0"
           },
-          "schema:sha256": "c63099456f0a43d26dbdb8aed2bf3c05",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c63099456f0a43d26dbdb8aed2bf3c05"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "543977061"
         },
@@ -2218,7 +2683,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/zevq-1vsr-wx7k-p1mh"
           },
-          "schema:sha256": "230fecae5bda7b479de5e9e826000a30",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "230fecae5bda7b479de5e9e826000a30"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2770729"
         },
@@ -2230,7 +2700,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/zj71-ark8-6j8b-vwj5"
           },
-          "schema:sha256": "113a34a036e69af6a0fc732a9a2445a9",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "113a34a036e69af6a0fc732a9a2445a9"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "237263457"
         }
@@ -2584,7 +3059,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "7e779f63372291ad56b2e01de6639cc7"
           },
@@ -2600,7 +3075,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e"
           },
-          "schema:sha256": "7e779f63372291ad56b2e01de6639cc7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "7e779f63372291ad56b2e01de6639cc7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "448521798"
         }
@@ -2766,7 +3246,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "d49c62d3cd030c38bdeb4d4f9f061e4f"
           },
@@ -2782,7 +3262,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0hg5-mk4b-defj-q8js"
           },
-          "schema:sha256": "d49c62d3cd030c38bdeb4d4f9f061e4f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d49c62d3cd030c38bdeb4d4f9f061e4f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "1776555"
         }
@@ -2948,7 +3433,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "50f225fe5b3a00472f8f41665ba0d2cc"
           },
@@ -2964,7 +3449,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0mhj-teyc-7rw9-cdm9"
           },
-          "schema:sha256": "50f225fe5b3a00472f8f41665ba0d2cc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "50f225fe5b3a00472f8f41665ba0d2cc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3236907"
         }
@@ -3130,7 +3620,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "80be7c96c4c7124a74eed799e88f4336"
           },
@@ -3146,7 +3636,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/0p0r-755c-j3ys-44jn"
           },
-          "schema:sha256": "80be7c96c4c7124a74eed799e88f4336",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "80be7c96c4c7124a74eed799e88f4336"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3398008"
         }
@@ -3312,7 +3807,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "4068f36575b9066e0ebe2dfc91d79187"
           },
@@ -3328,7 +3823,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/2az8-5xcc-r2rg-npt9"
           },
-          "schema:sha256": "4068f36575b9066e0ebe2dfc91d79187",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "4068f36575b9066e0ebe2dfc91d79187"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "304747549"
         }
@@ -3494,7 +3994,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "56f451fa947c8aca09e1af9a940b4b24"
           },
@@ -3510,7 +4010,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/2k1x-6ndw-wj3p-wspj"
           },
-          "schema:sha256": "56f451fa947c8aca09e1af9a940b4b24",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "56f451fa947c8aca09e1af9a940b4b24"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "315773404"
         }
@@ -3676,7 +4181,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "5d99b4fbaf00fd8729a90e35a29f6588"
           },
@@ -3692,7 +4197,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/34cj-ecdk-414d-4h6w"
           },
-          "schema:sha256": "5d99b4fbaf00fd8729a90e35a29f6588",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5d99b4fbaf00fd8729a90e35a29f6588"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3310531"
         }
@@ -3858,7 +4368,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "b45a89cbeeb3578e817ceab5162c365f"
           },
@@ -3874,7 +4384,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3asp-cmph-hx59-pcmz"
           },
-          "schema:sha256": "b45a89cbeeb3578e817ceab5162c365f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "b45a89cbeeb3578e817ceab5162c365f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3217250"
         }
@@ -4040,7 +4555,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "efdaead64731358029cca57e80f6dd0b"
           },
@@ -4056,7 +4571,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3dfm-wp3e-zbv4-g463"
           },
-          "schema:sha256": "efdaead64731358029cca57e80f6dd0b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "efdaead64731358029cca57e80f6dd0b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "295875179"
         }
@@ -4222,7 +4742,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "d09c2d87808424ee505cf3ce897d42db"
           },
@@ -4238,7 +4758,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3fm6-cjrh-hbpd-frpg"
           },
-          "schema:sha256": "d09c2d87808424ee505cf3ce897d42db",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d09c2d87808424ee505cf3ce897d42db"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "409015698"
         }
@@ -4404,7 +4929,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "282e9881c0e0bb7cbc802f52e2aae6be"
           },
@@ -4420,7 +4945,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3hy8-wn75-pj9j-1k05"
           },
-          "schema:sha256": "282e9881c0e0bb7cbc802f52e2aae6be",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "282e9881c0e0bb7cbc802f52e2aae6be"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "352164379"
         }
@@ -4586,7 +5116,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "a0594cc3621b3d03fdf146eb53634384"
           },
@@ -4602,7 +5132,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3jnp-3tde-khfr-hxmv"
           },
-          "schema:sha256": "a0594cc3621b3d03fdf146eb53634384",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a0594cc3621b3d03fdf146eb53634384"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "104642974"
         }
@@ -4768,7 +5303,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "5f02c48bbe87383cb5bc365da39ff394"
           },
@@ -4784,7 +5319,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3m3r-fcmb-1xj4-8b8v"
           },
-          "schema:sha256": "5f02c48bbe87383cb5bc365da39ff394",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5f02c48bbe87383cb5bc365da39ff394"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "317114459"
         }
@@ -4950,7 +5490,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "1b185bc2eb4427090b1dc94cab938d71"
           },
@@ -4966,7 +5506,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3q18-65k4-tm3t-httm"
           },
-          "schema:sha256": "1b185bc2eb4427090b1dc94cab938d71",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1b185bc2eb4427090b1dc94cab938d71"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3390982"
         }
@@ -5132,7 +5677,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "748fe4a65746e254ca8b64e4c0643510"
           },
@@ -5148,7 +5693,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/3rag-z9p9-5f46-m27y"
           },
-          "schema:sha256": "748fe4a65746e254ca8b64e4c0643510",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "748fe4a65746e254ca8b64e4c0643510"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "360937387"
         }
@@ -5314,7 +5864,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "44a08f26029af598db6b1f4c390870ee"
           },
@@ -5330,7 +5880,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4r3r-5qat-z7x1-nkyf"
           },
-          "schema:sha256": "44a08f26029af598db6b1f4c390870ee",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "44a08f26029af598db6b1f4c390870ee"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "377330629"
         }
@@ -5496,7 +6051,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "ed9097159a7fbf62f885e38fc6bd0526"
           },
@@ -5512,7 +6067,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4v2w-cbfn-e3d0-rexf"
           },
-          "schema:sha256": "ed9097159a7fbf62f885e38fc6bd0526",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ed9097159a7fbf62f885e38fc6bd0526"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "397441787"
         }
@@ -5678,7 +6238,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "8faee80fd07c4a87ea3486eb56b425c0"
           },
@@ -5694,7 +6254,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/4ywg-49fr-1hyt-p1hr"
           },
-          "schema:sha256": "8faee80fd07c4a87ea3486eb56b425c0",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8faee80fd07c4a87ea3486eb56b425c0"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3027101"
         }
@@ -5860,7 +6425,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c15963d82ea8f4b5a26b1795378cf700"
           },
@@ -5876,7 +6441,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/54s2-jq55-bkyx-gbpv"
           },
-          "schema:sha256": "c15963d82ea8f4b5a26b1795378cf700",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c15963d82ea8f4b5a26b1795378cf700"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3595145"
         }
@@ -6042,7 +6612,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "dd2fd01836d61eb10a0e5eb7ab1f38d3"
           },
@@ -6058,7 +6628,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5rj0-7jpd-r8yq-0mej"
           },
-          "schema:sha256": "dd2fd01836d61eb10a0e5eb7ab1f38d3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "dd2fd01836d61eb10a0e5eb7ab1f38d3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "348183374"
         }
@@ -6224,7 +6799,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "20e8f367ef71c570c1d5a172b5c321d7"
           },
@@ -6240,7 +6815,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5tt7-9gy3-yjye-s7f1"
           },
-          "schema:sha256": "20e8f367ef71c570c1d5a172b5c321d7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "20e8f367ef71c570c1d5a172b5c321d7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2876555"
         }
@@ -6406,7 +6986,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "66246fb7b2d872ec3f6fd032613ea096"
           },
@@ -6422,7 +7002,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5xnn-g8vy-66yh-8mg3"
           },
-          "schema:sha256": "66246fb7b2d872ec3f6fd032613ea096",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "66246fb7b2d872ec3f6fd032613ea096"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "356076285"
         }
@@ -6588,7 +7173,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "57b0a9d5ed052556a7d518944f70289c"
           },
@@ -6604,7 +7189,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/5znt-3fev-2rv0-r1n9"
           },
-          "schema:sha256": "57b0a9d5ed052556a7d518944f70289c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "57b0a9d5ed052556a7d518944f70289c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3422895"
         }
@@ -6770,7 +7360,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "cab55b3c4a15bdf7d126e3e9ada6ebec"
           },
@@ -6786,7 +7376,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6721-0dt8-vtr3-z7v5"
           },
-          "schema:sha256": "cab55b3c4a15bdf7d126e3e9ada6ebec",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "cab55b3c4a15bdf7d126e3e9ada6ebec"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3275670"
         }
@@ -6952,7 +7547,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c01e2ea0331c019977931248a53d3737"
           },
@@ -6968,7 +7563,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/67ny-yj72-ywms-kr2t"
           },
-          "schema:sha256": "c01e2ea0331c019977931248a53d3737",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c01e2ea0331c019977931248a53d3737"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3088087"
         }
@@ -7134,7 +7734,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c9c05240b12634366d1ee8efcc8f78a7"
           },
@@ -7150,7 +7750,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6apx-93qw-y3wj-9ps0"
           },
-          "schema:sha256": "c9c05240b12634366d1ee8efcc8f78a7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c9c05240b12634366d1ee8efcc8f78a7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3072213"
         }
@@ -7316,7 +7921,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "f6b4477abdd60b39af5ddc9cb34c47ea"
           },
@@ -7332,7 +7937,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/6smz-ectt-adch-vc49"
           },
-          "schema:sha256": "f6b4477abdd60b39af5ddc9cb34c47ea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f6b4477abdd60b39af5ddc9cb34c47ea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "381844249"
         }
@@ -7498,7 +8108,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "8c9fe600a806b3290518f4d1138be98c"
           },
@@ -7514,7 +8124,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/70m8-7gg1-c29v-qf2q"
           },
-          "schema:sha256": "8c9fe600a806b3290518f4d1138be98c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8c9fe600a806b3290518f4d1138be98c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2731706"
         }
@@ -7680,7 +8295,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "0d9122c66589b9913198ba864614a904"
           },
@@ -7696,7 +8311,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/744m-pk0j-4a65-m475"
           },
-          "schema:sha256": "0d9122c66589b9913198ba864614a904",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0d9122c66589b9913198ba864614a904"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3380953"
         }
@@ -7862,7 +8482,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "330d741b309fb6459d80932ec3add83f"
           },
@@ -7878,7 +8498,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/7ajx-91kx-rydg-nx9g"
           },
-          "schema:sha256": "330d741b309fb6459d80932ec3add83f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "330d741b309fb6459d80932ec3add83f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "319131538"
         }
@@ -8044,7 +8669,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e4d239b81f32740bbe4a0871a7dc9ee8"
           },
@@ -8060,7 +8685,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/7qj7-5f15-r7zq-9vd6"
           },
-          "schema:sha256": "e4d239b81f32740bbe4a0871a7dc9ee8",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e4d239b81f32740bbe4a0871a7dc9ee8"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "213644367"
         }
@@ -8226,7 +8856,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "6faffc98a40ae2b3fa4092b44501af48"
           },
@@ -8242,7 +8872,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/8neh-7v76-32p2-b7dg"
           },
-          "schema:sha256": "6faffc98a40ae2b3fa4092b44501af48",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "6faffc98a40ae2b3fa4092b44501af48"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "356039608"
         }
@@ -8408,7 +9043,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "198ae2080f7c17c805dbf55a9db86061"
           },
@@ -8424,7 +9059,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/90wy-7j7t-3xse-eacq"
           },
-          "schema:sha256": "198ae2080f7c17c805dbf55a9db86061",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "198ae2080f7c17c805dbf55a9db86061"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "203386041"
         }
@@ -8590,7 +9230,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "144f2814e2af4d845d9a007d99b02046"
           },
@@ -8606,7 +9246,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/a868-1kpb-vkfp-5c4c"
           },
-          "schema:sha256": "144f2814e2af4d845d9a007d99b02046",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "144f2814e2af4d845d9a007d99b02046"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "335095378"
         }
@@ -8772,7 +9417,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "2ed16f1e796b4ac265e975502c60507a"
           },
@@ -8788,7 +9433,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/ajnf-fgs6-st7z-td9v"
           },
-          "schema:sha256": "2ed16f1e796b4ac265e975502c60507a",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "2ed16f1e796b4ac265e975502c60507a"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2829110"
         }
@@ -8954,7 +9604,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "42d8dba0fd7a218dc4c44b537956e602"
           },
@@ -8970,7 +9620,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/b93n-k3q0-w7pj-gswz"
           },
-          "schema:sha256": "42d8dba0fd7a218dc4c44b537956e602",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "42d8dba0fd7a218dc4c44b537956e602"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "395754492"
         }
@@ -9136,7 +9791,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "5d49dce797a02b9465966c1348728da9"
           },
@@ -9152,7 +9807,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/br5k-t9g0-9kz2-xc9n"
           },
-          "schema:sha256": "5d49dce797a02b9465966c1348728da9",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5d49dce797a02b9465966c1348728da9"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "333352184"
         }
@@ -9318,7 +9978,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "158082e2231dda577e8749621f514cfc"
           },
@@ -9334,7 +9994,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/bs46-6ewk-pqat-xafn"
           },
-          "schema:sha256": "158082e2231dda577e8749621f514cfc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "158082e2231dda577e8749621f514cfc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "308356545"
         }
@@ -9500,7 +10165,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "5127891144ae474658ca943835d3a56d"
           },
@@ -9516,7 +10181,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/c013-hz5e-g8h9-8025"
           },
-          "schema:sha256": "5127891144ae474658ca943835d3a56d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5127891144ae474658ca943835d3a56d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3462862"
         }
@@ -9682,7 +10352,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "665b485d93153e6f47b1c7ce25c8da5d"
           },
@@ -9698,7 +10368,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/cmxa-sn8z-a80x-3w12"
           },
-          "schema:sha256": "665b485d93153e6f47b1c7ce25c8da5d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "665b485d93153e6f47b1c7ce25c8da5d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "332647458"
         }
@@ -9864,7 +10539,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "fe7aa147d794f22ca466da2e5d597fb7"
           },
@@ -9880,7 +10555,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/cxe2-g31q-nrbz-9kjn"
           },
-          "schema:sha256": "fe7aa147d794f22ca466da2e5d597fb7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fe7aa147d794f22ca466da2e5d597fb7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "320204224"
         }
@@ -10046,7 +10726,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e26d80e600269804b8b10e0f9072f5b2"
           },
@@ -10062,7 +10742,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/d0ht-kf1r-4tvr-gehm"
           },
-          "schema:sha256": "e26d80e600269804b8b10e0f9072f5b2",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e26d80e600269804b8b10e0f9072f5b2"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2668120"
         }
@@ -10228,7 +10913,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e28c007c6c1192acf013f464f815abea"
           },
@@ -10244,7 +10929,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/dgbg-b33d-hsv0-a95t"
           },
-          "schema:sha256": "e28c007c6c1192acf013f464f815abea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e28c007c6c1192acf013f464f815abea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2036779"
         }
@@ -10410,7 +11100,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c6f9b0ccd2249f18e394bd5f75abb2b4"
           },
@@ -10426,7 +11116,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/f032-baz8-v3nc-1kpj"
           },
-          "schema:sha256": "c6f9b0ccd2249f18e394bd5f75abb2b4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c6f9b0ccd2249f18e394bd5f75abb2b4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2692110"
         }
@@ -10592,7 +11287,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "278e279ac0739f1d211a6233fd4fab3e"
           },
@@ -10608,7 +11303,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/fsn5-r1mf-01na-bzqx"
           },
-          "schema:sha256": "278e279ac0739f1d211a6233fd4fab3e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "278e279ac0739f1d211a6233fd4fab3e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3312256"
         }
@@ -10774,7 +11474,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "0b7ef0c932ac323e99b0dc46d7f5e80b"
           },
@@ -10790,7 +11490,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/g357-c7p3-d0f8-t319"
           },
-          "schema:sha256": "0b7ef0c932ac323e99b0dc46d7f5e80b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0b7ef0c932ac323e99b0dc46d7f5e80b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2912212"
         }
@@ -10956,7 +11661,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "75980678d8452820f5528a37a5e243d4"
           },
@@ -10972,7 +11677,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gby4-ez35-p2f1-58qe"
           },
-          "schema:sha256": "75980678d8452820f5528a37a5e243d4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "75980678d8452820f5528a37a5e243d4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "219578283"
         }
@@ -11138,7 +11848,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c6b9f890e107ff8cb811d9cac93a4605"
           },
@@ -11154,7 +11864,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gd93-v11s-d3zk-bkp4"
           },
-          "schema:sha256": "c6b9f890e107ff8cb811d9cac93a4605",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c6b9f890e107ff8cb811d9cac93a4605"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "303240905"
         }
@@ -11320,7 +12035,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "a2a66f72b5b85342c8c3ba1bc2a86ab3"
           },
@@ -11336,7 +12051,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/gj2x-sx6z-jjkx-1ncg"
           },
-          "schema:sha256": "a2a66f72b5b85342c8c3ba1bc2a86ab3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a2a66f72b5b85342c8c3ba1bc2a86ab3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "307924666"
         }
@@ -11502,7 +12222,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "f9c6c5146d7651b1d569a895f6215409"
           },
@@ -11518,7 +12238,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/h3r3-afpd-gsfk-5whv"
           },
-          "schema:sha256": "f9c6c5146d7651b1d569a895f6215409",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f9c6c5146d7651b1d569a895f6215409"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "328752157"
         }
@@ -11684,7 +12409,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "5dd8d0ce233185f5563e26976fa0f941"
           },
@@ -11700,7 +12425,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/h63y-vnek-g4r1-5kvx"
           },
-          "schema:sha256": "5dd8d0ce233185f5563e26976fa0f941",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "5dd8d0ce233185f5563e26976fa0f941"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3710432"
         }
@@ -11866,7 +12596,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "142c43921f53c56fb6b03fbe57fa8667"
           },
@@ -11882,7 +12612,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/hymr-1a46-ceax-0tsm"
           },
-          "schema:sha256": "142c43921f53c56fb6b03fbe57fa8667",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "142c43921f53c56fb6b03fbe57fa8667"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2798338"
         }
@@ -12048,7 +12783,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "fa3e699b8ac65daa493fd2aeff170037"
           },
@@ -12064,7 +12799,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/jmpm-nzas-4cgw-2xjj"
           },
-          "schema:sha256": "fa3e699b8ac65daa493fd2aeff170037",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fa3e699b8ac65daa493fd2aeff170037"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "240339378"
         }
@@ -12230,7 +12970,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "35c470b1ae07aff28839ab252237a395"
           },
@@ -12246,7 +12986,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/jzsv-6aqy-1d13-5sft"
           },
-          "schema:sha256": "35c470b1ae07aff28839ab252237a395",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "35c470b1ae07aff28839ab252237a395"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "325232028"
         }
@@ -12412,7 +13157,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "fa2bdc86275a19a551495cda90acb287"
           },
@@ -12428,7 +13173,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/k38y-xfdr-mdna-004q"
           },
-          "schema:sha256": "fa2bdc86275a19a551495cda90acb287",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fa2bdc86275a19a551495cda90acb287"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3026597"
         }
@@ -12594,7 +13344,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "d7bb915cc9f8dbde6ab9551655278b19"
           },
@@ -12610,7 +13360,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/k7yq-05ky-6m6v-1845"
           },
-          "schema:sha256": "d7bb915cc9f8dbde6ab9551655278b19",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "d7bb915cc9f8dbde6ab9551655278b19"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3665556"
         }
@@ -12776,7 +13531,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "28c7a4d94006e2c71ec3c43282d3eefd"
           },
@@ -12792,7 +13547,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kgh4-yye2-36fz-t0g5"
           },
-          "schema:sha256": "28c7a4d94006e2c71ec3c43282d3eefd",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "28c7a4d94006e2c71ec3c43282d3eefd"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3111811"
         }
@@ -12958,7 +13718,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "f1de5e40351e372ff7d8e007d7bbc8dc"
           },
@@ -12974,7 +13734,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kt2j-e6az-72hb-65cp"
           },
-          "schema:sha256": "f1de5e40351e372ff7d8e007d7bbc8dc",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f1de5e40351e372ff7d8e007d7bbc8dc"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "363973843"
         }
@@ -13140,7 +13905,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "fefc5c67ce3e8ecbfad05090ec5e3084"
           },
@@ -13156,7 +13921,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/kxa9-p9vd-78cg-vatm"
           },
-          "schema:sha256": "fefc5c67ce3e8ecbfad05090ec5e3084",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fefc5c67ce3e8ecbfad05090ec5e3084"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "338117291"
         }
@@ -13322,7 +14092,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e391b3eb73064ba7efe4376c4f321088"
           },
@@ -13338,7 +14108,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/m874-2djx-xz93-qab3"
           },
-          "schema:sha256": "e391b3eb73064ba7efe4376c4f321088",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e391b3eb73064ba7efe4376c4f321088"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2085522"
         }
@@ -13504,7 +14279,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "f875674c607fe898a7c6f5a75c03a1d6"
           },
@@ -13520,7 +14295,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/mkdd-864w-73hr-pyy3"
           },
-          "schema:sha256": "f875674c607fe898a7c6f5a75c03a1d6",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "f875674c607fe898a7c6f5a75c03a1d6"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3504698"
         }
@@ -13686,7 +14466,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "0fb63510cbcad34da9c7400de8f61363"
           },
@@ -13702,7 +14482,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/mr19-8rww-0svx-9ca9"
           },
-          "schema:sha256": "0fb63510cbcad34da9c7400de8f61363",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0fb63510cbcad34da9c7400de8f61363"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "350336391"
         }
@@ -13868,7 +14653,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e3518acc300a012b01cda62ed5d15c53"
           },
@@ -13884,7 +14669,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/n1h3-q5f0-86ms-yta4"
           },
-          "schema:sha256": "e3518acc300a012b01cda62ed5d15c53",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e3518acc300a012b01cda62ed5d15c53"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "319718804"
         }
@@ -14050,7 +14840,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "094fa7d5647e11a880199d65da426644"
           },
@@ -14066,7 +14856,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/n7rx-efcg-dc1w-8nbm"
           },
-          "schema:sha256": "094fa7d5647e11a880199d65da426644",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "094fa7d5647e11a880199d65da426644"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3029857"
         }
@@ -14232,7 +15027,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "8b9edf603efcdce0c4825bbf9a0b0e45"
           },
@@ -14248,7 +15043,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/prsq-s728-7cwt-186n"
           },
-          "schema:sha256": "8b9edf603efcdce0c4825bbf9a0b0e45",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "8b9edf603efcdce0c4825bbf9a0b0e45"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "373103529"
         }
@@ -14414,7 +15214,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "3bba6863d83c120221cfc85ea669c81d"
           },
@@ -14430,7 +15230,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/pxhb-w7r4-mm4r-7xh7"
           },
-          "schema:sha256": "3bba6863d83c120221cfc85ea669c81d",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "3bba6863d83c120221cfc85ea669c81d"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "353923456"
         }
@@ -14596,7 +15401,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "3efea83aa4a59c500bde5723a67e3c3c"
           },
@@ -14612,7 +15417,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/qm7k-a52p-sbxy-dx6p"
           },
-          "schema:sha256": "3efea83aa4a59c500bde5723a67e3c3c",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "3efea83aa4a59c500bde5723a67e3c3c"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2845751"
         }
@@ -14778,7 +15588,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "ad72a20a54cbda20b31407f72a3ce3b7"
           },
@@ -14794,7 +15604,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r52j-75c3-5nsh-yk82"
           },
-          "schema:sha256": "ad72a20a54cbda20b31407f72a3ce3b7",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ad72a20a54cbda20b31407f72a3ce3b7"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3434948"
         }
@@ -14960,7 +15775,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "1fa1539e2ed3312f555993b07118d366"
           },
@@ -14976,7 +15791,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r5qf-v48k-rmnf-dfqz"
           },
-          "schema:sha256": "1fa1539e2ed3312f555993b07118d366",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1fa1539e2ed3312f555993b07118d366"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3085726"
         }
@@ -15142,7 +15962,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "6120ac14596d517552f00f325f12db0e"
           },
@@ -15158,7 +15978,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/r6p0-6x3z-enp4-97sb"
           },
-          "schema:sha256": "6120ac14596d517552f00f325f12db0e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "6120ac14596d517552f00f325f12db0e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2704933"
         }
@@ -15324,7 +16149,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "9cd846ccff927b7ddf1f712eb291bd3b"
           },
@@ -15340,7 +16165,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/rdnr-6emx-dsnp-9etd"
           },
-          "schema:sha256": "9cd846ccff927b7ddf1f712eb291bd3b",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "9cd846ccff927b7ddf1f712eb291bd3b"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "308761095"
         }
@@ -15506,7 +16336,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "88287c399e481341d9cffc46158b1390"
           },
@@ -15522,7 +16352,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/s9fb-w89g-9324-j0gb"
           },
-          "schema:sha256": "88287c399e481341d9cffc46158b1390",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "88287c399e481341d9cffc46158b1390"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "314704889"
         }
@@ -15688,7 +16523,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c9e8b54892144f05c92aab6f54e6a04e"
           },
@@ -15704,7 +16539,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/sfd6-mp02-zyj1-yzzg"
           },
-          "schema:sha256": "c9e8b54892144f05c92aab6f54e6a04e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c9e8b54892144f05c92aab6f54e6a04e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "234764577"
         }
@@ -15870,7 +16710,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "15a57327564ba34d9542041223dfd991"
           },
@@ -15886,7 +16726,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/stad-s5pk-j61w-qzbd"
           },
-          "schema:sha256": "15a57327564ba34d9542041223dfd991",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "15a57327564ba34d9542041223dfd991"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "339875848"
         }
@@ -16052,7 +16897,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "ffbfa768d28bea6e02d425aef5c2a7dd"
           },
@@ -16068,7 +16913,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/t86z-srrk-8jy9-zeay"
           },
-          "schema:sha256": "ffbfa768d28bea6e02d425aef5c2a7dd",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ffbfa768d28bea6e02d425aef5c2a7dd"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3683267"
         }
@@ -16234,7 +17084,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "00a49bd5bb388ea046924071ec2f86b5"
           },
@@ -16250,7 +17100,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/t9k1-m53j-9473-kndk"
           },
-          "schema:sha256": "00a49bd5bb388ea046924071ec2f86b5",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "00a49bd5bb388ea046924071ec2f86b5"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2030427"
         }
@@ -16416,7 +17271,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "251c6977b9606e6791c871b9bffe7595"
           },
@@ -16432,7 +17287,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/tjqt-7rq5-wx7a-64he"
           },
-          "schema:sha256": "251c6977b9606e6791c871b9bffe7595",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "251c6977b9606e6791c871b9bffe7595"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2998706"
         }
@@ -16598,7 +17458,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "86307ce960da6429ddf32661c61e41b5"
           },
@@ -16614,7 +17474,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/vp5s-f4xj-ahst-4ff0"
           },
-          "schema:sha256": "86307ce960da6429ddf32661c61e41b5",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "86307ce960da6429ddf32661c61e41b5"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2994141"
         }
@@ -16780,7 +17645,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "a846c83063a6b3c181e089816d7bcf52"
           },
@@ -16796,7 +17661,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/w6qp-dj7j-yvmn-vyhe"
           },
-          "schema:sha256": "a846c83063a6b3c181e089816d7bcf52",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a846c83063a6b3c181e089816d7bcf52"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3074202"
         }
@@ -16962,7 +17832,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "9fc25802d38df020288a8674a2daaee4"
           },
@@ -16978,7 +17848,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/x2wj-eqqj-mdm3-tca3"
           },
-          "schema:sha256": "9fc25802d38df020288a8674a2daaee4",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "9fc25802d38df020288a8674a2daaee4"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "357611393"
         }
@@ -17144,7 +18019,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "ebdc96c281f058563255ddc1030d0398"
           },
@@ -17160,7 +18035,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/x9qa-b80e-ags5-0eyk"
           },
-          "schema:sha256": "ebdc96c281f058563255ddc1030d0398",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ebdc96c281f058563255ddc1030d0398"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2918690"
         }
@@ -17326,7 +18206,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "e1ec3f7690abee20f353a596247be148"
           },
@@ -17342,7 +18222,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xb4r-awft-epz5-fvkk"
           },
-          "schema:sha256": "e1ec3f7690abee20f353a596247be148",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "e1ec3f7690abee20f353a596247be148"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3708035"
         }
@@ -17508,7 +18393,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "1a75497fd8a59359f522f8460c74a647"
           },
@@ -17524,7 +18409,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xevf-5hwh-n7ya-yqmb"
           },
-          "schema:sha256": "1a75497fd8a59359f522f8460c74a647",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "1a75497fd8a59359f522f8460c74a647"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2932912"
         }
@@ -17690,7 +18580,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "2da35d9df5afccaa6d93876dbe7523f3"
           },
@@ -17706,7 +18596,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xskp-wcgn-rpmv-jz79"
           },
-          "schema:sha256": "2da35d9df5afccaa6d93876dbe7523f3",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "2da35d9df5afccaa6d93876dbe7523f3"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2730796"
         }
@@ -17872,7 +18767,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "0a710d36da9238c5ad212e7b5028e3ea"
           },
@@ -17888,7 +18783,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xvpm-54m5-55sg-g47k"
           },
-          "schema:sha256": "0a710d36da9238c5ad212e7b5028e3ea",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "0a710d36da9238c5ad212e7b5028e3ea"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3731498"
         }
@@ -18054,7 +18954,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "a78836bbd2e319b3dcc864f7cf189b17"
           },
@@ -18070,7 +18970,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xvt1-z51a-jskf-rbxb"
           },
-          "schema:sha256": "a78836bbd2e319b3dcc864f7cf189b17",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a78836bbd2e319b3dcc864f7cf189b17"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2815229"
         }
@@ -18236,7 +19141,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "fcdaeda82e4dabe9de40e184f51ac36e"
           },
@@ -18252,7 +19157,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/xy0c-dyrv-q8x6-gfkg"
           },
-          "schema:sha256": "fcdaeda82e4dabe9de40e184f51ac36e",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "fcdaeda82e4dabe9de40e184f51ac36e"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "389552692"
         }
@@ -18418,7 +19328,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "a014f11ce3a2dbe6d71a23b322bd8998"
           },
@@ -18434,7 +19344,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y62v-6js9-afpn-6515"
           },
-          "schema:sha256": "a014f11ce3a2dbe6d71a23b322bd8998",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "a014f11ce3a2dbe6d71a23b322bd8998"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "299109815"
         }
@@ -18600,7 +19515,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "86816e092136b77053fc3917ab8e5627"
           },
@@ -18616,7 +19531,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y6bs-pham-d2tj-aj03"
           },
-          "schema:sha256": "86816e092136b77053fc3917ab8e5627",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "86816e092136b77053fc3917ab8e5627"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "362041386"
         }
@@ -18782,7 +19702,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "934846a01bfccd4058aaa3d19424ee4f"
           },
@@ -18798,7 +19718,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/y6m8-rwv1-hb9b-w9fa"
           },
-          "schema:sha256": "934846a01bfccd4058aaa3d19424ee4f",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "934846a01bfccd4058aaa3d19424ee4f"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "3386890"
         }
@@ -18964,7 +19889,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "22cddf70cdf1a4432440cf94c19e3e6a"
           },
@@ -18980,7 +19905,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/yvwr-sj3p-k3ye-f424"
           },
-          "schema:sha256": "22cddf70cdf1a4432440cf94c19e3e6a",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "22cddf70cdf1a4432440cf94c19e3e6a"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2995529"
         }
@@ -19146,7 +20076,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "ad174523bbf2de33ffc00cbb742c2dc8"
           },
@@ -19162,7 +20092,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/z5dp-4g73-5yvs-e0j6"
           },
-          "schema:sha256": "ad174523bbf2de33ffc00cbb742c2dc8",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "ad174523bbf2de33ffc00cbb742c2dc8"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "337769418"
         }
@@ -19328,7 +20263,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "c63099456f0a43d26dbdb8aed2bf3c05"
           },
@@ -19344,7 +20279,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/z89x-3wxx-dmgd-5yp0"
           },
-          "schema:sha256": "c63099456f0a43d26dbdb8aed2bf3c05",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "c63099456f0a43d26dbdb8aed2bf3c05"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "543977061"
         }
@@ -19510,7 +20450,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "230fecae5bda7b479de5e9e826000a30"
           },
@@ -19526,7 +20466,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/zevq-1vsr-wx7k-p1mh"
           },
-          "schema:sha256": "230fecae5bda7b479de5e9e826000a30",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "230fecae5bda7b479de5e9e826000a30"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "2770729"
         }
@@ -19692,7 +20637,7 @@
           "spdx:checksum": {
             "@type": "spdx:Checksum",
             "spdx:checksumAlgorithm": {
-              "@id": "spdx:checksumAlgorithm_sha256"
+              "@id": "spdx:checksumAlgorithm_md5"
             },
             "spdx:checksumValue": "113a34a036e69af6a0fc732a9a2445a9"
           },
@@ -19708,7 +20653,12 @@
           "schema:isPartOf": {
             "@id": "https://w3id.org/battinfo/dataset/zj71-ark8-6j8b-vwj5"
           },
-          "schema:sha256": "113a34a036e69af6a0fc732a9a2445a9",
+          "schema:checksum": {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "md5",
+            "schema:name": "md5",
+            "schema:value": "113a34a036e69af6a0fc732a9a2445a9"
+          },
           "schema:description": "BDF parquet file hosted on Zenodo.",
           "schema:contentSize": "237263457"
         }
@@ -26335,6 +27285,11 @@
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q"
       },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "NMC532-NMP-1"
+      },
       "hasProperty": [
         {
           "@type": [
@@ -26360,6 +27315,21 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "nmp",
+          "schema:name": "NMP solvent-based processing"
+        },
+        "hasSolvent": {
+          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+          "@type": "NMethyl2Pyrrolidone",
+          "schema:name": "NMP"
+        },
+        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC532-NMP-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26373,6 +27343,11 @@
       "schema:name": "LFP-NMP-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/kw37-e849-72hy-3364"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "LFP-NMP-1"
       },
       "hasProperty": [
         {
@@ -26399,6 +27374,21 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "nmp",
+          "schema:name": "NMP solvent-based processing"
+        },
+        "hasSolvent": {
+          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+          "@type": "NMethyl2Pyrrolidone",
+          "schema:name": "NMP"
+        },
+        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LFP-NMP-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26412,6 +27402,11 @@
       "schema:name": "Gr-AQ-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "Gr-AQ-1"
       },
       "hasProperty": [
         {
@@ -26450,6 +27445,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Gr-AQ-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26463,6 +27472,11 @@
       "schema:name": "LNMO-AQ-2",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "LNMO-AQ-2"
       },
       "hasProperty": [
         {
@@ -26501,6 +27515,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26514,6 +27542,11 @@
       "schema:name": "LNMO-AQ-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "LNMO-AQ-1"
       },
       "hasProperty": [
         {
@@ -26552,6 +27585,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26565,6 +27612,11 @@
       "schema:name": "NMC111-NMP-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "NMC111-NMP-1"
       },
       "hasProperty": [
         {
@@ -26591,6 +27643,21 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "nmp",
+          "schema:name": "NMP solvent-based processing"
+        },
+        "hasSolvent": {
+          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+          "@type": "NMethyl2Pyrrolidone",
+          "schema:name": "NMP"
+        },
+        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC111-NMP-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26604,6 +27671,11 @@
       "schema:name": "SiGr-AQ-2",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "SiGr-AQ-2"
       },
       "hasProperty": [
         {
@@ -26642,6 +27714,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-2."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26655,6 +27741,11 @@
       "schema:name": "SiGr-AQ-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/8mn9-1fgv-00ar-zb0b"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "SiGr-AQ-1"
       },
       "hasProperty": [
         {
@@ -26693,6 +27784,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26706,6 +27811,11 @@
       "schema:name": "LNMO-NMP-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "LNMO-NMP-1"
       },
       "hasProperty": [
         {
@@ -26744,6 +27854,21 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "nmp",
+          "schema:name": "NMP solvent-based processing"
+        },
+        "hasSolvent": {
+          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+          "@type": "NMethyl2Pyrrolidone",
+          "schema:name": "NMP"
+        },
+        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26757,6 +27882,11 @@
       "schema:name": "SiGr-AQ-3",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "SiGr-AQ-3"
       },
       "hasProperty": [
         {
@@ -26795,6 +27925,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-3."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26808,6 +27952,11 @@
       "schema:name": "LNMO-NMP-2",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "LNMO-NMP-2"
       },
       "hasProperty": [
         {
@@ -26846,6 +27995,21 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "nmp",
+          "schema:name": "NMP solvent-based processing"
+        },
+        "hasSolvent": {
+          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+          "@type": "NMethyl2Pyrrolidone",
+          "schema:name": "NMP"
+        },
+        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
@@ -26859,6 +28023,11 @@
       "schema:name": "Si-AQ-1",
       "schema:isVariantOf": {
         "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv"
+      },
+      "schema:identifier": {
+        "@type": "schema:PropertyValue",
+        "schema:name": "lot_id",
+        "schema:value": "Si-AQ-1"
       },
       "hasProperty": [
         {
@@ -26897,6 +28066,20 @@
           "schema:unitText": "um"
         }
       ],
+      "prov:wasGeneratedBy": {
+        "@type": "Manufacturing",
+        "skos:prefLabel": "Manufacturing",
+        "dcterms:type": {
+          "@type": "schema:DefinedTerm",
+          "schema:termCode": "aqueous",
+          "schema:name": "Water-based (aqueous) processing"
+        },
+        "hasSolvent": {
+          "@type": "schema:ChemicalSubstance",
+          "schema:name": "water"
+        },
+        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1."
+      },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",

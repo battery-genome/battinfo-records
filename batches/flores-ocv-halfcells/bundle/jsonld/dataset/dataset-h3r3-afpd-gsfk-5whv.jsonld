@@ -185,14 +185,91 @@
   "@type": "http://www.w3.org/ns/dcat#Dataset",
   "@id": "https://w3id.org/battinfo/dataset/h3r3-afpd-gsfk-5whv",
   "dcterms:title": "LNMO-AQ-2 cell 4fc673 GITT half-cell OCV (BDF)",
+  "dcterms:description": "Half-cell OCV electrochemical time series for LNMO-AQ-2 coin cell 4fc673, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-4fc673__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Half-cell OCV electrochemical time series for LNMO-AQ-2 coin cell 4fc673, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-4fc673__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
     "@id": "cc-by-4.0"
   },
   "dcat:accessURL": {
     "@id": "https://doi.org/10.5281/zenodo.20086298"
   },
+  "dcat:keyword": [
+    "open circuit voltage",
+    "OCV",
+    "half-cell",
+    "GITT",
+    "quasi-OCV",
+    "lnmo"
+  ],
+  "schema:keywords": [
+    "open circuit voltage",
+    "OCV",
+    "half-cell",
+    "GITT",
+    "quasi-OCV",
+    "lnmo"
+  ],
   "dcterms:created": "2026-05-08T00:00:00Z",
   "dcterms:modified": "2026-05-08T00:00:00Z",
+  "dcterms:issued": "2026-05-08T00:00:00Z",
+  "schema:datePublished": "2026-05-08T00:00:00Z",
+  "schema:measurementTechnique": [
+    "gitt"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Test Time / s",
+      "schema:description": "Elapsed time since the start of the test",
+      "schema:unitText": "s"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Unix Time / s",
+      "schema:description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+      "schema:unitText": "s"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Current / A",
+      "schema:description": "Instantaneous current",
+      "schema:unitText": "A"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Voltage / V",
+      "schema:description": "Instantaneous voltage",
+      "schema:unitText": "V"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Cumulative Capacity / Ah",
+      "schema:description": "Total capacity accumulated over a half cycle",
+      "schema:unitText": "Ah"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Cycle Count / 1",
+      "schema:description": "Monotonically increasing index of test cycles",
+      "schema:unitText": "1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Step Index / 1",
+      "schema:description": "Index of the instantaneous step type within the measurement protocol",
+      "schema:unitText": "1"
+    }
+  ],
+  "schema:citation": [
+    {
+      "@type": "schema:CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:url": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:additionalType": "dataset",
+      "bibo:doi": "10.5281/zenodo.20086298",
+      "schema:identifier": "flores2026ocv"
+    }
+  ],
   "dcterms:subject": [
     {
       "@id": "https://w3id.org/battinfo/cell/hefq-tf13-qecx-qtkk"
@@ -204,13 +281,19 @@
   "dcat:distribution": [
     {
       "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-lnmo-R2032-intelligent2-4fc673__20250625__gitt__RT.bdf.parquet",
+      "schema:description": "BDF parquet file hosted on Zenodo.",
       "dcat:downloadURL": {
         "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent2-4fc673__20250625__gitt__RT.bdf.parquet/content"
       },
       "dcat:mediaType": "application/vnd.apache.parquet",
+      "dcat:byteSize": 328752157,
+      "schema:contentSize": "328752157",
       "spdx:checksum": {
         "@type": "spdx:Checksum",
-        "spdx:checksumAlgorithm": "spdx:checksumAlgorithm_md5",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_md5"
+        },
         "spdx:checksumValue": "f9c6c5146d7651b1d569a895f6215409"
       }
     }

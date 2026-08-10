@@ -42,7 +42,7 @@ This is the second pass. The first pass (August 2026) ran against BattINFO 0.7.0
 
 **L4 (deprecation warnings during authoring) - NOT OBSERVED.** The script imports only current names.
 
-**H3 (deposit gold standard requires sha256, Zenodo gives md5) - OPEN, and worse than first characterised.** See G6.
+**H3 (deposit gold standard requires sha256, Zenodo gives md5) - CLOSED after this pass.** The second pass found it was worse than first characterised: the graph builder relabelled the md5 as a sha256 rather than merely lacking one. BIG-MAP/BattINFO#339 fixed it. See G6.
 
 ## Open gaps
 
@@ -74,6 +74,8 @@ Fix shape: an open `as_built` (or `property`) quantity map on the cell instance,
 
 ### G3. JSON-LD emission drops fields the canonical record carries
 
+**Closed upstream by BIG-MAP/BattINFO#339.** The bundle in this branch is emitted after that fix: dataset documents now carry description, keywords, `variable_measured`, citations, measurement techniques, publication date and the distribution's name and content size, and material documents carry the processing block, `lot_id` and notes. The finding below is the state that prompted the fix.
+
 `record_to_jsonld` is lossy for two record types:
 
 - **dataset**: `description`, `keywords`, `variable_measured`, `citations`, `measurement_techniques`, `published_at` and the distribution's `content_size` and `name` are all absent from the emitted document. Only title, license, access URL, created/modified, subject and a bare distribution survive.
@@ -97,6 +99,8 @@ Repro: `ws.export("json-ld", output_dir=...)` on a workspace with materials; no 
 
 ### G6. The deposit graph relabels md5 checksums as sha256
 
+**Closed upstream by BIG-MAP/BattINFO#339.** Every checksum node in the regenerated bundle now states `spdx:checksumAlgorithm_md5` with the md5 digest, and `schema:sha256` is gone. The gold-standard report drops from 285 errors to 95: the 190 false sha256 findings disappear and only G7 remains. The finding below is the state that prompted the fix.
+
 This is the sharpened version of the first pass's H3. The issue is not only that the gold standard wants sha256 while Zenodo gives md5. The deposit graph builder emits every distribution checksum under `spdx:checksumAlgorithm_sha256` and `schema:sha256` regardless of the algorithm on the record, so the authentic 32-character md5 is published as a sha256 value - a wrong statement, not just a missing one - and then trips 190 "must be a 64-character hexadecimal digest" errors.
 
 Repro: `bundle/deposit.jsonld`, any dataset node: `"spdx:checksumAlgorithm": {"@id": "spdx:checksumAlgorithm_md5"}` is what the canonical record supports, but the graph shows `..._sha256` with the md5 digest `7e779f63372291ad56b2e01de6639cc7`.
@@ -118,6 +122,8 @@ This is a vocabulary gap, not a data loss - the electrode's bill of materials li
 Fix shape: allow the electrode classes at either polarity (the class names are material statements, not polarity statements), or add an explicit working-electrode basis for half-cell configurations. Adding an LNMO electrode class would close the fourth case.
 
 ### G9. `ws.add("cell", ...)` de-duplicates on the display label
+
+**Closed upstream by BIG-MAP/BattINFO#339.** The serial is now the identity and the name is display text, so a batch of 95 cells sharing 12 labels stays 95 cells. A repeated serial raises instead of silently dropping a record, and a label that names several cells refuses to resolve. This script already passed serials only, so its output is unaffected. The finding below is the state that prompted the fix.
 
 The cell adder keys its in-session index on `name or serial_number` and skips any cell whose label is already present. With 95 cells sharing 12 public labels, passing `names=` and `serial_numbers=` together silently produced one cell per label instead of 95. The workaround is to pass only `serial_numbers=` (unique) and set `.name` on the returned objects afterwards.
 
@@ -144,5 +150,9 @@ Fix shape: de-duplicate on the serial when one is supplied, and treat the name a
 
 ## Should block or annotate the next release
 
-- **Fix before wide use:** G1 (remote-file datasets, and the `dataset_ids` blanking it causes), G6 (md5 published as sha256 - a wrong assertion), G9 (silent cell de-duplication on label, which loses records without failing).
-- **Annotate:** G2, G3, G7 (all lose information that the canonical records hold), G4, G5, G8, G10.
+Three of the findings were fixed upstream before this layer was published. BIG-MAP/BattINFO#339 closed G6 (md5 published as sha256), G9 (cells collapsing on their label) and G3 (dataset and material fields dropped from emission). The bundle in this branch was regenerated on that commit; the 319 canonical records came out byte-identical, so only the emitted documents changed.
+
+What is left:
+
+- **Fix before wide use:** G1, the missing entry point for a dataset that describes an already-published remote file, together with the `dataset_ids` blanking it causes.
+- **Annotate:** G2 and G7 (both lose information the canonical records hold), G4, G5, G8, G10.

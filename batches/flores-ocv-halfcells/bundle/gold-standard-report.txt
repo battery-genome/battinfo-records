@@ -1,289 +1,99 @@
-  Gold-standard: 285 error(s), 95 warning(s) -- address before publishing:
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+  Gold-standard: 95 error(s), 95 warning(s) -- address before publishing:
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Published dataset nodes must define non-empty schema:about references.
-    ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.

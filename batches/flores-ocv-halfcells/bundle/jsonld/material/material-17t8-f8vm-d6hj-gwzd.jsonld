@@ -14,6 +14,11 @@
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q"
   },
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:name": "lot_id",
+    "schema:value": "NMC532-NMP-1"
+  },
   "hasProperty": [
     {
       "@type": [
@@ -39,9 +44,25 @@
       "schema:unitText": "um"
     }
   ],
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "nmp",
+      "schema:name": "NMP solvent-based processing"
+    },
+    "hasSolvent": {
+      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+      "@type": "NMethyl2Pyrrolidone",
+      "schema:name": "NMP"
+    },
+    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC532-NMP-1."
+  },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
-  }
+  },
+  "schema:comment": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode)."
 }
