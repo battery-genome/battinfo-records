@@ -15,8 +15,8 @@
       "@type": "Dataset",
       "@id": "./",
       "name": "Half-Cell Open-Circuit Voltage of Several Lithium-Ion Battery Active Materials - BattINFO semantic layer",
-      "description": "Machine-readable BattINFO semantic layer describing the cells, active materials, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked cell-spec / cell-instance / test-protocol / test / dataset record chain; datasets reference the Zenodo files by URL and md5 checksum.",
-      "datePublished": "2026-08-02",
+      "description": "Machine-readable BattINFO semantic layer describing the electrode materials, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked material-spec / material / cell-spec / cell-instance / test-protocol / test / dataset record chain; datasets reference the Zenodo files by URL and md5 checksum.",
+      "datePublished": "2026-08-10",
       "license": {
         "@id": "https://spdx.org/licenses/cc-by-4.0.html"
       },

@@ -1,12 +1,4 @@
-  Gold-standard: 198 error(s), 0 warning(s) -- address before publishing:
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
-    ERROR   relative @type reference 'ElectrochemicalProcess' is not in the allowed term set
+  Gold-standard: 285 error(s), 95 warning(s) -- address before publishing:
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
@@ -102,102 +94,292 @@
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Distribution sha256 must be a 64-character hexadecimal digest.
-  Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-records\batches\flores-ocv-halfcells\bundle\deposit.jsonld
-  Graph nodes: 300
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+  Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\deposit.jsonld
+  Graph nodes: 321
   Data files:  0
-  Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-records\batches\flores-ocv-halfcells\bundle\ro-crate-metadata.json
+  Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\ro-crate-metadata.json

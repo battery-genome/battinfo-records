@@ -1,0 +1,34 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w",
+  "@type": "Graphite",
+  "schema:sameAs": {
+    "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303"
+  },
+  "skos:exactMatch": [
+    {
+      "@id": "http://www.wikidata.org/entity/Q5309"
+    },
+    {
+      "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/5462310"
+    },
+    {
+      "@id": "https://next-gen.materialsproject.org/materials/mp-48"
+    }
+  ],
+  "schema:name": "Graphite electrode - IntelLiGent project batch (SINTEF)",
+  "schema:molecularFormula": "C",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}

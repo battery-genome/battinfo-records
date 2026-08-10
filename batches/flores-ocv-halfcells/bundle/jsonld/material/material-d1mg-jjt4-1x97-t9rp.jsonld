@@ -1,0 +1,59 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/material/d1mg-jjt4-1x97-t9rp",
+  "@type": "schema:ChemicalSubstance",
+  "schema:name": "LNMO-AQ-2",
+  "schema:isVariantOf": {
+    "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "MassFraction",
+        "ConventionalProperty"
+      ],
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.902756
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+    },
+    {
+      "@type": [
+        "TheoreticalCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "TheoreticalCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 140.0
+      },
+      "schema:unitText": "mAh/g"
+    },
+    {
+      "@type": [
+        "Thickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Thickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 47.0
+      },
+      "schema:unitText": "um"
+    }
+  ],
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}

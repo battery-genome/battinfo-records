@@ -1,117 +1,148 @@
-# BattINFO 0.8 readiness report - authoring the Flores half-cell OCV semantic layer
+# BattINFO readiness report - authoring the Flores half-cell OCV semantic layer
 
-Real-work findings from authoring 305 linked records (7 materials, 9 half-cell specs,
-95 instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298 with BattINFO
-0.7.0 (installed from git main). Ranked by impact. Each item has an exact repro.
+Findings from authoring 319 linked records (9 material specs, 12 material lots, 9 half-cell specs, 95 cell instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298.
 
-## Blockers / high
+This is the second pass. The first pass (August 2026) ran against BattINFO 0.7.0 before the material kind/spec/instance model, `cell_configuration`, `Test.conditions`, protocol JSON-LD emission and the completed EMMO stack landed. This version re-authors the whole layer on current `main` (BattINFO 0.7.0 at commit of PR #338, EMMO domain-battery 0.20.2 / electrochemistry 0.37.2 / chemical-substance 0.15.0). The delta section below records which of the original findings the model closed.
 
-### H1. `create_material_spec` mints a random id; material specs are not idempotent
-`create_material_spec(...)` returns a fresh random IRI on every call, and
-`save_material_spec` does not dedupe by content. Re-running an authoring script
-silently accumulates duplicate material specs (this build produced **56** material-spec
-files = 8 runs x 7 before I pinned ids). Because cell specs carry `material_spec_id`,
-the changing material id also made the 9 cell specs re-serialise as `[updated]` on
-every run. Every other record type derives a deterministic content-based IRI and is
-idempotent - materials are the sole exception, and they break the "deterministic
-re-run = no-op" contract.
-Repro: `[create_material_spec(name="Graphite", formula="C")["material_spec"]["id"] for _ in range(3)]` -> three different IRIs.
-Workaround: pass an explicit deterministic `id=`.
+## Result
 
-### H2. Material specs are second-class in the workspace (no save, no attribution)
-The authoring workspace manages cell_specs/cells/test_specs/tests/datasets but not
-material specs: `ws.save()` neither writes nor stamps them (must call
-`save_material_spec` separately), so the funding/contributor/license stamping never
-reaches them. The material-spec schema also forbids `contributor`/`license`/`funding`
-(`additionalProperties:false`), so material specs *cannot* carry the same attribution
-and funding provenance as every other record even if stamped manually.
-Repro: add `license`/`contributor`/`funding` to a saved material-spec dict and run
-`validate_record_report` -> `schema.additionalProperties` error.
-Impact: a whole record type is excluded from attribution and funding traceability.
+| | first pass | now |
+|---|---|---|
+| records | 305 | 319 |
+| strict-save errors | 0 | 0 |
+| semantic warnings | 36 | **0** |
+| SHACL non-conforming | 0 | 0 |
+| record types reaching JSON-LD | 4 of 6 | **7 of 7** |
+| `ws._ws` engine calls | 6 | **0** |
+| idempotent re-run | yes | yes (byte-identical) |
 
-### H3. Deposit-level gold-standard requires sha256, Zenodo gives md5
-`preview_rocrate`/`preview_jsonld` run a gold-standard check that requires a 64-char
-**sha256** per distribution. Zenodo (and most repositories) publish only **md5**.
-This build's deposit crate reported ~190 `Distribution sha256 must be a 64-character
-hexadecimal digest` errors. Satisfying it means downloading every file to compute
-sha256 - here ~10 GB. Per-record dataset validation happily accepts md5, so the record
-layer and the deposit layer disagree. This blocks a clean RO-Crate for anyone building
-a semantic layer over an existing repository deposit.
-Repro: see `bundle/gold-standard-report.txt`.
+## Delta: what the model closed
 
-## Medium
+**H1 (material specs mint a random id, not idempotent) - CLOSED.** `ws.add("material_spec", ...)` derives the IRI from (manufacturer, product, grade). Re-adding the same product is a no-op. The pinned-id workaround is gone.
 
-### M1. Model accepts values the save-time schema rejects (late failures)
-Pydantic models are more permissive than the JSON schema enforced at `ws.save()`, so
-some errors only appear after a full authoring pass:
-- `testmethod.Step(mode="discharge")` / `"charge"` construct fine; save requires
-  mode in `{cc,cv,cccv,cp,cr,rest,eis,scan,group}` (use `mode="cc"` + `direction`).
-- `TestConformance(status="non_conformant")` constructs fine; save requires the
-  hyphenated `non-conformant`.
+**H2 (material specs are second-class: no save, no attribution) - CLOSED.** Materials are saved by `ws.save()` alongside every other type and receive the same funding / contributor / license stamp; both material schemas now carry `funding`, `contributor` and `license` at the envelope. The save panel reports them.
 
-### M2. Assigning a string to a list field explodes it into characters
-`cell_spec.specification_comment = "R2032 ..."` serialised as
-`["R","2","0","3","2"," ", ...]` and *passed* strict validation. `dataset.same_as =
-"https://doi.org/..."` produced 40 `not a 'uri'` errors (one per character). A
-`str | list[str]` field should coerce or reject, not iterate the string.
+**M1 (model accepts values the save-time schema rejects) - NOT RETESTED.** This pass authors step modes through the draft loader rather than constructing `testmethod.Step` objects directly, so the divergence was never exercised. The conformance status still has to be the hyphenated `non-conformant`.
 
-### M3. No typed home for per-instance as-built electrode figures
-Cell-instance `measured` is a closed 67-key cell-performance vocabulary
-(`additionalProperties:false`) with no slot for active-material mass, coating mass,
-weight %, theoretical capacity, thickness, areal capacity or loading. The documented
-fallback ("attach as test conditions") is also unreachable: `test.conditions` exists in
-the JSON schema (open snake_case keys) but the `Test` pydantic model has no
-`conditions` field. These per-cell values ended up in free-text `comment`.
+**M2 (assigning a string to a list field explodes it into characters) - NOT RETESTED.** All list-valued fields are assigned lists in this pass.
 
-### M4. `test_spec(conditions=...)` cannot express a non-numeric condition
-`conditions` values must be numeric `Quantity`; "room temperature" (exactly what this
-dataset states) cannot be represented and had to go into `description`.
+**M3 (no typed home for per-instance electrode figures) - PARTIALLY CLOSED.** `Test.conditions` now exists on the `Test` model and is an open snake_case map that accepts any value type, so the per-cell figures have a structured home and the free-text comment block is gone. The cell instance itself is still without one; see G2.
 
-### M5. JSON-LD export omits test protocols and material specs
-`ws.export("json-ld")` and `record_to_jsonld` handle only
-cell-spec/cell-instance/test/dataset. `record_to_jsonld(record, "test-protocol")` and
-`"material-spec"` raise, so 11 of 305 records travel only as canonical JSON, not
-JSON-LD. `dry_thickness` also has no curated EMMO mapping and is emitted under a
-non-canonical fallback term (`semantic.property_unmapped`).
+**M4 (`conditions` cannot express a non-numeric condition) - CLOSED at the test level.** `Test.conditions` takes `"room temperature"` as a plain string and emits it as a `schema:PropertyValue`. Test-*protocol* conditions are still numeric-only, which is why the ambient statement lives on the run rather than the protocol.
 
-### M6. Blessed API cannot author a realistic dataset
-`battinfo.workspace()` exposes only `add("cell"/"test"/"equipment")` and
-`load(draft)`. Material specs, rich half-cell electrodes, remote-URL datasets with
-checksums, and conformance all require the deprecated engine `ws._ws`
-(`.cell_spec/.cell/.test_spec/.test/.dataset`). The documented blessed surface alone is
-insufficient for this dataset.
+**M5 (JSON-LD export omits protocols and material specs) - CLOSED for `record_to_jsonld`.** All seven record types emit. Protocols emit a typed EMMO method (`PseudoOpenCircuitVoltageMethod`, `GalvanostaticIntermittentTitrationTechnique`) over an `IterativeWorkflow` of typed steps. `dry_thickness` no longer warns because `thickness` is the curated key. `ws.export()` still covers only five types; see G5.
 
-## Low / paper-cuts
+**M6 (blessed API cannot author a realistic dataset) - MOSTLY CLOSED.** Material specs, material lots, rich half-cell electrodes and conformance are all authorable through `ws.add` / `ws.load`. Remote-URL datasets are the one survivor; see G1.
 
-- **L1.** `save()` return dict vs panel disagree: unchanged re-run prints `[unchanged]`
-  but the returned dict reports `status:"updated"` for the same records.
-- **L2.** Half-cell chemistry and material-name electrode bases warn
-  (`semantic.controlled_value_unmapped` x26 for `Li half-cell`, `silicon`, `Li`, ...);
-  there is no half-cell-aware chemistry term, so faithful values always warn.
-- **L3.** `duplicate_policy` accepts only `error`/`return_existing`;
-  `save_material_spec` defaults to `create_only`/`error` and so errors on any re-run.
-- **L4.** Deprecation warnings fire for many still-canonical names
-  (`CellSpecification`, `cell_description`, `create_material_spec`, `Workspace`, ...)
-  pointing at post-0.8 relocations - fine, but noisy during authoring.
+**L1 (save return dict disagrees with the panel) - CLOSED.** An unchanged re-save reports `unchanged` in both.
 
-## Worked well (earned)
+**L2 (half-cell chemistry and electrode bases always warn) - CLOSED.** `cell_configuration = "half_cell"` is the structural statement, so `chemistry` can take the controlled `li-metal` and `negative_electrode_basis` the controlled `lithium-metal`. All 36 warnings are gone. What remains is a vocabulary gap rather than a modelling one; see G8.
 
-- Content-derived deterministic IRIs give true idempotency for
-  cell-spec/instance/test-spec/test/dataset.
-- `ws.project("101069765")` OpenAIRE/CORDIS enrichment resolved IntelLiGent / HE / EC
-  first try and stamped funding onto every engine record.
-- `ws.contributor` / `ws.license` stamped 9 ORCIDs + CC-BY onto every engine record.
-- Dataset distributions (remote content_url + md5 + byte size + parquet media),
-  DOI citations, `variable_measured`, and cell/test `about` links validated under strict.
-- Dataset validators (`published_at >= created_at`; md5 must be 32 hex) correctly
-  forced authentic values.
-- The conformance model (status + note + typed deviation category) fit the 11 known
-  issues cleanly.
-- `battinfo validate` and `validate_record_report` give clear, actionable messages.
+**L3 (`duplicate_policy` only accepts error/return_existing) - MOOT.** Materials go through `ws.save()`, which upserts.
 
-## Should block or annotate 0.8
+**L4 (deprecation warnings during authoring) - NOT OBSERVED.** The script imports only current names.
 
-- **Block:** H1 (material-spec non-determinism) - silently corrupts any repeatable
-  pipeline.
-- **Annotate/fix before wide use:** H2 (material attribution gap), H3 (md5/sha256
-  interop), M2 (string-to-char-list), M5 (JSON-LD coverage), M6 (blessed API gaps).
+**H3 (deposit gold standard requires sha256, Zenodo gives md5) - OPEN, and worse than first characterised.** See G6.
+
+## Open gaps
+
+Ranked by impact. Each has an exact repro.
+
+### G1. No blessed way to author a dataset for an already-published remote file
+
+`ws.add("test", ..., data=...)` takes local paths only (`_as_data_paths` turns whatever it gets into a `Path`, and a non-existent path is recorded as a relative artifact path). It exposes no dataset-level metadata: no checksum, byte size, distribution, `variable_measured`, `citations`, `measurement_techniques`, `published_at`, description or keywords. There is no `ws.add("dataset", ...)`, and `ws.load()` has no dataset-draft branch. `ws.import_()` reads a `battinfo.json` document, not a repository record.
+
+This build therefore writes its 95 datasets from the public `battinfo.Dataset` model through the public `battinfo.save_dataset`, re-applying the workspace stamp (rebuilt from the public `ws.project()` / `ws.contributor()` / `ws.license()` getters, which return exactly the blocks `ws.save()` stamps). No engine handle is touched, but the datasets are outside the workspace, with three consequences:
+
+- `ws.save()` does not report them, so their counts come from the save results of `save_dataset`.
+- `ws.submit()` skips them unless called with `submit_all=True`, because it filters on the paths of the last `ws.save()`.
+- The test-to-dataset back-link cannot be authored at all. `Workspace.save` (`_workspace.py:1813-1825`) rebuilds `test.dataset_ids` from the datasets the *engine* holds and unconditionally blanks the field for every test whose dataset it does not know. Writing the link with `battinfo.save_test` after the fact works, but the next `ws.save()` erases it again, so a re-run rewrites 190 files instead of none. The link is left unauthored rather than fought; this is why the deposit check reports 95 `prov:generated` warnings.
+
+Repro: `ws.add("test", cell=c, data="https://zenodo.org/api/records/20086298/files/x.parquet/content")` records the URL as a local relative path. Then set `test.dataset_ids = [...]`, call `ws.save()`, and read the record back: the field is empty.
+
+Fix shape: a `ws.add("dataset", ...)` that accepts a remote URL with checksum, size and media type, or a `.dataset.json` draft branch in `ws.load()`. Either would also make `dataset_ids` derivable, closing the PROV gap.
+
+### G2. Cell instances have no home for as-built figures
+
+`cell_instance.measured` is still a closed 67-key cell-performance vocabulary (`SpecSet`: capacity, voltage, resistance, dimensions, temperatures) with no slot for active-material mass, coating mass, areal capacity or electrode loading. The `mass` key means cell mass, so it cannot be borrowed. Nothing else on the cell-instance envelope is an open property map.
+
+The per-cell figures therefore go in `Test.conditions`, which is defensible (they are the parameters that normalise that measurement) but is not where they belong: they describe the cell as built, not the conditions the test ran under. They also do not get EMMO property typing there - `conditions` always emits as named `schema:PropertyValue` nodes, so `single_side_loading` in `conditions` is plain text where the same key on a material lot emits `MassLoading`.
+
+Repro: put `active_material_mass` in `cell_instance.measured` and validate: `schema.additionalProperties`. Put it in `Test.conditions` and emit: `{"@type": "schema:PropertyValue", "schema:name": "active_material_mass", ...}`.
+
+Fix shape: an open `as_built` (or `property`) quantity map on the cell instance, validated and emitted the same way the material-lot `property` block already is.
+
+### G3. JSON-LD emission drops fields the canonical record carries
+
+`record_to_jsonld` is lossy for two record types:
+
+- **dataset**: `description`, `keywords`, `variable_measured`, `citations`, `measurement_techniques`, `published_at` and the distribution's `content_size` and `name` are all absent from the emitted document. Only title, license, access URL, created/modified, subject and a bare distribution survive.
+- **material**: the whole `processing` block (route, solvent, detail) is dropped, along with `lot_id` and envelope `notes`. Processing is the main reason material instances exist as a level, so losing it in the semantic view is a sharp edge.
+
+Repro: `record_to_jsonld(dataset_record, "dataset")` and search for the description string; `record_to_jsonld(material_record, "material")` and search for `"aqueous"`. Both miss.
+
+### G4. No spelling of micrometre both validates and resolves
+
+The schema's unit check for `thickness` accepts `cm, m, mm, um, μm` (that last one U+03BC GREEK SMALL LETTER MU). The unit-to-IRI map keys micrometre as `µm` (U+00B5 MICRO SIGN) and knows neither `um` nor `μm`. So `µm` fails validation, and the two spellings that pass validation fall back to `schema:unitText` instead of `emmo:MicroMetre`. This build uses ASCII `um` and accepts the untyped unit.
+
+Repro: save a material with `{"thickness": {"value": 44, "unit": "µm"}}` -> `unit 'µm' is not compatible with spec 'thickness' (valid: cm, m, mm, um, μm)`. Save with `μm` -> passes, emits `"schema:unitText": "μm"`.
+
+Fix shape: normalise the micro sign and the Greek mu to one key on both sides, and add `um` as an ASCII alias.
+
+### G5. `ws.export()` covers five of the seven record types
+
+`record_to_jsonld` handles material specs and material lots, but `ws.export()`'s internal `_TYPE_MAP` lists only cell-spec, cell-instance, test, test-protocol and dataset, so an exported bundle silently omits the material layer. `build_bundle.py` emits all seven itself to work around this.
+
+Repro: `ws.export("json-ld", output_dir=...)` on a workspace with materials; no `material/` or `material-spec/` directory appears.
+
+### G6. The deposit graph relabels md5 checksums as sha256
+
+This is the sharpened version of the first pass's H3. The issue is not only that the gold standard wants sha256 while Zenodo gives md5. The deposit graph builder emits every distribution checksum under `spdx:checksumAlgorithm_sha256` and `schema:sha256` regardless of the algorithm on the record, so the authentic 32-character md5 is published as a sha256 value - a wrong statement, not just a missing one - and then trips 190 "must be a 64-character hexadecimal digest" errors.
+
+Repro: `bundle/deposit.jsonld`, any dataset node: `"spdx:checksumAlgorithm": {"@id": "spdx:checksumAlgorithm_md5"}` is what the canonical record supports, but the graph shows `..._sha256` with the md5 digest `7e779f63372291ad56b2e01de6639cc7`.
+
+Fix shape: carry the record's algorithm through to the SPDX term, and let the gold standard accept any SPDX-listed algorithm rather than requiring sha256.
+
+### G7. The deposit graph drops dataset `about`
+
+Every dataset record carries `about` (its cell and its test) and the per-record JSON-LD emits it as `dcterms:subject`. The deposit graph builder does not carry it over, and the gold standard then fails all 95 datasets with "Published dataset nodes must define non-empty schema:about references". The checker and the builder disagree about a field the records already populate.
+
+Repro: `bundle/gold-standard-report.txt` (95 errors) against any `records/dataset/*.json`, which has a two-element `about`.
+
+### G8. No positive-electrode term for a working electrode made of an anode material
+
+`positive_electrode_basis` curates only cathode materials (lfp, nmc, nca, lco, mno2, lmfp, lmo, nmc811, nmca). In a lithium half-cell the working electrode is always the positive one, whatever the material, so graphite, silicon and silicon-graphite half-cells have no term available even though all three exist under `negative_electrode_basis`. LNMO has no term at either polarity. Four of the nine specs therefore omit the field.
+
+This is a vocabulary gap, not a data loss - the electrode's bill of materials links to the material spec and thence to the kind's EMMO class - but the coarse descriptor that drives device typing is unavailable for half-cells of anode materials.
+
+Fix shape: allow the electrode classes at either polarity (the class names are material statements, not polarity statements), or add an explicit working-electrode basis for half-cell configurations. Adding an LNMO electrode class would close the fourth case.
+
+### G9. `ws.add("cell", ...)` de-duplicates on the display label
+
+The cell adder keys its in-session index on `name or serial_number` and skips any cell whose label is already present. With 95 cells sharing 12 public labels, passing `names=` and `serial_numbers=` together silently produced one cell per label instead of 95. The workaround is to pass only `serial_numbers=` (unique) and set `.name` on the returned objects afterwards.
+
+Repro: `ws.add("cell", spec=cs, names=["A", "A"], serial_numbers=["x1", "x2"])` returns one cell, with `WARNING: 1 already in workspace`.
+
+Fix shape: de-duplicate on the serial when one is supplied, and treat the name as a label. The current behaviour is right for the single-label case and wrong for every batch that reuses a label.
+
+### G10. Small API asymmetries
+
+- Contributor affiliations are plain name strings. `ws.contributor(orcid, name=, affiliation=)` writes `affiliation: {"type": "Organization", "name": "..."}` with no slot for an organization IRI, so a contributor cannot be tied to the registry organization they belong to. SINTEF's IRI reaches these records through `cell_spec.manufacturer_id` and the material-spec manufacturer block; IREC's has no attachment point at all, because its two authors appear only as contributors. The bundle-level creator path does accept `affiliation_ror`, so the two layers disagree about how much an affiliation can say.
+- `ws.add("material_spec", ...)` takes `description=`; `ws.add("material", ...)` rejects it and wants `notes=[...]`.
+- `ws.project()`, `ws.contributor()` and `ws.license()` print their state on every call, including the no-argument getter form, so reading the current value inside a script emits a banner.
+- The test-protocol record's envelope key is `test_spec` although the record lives in `test-protocol/` and its `identifier` reads `test-protocol:...`.
+
+## Worked well
+
+- The kind / spec / instance split matched this dataset exactly: seven kinds of vocabulary, nine electrode products, twelve physical batches. Nothing had to be bent to fit, and the schema's own note that "aqueous vs NMP is not a distinct product" is precisely the distinction the data makes.
+- `cell_configuration = "half_cell"` did in one field what the previous pass could only do in prose, and did it without a warning.
+- The PyBaMM-style and structured method paths both produce a real EMMO process graph. Five cycles of typed charge, discharge, rest and voltage-hold steps with control and termination parameters is a far better protocol description than the previous pass could emit at all.
+- Material kinds carry verified external anchors. Silicon emits `skos:exactMatch` to Wikidata and Materials Project alongside the chemical-substance IRI, with no authoring effort.
+- Content-derived IRIs across all seven types make the re-run genuinely byte-identical, checked by hashing the whole record tree before and after.
+- `ws.project("101069765")` enrichment, `ws.contributor` and `ws.license` reach every record type including materials.
+- The conformance model with typed deviation categories fits the 11 known issues cleanly.
+
+## Should block or annotate the next release
+
+- **Fix before wide use:** G1 (remote-file datasets, and the `dataset_ids` blanking it causes), G6 (md5 published as sha256 - a wrong assertion), G9 (silent cell de-duplication on label, which loses records without failing).
+- **Annotate:** G2, G3, G7 (all lose information that the canonical records hold), G4, G5, G8, G10.

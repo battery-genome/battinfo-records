@@ -1,0 +1,28 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q",
+  "@type": "LithiumNickelManganeseCobaltOxide532",
+  "schema:sameAs": {
+    "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_592acd61_23c8_4a1a_b41b_1eeabedc0710"
+  },
+  "skos:exactMatch": [
+    {
+      "@id": "http://www.wikidata.org/entity/Q121086662"
+    }
+  ],
+  "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2) electrode - commercial electrode supplied by Gelon LIB",
+  "schema:molecularFormula": "LiNi0.5Mn0.3Co0.2O2",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}

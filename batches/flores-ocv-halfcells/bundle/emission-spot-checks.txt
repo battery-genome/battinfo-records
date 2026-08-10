@@ -1,0 +1,1066 @@
+==============================================================================
+SPOT CHECK 1a - cell spec: half-cell device typing + electrode -> material spec
+==============================================================================
+{
+  "@type": [
+    "BatteryCellSpecification",
+    "schema:CreativeWork"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
+  "schema:identifier": "zqwq-ted6-cwb2-0d42",
+  "schema:name": "SINTEF Silicon R2032 half-cell (intelligent1)",
+  "schema:model": "Silicon R2032 half-cell (intelligent1)",
+  "schema:manufacturer": {
+    "@type": "schema:Organization",
+    "schema:name": "SINTEF"
+  },
+  "schema:url": "https://www.battery-genome.org/registry/spec/zqwq-ted6-cwb2-0d42",
+  "isDescriptionFor": {
+    "@type": [
+      "BatteryCell",
+      "CoinCell",
+      "BatteryHalfCell",
+      "HalfCellDevice",
+      "LithiumMetalBattery",
+      "SecondaryBattery"
+    ],
+    "skos:prefLabel": "SINTEF Silicon R2032 half-cell (intelligent1)"
+  },
+  "schema:size": "R2032",
+  "schema:schemaVersion": "0.2.0",
+  "hasProperty": [
+    {
+      "@type": [
+        "ChargingVoltage",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ChargingVoltage",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
+    },
+    {
+      "@type": [
+        "LowerVoltageLimit",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "LowerVoltageLimit",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.01
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
+    }
+  ],
+  "hasPositiveElectrode": {
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": [
+          "Silicon",
+          "ActiveMaterial"
+        ],
+        "schema:name": "Silicon",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.849714
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "Thickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Thickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 44.0
+        },
+        "schema:unitText": "um"
+      }
+    ],
+    "@type": "Electrode"
+  },
+  "hasNegativeElectrode": {
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": "ActiveMaterial",
+        "schema:name": "Lithium metal"
+      }
+    },
+    "@type": "LithiumElectrode"
+  },
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "datasheet",
+    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 1b - the linked material spec: EMMO class, chemical-substance anchor, external exactMatch
+==============================================================================
+{
+  "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv",
+  "@type": "Silicon",
+  "schema:sameAs": {
+    "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_68c0876b_cb62_41cd_846d_95cc9d9a8733"
+  },
+  "skos:exactMatch": [
+    {
+      "@id": "http://www.wikidata.org/entity/Q670"
+    },
+    {
+      "@id": "https://next-gen.materialsproject.org/materials/mp-149"
+    }
+  ],
+  "schema:name": "Silicon electrode - IntelLiGent project batch 1 (SINTEF)",
+  "schema:molecularFormula": "Si",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}
+
+==============================================================================
+SPOT CHECK 1c - a material lot of that product: processing route + as-built batch figures
+==============================================================================
+{
+  "@id": "https://w3id.org/battinfo/material/z204-mp8w-zqr9-dc8n",
+  "@type": "schema:ChemicalSubstance",
+  "schema:name": "Si-AQ-1",
+  "schema:isVariantOf": {
+    "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv"
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "MassFraction",
+        "ConventionalProperty"
+      ],
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.849714
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+    },
+    {
+      "@type": [
+        "TheoreticalCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "TheoreticalCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3579.0
+      },
+      "schema:unitText": "mAh/g"
+    },
+    {
+      "@type": [
+        "Thickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Thickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 44.0
+      },
+      "schema:unitText": "um"
+    }
+  ],
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2 - test protocol GITT: typed EMMO method + process graph
+==============================================================================
+{
+  "@type": [
+    "prov:Plan",
+    "schema:HowTo",
+    "GalvanostaticIntermittentTitrationTechnique"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
+  "schema:name": "GITT",
+  "schema:additionalType": "gitt",
+  "schema:description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "hasTask": [
+    {
+      "@type": "IterativeWorkflow",
+      "NumberOfIterations": {
+        "hasNumericalPart": {
+          "hasNumberValue": 5
+        }
+      },
+      "hasTask": [
+        {
+          "@type": "IterativeWorkflow",
+          "hasTask": [
+            {
+              "@type": "ConstantCurrentDischarging",
+              "rdfs:label": "Current pulse at C/50",
+              "hasControlParameter": [
+                {
+                  "@type": "CRate",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 0.02
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "electrochemistry:AmperePerAmpereHour"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OpenCircuitHold",
+              "rdfs:label": "Rest for 150 minutes",
+              "hasTerminationParameter": [
+                {
+                  "@type": "Duration",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 150.0
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "emmo:Minute"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 6 h at the lower voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 6.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "IterativeWorkflow",
+          "hasTask": [
+            {
+              "@type": "ConstantCurrentCharging",
+              "rdfs:label": "Current pulse at C/50",
+              "hasControlParameter": [
+                {
+                  "@type": "CRate",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 0.02
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "electrochemistry:AmperePerAmpereHour"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OpenCircuitHold",
+              "rdfs:label": "Rest for 150 minutes",
+              "hasTerminationParameter": [
+                {
+                  "@type": "Duration",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 150.0
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "emmo:Minute"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 6 h at the upper voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 6.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "manual",
+    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2 - test protocol p-OCV: typed EMMO method + process graph
+==============================================================================
+{
+  "@type": [
+    "prov:Plan",
+    "schema:HowTo",
+    "PseudoOpenCircuitVoltageMethod"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
+  "schema:name": "p-OCV",
+  "schema:additionalType": "quasi_ocv",
+  "schema:description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "hasTask": [
+    {
+      "@type": "IterativeWorkflow",
+      "NumberOfIterations": {
+        "hasNumericalPart": {
+          "hasNumberValue": 5
+        }
+      },
+      "hasTask": [
+        {
+          "@type": "ConstantCurrentDischarging",
+          "rdfs:label": "Constant current at C/50 to the lower voltage cutoff",
+          "hasControlParameter": [
+            {
+              "@type": "CRate",
+              "hasNumericalPart": {
+                "hasNumberValue": 0.02
+              },
+              "hasMeasurementUnit": {
+                "@id": "electrochemistry:AmperePerAmpereHour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 8 h at the lower voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 8.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "ConstantCurrentCharging",
+          "rdfs:label": "Constant current at C/50 to the upper voltage cutoff",
+          "hasControlParameter": [
+            {
+              "@type": "CRate",
+              "hasNumericalPart": {
+                "hasNumberValue": 0.02
+              },
+              "hasMeasurementUnit": {
+                "@id": "electrochemistry:AmperePerAmpereHour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 8 h at the upper voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 8.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "manual",
+    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 3a - dataset JSON-LD: dcat distribution + spdx checksum + license + contributors
+==============================================================================
+{
+  "@type": "http://www.w3.org/ns/dcat#Dataset",
+  "@id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e",
+  "dcterms:title": "LNMO-NMP-1 cell ee5c27 GITT half-cell OCV (BDF)",
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  },
+  "dcat:accessURL": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "dcterms:created": "2026-05-08T00:00:00Z",
+  "dcterms:modified": "2026-05-08T00:00:00Z",
+  "dcterms:subject": [
+    {
+      "@id": "https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke"
+    },
+    {
+      "@id": "https://w3id.org/battinfo/test/bqhh-43gg-x6mn-8q5x"
+    }
+  ],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "dcat:downloadURL": {
+        "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet/content"
+      },
+      "dcat:mediaType": "application/vnd.apache.parquet",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": "spdx:checksumAlgorithm_md5",
+        "spdx:checksumValue": "7e779f63372291ad56b2e01de6639cc7"
+      }
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "measurement",
+    "prov:hadPrimarySource": {
+      "@id": "https://doi.org/10.5281/zenodo.20086298"
+    },
+    "prov:generatedAtTime": "2026-08-10T12:50:11+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}
+
+==============================================================================
+SPOT CHECK 3b - the same dataset's canonical record (the JSON-LD
+emitter omits description/keywords/variable_measured/citations/byteSize;
+see gap G3 in READINESS-REPORT.md)
+==============================================================================
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e",
+    "short_id": "09vbkh",
+    "identifier": "dataset:09vb-kh3s-aq3q-4s3e",
+    "name": "LNMO-NMP-1 cell ee5c27 GITT half-cell OCV (BDF)",
+    "description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "license": "cc-by-4.0",
+    "same_as": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "keywords": [
+      "open circuit voltage",
+      "OCV",
+      "half-cell",
+      "GITT",
+      "quasi-OCV",
+      "lnmo"
+    ],
+    "citations": [
+      {
+        "kind": "dataset",
+        "url": "https://doi.org/10.5281/zenodo.20086298",
+        "doi": "10.5281/zenodo.20086298",
+        "citation_key": "flores2026ocv"
+      }
+    ],
+    "measurement_techniques": [
+      "gitt"
+    ],
+    "variable_measured": [
+      {
+        "name": "Test Time / s",
+        "description": "Elapsed time since the start of the test",
+        "unit_text": "s"
+      },
+      {
+        "name": "Unix Time / s",
+        "description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+        "unit_text": "s"
+      },
+      {
+        "name": "Current / A",
+        "description": "Instantaneous current",
+        "unit_text": "A"
+      },
+      {
+        "name": "Voltage / V",
+        "description": "Instantaneous voltage",
+        "unit_text": "V"
+      },
+      {
+        "name": "Cumulative Capacity / Ah",
+        "description": "Total capacity accumulated over a half cycle",
+        "unit_text": "Ah"
+      },
+      {
+        "name": "Cycle Count / 1",
+        "description": "Monotonically increasing index of test cycles",
+        "unit_text": "1"
+      },
+      {
+        "name": "Step Index / 1",
+        "description": "Index of the instantaneous step type within the measurement protocol",
+        "unit_text": "1"
+      }
+    ],
+    "access_url": "https://doi.org/10.5281/zenodo.20086298",
+    "created_at": 1778198400,
+    "modified_at": 1778198400,
+    "published_at": 1778198400,
+    "about": [
+      "https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke",
+      "https://w3id.org/battinfo/test/bqhh-43gg-x6mn-8q5x"
+    ],
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet",
+        "description": "BDF parquet file hosted on Zenodo.",
+        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet/content",
+        "encoding_format": "application/vnd.apache.parquet",
+        "content_size": "448521798",
+        "access_level": "open",
+        "checksum": {
+          "algorithm": "md5",
+          "value": "7e779f63372291ad56b2e01de6639cc7"
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "source_url": "https://doi.org/10.5281/zenodo.20086298",
+    "citation": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1786366211,
+    "battinfo_version": "0.7.0"
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}

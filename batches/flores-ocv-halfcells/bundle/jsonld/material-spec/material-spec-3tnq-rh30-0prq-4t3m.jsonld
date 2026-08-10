@@ -1,0 +1,23 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m",
+  "@type": "LithiumNickelManganeseCobaltOxide111",
+  "schema:sameAs": {
+    "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_a0b57956_8ba1_4021_ade9_44a87d103d90"
+  },
+  "schema:name": "NMC111 (LiNi1/3Mn1/3Co1/3O2) electrode - commercial electrode supplied by Customcells",
+  "schema:molecularFormula": "LiNi0.33Mn0.33Co0.33O2",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  }
+}

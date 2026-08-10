@@ -1,0 +1,11 @@
+Validation of records/ (battinfo validate_record_report + SHACL)
+
+material-spec   records=  9  errors=0  warnings=0  shacl_non_conforming=0
+material        records= 12  errors=0  warnings=0  shacl_non_conforming=0
+cell-spec       records=  9  errors=0  warnings=0  shacl_non_conforming=0
+cell-instance   records= 95  errors=0  warnings=0  shacl_non_conforming=0
+test-protocol   records=  4  errors=0  warnings=0  shacl_non_conforming=0
+test            records= 95  errors=0  warnings=0  shacl_non_conforming=0
+dataset         records= 95  errors=0  warnings=0  shacl_non_conforming=0
+
+TOTAL records=319  errors=0  warnings=0  shacl_non_conforming=0
