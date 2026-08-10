@@ -104,13 +104,14 @@ Each test carries the ambient conditions the record states (`ambient_temperature
 
 ## Publishing caveats (see `bundle/gold-standard-report.txt`)
 
-Per-record validation is clean: 319 records, 0 errors, 0 warnings, SHACL conforming. The deposit-level RO-Crate gold-standard check still reports three classes of issue, none of which come from these records:
+Per-record validation is clean: 319 records, 0 errors, 0 warnings, SHACL conforming. The deposit-level RO-Crate gold-standard check reports two classes of issue, neither of which comes from these records:
 
-1. 190 errors, "Distribution sha256 must be a 64-character hexadecimal digest". The deposit graph builder labels every distribution checksum `sha256` regardless of the algorithm on the record, so the authentic 32-character Zenodo md5 is emitted under a sha256 predicate and then fails the length check. The canonical records state `algorithm: "md5"` correctly. Computing real sha256 digests would mean downloading roughly 10 GB of parquet.
-2. 95 errors, "Published dataset nodes must define non-empty schema:about references". Every dataset record does carry `about` (its cell and its test) and the per-record JSON-LD emits it as `dcterms:subject`; the deposit graph builder drops it.
-3. 95 warnings, "BatteryTest should record prov:generated". The test-to-dataset back-link is not authored, because `ws.save()` rebuilds `test.dataset_ids` from the datasets the workspace engine holds and blanks it for everything else. The forward direction (dataset to cell and test) is complete.
+1. 95 errors, "Published dataset nodes must define non-empty schema:about references". Every dataset record does carry `about` (its cell and its test) and the per-record JSON-LD emits it as `dcterms:subject`; the deposit graph builder drops it.
+2. 95 warnings, "BatteryTest should record prov:generated". The test-to-dataset back-link is not authored, because `ws.save()` rebuilds `test.dataset_ids` from the datasets the workspace engine holds and blanks it for everything else. The forward direction (dataset to cell and test) is complete.
 
-All three are recorded in `READINESS-REPORT.md` as gaps G6, G7 and G1.
+Both are recorded in `READINESS-REPORT.md` as gaps G7 and G1.
+
+A third class, 190 errors reading "Distribution sha256 must be a 64-character hexadecimal digest", was fixed upstream in BIG-MAP/BattINFO#339 and no longer appears. The deposit graph used to publish every checksum under a sha256 predicate whatever the record said; it now states `spdx:checksumAlgorithm_md5` with the Zenodo md5, which is the honest statement and needs no 10 GB download to produce.
 
 ## Reproducing
 
@@ -119,3 +120,33 @@ pip install "git+https://github.com/BIG-MAP/BattINFO.git" pyshacl
 python build_records.py      # writes drafts/ and .battinfo/records/ (319 records)
 python build_bundle.py       # writes records/ and bundle/
 ```
+
+The build is reproducible on BattINFO main at commit `3833de8` (post BIG-MAP/BattINFO#339). Re-running against an existing workspace reports `[unchanged]` for all 319 records; a rebuild in an empty workspace reproduces all 319 byte for byte apart from `provenance.retrieved_at`, the build timestamp.
+
+## Attaching this layer to a new Zenodo version
+
+The layer is supplementary metadata for [Zenodo 20086298](https://doi.org/10.5281/zenodo.20086298). Publishing it as a new version of that record keeps the concept DOI (10.5281/zenodo.19107294) and leaves the 95 parquet files untouched.
+
+Upload two archives, built from this directory:
+
+```bash
+cd batches/flores-ocv-halfcells
+zip -r battinfo-records.zip records          # 319 files, ~1.9 MB
+zip -r battinfo-bundle.zip  bundle           # 324 files, ~6.7 MB
+```
+
+| archive | contents |
+|---|---|
+| `battinfo-records.zip` | `records/` - the 319 canonical BattINFO JSON records, seven types: `material-spec` (9), `material` (12), `cell-spec` (9), `cell-instance` (95), `test-protocol` (4), `test` (95), `dataset` (95). |
+| `battinfo-bundle.zip` | `bundle/jsonld/` (319 JSON-LD documents, one per record, each with a full inline `@context`), `bundle/deposit.jsonld` (the combined 321-node deposit graph), `bundle/ro-crate-metadata.json`, and the three evidence files: `validation-report.txt`, `emission-spot-checks.txt`, `gold-standard-report.txt`. |
+
+Steps on Zenodo:
+
+1. Open the record, choose **New version**. The 95 parquet files carry over; do not re-upload them.
+2. Upload `battinfo-records.zip` and `battinfo-bundle.zip`.
+3. Paste the text of `description-addendum.md` into the description, as a new **Semantic layer** heading at the end.
+4. Keep the existing creators, license (CC BY 4.0) and the IntelLiGent grant (101069765). Add the keywords `BattINFO`, `EMMO`, `linked data`, `RO-Crate` if they are not already there.
+5. Under **Related works**, add `https://github.com/battery-genome/battinfo-records` as *is supplemented by* (software/repository), and the Battery Genome registry entry once the records are indexed.
+6. Publish. The new version DOI supersedes 10.5281/zenodo.20086298; the concept DOI is unchanged.
+
+The records reference the parquet files by their Zenodo download URL and md5 checksum, both taken verbatim from the Zenodo API snapshot in `sources/zenodo-record.json`. A new version does not change those URLs or checksums, so nothing in the layer needs regenerating after the upload.
