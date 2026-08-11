@@ -1,6 +1,6 @@
-# Zenodo description addendum (draft)
+# Zenodo description addendum
 
-Suggested text to add to the dataset description on the next Zenodo version, under a new `<h1>Semantic layer</h1>` heading. Plain and terse; edit as preferred.
+Text to add to the dataset description on the next Zenodo version, under a new `<h1>Semantic layer</h1>` heading. Copy the section below the rule as-is, or edit as preferred. The identifiers it cites are live.
 
 ---
 
@@ -15,4 +15,4 @@ It is provided as two archives:
 
 The half-cells are typed as `BatteryHalfCell` / `HalfCellDevice`; the active materials resolve to EMMO classes with chemical-substance anchors and, where verified, Wikidata / PubChem / Materials Project identifiers; the four protocols emit typed process graphs (`PseudoOpenCircuitVoltageMethod`, `GalvanostaticIntermittentTitrationTechnique`) describing the five-cycle constant-current, rest, pulse and voltage-hold sequences. Each dataset record names its parquet file by download URL, byte size and md5 digest, stated as an md5 rather than relabelled.
 
-The records are also being contributed to the Battery Genome registry (https://www.battery-genome.org), which gives the cells, protocols, tests and datasets resolvable identifiers. This dataset is funded by the EU IntelLiGent project (grant 101069765) and released under CC BY 4.0.
+All 319 records are also published in the Battery Genome registry (https://www.battery-genome.org), so every material, cell, protocol, test and dataset has a permanent identifier that resolves to machine-readable metadata. For example, https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e describes the GITT measurement on cell ee5c27 and points back to the parquet file in this record by URL and md5 digest; that cell is https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke, built to the LNMO R2032 half-cell specification https://w3id.org/battinfo/spec/kzhf-qsrt-2z76-agkp. This dataset is funded by the EU IntelLiGent project (grant 101069765) and released under CC BY 4.0.

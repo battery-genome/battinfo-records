@@ -146,7 +146,23 @@ Steps on Zenodo:
 2. Upload `battinfo-records.zip` and `battinfo-bundle.zip`.
 3. Paste the text of `description-addendum.md` into the description, as a new **Semantic layer** heading at the end.
 4. Keep the existing creators, license (CC BY 4.0) and the IntelLiGent grant (101069765). Add the keywords `BattINFO`, `EMMO`, `linked data`, `RO-Crate` if they are not already there.
-5. Under **Related works**, add `https://github.com/battery-genome/battinfo-records` as *is supplemented by* (software/repository), and the Battery Genome registry entry once the records are indexed.
+5. Under **Related works**, add `https://github.com/battery-genome/battinfo-records` as *is supplemented by* (software/repository). All 319 records are now indexed in the Battery Genome registry, so add one of the resolvable identifiers below as *is described by* as well.
 6. Publish. The new version DOI supersedes 10.5281/zenodo.20086298; the concept DOI is unchanged.
 
 The records reference the parquet files by their Zenodo download URL and md5 checksum, both taken verbatim from the Zenodo API snapshot in `sources/zenodo-record.json`. A new version does not change those URLs or checksums, so nothing in the layer needs regenerating after the upload.
+
+## Registry publication
+
+The 319 records were published to the Battery Genome registry on 2026-08-11 (workspace `battinfo-records`, publisher `battinfo-records-bot`, `source_version` `2026-08-11`), in dependency order so that every internal reference resolved before the record citing it was submitted: material specs, material lots, cell specs, cell instances, protocols, tests, datasets. Every record was staged and then promoted through the review gate; none failed.
+
+Each record has a permanent `w3id.org` identifier. Three worth citing:
+
+| record | identifier |
+|---|---|
+| Silicon R2032 half-cell spec | `https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42` |
+| NMC532-NMP-1 electrode batch | `https://w3id.org/battinfo/material/17t8-f8vm-d6hj-gwzd` |
+| LNMO-NMP-1 GITT dataset | `https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e` |
+
+These content-negotiate: `Accept: application/ld+json` and `Accept: text/turtle` return the record from public storage with no credentials. Requesting HTML redirects to the platform page, which is behind the launch gate until the platform opens, so cite the identifier rather than a platform URL.
+
+One caveat worth knowing when reading the registry copy: the registry serves its own index view of a record (the canonical record body verbatim, plus a flattened `metadata` block it can filter on). It does not re-emit the EMMO semantic document. The `BatteryHalfCell` device typing, the chemical-substance anchors and the typed protocol process graphs live in `bundle/jsonld/` and `bundle/deposit.jsonld`, which is what makes the Zenodo archive, not the registry, the source of truth for the semantics.
