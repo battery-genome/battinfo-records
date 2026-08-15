@@ -299,6 +299,7 @@
     "LithiumManganeseIronPhosphateElectrode": "electrochemistry:electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b",
     "LithiumIonManganeseOxideBattery": "battery:battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09",
     "LithiumManganeseOxideElectrode": "electrochemistry:electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed",
+    "LithiumNickelManganeseOxideElectrode": "electrochemistry:electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d",
     "LithiumIonGraphiteBattery": "battery:battery_2018e0da_4c25_46e9_83db_38431fc81ce0",
     "GraphiteElectrode": "electrochemistry:electrochemistry_c831d963_629a_41ab_850f_97fb6841b739",
     "hasNegativeElectrode": {
@@ -311,6 +312,7 @@
     "LithiumElectrode": "electrochemistry:electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d",
     "LithiumIonTitanateBattery": "battery:battery_fd811dc3_8c37_4741_a099_78e26e4110ef",
     "LithiumTitanateElectrode": "electrochemistry:electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b",
+    "ZincElectrode": "electrochemistry:electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b",
     "RealData": "emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486",
     "ConventionalProperty": "emmo:EMMO_d8aa8e1f_b650_416d_88a0_5118de945456",
     "MeasuredProperty": "emmo:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4",
@@ -2712,8 +2714,8 @@
       ],
       "schema:name": "Half-Cell Open-Circuit Voltage of Several Lithium-Ion Battery Active Materials - BattINFO semantic layer",
       "dcterms:title": "Half-Cell Open-Circuit Voltage of Several Lithium-Ion Battery Active Materials - BattINFO semantic layer",
-      "schema:description": "Machine-readable BattINFO semantic layer describing the electrode materials, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked material-spec / material / cell-spec / cell-instance / test-protocol / test / dataset record chain; datasets reference the Zenodo files by URL and md5 checksum.",
-      "dcterms:description": "Machine-readable BattINFO semantic layer describing the electrode materials, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked material-spec / material / cell-spec / cell-instance / test-protocol / test / dataset record chain; datasets reference the Zenodo files by URL and md5 checksum.",
+      "schema:description": "Machine-readable BattINFO semantic layer describing the electrodes, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked electrode-spec / electrode / cell-spec / cell-instance / test-protocol / test / dataset record chain, with a material-spec for the one active material the source identifies as a powder; datasets reference the Zenodo files by URL and md5 checksum.",
+      "dcterms:description": "Machine-readable BattINFO semantic layer describing the electrodes, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked electrode-spec / electrode / cell-spec / cell-instance / test-protocol / test / dataset record chain, with a material-spec for the one active material the source identifies as a powder; datasets reference the Zenodo files by URL and md5 checksum.",
       "dcterms:language": "en",
       "schema:inLanguage": "en",
       "dcterms:license": {
@@ -20864,7 +20866,7 @@
             "@type": "ActiveMaterial",
             "schema:name": "LNMO (LiNi0.5Mn1.5O4)",
             "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
+              "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
             }
           }
         },
@@ -20895,7 +20897,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -20958,9 +20960,6 @@
           "hasActiveMaterial": {
             "@type": "ActiveMaterial",
             "schema:name": "Silicon-graphite composite",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/8mn9-1fgv-00ar-zb0b"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -20989,10 +20988,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 74.0
@@ -21000,7 +20999,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "Electrode"
+        "@type": "Electrode",
+        "@id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21015,7 +21015,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21079,9 +21079,6 @@
           "hasActiveMaterial": {
             "@type": "ActiveMaterial",
             "schema:name": "LFP (LiFePO4)",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/kw37-e849-72hy-3364"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -21110,10 +21107,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 78.0
@@ -21121,7 +21118,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "LithiumIronPhosphateElectrode"
+        "@type": "LithiumIronPhosphateElectrode",
+        "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21136,7 +21134,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21198,10 +21196,7 @@
           "@type": "ElectrodeCoating",
           "hasActiveMaterial": {
             "@type": "ActiveMaterial",
-            "schema:name": "Silicon-graphite composite",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z"
-            }
+            "schema:name": "Silicon-graphite composite"
           }
         },
         "hasProperty": {
@@ -21231,7 +21226,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21295,9 +21290,6 @@
           "hasActiveMaterial": {
             "@type": "ActiveMaterial",
             "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -21326,10 +21318,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 96.0
@@ -21337,7 +21329,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "LithiumNickelManganeseCobaltOxideElectrode"
+        "@type": "LithiumNickelManganeseCobaltOxideElectrode",
+        "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21352,7 +21345,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21416,7 +21409,7 @@
             "@type": "ActiveMaterial",
             "schema:name": "LNMO (LiNi0.5Mn1.5O4)",
             "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6"
+              "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
             }
           }
         },
@@ -21447,7 +21440,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21513,9 +21506,6 @@
               "ActiveMaterial"
             ],
             "schema:name": "Graphite",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -21544,10 +21534,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 64.0
@@ -21555,7 +21545,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "Electrode"
+        "@type": "Electrode",
+        "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21570,7 +21561,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21634,9 +21625,6 @@
           "hasActiveMaterial": {
             "@type": "ActiveMaterial",
             "schema:name": "NMC111 (LiNi1/3Mn1/3Co1/3O2)",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -21665,10 +21653,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 69.0
@@ -21676,7 +21664,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "LithiumNickelManganeseCobaltOxideElectrode"
+        "@type": "LithiumNickelManganeseCobaltOxideElectrode",
+        "@id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21691,7 +21680,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -21757,9 +21746,6 @@
               "ActiveMaterial"
             ],
             "schema:name": "Silicon",
-            "schema:isVariantOf": {
-              "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv"
-            },
             "hasProperty": {
               "@type": [
                 "MassFraction",
@@ -21788,10 +21774,10 @@
           },
           {
             "@type": [
-              "Thickness",
+              "CalenderedCoatingThickness",
               "ConventionalProperty"
             ],
-            "skos:prefLabel": "Thickness",
+            "skos:prefLabel": "CalenderedCoatingThickness",
             "hasNumericalPart": {
               "@type": "RealData",
               "hasNumberValue": 44.0
@@ -21799,7 +21785,8 @@
             "schema:unitText": "um"
           }
         ],
-        "@type": "Electrode"
+        "@type": "Electrode",
+        "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
       },
       "hasNegativeElectrode": {
         "hasCoating": {
@@ -21814,7 +21801,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+        "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27120,972 +27107,31 @@
       "schema:startTime": "2025-04-24T00:00:00Z"
     },
     {
-      "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z",
-      "@type": "SiliconGraphite",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_3f061928_e90f_4414_9308_d4c843ebb79a"
-      },
-      "schema:name": "Silicon-graphite composite electrode - IntelLiGent project batch 2 (SINTEF)",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m",
-      "@type": "LithiumNickelManganeseCobaltOxide111",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_a0b57956_8ba1_4021_ade9_44a87d103d90"
-      },
-      "schema:name": "NMC111 (LiNi1/3Mn1/3Co1/3O2) electrode - commercial electrode supplied by Customcells",
-      "schema:molecularFormula": "LiNi0.33Mn0.33Co0.33O2",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/8mn9-1fgv-00ar-zb0b",
-      "@type": "SiliconGraphite",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_3f061928_e90f_4414_9308_d4c843ebb79a"
-      },
-      "schema:name": "Silicon-graphite composite electrode - IntelLiGent project batch 1 (SINTEF)",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv",
-      "@type": "Silicon",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_68c0876b_cb62_41cd_846d_95cc9d9a8733"
-      },
-      "skos:exactMatch": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q670"
-        },
-        {
-          "@id": "https://next-gen.materialsproject.org/materials/mp-149"
-        }
-      ],
-      "schema:name": "Silicon electrode - IntelLiGent project batch 1 (SINTEF)",
-      "schema:molecularFormula": "Si",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41",
+      "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
       "@type": "LithiumNickelManganeseOxide",
       "schema:sameAs": {
         "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
       },
-      "schema:name": "LNMO (LiNi0.5Mn1.5O4) electrode - IntelLiGent project batch 2 (SINTEF)",
+      "schema:name": "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel",
       "schema:molecularFormula": "LiNi0.5Mn1.5O4",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q",
-      "@type": "LithiumNickelManganeseCobaltOxide532",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_592acd61_23c8_4a1a_b41b_1eeabedc0710"
-      },
-      "skos:exactMatch": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q121086662"
-        }
-      ],
-      "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2) electrode - commercial electrode supplied by Gelon LIB",
-      "schema:molecularFormula": "LiNi0.5Mn0.3Co0.2O2",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/kw37-e849-72hy-3364",
-      "@type": "LithiumIronPhosphate",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90"
-      },
-      "skos:exactMatch": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q3042400"
+      "hasProperty": {
+        "@type": [
+          "TheoreticalCapacity",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "TheoreticalCapacity",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 140.0
         },
-        {
-          "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/15320824"
-        },
-        {
-          "@id": "https://next-gen.materialsproject.org/materials/mp-19017"
-        }
-      ],
-      "schema:name": "LFP (LiFePO4) electrode - commercial electrode supplied by Gelon LIB",
-      "schema:molecularFormula": "LiFePO4",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w",
-      "@type": "Graphite",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303"
-      },
-      "skos:exactMatch": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q5309"
-        },
-        {
-          "@id": "https://pubchem.ncbi.nlm.nih.gov/compound/5462310"
-        },
-        {
-          "@id": "https://next-gen.materialsproject.org/materials/mp-48"
-        }
-      ],
-      "schema:name": "Graphite electrode - IntelLiGent project batch (SINTEF)",
-      "schema:molecularFormula": "C",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6",
-      "@type": "LithiumNickelManganeseOxide",
-      "schema:sameAs": {
-        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
-      },
-      "schema:name": "LNMO (LiNi0.5Mn1.5O4) electrode - IntelLiGent project batch 1 (SINTEF)",
-      "schema:molecularFormula": "LiNi0.5Mn1.5O4",
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      }
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/17t8-f8vm-d6hj-gwzd",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "NMC532-NMP-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "NMC532-NMP-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.9662
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 96.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "nmp",
-          "schema:name": "NMP solvent-based processing"
-        },
-        "hasSolvent": {
-          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-          "@type": "NMethyl2Pyrrolidone",
-          "schema:name": "NMP"
-        },
-        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC532-NMP-1."
+        "schema:unitText": "mAh/g"
       },
       "schema:citation": {
         "@id": "https://doi.org/10.5281/zenodo.20086298",
         "@type": "schema:CreativeWork",
         "bibo:doi": "10.5281/zenodo.20086298"
       },
-      "schema:comment": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/19v1-tpd1-qp44-hdzb",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "LFP-NMP-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/kw37-e849-72hy-3364"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "LFP-NMP-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.95
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 78.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "nmp",
-          "schema:name": "NMP solvent-based processing"
-        },
-        "hasSolvent": {
-          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-          "@type": "NMethyl2Pyrrolidone",
-          "schema:name": "NMP"
-        },
-        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LFP-NMP-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiFePO4 (commercial electrode)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/9eba-2hq8-a1bc-mcc1",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "Gr-AQ-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "Gr-AQ-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.909842
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 372.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 64.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Gr-AQ-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "Graphite (aqueous processed)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/d1mg-jjt4-1x97-t9rp",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "LNMO-AQ-2",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "LNMO-AQ-2"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.902756
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 140.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 47.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/dq7q-vqw9-yf5p-mfz3",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "LNMO-AQ-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "LNMO-AQ-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.919628
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 140.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 40.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/gs6f-9p49-yqb0-vgvy",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "NMC111-NMP-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "NMC111-NMP-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.9
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 69.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "nmp",
-          "schema:name": "NMP solvent-based processing"
-        },
-        "hasSolvent": {
-          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-          "@type": "NMethyl2Pyrrolidone",
-          "schema:name": "NMP"
-        },
-        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC111-NMP-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiNi0.33Mn0.33Co0.33O2 (commercial electrode)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/paap-ck0z-fbq3-npcw",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "SiGr-AQ-2",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "SiGr-AQ-2"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.8694
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 1150.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 51.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-2."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "Higher Si % silicon-graphite composite (aqueous processed)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/tfv2-qsp5-3xcb-n8fs",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "SiGr-AQ-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/8mn9-1fgv-00ar-zb0b"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "SiGr-AQ-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.9077
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 510.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 74.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "Lower Si % silicon-graphite composite (aqueous processed)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/w9n6-4vhn-e6ad-hnkv",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "LNMO-NMP-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "LNMO-NMP-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.919971
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 140.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 64.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "nmp",
-          "schema:name": "NMP solvent-based processing"
-        },
-        "hasSolvent": {
-          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-          "@type": "NMethyl2Pyrrolidone",
-          "schema:name": "NMP"
-        },
-        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/wrhz-thsv-1zn9-s8m0",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "SiGr-AQ-3",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "SiGr-AQ-3"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.869715
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 900.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 54.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-3."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "Higher Si % silicon-graphite composite (aqueous processed)."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/xy28-8fsa-8mnw-hpq5",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "LNMO-NMP-2",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "LNMO-NMP-2"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.920021
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 140.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 90.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "nmp",
-          "schema:name": "NMP solvent-based processing"
-        },
-        "hasSolvent": {
-          "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-          "@type": "NMethyl2Pyrrolidone",
-          "schema:name": "NMP"
-        },
-        "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel."
-    },
-    {
-      "@id": "https://w3id.org/battinfo/material/z204-mp8w-zqr9-dc8n",
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "Si-AQ-1",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv"
-      },
-      "schema:identifier": {
-        "@type": "schema:PropertyValue",
-        "schema:name": "lot_id",
-        "schema:value": "Si-AQ-1"
-      },
-      "hasProperty": [
-        {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.849714
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        },
-        {
-          "@type": [
-            "TheoreticalCapacity",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "TheoreticalCapacity",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 3579.0
-          },
-          "schema:unitText": "mAh/g"
-        },
-        {
-          "@type": [
-            "Thickness",
-            "ConventionalProperty"
-          ],
-          "skos:prefLabel": "Thickness",
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 44.0
-          },
-          "schema:unitText": "um"
-        }
-      ],
-      "prov:wasGeneratedBy": {
-        "@type": "Manufacturing",
-        "skos:prefLabel": "Manufacturing",
-        "dcterms:type": {
-          "@type": "schema:DefinedTerm",
-          "schema:termCode": "aqueous",
-          "schema:name": "Water-based (aqueous) processing"
-        },
-        "hasSolvent": {
-          "@type": "schema:ChemicalSubstance",
-          "schema:name": "water"
-        },
-        "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1."
-      },
-      "schema:citation": {
-        "@id": "https://doi.org/10.5281/zenodo.20086298",
-        "@type": "schema:CreativeWork",
-        "bibo:doi": "10.5281/zenodo.20086298"
-      },
-      "schema:comment": "Silicon (aqueous processed)."
+      "schema:comment": "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly disordered spinel.\" No supplier, grade or product identifier is given for the powder, so none is stated here."
     }
   ]
 }

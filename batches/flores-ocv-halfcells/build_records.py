@@ -6,6 +6,14 @@ DOI (version):  10.5281/zenodo.20086298
 DOI (concept):  10.5281/zenodo.19107294
 License:        CC BY 4.0
 
+CORPUS V2 - re-authored on the first-class electrode model (BIG-MAP/BattINFO#342).
+The ratified principle is that the material spec describes the POWDER and the
+electrode spec describes the ELECTRODE. Corpus v1 broke it: it minted nine
+"material specs" that were really electrode products and twelve "material lots"
+that were really coated electrode batches. Those 21 records are retired here (see
+superseded/README.md) and replaced by 1 material spec, 12 electrode specs and 12
+electrode batches.
+
 Deterministic: the script reads two committed source snapshots (``sources/metadata.csv``
 and ``sources/zenodo-record.json``, verbatim captures of the Zenodo API), writes the
 cell-spec / test-spec drafts it authors from into ``drafts/``, and writes canonical
@@ -13,8 +21,9 @@ BattINFO records into ``.battinfo/records/``. Re-running is a no-op: every recor
 carries a content-derived IRI and unchanged records report ``[unchanged]``.
 
 Records authored (one published Zenodo dataset -> per-test granularity):
-  * 9  material specs   (electrode products: active-material kind x electrode source)
-  * 12 material lots    (one per public electrode label, carrying the processing route)
+  * 1  material spec    (the LNMO powder - the only powder the source identifies)
+  * 12 electrode specs  (one per electrode DESIGN: kind x source x processing route)
+  * 12 electrodes       (the published electrode BATCHES, one per public label)
   * 9  cell specs       (R2032 coin half-cells, cell_configuration = half_cell)
   * 95 cell instances   (one per parquet; serial = 6-char id, name = public label)
   * 4  test protocols   (p-OCV, p-OCV hold, GITT, GITT hold; structured EMMO method)
@@ -22,14 +31,17 @@ Records authored (one published Zenodo dataset -> per-test granularity):
   * 95 datasets         (each references the published Zenodo parquet + md5 + size)
 
 Authoring surface: everything except the datasets is authored through the blessed
-``battinfo.workspace()`` API (``ws.add`` / ``ws.load`` / ``ws.save``). The engine
+``battinfo.workspace()`` API (``ws.add`` / ``ws.load`` / ``ws.save``), including the
+new ``ws.add("electrode_spec", ...)`` / ``ws.add("electrode", ...)`` pair. The engine
 handle ``ws._ws`` is never touched. Datasets that describe an already-published
 remote file have no blessed workspace entry point, so they are built from the public
 ``battinfo.Dataset`` model and written with the public ``battinfo.save_dataset``;
 see READINESS-REPORT.md (gap G1).
 
+Nothing here submits: this build stages records for review only.
+
 Run:  python build_records.py
-Requires BattINFO from git main (`pip install git+https://github.com/BIG-MAP/BattINFO.git`).
+Requires BattINFO from git main at or after 63da080b (#342).
 """
 from __future__ import annotations
 
@@ -51,7 +63,7 @@ DRAFTS = HERE / "drafts"
 RECORDS_ROOT = HERE / ".battinfo" / "records"
 
 # SINTEF's registry organization IRI, carried by the cell specs (manufacturer_id) and
-# by the manufacturer block of the six SINTEF-made material specs. IREC
+# by the manufacturer block of the nine SINTEF-made electrode specs. IREC
 # (9hrt-w8hx-7cca-4z2v) is equally live in the registry but has no attachment point
 # here: its two people appear only as contributors, and contributor affiliations take
 # a plain name, not an organization IRI (see gap G10 in READINESS-REPORT.md).
@@ -77,10 +89,11 @@ CONTRIBUTORS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Level 1: active-material KINDS. These are vocabulary entries in BattINFO's
-# curated material_kinds, not records - each carries the EMMO class, the
-# chemical-substance anchor and the external identity anchors. The filename
-# token in the BDF names maps onto a kind key.
+# Level 1: active-material KINDS. Vocabulary entries in BattINFO's curated
+# material_kinds, not records - each carries the EMMO class, the chemical-substance
+# anchor and the external identity anchors. Under the electrode model the kind is
+# what an electrode spec names; a powder record is only authored when the source
+# says something about the powder that the kind does not already carry.
 # ---------------------------------------------------------------------------
 KIND_BY_TOKEN = {
     "graphite": "graphite",
@@ -92,7 +105,6 @@ KIND_BY_TOKEN = {
     "nmc532": "nmc532",
 }
 
-# Display name and idealised composition per kind, as stated in the Zenodo record.
 KIND_LABEL = {
     "graphite": "Graphite",
     "silicon": "Silicon",
@@ -102,36 +114,14 @@ KIND_LABEL = {
     "nmc111": "NMC111 (LiNi1/3Mn1/3Co1/3O2)",
     "nmc532": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
 }
-KIND_FORMULA = {
-    "graphite": "C",
-    "silicon": "Si",
-    "silicon_graphite": None,          # blend; composition not reported
-    "lnmo": "LiNi0.5Mn1.5O4",
-    "lfp": "LiFePO4",
-    "nmc111": "LiNi0.33Mn0.33Co0.33O2",
-    "nmc532": "LiNi0.5Mn0.3Co0.2O2",
-}
-KIND_FAMILY = {
-    "graphite": "graphitic-carbon",
-    "silicon": "silicon",
-    "silicon_graphite": "silicon-graphite-composite",
-    "lnmo": "spinel",
-    "lfp": "olivine",
-    "nmc111": "layered-oxide",
-    "nmc532": "layered-oxide",
-}
-# Electrode polarity of the working electrode in the coin half-cells. In every
-# Li half-cell the lithium metal counter electrode is the lower-potential
-# (negative) electrode, so the material under study is always the positive one -
-# consistent with the positive voltage windows reported vs Li/Li+.
-KIND_POLARITY = {k: "positive" for k in KIND_LABEL}
 
 # Controlled positive_electrode_basis terms. domain-battery only curates
 # positive-electrode classes for materials normally used as cathodes; graphite,
 # silicon, silicon-graphite and LNMO have no positive-electrode term, so the
-# field is omitted for them rather than emitted as an unmapped value. The
-# material identity is carried losslessly by the electrode bill of materials,
-# which links each active material to its material spec (and thence its kind).
+# field is omitted for them rather than emitted as an unmapped value. Under v2
+# the chemistry is no longer lost when the field is omitted: the cell spec cites
+# its electrode spec, whose node is typed with the chemistry class directly
+# (SiliconBasedElectrode, LithiumNickelManganeseOxideElectrode, ...). See G8.
 POSITIVE_BASIS = {
     "lfp": "lfp",
     "nmc111": "nmc",
@@ -139,6 +129,11 @@ POSITIVE_BASIS = {
 }
 
 # Electrode source token -> (organization role, display name, registry IRI).
+# The tokens are the batch-identifier field of the dataset's own file-name
+# convention ("dataOwner__manufacturer-chemistry-factor-batchID-6characterID"),
+# and the Zenodo batch table calls the gelon/customcells ones "commercial
+# electrode", so those two are purchased electrodes and the intelligent* ones
+# are the electrodes SINTEF coated in the IntelLiGent project.
 SOURCE_ORG = {
     "intelligent": ("manufacturer", "SINTEF", SINTEF_IRI),
     "intelligent1": ("manufacturer", "SINTEF", SINTEF_IRI),
@@ -160,7 +155,9 @@ VWINDOW = {
     "lnmo": (3.50, 4.80), "lfp": (2.50, 3.65), "nmc111": (3.00, 4.30), "nmc532": (3.00, 4.30),
 }
 
-# Batch-level notes from the Zenodo "Electrode batches" table, keyed by public label.
+# Batch-level statements from the Zenodo "Electrode batches" table, keyed by public
+# label. These are the source's own words about each batch and are the evidence for
+# both the electrode-spec description and the batch note.
 BATCH_NOTE = {
     "Gr-AQ-1": "Graphite (aqueous processed).",
     "Si-AQ-1": "Silicon (aqueous processed).",
@@ -176,11 +173,83 @@ BATCH_NOTE = {
     "NMC532-NMP-1": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode).",
 }
 
+# Human-readable design name per public label. The name is the product half of the
+# electrode-spec identity seed (producer, product, grade, kind, route). It is our
+# descriptive label, deliberately NOT a fabricated producer part number: the source
+# states no product id or grade for any of these electrodes, so `product_id` and
+# `grade` are left unset rather than invented.
+DESIGN_NAME = {
+    "Gr-AQ-1": "Graphite electrode, aqueous processed (IntelLiGent, SINTEF)",
+    "Si-AQ-1": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+    "SiGr-AQ-1": "Silicon-graphite electrode, aqueous processed, lower Si % "
+                 "(IntelLiGent batch 1, SINTEF)",
+    "SiGr-AQ-2": "Silicon-graphite electrode, aqueous processed, higher Si % "
+                 "(IntelLiGent batch 2, SINTEF)",
+    "SiGr-AQ-3": "Silicon-graphite electrode, aqueous processed, higher Si %, "
+                 "'B/Silicon Graphite' active material (IntelLiGent batch 2, SINTEF)",
+    "LNMO-AQ-1": "LNMO electrode, aqueous processed (IntelLiGent batch 1, SINTEF)",
+    "LNMO-AQ-2": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
+    "LNMO-NMP-1": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
+    "LNMO-NMP-2": "LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF)",
+    "LFP-NMP-1": "LFP electrode, NMP processed (commercial, Gelon LIB)",
+    "NMC111-NMP-1": "NMC111 electrode, NMP processed (commercial, Customcells)",
+    "NMC532-NMP-1": "NMC532 electrode, NMP processed (commercial, Gelon LIB)",
+}
+
 # The public label encodes "chemical composition and manufacturing route"
-# (metadata schema, Zenodo description), so the -AQ- / -NMP- token is the
-# authors' own statement of the processing route. Labels with neither token
-# would leave `processing` unset rather than guessed; all 12 carry one.
+# (metadata schema, Zenodo description), and the batch table spells the route out
+# in words ("aqueous processed" / "organic solvent processed"), so the -AQ- /
+# -NMP- token is the authors' own statement of the route. Under the electrode
+# model the route is part of the DESIGN identity, not a build detail.
 ROUTE_TOKENS = {"AQ": ("aqueous", "water"), "NMP": ("nmp", "NMP")}
+
+# ---------------------------------------------------------------------------
+# MATERIAL-SPEC DISPOSITION (v2). A material spec is authored only where the
+# source states something about the POWDER that the kind does not already carry.
+# Evidence, kind by kind, from the Zenodo description and metadata.csv:
+#
+#   lnmo             AUTHORED. "The LNMO material used in this study targeted high
+#                    Mn/Ni disorder, therefore the OCVs is a highly disordered
+#                    spinel" - a statement about the material itself, singular,
+#                    covering the whole study. metadata.csv states one theoretical
+#                    specific capacity (140 mAh/g) for all four LNMO batches. One
+#                    powder, four electrode designs across two processing routes.
+#   silicon          NOT AUTHORED. The description says the opposite: "OCVs from
+#                    Si-containing electrodes might exhibit large variations
+#                    depending on material properties, such as particle size,
+#                    crystallinity, surface chemistry, percentage of silicon in
+#                    Si-Graphite blends, etc. None of these material and electrode
+#                    properties are available from the suppliers." The only powder
+#                    number in metadata.csv is 3579 mAh/g, the textbook theoretical
+#                    capacity of silicon, i.e. the kind restated.
+#   silicon_graphite NOT AUTHORED, same statement - and it names "percentage of
+#                    silicon in Si-Graphite blends" as one of the unavailable
+#                    properties, so a powder record claiming a blend composition
+#                    would contradict the source. The three blends ARE
+#                    distinguishable (510 / 1150 / 900 mAh/g theoretical), so that
+#                    number rides the electrode spec of each design instead.
+#   graphite         NOT AUTHORED. 372 mAh/g is the textbook value for the kind;
+#                    nothing else is stated.
+#   lfp, nmc111,     NOT AUTHORED. Purchased complete electrodes ("commercial
+#   nmc532           electrode" in the batch table). The manufacturers supplied
+#                    electrode-level figures (weight percentage, loading, areal
+#                    capacity - see the V3 version note), never a powder identity.
+#                    Their electrode specs carry `kind` with no
+#                    `active_material_spec_id`, which is exactly the tolerance the
+#                    optional field exists for.
+#
+# Where a powder record exists, the theoretical specific capacity of the active
+# material lives on it; where none does, it lives in the electrode spec's design
+# property block. It is never stated twice.
+# ---------------------------------------------------------------------------
+LNMO_SPEC_NAME = "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel"
+LNMO_DISORDER_NOTE = (
+    "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary "
+    "depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used "
+    "in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly "
+    "disordered spinel.\" No supplier, grade or product identifier is given for the "
+    "powder, so none is stated here."
+)
 
 PROTOCOLS = {
     "p-ocv": dict(
@@ -252,6 +321,7 @@ def load_metadata() -> list[dict]:
                 "file": name, "kind": KIND_BY_TOKEN[m["mat"]], "src": m["src"],
                 "hex": m["hex"], "date": m["date"], "proto": m["proto"],
                 "label": r["Public Labels"].strip(),
+                "am_type": (r["Active Material type"] or "").strip(),
                 "am_mass_mg": num(r["Mass of Active Material / mg"]),
                 "coating_mass_g": num(r["Electrode Coating Mass / g"]),
                 "wt_pct": num(r["Weight percentage of Active Material / %"]),
@@ -376,81 +446,158 @@ def main() -> int:
         id="https://cordis.europa.eu/project/id/101069765",
     )
 
-    by_product: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    by_cell_spec: dict[tuple[str, str], list[dict]] = defaultdict(list)
     by_batch: dict[str, list[dict]] = defaultdict(list)
     for r in rows:
-        by_product[(r["kind"], r["src"])].append(r)
+        by_cell_spec[(r["kind"], r["src"])].append(r)
         by_batch[r["label"]].append(r)
 
-    # --- 1. Material specs: one per electrode product (kind x electrode source) ---
-    print("\n== material specs ==")
-    spec_by_product: dict[tuple[str, str], dict] = {}
-    for (kind, src), items in sorted(by_product.items()):
-        role, org, org_iri = SOURCE_ORG[src]
-        org_ref = {"type": "Organization", "name": org, "id": org_iri} if org_iri else org
-        labels = sorted({i["label"] for i in items})
-        fields = dict(
-            name=f"{KIND_LABEL[kind]} electrode - {SOURCE_LABEL[src]}",
-            kind=kind,
-            grade=src,
-            product_id=f"sintef-{kind}-{src}",
-            material_class="active_material",
-            electrode_polarity=KIND_POLARITY[kind],
-            chemistry_family=KIND_FAMILY[kind],
-            description=(
-                f"{KIND_LABEL[kind]} active material in the electrodes of the "
-                f"{SOURCE_LABEL[src]}. Electrode batches published under this product: "
-                f"{', '.join(labels)}."),
-            source_type="literature",
-            citation=DOI_URL,
-        )
-        if KIND_FORMULA[kind]:
-            fields["formula"] = KIND_FORMULA[kind]
-        fields[role] = org_ref
-        spec_by_product[(kind, src)] = ws.add("material_spec", **fields)[0]
+    # --- 1. Material specs: the powders the source actually identifies -----------
+    # One: the LNMO active material. See the MATERIAL-SPEC DISPOSITION block above
+    # for the kind-by-kind evidence, including why the silicon-containing powders
+    # deliberately get none.
+    print("\n== material specs (powders) ==")
+    lnmo_rows = [r for r in rows if r["kind"] == "lnmo"]
+    lnmo_theo = only_value(lnmo_rows, "theo_mahg")
+    lnmo_spec = ws.add(
+        "material_spec",
+        name=LNMO_SPEC_NAME,
+        kind="lnmo",
+        material_class="active_material",
+        formula="LiNi0.5Mn1.5O4",
+        chemistry_family="spinel",
+        description=(
+            "LNMO active material used across all four LNMO electrode batches of the "
+            "dataset, aqueous and NMP processed alike. The study targeted high Mn/Ni "
+            "disorder, so these OCVs are those of a highly disordered spinel."),
+        property=({"theoretical_capacity": q(lnmo_theo, "mAh/g")} if lnmo_theo else None),
+        source_type="literature",
+        citation=DOI_URL,
+        notes=[LNMO_DISORDER_NOTE],
+    )[0]
+    lnmo_spec_id = lnmo_spec["material_spec"]["id"]
+    material_spec_by_kind = {"lnmo": lnmo_spec_id}
 
-    # --- 2. Material lots: one per published electrode batch (public label) ------
-    # The processing route (aqueous vs NMP) is an instance/build property, never
-    # part of the product identity - it lives here, exactly as the schema intends.
-    print("\n== material lots ==")
-    material_by_label: dict[str, dict] = {}
+    # --- 2. Electrode specs: one per electrode DESIGN ---------------------------
+    # The design key is (kind, electrode source, processing route). In this dataset
+    # that resolves 1:1 onto the twelve public labels, because the two designs that
+    # share a key - SiGr-AQ-2 and SiGr-AQ-3, both silicon-graphite / IntelLiGent
+    # batch 2 / aqueous - state different theoretical specific capacities for their
+    # active material (1150 vs 900 mAh/g) and different active-material type labels
+    # ("Silicon Graphite" vs "B/Silicon Graphite"), i.e. they are built from
+    # different blends and are different designs.
+    #
+    # The route is part of the identity seed (producer, product, grade, kind, route),
+    # which is why LNMO-AQ-1 and LNMO-NMP-1 are two designs and not one.
+    print("\n== electrode specs (designs) ==")
+    electrode_spec_by_label: dict[str, dict] = {}
     for label, items in sorted(by_batch.items()):
         r0 = items[0]
-        spec = spec_by_product[(r0["kind"], r0["src"])]
+        kind = r0["kind"]
         route = route_for(label)
-        prop: dict[str, dict] = {}
+        role, org, org_iri = SOURCE_ORG[r0["src"]]
+        producer = {"type": "Organization", "name": org, "id": org_iri} if org_iri else org
+
+        design: dict = {}
+        diam = only_value(items, "diam_mm")
+        if diam is not None:
+            design["diameter"] = q(diam, "mm")
+        # Design values the manufacturer states for the purchased electrodes: they
+        # are constant across every cell of the batch, unlike the SINTEF-coated
+        # ones where loading and areal capacity are computed per cell and stay on
+        # the tests (gap G2).
+        loading = only_value(items, "loading_gcm2")
+        if loading is not None:
+            # Reported in g/cm2; expressed in mg/cm2, the symbol that resolves to a
+            # dereferenceable EMMO unit. Same quantity, no rounding beyond float.
+            design["loading"] = q(loading * 1000.0, "mg/cm2")
+        areal = only_value(items, "areal_mahcm2")
+        if areal is not None:
+            design["areal_capacity"] = q(areal, "mAh/cm2")
+        # Theoretical specific capacity is a property of the active material. It
+        # rides the electrode spec only where no powder record exists to hold it.
+        theo = only_value(items, "theo_mahg")
+        if theo is not None and kind not in material_spec_by_kind:
+            design["theoretical_capacity"] = q(theo, "mAh/g")
+
+        fields: dict = {
+            "name": DESIGN_NAME[label],
+            "kind": kind,
+            "manufacturer": producer,
+            "description": (
+                f"{BATCH_NOTE[label]} Electrode design of the {SOURCE_LABEL[r0['src']]}, "
+                f"published under the label {label}. Active-material type as stated in "
+                f"metadata.csv: \"{r0['am_type']}\"."),
+            "property": design or None,
+            "source_type": "literature",
+            "citation": DOI_URL,
+        }
+        if kind in material_spec_by_kind:
+            fields["active_material_spec_id"] = material_spec_by_kind[kind]
         wt = only_value(items, "wt_pct")
         if wt is not None:
-            prop["mass_fraction"] = q(wt, "%")
-        thick = only_value(items, "thick_um")
-        if thick is not None:
-            prop["thickness"] = q(thick, "um")
-        theo = only_value(items, "theo_mahg")
-        if theo is not None:
-            prop["theoretical_capacity"] = q(theo, "mAh/g")
-        fields = dict(
-            spec=spec, lot=label, name=label,
-            property=prop or None,
-            notes=[BATCH_NOTE[label]],
-            source_type="measurement", citation=DOI_URL,
-        )
+            # Only the active-material weight percentage is stated; the balance of
+            # binder and additive is not reported and is not invented.
+            fields["composition"] = {"active": {"fraction": q(wt, "%")}}
         if route is not None:
-            route_word = "aqueous" if route[0] == "aqueous" else "organic-solvent"
+            route_word = "Aqueous" if route[0] == "aqueous" else "Organic-solvent"
             fields["processing"] = {
                 "route": route[0], "solvent": route[1],
-                "detail": f"{route_word.capitalize()} electrode coating ({route[1]}), as "
-                          f"stated by the public electrode label {label}.",
+                "detail": f"{route_word} electrode coating ({route[1]}), as stated by the "
+                          f"public electrode label {label} and the Zenodo batch table.",
             }
-        role, org, org_iri = SOURCE_ORG[r0["src"]]
+        notes = [
+            f"Active-material weight percentage and dry thickness are as published in "
+            f"metadata.csv for batch {label}."
+        ]
+        if kind not in material_spec_by_kind:
+            notes.append(
+                "No material spec is authored for this electrode's active material: the "
+                "source states no powder identity for it. `kind` carries the chemistry.")
+        fields["notes"] = notes
+        electrode_spec_by_label[label] = ws.add("electrode_spec", **fields)[0]
+
+    # --- 3. Electrodes: the twelve published batches ----------------------------
+    # The batch record is where the public label lives and where the as-built
+    # figures that are constant across the batch sit. Per-CELL figures (active
+    # material mass, coating mass, per-cell loading and areal capacity) stay on the
+    # tests, because the model has no per-cell electrode slot (gap G2).
+    print("\n== electrodes (batches) ==")
+    electrode_by_label: dict[str, dict] = {}
+    for label, items in sorted(by_batch.items()):
+        r0 = items[0]
+        spec = electrode_spec_by_label[label]
+        as_built: dict = {}
+        thick = only_value(items, "thick_um")
+        if thick is not None:
+            as_built["dry_thickness"] = q(thick, "um")
+        fields: dict = {
+            "spec": spec, "batch": label, "name": label,
+            "property": as_built or None,
+            "notes": [
+                BATCH_NOTE[label],
+                f"Dry thickness as published in metadata.csv for this batch; "
+                f"{len(items)} of the 95 published measurements were made on cells built "
+                f"from it.",
+            ],
+            "source_type": "measurement", "citation": DOI_URL,
+        }
+        role, org, _org_iri = SOURCE_ORG[r0["src"]]
         if role == "supplier":
             fields["supplier"] = org
-        material_by_label[label] = ws.add("material", **fields)[0]
+        electrode_by_label[label] = ws.add("electrode", **fields)[0]
 
-    # --- 3. Cell specs: nine R2032 coin half-cells ------------------------------
+    # --- 4. Cell specs: nine R2032 coin half-cells ------------------------------
+    # Unchanged from v1 in identity: manufacturer, model, format, chemistry and
+    # size_code are the cell-spec identity seed, and all five are byte-identical, so
+    # the nine published IRIs (and every cell, test and dataset IRI derived from
+    # them) are preserved. What changes is the electrode reference.
     print("\n== cell specs ==")
     spec_by_key: dict[tuple[str, str], object] = {}
-    for (kind, src), items in sorted(by_product.items()):
+    cell_spec_electrode_designs: dict[tuple[str, str], list[str]] = {}
+    for (kind, src), items in sorted(by_cell_spec.items()):
         labels = sorted({i["label"] for i in items})
+        cell_spec_electrode_designs[(kind, src)] = labels
         lo, hi = VWINDOW[kind]
         model = f"{KIND_LABEL[kind]} R2032 half-cell ({src})"
         draft = {
@@ -478,15 +625,16 @@ def main() -> int:
         cs = ws.load(path)
         cs.manufacturer_id = SINTEF_IRI
 
-        # Working electrode: the material under study, linked to its material spec.
-        # Batch-level figures are only stated here when every batch under this
-        # product agrees; otherwise they stay on the individual material lots.
+        # Working electrode: the material under study. It links to the designed
+        # electrode when this spec is realized by exactly one design, and to the
+        # powder record when the source identifies one.
         am_kwargs: dict = {}
         wt = only_value(items, "wt_pct")
         if wt is not None:
             am_kwargs["mass_fraction"] = q(wt, "%")
         am = material(KIND_LABEL[kind], **am_kwargs)
-        am.material_spec_id = spec_by_product[(kind, src)]["material_spec"]["id"]
+        if kind in material_spec_by_kind:
+            am.material_spec_id = material_spec_by_kind[kind]
         we_props: dict = {}
         thick = only_value(items, "thick_um")
         if thick is not None:
@@ -502,22 +650,46 @@ def main() -> int:
             bom=bom(active_material=material("Lithium metal")),
             comment="Counter and reference electrode: lithium metal foil.",
         )
+        design_note = (
+            f"Electrode design realizing this spec: "
+            f"{electrode_spec_by_label[labels[0]]['electrode_spec']['name']}."
+        )
+        if len(labels) == 1:
+            # One design: state it structurally. The emitter merges the electrode
+            # spec's @id onto this cell spec's positive-electrode node.
+            cs.positive_electrode_spec_id = (
+                electrode_spec_by_label[labels[0]]["electrode_spec"]["id"])
+        else:
+            # More than one design under one published cell spec. The seam is
+            # single-valued and the cell-spec IRIs are already published, so the
+            # designs are named in prose rather than silently collapsing two
+            # different electrodes onto one link. See READINESS-REPORT.md gap E3.
+            design_note = (
+                "This cell spec is realized by more than one electrode design "
+                + "; ".join(
+                    electrode_spec_by_label[label]["electrode_spec"]["name"]
+                    for label in labels)
+                + ". Because a cell spec can cite only one electrode spec, no "
+                  "electrode_spec_id is stated; the designs are reachable through the "
+                  "electrode batches named below."
+            )
         cs.specification_comment = [
             "R2032 coin half-cell. The working electrode is the named active material; "
             "the counter and reference electrode is lithium metal. All voltages are "
             "reported vs Li/Li+.",
             f"Half-cell voltage window: {lo:.2f}-{hi:.2f} V.",
             f"Public electrode label(s) grouped under this spec: {', '.join(labels)}.",
+            design_note,
             "Electrolyte and separator are not reported in the source record and are omitted.",
         ]
         spec_by_key[(kind, src)] = cs
 
-    # --- 4. Cell instances: one per published parquet ---------------------------
+    # --- 5. Cell instances: one per published parquet ---------------------------
     print("\n== cell instances ==")
     cell_by_hex: dict[str, object] = {}
-    # ws.add("cell", ...) applies one production date per call and de-duplicates on
-    # the cell label, so cells are added in (product, batch, date) groups keyed by
-    # their unique 6-character id; the public label is set on the returned objects.
+    # ws.add("cell", ...) applies one production date per call, so cells are added in
+    # (product, batch, date) groups keyed by their unique 6-character id; the public
+    # label is set on the returned objects.
     groups: dict[tuple[str, str, str, str], list[dict]] = defaultdict(list)
     for r in rows:
         groups[(r["kind"], r["src"], r["label"], r["date"])].append(r)
@@ -529,13 +701,14 @@ def main() -> int:
             production_date=yyyymmdd(date),
         )
         for cell, item in zip(cells, items):
-            # The public label is the batch this cell was built from; it is also the
-            # lot_id of the material record, which makes the join explicit.
+            # The public label is the electrode batch this cell was built from. It is
+            # also the batch_id of the electrode record, which is the only join
+            # available: cell instances have no electrode reference (gap E4).
             cell.name = label
             cell.batch_id = label
             cell_by_hex[item["hex"]] = cell
 
-    # --- 5. Test protocols ------------------------------------------------------
+    # --- 6. Test protocols ------------------------------------------------------
     print("\n== test protocols ==")
     proto_by_key: dict[str, object] = {}
     for key, p in PROTOCOLS.items():
@@ -551,7 +724,7 @@ def main() -> int:
         path = write_draft(DRAFTS / f"{key}.test-spec.json", draft)
         proto_by_key[key] = ws.load(path)
 
-    # --- 6. Tests: cell x protocol; known issues become conformance --------------
+    # --- 7. Tests: cell x protocol; known issues become conformance --------------
     def dataset_title(row: dict) -> str:
         return (f"{row['label']} cell {row['hex']} {PROTOCOLS[row['proto']]['name']} "
                 f"half-cell OCV (BDF)")
@@ -578,8 +751,9 @@ def main() -> int:
         # Ambient conditions plus the as-built electrode figures for this specific
         # cell. These per-cell values normalise the measurement (specific capacity,
         # C-rate) and have no other structured home in the model - the cell-instance
-        # `measured` block is a closed cell-performance vocabulary. See gap G2 in
-        # READINESS-REPORT.md.
+        # `measured` block is a closed cell-performance vocabulary, and the electrode
+        # batch record describes the batch, not the disc punched for one cell. See
+        # gap G2 in READINESS-REPORT.md.
         conditions: dict = {
             "ambient_temperature": "room temperature",
             "voltage_reference": "Li/Li+",
@@ -591,16 +765,14 @@ def main() -> int:
         if r["areal_mahcm2"] is not None:
             conditions["nominal_areal_capacity"] = q(r["areal_mahcm2"], "mAh/cm2")
         if r["loading_gcm2"] is not None:
-            # Reported in g/cm2; expressed in mg/cm2, the symbol that resolves to a
-            # dereferenceable EMMO unit. Same quantity, no rounding beyond float.
             conditions["electrode_loading"] = q(r["loading_gcm2"] * 1000.0, "mg/cm2")
         test.conditions = conditions
         test_by_hex[r["hex"]] = test
 
-    # --- 7. Save the blessed-API records ----------------------------------------
+    # --- 8. Save the blessed-API records ----------------------------------------
     result = ws.save(validation_policy="strict")
 
-    # --- 8. Datasets ------------------------------------------------------------
+    # --- 9. Datasets ------------------------------------------------------------
     # MODEL GAP G1: the blessed workspace API cannot author a dataset that describes
     # an already-published remote file. ws.add("test", data=...) only accepts local
     # paths and exposes no dataset-level metadata (checksum, byte size, distribution,
@@ -631,7 +803,6 @@ def main() -> int:
 
     print("\n== datasets ==")
     dataset_results = []
-    dataset_id_by_hex: dict[str, str] = {}
     for r in rows:
         p = PROTOCOLS[r["proto"]]
         zf = zfiles[r["file"]]
@@ -672,7 +843,6 @@ def main() -> int:
             validation_policy="strict", build_jsonld=False, build_html=False,
             stamp=stamp)
         dataset_results.append(saved)
-        dataset_id_by_hex[r["hex"]] = saved["id"]
     written = sum(1 for d in dataset_results if d.get("status") == "created"
                   or d.get("content_changed"))
     print(f"  dataset:    {len(dataset_results)} record(s); {written} written this run")
@@ -684,7 +854,8 @@ def main() -> int:
 
     counts = {
         "material_spec": len(result.get("material_specs", [])),
-        "material": len(result.get("materials", [])),
+        "electrode_spec": len(result.get("electrode_specs", [])),
+        "electrode": len(result.get("electrodes", [])),
         "cell_spec": len(result.get("cell_specs", [])),
         "cell_instance": len(result.get("cell_instances", [])),
         "test_protocol": len(result.get("test_specs", [])),
@@ -695,6 +866,10 @@ def main() -> int:
     for key, value in counts.items():
         print(f"  {key:15s} {value}")
     print(f"  {'TOTAL':15s} {sum(counts.values())}")
+
+    linked = sum(1 for key in spec_by_key
+                 if len(cell_spec_electrode_designs[key]) == 1)
+    print(f"\ncell specs citing one electrode design: {linked} of {len(spec_by_key)}")
     return 0
 
 

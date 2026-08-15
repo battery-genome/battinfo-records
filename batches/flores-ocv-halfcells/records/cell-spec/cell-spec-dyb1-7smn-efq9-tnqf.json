@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786795064,
     "battinfo_version": "0.7.0"
   },
   "positive_electrode": {
@@ -41,7 +41,6 @@
         "active_material": [
           {
             "name": "Silicon-graphite composite",
-            "material_spec_id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z",
             "property": {}
           }
         ],
@@ -79,6 +78,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter and reference electrode is lithium metal. All voltages are reported vs Li/Li+.",
     "Half-cell voltage window: 0.01-1.00 V.",
     "Public electrode label(s) grouped under this spec: SiGr-AQ-2, SiGr-AQ-3.",
+    "This cell spec is realized by more than one electrode design Silicon-graphite electrode, aqueous processed, higher Si % (IntelLiGent batch 2, SINTEF); Silicon-graphite electrode, aqueous processed, higher Si %, 'B/Silicon Graphite' active material (IntelLiGent batch 2, SINTEF). Because a cell spec can cite only one electrode spec, no electrode_spec_id is stated; the designs are reachable through the electrode batches named below.",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

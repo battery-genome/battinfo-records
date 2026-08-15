@@ -1,0 +1,12 @@
+Deposit-graph coverage by record type (deposit.jsonld)
+
+material-spec   records=  1  nodes_in_deposit_graph=  1
+electrode-spec  records= 12  nodes_in_deposit_graph=  0   <-- MISSING from the deposit graph
+electrode       records= 12  nodes_in_deposit_graph=  0   <-- MISSING from the deposit graph
+cell-spec       records=  9  nodes_in_deposit_graph=  9
+cell-instance   records= 95  nodes_in_deposit_graph= 95
+test-protocol   records=  4  nodes_in_deposit_graph=  4
+test            records= 95  nodes_in_deposit_graph= 95
+dataset         records= 95  nodes_in_deposit_graph= 95
+
+deposit graph nodes: 301

@@ -2,6 +2,8 @@
 
 Text to add to the dataset description on the next Zenodo version, under a new `<h1>Semantic layer</h1>` heading. Copy the section below the rule as-is, or edit as preferred. The identifiers it cites are live.
 
+**This text describes corpus v1, which is what is published.** Corpus v2 (the electrode remodel) is staged in this branch and not published anywhere; the counts and the record-type list below are refreshed as part of the republish, not before it. See `REVIEW-TABLE-V2.md`.
+
 ---
 
 ## Semantic layer

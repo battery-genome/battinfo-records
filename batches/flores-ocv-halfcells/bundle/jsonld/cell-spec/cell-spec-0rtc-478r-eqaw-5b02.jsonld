@@ -299,6 +299,7 @@
     "LithiumManganeseIronPhosphateElectrode": "electrochemistry:electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b",
     "LithiumIonManganeseOxideBattery": "battery:battery_45804eeb_fba3_49dd_ae79_6b4e958d6e09",
     "LithiumManganeseOxideElectrode": "electrochemistry:electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed",
+    "LithiumNickelManganeseOxideElectrode": "electrochemistry:electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d",
     "LithiumIonGraphiteBattery": "battery:battery_2018e0da_4c25_46e9_83db_38431fc81ce0",
     "GraphiteElectrode": "electrochemistry:electrochemistry_c831d963_629a_41ab_850f_97fb6841b739",
     "hasNegativeElectrode": {
@@ -311,6 +312,7 @@
     "LithiumElectrode": "electrochemistry:electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d",
     "LithiumIonTitanateBattery": "battery:battery_fd811dc3_8c37_4741_a099_78e26e4110ef",
     "LithiumTitanateElectrode": "electrochemistry:electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b",
+    "ZincElectrode": "electrochemistry:electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b",
     "RealData": "emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486",
     "ConventionalProperty": "emmo:EMMO_d8aa8e1f_b650_416d_88a0_5118de945456",
     "MeasuredProperty": "emmo:EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4",
@@ -523,7 +525,7 @@
         "@type": "ActiveMaterial",
         "schema:name": "LNMO (LiNi0.5Mn1.5O4)",
         "schema:isVariantOf": {
-          "@id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41"
+          "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
         }
       }
     },
@@ -554,7 +556,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

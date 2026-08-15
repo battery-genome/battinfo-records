@@ -3,9 +3,9 @@
 
 Run AFTER build_records.py. Produces (all under this directory):
 
-  records/                        tracked copy of the 319 canonical BattINFO JSON
+  records/                        tracked copy of the 323 canonical BattINFO JSON
                                   records (the workspace .battinfo/ dir is gitignored).
-  bundle/jsonld/                  per-record JSON-LD for all seven record types.
+  bundle/jsonld/                  per-record JSON-LD for all eight record types.
   bundle/deposit.jsonld           one combined JSON-LD graph for the whole deposit.
   bundle/ro-crate-metadata.json   deposit-level RO-Crate metadata.
   bundle/validation-report.txt    per-type error/warning/SHACL counts over records/.
@@ -35,10 +35,11 @@ CONCEPT_DOI = "10.5281/zenodo.19107294"
 TITLE = ("Half-Cell Open-Circuit Voltage of Several Lithium-Ion Battery Active Materials "
          "- BattINFO semantic layer")
 DESCRIPTION = (
-    "Machine-readable BattINFO semantic layer describing the electrode materials, cells, "
+    "Machine-readable BattINFO semantic layer describing the electrodes, cells, "
     "electrochemical protocols, tests and datasets of Zenodo record " + DOI + ". "
-    "Each of the 95 BDF parquet files is described by a linked material-spec / material / "
-    "cell-spec / cell-instance / test-protocol / test / dataset record chain; datasets "
+    "Each of the 95 BDF parquet files is described by a linked electrode-spec / electrode / "
+    "cell-spec / cell-instance / test-protocol / test / dataset record chain, with a "
+    "material-spec for the one active material the source identifies as a powder; datasets "
     "reference the Zenodo files by URL and md5 checksum."
 )
 KEYWORDS = ["open circuit voltage", "OCV", "GITT", "quasi-OCV", "half-cell", "BattINFO",
@@ -58,11 +59,15 @@ CREATORS = [
      "affiliation": "Institut de Recerca de l'Energia de Catalunya"},
 ]
 
-# Directory name -> record_to_jsonld type. ws.export() covers five of these; the two
-# material types are emitted here directly (see gap G5 in READINESS-REPORT.md).
+# Directory name -> record_to_jsonld type. ws.export() covers five of these; the
+# material and electrode types are emitted here directly (see gap G5 in
+# READINESS-REPORT.md). Directories with no records are skipped, so the retired
+# `material` (electrode-batch) level simply drops out.
 RECORD_TYPES = {
     "material-spec": "material-spec",
     "material": "material",
+    "electrode-spec": "electrode-spec",
+    "electrode": "electrode",
     "cell-spec": "cell-spec",
     "cell-instance": "cell-instance",
     "test-protocol": "test-protocol",
@@ -154,38 +159,91 @@ def spot_checks() -> str:
                              indent=2, ensure_ascii=False))
         out.write("\n\n")
 
-    # 1. Half-cell typing on a cell spec, and the material spec its working
-    #    electrode links to (kind -> EMMO class + chemical-substance + exactMatch).
+    # --- Thread 1: the aqueous silicon chain, cell spec -> electrode design ------
+    # A designed electrode with NO powder record behind it: the chemistry rides
+    # `kind`, which is exactly the tolerance active_material_spec_id being optional
+    # exists for.
     spec = _pick("cell-spec", lambda r: r["cell_spec"]["cell_configuration"] == "half_cell"
                  and "Silicon R2032" in r["cell_spec"]["model"])
-    spec_ld = B.record_to_jsonld(spec, "cell-spec", context="inline")
-    section("SPOT CHECK 1a - cell spec: half-cell device typing + electrode -> material spec",
-            spec_ld)
-    material_iri = (spec["positive_electrode"]["coating"]["component"]["active_material"][0]
-                    ["material_spec_id"])
-    ms = _pick("material-spec", lambda r: r["material_spec"]["id"] == material_iri)
-    section("SPOT CHECK 1b - the linked material spec: EMMO class, chemical-substance "
-            "anchor, external exactMatch", B.record_to_jsonld(ms, "material-spec", context="inline"))
-    lot = _pick("material", lambda r: r["material"]["material_spec_id"] == material_iri)
-    section("SPOT CHECK 1c - a material lot of that product: processing route + as-built "
-            "batch figures", B.record_to_jsonld(lot, "material", context="inline"))
+    section("SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive "
+            "electrode node carries the @id of the electrode spec it realizes",
+            B.record_to_jsonld(spec, "cell-spec", context="inline"))
+    si_es_iri = spec["positive_electrode_spec_id"]
+    si_es = _pick("electrode-spec", lambda r: r["electrode_spec"]["id"] == si_es_iri)
+    section("SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, "
+            "coating composition, aqueous route as prov:wasGeneratedBy, no powder link",
+            B.record_to_jsonld(si_es, "electrode-spec", context="inline"))
+    si_batch = _pick("electrode", lambda r: r["electrode"]["electrode_spec_id"] == si_es_iri)
+    section("SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the "
+            "public label as a schema:PropertyValue + as-built dry thickness",
+            B.record_to_jsonld(si_batch, "electrode", context="inline"))
 
-    # 2. Typed method class on a protocol.
+    # --- Thread 2: LNMO, the one powder the source identifies -------------------
+    ms = _pick("material-spec", lambda r: r["material_spec"]["kind"] == "lnmo")
+    section("SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, "
+            "chemical-substance anchor, theoretical capacity",
+            B.record_to_jsonld(ms, "material-spec", context="inline"))
+    lnmo_iri = ms["material_spec"]["id"]
+    aq = _pick("electrode-spec",
+               lambda r: r["electrode_spec"].get("active_material_spec_id") == lnmo_iri
+               and r["electrode_spec"]["processing"]["route"] == "aqueous")
+    nmp = _pick("electrode-spec",
+                lambda r: r["electrode_spec"].get("active_material_spec_id") == lnmo_iri
+                and r["electrode_spec"]["processing"]["route"] == "nmp")
+    section("SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the "
+            "powder IRI; the route is in the identity seed, so this is its own design",
+            B.record_to_jsonld(aq, "electrode-spec", context="inline"))
+    section("SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different "
+            "design", B.record_to_jsonld(nmp, "electrode-spec", context="inline"))
+    out.write(f"{'=' * 78}\nSPOT CHECK 2d - the two LNMO designs are distinct IRIs\n"
+              f"{'=' * 78}\naqueous: {aq['electrode_spec']['id']}\n"
+              f"nmp:     {nmp['electrode_spec']['id']}\n"
+              f"powder:  {lnmo_iri}\n\n")
+
+    # --- Thread 3: protocols and datasets (unchanged from v1) -------------------
     for name in ("GITT", "p-OCV"):
         protocol = _pick("test-protocol", lambda r, n=name: r["test_spec"]["name"] == n)
-        section(f"SPOT CHECK 2 - test protocol {name}: typed EMMO method + process graph",
+        section(f"SPOT CHECK 3 - test protocol {name}: typed EMMO method + process graph",
                 B.record_to_jsonld(protocol, "test-protocol", context="inline"))
 
-    # 3. A dataset: distribution + checksum + license + nine-contributor attribution.
     dataset = _pick("dataset", lambda r: r["dataset"]["distributions"])
-    section("SPOT CHECK 3a - dataset JSON-LD: dcat distribution + spdx checksum + license "
-            "+ contributors", B.record_to_jsonld(dataset, "dataset", context="inline"))
-    out.write(f"{'=' * 78}\nSPOT CHECK 3b - the same dataset's canonical record (the JSON-LD\n"
-              f"emitter omits description/keywords/variable_measured/citations/byteSize;\n"
-              f"see gap G3 in READINESS-REPORT.md)\n{'=' * 78}\n")
+    section("SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, "
+            "typed as md5) + license + contributors",
+            B.record_to_jsonld(dataset, "dataset", context="inline"))
+    out.write(f"{'=' * 78}\nSPOT CHECK 4b - the same dataset's canonical record\n"
+              f"{'=' * 78}\n")
     out.write(json.dumps(dataset, indent=2, ensure_ascii=False))
     out.write("\n")
     return out.getvalue()
+
+
+def deposit_coverage(deposit_path: Path) -> str:
+    """Which record IRIs reached the combined deposit graph, and which did not.
+
+    Evidence for gap E2: the deposit graph builder promotes standalone material
+    records to first-class nodes but not electrode ones, so the whole electrode
+    layer is absent from deposit.jsonld even though every record validates and
+    emits on its own.
+    """
+    doc = json.loads(deposit_path.read_text(encoding="utf-8"))
+    in_graph = {n.get("@id") for n in doc.get("@graph", []) if isinstance(n, dict)}
+    lines = ["Deposit-graph coverage by record type (deposit.jsonld)", ""]
+    for directory in RECORD_TYPES:
+        src_dir = RECORDS / directory
+        if not src_dir.is_dir():
+            continue
+        ids = []
+        for src in sorted(src_dir.glob("*.json")):
+            raw = json.loads(src.read_text(encoding="utf-8"))
+            body = next((v for k, v in raw.items()
+                         if isinstance(v, dict) and isinstance(v.get("id"), str)), None)
+            if body:
+                ids.append(body["id"])
+        present = sum(1 for i in ids if i in in_graph)
+        lines.append(f"{directory:15s} records={len(ids):3d}  nodes_in_deposit_graph={present:3d}"
+                     + ("" if present == len(ids) else "   <-- MISSING from the deposit graph"))
+    lines += ["", f"deposit graph nodes: {len(doc.get('@graph', []))}"]
+    return "\n".join(lines) + "\n"
 
 
 def main() -> int:
@@ -199,7 +257,7 @@ def main() -> int:
     BUNDLE.mkdir(parents=True)
 
     n_ld = emit_jsonld()
-    print(f"emitted {n_ld} JSON-LD documents -> bundle/jsonld/ (all seven record types)")
+    print(f"emitted {n_ld} JSON-LD documents -> bundle/jsonld/ (every record type present)")
 
     (BUNDLE / "validation-report.txt").write_text(validation_report(), encoding="utf-8")
     (BUNDLE / "emission-spot-checks.txt").write_text(spot_checks(), encoding="utf-8")
@@ -218,6 +276,10 @@ def main() -> int:
     (BUNDLE / "gold-standard-report.txt").write_text(buf.getvalue(), encoding="utf-8")
     print("wrote bundle/deposit.jsonld, bundle/ro-crate-metadata.json, "
           "bundle/gold-standard-report.txt")
+
+    (BUNDLE / "deposit-coverage.txt").write_text(
+        deposit_coverage(BUNDLE / "deposit.jsonld"), encoding="utf-8")
+    print("wrote bundle/deposit-coverage.txt")
     return 0
 
 

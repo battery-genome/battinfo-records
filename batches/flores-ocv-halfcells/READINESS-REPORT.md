@@ -1,20 +1,30 @@
 # BattINFO readiness report - authoring the Flores half-cell OCV semantic layer
 
-Findings from authoring 319 linked records (9 material specs, 12 material lots, 9 half-cell specs, 95 cell instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298.
+Findings from authoring 323 linked records (1 material spec, 12 electrode specs, 12 electrode batches, 9 half-cell specs, 95 cell instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298.
 
-This is the second pass. The first pass (August 2026) ran against BattINFO 0.7.0 before the material kind/spec/instance model, `cell_configuration`, `Test.conditions`, protocol JSON-LD emission and the completed EMMO stack landed. This version re-authors the whole layer on current `main` (BattINFO 0.7.0 at commit of PR #338, EMMO domain-battery 0.20.2 / electrochemistry 0.37.2 / chemical-substance 0.15.0). The delta section below records which of the original findings the model closed.
+This is the third pass, and the first on the **first-class electrode model** (BIG-MAP/BattINFO#342, commit `63da080b`). Pass one (August 2026) predated the material kind/spec/instance model, `cell_configuration`, `Test.conditions` and protocol JSON-LD emission. Pass two re-authored the layer on the material model and is what is published today. Pass three re-authors the material layer as electrodes: 9 material specs and 12 material lots that were really electrode products and coated batches become 12 electrode specs, 12 electrode batches and 1 genuine powder record. The findings below are cumulative; the new ones are the E series.
 
 ## Result
 
-| | first pass | now |
-|---|---|---|
-| records | 305 | 319 |
-| strict-save errors | 0 | 0 |
-| semantic warnings | 36 | **0** |
-| SHACL non-conforming | 0 | 0 |
-| record types reaching JSON-LD | 4 of 6 | **7 of 7** |
-| `ws._ws` engine calls | 6 | **0** |
-| idempotent re-run | yes | yes (byte-identical) |
+| | pass 1 | pass 2 (published) | pass 3 (this branch) |
+|---|---|---|---|
+| records | 305 | 319 | 323 |
+| strict-save errors | 0 | 0 | 0 |
+| semantic warnings | 36 | 0 | **3** (one false positive, E5) |
+| SHACL non-conforming | 0 | 0 | 0 |
+| record types reaching JSON-LD | 4 of 6 | 7 of 7 | **8 of 8** |
+| record types reaching the deposit graph | - | 7 of 7 | **6 of 8** (E2) |
+| `ws._ws` engine calls | 6 | 0 | 0 |
+| idempotent re-run | yes | yes | yes (byte-identical) |
+
+## What the electrode model made possible
+
+Worth stating before the gaps, because these are things the previous pass could not express at all:
+
+- **One powder, four electrode designs, two routes.** The LNMO material spec is cited by all four LNMO electrode specs. In v1 the same physical situation was two "material specs" (one per IntelLiGent batch) with the route pushed onto the lots, which said the aqueous and the NMP electrode were the same product built differently. They are not: different binder system, different drying, different performance, and the model now says so by putting the route in the spec identity seed.
+- **Purchased electrodes stop pretending to be powders.** The three commercial electrodes carry `kind` and no `active_material_spec_id`, and lose nothing by it. v1 had to mint a "material spec" for a product nobody has powder data for.
+- **Chemistry survives the polarity vocabulary gap.** An electrode-spec node is typed from its kind on either side (`SiliconBasedElectrode` + `NegativeElectrode`), so a half cell whose working electrode is an anode material now has its chemistry in the graph even though `positive_electrode_basis` has no term for it. That is most of G8, closed as a side effect.
+- **Design values have a home.** Manufacturer-stated loading and areal capacity for the purchased electrodes sit on the design, where they belong, instead of being repeated per cell on 25 test records.
 
 ## Delta: what the model closed
 
@@ -44,7 +54,69 @@ This is the second pass. The first pass (August 2026) ran against BattINFO 0.7.0
 
 **H3 (deposit gold standard requires sha256, Zenodo gives md5) - CLOSED after this pass.** The second pass found it was worse than first characterised: the graph builder relabelled the md5 as a sha256 rather than merely lacking one. BIG-MAP/BattINFO#339 fixed it. See G6.
 
-## Open gaps
+## Open gaps: the electrode model (new in pass 3)
+
+### E1. The inline electrode-spec seam is not on the authoring model
+
+The cell-spec JSON Schema gained `positive_electrode.electrode_spec_id` in #342, the JSON-LD emitter reads it and emits `schema:isVariantOf`, and the registry vendored it (battinfo-registry#45). The pydantic `Electrode` holder in `bundle.py` did not gain the field, and it is `extra="forbid"`, so the blessed authoring path cannot write it.
+
+Repro:
+
+```python
+cs = ws.load("draft.cell-spec.json")
+cs.positive_electrode = electrode(bom=bom(active_material=material("Silicon")))
+cs.positive_electrode.electrode_spec_id = "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
+# ValueError: "Electrode" object has no field "electrode_spec_id"
+```
+
+This build therefore uses the other seam, the top-level `positive_electrode_spec_id`, which *is* on the model and which merges the electrode spec's `@id` onto the emitted electrode node. For a cell spec citing an electrode design that is arguably the better statement anyway. But the two seams are advertised as equal alternatives and only one is authorable, so a user who follows the electrodes-model doc hits a wall.
+
+Fix shape: add `electrode_spec_id: str | None` to `bundle.Electrode` next to the `material_spec_id` that `MaterialComponent` already carries, and round-trip it in `to_record`/`from_record`.
+
+### E2. The deposit graph drops the whole electrode layer
+
+`_assemble_zenodo_jsonld` promotes standalone records to first-class deposit nodes for `material-spec` and `material` only. `electrode-spec` and `electrode` are read off disk by `_read_record_sets` (they are in `record_set_dirs()`), then never used. All 24 electrode records are absent from `bundle/deposit.jsonld`: 301 nodes for 323 records.
+
+Repro: `bundle/deposit-coverage.txt` in this branch, or grep any electrode IRI in `bundle/deposit.jsonld`.
+
+This is the same shape as the submit gap #342 closed, in the other publication path: a record that saves, validates and emits cleanly still fails to reach the artifact a reader gets. It matters more here than for materials, because the electrode specs are where the processing route, the composition and the design values live.
+
+Fix shape: extend the material-node loop to `("material-spec", "material", "electrode-spec", "electrode")`; the emitter already produces the right node for both.
+
+### E3. A cell spec can cite only one electrode design
+
+`positive_electrode_spec_id` is single-valued, which is right for a cell spec that describes one design. Three of the nine published cell specs here cover two designs each (LNMO aqueous + NMP for two IntelLiGent batches; two Si/Gr blends coated in the same batch series), because the cell-spec grouping predates the electrode model.
+
+The corpus names the designs in `specification_comment` rather than picking one, and the batches carry the labels, so nothing is lost - but the structural link is absent for a third of the specs. Splitting the three into six would fix it and re-mint 47 cells, 47 tests and 47 datasets, so it is left as a review decision (REVIEW-TABLE-V2.md, D1).
+
+Fix shape: nothing needed in the model if the corpus splits. If multi-design cell specs are considered legitimate, the field would need to accept a list, which is a bigger change than it looks - the emitter merges the referenced `@id` onto one electrode node.
+
+### E4. A cell instance cannot reference the electrode batch it was built from
+
+The electrodes-model doc says this outright ("Cell instances do not yet reference electrode batches; there is no natural slot on `cell_instance` today"), and this dataset is a clean example of the cost. Every one of the 95 cells was built from exactly one of the 12 batches, and the corpus knows which: the public label is on both records. But the join is a string match on `batch_id`, not a reference, so a consumer cannot follow cell -> electrode -> design -> powder without knowing the labelling convention.
+
+Fix shape: an `electrode_ids` (or `positive_electrode_id` / `negative_electrode_id`) reference on the cell instance, resolved like `cell_spec_id`. It would also give the cell-level answer to E3: even where the spec cannot say which design, the instance could.
+
+### E5. The semantic validator warns about electrode design values the emitter maps
+
+`areal_capacity` on an electrode spec emits the curated EMMO class `AreicCapacity` - it is in `_ELECTRODE_PROPERTY_TERMS`, added by #342, and the electrodes-model doc advertises it. The validator's known-key set is built by `_component_property_terms()`, which unions `_FRACTION_PROPERTY_TERMS`, `_DESCRIPTOR_PROPERTY_TERMS` and `_DESCRIPTOR_COATING_PROPERTY_TERMS` and was not extended to the electrode table. So a correct record warns:
+
+```
+semantic.property_unmapped  electrode_spec.property.areal_capacity
+'areal_capacity' is schema-valid but has no curated EMMO mapping ...
+```
+
+The three purchased-electrode specs in this corpus each carry a manufacturer-stated areal capacity, so the corpus reports 3 warnings for 0 defects. The same applies to `nominal_areal_capacity` and `reversible_areal_capacity`.
+
+The irony is that the helper's docstring states the invariant it breaks: "Imported from the transform itself ... so this set can never drift from what the JSON-LD emitters actually accept." It drifted.
+
+Fix shape: add `_ELECTRODE_PROPERTY_TERMS` to the import and the union in `_component_property_terms()`. One line, and a test asserting the set equals the emitter's tables would keep it honest.
+
+### E6. Batch nodes are typed generically
+
+An `electrode` record emits `@type: "Electrode"` because "an instance carries no chemistry of its own; its type comes from the spec it realizes, which is not resolvable here". True for a single-record emitter, but the deposit graph *does* have both records in hand, so a reader of the bundle sees twelve untyped electrode nodes next to twelve richly typed designs. Low impact while E2 stands (the batches are not in the graph at all); worth revisiting when it is fixed.
+
+## Open gaps: carried forward
 
 Ranked by impact. Each has an exact repro.
 
@@ -91,11 +163,11 @@ Repro: save a material with `{"thickness": {"value": 44, "unit": "µm"}}` -> `un
 
 Fix shape: normalise the micro sign and the Greek mu to one key on both sides, and add `um` as an ASCII alias.
 
-### G5. `ws.export()` covers five of the seven record types
+### G5. `ws.export()` covers five of the nine record types (wider in pass 3)
 
-`record_to_jsonld` handles material specs and material lots, but `ws.export()`'s internal `_TYPE_MAP` lists only cell-spec, cell-instance, test, test-protocol and dataset, so an exported bundle silently omits the material layer. `build_bundle.py` emits all seven itself to work around this.
+`record_to_jsonld` handles material specs, material lots, electrode specs and electrodes, but `ws.export()`'s internal `_TYPE_MAP` still lists only cell-spec, cell-instance, test, test-protocol and dataset, so an exported bundle silently omits both the material and the electrode layer. `build_bundle.py` emits every type itself to work around this.
 
-Repro: `ws.export("json-ld", output_dir=...)` on a workspace with materials; no `material/` or `material-spec/` directory appears.
+Repro: `ws.export("json-ld", output_dir=...)` on this workspace; no `material-spec/`, `electrode-spec/` or `electrode/` directory appears.
 
 ### G6. The deposit graph relabels md5 checksums as sha256
 
@@ -115,11 +187,11 @@ Repro: `bundle/gold-standard-report.txt` (95 errors) against any `records/datase
 
 ### G8. No positive-electrode term for a working electrode made of an anode material
 
-`positive_electrode_basis` curates only cathode materials (lfp, nmc, nca, lco, mno2, lmfp, lmo, nmc811, nmca). In a lithium half-cell the working electrode is always the positive one, whatever the material, so graphite, silicon and silicon-graphite half-cells have no term available even though all three exist under `negative_electrode_basis`. LNMO has no term at either polarity. Four of the nine specs therefore omit the field.
+**Mostly closed by #342, for a reason worth noting.** `positive_electrode_basis` still curates only cathode materials (lfp, nmc, nca, lco, mno2, lmfp, lmo, nmc811, nmca), so four of the nine cell specs still omit the field. But the electrode emitter does exactly what the fix shape below proposed: `_electrode_kind_node_type` looks a kind up on the side its polarity implies and *then on the other side*, so `silicon` reaches `SiliconBasedElectrode` and LNMO reaches `LithiumNickelManganeseOxideElectrode` regardless of polarity. Those classes now reach the graph through the cited electrode spec, so the chemistry of an anode-material working electrode is no longer missing from the semantic view - only from the coarse cell-spec descriptor.
 
-This is a vocabulary gap, not a data loss - the electrode's bill of materials links to the material spec and thence to the kind's EMMO class - but the coarse descriptor that drives device typing is unavailable for half-cells of anode materials.
+The original finding: in a lithium half-cell the working electrode is always the positive one, whatever the material, so graphite, silicon and silicon-graphite half-cells have no term available even though all three exist under `negative_electrode_basis`. LNMO had no term at either polarity.
 
-Fix shape: allow the electrode classes at either polarity (the class names are material statements, not polarity statements), or add an explicit working-electrode basis for half-cell configurations. Adding an LNMO electrode class would close the fourth case.
+Fix shape (remaining): allow the electrode classes at either polarity in the `*_electrode_basis` map too, the way the electrode emitter already does, or add an explicit working-electrode basis for half-cell configurations.
 
 ### G9. `ws.add("cell", ...)` de-duplicates on the display label
 
@@ -138,21 +210,37 @@ Fix shape: de-duplicate on the serial when one is supplied, and treat the name a
 - `ws.project()`, `ws.contributor()` and `ws.license()` print their state on every call, including the no-argument getter form, so reading the current value inside a script emits a banner.
 - The test-protocol record's envelope key is `test_spec` although the record lives in `test-protocol/` and its `identifier` reads `test-protocol:...`.
 
+### G11. `ws.submit()` was blind to the equipment family (and materials)
+
+**Materials and electrodes closed by BIG-MAP/BattINFO#342; equipment still open.** Found 2026-08-11 while publishing the first equipment records (SkyRC MC3000 bench units). `ws.submit()` swept a hardcoded subdir tuple `("cell-spec", "cell-instance", "test-protocol", "test", "dataset")`, so equipment-spec, equipment, channel, material-spec and material records saved in a workspace were never submitted, silently. #342 replaced the tuple with a nine-entry `_SUBDIRS` covering material-spec, material, electrode-spec and electrode, and gave the two electrode types their `related_resources` wiring (`electrode -> electrode_spec_id`). The equipment family is still absent from both the sweep and the `only=` alias table.
+
+This corpus does not exercise the fix: it stages records for review and submits nothing.
+
+Repro (still valid): fresh workspace, `ws.add("equipment", spec=..., serial_number=...)`, `ws.save()`, `ws.publish()` -> "Saved 0 record(s)", empty outcome list, nothing submitted.
+
+Fix shape: extend the sweep and the `only=` aliases to the equipment types too, and include add-time-written records in the session set. While there, derive `related_resources` for equipment the way electrodes now get it.
+
 ## Worked well
 
-- The kind / spec / instance split matched this dataset exactly: seven kinds of vocabulary, nine electrode products, twelve physical batches. Nothing had to be bent to fit, and the schema's own note that "aqueous vs NMP is not a distinct product" is precisely the distinction the data makes.
-- `cell_configuration = "half_cell"` did in one field what the previous pass could only do in prose, and did it without a warning.
-- The PyBaMM-style and structured method paths both produce a real EMMO process graph. Five cycles of typed charge, discharge, rest and voltage-hold steps with control and termination parameters is a far better protocol description than the previous pass could emit at all.
-- Material kinds carry verified external anchors. Silicon emits `skos:exactMatch` to Wikidata and Materials Project alongside the chemical-substance IRI, with no authoring effort.
-- Content-derived IRIs across all seven types make the re-run genuinely byte-identical, checked by hashing the whole record tree before and after.
-- `ws.project("101069765")` enrichment, `ws.contributor` and `ws.license` reach every record type including materials.
+- The powder / design / batch split matched this dataset better than the material model it replaces. One powder statement in the source, twelve electrode designs, twelve coated batches; nothing had to be bent, and the one thing v1 had to bend - the route being an instance property - is exactly what #342 moved.
+- `ws.add("electrode_spec", ...)` and `ws.add("electrode", ...)` behave like every other adder: same `spec=` resolution, same attribution stamp, same content-derived IRIs, same `[unchanged]` on a re-run. The pair needed no special handling in the build script.
+- Derived polarity is the right default. Nine of the twelve designs would have been mislabelled if polarity had been authored from the cell's point of view, and the validator catches exactly that mistake.
+- Composition shorthand accepts a quantity, not just a bare number, so `{"active": {"fraction": {"value": 84.97, "unit": "%"}}}` keeps the source's own units and emits a real EMMO percent unit instead of a dimensionless 1.
+- `cell_configuration = "half_cell"` did in one field what the first pass could only do in prose, and did it without a warning.
+- The PyBaMM-style and structured method paths both produce a real EMMO process graph. Five cycles of typed charge, discharge, rest and voltage-hold steps with control and termination parameters is a far better protocol description than the first pass could emit at all.
+- Material kinds carry verified external anchors, with no authoring effort.
+- Content-derived IRIs across all eight types make the re-run genuinely byte-identical, checked by hashing the whole record tree before and after. Because the cell-spec identity seed did not change, 289 of the 319 published records came back byte-for-byte on a model change that rewrote the entire material layer.
+- `ws.project("101069765")` enrichment, `ws.contributor` and `ws.license` reach every record type including electrodes.
 - The conformance model with typed deviation categories fits the 11 known issues cleanly.
 
 ## Should block or annotate the next release
 
-Three of the findings were fixed upstream before this layer was published. BIG-MAP/BattINFO#339 closed G6 (md5 published as sha256), G9 (cells collapsing on their label) and G3 (dataset and material fields dropped from emission). The bundle in this branch was regenerated on that commit; the 319 canonical records came out byte-identical, so only the emitted documents changed.
+BIG-MAP/BattINFO#339 closed G6 (md5 published as sha256), G9 (cells collapsing on their label) and G3 (dataset and material fields dropped from emission) before pass 2 was published. #342 closed most of G8 as a side effect of typing electrode nodes from either polarity.
 
-What is left:
+What is left, in priority order:
 
+- **Fix before the electrode model is used in anger:** E2, the deposit graph dropping every electrode record. A layer that cannot reach the published artifact is not published. E1 next, because the seam the docs recommend is not authorable.
 - **Fix before wide use:** G1, the missing entry point for a dataset that describes an already-published remote file, together with the `dataset_ids` blanking it causes.
-- **Annotate:** G2 and G7 (both lose information the canonical records hold), G4, G5, G8, G10.
+- **One-line fixes worth doing now:** E5 (validator known-key set missing the electrode term table) and G5 (`ws.export` type map).
+- **Model questions, not bugs:** E3 and E4 - how a cell reaches the electrode it was built from. E4 in particular is the difference between a corpus that joins and one that string-matches.
+- **Annotate:** G2 and G7 (both lose information the canonical records hold), G4, G10, E6, and the remainder of G8.

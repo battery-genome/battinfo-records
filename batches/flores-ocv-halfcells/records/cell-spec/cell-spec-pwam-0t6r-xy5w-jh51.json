@@ -32,16 +32,16 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786795064,
     "battinfo_version": "0.7.0"
   },
+  "positive_electrode_spec_id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",
   "positive_electrode": {
     "coating": {
       "component": {
         "active_material": [
           {
             "name": "Graphite",
-            "material_spec_id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w",
             "property": {
               "mass_fraction": {
                 "value": 90.98419274124022,
@@ -88,6 +88,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter and reference electrode is lithium metal. All voltages are reported vs Li/Li+.",
     "Half-cell voltage window: 0.01-1.00 V.",
     "Public electrode label(s) grouped under this spec: Gr-AQ-1.",
+    "Electrode design realizing this spec: Graphite electrode, aqueous processed (IntelLiGent, SINTEF).",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

@@ -190,6 +190,6 @@
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
   Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\deposit.jsonld
-  Graph nodes: 321
+  Graph nodes: 301
   Data files:  0
   Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\ro-crate-metadata.json

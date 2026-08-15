@@ -1,0 +1,149 @@
+{
+  "schema_version": "0.2.0",
+  "electrode_spec": {
+    "id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
+    "short_id": "f2sbn5",
+    "name": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
+    "kind": "lnmo",
+    "polarity": "positive",
+    "active_material_spec_id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+    "description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label LNMO-NMP-1. Active-material type as stated in metadata.csv: \"LNMO\".",
+    "coating": {
+      "component": {
+        "active_material": [
+          {
+            "name": "Lithium nickel manganese oxide (LNMO)",
+            "property": {
+              "mass_fraction": {
+                "value": 91.99711459,
+                "unit": "%"
+              }
+            },
+            "material_spec_id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
+          }
+        ]
+      }
+    },
+    "processing": {
+      "route": "nmp",
+      "solvent": "NMP",
+      "detail": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1 and the Zenodo batch table."
+    },
+    "manufacturer": {
+      "type": "Organization",
+      "name": "SINTEF",
+      "id": "https://w3id.org/battinfo/organization/b4qq-aawd-zesa-kh4q"
+    },
+    "property": {
+      "diameter": {
+        "value": 14.0,
+        "unit": "mm"
+      }
+    }
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1786795062,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "notes": [
+    "Active-material weight percentage and dry thickness are as published in metadata.csv for batch LNMO-NMP-1."
+  ],
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

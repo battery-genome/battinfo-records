@@ -33,16 +33,16 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786795064,
     "battinfo_version": "0.7.0"
   },
+  "positive_electrode_spec_id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
   "positive_electrode": {
     "coating": {
       "component": {
         "active_material": [
           {
             "name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
-            "material_spec_id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q",
             "property": {
               "mass_fraction": {
                 "value": 96.62,
@@ -89,6 +89,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter and reference electrode is lithium metal. All voltages are reported vs Li/Li+.",
     "Half-cell voltage window: 3.00-4.30 V.",
     "Public electrode label(s) grouped under this spec: NMC532-NMP-1.",
+    "Electrode design realizing this spec: NMC532 electrode, NMP processed (commercial, Gelon LIB).",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

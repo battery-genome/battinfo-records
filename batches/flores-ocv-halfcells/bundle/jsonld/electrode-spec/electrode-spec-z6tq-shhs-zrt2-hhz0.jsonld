@@ -1,0 +1,195 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@type": [
+    "LithiumNickelManganeseCobaltOxideElectrode",
+    "PositiveElectrode"
+  ],
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": "ActiveMaterial",
+      "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.9662
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3.1
+      },
+      "schema:unitText": "mAh/cm2"
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 20.400000000000002
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
+  "schema:name": "NMC532 electrode, NMP processed (commercial, Gelon LIB)",
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "nmp",
+      "schema:name": "NMP solvent-based processing"
+    },
+    "hasSolvent": {
+      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+      "@type": "NMethyl2Pyrrolidone",
+      "schema:name": "NMP"
+    },
+    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC532-NMP-1 and the Zenodo batch table."
+  },
+  "schema:description": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode). Electrode design of the commercial electrode supplied by Gelon LIB, published under the label NMC532-NMP-1. Active-material type as stated in metadata.csv: \"NMC532\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Active-material weight percentage and dry thickness are as published in metadata.csv for batch NMC532-NMP-1.",
+    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}

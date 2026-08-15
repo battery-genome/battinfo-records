@@ -1,0 +1,182 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@type": [
+    "SiliconGraphiteElectrode",
+    "NegativeElectrode"
+  ],
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": "ActiveMaterial",
+      "schema:name": "Silicon-graphite composite",
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.8694
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "TheoreticalCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "TheoreticalCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1150.0
+      },
+      "schema:unitText": "mAh/g"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah",
+  "schema:name": "Silicon-graphite electrode, aqueous processed, higher Si % (IntelLiGent batch 2, SINTEF)",
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "aqueous",
+      "schema:name": "Water-based (aqueous) processing"
+    },
+    "hasSolvent": {
+      "@type": "schema:ChemicalSubstance",
+      "schema:name": "water"
+    },
+    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-2 and the Zenodo batch table."
+  },
+  "schema:description": "Higher Si % silicon-graphite composite (aqueous processed). Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label SiGr-AQ-2. Active-material type as stated in metadata.csv: \"Silicon Graphite\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Active-material weight percentage and dry thickness are as published in metadata.csv for batch SiGr-AQ-2.",
+    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
