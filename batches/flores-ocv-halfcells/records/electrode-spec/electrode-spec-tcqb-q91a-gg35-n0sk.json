@@ -43,12 +43,12 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786795062,
+    "retrieved_at": 1786796181,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
-    "Active-material weight percentage and dry thickness are as published in metadata.csv for batch LNMO-AQ-1."
+    "Design values are as published in metadata.csv for batch LNMO-AQ-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record."
   ],
   "funding": {
     "type": "Grant",

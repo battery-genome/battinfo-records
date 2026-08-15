@@ -547,8 +547,9 @@ def main() -> int:
                           f"public electrode label {label} and the Zenodo batch table.",
             }
         notes = [
-            f"Active-material weight percentage and dry thickness are as published in "
-            f"metadata.csv for batch {label}."
+            f"Design values are as published in metadata.csv for batch {label}, the one "
+            f"batch that realizes this design; the as-built dry thickness is on the "
+            f"electrode record."
         ]
         if kind not in material_spec_by_kind:
             notes.append(

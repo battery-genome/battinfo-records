@@ -82,7 +82,7 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Active-material weight percentage and dry thickness are as published in metadata.csv for batch Si-AQ-1.",
+    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
     "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
   ],
   "schema:funding": {

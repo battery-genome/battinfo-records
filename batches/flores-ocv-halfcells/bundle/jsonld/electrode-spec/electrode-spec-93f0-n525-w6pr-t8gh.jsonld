@@ -72,7 +72,7 @@
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
   },
-  "schema:comment": "Active-material weight percentage and dry thickness are as published in metadata.csv for batch LNMO-NMP-2.",
+  "schema:comment": "Design values are as published in metadata.csv for batch LNMO-NMP-2, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",
