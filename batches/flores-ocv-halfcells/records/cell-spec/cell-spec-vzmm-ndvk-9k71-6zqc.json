@@ -13,8 +13,6 @@
     },
     "cell_format": "coin",
     "chemistry": "li-metal",
-    "positive_electrode_basis": "nmc",
-    "negative_electrode_basis": "lithium-metal",
     "size_code": "R2032",
     "cell_configuration": "half_cell",
     "reference_electrode": "lithium",
@@ -33,11 +31,11 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786795064,
+    "retrieved_at": 1786886927,
     "battinfo_version": "0.7.0"
   },
-  "positive_electrode_spec_id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7",
-  "positive_electrode": {
+  "working_electrode_spec_id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7",
+  "working_electrode": {
     "coating": {
       "component": {
         "active_material": [
@@ -66,9 +64,9 @@
         "unit": "mm"
       }
     },
-    "comment": "Working electrode; commercial electrode supplied by Customcells."
+    "comment": "Working electrode: NMC111-NMP-1, commercial electrode supplied by Customcells."
   },
-  "negative_electrode": {
+  "counter_electrode": {
     "coating": {
       "component": {
         "active_material": [
@@ -83,12 +81,12 @@
       "property": {}
     },
     "property": {},
-    "comment": "Counter and reference electrode: lithium metal foil."
+    "comment": "Counter electrode: lithium metal foil. In a half cell the counter electrode is also the potential reference, so all voltages are reported vs Li/Li+."
   },
   "specification_comment": [
-    "R2032 coin half-cell. The working electrode is the named active material; the counter and reference electrode is lithium metal. All voltages are reported vs Li/Li+.",
-    "Half-cell voltage window: 3.00-4.30 V.",
-    "Public electrode label(s) grouped under this spec: NMC111-NMP-1.",
+    "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
+    "Half-cell voltage window vs Li/Li+: 3.00-4.30 V.",
+    "Public electrode label: NMC111-NMP-1.",
     "Electrode design realizing this spec: NMC111 electrode, NMP processed (commercial, Customcells).",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],

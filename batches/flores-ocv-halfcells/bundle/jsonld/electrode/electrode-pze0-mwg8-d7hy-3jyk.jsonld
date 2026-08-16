@@ -9,18 +9,32 @@
     }
   ],
   "@type": "Electrode",
-  "hasProperty": {
-    "@type": [
-      "DryCoatingThickness",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "DryCoatingThickness",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 51.0
+  "hasProperty": [
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 51.0
+      },
+      "schema:unitText": "um"
     },
-    "schema:unitText": "um"
-  },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.9262
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
   "@id": "https://w3id.org/battinfo/electrode/pze0-mwg8-d7hy-3jyk",
   "schema:name": "SiGr-AQ-2",
   "schema:isVariantOf": {
@@ -38,7 +52,9 @@
   },
   "schema:comment": [
     "Higher Si % silicon-graphite composite (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 7 of the 95 published measurements were made on cells built from it."
+    "7 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 1.9262 +/- 0.0986 mg/cm2 (mean +/- sample standard deviation, n = 7 cells; range 1.8133-2.1238 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 51.0 um. metadata.csv states this one value for every one of the 7 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

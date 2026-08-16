@@ -14,7 +14,7 @@
       "ambient_temperature": "room temperature",
       "voltage_reference": "Li/Li+",
       "active_material_mass": {
-        "value": 1.048547137699999,
+        "value": 1.0485,
         "unit": "mg"
       },
       "electrode_coating_mass": {
@@ -22,11 +22,11 @@
         "unit": "g"
       },
       "nominal_areal_capacity": {
-        "value": 2.4368507830053874,
+        "value": 2.4369,
         "unit": "mAh/cm2"
       },
       "electrode_loading": {
-        "value": 0.6808749999999999,
+        "value": 0.6809,
         "unit": "mg/cm2"
       }
     },
@@ -35,7 +35,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786886927,
     "battinfo_version": "0.7.0"
   },
   "funding": {

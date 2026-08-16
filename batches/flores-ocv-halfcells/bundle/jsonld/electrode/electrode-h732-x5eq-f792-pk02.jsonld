@@ -9,18 +9,32 @@
     }
   ],
   "@type": "Electrode",
-  "hasProperty": {
-    "@type": [
-      "DryCoatingThickness",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "DryCoatingThickness",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 69.0
+  "hasProperty": [
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 69.0
+      },
+      "schema:unitText": "um"
     },
-    "schema:unitText": "um"
-  },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 13.2719
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
   "@id": "https://w3id.org/battinfo/electrode/h732-x5eq-f792-pk02",
   "schema:name": "NMC111-NMP-1",
   "schema:isVariantOf": {
@@ -38,7 +52,9 @@
   },
   "schema:comment": [
     "LiNi0.33Mn0.33Co0.33O2 (commercial electrode).",
-    "Dry thickness as published in metadata.csv for this batch; 9 of the 95 published measurements were made on cells built from it."
+    "9 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 13.2719 mg/cm2. metadata.csv states this one value for every one of the 9 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread.",
+    "Dry thickness: 69.0 um. metadata.csv states this one value for every one of the 9 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

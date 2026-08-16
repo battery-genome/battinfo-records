@@ -7,6 +7,12 @@
     "name": "Gr-AQ-1",
     "batch_id": "Gr-AQ-1",
     "property": {
+      "loading": {
+        "value": 3.8282,
+        "unit": "mg/cm2",
+        "min_value": 3.5818,
+        "max_value": 3.9776
+      },
       "dry_thickness": {
         "value": 64.0,
         "unit": "um"
@@ -15,13 +21,15 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786795062,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
     "Graphite (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 7 of the 95 published measurements were made on cells built from it."
+    "7 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 3.8282 +/- 0.1345 mg/cm2 (mean +/- sample standard deviation, n = 7 cells; range 3.5818-3.9776 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 64.0 um. metadata.csv states this one value for every one of the 7 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "funding": {
     "type": "Grant",

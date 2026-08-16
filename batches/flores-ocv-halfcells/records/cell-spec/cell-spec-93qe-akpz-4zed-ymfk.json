@@ -13,7 +13,6 @@
     },
     "cell_format": "coin",
     "chemistry": "li-metal",
-    "negative_electrode_basis": "lithium-metal",
     "size_code": "R2032",
     "cell_configuration": "half_cell",
     "reference_electrode": "lithium",
@@ -32,11 +31,11 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786795064,
+    "retrieved_at": 1786886927,
     "battinfo_version": "0.7.0"
   },
-  "positive_electrode_spec_id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy",
-  "positive_electrode": {
+  "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy",
+  "working_electrode": {
     "coating": {
       "component": {
         "active_material": [
@@ -65,9 +64,9 @@
         "unit": "mm"
       }
     },
-    "comment": "Working electrode; IntelLiGent project batch 1 (SINTEF)."
+    "comment": "Working electrode: SiGr-AQ-1, IntelLiGent project batch 1 (SINTEF)."
   },
-  "negative_electrode": {
+  "counter_electrode": {
     "coating": {
       "component": {
         "active_material": [
@@ -82,12 +81,12 @@
       "property": {}
     },
     "property": {},
-    "comment": "Counter and reference electrode: lithium metal foil."
+    "comment": "Counter electrode: lithium metal foil. In a half cell the counter electrode is also the potential reference, so all voltages are reported vs Li/Li+."
   },
   "specification_comment": [
-    "R2032 coin half-cell. The working electrode is the named active material; the counter and reference electrode is lithium metal. All voltages are reported vs Li/Li+.",
-    "Half-cell voltage window: 0.01-1.00 V.",
-    "Public electrode label(s) grouped under this spec: SiGr-AQ-1.",
+    "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
+    "Half-cell voltage window vs Li/Li+: 0.01-1.00 V.",
+    "Public electrode label: SiGr-AQ-1.",
     "Electrode design realizing this spec: Silicon-graphite electrode, aqueous processed, lower Si % (IntelLiGent batch 1, SINTEF).",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],

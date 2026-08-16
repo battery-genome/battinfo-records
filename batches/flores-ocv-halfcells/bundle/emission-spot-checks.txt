@@ -1,5 +1,5 @@
 ==============================================================================
-SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive electrode node carries the @id of the electrode spec it realizes
+SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by ROLE (hasWorkingElectrode, hasCounterElectrode typed CounterElectrode + ReferenceElectrode) with NO polarity relation anywhere; the working-electrode node carries the @id of the electrode spec it realizes
 ==============================================================================
 {
   "@type": [
@@ -54,7 +54,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive electro
       "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
     }
   ],
-  "hasPositiveElectrode": {
+  "hasWorkingElectrode": {
     "hasCoating": {
       "@type": "ElectrodeCoating",
       "hasActiveMaterial": {
@@ -70,7 +70,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive electro
           ],
           "hasNumericalPart": {
             "@type": "RealData",
-            "hasNumberValue": 0.849714
+            "hasNumberValue": 0.84971
           },
           "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
         }
@@ -102,10 +102,10 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive electro
         "schema:unitText": "um"
       }
     ],
-    "@type": "Electrode",
+    "@type": "WorkingElectrode",
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },
-  "hasNegativeElectrode": {
+  "hasCounterElectrode": {
     "hasCoating": {
       "@type": "ElectrodeCoating",
       "hasActiveMaterial": {
@@ -113,12 +113,15 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive electro
         "schema:name": "Lithium metal"
       }
     },
-    "@type": "LithiumElectrode"
+    "@type": [
+      "CounterElectrode",
+      "ReferenceElectrode"
+    ]
   },
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
+    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -243,7 +246,7 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
         ],
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.849714
+          "hasNumberValue": 0.84971
         },
         "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
       }
@@ -405,18 +408,32 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
 ==============================================================================
 {
   "@type": "Electrode",
-  "hasProperty": {
-    "@type": [
-      "DryCoatingThickness",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "DryCoatingThickness",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 44.0
+  "hasProperty": [
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 44.0
+      },
+      "schema:unitText": "um"
     },
-    "schema:unitText": "um"
-  },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.6505
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
   "@id": "https://w3id.org/battinfo/electrode/69qq-5qve-qmg6-929g",
   "schema:name": "Si-AQ-1",
   "schema:isVariantOf": {
@@ -434,7 +451,9 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
   },
   "schema:comment": [
     "Silicon (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 8 of the 95 published measurements were made on cells built from it."
+    "8 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 0.6505 +/- 0.0625 mg/cm2 (mean +/- sample standard deviation, n = 8 cells; range 0.5595-0.7195 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 44.0 um. metadata.csv states this one value for every one of the 8 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",
@@ -686,7 +705,7 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
         ],
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.902756
+          "hasNumberValue": 0.90276
         },
         "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
       }
@@ -853,7 +872,7 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
         ],
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.920021
+          "hasNumberValue": 0.92002
         },
         "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
       }
@@ -1004,6 +1023,30 @@ SPOT CHECK 2d - the two LNMO designs are distinct IRIs
 aqueous: https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs
 nmp:     https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh
 powder:  https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+
+==============================================================================
+SPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, for every LNMO cell spec
+==============================================================================
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)
+  cell spec      https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp
+  -> electrode   https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev  (LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/n7zg-6428-t8mh-91vr  (LNMO-NMP-1)
+  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)
+  cell spec      https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y
+  -> electrode   https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs  (LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/c452-na82-88mh-zzq9  (LNMO-AQ-2)
+  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)
+  cell spec      https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c
+  -> electrode   https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk  (LNMO electrode, aqueous processed (IntelLiGent batch 1, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/620q-vkks-p6x7-8ejm  (LNMO-AQ-1)
+  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)
+  cell spec      https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7
+  -> electrode   https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh  (LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/g2k0-dk66-0qzm-714g  (LNMO-NMP-2)
+  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
 
 ==============================================================================
 SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
@@ -1430,10 +1473,10 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
 ==============================================================================
 {
   "@type": "http://www.w3.org/ns/dcat#Dataset",
-  "@id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e",
-  "dcterms:title": "LNMO-NMP-1 cell ee5c27 GITT half-cell OCV (BDF)",
-  "dcterms:description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
-  "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "@id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
+  "dcterms:title": "SiGr-AQ-3 cell 655454 p-OCV hold half-cell OCV (BDF)",
+  "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
     "@id": "cc-by-4.0"
   },
@@ -1446,7 +1489,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "half-cell",
     "GITT",
     "quasi-OCV",
-    "lnmo"
+    "silicon-graphite"
   ],
   "schema:keywords": [
     "open circuit voltage",
@@ -1454,14 +1497,14 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "half-cell",
     "GITT",
     "quasi-OCV",
-    "lnmo"
+    "silicon-graphite"
   ],
   "dcterms:created": "2026-05-08T00:00:00Z",
   "dcterms:modified": "2026-05-08T00:00:00Z",
   "dcterms:issued": "2026-05-08T00:00:00Z",
   "schema:datePublished": "2026-05-08T00:00:00Z",
   "schema:measurementTechnique": [
-    "gitt"
+    "quasi_ocv"
   ],
   "schema:variableMeasured": [
     {
@@ -1519,29 +1562,29 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
   ],
   "dcterms:subject": [
     {
-      "@id": "https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke"
+      "@id": "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg"
     },
     {
-      "@id": "https://w3id.org/battinfo/test/bqhh-43gg-x6mn-8q5x"
+      "@id": "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
     }
   ],
   "dcat:distribution": [
     {
       "@type": "dcat:Distribution",
-      "schema:name": "sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet",
+      "schema:name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet",
       "schema:description": "BDF parquet file hosted on Zenodo.",
       "dcat:downloadURL": {
-        "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet/content"
+        "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet/content"
       },
       "dcat:mediaType": "application/vnd.apache.parquet",
-      "dcat:byteSize": 448521798,
-      "schema:contentSize": "448521798",
+      "dcat:byteSize": 3504698,
+      "schema:contentSize": "3504698",
       "spdx:checksum": {
         "@type": "spdx:Checksum",
         "spdx:checksumAlgorithm": {
           "@id": "spdx:checksumAlgorithm_md5"
         },
-        "spdx:checksumValue": "7e779f63372291ad56b2e01de6639cc7"
+        "spdx:checksumValue": "f875674c607fe898a7c6f5a75c03a1d6"
       }
     }
   ],
@@ -1551,7 +1594,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-10T12:50:11+00:00",
+    "prov:generatedAtTime": "2026-08-16T13:28:57+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1656,11 +1699,11 @@ SPOT CHECK 4b - the same dataset's canonical record
 {
   "schema_version": "0.2.0",
   "dataset": {
-    "id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e",
-    "short_id": "09vbkh",
-    "identifier": "dataset:09vb-kh3s-aq3q-4s3e",
-    "name": "LNMO-NMP-1 cell ee5c27 GITT half-cell OCV (BDF)",
-    "description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
+    "short_id": "061xx0",
+    "identifier": "dataset:061x-x0df-cmjt-ck28",
+    "name": "SiGr-AQ-3 cell 655454 p-OCV hold half-cell OCV (BDF)",
+    "description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
@@ -1671,7 +1714,7 @@ SPOT CHECK 4b - the same dataset's canonical record
       "half-cell",
       "GITT",
       "quasi-OCV",
-      "lnmo"
+      "silicon-graphite"
     ],
     "citations": [
       {
@@ -1682,7 +1725,7 @@ SPOT CHECK 4b - the same dataset's canonical record
       }
     ],
     "measurement_techniques": [
-      "gitt"
+      "quasi_ocv"
     ],
     "variable_measured": [
       {
@@ -1726,21 +1769,21 @@ SPOT CHECK 4b - the same dataset's canonical record
     "modified_at": 1778198400,
     "published_at": 1778198400,
     "about": [
-      "https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke",
-      "https://w3id.org/battinfo/test/bqhh-43gg-x6mn-8q5x"
+      "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg",
+      "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
     ],
     "distributions": [
       {
         "type": "DataDownload",
-        "name": "sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet",
+        "name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet",
         "description": "BDF parquet file hosted on Zenodo.",
-        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet/content",
+        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet/content",
         "encoding_format": "application/vnd.apache.parquet",
-        "content_size": "448521798",
+        "content_size": "3504698",
         "access_level": "open",
         "checksum": {
           "algorithm": "md5",
-          "value": "7e779f63372291ad56b2e01de6639cc7"
+          "value": "f875674c607fe898a7c6f5a75c03a1d6"
         }
       }
     ]
@@ -1749,7 +1792,7 @@ SPOT CHECK 4b - the same dataset's canonical record
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786366211,
+    "retrieved_at": 1786886937,
     "battinfo_version": "0.7.0"
   },
   "funding": {

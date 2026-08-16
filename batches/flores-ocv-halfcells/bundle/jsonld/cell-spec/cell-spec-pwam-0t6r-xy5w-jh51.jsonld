@@ -321,6 +321,18 @@
       "@id": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasMeasurementParameter",
       "@type": "@id"
     },
+    "hasWorkingElectrode": {
+      "@id": "electrochemistry:electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f",
+      "@type": "@id"
+    },
+    "hasCounterElectrode": {
+      "@id": "electrochemistry:electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc",
+      "@type": "@id"
+    },
+    "hasReferenceElectrode": {
+      "@id": "electrochemistry:electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515",
+      "@type": "@id"
+    },
     "hasElectrolyte": {
       "@id": "electrochemistry:electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315",
       "@type": "@id"
@@ -370,6 +382,9 @@
       "@type": "@id"
     },
     "Electrode": "electrochemistry:electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627",
+    "WorkingElectrode": "electrochemistry:electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35",
+    "CounterElectrode": "electrochemistry:electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea",
+    "ReferenceElectrode": "electrochemistry:electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29",
     "ElectrodeCoating": "electrochemistry:electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56",
     "CurrentCollector": "electrochemistry:electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706",
     "CurrentCollectorTab": "electrochemistry:electrochemistry_6913368b_39cf_42da_ac51_c1b508930ac5",
@@ -518,7 +533,7 @@
       "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
     }
   ],
-  "hasPositiveElectrode": {
+  "hasWorkingElectrode": {
     "hasCoating": {
       "@type": "ElectrodeCoating",
       "hasActiveMaterial": {
@@ -534,7 +549,7 @@
           ],
           "hasNumericalPart": {
             "@type": "RealData",
-            "hasNumberValue": 0.909842
+            "hasNumberValue": 0.90984
           },
           "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
         }
@@ -566,10 +581,10 @@
         "schema:unitText": "um"
       }
     ],
-    "@type": "Electrode",
+    "@type": "WorkingElectrode",
     "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
   },
-  "hasNegativeElectrode": {
+  "hasCounterElectrode": {
     "hasCoating": {
       "@type": "ElectrodeCoating",
       "hasActiveMaterial": {
@@ -577,12 +592,15 @@
         "schema:name": "Lithium metal"
       }
     },
-    "@type": "LithiumElectrode"
+    "@type": [
+      "CounterElectrode",
+      "ReferenceElectrode"
+    ]
   },
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-15T11:57:44+00:00",
+    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

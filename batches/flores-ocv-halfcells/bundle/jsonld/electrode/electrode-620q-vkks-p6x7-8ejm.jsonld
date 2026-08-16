@@ -9,18 +9,32 @@
     }
   ],
   "@type": "Electrode",
-  "hasProperty": {
-    "@type": [
-      "DryCoatingThickness",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "DryCoatingThickness",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 40.0
+  "hasProperty": [
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 40.0
+      },
+      "schema:unitText": "um"
     },
-    "schema:unitText": "um"
-  },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3.6472
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
   "@id": "https://w3id.org/battinfo/electrode/620q-vkks-p6x7-8ejm",
   "schema:name": "LNMO-AQ-1",
   "schema:isVariantOf": {
@@ -38,7 +52,9 @@
   },
   "schema:comment": [
     "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel.",
-    "Dry thickness as published in metadata.csv for this batch; 8 of the 95 published measurements were made on cells built from it."
+    "8 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 3.6472 +/- 0.3017 mg/cm2 (mean +/- sample standard deviation, n = 8 cells; range 3.2844-4.0667 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 40.0 um. metadata.csv states this one value for every one of the 8 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

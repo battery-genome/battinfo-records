@@ -11,6 +11,10 @@
       "name": "Customcells"
     },
     "property": {
+      "loading": {
+        "value": 13.2719,
+        "unit": "mg/cm2"
+      },
       "dry_thickness": {
         "value": 69.0,
         "unit": "um"
@@ -19,13 +23,15 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786795062,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
     "LiNi0.33Mn0.33Co0.33O2 (commercial electrode).",
-    "Dry thickness as published in metadata.csv for this batch; 9 of the 95 published measurements were made on cells built from it."
+    "9 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 13.2719 mg/cm2. metadata.csv states this one value for every one of the 9 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread.",
+    "Dry thickness: 69.0 um. metadata.csv states this one value for every one of the 9 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "funding": {
     "type": "Grant",

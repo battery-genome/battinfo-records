@@ -202,7 +202,7 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "active_material_mass",
-      "schema:value": 31.402434,
+      "schema:value": 31.4024,
       "schema:unitText": "mg"
     },
     {
@@ -213,13 +213,13 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "electrode_coating_mass",
-      "schema:value": 0.032500967,
+      "schema:value": 0.032501,
       "schema:unitText": "g"
     },
     {
       "@type": "schema:PropertyValue",
       "schema:name": "electrode_loading",
-      "schema:value": 20.400000000000002,
+      "schema:value": 20.4,
       "schema:unitText": "mg/cm2"
     },
     {
@@ -237,7 +237,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00"
+    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

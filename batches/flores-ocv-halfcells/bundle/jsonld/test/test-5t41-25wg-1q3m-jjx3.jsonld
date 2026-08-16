@@ -202,7 +202,7 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "active_material_mass",
-      "schema:value": 1.1080271211999997,
+      "schema:value": 1.108,
       "schema:unitText": "mg"
     },
     {
@@ -219,13 +219,13 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "electrode_loading",
-      "schema:value": 0.719498,
+      "schema:value": 0.7195,
       "schema:unitText": "mg/cm2"
     },
     {
       "@type": "schema:PropertyValue",
       "schema:name": "nominal_areal_capacity",
-      "schema:value": 2.575083809594025,
+      "schema:value": 2.5751,
       "schema:unitText": "mAh/cm2"
     },
     {
@@ -237,7 +237,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00"
+    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

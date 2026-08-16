@@ -1,0 +1,195 @@
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/yy36-ypr6-esgw-fr4z",
+    "short_id": "yy36yp",
+    "identifier": "dataset:yy36-ypr6-esgw-fr4z",
+    "name": "LNMO-AQ-1 cell 21a280 p-OCV half-cell OCV (BDF)",
+    "description": "Half-cell OCV electrochemical time series for LNMO-AQ-1 coin cell 21a280, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-21a280__20250424__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "license": "cc-by-4.0",
+    "same_as": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "keywords": [
+      "open circuit voltage",
+      "OCV",
+      "half-cell",
+      "GITT",
+      "quasi-OCV",
+      "lnmo"
+    ],
+    "citations": [
+      {
+        "kind": "dataset",
+        "url": "https://doi.org/10.5281/zenodo.20086298",
+        "doi": "10.5281/zenodo.20086298",
+        "citation_key": "flores2026ocv"
+      }
+    ],
+    "measurement_techniques": [
+      "quasi_ocv"
+    ],
+    "variable_measured": [
+      {
+        "name": "Test Time / s",
+        "description": "Elapsed time since the start of the test",
+        "unit_text": "s"
+      },
+      {
+        "name": "Unix Time / s",
+        "description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+        "unit_text": "s"
+      },
+      {
+        "name": "Current / A",
+        "description": "Instantaneous current",
+        "unit_text": "A"
+      },
+      {
+        "name": "Voltage / V",
+        "description": "Instantaneous voltage",
+        "unit_text": "V"
+      },
+      {
+        "name": "Cumulative Capacity / Ah",
+        "description": "Total capacity accumulated over a half cycle",
+        "unit_text": "Ah"
+      },
+      {
+        "name": "Cycle Count / 1",
+        "description": "Monotonically increasing index of test cycles",
+        "unit_text": "1"
+      },
+      {
+        "name": "Step Index / 1",
+        "description": "Index of the instantaneous step type within the measurement protocol",
+        "unit_text": "1"
+      }
+    ],
+    "access_url": "https://doi.org/10.5281/zenodo.20086298",
+    "created_at": 1778198400,
+    "modified_at": 1778198400,
+    "published_at": 1778198400,
+    "about": [
+      "https://w3id.org/battinfo/cell/bnkg-n5bg-71n7-497a",
+      "https://w3id.org/battinfo/test/vnxh-n79t-a5d6-m10h"
+    ],
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-lnmo-R2032-intelligent1-21a280__20250424__p-ocv__RT.bdf.parquet",
+        "description": "BDF parquet file hosted on Zenodo.",
+        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-21a280__20250424__p-ocv__RT.bdf.parquet/content",
+        "encoding_format": "application/vnd.apache.parquet",
+        "content_size": "2668120",
+        "access_level": "open",
+        "checksum": {
+          "algorithm": "md5",
+          "value": "e26d80e600269804b8b10e0f9072f5b2"
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "source_url": "https://doi.org/10.5281/zenodo.20086298",
+    "citation": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1786886939,
+    "battinfo_version": "0.7.0"
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}

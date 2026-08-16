@@ -1,21 +1,25 @@
 # BattINFO readiness report - authoring the Flores half-cell OCV semantic layer
 
-Findings from authoring 323 linked records (1 material spec, 12 electrode specs, 12 electrode batches, 9 half-cell specs, 95 cell instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298.
+Findings from authoring 326 linked records (1 material spec, 12 electrode specs, 12 electrode batches, 12 half-cell specs, 95 cell instances, 4 protocols, 95 tests, 95 datasets) for Zenodo 20086298.
 
-This is the third pass, and the first on the **first-class electrode model** (BIG-MAP/BattINFO#342, commit `63da080b`). Pass one (August 2026) predated the material kind/spec/instance model, `cell_configuration`, `Test.conditions` and protocol JSON-LD emission. Pass two re-authored the layer on the material model and is what is published today. Pass three re-authors the material layer as electrodes: 9 material specs and 12 material lots that were really electrode products and coated batches become 12 electrode specs, 12 electrode batches and 1 genuine powder record. The findings below are cumulative; the new ones are the E series.
+This is the fourth pass. Pass one (August 2026) predated the material kind/spec/instance model, `cell_configuration`, `Test.conditions` and protocol JSON-LD emission. Pass two re-authored the layer on the material model and is what is published today. Pass three was the first on the **first-class electrode model** (BIG-MAP/BattINFO#342): 9 material specs and 12 material lots that were really electrode products and coated batches became 12 electrode specs, 12 electrode batches and 1 genuine powder record. Pass four (corpus v3) is the first on the **role-based half-cell model** (BIG-MAP/BattINFO#345, commit `33615d6`) and carries the maintainer's review-round-2 rulings: one cell spec per electrode design, electrodes named by role, quantities rounded, batch statistics computed. The findings below are cumulative; pass three added the E series, and pass four closes most of it and adds E7.
 
 ## Result
 
-| | pass 1 | pass 2 (published) | pass 3 (this branch) |
-|---|---|---|---|
-| records | 305 | 319 | 323 |
-| strict-save errors | 0 | 0 | 0 |
-| semantic warnings | 36 | 0 | **3** (one false positive, E5) |
-| SHACL non-conforming | 0 | 0 | 0 |
-| record types reaching JSON-LD | 4 of 6 | 7 of 7 | **8 of 8** |
-| record types reaching the deposit graph | - | 7 of 7 | **6 of 8** (E2) |
-| `ws._ws` engine calls | 6 | 0 | 0 |
-| idempotent re-run | yes | yes | yes (byte-identical) |
+| | pass 1 | pass 2 (published) | pass 3 | pass 4 (this branch) |
+|---|---|---|---|---|
+| records | 305 | 319 | 323 | **326** |
+| strict-save errors | 0 | 0 | 0 | 0 |
+| semantic warnings | 36 | 0 | 3 (one false positive, E5) | **0** |
+| SHACL non-conforming | 0 | 0 | 0 | 0 |
+| record types reaching JSON-LD | 4 of 6 | 7 of 7 | 8 of 8 | **8 of 8** |
+| record types reaching the deposit graph | - | 7 of 7 | 6 of 8 (E2) | **8 of 8** |
+| `ws._ws` engine calls | 6 | 0 | 0 | 0 |
+| idempotent re-run | yes | yes | yes (byte-identical) | yes (byte-identical) |
+| cell specs citing their electrode design | - | - | 6 of 9 | **12 of 12** |
+| quantities with float artifacts | - | 205 | 205 | **0** |
+
+Three of the four E-series gaps pass three opened were fixed upstream before this pass: E1 (the inline seam absent from the authoring model) and E2 (the deposit graph dropping the electrode layer) in BIG-MAP/BattINFO#344, E5 (the validator's known-key set drifting from the emitter's tables) in the same PR, at the mechanism rather than the symptom. E3 is closed by the corpus itself: ruling D1 splits the three multi-design cell specs, so no cell spec needs to cite more than one design. E4 and E6 stand, and E7 is new.
 
 ## What the electrode model made possible
 
@@ -75,6 +79,8 @@ Fix shape: add `electrode_spec_id: str | None` to `bundle.Electrode` next to the
 
 ### E2. The deposit graph drops the whole electrode layer
 
+**Fixed upstream in BIG-MAP/BattINFO#344**, at the mechanism: the node loop is now driven by the record-type registry with a coverage guard, not by a hardcoded pair. Corpus v3 reaches 8 of 8 types and 326 of 326 records in a 328-node graph. Kept for the trail.
+
 `_assemble_zenodo_jsonld` promotes standalone records to first-class deposit nodes for `material-spec` and `material` only. `electrode-spec` and `electrode` are read off disk by `_read_record_sets` (they are in `record_set_dirs()`), then never used. All 24 electrode records are absent from `bundle/deposit.jsonld`: 301 nodes for 323 records.
 
 Repro: `bundle/deposit-coverage.txt` in this branch, or grep any electrode IRI in `bundle/deposit.jsonld`.
@@ -84,6 +90,8 @@ This is the same shape as the submit gap #342 closed, in the other publication p
 Fix shape: extend the material-node loop to `("material-spec", "material", "electrode-spec", "electrode")`; the emitter already produces the right node for both.
 
 ### E3. A cell spec can cite only one electrode design
+
+**Closed by ruling D1**: the three multi-design specs are split into six, so all twelve cell specs cite exactly one design and the single-valued field is right for every one of them. The cost was 144 re-seeded published identifiers, mapped in `superseded/supersede-map.json`. Kept because the shape of the finding still holds for any corpus whose cell-spec grouping predates its electrode model.
 
 `positive_electrode_spec_id` is single-valued, which is right for a cell spec that describes one design. Three of the nine published cell specs here cover two designs each (LNMO aqueous + NMP for two IntelLiGent batches; two Si/Gr blends coated in the same batch series), because the cell-spec grouping predates the electrode model.
 
@@ -99,6 +107,8 @@ Fix shape: an `electrode_ids` (or `positive_electrode_id` / `negative_electrode_
 
 ### E5. The semantic validator warns about electrode design values the emitter maps
 
+**Fixed upstream in BIG-MAP/BattINFO#344**, at the mechanism: the validator's known-key set is derived from `COMPONENT_PROPERTY_TERM_TABLES`, the transform's own registry of holder term tables, so it cannot drift again. Corpus v3 reports 0 warnings. Kept for the trail.
+
 `areal_capacity` on an electrode spec emits the curated EMMO class `AreicCapacity` - it is in `_ELECTRODE_PROPERTY_TERMS`, added by #342, and the electrodes-model doc advertises it. The validator's known-key set is built by `_component_property_terms()`, which unions `_FRACTION_PROPERTY_TERMS`, `_DESCRIPTOR_PROPERTY_TERMS` and `_DESCRIPTOR_COATING_PROPERTY_TERMS` and was not extended to the electrode table. So a correct record warns:
 
 ```
@@ -111,6 +121,17 @@ The three purchased-electrode specs in this corpus each carry a manufacturer-sta
 The irony is that the helper's docstring states the invariant it breaks: "Imported from the transform itself ... so this set can never drift from what the JSON-LD emitters actually accept." It drifted.
 
 Fix shape: add `_ELECTRODE_PROPERTY_TERMS` to the import and the union in `_component_property_terms()`. One line, and a test asserting the set equals the emitter's tables would keep it honest.
+
+### E7. No structured home for a dispersion statistic
+
+Ruling EES-1 asks each electrode batch to carry the mean *and* the standard deviation of its cells' active-mass loading and dry thickness. The mean has a home: `property.loading` maps to `ActiveMassLoading`, `property.dry_thickness` to `DryCoatingThickness`, and the observed spread fits `min_value` / `max_value` on the same quantity. The standard deviation has none.
+
+- `Quantity` has `value`, `min_value`, `max_value`, `typical_value`, `value_text`, `unit`, `co_type` and `conditions`. Nothing means "standard deviation", and `conditions` is `hasMeasurementParameter` - a spread is not a measurement condition.
+- The open property block would take a `loading_standard_deviation` key, but the curated property map has no EMMO class for it, so `semantic.property_unmapped` fires and the JSON-LD emits it under a non-canonical fallback term. Two keys that both mapped to `ActiveMassLoading` would instead trip `semantic.property_alias_collision`.
+
+So the corpus states the standard deviation, the sample count and the observed range in the batch record's `notes`, in words, and the property block carries only what maps. That is honest but not machine-actionable, which is exactly the wrong way round for a QC number.
+
+Fix shape: the value pattern this needs is `{value, standard_deviation, sample_count}` on `Quantity`, with `hasStandardDeviation` / `hasSampleSize` (or a `StatisticalDistribution` node) in the emission. It is worth doing generally rather than for loading alone - every "we made eight cells and measured them" number in a lab has the same shape, and the EES metadata template asks for avg +/- std as a matter of course.
 
 ### E6. Batch nodes are typed generically
 
@@ -230,17 +251,19 @@ Fix shape: extend the sweep and the `only=` aliases to the equipment types too, 
 - The PyBaMM-style and structured method paths both produce a real EMMO process graph. Five cycles of typed charge, discharge, rest and voltage-hold steps with control and termination parameters is a far better protocol description than the first pass could emit at all.
 - Material kinds carry verified external anchors, with no authoring effort.
 - Content-derived IRIs across all eight types make the re-run genuinely byte-identical, checked by hashing the whole record tree before and after. Because the cell-spec identity seed did not change, 289 of the 319 published records came back byte-for-byte on a model change that rewrote the entire material layer.
+- The identity seed is exactly the right size. Splitting three cell specs (D1) moved precisely the identifiers that had to move - the seed is (manufacturer, model, format, chemistry, size_code), so qualifying only the ambiguous `model` strings held 6 of 9 cell-spec IRIs and, with them, 154 of the 319 published identifiers. A seed that included a quantity would have re-minted the whole corpus on the rounding change; a seed that excluded `model` could not have expressed the split at all.
 - `ws.project("101069765")` enrichment, `ws.contributor` and `ws.license` reach every record type including electrodes.
 - The conformance model with typed deviation categories fits the 11 known issues cleanly.
 
 ## Should block or annotate the next release
 
-BIG-MAP/BattINFO#339 closed G6 (md5 published as sha256), G9 (cells collapsing on their label) and G3 (dataset and material fields dropped from emission) before pass 2 was published. #342 closed most of G8 as a side effect of typing electrode nodes from either polarity.
+BIG-MAP/BattINFO#339 closed G6 (md5 published as sha256), G9 (cells collapsing on their label) and G3 (dataset and material fields dropped from emission) before pass 2 was published. #342 closed most of G8 as a side effect of typing electrode nodes from either polarity. #344 closed E1, E2 and E5. #345 replaced the half-cell polarity convention with roles, which retires the remainder of G8 for this corpus: a half cell no longer needs a positive-electrode term for a working electrode made of an anode material, because it no longer names a positive electrode at all.
 
 What is left, in priority order:
 
-- **Fix before the electrode model is used in anger:** E2, the deposit graph dropping every electrode record. A layer that cannot reach the published artifact is not published. E1 next, because the seam the docs recommend is not authorable.
-- **Fix before wide use:** G1, the missing entry point for a dataset that describes an already-published remote file, together with the `dataset_ids` blanking it causes.
-- **One-line fixes worth doing now:** E5 (validator known-key set missing the electrode term table) and G5 (`ws.export` type map).
-- **Model questions, not bugs:** E3 and E4 - how a cell reaches the electrode it was built from. E4 in particular is the difference between a corpus that joins and one that string-matches.
-- **Annotate:** G2 and G7 (both lose information the canonical records hold), G4, G10, E6, and the remainder of G8.
+- **Fix before wide use:** G1, the missing entry point for a dataset that describes an already-published remote file, together with the `dataset_ids` blanking it causes. It is the one gap that still forces this corpus off the blessed authoring surface.
+- **Model questions, not bugs:** E4 (how a cell instance reaches the electrode batch it was built from - the difference between a corpus that joins and one that string-matches) and E7 (a value pattern for mean / standard deviation / n). E7 is the one a reviewer will meet first, because every batch statistic in the corpus lands in prose.
+- **One-line fix worth doing now:** G5 (`ws.export` type map).
+- **Annotate:** G2 and G7 (both lose information the canonical records hold), G4, G10, E6.
+
+One process finding, not a code one. Ruling D2 needed a matching change in the review tooling: `scripts/preview_staged_batch.py` in `battinfo-registry` read only the polarity holders when synthesizing a cell spec's electrode edge, so the moment the corpus started naming its electrodes by role, every cell page lost its link to the electrode layer and the powder became unreachable - the exact defect the preview tool had been built to detect. A model change that renames a field has to be swept through the surfaces that read it, and a grep for the old field name across the sibling repositories is the cheapest version of that sweep.

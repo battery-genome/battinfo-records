@@ -1,5 +1,7 @@
 # Corpus v2 review table - Flores half-cell OCV semantic layer
 
+> **Superseded by `REVIEW-TABLE-V3.md`.** Kept for the review trail: this is the table the maintainer reviewed in round 2, and decisions D1, D2 and D5 below are the ones the rulings answered. Its counts, identifiers and validation numbers describe corpus v2 and no longer describe this branch.
+
 Corpus v2 re-authors this layer on the first-class electrode model (BIG-MAP/BattINFO#342, commit `63da080b`), under the ratified principle: **the material spec describes the powder, the electrode spec describes the electrode**.
 
 **Nothing here is published.** All 323 records are staged in this branch only. The 319 published records and their live `w3id.org` identifiers are untouched; the republish is a separate, review-gated step. Every link below is a repository path, not a resolvable IRI.

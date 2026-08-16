@@ -202,7 +202,7 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "active_material_mass",
-      "schema:value": 20.66812,
+      "schema:value": 20.6681,
       "schema:unitText": "mg"
     },
     {
@@ -213,7 +213,7 @@
     {
       "@type": "schema:PropertyValue",
       "schema:name": "electrode_coating_mass",
-      "schema:value": 0.02175599,
+      "schema:value": 0.021756,
       "schema:unitText": "g"
     },
     {
@@ -237,7 +237,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00"
+    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

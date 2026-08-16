@@ -6,9 +6,32 @@ DOI (version):  10.5281/zenodo.20086298
 DOI (concept):  10.5281/zenodo.19107294
 License:        CC BY 4.0
 
-CORPUS V2 - re-authored on the first-class electrode model (BIG-MAP/BattINFO#342).
-The ratified principle is that the material spec describes the POWDER and the
-electrode spec describes the ELECTRODE. Corpus v1 broke it: it minted nine
+CORPUS V3 - the maintainer's review-round-2 rulings, on top of v2's first-class
+electrode model (BIG-MAP/BattINFO#342) and the role-based half-cell model
+(BIG-MAP/BattINFO#345). What v3 changes:
+
+  D1  One cell spec per electrode design. Three v2 specs each covered two designs
+      and could therefore cite neither; they are split into six, so all twelve
+      specs cite exactly one electrode spec. The six specs that already covered a
+      single design keep their published IRIs - the cell-spec identity seed is
+      (manufacturer, model, format, chemistry, size_code) and none of those five
+      changes for them. The six new ones re-mint, and with them the 47 cells, 47
+      tests and 47 datasets seeded from them. superseded/README.md maps every
+      published v1 identifier onto its v3 successor.
+  D2  Half cells name their electrodes by ROLE. `working_electrode` /
+      `counter_electrode` replace `positive_electrode` / `negative_electrode`, and
+      `working_electrode_spec_id` replaces `positive_electrode_spec_id`. The
+      polarity BASIS fields go with them: a cell with no positive and no negative
+      side should not describe its electrodes as either. Nothing is lost - the
+      chemistry is typed on the working electrode through its electrode spec, and
+      the cell still types as BatteryHalfCell + HalfCellDevice from
+      cell_configuration.
+  D5  Float artifacts are rounded away (see ROUNDING below).
+  EES Electrode batches carry the per-batch active-mass loading and dry thickness
+      computed from the per-cell rows of metadata.csv (see BATCH STATISTICS).
+
+v2's remodel still stands: the material spec describes the POWDER and the
+electrode spec describes the ELECTRODE. Corpus v1 broke that: it minted nine
 "material specs" that were really electrode products and twelve "material lots"
 that were really coated electrode batches. Those 21 records are retired here (see
 superseded/README.md) and replaced by 1 material spec, 12 electrode specs and 12
@@ -24,11 +47,43 @@ Records authored (one published Zenodo dataset -> per-test granularity):
   * 1  material spec    (the LNMO powder - the only powder the source identifies)
   * 12 electrode specs  (one per electrode DESIGN: kind x source x processing route)
   * 12 electrodes       (the published electrode BATCHES, one per public label)
-  * 9  cell specs       (R2032 coin half-cells, cell_configuration = half_cell)
+  * 12 cell specs       (R2032 coin half-cells, cell_configuration = half_cell,
+                         one per electrode design - D1)
   * 95 cell instances   (one per parquet; serial = 6-char id, name = public label)
   * 4  test protocols   (p-OCV, p-OCV hold, GITT, GITT hold; structured EMMO method)
   * 95 tests            (cell x protocol; 11 known issues -> conformance)
   * 95 datasets         (each references the published Zenodo parquet + md5 + size)
+
+ROUNDING (D5). Every numeric quantity is written through ``q()``, which rounds to a
+fixed number of decimals per unit (``_DECIMALS_BY_UNIT``, 6 significant digits where
+a unit is not listed). Two kinds of noise disappear: the conversion artifacts this
+script used to create (0.0204 g/cm2 * 1000 -> 20.400000000000002 mg/cm2 -> 20.4) and
+the full-float-precision columns metadata.csv itself carries for its own derived
+values (active-material mass 0.9040957492000021 mg -> 0.9041 mg, the product of a
+4-digit coating mass and an 8-digit weight percentage). The decimals are chosen per
+physical quantity, at or above the precision the source's own rounded columns use -
+``Electrode Loading / g cm-2`` is published to 6 significant digits, and none of the
+underlying instrument readings support more. No identity seed contains a number, so
+no identifier moves because of this.
+
+BATCH STATISTICS (EES tier 1). Each electrode batch carries the mean of its cells'
+active-mass loading and dry thickness, with the observed minimum and maximum where
+the cells differ. Conventions, applied to all twelve batches (each has 7-9 cells, so
+the n >= 2 gate never bites):
+  * the mean is over the per-cell rows of metadata.csv for that public label;
+  * ``Electrode Loading / g cm-2`` is the ACTIVE-material loading, not the coating
+    loading - the column equals active mass / disc area for every row, which is why
+    it lands on the mapped key ``loading`` (EMMO ActiveMassLoading);
+  * the standard deviation is the SAMPLE standard deviation (n-1) and is stated in
+    the batch's notes, not in the property block: no ``standard_deviation`` field
+    exists on a Quantity and no EMMO class in the curated property map means it, so
+    a structured key would be dropped from the JSON-LD and warned about. Gap E7 in
+    READINESS-REPORT.md.
+  * where metadata.csv states ONE value for every cell of a batch (all twelve dry
+    thicknesses, and the loading of the three purchased electrodes), the mean is
+    that stated value and the standard deviation is 0 by construction. The batch
+    note says so rather than letting a repeated declaration read as a measured
+    spread.
 
 Authoring surface: everything except the datasets is authored through the blessed
 ``battinfo.workspace()`` API (``ws.add`` / ``ws.load`` / ``ws.save``), including the
@@ -41,13 +96,14 @@ see READINESS-REPORT.md (gap G1).
 Nothing here submits: this build stages records for review only.
 
 Run:  python build_records.py
-Requires BattINFO from git main at or after 63da080b (#342).
+Requires BattINFO from git main at or after 33615d6 (#345).
 """
 from __future__ import annotations
 
 import csv
 import json
 import re
+import statistics
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -115,18 +171,17 @@ KIND_LABEL = {
     "nmc532": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
 }
 
-# Controlled positive_electrode_basis terms. domain-battery only curates
-# positive-electrode classes for materials normally used as cathodes; graphite,
-# silicon, silicon-graphite and LNMO have no positive-electrode term, so the
-# field is omitted for them rather than emitted as an unmapped value. Under v2
-# the chemistry is no longer lost when the field is omitted: the cell spec cites
-# its electrode spec, whose node is typed with the chemistry class directly
-# (SiliconBasedElectrode, LithiumNickelManganeseOxideElectrode, ...). See G8.
-POSITIVE_BASIS = {
-    "lfp": "lfp",
-    "nmc111": "nmc",
-    "nmc532": "nmc",
-}
+# NOTE (D2). v1 and v2 carried `positive_electrode_basis` / `negative_electrode_basis`
+# on these specs. v3 carries neither: a half cell has no positive and no negative
+# side, and describing its electrodes by polarity is the thing the upstream ruling
+# rejects. The bases were the last polarity language left after the holders moved to
+# working/counter, and dropping them costs nothing that is not stated better
+# elsewhere - the working electrode is typed with its chemistry class through the
+# electrode spec it cites (SiliconBasedElectrode, LithiumIronPhosphateElectrode, ...),
+# the lithium-metal counter electrode is an authored holder rather than a basis
+# string, and the cell itself still types as BatteryHalfCell + HalfCellDevice from
+# cell_configuration. See docs/electrodes-model.md, "Half cells name their electrodes
+# by role, not by polarity".
 
 # Electrode source token -> (organization role, display name, registry IRI).
 # The tokens are the batch-identifier field of the dataset's own file-name
@@ -305,8 +360,66 @@ def yyyymmdd(value: str) -> str:
     return f"{value[0:4]}-{value[4:6]}-{value[6:8]}"
 
 
-def q(value, unit):
-    return {"value": value, "unit": unit}
+# D5: decimals per unit. Every quantity this script writes is rounded here, so the
+# rule lives in one place and cannot drift between the design values, the per-cell
+# test conditions and the batch statistics. A unit that is not listed falls back to
+# 6 significant digits - the precision metadata.csv itself publishes for the one
+# derived column its authors rounded (`Electrode Loading / g cm-2`).
+_DECIMALS_BY_UNIT = {
+    "mm": 2,        # disc diameter, stated to the millimetre
+    "um": 1,        # dry thickness, stated to the micrometre
+    "mg": 4,        # active-material mass, ~1 mg on a microbalance
+    "g": 6,         # coating mass, stated as 0.001064 g
+    "%": 3,         # weight percentage
+    "mg/cm2": 4,    # active-mass loading
+    "mAh/cm2": 4,   # areal capacity
+    "mAh/g": 1,     # theoretical specific capacity
+    "V": 3,         # voltage cutoffs
+    "A/Ah": 4,      # C-rate
+    "h": 3,
+    "min": 3,
+    "s": 3,
+}
+
+
+def _round(value, unit):
+    """Round one numeric value for *unit*; pass anything else through unchanged."""
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return value
+    decimals = _DECIMALS_BY_UNIT.get(unit)
+    if decimals is None:
+        return float(f"{float(value):.6g}")
+    return round(float(value), decimals)
+
+
+def q(value, unit, *, min_value=None, max_value=None):
+    """A Quantity, rounded (D5). ``min_value`` / ``max_value`` bracket an observed
+    spread; they are schema.org QuantitativeValue fields, kept in the canonical
+    record (the JSON-LD emitter carries the primary value only, by design)."""
+    node = {"value": _round(value, unit), "unit": unit}
+    if min_value is not None:
+        node["min_value"] = _round(min_value, unit)
+    if max_value is not None:
+        node["max_value"] = _round(max_value, unit)
+    return node
+
+
+def spread(values: list[float]) -> dict | None:
+    """Mean / sample standard deviation / n / min / max of per-cell values.
+
+    ``None`` below two values: a single cell has no batch statistics. The standard
+    deviation is the sample (n-1) one, because the cells of a batch are a sample of
+    the coated web, not the population of interest.
+    """
+    if len(values) < 2:
+        return None
+    return {
+        "mean": statistics.fmean(values),
+        "sd": statistics.stdev(values),
+        "n": len(values),
+        "min": min(values),
+        "max": max(values),
+    }
 
 
 def load_metadata() -> list[dict]:
@@ -446,11 +559,17 @@ def main() -> int:
         id="https://cordis.europa.eu/project/id/101069765",
     )
 
-    by_cell_spec: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    # D1: the cell-spec grouping key is (kind, electrode source, electrode DESIGN),
+    # so every cell spec is realized by exactly one electrode design and can cite it.
+    # v2 grouped on (kind, source) alone, which put two designs under one spec three
+    # times over.
+    by_cell_spec: dict[tuple[str, str, str], list[dict]] = defaultdict(list)
     by_batch: dict[str, list[dict]] = defaultdict(list)
+    designs_per_source: dict[tuple[str, str], set[str]] = defaultdict(set)
     for r in rows:
-        by_cell_spec[(r["kind"], r["src"])].append(r)
+        by_cell_spec[(r["kind"], r["src"], r["label"])].append(r)
         by_batch[r["label"]].append(r)
+        designs_per_source[(r["kind"], r["src"])].add(r["label"])
 
     # --- 1. Material specs: the powders the source actually identifies -----------
     # One: the LNMO active material. See the MATERIAL-SPEC DISPOSITION block above
@@ -569,17 +688,52 @@ def main() -> int:
         r0 = items[0]
         spec = electrode_spec_by_label[label]
         as_built: dict = {}
-        thick = only_value(items, "thick_um")
-        if thick is not None:
-            as_built["dry_thickness"] = q(thick, "um")
+        stat_notes: list[str] = []
+
+        # EES tier 1: the batch's own as-built figures, averaged over its cells.
+        # `loading` maps to EMMO ActiveMassLoading, `dry_thickness` to
+        # DryCoatingThickness; both are computed from the per-cell rows of
+        # metadata.csv for this public label. See BATCH STATISTICS in the module
+        # docstring for the conventions this follows.
+        loading_stats = spread([r["loading_gcm2"] * 1000.0
+                                for r in items if r["loading_gcm2"] is not None])
+        thickness_stats = spread([r["thick_um"] for r in items if r["thick_um"] is not None])
+        for key, unit, quantity, what in (
+            ("loading", "mg/cm2", loading_stats, "Active-mass loading"),
+            ("dry_thickness", "um", thickness_stats, "Dry thickness"),
+        ):
+            if quantity is None:
+                continue
+            varies = quantity["max"] > quantity["min"]
+            as_built[key] = q(
+                quantity["mean"], unit,
+                min_value=quantity["min"] if varies else None,
+                max_value=quantity["max"] if varies else None,
+            )
+            if varies:
+                stat_notes.append(
+                    f"{what}: {_round(quantity['mean'], unit)} +/- "
+                    f"{_round(quantity['sd'], unit)} {unit} (mean +/- sample standard "
+                    f"deviation, n = {quantity['n']} cells; range "
+                    f"{_round(quantity['min'], unit)}-{_round(quantity['max'], unit)} {unit}), "
+                    f"over the per-cell values metadata.csv publishes for this batch."
+                )
+            else:
+                stat_notes.append(
+                    f"{what}: {_round(quantity['mean'], unit)} {unit}. metadata.csv states "
+                    f"this one value for every one of the {quantity['n']} cells of the batch, "
+                    f"so the mean is that stated value and the standard deviation is 0 by "
+                    f"construction - not a measured spread."
+                )
+
         fields: dict = {
             "spec": spec, "batch": label, "name": label,
             "property": as_built or None,
             "notes": [
                 BATCH_NOTE[label],
-                f"Dry thickness as published in metadata.csv for this batch; "
                 f"{len(items)} of the 95 published measurements were made on cells built "
-                f"from it.",
+                f"from this batch.",
+                *stat_notes,
             ],
             "source_type": "measurement", "citation": DOI_URL,
         }
@@ -588,19 +742,30 @@ def main() -> int:
             fields["supplier"] = org
         electrode_by_label[label] = ws.add("electrode", **fields)[0]
 
-    # --- 4. Cell specs: nine R2032 coin half-cells ------------------------------
-    # Unchanged from v1 in identity: manufacturer, model, format, chemistry and
-    # size_code are the cell-spec identity seed, and all five are byte-identical, so
-    # the nine published IRIs (and every cell, test and dataset IRI derived from
-    # them) are preserved. What changes is the electrode reference.
+    # --- 4. Cell specs: twelve R2032 coin half-cells (D1) ------------------------
+    # One spec per electrode design. The identity seed is (manufacturer, model,
+    # format, chemistry, size_code), so `model` is what decides whether a published
+    # IRI holds. It is qualified by the electrode label ONLY where a (kind, source)
+    # pair covers more than one design - which is exactly the case that has to
+    # re-mint anyway, because one identifier cannot name two designs. The six specs
+    # whose (kind, source) covers a single design keep the model string they were
+    # published with, and with it their IRI and every cell, test and dataset IRI
+    # seeded from it.
+    #
+    # D2: the electrodes are named by ROLE. A half cell has no positive and no
+    # negative side, so `working_electrode` / `counter_electrode` carry them, the
+    # working electrode cites its design through the top-level
+    # `working_electrode_spec_id` sibling (docs/electrodes-model.md: prefer the
+    # sibling when the cell spec's electrode simply IS the published design - which
+    # is what D1 makes true for all twelve), and the polarity basis fields are gone
+    # with the polarity holders.
     print("\n== cell specs ==")
-    spec_by_key: dict[tuple[str, str], object] = {}
-    cell_spec_electrode_designs: dict[tuple[str, str], list[str]] = {}
-    for (kind, src), items in sorted(by_cell_spec.items()):
-        labels = sorted({i["label"] for i in items})
-        cell_spec_electrode_designs[(kind, src)] = labels
+    spec_by_key: dict[tuple[str, str, str], object] = {}
+    for (kind, src, label), items in sorted(by_cell_spec.items()):
         lo, hi = VWINDOW[kind]
-        model = f"{KIND_LABEL[kind]} R2032 half-cell ({src})"
+        one_design = len(designs_per_source[(kind, src)]) == 1
+        model = (f"{KIND_LABEL[kind]} R2032 half-cell ({src})" if one_design
+                 else f"{KIND_LABEL[kind]} R2032 half-cell ({src}, {label})")
         draft = {
             "manufacturer": "SINTEF",
             "model": model,
@@ -612,7 +777,6 @@ def main() -> int:
             "size_code": "R2032",
             "cell_configuration": "half_cell",
             "reference_electrode": "lithium",
-            "negative_electrode_basis": "lithium-metal",
             "rechargeable": True,
             "citation": DOI_URL,
             "properties": {
@@ -620,15 +784,12 @@ def main() -> int:
                 "discharging_cutoff_voltage": q(lo, "V"),
             },
         }
-        if kind in POSITIVE_BASIS:
-            draft["positive_electrode_basis"] = POSITIVE_BASIS[kind]
-        path = write_draft(DRAFTS / f"{kind}-{src}.cell-spec.json", draft)
+        path = write_draft(DRAFTS / f"{kind}-{src}-{label}.cell-spec.json", draft)
         cs = ws.load(path)
         cs.manufacturer_id = SINTEF_IRI
 
-        # Working electrode: the material under study. It links to the designed
-        # electrode when this spec is realized by exactly one design, and to the
-        # powder record when the source identifies one.
+        # Working electrode: the material under study, one design per spec. It cites
+        # the powder record too where the source identifies one.
         am_kwargs: dict = {}
         wt = only_value(items, "wt_pct")
         if wt is not None:
@@ -641,49 +802,32 @@ def main() -> int:
         if thick is not None:
             we_props["thickness"] = q(thick, "um")
         diam = only_value(items, "diam_mm")
-        cs.positive_electrode = electrode(
+        cs.working_electrode = electrode(
             bom=bom(active_material=am),
             diameter=q(diam, "mm") if diam is not None else None,
             properties=properties(**we_props) if we_props else None,
-            comment=f"Working electrode; {SOURCE_LABEL[src]}.",
+            comment=f"Working electrode: {label}, {SOURCE_LABEL[src]}.",
         )
-        cs.negative_electrode = electrode(
+        cs.counter_electrode = electrode(
             bom=bom(active_material=material("Lithium metal")),
-            comment="Counter and reference electrode: lithium metal foil.",
+            comment="Counter electrode: lithium metal foil. In a half cell the counter "
+                    "electrode is also the potential reference, so all voltages are "
+                    "reported vs Li/Li+.",
         )
-        design_note = (
-            f"Electrode design realizing this spec: "
-            f"{electrode_spec_by_label[labels[0]]['electrode_spec']['name']}."
-        )
-        if len(labels) == 1:
-            # One design: state it structurally. The emitter merges the electrode
-            # spec's @id onto this cell spec's positive-electrode node.
-            cs.positive_electrode_spec_id = (
-                electrode_spec_by_label[labels[0]]["electrode_spec"]["id"])
-        else:
-            # More than one design under one published cell spec. The seam is
-            # single-valued and the cell-spec IRIs are already published, so the
-            # designs are named in prose rather than silently collapsing two
-            # different electrodes onto one link. See READINESS-REPORT.md gap E3.
-            design_note = (
-                "This cell spec is realized by more than one electrode design "
-                + "; ".join(
-                    electrode_spec_by_label[label]["electrode_spec"]["name"]
-                    for label in labels)
-                + ". Because a cell spec can cite only one electrode spec, no "
-                  "electrode_spec_id is stated; the designs are reachable through the "
-                  "electrode batches named below."
-            )
+        cs.working_electrode_spec_id = (
+            electrode_spec_by_label[label]["electrode_spec"]["id"])
         cs.specification_comment = [
             "R2032 coin half-cell. The working electrode is the named active material; "
-            "the counter and reference electrode is lithium metal. All voltages are "
-            "reported vs Li/Li+.",
-            f"Half-cell voltage window: {lo:.2f}-{hi:.2f} V.",
-            f"Public electrode label(s) grouped under this spec: {', '.join(labels)}.",
-            design_note,
+            "the counter electrode, which is also the potential reference, is lithium "
+            "metal. All voltages are reported vs Li/Li+, and the cell has no positive or "
+            "negative side to name.",
+            f"Half-cell voltage window vs Li/Li+: {lo:.2f}-{hi:.2f} V.",
+            f"Public electrode label: {label}.",
+            f"Electrode design realizing this spec: "
+            f"{electrode_spec_by_label[label]['electrode_spec']['name']}.",
             "Electrolyte and separator are not reported in the source record and are omitted.",
         ]
-        spec_by_key[(kind, src)] = cs
+        spec_by_key[(kind, src, label)] = cs
 
     # --- 5. Cell instances: one per published parquet ---------------------------
     print("\n== cell instances ==")
@@ -697,7 +841,7 @@ def main() -> int:
     for (kind, src, label, date), items in sorted(groups.items()):
         cells = ws.add(
             "cell",
-            spec=spec_by_key[(kind, src)],
+            spec=spec_by_key[(kind, src, label)],
             serial_numbers=[i["hex"] for i in items],
             production_date=yyyymmdd(date),
         )
@@ -868,9 +1012,61 @@ def main() -> int:
         print(f"  {key:15s} {value}")
     print(f"  {'TOTAL':15s} {sum(counts.values())}")
 
-    linked = sum(1 for key in spec_by_key
-                 if len(cell_spec_electrode_designs[key]) == 1)
-    print(f"\ncell specs citing one electrode design: {linked} of {len(spec_by_key)}")
+    # The IRIs this run authored, by record subdirectory. build_bundle.py mirrors
+    # exactly these into records/. Needed since D1: re-seeding an identity leaves the
+    # predecessor behind in the (gitignored) workspace, and a record no run authored
+    # must never ride into the tracked corpus or the bundle. The file is also the
+    # input to superseded/supersede-map.json.
+    def _iri(obj, key: str) -> str:
+        return obj[key]["id"] if isinstance(obj, dict) else obj.id
+
+    manifest = {
+        "material-spec": [lnmo_spec_id],
+        "electrode-spec": [_iri(o, "electrode_spec") for o in electrode_spec_by_label.values()],
+        "electrode": [_iri(o, "electrode") for o in electrode_by_label.values()],
+        "cell-spec": [_iri(o, "cell_spec") for o in spec_by_key.values()],
+        "cell-instance": [_iri(o, "cell_instance") for o in cell_by_hex.values()],
+        "test-protocol": [_iri(o, "test_spec") for o in proto_by_key.values()],
+        "test": [_iri(o, "test") for o in test_by_hex.values()],
+        "dataset": [d["id"] for d in dataset_results],
+    }
+    manifest = {key: sorted(set(values)) for key, values in manifest.items()}
+    written = sum(len(v) for v in manifest.values())
+    (RECORDS_ROOT.parent / "authored.json").write_text(
+        json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(f"\nauthored manifest: {written} IRIs -> .battinfo/authored.json")
+
+    # Prune identities this run did not author. D1 re-seeds six cell specs and the
+    # 141 cells, tests and datasets under them; their predecessors stay behind in the
+    # workspace, from where build_bundle.py would mirror them into records/ and
+    # ws.preview_jsonld would fold them into the deposit graph. The workspace is
+    # gitignored and wholly rebuilt by this script, so the files go; the retired
+    # identifiers live in superseded/supersede-map.json, which is what a republish
+    # needs. The workspace index is rewritten by the next run of ws.save() - run this
+    # script twice (which is the idempotence check anyway) for a clean index.
+    authored = {iri for values in manifest.values() for iri in values}
+    body_keys = {"material-spec": "material_spec", "electrode-spec": "electrode_spec",
+                 "electrode": "electrode", "cell-spec": "cell_spec",
+                 "cell-instance": "cell_instance", "test-protocol": "test_spec",
+                 "test": "test", "dataset": "dataset"}
+    retired: list[str] = []
+    for path in sorted(RECORDS_ROOT.rglob("*.json")):
+        body_key = body_keys.get(path.parent.name)
+        if body_key is None:
+            continue
+        body = json.loads(path.read_text(encoding="utf-8")).get(body_key) or {}
+        iri = body.get("id")
+        if isinstance(iri, str) and iri not in authored:
+            retired.append(f"{path.parent.name}/{iri}")
+            path.unlink()
+    if retired:
+        print(f"pruned {len(retired)} record(s) this run did not author "
+              f"(re-seeded identities; see superseded/supersede-map.json)")
+
+    kept = sum(1 for (kind, src, _label) in spec_by_key
+               if len(designs_per_source[(kind, src)]) == 1)
+    print(f"\ncell specs citing one electrode design: {len(spec_by_key)} of {len(spec_by_key)}")
+    print(f"cell specs keeping their published model string (and IRI): {kept}")
     return 0
 
 

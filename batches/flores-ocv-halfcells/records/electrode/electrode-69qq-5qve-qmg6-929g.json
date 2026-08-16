@@ -7,6 +7,12 @@
     "name": "Si-AQ-1",
     "batch_id": "Si-AQ-1",
     "property": {
+      "loading": {
+        "value": 0.6505,
+        "unit": "mg/cm2",
+        "min_value": 0.5595,
+        "max_value": 0.7195
+      },
       "dry_thickness": {
         "value": 44.0,
         "unit": "um"
@@ -15,13 +21,15 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786795062,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
     "Silicon (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 8 of the 95 published measurements were made on cells built from it."
+    "8 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 0.6505 +/- 0.0625 mg/cm2 (mean +/- sample standard deviation, n = 8 cells; range 0.5595-0.7195 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 44.0 um. metadata.csv states this one value for every one of the 8 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "funding": {
     "type": "Grant",

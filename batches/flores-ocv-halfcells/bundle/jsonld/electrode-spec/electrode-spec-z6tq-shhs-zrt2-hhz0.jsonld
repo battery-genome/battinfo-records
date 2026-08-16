@@ -63,7 +63,7 @@
       "skos:prefLabel": "ActiveMassLoading",
       "hasNumericalPart": {
         "@type": "RealData",
-        "hasNumberValue": 20.400000000000002
+        "hasNumberValue": 20.4
       },
       "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
     }

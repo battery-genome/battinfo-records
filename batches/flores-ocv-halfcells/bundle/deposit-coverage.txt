@@ -3,10 +3,10 @@ Deposit-graph coverage by record type (deposit.jsonld)
 material-spec   records=  1  nodes_in_deposit_graph=  1
 electrode-spec  records= 12  nodes_in_deposit_graph= 12
 electrode       records= 12  nodes_in_deposit_graph= 12
-cell-spec       records=  9  nodes_in_deposit_graph=  9
+cell-spec       records= 12  nodes_in_deposit_graph= 12
 cell-instance   records= 95  nodes_in_deposit_graph= 95
 test-protocol   records=  4  nodes_in_deposit_graph=  4
 test            records= 95  nodes_in_deposit_graph= 95
 dataset         records= 95  nodes_in_deposit_graph= 95
 
-deposit graph nodes: 325
+deposit graph nodes: 328

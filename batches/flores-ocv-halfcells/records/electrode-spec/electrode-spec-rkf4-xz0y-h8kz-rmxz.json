@@ -14,7 +14,7 @@
             "name": "Silicon",
             "property": {
               "mass_fraction": {
-                "value": 84.971405,
+                "value": 84.971,
                 "unit": "%"
               }
             }
@@ -45,7 +45,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786796181,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

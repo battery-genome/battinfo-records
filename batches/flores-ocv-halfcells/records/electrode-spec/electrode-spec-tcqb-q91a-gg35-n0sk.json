@@ -15,7 +15,7 @@
             "name": "Lithium nickel manganese oxide (LNMO)",
             "property": {
               "mass_fraction": {
-                "value": 91.96277,
+                "value": 91.963,
                 "unit": "%"
               }
             },
@@ -43,7 +43,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786796181,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

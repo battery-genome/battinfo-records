@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.2.0",
+  "test": {
+    "id": "https://w3id.org/battinfo/test/9evb-t6t6-2e1y-d8t9",
+    "short_id": "9evbt6",
+    "identifier": "test:9evb-t6t6-2e1y-d8t9",
+    "name": "LNMO-NMP-1 cell d11721 p-OCV hold",
+    "kind": "quasi_ocv",
+    "cell_id": "https://w3id.org/battinfo/cell/srv9-7k9d-8m7k-t5ym",
+    "description": "p-OCV hold half-cell OCV measurement on LNMO-NMP-1 coin cell d11721 at room temperature.",
+    "protocol_id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69",
+    "status": "completed",
+    "conditions": {
+      "ambient_temperature": "room temperature",
+      "voltage_reference": "Li/Li+",
+      "active_material_mass": {
+        "value": 13.7692,
+        "unit": "mg"
+      },
+      "electrode_coating_mass": {
+        "value": 0.014967,
+        "unit": "g"
+      },
+      "nominal_areal_capacity": {
+        "value": 1.2517,
+        "unit": "mAh/cm2"
+      },
+      "electrode_loading": {
+        "value": 8.941,
+        "unit": "mg/cm2"
+      }
+    },
+    "protocol_name": "p-OCV hold",
+    "started_at": 1750809600
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "retrieved_at": 1786886927,
+    "battinfo_version": "0.7.0"
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

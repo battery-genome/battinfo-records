@@ -9,18 +9,32 @@
     }
   ],
   "@type": "Electrode",
-  "hasProperty": {
-    "@type": [
-      "DryCoatingThickness",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "DryCoatingThickness",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 64.0
+  "hasProperty": [
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 64.0
+      },
+      "schema:unitText": "um"
     },
-    "schema:unitText": "um"
-  },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3.8282
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    }
+  ],
   "@id": "https://w3id.org/battinfo/electrode/h8zf-3amz-gnks-bg8a",
   "schema:name": "Gr-AQ-1",
   "schema:isVariantOf": {
@@ -38,7 +52,9 @@
   },
   "schema:comment": [
     "Graphite (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 7 of the 95 published measurements were made on cells built from it."
+    "7 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 3.8282 +/- 0.1345 mg/cm2 (mean +/- sample standard deviation, n = 7 cells; range 3.5818-3.9776 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 64.0 um. metadata.csv states this one value for every one of the 7 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

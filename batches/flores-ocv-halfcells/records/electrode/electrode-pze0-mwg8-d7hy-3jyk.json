@@ -7,6 +7,12 @@
     "name": "SiGr-AQ-2",
     "batch_id": "SiGr-AQ-2",
     "property": {
+      "loading": {
+        "value": 1.9262,
+        "unit": "mg/cm2",
+        "min_value": 1.8133,
+        "max_value": 2.1238
+      },
       "dry_thickness": {
         "value": 51.0,
         "unit": "um"
@@ -15,13 +21,15 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786795062,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
     "Higher Si % silicon-graphite composite (aqueous processed).",
-    "Dry thickness as published in metadata.csv for this batch; 7 of the 95 published measurements were made on cells built from it."
+    "7 of the 95 published measurements were made on cells built from this batch.",
+    "Active-mass loading: 1.9262 +/- 0.0986 mg/cm2 (mean +/- sample standard deviation, n = 7 cells; range 1.8133-2.1238 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
+    "Dry thickness: 51.0 um. metadata.csv states this one value for every one of the 7 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
   ],
   "funding": {
     "type": "Grant",

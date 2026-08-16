@@ -3,7 +3,7 @@
 
 Run AFTER build_records.py. Produces (all under this directory):
 
-  records/                        tracked copy of the 323 canonical BattINFO JSON
+  records/                        tracked copy of the 326 canonical BattINFO JSON
                                   records (the workspace .battinfo/ dir is gitignored).
   bundle/jsonld/                  per-record JSON-LD for all eight record types.
   bundle/deposit.jsonld           one combined JSON-LD graph for the whole deposit.
@@ -165,10 +165,12 @@ def spot_checks() -> str:
     # exists for.
     spec = _pick("cell-spec", lambda r: r["cell_spec"]["cell_configuration"] == "half_cell"
                  and "Silicon R2032" in r["cell_spec"]["model"])
-    section("SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; the positive "
-            "electrode node carries the @id of the electrode spec it realizes",
+    section("SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named "
+            "by ROLE (hasWorkingElectrode, hasCounterElectrode typed CounterElectrode + "
+            "ReferenceElectrode) with NO polarity relation anywhere; the working-electrode "
+            "node carries the @id of the electrode spec it realizes",
             B.record_to_jsonld(spec, "cell-spec", context="inline"))
-    si_es_iri = spec["positive_electrode_spec_id"]
+    si_es_iri = spec["working_electrode_spec_id"]
     si_es = _pick("electrode-spec", lambda r: r["electrode_spec"]["id"] == si_es_iri)
     section("SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, "
             "coating composition, aqueous route as prov:wasGeneratedBy, no powder link",
@@ -199,6 +201,26 @@ def spot_checks() -> str:
               f"{'=' * 78}\naqueous: {aq['electrode_spec']['id']}\n"
               f"nmp:     {nmp['electrode_spec']['id']}\n"
               f"powder:  {lnmo_iri}\n\n")
+
+    # D1 in one screen: each of the four LNMO cell specs now names exactly one of
+    # those designs, so the powder is two hops from any LNMO cell spec. Under v2 the
+    # two intelligent1 designs shared one cell spec, which could therefore cite
+    # neither, and the powder was reachable only by reading prose.
+    out.write(f"{'=' * 78}\nSPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, "
+              f"for every LNMO cell spec\n{'=' * 78}\n")
+    for src in sorted((RECORDS / "cell-spec").glob("*.json")):
+        raw = json.loads(src.read_text(encoding="utf-8"))
+        if "LNMO" not in raw["cell_spec"]["model"]:
+            continue
+        es_iri = raw["working_electrode_spec_id"]
+        es = _pick("electrode-spec", lambda r, i=es_iri: r["electrode_spec"]["id"] == i)
+        batch = _pick("electrode", lambda r, i=es_iri: r["electrode"]["electrode_spec_id"] == i)
+        out.write(f"{raw['cell_spec']['model']}\n"
+                  f"  cell spec      {raw['cell_spec']['id']}\n"
+                  f"  -> electrode   {es_iri}  ({es['electrode_spec']['name']})\n"
+                  f"  -> batch       {batch['electrode']['id']}  ({batch['electrode']['batch_id']})\n"
+                  f"  -> powder      {es['electrode_spec'].get('active_material_spec_id')}\n")
+    out.write("\n")
 
     # --- Thread 3: protocols and datasets (unchanged from v1) -------------------
     for name in ("GITT", "p-OCV"):

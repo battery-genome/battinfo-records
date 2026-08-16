@@ -37,7 +37,7 @@
         "unit": "mm"
       },
       "loading": {
-        "value": 20.400000000000002,
+        "value": 20.4,
         "unit": "mg/cm2"
       },
       "areal_capacity": {
@@ -48,7 +48,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786796181,
+    "retrieved_at": 1786886926,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
