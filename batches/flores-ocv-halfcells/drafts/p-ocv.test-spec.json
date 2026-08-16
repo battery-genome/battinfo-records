@@ -24,7 +24,7 @@
         {
           "mode": "rest",
           "duration": {
-            "value": 8.0,
+            "value": 8,
             "unit": "h"
           },
           "description": "Rest for 8 h at the lower voltage cutoff"
@@ -43,7 +43,7 @@
         {
           "mode": "rest",
           "duration": {
-            "value": 8.0,
+            "value": 8,
             "unit": "h"
           },
           "description": "Rest for 8 h at the upper voltage cutoff"

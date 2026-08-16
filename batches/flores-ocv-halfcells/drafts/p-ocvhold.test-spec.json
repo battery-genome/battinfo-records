@@ -24,7 +24,7 @@
         {
           "mode": "cv",
           "duration": {
-            "value": 6.0,
+            "value": 6,
             "unit": "h"
           },
           "description": "Potentiostatic hold for 6 h at the lower voltage cutoff"
@@ -43,7 +43,7 @@
         {
           "mode": "cv",
           "duration": {
-            "value": 6.0,
+            "value": 6,
             "unit": "h"
           },
           "description": "Potentiostatic hold for 6 h at the upper voltage cutoff"

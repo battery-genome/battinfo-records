@@ -383,13 +383,19 @@ _DECIMALS_BY_UNIT = {
 
 
 def _round(value, unit):
-    """Round one numeric value for *unit*; pass anything else through unchanged."""
+    """Round one numeric value for *unit*; pass anything else through unchanged.
+
+    An integer stays an integer. Rounding is here to remove noise, not to turn a
+    stated ``8`` hours into ``8.0``.
+    """
     if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return value
+    if isinstance(value, int):
         return value
     decimals = _DECIMALS_BY_UNIT.get(unit)
     if decimals is None:
-        return float(f"{float(value):.6g}")
-    return round(float(value), decimals)
+        return float(f"{value:.6g}")
+    return round(value, decimals)
 
 
 def q(value, unit, *, min_value=None, max_value=None):
