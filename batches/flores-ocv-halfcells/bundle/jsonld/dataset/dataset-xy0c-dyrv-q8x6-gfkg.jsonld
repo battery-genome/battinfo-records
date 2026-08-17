@@ -296,6 +296,24 @@
         },
         "spdx:checksumValue": "fcdaeda82e4dabe9de40e184f51ac36e"
       }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-nmc532-R2032-gelon-328a71__20250625__gitthold__RT.plot.json",
+      "schema:description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+      "dcat:downloadURL": {
+        "@id": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/xy0cdy/sintef__sintef-nmc532-R2032-gelon-328a71__20250625__gitthold__RT.plot.json"
+      },
+      "dcat:mediaType": "application/json",
+      "dcat:byteSize": 85813,
+      "schema:contentSize": "85813",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "b4e9a6be8d62365f95fbfd04bfaabb08988e341140f572cf9ff565c6c8973dd4"
+      }
     }
   ],
   "dcterms:source": {
@@ -304,7 +322,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-10T12:50:13+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:49+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

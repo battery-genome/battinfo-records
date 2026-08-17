@@ -296,6 +296,24 @@
         },
         "spdx:checksumValue": "fa2bdc86275a19a551495cda90acb287"
       }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-lnmo-R2032-intelligent2-7c22c4__20250424__p-ocvhold__RT.plot.json",
+      "schema:description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+      "dcat:downloadURL": {
+        "@id": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/7dh6tv/sintef__sintef-lnmo-R2032-intelligent2-7c22c4__20250424__p-ocvhold__RT.plot.json"
+      },
+      "dcat:mediaType": "application/json",
+      "dcat:byteSize": 64593,
+      "schema:contentSize": "64593",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "e7a57b704526d8d7ba0b3612462764dd501d7cd7c419567e7b499a0e118fca41"
+      }
     }
   ],
   "dcterms:source": {
@@ -304,7 +322,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-16T13:28:59+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:47+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

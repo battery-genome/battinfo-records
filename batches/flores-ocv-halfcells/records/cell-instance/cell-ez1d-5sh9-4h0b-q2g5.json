@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/ez1d-5sh9-4h0b-q2g5",
     "short_id": "ez1d5s",
     "cell_spec_id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/87nn-abck-v81q-dtgp",
     "name": "LNMO-AQ-2",
     "serial_number": "2bac5c",
     "batch_id": "LNMO-AQ-2",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

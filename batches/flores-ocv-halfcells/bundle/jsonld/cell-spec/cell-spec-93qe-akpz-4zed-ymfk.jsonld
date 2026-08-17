@@ -539,6 +539,9 @@
       "hasActiveMaterial": {
         "@type": "ActiveMaterial",
         "schema:name": "Silicon-graphite composite",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
+        },
         "hasProperty": {
           "@type": [
             "MassFraction",
@@ -597,7 +600,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

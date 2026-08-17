@@ -12,30 +12,14 @@
     "status": "completed",
     "conditions": {
       "ambient_temperature": "room temperature",
-      "voltage_reference": "Li/Li+",
-      "active_material_mass": {
-        "value": 0.8616,
-        "unit": "mg"
-      },
-      "electrode_coating_mass": {
-        "value": 0.001014,
-        "unit": "g"
-      },
-      "nominal_areal_capacity": {
-        "value": 2.0024,
-        "unit": "mAh/cm2"
-      },
-      "electrode_loading": {
-        "value": 0.5595,
-        "unit": "mg/cm2"
-      }
+      "voltage_reference": "Li/Li+"
     },
     "protocol_name": "GITT hold",
     "started_at": 1743811200
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

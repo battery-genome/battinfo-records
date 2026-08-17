@@ -539,6 +539,9 @@
       "hasActiveMaterial": {
         "@type": "ActiveMaterial",
         "schema:name": "NMC111 (LiNi1/3Mn1/3Co1/3O2)",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/j17h-6vp8-jcat-pmq1"
+        },
         "hasProperty": {
           "@type": [
             "MassFraction",
@@ -597,7 +600,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

@@ -6,36 +6,55 @@ DOI (version):  10.5281/zenodo.20086298
 DOI (concept):  10.5281/zenodo.19107294
 License:        CC BY 4.0
 
-CORPUS V3 - the maintainer's review-round-2 rulings, on top of v2's first-class
-electrode model (BIG-MAP/BattINFO#342) and the role-based half-cell model
-(BIG-MAP/BattINFO#345). What v3 changes:
+CORPUS V4 - the maintainer's review-round-3 rulings, on top of v3's one-spec-per-
+design split (D1), the role-based half-cell model (BIG-MAP/BattINFO#345) and the
+first-class electrode model (#342). What v4 changes:
 
-  D1  One cell spec per electrode design. Three v2 specs each covered two designs
-      and could therefore cite neither; they are split into six, so all twelve
-      specs cite exactly one electrode spec. The six specs that already covered a
-      single design keep their published IRIs - the cell-spec identity seed is
-      (manufacturer, model, format, chemistry, size_code) and none of those five
-      changes for them. The six new ones re-mint, and with them the 47 cells, 47
-      tests and 47 datasets seeded from them. superseded/README.md maps every
-      published v1 identifier onto its v3 successor.
-  D2  Half cells name their electrodes by ROLE. `working_electrode` /
-      `counter_electrode` replace `positive_electrode` / `negative_electrode`, and
-      `working_electrode_spec_id` replaces `positive_electrode_spec_id`. The
-      polarity BASIS fields go with them: a cell with no positive and no negative
-      side should not describe its electrodes as either. Nothing is lost - the
-      chemistry is typed on the working electrode through its electrode spec, and
-      the cell still types as BatteryHalfCell + HalfCellDevice from
-      cell_configuration.
-  D5  Float artifacts are rounded away (see ROUNDING below).
-  EES Electrode batches carry the per-batch active-mass loading and dry thickness
-      computed from the per-cell rows of metadata.csv (see BATCH STATISTICS).
+  R1  The active-material powders are described for EVERY kind, not only where the
+      source volunteers something extra. Curator-complete replaces evidence-only:
+      seven material specs (graphite, silicon, silicon-graphite, LNMO, LFP,
+      NMC111, NMC532), each carrying its kind, the theoretical specific capacity
+      metadata.csv states for it, a manufacturer only where one is known, and a
+      description that says plainly what the source does NOT report. All twelve
+      electrode specs now carry `active_material_spec_id`, so no electrode design
+      is left pointing at a bare vocabulary key. See POWDER DISPOSITION below.
+  R2  Topsoe made the LNMO powder (maintainer-supplied fact; the Zenodo record
+      names no supplier). A Topsoe organization record joins the shared corpus and
+      the LNMO material spec's `manufacturer` carries its IRI and name.
+  R3  A material INSTANCE where a physical lot is evidenced. The source describes
+      one study powder - "The LNMO material used in this study targeted high Mn/Ni
+      disorder, therefore the OCVs is a highly disordered spinel" - singular,
+      covering all four LNMO designs across both processing routes. That is one
+      lot, so one `material` record is authored for it. No other kind gets an
+      instance: for the other six the source evidences no lot at all, and a lot
+      record per kind would be a fabricated batch. See LOT DISPOSITION.
+  R4  The electrode record is now the DISC IN THE CELL, one per cell, 95 of them.
+      Each carries its design (`electrode_spec_id`), the public label
+      (`batch_id`), and the per-cell as-built figures metadata.csv publishes -
+      which is where they belong, and where they now live instead of on
+      `test.conditions`. The v3 batch-level electrode records (12, staged only,
+      never published) give way; their batch statistics move up to the electrode
+      SPEC and are stated with the structured `standard_deviation` /
+      `sample_count` fields BattINFO#346 added, so the prose workaround of v3
+      (gap E7) retires. See DISC IDENTITY and BATCH STATISTICS.
+  R5  Every cell record links the disc physically inside it through
+      `working_electrode_id` (BattINFO#346). `counter_electrode_id` is deliberately
+      left unset: the lithium counter electrodes are not individually tracked by
+      the source, so there is no disc to point at. The cell spec's counter-electrode
+      holder describes them, which is the honest level for a component the study
+      treats as interchangeable.
 
-v2's remodel still stands: the material spec describes the POWDER and the
+Everything that survived rounds 1-3 stands: electrodes named by ROLE, not polarity
+(D2); `cell_configuration = half_cell`; one cell spec per electrode design (D1);
+the rounding rule (D5); and the license, funding and nine-contributor attribution
+on every record.
+
+v2's remodel still stands too: the material spec describes the POWDER and the
 electrode spec describes the ELECTRODE. Corpus v1 broke that: it minted nine
 "material specs" that were really electrode products and twelve "material lots"
 that were really coated electrode batches. Those 21 records are retired here (see
-superseded/README.md) and replaced by 1 material spec, 12 electrode specs and 12
-electrode batches.
+superseded/README.md) and replaced by 7 material specs, 1 material lot, 12
+electrode specs and 95 electrode discs.
 
 Deterministic: the script reads two committed source snapshots (``sources/metadata.csv``
 and ``sources/zenodo-record.json``, verbatim captures of the Zenodo API), writes the
@@ -44,15 +63,20 @@ BattINFO records into ``.battinfo/records/``. Re-running is a no-op: every recor
 carries a content-derived IRI and unchanged records report ``[unchanged]``.
 
 Records authored (one published Zenodo dataset -> per-test granularity):
-  * 1  material spec    (the LNMO powder - the only powder the source identifies)
-  * 12 electrode specs  (one per electrode DESIGN: kind x source x processing route)
-  * 12 electrodes       (the published electrode BATCHES, one per public label)
+  * 1  organization     (Topsoe, into the shared records/organization/ corpus - R2)
+  * 7  material specs   (one POWDER per active-material kind - R1)
+  * 1  material lot     (the one study powder the source evidences: LNMO - R3)
+  * 12 electrode specs  (one per electrode DESIGN: kind x source x processing route,
+                         each citing its powder and carrying the batch statistics)
+  * 95 electrodes       (the DISC inside each cell, with its as-built figures - R4)
   * 12 cell specs       (R2032 coin half-cells, cell_configuration = half_cell,
                          one per electrode design - D1)
-  * 95 cell instances   (one per parquet; serial = 6-char id, name = public label)
+  * 95 cell instances   (one per parquet; serial = 6-char id, name = public label,
+                         each linking its working-electrode disc - R5)
   * 4  test protocols   (p-OCV, p-OCV hold, GITT, GITT hold; structured EMMO method)
   * 95 tests            (cell x protocol; 11 known issues -> conformance)
-  * 95 datasets         (each references the published Zenodo parquet + md5 + size)
+  * 95 datasets         (each references the published Zenodo parquet + md5 + size,
+                         plus the derived plot profile the dataset page renders)
 
 ROUNDING (D5). Every numeric quantity is written through ``q()``, which rounds to a
 fixed number of decimals per unit (``_DECIMALS_BY_UNIT``, 6 significant digits where
@@ -66,24 +90,55 @@ physical quantity, at or above the precision the source's own rounded columns us
 underlying instrument readings support more. No identity seed contains a number, so
 no identifier moves because of this.
 
-BATCH STATISTICS (EES tier 1). Each electrode batch carries the mean of its cells'
-active-mass loading and dry thickness, with the observed minimum and maximum where
-the cells differ. Conventions, applied to all twelve batches (each has 7-9 cells, so
-the n >= 2 gate never bites):
-  * the mean is over the per-cell rows of metadata.csv for that public label;
+DISC IDENTITY (R4). An electrode record's IRI is minted from
+``electrode_identity_seed(electrode_spec_id, batch)``, a two-part seed built for one
+record per coating batch. Ninety-five discs cut from twelve batches need a third
+part, so the seed's batch slot carries the disc's full batch context,
+``"<public label>/<6-char cell id>"``, and ``batch_id`` keeps the public label on its
+own for display and joins. The uid is computed with BattINFO's own
+``entities.stable_uid`` / ``electrode_identity_seed`` - the same primitives the
+minting surfaces use - so the identity is deterministic, re-running is a no-op, and
+nothing is hand-numbered.
+
+BATCH STATISTICS (R4, closing gap E7). The batch-level aggregates that v3 put on the
+twelve electrode-batch records now sit in the ELECTRODE SPEC's property block, as
+structured quantities rather than prose. Conventions, applied to all twelve designs
+(each is realized by 7-9 discs, so the n >= 2 gate never bites):
+  * the mean is over the per-cell rows of metadata.csv for that public label, and
+    rides ``value``; the sample (n-1) standard deviation rides ``standard_deviation``
+    and the number of discs rides ``sample_count`` (BattINFO#346). Both are emitted
+    as named schema:PropertyValue qualifiers on the property node, so the spread is
+    machine-readable for the first time and the v3 note text retires;
+  * ``min_value`` / ``max_value`` still bracket the observed range where the discs
+    differ, as they always did;
   * ``Electrode Loading / g cm-2`` is the ACTIVE-material loading, not the coating
     loading - the column equals active mass / disc area for every row, which is why
     it lands on the mapped key ``loading`` (EMMO ActiveMassLoading);
-  * the standard deviation is the SAMPLE standard deviation (n-1) and is stated in
-    the batch's notes, not in the property block: no ``standard_deviation`` field
-    exists on a Quantity and no EMMO class in the curated property map means it, so
-    a structured key would be dropped from the JSON-LD and warned about. Gap E7 in
-    READINESS-REPORT.md.
   * where metadata.csv states ONE value for every cell of a batch (all twelve dry
-    thicknesses, and the loading of the three purchased electrodes), the mean is
-    that stated value and the standard deviation is 0 by construction. The batch
-    note says so rather than letting a repeated declaration read as a measured
-    spread.
+    thicknesses, and the loading and areal capacity of the three purchased
+    electrodes), the mean is that stated value and ``standard_deviation`` is 0.
+    Zero is meaningful here and the schema says so: it records that every disc
+    carried the same declared number, which is not the same claim as a measured
+    spread. The spec's notes say which of the two a reader is looking at.
+
+PER-DISC FIGURES (R4). Each disc carries the six as-built quantities metadata.csv
+publishes for its cell, on property keys that resolve to EMMO classes so nothing is
+dropped or warned about on the JSON-LD path:
+
+    loading        mg/cm2    ActiveMassLoading         per-cell active-mass loading
+    dry_thickness  um        DryCoatingThickness       the batch's stated dry thickness
+    areal_capacity mAh/cm2   AreicCapacity             per-cell nominal areal capacity
+    diameter       mm        Diameter                  punched disc diameter
+    mass           mg        Mass                      the disc's electrode coating mass
+    mass_fraction  %         MassFraction              active-material weight percentage
+
+metadata.csv's seventh column, ``Mass of Active Material / mg``, is deliberately not
+a seventh key: it is the product of the two columns above it (coating mass x weight
+percentage - which is why the source publishes it to sixteen digits), and ``mass``
+is the only key in the curated property map that means Mass, so a second mass key
+would either fall back to a non-canonical term or collapse onto the first one in
+JSON-LD. Both factors are stated exactly, the product is stated in the disc's
+comment for a human reader, and no number is lost.
 
 Authoring surface: everything except the datasets is authored through the blessed
 ``battinfo.workspace()`` API (``ws.add`` / ``ws.load`` / ``ws.save``), including the
@@ -96,7 +151,8 @@ see READINESS-REPORT.md (gap G1).
 Nothing here submits: this build stages records for review only.
 
 Run:  python build_records.py
-Requires BattINFO from git main at or after 33615d6 (#345).
+Requires BattINFO from git main at or after a7661d2 (#346: cell working/counter
+electrode links, and standard_deviation / sample_count on a Quantity).
 """
 from __future__ import annotations
 
@@ -111,12 +167,26 @@ from pathlib import Path
 import battinfo as B
 from battinfo.authoring import bom, electrode, material, properties
 from battinfo.bundle import ChecksumInfo
+from battinfo.entities import electrode_identity_seed, stable_uid
 from battinfo.metadata import checksum, distribution, measured_variable
 
 HERE = Path(__file__).resolve().parent
 SOURCES = HERE / "sources"
 DRAFTS = HERE / "drafts"
 RECORDS_ROOT = HERE / ".battinfo" / "records"
+PROFILES = HERE / "profiles"
+# The shared organization corpus of this repository, where every organization a
+# record cites already lives (245 of them, SINTEF among them). Topsoe joins it there
+# rather than inside this batch: organizations are corpus-wide, and they are the one
+# record type BattINFO does not emit JSON-LD for - a cell spec or material spec cites
+# an organization inline, by IRI and name.
+ORG_RECORDS = HERE.parents[1] / "records" / "organization"
+
+# Public base of the object store that serves dataset files to the platform. ws.upload()
+# writes each distribution to the key datasets/{short_id}/{filename} under this base and
+# rewrites the record to match; the plot profiles follow the same convention so the
+# upload is a straight sync (see upload_profiles.py) and the URLs here are the final ones.
+R2_PUBLIC_BASE = "https://pub-5d124607e4b748eea681efca486508ab.r2.dev"
 
 # SINTEF's registry organization IRI, carried by the cell specs (manufacturer_id) and
 # by the manufacturer block of the nine SINTEF-made electrode specs. IREC
@@ -259,52 +329,182 @@ DESIGN_NAME = {
 ROUTE_TOKENS = {"AQ": ("aqueous", "water"), "NMP": ("nmp", "NMP")}
 
 # ---------------------------------------------------------------------------
-# MATERIAL-SPEC DISPOSITION (v2). A material spec is authored only where the
-# source states something about the POWDER that the kind does not already carry.
-# Evidence, kind by kind, from the Zenodo description and metadata.csv:
+# POWDER DISPOSITION (R1). v2 and v3 authored a material spec only where the source
+# volunteered something about the POWDER that the kind key did not already carry,
+# which left eleven of the twelve electrode designs citing no material at all. The
+# round-3 ruling replaces that with a curator-complete policy: every active-material
+# kind in the dataset gets a powder record, so every electrode design can cite one.
 #
-#   lnmo             AUTHORED. "The LNMO material used in this study targeted high
-#                    Mn/Ni disorder, therefore the OCVs is a highly disordered
-#                    spinel" - a statement about the material itself, singular,
-#                    covering the whole study. metadata.csv states one theoretical
-#                    specific capacity (140 mAh/g) for all four LNMO batches. One
-#                    powder, four electrode designs across two processing routes.
-#   silicon          NOT AUTHORED. The description says the opposite: "OCVs from
-#                    Si-containing electrodes might exhibit large variations
-#                    depending on material properties, such as particle size,
-#                    crystallinity, surface chemistry, percentage of silicon in
-#                    Si-Graphite blends, etc. None of these material and electrode
-#                    properties are available from the suppliers." The only powder
-#                    number in metadata.csv is 3579 mAh/g, the textbook theoretical
-#                    capacity of silicon, i.e. the kind restated.
-#   silicon_graphite NOT AUTHORED, same statement - and it names "percentage of
-#                    silicon in Si-Graphite blends" as one of the unavailable
-#                    properties, so a powder record claiming a blend composition
-#                    would contradict the source. The three blends ARE
-#                    distinguishable (510 / 1150 / 900 mAh/g theoretical), so that
-#                    number rides the electrode spec of each design instead.
-#   graphite         NOT AUTHORED. 372 mAh/g is the textbook value for the kind;
-#                    nothing else is stated.
-#   lfp, nmc111,     NOT AUTHORED. Purchased complete electrodes ("commercial
-#   nmc532           electrode" in the batch table). The manufacturers supplied
-#                    electrode-level figures (weight percentage, loading, areal
-#                    capacity - see the V3 version note), never a powder identity.
-#                    Their electrode specs carry `kind` with no
-#                    `active_material_spec_id`, which is exactly the tolerance the
-#                    optional field exists for.
+# What "curator-complete" does NOT mean is inventing the missing half. Each powder
+# states only what the source states, and its description says out loud what the
+# source withholds - a reader should never have to guess whether a blank field means
+# "not measured", "not disclosed" or "nobody looked". Kind by kind:
 #
-# Where a powder record exists, the theoretical specific capacity of the active
-# material lives on it; where none does, it lives in the electrode spec's design
-# property block. It is never stated twice.
+#   lnmo             140 mAh/g (one value for all four LNMO batches) and, on the
+#                    maintainer's authority, Topsoe as manufacturer. The Zenodo
+#                    record adds the one substantive material statement in the whole
+#                    dataset: the powder targeted high Mn/Ni disorder.
+#   graphite         372 mAh/g. Nothing else is stated - no supplier, no particle
+#                    size, no grade.
+#   silicon          3579 mAh/g. The description is explicit that the rest is
+#                    unavailable: "OCVs from Si-containing electrodes might exhibit
+#                    large variations depending on material properties, such as
+#                    particle size, crystallinity, surface chemistry, percentage of
+#                    silicon in Si-Graphite blends, etc. None of these material and
+#                    electrode properties are available from the suppliers."
+#   silicon_graphite No theoretical capacity on the powder: metadata.csv states
+#                    THREE (510 / 1150 / 900 mAh/g), one per blend, so the number is
+#                    a property of each design and stays on the three electrode
+#                    specs. The blend ratio is named by the source itself as one of
+#                    the properties the suppliers did not provide, so none is stated.
+#   lfp, nmc111,     No theoretical capacity at all: metadata.csv leaves the column
+#   nmc532           EMPTY for all three. These arrived as finished electrodes
+#                    ("commercial electrode" in the batch table) and the suppliers
+#                    described them electrode-side (weight percentage, loading,
+#                    areal capacity), never powder-side. The powder record exists so
+#                    the design has a material to cite, and says exactly that.
+#
+# The theoretical specific capacity is stated once, never twice: on the powder where
+# the source gives one value per kind, on the electrode spec where it gives one per
+# design (the three silicon-graphite blends), nowhere where it gives none.
+#
+# LOT DISPOSITION (R3). A material INSTANCE is a physical batch of powder that was
+# opened and used, and is authored only where the source evidences one. It does for
+# LNMO and only for LNMO: "The LNMO material used in this study targeted high Mn/Ni
+# disorder, therefore the OCVs is a highly disordered spinel" is singular and covers
+# the whole study, so the four LNMO designs - two processing routes, two batches
+# each - were coated from one powder batch. That is a lot, and it gets a record.
+#
+# For the other six kinds the source evidences no lot: it names no supplier, no
+# batch, no delivery, and for the purchased electrodes it never saw the powder at
+# all. A lot record per kind would assert a physical batch nobody wrote down.
+#
+# MODEL GAP (E8, new in v4). Neither an electrode spec nor an electrode record has a
+# field pointing at a material INSTANCE - `active_material_spec_id` and the coating's
+# `material_spec_id` both take a spec. So the LNMO lot is linked as far as the model
+# allows: the lot cites its spec, the four LNMO electrode specs cite that same spec,
+# and the prose on both sides names the other. A structured electrode -> material-lot
+# edge is the field this corpus would use next.
 # ---------------------------------------------------------------------------
-LNMO_SPEC_NAME = "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel"
+
+# Topsoe: the LNMO powder's manufacturer, on the maintainer's authority. The Zenodo
+# record names no supplier for any powder, so this is the one fact in the corpus that
+# comes from outside the source, and it is attributed as such on the material spec.
+#
+# The IRI is minted from a stated seed rather than drawn at random the way
+# scripts/sync_battery_knowledge_graph.py mints its BKG stubs, because this script
+# must be re-runnable: a random id would give the organization a new identity on
+# every build. The value is pinned so a change in the minting primitive fails the
+# build instead of silently moving a published identifier.
+#
+# NOTE FOR REVIEW: records/organization/haldor-topsoe/ already holds a Battery
+# Knowledge Graph stub for the same company under its pre-2022 legal name (IRI
+# j50f-3ebx-sssw-svnm). The two are the same legal entity and should be merged
+# before anything here is published; this record carries the former name in
+# `alternateName` so the duplicate is findable rather than silent. Flagged in
+# README-semantic-layer.md and in the pull request.
+TOPSOE_SEED = "organization::topsoe"
+TOPSOE_IRI = "https://w3id.org/battinfo/organization/vz1v-rvhz-n77h-344c"
+TOPSOE_NAME = "Topsoe"
+TOPSOE_SLUG = "topsoe"
+
+# name, formula, chemistry family, and the sentence that says what the source does
+# not report about this powder. `theoretical_capacity` is not listed here: it is read
+# from metadata.csv, so the numbers in the corpus always come from the source file.
+POWDERS = {
+    "graphite": dict(
+        name="Graphite active material",
+        formula="C",
+        family="graphitic-carbon",
+        summary="Graphite active material of the aqueous-processed graphite electrodes of "
+                "this dataset.",
+        withheld="The source names no supplier, grade, particle size or surface area for "
+                 "this powder; only its theoretical specific capacity is published.",
+    ),
+    "silicon": dict(
+        name="Silicon active material",
+        formula="Si",
+        family="silicon",
+        summary="Silicon active material of the aqueous-processed silicon electrodes of "
+                "this dataset.",
+        withheld="The Zenodo record states that particle size, crystallinity and surface "
+                 "chemistry of the silicon-containing materials \"are not available from "
+                 "the suppliers\", so none is stated here; only the theoretical specific "
+                 "capacity is published.",
+    ),
+    "silicon_graphite": dict(
+        name="Silicon-graphite composite active material",
+        formula=None,
+        family="silicon-graphite-composite",
+        summary="Silicon-graphite composite active material of the aqueous-processed "
+                "Si-Gr electrodes of this dataset.",
+        withheld="No theoretical specific capacity is stated on this powder because the "
+                 "source states three different ones - 510, 900 and 1150 mAh/g - one for "
+                 "each of the three blends used, so the number belongs to the electrode "
+                 "design and is carried there. The blend ratio itself is named by the "
+                 "Zenodo record as one of the properties the suppliers did not provide.",
+    ),
+    "lnmo": dict(
+        name="LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel",
+        formula="LiNi0.5Mn1.5O4",
+        family="spinel",
+        summary="LNMO active material used across all four LNMO electrode batches of the "
+                "dataset, aqueous and NMP processed alike. The study targeted high Mn/Ni "
+                "disorder, so these OCVs are those of a highly disordered spinel.",
+        withheld="The Zenodo record gives no grade or product identifier for the powder, "
+                 "and no supplier; the manufacturer stated here was supplied by the "
+                 "corpus maintainer, not by the source.",
+    ),
+    "lfp": dict(
+        name="LFP (LiFePO4) active material",
+        formula="LiFePO4",
+        family="olivine",
+        summary="LFP active material of the commercial LFP electrode supplied by Gelon "
+                "LIB for this dataset.",
+        withheld="This electrode was purchased finished, so the source describes it "
+                 "electrode-side only: metadata.csv leaves the theoretical specific "
+                 "capacity column empty and names no powder supplier, grade or "
+                 "identifier. This record exists so the electrode design has a material "
+                 "to name, and asserts nothing the supplier did not.",
+    ),
+    "nmc111": dict(
+        name="NMC111 (LiNi1/3Mn1/3Co1/3O2) active material",
+        formula="LiNi0.33Mn0.33Co0.33O2",
+        family="layered-oxide",
+        summary="NMC111 active material of the commercial NMC111 electrode supplied by "
+                "Customcells for this dataset.",
+        withheld="This electrode was purchased finished, so the source describes it "
+                 "electrode-side only: metadata.csv leaves the theoretical specific "
+                 "capacity column empty and names no powder supplier, grade or "
+                 "identifier. This record exists so the electrode design has a material "
+                 "to name, and asserts nothing the supplier did not.",
+    ),
+    "nmc532": dict(
+        name="NMC532 (LiNi0.5Mn0.3Co0.2O2) active material",
+        formula="LiNi0.5Mn0.3Co0.2O2",
+        family="layered-oxide",
+        summary="NMC532 active material of the commercial NMC532 electrode supplied by "
+                "Gelon LIB for this dataset.",
+        withheld="This electrode was purchased finished, so the source describes it "
+                 "electrode-side only: metadata.csv leaves the theoretical specific "
+                 "capacity column empty and names no powder supplier, grade or "
+                 "identifier. This record exists so the electrode design has a material "
+                 "to name, and asserts nothing the supplier did not.",
+    ),
+}
+
 LNMO_DISORDER_NOTE = (
     "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary "
     "depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used "
     "in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly "
-    "disordered spinel.\" No supplier, grade or product identifier is given for the "
-    "powder, so none is stated here."
+    "disordered spinel.\" No grade or product identifier is given for the powder, so "
+    "none is stated here."
 )
+
+# The one lot the source evidences (R3). "The LNMO material used in this study" is
+# singular and covers all four LNMO designs, so the lot label says exactly that and
+# nothing that looks like a supplier batch number, which the source does not give.
+LNMO_LOT_LABEL = "study powder batch"
 
 PROTOCOLS = {
     "p-ocv": dict(
@@ -428,6 +628,28 @@ def spread(values: list[float]) -> dict | None:
     }
 
 
+def aggregate(stats: dict | None, unit: str) -> dict | None:
+    """A batch statistic as one Quantity: mean, spread, n, and the observed range.
+
+    R4/E7: ``standard_deviation`` and ``sample_count`` are schema fields on a
+    Quantity since BattINFO#346, so the spread that v3 could only write as prose is
+    now structured and survives into the JSON-LD as named qualifiers of the property
+    node. ``min_value`` / ``max_value`` are only written where the discs actually
+    differ - a range on a single declared value would read as a measurement.
+    """
+    if stats is None:
+        return None
+    varies = stats["max"] > stats["min"]
+    node = q(
+        stats["mean"], unit,
+        min_value=stats["min"] if varies else None,
+        max_value=stats["max"] if varies else None,
+    )
+    node["standard_deviation"] = _round(stats["sd"], unit)
+    node["sample_count"] = stats["n"]
+    return node
+
+
 def load_metadata() -> list[dict]:
     rows = []
     with (SOURCES / "metadata.csv").open(encoding="utf-8-sig") as fh:
@@ -547,6 +769,65 @@ def write_draft(path: Path, payload: dict) -> Path:
     return path
 
 
+def write_topsoe_organization() -> str:
+    """Write the Topsoe organization record into the shared corpus (R2).
+
+    Organizations are not workspace records - BattINFO has no ``ws.add`` entry point
+    and no JSON-LD emitter for them, because a record cites an organization inline by
+    IRI and name. They live in ``records/organization/<slug>/record.json``, one per
+    directory, and this writes Topsoe there in exactly the shape the other 245 use.
+    Idempotent: the IRI is derived from a pinned seed and the file is rewritten only
+    when its content changes.
+    """
+    minted = f"https://w3id.org/battinfo/organization/{stable_uid(TOPSOE_SEED)}"
+    if minted != TOPSOE_IRI:
+        raise SystemExit(
+            f"Topsoe IRI drift: seed {TOPSOE_SEED!r} now mints {minted}, but the corpus "
+            f"pins {TOPSOE_IRI}. Reconcile before rebuilding."
+        )
+    record = {
+        "schema_version": "0.1.0",
+        "organization": {
+            "id": TOPSOE_IRI,
+            "short_id": TOPSOE_IRI.rsplit("/", 1)[-1].replace("-", "")[:8],
+            "type": "Corporation",
+            "name": TOPSOE_NAME,
+            "alternateName": ["Haldor Topsoe", "Haldor Topsoe A/S"],
+            "url": "https://www.topsoe.com/",
+            "description": (
+                "Danish catalyst and materials company. Named by the corpus maintainer as "
+                "the manufacturer of the LNMO active material measured in Zenodo record "
+                f"{DOI}; the published record itself names no supplier for any of its "
+                "active materials."),
+            "location": {"addressCountry": "DK"},
+        },
+        "provenance": {
+            "source_type": "manual",
+            "source_url": DOI_URL,
+            "retrieved_at": None,
+        },
+        "editorial": {
+            "review_status": "stub",
+            "note": (
+                "Created for the Flores half-cell OCV batch, from a fact supplied by the "
+                "corpus maintainer rather than by the source record. "
+                "records/organization/haldor-topsoe/ is a Battery Knowledge Graph stub for "
+                "the same legal entity under its pre-2022 name and should be merged into "
+                "this record before either is published."),
+        },
+    }
+    record["provenance"] = {k: v for k, v in record["provenance"].items() if v is not None}
+    path = ORG_RECORDS / TOPSOE_SLUG / "record.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(record, indent=2, ensure_ascii=False) + "\n"
+    state = "unchanged"
+    if not path.exists() or path.read_text(encoding="utf-8") != text:
+        path.write_text(text, encoding="utf-8")
+        state = "written"
+    print(f"  organization:   {TOPSOE_NAME}  {TOPSOE_IRI}  [{state}]")
+    return TOPSOE_IRI
+
+
 # --------------------------------------------------------------------------- main
 def main() -> int:
     rows = load_metadata()
@@ -577,31 +858,94 @@ def main() -> int:
         by_batch[r["label"]].append(r)
         designs_per_source[(r["kind"], r["src"])].add(r["label"])
 
-    # --- 1. Material specs: the powders the source actually identifies -----------
-    # One: the LNMO active material. See the MATERIAL-SPEC DISPOSITION block above
-    # for the kind-by-kind evidence, including why the silicon-containing powders
-    # deliberately get none.
+    # --- 0. The Topsoe organization (R2) ----------------------------------------
+    print("\n== organization ==")
+    topsoe_iri = write_topsoe_organization()
+
+    # --- 1. Material specs: one powder per active-material kind (R1) -------------
+    # Curator-complete: seven records, one per kind, so all twelve electrode designs
+    # can cite their active material. See POWDER DISPOSITION above for what each one
+    # states and - just as important - what it says the source does not report.
     print("\n== material specs (powders) ==")
-    lnmo_rows = [r for r in rows if r["kind"] == "lnmo"]
-    lnmo_theo = only_value(lnmo_rows, "theo_mahg")
-    lnmo_spec = ws.add(
-        "material_spec",
-        name=LNMO_SPEC_NAME,
-        kind="lnmo",
-        material_class="active_material",
-        formula="LiNi0.5Mn1.5O4",
-        chemistry_family="spinel",
-        description=(
-            "LNMO active material used across all four LNMO electrode batches of the "
-            "dataset, aqueous and NMP processed alike. The study targeted high Mn/Ni "
-            "disorder, so these OCVs are those of a highly disordered spinel."),
-        property=({"theoretical_capacity": q(lnmo_theo, "mAh/g")} if lnmo_theo else None),
+    material_spec_by_kind: dict[str, str] = {}
+    lnmo_spec = None
+    for kind in sorted({r["kind"] for r in rows}):
+        powder = POWDERS[kind]
+        kind_rows = [r for r in rows if r["kind"] == kind]
+        # One value across the kind's rows, or None where the source states several
+        # (silicon-graphite) or none at all (LFP, NMC111, NMC532).
+        theo = only_value(kind_rows, "theo_mahg")
+        fields: dict = {
+            "name": powder["name"],
+            "kind": kind,
+            "material_class": "active_material",
+            "chemistry_family": powder["family"],
+            "description": f"{powder['summary']} {powder['withheld']}",
+            "source_type": "literature",
+            "citation": DOI_URL,
+        }
+        if theo:
+            fields["property"] = {"theoretical_capacity": q(theo, "mAh/g")}
+        if powder["formula"]:
+            fields["formula"] = powder["formula"]
+        notes: list[str] = []
+        if kind == "lnmo":
+            # The manufacturer is part of the material-spec identity seed, so this is
+            # also what separates the LNMO powder's IRI from an anonymous one.
+            fields["manufacturer"] = {
+                "type": "Organization", "name": TOPSOE_NAME, "id": topsoe_iri}
+            notes.append(LNMO_DISORDER_NOTE)
+            notes.append(
+                f"Manufacturer: {TOPSOE_NAME}. Supplied by the corpus maintainer, not by "
+                f"the Zenodo record, which names no supplier for any active material.")
+        else:
+            notes.append(
+                "No manufacturer or supplier is stated: the source names none for this "
+                "powder, and the field is left unset rather than guessed.")
+        if not theo:
+            notes.append(powder["withheld"])
+        fields["notes"] = notes
+        record = ws.add("material_spec", **fields)[0]
+        material_spec_by_kind[kind] = record["material_spec"]["id"]
+        if kind == "lnmo":
+            lnmo_spec = record
+    lnmo_spec_id = material_spec_by_kind["lnmo"]
+
+    # --- 1b. The one material lot the source evidences (R3) ----------------------
+    # See LOT DISPOSITION above: one study powder for all four LNMO designs, and no
+    # lot for any other kind. Model gap E8 - no electrode-side field points at a
+    # material instance - so the link is carried by the shared material spec plus
+    # prose on both sides.
+    print("\n== material lots ==")
+    lnmo_labels = sorted({r["label"] for r in rows if r["kind"] == "lnmo"})
+    lnmo_lot = ws.add(
+        "material",
+        spec=lnmo_spec,
+        lot=LNMO_LOT_LABEL,
+        name=f"LNMO {LNMO_LOT_LABEL}",
         source_type="literature",
         citation=DOI_URL,
-        notes=[LNMO_DISORDER_NOTE],
+        notes=[
+            "The single batch of LNMO powder this study coated. The Zenodo record speaks "
+            "of \"the LNMO material used in this study\" in the singular while describing "
+            "four electrode batches across two processing routes, so one lot supplied all "
+            f"of them: {', '.join(lnmo_labels)}. No supplier lot number is published, so "
+            "the label states what the lot is rather than inventing an identifier.",
+            "No `processing` block: this one lot was coated by BOTH routes - two aqueous "
+            "designs and two NMP ones - so no single route describes it. The route is a "
+            "design decision and is carried by each electrode spec, which is where it is "
+            "also part of the identity seed.",
+            "The four LNMO electrode designs are coated from this lot. They cannot point "
+            "at it directly: an electrode spec links a material SPEC "
+            "(`active_material_spec_id`) and an electrode record links no material at "
+            "all, so the electrode -> material-lot edge has no field in the model "
+            "(gap E8). Both sides name the other in prose until it does.",
+            "No lot record is authored for the other six active materials: the source "
+            "evidences no physical batch for them, and for the three purchased "
+            "electrodes it never saw the powder.",
+        ],
     )[0]
-    lnmo_spec_id = lnmo_spec["material_spec"]["id"]
-    material_spec_by_kind = {"lnmo": lnmo_spec_id}
+    lnmo_lot_id = lnmo_lot["material"]["id"]
 
     # --- 2. Electrode specs: one per electrode DESIGN ---------------------------
     # The design key is (kind, electrode source, processing route). In this dataset
@@ -627,28 +971,56 @@ def main() -> int:
         diam = only_value(items, "diam_mm")
         if diam is not None:
             design["diameter"] = q(diam, "mm")
-        # Design values the manufacturer states for the purchased electrodes: they
-        # are constant across every cell of the batch, unlike the SINTEF-coated
-        # ones where loading and areal capacity are computed per cell and stay on
-        # the tests (gap G2).
-        loading = only_value(items, "loading_gcm2")
-        if loading is not None:
+
+        # R4: the batch statistics that v3 wrote as prose on the electrode BATCH
+        # record now sit here, on the design, as structured quantities. There is no
+        # batch record left to hold them - the electrode record is the disc in one
+        # cell - and the design is the only level at which "the discs that realize
+        # this" is a set. Mean + sample standard deviation + n over the per-cell rows
+        # of metadata.csv; see BATCH STATISTICS in the module docstring.
+        loading_stats = spread([r["loading_gcm2"] * 1000.0
+                                for r in items if r["loading_gcm2"] is not None])
+        thickness_stats = spread([r["thick_um"] for r in items if r["thick_um"] is not None])
+        areal_stats = spread([r["areal_mahcm2"] for r in items if r["areal_mahcm2"] is not None])
+        stat_notes: list[str] = []
+        for key, unit, stats, what in (
             # Reported in g/cm2; expressed in mg/cm2, the symbol that resolves to a
             # dereferenceable EMMO unit. Same quantity, no rounding beyond float.
-            design["loading"] = q(loading * 1000.0, "mg/cm2")
-        areal = only_value(items, "areal_mahcm2")
-        if areal is not None:
-            design["areal_capacity"] = q(areal, "mAh/cm2")
-        # Theoretical specific capacity is a property of the active material. It
-        # rides the electrode spec only where no powder record exists to hold it.
+            ("loading", "mg/cm2", loading_stats, "Active-mass loading"),
+            ("dry_thickness", "um", thickness_stats, "Dry thickness"),
+            ("areal_capacity", "mAh/cm2", areal_stats, "Nominal areal capacity"),
+        ):
+            node = aggregate(stats, unit)
+            if node is None:
+                continue
+            design[key] = node
+            if stats["max"] > stats["min"]:
+                stat_notes.append(
+                    f"{what}: mean {node['value']} {unit}, sample standard deviation "
+                    f"{node['standard_deviation']} {unit} over n = {stats['n']} discs "
+                    f"(range {node['min_value']}-{node['max_value']} {unit}). Computed "
+                    f"from the per-cell values metadata.csv publishes for this batch and "
+                    f"carried on the quantity itself, not in this note.")
+            else:
+                stat_notes.append(
+                    f"{what}: {node['value']} {unit} for every one of the {stats['n']} "
+                    f"discs. metadata.csv states this one value per cell, so the standard "
+                    f"deviation is 0 by construction - a repeated declaration, not a "
+                    f"measured spread.")
+        # Theoretical specific capacity is a property of the active material and
+        # normally lives on the powder. It rides the design only where the source
+        # states one value PER DESIGN rather than per kind, which happens for the
+        # three silicon-graphite blends and nowhere else.
         theo = only_value(items, "theo_mahg")
-        if theo is not None and kind not in material_spec_by_kind:
+        kind_theo = only_value([r for r in rows if r["kind"] == kind], "theo_mahg")
+        if theo is not None and kind_theo is None:
             design["theoretical_capacity"] = q(theo, "mAh/g")
 
         fields: dict = {
             "name": DESIGN_NAME[label],
             "kind": kind,
             "manufacturer": producer,
+            "active_material_spec_id": material_spec_by_kind[kind],
             "description": (
                 f"{BATCH_NOTE[label]} Electrode design of the {SOURCE_LABEL[r0['src']]}, "
                 f"published under the label {label}. Active-material type as stated in "
@@ -657,8 +1029,6 @@ def main() -> int:
             "source_type": "literature",
             "citation": DOI_URL,
         }
-        if kind in material_spec_by_kind:
-            fields["active_material_spec_id"] = material_spec_by_kind[kind]
         wt = only_value(items, "wt_pct")
         if wt is not None:
             # Only the active-material weight percentage is stated; the balance of
@@ -673,80 +1043,96 @@ def main() -> int:
             }
         notes = [
             f"Design values are as published in metadata.csv for batch {label}, the one "
-            f"batch that realizes this design; the as-built dry thickness is on the "
-            f"electrode record."
+            f"batch that realizes this design. The as-built figures of each individual "
+            f"disc are on the {len(items)} electrode records that cite this spec.",
+            *stat_notes,
         ]
-        if kind not in material_spec_by_kind:
+        if theo is not None and kind_theo is None:
             notes.append(
-                "No material spec is authored for this electrode's active material: the "
-                "source states no powder identity for it. `kind` carries the chemistry.")
+                f"Theoretical specific capacity is stated here rather than on the powder "
+                f"because the source gives a different value for each "
+                f"{KIND_LABEL[kind].lower()} blend ({theo:.0f} mAh/g for this one), which "
+                f"makes it a property of the design.")
+        if kind == "lnmo":
+            notes.append(
+                f"Coated from the LNMO study powder lot {lnmo_lot_id}. The link runs "
+                f"through the material spec: no field on an electrode spec or an "
+                f"electrode record points at a material INSTANCE (gap E8).")
         fields["notes"] = notes
         electrode_spec_by_label[label] = ws.add("electrode_spec", **fields)[0]
 
-    # --- 3. Electrodes: the twelve published batches ----------------------------
-    # The batch record is where the public label lives and where the as-built
-    # figures that are constant across the batch sit. Per-CELL figures (active
-    # material mass, coating mass, per-cell loading and areal capacity) stay on the
-    # tests, because the model has no per-cell electrode slot (gap G2).
-    print("\n== electrodes (batches) ==")
-    electrode_by_label: dict[str, dict] = {}
-    for label, items in sorted(by_batch.items()):
-        r0 = items[0]
+    # --- 3. Electrodes: the disc inside each cell (R4) ---------------------------
+    # One electrode record per cell, 95 of them: the working-electrode disc that was
+    # punched from the batch, weighed, and built into that coin cell. The as-built
+    # figures metadata.csv publishes are per-CELL, so this is where they belong -
+    # v3 had to park them on `test.conditions` for want of a per-cell electrode slot
+    # (gap G2), and that workaround retires with this ruling.
+    #
+    # Identity: see DISC IDENTITY in the module docstring. `batch_id` stays the public
+    # label, which is what joins a disc to its batch and to the Zenodo batch table.
+    print("\n== electrodes (discs) ==")
+    electrode_by_hex: dict[str, dict] = {}
+    for r in rows:
+        label = r["label"]
         spec = electrode_spec_by_label[label]
+        spec_id = spec["electrode_spec"]["id"]
+
         as_built: dict = {}
-        stat_notes: list[str] = []
+        if r["loading_gcm2"] is not None:
+            as_built["loading"] = q(r["loading_gcm2"] * 1000.0, "mg/cm2")
+        if r["thick_um"] is not None:
+            as_built["dry_thickness"] = q(r["thick_um"], "um")
+        if r["areal_mahcm2"] is not None:
+            as_built["areal_capacity"] = q(r["areal_mahcm2"], "mAh/cm2")
+        if r["diam_mm"] is not None:
+            as_built["diameter"] = q(r["diam_mm"], "mm")
+        if r["coating_mass_g"] is not None:
+            # `mass` is the disc's electrode coating mass. See PER-DISC FIGURES: it
+            # is the only curated key that means Mass, so the active-material mass is
+            # carried as its two exact factors (this and `mass_fraction`) rather than
+            # as a second key that would collapse onto this one in JSON-LD.
+            #
+            # Stated in mg, not the source's g. Same quantity; mg is the scale of an
+            # electrode disc (metadata.csv already uses it for the active-material
+            # mass), and the semantic validator's plausible range for a mass in grams
+            # is a whole-cell one - [0.05, 70000] g - which every one of these discs
+            # sits below. A 16 mg coating is not implausible, it is simply not a cell.
+            as_built["mass"] = q(r["coating_mass_g"] * 1000.0, "mg")
+        if r["wt_pct"] is not None:
+            as_built["mass_fraction"] = q(r["wt_pct"], "%")
 
-        # EES tier 1: the batch's own as-built figures, averaged over its cells.
-        # `loading` maps to EMMO ActiveMassLoading, `dry_thickness` to
-        # DryCoatingThickness; both are computed from the per-cell rows of
-        # metadata.csv for this public label. See BATCH STATISTICS in the module
-        # docstring for the conventions this follows.
-        loading_stats = spread([r["loading_gcm2"] * 1000.0
-                                for r in items if r["loading_gcm2"] is not None])
-        thickness_stats = spread([r["thick_um"] for r in items if r["thick_um"] is not None])
-        for key, unit, quantity, what in (
-            ("loading", "mg/cm2", loading_stats, "Active-mass loading"),
-            ("dry_thickness", "um", thickness_stats, "Dry thickness"),
-        ):
-            if quantity is None:
-                continue
-            varies = quantity["max"] > quantity["min"]
-            as_built[key] = q(
-                quantity["mean"], unit,
-                min_value=quantity["min"] if varies else None,
-                max_value=quantity["max"] if varies else None,
-            )
-            if varies:
-                stat_notes.append(
-                    f"{what}: {_round(quantity['mean'], unit)} +/- "
-                    f"{_round(quantity['sd'], unit)} {unit} (mean +/- sample standard "
-                    f"deviation, n = {quantity['n']} cells; range "
-                    f"{_round(quantity['min'], unit)}-{_round(quantity['max'], unit)} {unit}), "
-                    f"over the per-cell values metadata.csv publishes for this batch."
-                )
-            else:
-                stat_notes.append(
-                    f"{what}: {_round(quantity['mean'], unit)} {unit}. metadata.csv states "
-                    f"this one value for every one of the {quantity['n']} cells of the batch, "
-                    f"so the mean is that stated value and the standard deviation is 0 by "
-                    f"construction - not a measured spread."
-                )
-
+        notes = [
+            f"The working-electrode disc built into coin cell {r['hex']}, punched from "
+            f"electrode batch {label}. {BATCH_NOTE[label]}",
+            "Every figure here is the value metadata.csv publishes for this one cell, "
+            "not a batch average; the batch averages are on the electrode spec.",
+        ]
+        if r["am_mass_mg"] is not None and r["coating_mass_g"] is not None:
+            notes.append(
+                f"Active-material mass {_round(r['am_mass_mg'], 'mg')} mg = coating mass "
+                f"({_round(r['coating_mass_g'] * 1000.0, 'mg')} mg) x active-material "
+                f"weight percentage ({_round(r['wt_pct'], '%')} %), the way metadata.csv "
+                f"derives it. Both factors are structured properties of this record; the "
+                f"product is not, because `mass` is the one curated key that means Mass "
+                f"and a second one would collapse onto it in JSON-LD.")
         fields: dict = {
-            "spec": spec, "batch": label, "name": label,
+            "spec": spec,
+            "batch": label,
+            "name": f"{label} disc {r['hex']}",
+            # The batch slot of the identity seed carries the disc's full context so
+            # the 7-9 discs of a batch mint 7-9 identities, not one.
+            "uid": stable_uid(electrode_identity_seed(
+                electrode_spec_id=spec_id, batch=f"{label}/{r['hex']}")),
+            "count": 1,
             "property": as_built or None,
-            "notes": [
-                BATCH_NOTE[label],
-                f"{len(items)} of the 95 published measurements were made on cells built "
-                f"from this batch.",
-                *stat_notes,
-            ],
-            "source_type": "measurement", "citation": DOI_URL,
+            "notes": notes,
+            "source_type": "measurement",
+            "citation": DOI_URL,
         }
-        role, org, _org_iri = SOURCE_ORG[r0["src"]]
+        role, org, _org_iri = SOURCE_ORG[r["src"]]
         if role == "supplier":
             fields["supplier"] = org
-        electrode_by_label[label] = ws.add("electrode", **fields)[0]
+        electrode_by_hex[r["hex"]] = ws.add("electrode", **fields)[0]
 
     # --- 4. Cell specs: twelve R2032 coin half-cells (D1) ------------------------
     # One spec per electrode design. The identity seed is (manufacturer, model,
@@ -852,11 +1238,25 @@ def main() -> int:
             production_date=yyyymmdd(date),
         )
         for cell, item in zip(cells, items):
-            # The public label is the electrode batch this cell was built from. It is
-            # also the batch_id of the electrode record, which is the only join
-            # available: cell instances have no electrode reference (gap E4).
+            # The public label is the electrode batch this cell was built from, and
+            # is also the batch_id of the disc inside it.
             cell.name = label
             cell.batch_id = label
+            # R5 (BattINFO#346): the cell points at the disc physically inside it.
+            # This is the join that v3 could only make by matching batch labels
+            # (gap E4), and it is now a typed edge - the emitted node carries the
+            # working-electrode role class and merges with the electrode record by
+            # @id, so the chemistry and the design link stay on the disc.
+            cell.working_electrode_id = electrode_by_hex[item["hex"]]["electrode"]["id"]
+            # counter_electrode_id is deliberately left unset. The counter electrodes
+            # are lithium metal foil, and the source tracks them not at all: no label,
+            # no batch, no thickness, nothing that distinguishes the disc in one cell
+            # from the disc in the next. Minting 95 electrode records for them would
+            # assert 95 individually-tracked components that nobody recorded. What IS
+            # known about them - lithium metal, and that the counter electrode is also
+            # the potential reference - is on the cell spec's counter-electrode holder,
+            # which is the right level for a component the study treats as
+            # interchangeable. See README-semantic-layer.md, "What is not linked".
             cell_by_hex[item["hex"]] = cell
 
     # --- 6. Test protocols ------------------------------------------------------
@@ -899,25 +1299,17 @@ def main() -> int:
                          f"{r['hex']} at room temperature."),
         )[0]
         test.started_at = yyyymmdd(r["date"])
-        # Ambient conditions plus the as-built electrode figures for this specific
-        # cell. These per-cell values normalise the measurement (specific capacity,
-        # C-rate) and have no other structured home in the model - the cell-instance
-        # `measured` block is a closed cell-performance vocabulary, and the electrode
-        # batch record describes the batch, not the disc punched for one cell. See
-        # gap G2 in READINESS-REPORT.md.
-        conditions: dict = {
+        # R4: test conditions are now only what is genuinely a condition OF THE TEST.
+        # v3 also carried the cell's as-built electrode figures here - active-material
+        # mass, coating mass, loading, areal capacity - because the model had nowhere
+        # per-cell to put them (gap G2). It does now: they are properties of the disc,
+        # they were true before the test started, and they would still be true if the
+        # test had never run. They live on the electrode record this test's cell links
+        # through `working_electrode_id`, one hop away.
+        test.conditions = {
             "ambient_temperature": "room temperature",
             "voltage_reference": "Li/Li+",
         }
-        if r["am_mass_mg"] is not None:
-            conditions["active_material_mass"] = q(r["am_mass_mg"], "mg")
-        if r["coating_mass_g"] is not None:
-            conditions["electrode_coating_mass"] = q(r["coating_mass_g"], "g")
-        if r["areal_mahcm2"] is not None:
-            conditions["nominal_areal_capacity"] = q(r["areal_mahcm2"], "mAh/cm2")
-        if r["loading_gcm2"] is not None:
-            conditions["electrode_loading"] = q(r["loading_gcm2"] * 1000.0, "mg/cm2")
-        test.conditions = conditions
         test_by_hex[r["hex"]] = test
 
     # --- 8. Save the blessed-API records ----------------------------------------
@@ -952,11 +1344,50 @@ def main() -> int:
             if isinstance(body, dict) and not body.get("license"):
                 body["license"] = license_id
 
+    # Derived plot profiles, if extract_profiles.py has been run. Each dataset gets a
+    # second distribution pointing at its <stem>.plot.json: a ~70 KB Plotly figure of
+    # the voltage curve and the open-circuit curve. ws.submit() promotes any
+    # *.plot.json distribution to the page-model role `plot_data`, which is what makes
+    # the platform's data explorer appear on the dataset page. The inner role stays
+    # `other` because the record schema's role enum has no plot value.
+    profile_index = {}
+    profile_index_path = PROFILES / "index.json"
+    if profile_index_path.is_file():
+        profile_index = json.loads(profile_index_path.read_text(encoding="utf-8"))
+    profiles_by_source = {
+        entry["source_file"]: {"name": name, **entry} for name, entry in profile_index.items()
+    }
+
+    def profile_distribution(source_file: str) -> dict | None:
+        entry = profiles_by_source.get(source_file)
+        if entry is None:
+            return None
+        dist = distribution(
+            f"{R2_PUBLIC_BASE}/datasets/{entry['short_id']}/{entry['name']}",
+            encoding_format="application/json",
+            name=entry["name"],
+            description=(
+                "Downsampled voltage and open-circuit curves derived from the BDF file, "
+                "as a Plotly figure for the dataset page."),
+            content_size=str(entry["bytes"]),
+            access_level="open",
+            checksum_value=checksum("sha256", entry["sha256"]))
+        dist["role"] = "other"
+        return dist
+
     print("\n== datasets ==")
     dataset_results = []
     for r in rows:
         p = PROTOCOLS[r["proto"]]
         zf = zfiles[r["file"]]
+        dists = [distribution(
+            zf["url"], encoding_format=PARQUET_MEDIA, name=r["file"],
+            description="BDF parquet file hosted on Zenodo.",
+            content_size=str(zf["size"]), access_level="open",
+            checksum_value=checksum("md5", zf["md5"]))]
+        profile_dist = profile_distribution(r["file"])
+        if profile_dist is not None:
+            dists.append(profile_dist)
         dataset = B.Dataset(
             name=dataset_title(r),
             description=(
@@ -973,11 +1404,7 @@ def main() -> int:
             checksum=ChecksumInfo(algorithm="md5", value=zf["md5"]),
             cell=cell_by_hex[r["hex"]],
             test=test_by_hex[r["hex"]],
-            distributions=[distribution(
-                zf["url"], encoding_format=PARQUET_MEDIA, name=r["file"],
-                description="BDF parquet file hosted on Zenodo.",
-                content_size=str(zf["size"]), access_level="open",
-                checksum_value=checksum("md5", zf["md5"]))],
+            distributions=dists,
             variable_measured=[measured_variable(n, unit_text=u, description=d)
                                for n, u, d in BDF_COLUMNS],
             measurement_techniques=[p["technique"]],
@@ -1005,6 +1432,7 @@ def main() -> int:
 
     counts = {
         "material_spec": len(result.get("material_specs", [])),
+        "material": len(result.get("materials", [])),
         "electrode_spec": len(result.get("electrode_specs", [])),
         "electrode": len(result.get("electrodes", [])),
         "cell_spec": len(result.get("cell_specs", [])),
@@ -1017,6 +1445,7 @@ def main() -> int:
     for key, value in counts.items():
         print(f"  {key:15s} {value}")
     print(f"  {'TOTAL':15s} {sum(counts.values())}")
+    print(f"  (+ 1 organization record in {ORG_RECORDS.relative_to(ORG_RECORDS.parents[1])})")
 
     # The IRIs this run authored, by record subdirectory. build_bundle.py mirrors
     # exactly these into records/. Needed since D1: re-seeding an identity leaves the
@@ -1027,9 +1456,10 @@ def main() -> int:
         return obj[key]["id"] if isinstance(obj, dict) else obj.id
 
     manifest = {
-        "material-spec": [lnmo_spec_id],
+        "material-spec": sorted(material_spec_by_kind.values()),
+        "material": [lnmo_lot_id],
         "electrode-spec": [_iri(o, "electrode_spec") for o in electrode_spec_by_label.values()],
-        "electrode": [_iri(o, "electrode") for o in electrode_by_label.values()],
+        "electrode": [_iri(o, "electrode") for o in electrode_by_hex.values()],
         "cell-spec": [_iri(o, "cell_spec") for o in spec_by_key.values()],
         "cell-instance": [_iri(o, "cell_instance") for o in cell_by_hex.values()],
         "test-protocol": [_iri(o, "test_spec") for o in proto_by_key.values()],
@@ -1051,7 +1481,8 @@ def main() -> int:
     # needs. The workspace index is rewritten by the next run of ws.save() - run this
     # script twice (which is the idempotence check anyway) for a clean index.
     authored = {iri for values in manifest.values() for iri in values}
-    body_keys = {"material-spec": "material_spec", "electrode-spec": "electrode_spec",
+    body_keys = {"material-spec": "material_spec", "material": "material",
+                 "electrode-spec": "electrode_spec",
                  "electrode": "electrode", "cell-spec": "cell_spec",
                  "cell-instance": "cell_instance", "test-protocol": "test_spec",
                  "test": "test", "dataset": "dataset"}

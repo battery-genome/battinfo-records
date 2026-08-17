@@ -540,7 +540,7 @@
         "@type": "ActiveMaterial",
         "schema:name": "LNMO (LiNi0.5Mn1.5O4)",
         "schema:isVariantOf": {
-          "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
+          "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
         },
         "hasProperty": {
           "@type": [
@@ -600,7 +600,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

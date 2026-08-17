@@ -63,6 +63,9 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
           "ActiveMaterial"
         ],
         "schema:name": "Silicon",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+        },
         "hasProperty": {
           "@type": [
             "MassFraction",
@@ -121,7 +124,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -239,6 +242,9 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
         "ActiveMaterial"
       ],
       "schema:name": "Silicon",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+      },
       "hasProperty": {
         "@type": [
           "MassFraction",
@@ -255,6 +261,31 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
   "hasProperty": [
     {
       "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.3282
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.2237,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
         "Diameter",
         "ConventionalProperty"
       ],
@@ -267,19 +298,61 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
     },
     {
       "@type": [
-        "TheoreticalCapacity",
+        "DryCoatingThickness",
         "ConventionalProperty"
       ],
-      "skos:prefLabel": "TheoreticalCapacity",
+      "skos:prefLabel": "DryCoatingThickness",
       "hasNumericalPart": {
         "@type": "RealData",
-        "hasNumberValue": 3579.0
+        "hasNumberValue": 44.0
       },
-      "schema:unitText": "mAh/g"
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.6505
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0625,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     }
   ],
   "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
   "schema:name": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
+    "@type": "ActiveMaterial"
+  },
   "prov:wasGeneratedBy": {
     "@type": "Manufacturing",
     "skos:prefLabel": "Manufacturing",
@@ -301,8 +374,10 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
-    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 0.6505 mg/cm2, sample standard deviation 0.0625 mg/cm2 over n = 8 discs (range 0.5595-0.7195 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 44.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 2.3282 mAh/cm2, sample standard deviation 0.2237 mAh/cm2 over n = 8 discs (range 2.0024-2.5751 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note."
   ],
   "schema:funding": {
     "@type": "schema:Grant",
@@ -411,6 +486,30 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
   "hasProperty": [
     {
       "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.3974
+      },
+      "schema:unitText": "mAh/cm2"
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
         "DryCoatingThickness",
         "ConventionalProperty"
       ],
@@ -429,13 +528,36 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
       "skos:prefLabel": "ActiveMassLoading",
       "hasNumericalPart": {
         "@type": "RealData",
-        "hasNumberValue": 0.6505
+        "hasNumberValue": 0.6698
       },
       "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    },
+    {
+      "@type": [
+        "Mass",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Mass",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.214
+      },
+      "schema:unitText": "mg"
+    },
+    {
+      "@type": [
+        "MassFraction",
+        "ConventionalProperty"
+      ],
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.84971
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
     }
   ],
-  "@id": "https://w3id.org/battinfo/electrode/69qq-5qve-qmg6-929g",
-  "schema:name": "Si-AQ-1",
+  "@id": "https://w3id.org/battinfo/electrode/16jn-76y3-8mg4-kyyv",
+  "schema:name": "Si-AQ-1 disc 70cc5b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },
@@ -450,10 +572,9 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Silicon (aqueous processed).",
-    "8 of the 95 published measurements were made on cells built from this batch.",
-    "Active-mass loading: 0.6505 +/- 0.0625 mg/cm2 (mean +/- sample standard deviation, n = 8 cells; range 0.5595-0.7195 mg/cm2), over the per-cell values metadata.csv publishes for this batch.",
-    "Dry thickness: 44.0 um. metadata.csv states this one value for every one of the 8 cells of the batch, so the mean is that stated value and the standard deviation is 0 by construction - not a measured spread."
+    "The working-electrode disc built into coin cell 70cc5b, punched from electrode batch Si-AQ-1. Silicon (aqueous processed).",
+    "Every figure here is the value metadata.csv publishes for this one cell, not a batch average; the batch averages are on the electrode spec.",
+    "Active-material mass 1.0316 mg = coating mass (1.214 mg) x active-material weight percentage (84.971 %), the way metadata.csv derives it. Both factors are structured properties of this record; the product is not, because `mass` is the one curated key that means Mass and a second one would collapse onto it in JSON-LD."
   ],
   "schema:funding": {
     "@type": "schema:Grant",
@@ -558,7 +679,7 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
 SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substance anchor, theoretical capacity
 ==============================================================================
 {
-  "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+  "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
   "@type": "LithiumNickelManganeseOxide",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
@@ -582,7 +703,10 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
   },
-  "schema:comment": "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly disordered spinel.\" No supplier, grade or product identifier is given for the powder, so none is stated here.",
+  "schema:comment": [
+    "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly disordered spinel.\" No grade or product identifier is given for the powder, so none is stated here.",
+    "Manufacturer: Topsoe. Supplied by the corpus maintainer, not by the Zenodo record, which names no supplier for any active material."
+  ],
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",
@@ -696,7 +820,7 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
       "@type": "ActiveMaterial",
       "schema:name": "Lithium nickel manganese oxide (LNMO)",
       "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
+        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
       },
       "hasProperty": {
         "@type": [
@@ -711,22 +835,99 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
       }
     }
   },
-  "hasProperty": {
-    "@type": [
-      "Diameter",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "Diameter",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 14.0
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.5716
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0453,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     },
-    "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-  },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 47.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 4.0829
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.3234,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    }
+  ],
   "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
   "schema:name": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
   "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
     "@type": "ActiveMaterial"
   },
   "prov:wasGeneratedBy": {
@@ -749,7 +950,13 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
   },
-  "schema:comment": "Design values are as published in metadata.csv for batch LNMO-AQ-2, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch LNMO-AQ-2, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 4.0829 mg/cm2, sample standard deviation 0.3234 mg/cm2 over n = 8 discs (range 3.6462-4.4727 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 47.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 0.5716 mAh/cm2, sample standard deviation 0.0453 mAh/cm2 over n = 8 discs (range 0.5105-0.6262 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
+  ],
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",
@@ -863,7 +1070,7 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
       "@type": "ActiveMaterial",
       "schema:name": "Lithium nickel manganese oxide (LNMO)",
       "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
+        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
       },
       "hasProperty": {
         "@type": [
@@ -878,22 +1085,99 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
       }
     }
   },
-  "hasProperty": {
-    "@type": [
-      "Diameter",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "Diameter",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 14.0
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.3324
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.045,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     },
-    "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-  },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 90.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 9.5173
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.3213,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    }
+  ],
   "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
   "schema:name": "LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF)",
   "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
     "@type": "ActiveMaterial"
   },
   "prov:wasGeneratedBy": {
@@ -917,7 +1201,13 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
   },
-  "schema:comment": "Design values are as published in metadata.csv for batch LNMO-NMP-2, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch LNMO-NMP-2, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 9.5173 mg/cm2, sample standard deviation 0.3213 mg/cm2 over n = 8 discs (range 8.9505-9.99 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 90.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 1.3324 mAh/cm2, sample standard deviation 0.045 mAh/cm2 over n = 8 discs (range 1.2531-1.3986 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
+  ],
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",
@@ -1022,7 +1312,7 @@ SPOT CHECK 2d - the two LNMO designs are distinct IRIs
 ==============================================================================
 aqueous: https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs
 nmp:     https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh
-powder:  https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+powder:  https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 
 ==============================================================================
 SPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, for every LNMO cell spec
@@ -1030,23 +1320,23 @@ SPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, for every LNMO cell s
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)
   cell spec      https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp
   -> electrode   https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev  (LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF))
-  -> batch       https://w3id.org/battinfo/electrode/n7zg-6428-t8mh-91vr  (LNMO-NMP-1)
-  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+  -> batch       https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3  (LNMO-NMP-1)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)
   cell spec      https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y
   -> electrode   https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs  (LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF))
-  -> batch       https://w3id.org/battinfo/electrode/c452-na82-88mh-zzq9  (LNMO-AQ-2)
-  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+  -> batch       https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y  (LNMO-AQ-2)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)
   cell spec      https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c
   -> electrode   https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk  (LNMO electrode, aqueous processed (IntelLiGent batch 1, SINTEF))
-  -> batch       https://w3id.org/battinfo/electrode/620q-vkks-p6x7-8ejm  (LNMO-AQ-1)
-  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+  -> batch       https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb  (LNMO-AQ-1)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)
   cell spec      https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7
   -> electrode   https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh  (LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF))
-  -> batch       https://w3id.org/battinfo/electrode/g2k0-dk66-0qzm-714g  (LNMO-NMP-2)
-  -> powder      https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe
+  -> batch       https://w3id.org/battinfo/electrode/0d9z-1b2m-9vcw-887z  (LNMO-NMP-2)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 
 ==============================================================================
 SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
@@ -1176,7 +1466,7 @@ SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1366,7 +1656,7 @@ SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-08-10T12:50:03+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1586,6 +1876,24 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
         },
         "spdx:checksumValue": "f875674c607fe898a7c6f5a75c03a1d6"
       }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+      "schema:description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+      "dcat:downloadURL": {
+        "@id": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/061xx0/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json"
+      },
+      "dcat:mediaType": "application/json",
+      "dcat:byteSize": 66916,
+      "schema:contentSize": "66916",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "a692bc4d12bd22d91c74fdb8eee1ee093ae640a8f444fd32a413b5bcb6f08cd2"
+      }
     }
   ],
   "dcterms:source": {
@@ -1594,7 +1902,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-16T13:28:57+00:00",
+    "prov:generatedAtTime": "2026-08-17T19:28:46+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1785,6 +2093,20 @@ SPOT CHECK 4b - the same dataset's canonical record
           "algorithm": "md5",
           "value": "f875674c607fe898a7c6f5a75c03a1d6"
         }
+      },
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+        "description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/061xx0/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+        "encoding_format": "application/json",
+        "content_size": "66916",
+        "access_level": "open",
+        "role": "other",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "a692bc4d12bd22d91c74fdb8eee1ee093ae640a8f444fd32a413b5bcb6f08cd2"
+        }
       }
     ]
   },
@@ -1792,7 +2114,7 @@ SPOT CHECK 4b - the same dataset's canonical record
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786886937,
+    "retrieved_at": 1786994926,
     "battinfo_version": "0.7.0"
   },
   "funding": {

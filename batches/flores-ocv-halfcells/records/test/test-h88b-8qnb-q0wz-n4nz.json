@@ -12,30 +12,14 @@
     "status": "completed",
     "conditions": {
       "ambient_temperature": "room temperature",
-      "voltage_reference": "Li/Li+",
-      "active_material_mass": {
-        "value": 6.0891,
-        "unit": "mg"
-      },
-      "electrode_coating_mass": {
-        "value": 0.006692,
-        "unit": "g"
-      },
-      "nominal_areal_capacity": {
-        "value": 1.4709,
-        "unit": "mAh/cm2"
-      },
-      "electrode_loading": {
-        "value": 3.954,
-        "unit": "mg/cm2"
-      }
+      "voltage_reference": "Li/Li+"
     },
     "protocol_name": "p-OCV",
     "started_at": 1748390400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

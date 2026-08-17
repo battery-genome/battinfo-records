@@ -17,6 +17,9 @@
     "hasActiveMaterial": {
       "@type": "ActiveMaterial",
       "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff"
+      },
       "hasProperty": {
         "@type": [
           "MassFraction",
@@ -41,7 +44,20 @@
         "@type": "RealData",
         "hasNumberValue": 3.1
       },
-      "schema:unitText": "mAh/cm2"
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     },
     {
       "@type": [
@@ -57,6 +73,31 @@
     },
     {
       "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 96.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
         "ActiveMassLoading",
         "ConventionalProperty"
       ],
@@ -65,11 +106,28 @@
         "@type": "RealData",
         "hasNumberValue": 20.4
       },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     }
   ],
   "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
   "schema:name": "NMC532 electrode, NMP processed (commercial, Gelon LIB)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
+    "@type": "ActiveMaterial"
+  },
   "prov:wasGeneratedBy": {
     "@type": "Manufacturing",
     "skos:prefLabel": "Manufacturing",
@@ -92,8 +150,10 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Design values are as published in metadata.csv for batch NMC532-NMP-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
-    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+    "Design values are as published in metadata.csv for batch NMC532-NMP-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: 20.4 mg/cm2 for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Dry thickness: 96.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: 3.1 mAh/cm2 for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

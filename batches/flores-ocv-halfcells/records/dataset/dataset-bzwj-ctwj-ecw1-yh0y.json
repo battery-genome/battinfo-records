@@ -87,6 +87,20 @@
           "algorithm": "md5",
           "value": "5f02c48bbe87383cb5bc365da39ff394"
         }
+      },
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.plot.json",
+        "description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/bzwjct/sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.plot.json",
+        "encoding_format": "application/json",
+        "content_size": "85773",
+        "access_level": "open",
+        "role": "other",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "bea59895d02b171a20efd6ffe0d9f269a545025e95c222eadc3729230b8a445a"
+        }
       }
     ]
   },
@@ -94,7 +108,7 @@
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786886939,
+    "retrieved_at": 1786994927,
     "battinfo_version": "0.7.0"
   },
   "funding": {

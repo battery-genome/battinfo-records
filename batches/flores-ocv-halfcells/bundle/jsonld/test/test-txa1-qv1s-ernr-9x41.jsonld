@@ -201,32 +201,8 @@
   "schema:additionalProperty": [
     {
       "@type": "schema:PropertyValue",
-      "schema:name": "active_material_mass",
-      "schema:value": 31.4024,
-      "schema:unitText": "mg"
-    },
-    {
-      "@type": "schema:PropertyValue",
       "schema:name": "ambient_temperature",
       "schema:value": "room temperature"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "electrode_coating_mass",
-      "schema:value": 0.032501,
-      "schema:unitText": "g"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "electrode_loading",
-      "schema:value": 20.4,
-      "schema:unitText": "mg/cm2"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "nominal_areal_capacity",
-      "schema:value": 3.1,
-      "schema:unitText": "mAh/cm2"
     },
     {
       "@type": "schema:PropertyValue",
@@ -237,7 +213,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-08-16T13:28:47+00:00"
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

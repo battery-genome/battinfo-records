@@ -6,6 +6,7 @@
     "name": "Silicon-graphite electrode, aqueous processed, lower Si % (IntelLiGent batch 1, SINTEF)",
     "kind": "silicon_graphite",
     "polarity": "negative",
+    "active_material_spec_id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
     "description": "Lower Si % silicon-graphite composite (aqueous processed). Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label SiGr-AQ-1. Active-material type as stated in metadata.csv: \"Silicon Graphite\".",
     "coating": {
       "component": {
@@ -17,7 +18,8 @@
                 "value": 90.77,
                 "unit": "%"
               }
-            }
+            },
+            "material_spec_id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
           }
         ]
       }
@@ -37,6 +39,28 @@
         "value": 14.0,
         "unit": "mm"
       },
+      "loading": {
+        "value": 4.7837,
+        "unit": "mg/cm2",
+        "min_value": 4.5479,
+        "max_value": 4.99,
+        "standard_deviation": 0.1827,
+        "sample_count": 8
+      },
+      "dry_thickness": {
+        "value": 74.0,
+        "unit": "um",
+        "standard_deviation": 0.0,
+        "sample_count": 8
+      },
+      "areal_capacity": {
+        "value": 2.4397,
+        "unit": "mAh/cm2",
+        "min_value": 2.3194,
+        "max_value": 2.5449,
+        "standard_deviation": 0.0932,
+        "sample_count": 8
+      },
       "theoretical_capacity": {
         "value": 510.0,
         "unit": "mAh/g"
@@ -45,13 +69,16 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786796181,
+    "retrieved_at": 1786994908,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
-    "Design values are as published in metadata.csv for batch SiGr-AQ-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
-    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+    "Design values are as published in metadata.csv for batch SiGr-AQ-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 4.7837 mg/cm2, sample standard deviation 0.1827 mg/cm2 over n = 8 discs (range 4.5479-4.99 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 74.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 2.4397 mAh/cm2, sample standard deviation 0.0932 mAh/cm2 over n = 8 discs (range 2.3194-2.5449 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Theoretical specific capacity is stated here rather than on the powder because the source gives a different value for each silicon-graphite composite blend (510 mAh/g for this one), which makes it a property of the design."
   ],
   "funding": {
     "type": "Grant",

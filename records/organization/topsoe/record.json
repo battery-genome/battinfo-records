@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/vz1v-rvhz-n77h-344c",
+    "short_id": "vz1vrvhz",
+    "type": "Corporation",
+    "name": "Topsoe",
+    "alternateName": [
+      "Haldor Topsoe",
+      "Haldor Topsoe A/S"
+    ],
+    "url": "https://www.topsoe.com/",
+    "description": "Danish catalyst and materials company. Named by the corpus maintainer as the manufacturer of the LNMO active material measured in Zenodo record 10.5281/zenodo.20086298; the published record itself names no supplier for any of its active materials.",
+    "location": {
+      "addressCountry": "DK"
+    }
+  },
+  "provenance": {
+    "source_type": "manual",
+    "source_url": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "editorial": {
+    "review_status": "stub",
+    "note": "Created for the Flores half-cell OCV batch, from a fact supplied by the corpus maintainer rather than by the source record. records/organization/haldor-topsoe/ is a Battery Knowledge Graph stub for the same legal entity under its pre-2022 name and should be merged into this record before either is published."
+  }
+}

@@ -20,6 +20,9 @@
         "ActiveMaterial"
       ],
       "schema:name": "Silicon",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+      },
       "hasProperty": {
         "@type": [
           "MassFraction",
@@ -36,6 +39,31 @@
   "hasProperty": [
     {
       "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.3282
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.2237,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
         "Diameter",
         "ConventionalProperty"
       ],
@@ -48,19 +76,61 @@
     },
     {
       "@type": [
-        "TheoreticalCapacity",
+        "DryCoatingThickness",
         "ConventionalProperty"
       ],
-      "skos:prefLabel": "TheoreticalCapacity",
+      "skos:prefLabel": "DryCoatingThickness",
       "hasNumericalPart": {
         "@type": "RealData",
-        "hasNumberValue": 3579.0
+        "hasNumberValue": 44.0
       },
-      "schema:unitText": "mAh/g"
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.6505
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0625,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     }
   ],
   "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
   "schema:name": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
+    "@type": "ActiveMaterial"
+  },
   "prov:wasGeneratedBy": {
     "@type": "Manufacturing",
     "skos:prefLabel": "Manufacturing",
@@ -82,8 +152,10 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
-    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 0.6505 mg/cm2, sample standard deviation 0.0625 mg/cm2 over n = 8 discs (range 0.5595-0.7195 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 44.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 2.3282 mAh/cm2, sample standard deviation 0.2237 mAh/cm2 over n = 8 discs (range 2.0024-2.5751 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

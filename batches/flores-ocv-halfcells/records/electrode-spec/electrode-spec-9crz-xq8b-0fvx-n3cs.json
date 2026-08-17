@@ -6,7 +6,7 @@
     "name": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
     "kind": "lnmo",
     "polarity": "positive",
-    "active_material_spec_id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+    "active_material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
     "description": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-AQ-2. Active-material type as stated in metadata.csv: \"LNMO\".",
     "coating": {
       "component": {
@@ -19,7 +19,7 @@
                 "unit": "%"
               }
             },
-            "material_spec_id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe"
+            "material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
           }
         ]
       }
@@ -38,17 +38,43 @@
       "diameter": {
         "value": 14.0,
         "unit": "mm"
+      },
+      "loading": {
+        "value": 4.0829,
+        "unit": "mg/cm2",
+        "min_value": 3.6462,
+        "max_value": 4.4727,
+        "standard_deviation": 0.3234,
+        "sample_count": 8
+      },
+      "dry_thickness": {
+        "value": 47.0,
+        "unit": "um",
+        "standard_deviation": 0.0,
+        "sample_count": 8
+      },
+      "areal_capacity": {
+        "value": 0.5716,
+        "unit": "mAh/cm2",
+        "min_value": 0.5105,
+        "max_value": 0.6262,
+        "standard_deviation": 0.0453,
+        "sample_count": 8
       }
     }
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786886926,
+    "retrieved_at": 1786994908,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "notes": [
-    "Design values are as published in metadata.csv for batch LNMO-AQ-2, the one batch that realizes this design; the as-built dry thickness is on the electrode record."
+    "Design values are as published in metadata.csv for batch LNMO-AQ-2, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 4.0829 mg/cm2, sample standard deviation 0.3234 mg/cm2 over n = 8 discs (range 3.6462-4.4727 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 47.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 0.5716 mAh/cm2, sample standard deviation 0.0453 mAh/cm2 over n = 8 discs (range 0.5105-0.6262 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
   ],
   "funding": {
     "type": "Grant",

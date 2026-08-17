@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/5jya-m8b6-8e2g-tdnr",
     "short_id": "5jyam8",
     "cell_spec_id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/13fk-z6mq-7ny2-jtjx",
     "name": "NMC532-NMP-1",
     "serial_number": "44efc9",
     "batch_id": "NMC532-NMP-1",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

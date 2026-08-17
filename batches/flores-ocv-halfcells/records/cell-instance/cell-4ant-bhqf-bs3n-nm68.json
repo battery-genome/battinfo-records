@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/4ant-bhqf-bs3n-nm68",
     "short_id": "4antbh",
     "cell_spec_id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/dsfm-57wj-1dez-08ax",
     "name": "SiGr-AQ-3",
     "serial_number": "084a1b",
     "batch_id": "SiGr-AQ-3",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

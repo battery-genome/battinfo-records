@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.2.0",
+  "electrode": {
+    "id": "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
+    "electrode_spec_id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
+    "short_id": "jjyze2",
+    "name": "Si-AQ-1 disc 882755",
+    "batch_id": "Si-AQ-1",
+    "count": 1,
+    "property": {
+      "loading": {
+        "value": 0.6974,
+        "unit": "mg/cm2"
+      },
+      "dry_thickness": {
+        "value": 44.0,
+        "unit": "um"
+      },
+      "areal_capacity": {
+        "value": 2.4961,
+        "unit": "mAh/cm2"
+      },
+      "diameter": {
+        "value": 14.0,
+        "unit": "mm"
+      },
+      "mass": {
+        "value": 1.264,
+        "unit": "mg"
+      },
+      "mass_fraction": {
+        "value": 84.971,
+        "unit": "%"
+      }
+    }
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "retrieved_at": 1786994908,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "notes": [
+    "The working-electrode disc built into coin cell 882755, punched from electrode batch Si-AQ-1. Silicon (aqueous processed).",
+    "Every figure here is the value metadata.csv publishes for this one cell, not a batch average; the batch averages are on the electrode spec.",
+    "Active-material mass 1.074 mg = coating mass (1.264 mg) x active-material weight percentage (84.971 %), the way metadata.csv derives it. Both factors are structured properties of this record; the product is not, because `mass` is the one curated key that means Mass and a second one would collapse onto it in JSON-LD."
+  ],
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

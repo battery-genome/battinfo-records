@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/a19y-zvyr-780e-p5y1",
     "short_id": "a19yzv",
     "cell_spec_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/dbws-fec9-qqrj-14nh",
     "name": "LFP-NMP-1",
     "serial_number": "fbeeaf",
     "batch_id": "LFP-NMP-1",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

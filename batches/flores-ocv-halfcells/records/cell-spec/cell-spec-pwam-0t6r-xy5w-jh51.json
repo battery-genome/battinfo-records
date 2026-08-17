@@ -31,7 +31,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",
@@ -41,6 +41,7 @@
         "active_material": [
           {
             "name": "Graphite",
+            "material_spec_id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t",
             "property": {
               "mass_fraction": {
                 "value": 90.984,

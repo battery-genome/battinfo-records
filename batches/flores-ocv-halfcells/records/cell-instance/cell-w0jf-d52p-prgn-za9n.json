@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/w0jf-d52p-prgn-za9n",
     "short_id": "w0jfd5",
     "cell_spec_id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/fb5x-vpfs-f5e4-xr0t",
     "name": "LNMO-NMP-2",
     "serial_number": "f2733d",
     "batch_id": "LNMO-NMP-2",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

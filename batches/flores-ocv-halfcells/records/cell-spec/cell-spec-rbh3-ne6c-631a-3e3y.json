@@ -31,7 +31,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
@@ -41,7 +41,7 @@
         "active_material": [
           {
             "name": "LNMO (LiNi0.5Mn1.5O4)",
-            "material_spec_id": "https://w3id.org/battinfo/spec/epzg-hf4v-k5bk-nqxe",
+            "material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
             "property": {
               "mass_fraction": {
                 "value": 90.276,

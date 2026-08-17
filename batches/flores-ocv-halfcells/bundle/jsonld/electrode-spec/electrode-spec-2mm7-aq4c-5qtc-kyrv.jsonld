@@ -17,6 +17,9 @@
     "hasActiveMaterial": {
       "@type": "ActiveMaterial",
       "schema:name": "Silicon-graphite composite",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
+      },
       "hasProperty": {
         "@type": [
           "MassFraction",
@@ -33,6 +36,31 @@
   "hasProperty": [
     {
       "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.5077
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.2333,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
         "Diameter",
         "ConventionalProperty"
       ],
@@ -42,6 +70,56 @@
         "hasNumberValue": 14.0
       },
       "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 54.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.7863
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.2592,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
     },
     {
       "@type": [
@@ -58,6 +136,10 @@
   ],
   "@id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv",
   "schema:name": "Silicon-graphite electrode, aqueous processed, higher Si %, 'B/Silicon Graphite' active material (IntelLiGent batch 2, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
+    "@type": "ActiveMaterial"
+  },
   "prov:wasGeneratedBy": {
     "@type": "Manufacturing",
     "skos:prefLabel": "Manufacturing",
@@ -79,8 +161,11 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "Design values are as published in metadata.csv for batch SiGr-AQ-3, the one batch that realizes this design; the as-built dry thickness is on the electrode record.",
-    "No material spec is authored for this electrode's active material: the source states no powder identity for it. `kind` carries the chemistry."
+    "Design values are as published in metadata.csv for batch SiGr-AQ-3, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 2.7863 mg/cm2, sample standard deviation 0.2592 mg/cm2 over n = 8 discs (range 2.5018-3.0835 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 54.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 2.5077 mAh/cm2, sample standard deviation 0.2333 mAh/cm2 over n = 8 discs (range 2.2517-2.7752 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Theoretical specific capacity is stated here rather than on the powder because the source gives a different value for each silicon-graphite composite blend (900 mAh/g for this one), which makes it a property of the design."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

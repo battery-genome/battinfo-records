@@ -31,7 +31,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786886927,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
@@ -41,6 +41,7 @@
         "active_material": [
           {
             "name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
+            "material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
             "property": {
               "mass_fraction": {
                 "value": 96.62,

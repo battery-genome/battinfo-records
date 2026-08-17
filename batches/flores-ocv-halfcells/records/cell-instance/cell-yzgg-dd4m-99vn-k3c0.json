@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/yzgg-dd4m-99vn-k3c0",
     "short_id": "yzggdd",
     "cell_spec_id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/fcey-p1km-zvh8-17c1",
     "name": "NMC111-NMP-1",
     "serial_number": "53acb0",
     "batch_id": "NMC111-NMP-1",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

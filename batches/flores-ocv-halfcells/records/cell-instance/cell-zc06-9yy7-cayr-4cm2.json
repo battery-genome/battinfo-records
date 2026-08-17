@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/zc06-9yy7-cayr-4cm2",
     "short_id": "zc069y",
     "cell_spec_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/3vkc-jz8e-m092-3e7p",
     "name": "LFP-NMP-1",
     "serial_number": "178617",
     "batch_id": "LFP-NMP-1",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {

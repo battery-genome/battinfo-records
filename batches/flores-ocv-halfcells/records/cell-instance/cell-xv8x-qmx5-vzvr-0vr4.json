@@ -4,6 +4,7 @@
     "id": "https://w3id.org/battinfo/cell/xv8x-qmx5-vzvr-0vr4",
     "short_id": "xv8xqm",
     "cell_spec_id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
+    "working_electrode_id": "https://w3id.org/battinfo/electrode/z2tv-k7vw-6stv-h12y",
     "name": "Si-AQ-1",
     "serial_number": "931301",
     "batch_id": "Si-AQ-1",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786366203,
+    "retrieved_at": 1786994913,
     "battinfo_version": "0.7.0"
   },
   "funding": {
