@@ -2029,12 +2029,14 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786993087,
+    "retrieved_at": 1786994008,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1149/1945-7111/aba5d1"
   },
   "notes": [
     "Ingested from the curated literature_ocv library (graphite__pybamm__mohtat2020.csv).",
-    "Source function(s): graphite_ocp_PeymanMPM."
-  ]
+    "Source function(s): graphite_ocp_PeymanMPM.",
+    "Curve tabulated from the PyBaMM implementation of the cited parameterization (PyBaMM, BSD-3-Clause, https://github.com/pybamm-team/PyBaMM)."
+  ],
+  "license": "cc-by-4.0"
 }

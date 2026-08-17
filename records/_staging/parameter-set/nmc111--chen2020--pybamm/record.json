@@ -2029,12 +2029,14 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786993087,
+    "retrieved_at": 1786994008,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1149/1945-7111/ab9050"
   },
   "notes": [
     "Ingested from the curated literature_ocv library (nmc111__pybamm__chen2020_assumed_generic_nmc.csv).",
-    "Source function(s): nmc_LGM50_ocp_Chen2020."
-  ]
+    "Source function(s): nmc_LGM50_ocp_Chen2020.",
+    "Curve tabulated from the PyBaMM implementation of the cited parameterization (PyBaMM, BSD-3-Clause, https://github.com/pybamm-team/PyBaMM)."
+  ],
+  "license": "cc-by-4.0"
 }

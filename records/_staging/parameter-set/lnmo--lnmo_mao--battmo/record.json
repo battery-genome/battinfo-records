@@ -55,12 +55,14 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786993087,
+    "retrieved_at": 1786994008,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1021/acsomega.9b03794"
   },
   "notes": [
     "Ingested from the curated literature_ocv library (lnmo__battmo__mao2020.csv).",
-    "Source function(s): LNMO_Mao.json."
-  ]
+    "Source function(s): LNMO_Mao.json.",
+    "Values via the BattMo parameter library (BattMo, GPL-3.0, https://doi.org/10.5281/zenodo.6362782); the data values originate in the cited publication."
+  ],
+  "license": "cc-by-4.0"
 }
