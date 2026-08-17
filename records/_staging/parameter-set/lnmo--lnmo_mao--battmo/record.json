@@ -1,0 +1,66 @@
+{
+  "schema_version": "0.2.0",
+  "parameter_set": {
+    "id": "https://w3id.org/battinfo/spec/pazj-epnz-5jef-r5nv",
+    "short_id": "pazjep",
+    "name": "LNMO_Mao (BattMo) - lnmo",
+    "material_kind": "lnmo",
+    "scope": "material",
+    "claims": [
+      {
+        "parameter": "ocp",
+        "curve": {
+          "x_quantity": "stoichiometry",
+          "x": [
+            0.0,
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.85,
+            0.9,
+            1.0
+          ],
+          "y": [
+            4.7336,
+            4.7309,
+            4.7251,
+            4.7248,
+            4.7184,
+            4.6806,
+            4.6742,
+            4.6681,
+            4.6589,
+            4.4763,
+            4.1264,
+            3.7273
+          ],
+          "y_unit": "V",
+          "interpolation": "linear"
+        },
+        "provenance_class": "literature",
+        "method": "extracted from BattMo parameter set LNMO_Mao (openCircuitPotential)",
+        "comment": "Tabulated LNMO OCV imported from the BattMo JSON file referenced by the user."
+      }
+    ],
+    "model_context": {
+      "tool": "BattMo",
+      "name": "LNMO_Mao"
+    },
+    "description": "Half-cell open-circuit potential of lnmo from the LNMO_Mao parameterization (Mao et al. 2020, ACS Omega)."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1786993087,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.1021/acsomega.9b03794"
+  },
+  "notes": [
+    "Ingested from the curated literature_ocv library (lnmo__battmo__mao2020.csv).",
+    "Source function(s): LNMO_Mao.json."
+  ]
+}
