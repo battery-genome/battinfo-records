@@ -1,0 +1,41 @@
+{
+  "schema_version": "0.2.0",
+  "parameter_set": {
+    "id": "https://w3id.org/battinfo/spec/dy4t-naf7-pmsh-8y5d",
+    "short_id": "dy4tna",
+    "name": "Curated reference anchors - graphite",
+    "material_kind": "graphite",
+    "scope": "material",
+    "claims": [
+      {
+        "parameter": "density",
+        "quantity": {
+          "value": 2.26,
+          "unit": "g/cm3"
+        },
+        "provenance_class": "literature"
+      },
+      {
+        "parameter": "theoretical_specific_capacity",
+        "quantity": {
+          "value": 372.0,
+          "unit": "mAh/g"
+        },
+        "provenance_class": "literature",
+        "comment": "Theoretical stoichiometric value (curated Battery Genome reference anchor), not a practical reversible capacity."
+      }
+    ],
+    "description": "Curated, citable reference values for graphite from the Battery Genome material-kind vocabulary: the generic anchors reported distributions are compared against."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1786999429,
+    "citation_doi": "10.1039/D0SE00175A",
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.1039/D0SE00175A"
+  },
+  "notes": [
+    "Ingested from the reference_properties block of BattINFO's curated material_kinds vocabulary (governance-by-PR)."
+  ],
+  "license": "cc-by-4.0"
+}
