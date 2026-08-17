@@ -22,8 +22,11 @@ merge). Run from the repo root with the BattINFO checkout's environment:
     uv run --project ../BattINFO python scripts/ingest-literature-ocv-claims.py \
         --source "../../HEU-IntelLigent/AnalysisOpenCircuitVoltages/data/literature_ocv"
 
-Funding/contributor/license are deliberately NOT stamped here: the publish
-step stamps attribution the same way every other corpus publication does.
+Record licenses ARE set here, because they are conditions of the sources
+(the About:Energy BPX sets are CC-BY-SA-4.0 and force share-alike on their
+records; everything else is cc-by-4.0). Funding and contributor are NOT
+stamped here: the publish step stamps that attribution the same way every
+other corpus publication does — and it must never overwrite the license.
 """
 from __future__ import annotations
 
@@ -34,6 +37,48 @@ import sys
 from pathlib import Path
 
 INGESTED_CURVE_KINDS = {"full_curve", "tabulated_curve"}
+
+# Upstream license conditions, verified 2026-08-17 against the source repos.
+# The VALUES in every curve originate in the cited papers; these entries cover
+# the tool/repository the tabulation was extracted through, because that is
+# where redistribution conditions attach.
+#
+# About:Energy's BPX parameterisation repo is CC-BY-SA-4.0: attribution, a
+# license link, a statement of changes, and SHARE-ALIKE — records derived from
+# it must themselves carry cc-by-sa-4.0, not the corpus default. PyBaMM
+# (BSD-3-Clause) and BattMo (GPL-3.0) are software licenses; tabulated
+# function outputs are data credited to the cited paper, with the tool
+# acknowledged as the implementation the curve was extracted from.
+SOURCE_ATTRIBUTION: dict[str, dict[str, str]] = {
+    "PyBaMM": {
+        "license": "cc-by-4.0",
+        "note": (
+            "Curve tabulated from the PyBaMM implementation of the cited "
+            "parameterization (PyBaMM, BSD-3-Clause, "
+            "https://github.com/pybamm-team/PyBaMM)."
+        ),
+    },
+    "BPX": {
+        "license": "cc-by-sa-4.0",
+        "note": (
+            "Adapted from the About:Energy BPX parameterisation "
+            "(https://doi.org/10.5281/zenodo.19052625; source repository "
+            "https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation), "
+            "(c) About:Energy, licensed CC-BY-SA-4.0 "
+            "(https://creativecommons.org/licenses/by-sa/4.0/). "
+            "Changes: the OCP function was tabulated on a stoichiometry grid. "
+            "This record is licensed cc-by-sa-4.0 to honour the share-alike condition."
+        ),
+    },
+    "BattMo": {
+        "license": "cc-by-4.0",
+        "note": (
+            "Values via the BattMo parameter library (BattMo, GPL-3.0, "
+            "https://doi.org/10.5281/zenodo.6362782); the data values originate "
+            "in the cited publication."
+        ),
+    },
+}
 
 
 def read_curve(csv_path: Path) -> tuple[list[float], list[float]]:
@@ -107,6 +152,12 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
             f"manifest material {first['requested_material']!r} is not a curated kind; "
             f"valid: {', '.join(material_kind_keys())}"
         )
+    attribution = SOURCE_ATTRIBUTION.get(first["source_tool"])
+    if attribution is None:
+        raise ValueError(
+            f"no license attribution entry for source tool {first['source_tool']!r}; "
+            "verify the upstream license and add it to SOURCE_ATTRIBUTION before ingesting."
+        )
     claims = [build_claim(row, source_dir) for row in rows]
     notes = [
         "Ingested from the curated literature_ocv library "
@@ -116,7 +167,21 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
             row.get("function_reference") or row.get("function_key") or "n/a" for row in rows
         )
         + ".",
+        attribution["note"],
     ]
+    # The About:Energy sets have no paper: their citable identity is the
+    # Zenodo deposit of the A:E parameterisation, not the BPX examples
+    # mirror the manifest happens to point at.
+    citation = (
+        "https://doi.org/10.5281/zenodo.19052625"
+        if first["source_tool"] == "BPX"
+        else first.get("parameter_set_doi_or_url") or None
+    )
+    citation_doi = (
+        citation.removeprefix("https://doi.org/")
+        if citation and citation.startswith("https://doi.org/")
+        else None
+    )
     record = create_parameter_set(
         name=f"{first['parameter_set']} ({first['source_tool']}) - {kind}",
         material_kind=kind,
@@ -127,9 +192,19 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
             f"{first['parameter_set']} parameterization ({first['parameter_set_reference']})."
         ),
         source_type="literature",
-        citation=first.get("parameter_set_doi_or_url") or None,
+        citation=citation,
+        citation_doi=citation_doi,
         notes=notes,
     )
+    # The license is a condition of the source, so it is set at ingest, not at
+    # publish: share-alike sources (About:Energy) force cc-by-sa-4.0 on their
+    # records, and a publish-time stamp must never overwrite it.
+    record["license"] = attribution["license"]
+    from battinfo.validate.record import validate_record_report
+
+    report = validate_record_report(record)
+    if not report.ok:
+        raise ValueError(f"record failed validation after license stamp: {report.errors}")
     slug = f"{kind}--{first['parameter_set'].lower()}--{first['source_tool'].lower()}"
     return slug, record
 

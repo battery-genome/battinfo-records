@@ -6058,12 +6058,15 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786993087,
+    "retrieved_at": 1786994139,
+    "citation_doi": "10.1016/j.jpowsour.2022.231142",
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1016/j.jpowsour.2022.231142"
   },
   "notes": [
     "Ingested from the curated literature_ocv library (silicon__pybamm__mark2016_average.csv, silicon__pybamm__mark2016_lithiation.csv, silicon__pybamm__mark2016_delithiation.csv).",
-    "Source function(s): silicon_ocp_average_Mark2016; silicon_ocp_lithiation_Mark2016; silicon_ocp_delithiation_Mark2016."
-  ]
+    "Source function(s): silicon_ocp_average_Mark2016; silicon_ocp_lithiation_Mark2016; silicon_ocp_delithiation_Mark2016.",
+    "Curve tabulated from the PyBaMM implementation of the cited parameterization (PyBaMM, BSD-3-Clause, https://github.com/pybamm-team/PyBaMM)."
+  ],
+  "license": "cc-by-4.0"
 }
