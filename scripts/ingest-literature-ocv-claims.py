@@ -7,7 +7,7 @@ extracted from PyBaMM / BPX / BattMo literature parameterizations, with a
 manifest carrying per-curve provenance (source tool, parameter set, paper,
 DOI). One manifest row = one source's OCP claim about one material kind =
 one ``parameter-set`` record, staged under
-``records/_staging/parameter-set/<kind>--<set>--<tool>/record.json``.
+``records/parameter-set/<kind>--<set>--<tool>/record.json``.
 
 Rows whose ``curve_kind`` is ``phase_component_curve`` are skipped with a
 printed reason: a phase-component curve is not the material's OCP, and
@@ -214,7 +214,7 @@ def main() -> int:
     parser.add_argument("--source", required=True, help="literature_ocv directory (with manifest.csv)")
     parser.add_argument(
         "--out",
-        default="records/_staging/parameter-set",
+        default="records/parameter-set",
         help="staging directory for the generated records",
     )
     args = parser.parse_args()
