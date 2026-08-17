@@ -5,14 +5,14 @@
     "short_id": "k5qhgp",
     "cell_spec_id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/gcad-s3as-j3ek-67hg",
-    "name": "SiGr-AQ-3",
+    "name": "SiGr-AQ-3 cell e030cf",
     "serial_number": "e030cf",
     "batch_id": "SiGr-AQ-3",
     "manufactured_at": 1748390400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

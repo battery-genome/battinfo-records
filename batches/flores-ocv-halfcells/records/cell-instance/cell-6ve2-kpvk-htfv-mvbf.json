@@ -5,14 +5,14 @@
     "short_id": "6ve2kp",
     "cell_spec_id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/6260-63kr-y5av-5ehs",
-    "name": "LNMO-AQ-2",
+    "name": "LNMO-AQ-2 cell 31c548",
     "serial_number": "31c548",
     "batch_id": "LNMO-AQ-2",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

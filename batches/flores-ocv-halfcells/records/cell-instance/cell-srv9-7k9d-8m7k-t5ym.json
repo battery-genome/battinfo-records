@@ -5,14 +5,14 @@
     "short_id": "srv97k",
     "cell_spec_id": "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/twbh-gsrr-2vva-43j2",
-    "name": "LNMO-NMP-1",
+    "name": "LNMO-NMP-1 cell d11721",
     "serial_number": "d11721",
     "batch_id": "LNMO-NMP-1",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

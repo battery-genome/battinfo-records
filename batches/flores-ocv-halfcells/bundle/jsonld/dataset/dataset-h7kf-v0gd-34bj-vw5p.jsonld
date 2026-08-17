@@ -185,8 +185,8 @@
   "@type": "http://www.w3.org/ns/dcat#Dataset",
   "@id": "https://w3id.org/battinfo/dataset/h7kf-v0gd-34bj-vw5p",
   "dcterms:title": "LNMO-NMP-2 cell dd8a76 GITT hold half-cell OCV (BDF)",
-  "dcterms:description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
-  "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "dcterms:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
     "@id": "cc-by-4.0"
   },
@@ -265,6 +265,7 @@
       "@type": "schema:CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.20086298",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:name": "Flores et al., half-cell OCV dataset (Zenodo record)",
       "schema:additionalType": "dataset",
       "bibo:doi": "10.5281/zenodo.20086298",
       "schema:identifier": "flores2026ocv"
@@ -322,8 +323,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-17T19:28:47+00:00",
-    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+    "prov:generatedAtTime": "2026-08-17T21:01:01+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

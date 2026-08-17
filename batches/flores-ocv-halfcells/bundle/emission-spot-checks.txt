@@ -230,10 +230,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
 SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating composition, aqueous route as prov:wasGeneratedBy, no powder link
 ==============================================================================
 {
-  "@type": [
-    "SiliconBasedElectrode",
-    "NegativeElectrode"
-  ],
+  "@type": "SiliconBasedElectrode",
   "hasCoating": {
     "@type": "ElectrodeCoating",
     "hasActiveMaterial": {
@@ -810,10 +807,7 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
 SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powder IRI; the route is in the identity seed, so this is its own design
 ==============================================================================
 {
-  "@type": [
-    "LithiumNickelManganeseOxideElectrode",
-    "PositiveElectrode"
-  ],
+  "@type": "LithiumNickelManganeseOxideElectrode",
   "hasCoating": {
     "@type": "ElectrodeCoating",
     "hasActiveMaterial": {
@@ -1060,10 +1054,7 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
 SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different design
 ==============================================================================
 {
-  "@type": [
-    "LithiumNickelManganeseOxideElectrode",
-    "PositiveElectrode"
-  ],
+  "@type": "LithiumNickelManganeseOxideElectrode",
   "hasCoating": {
     "@type": "ElectrodeCoating",
     "hasActiveMaterial": {
@@ -1845,6 +1836,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
       "@type": "schema:CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.20086298",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:name": "Flores et al., half-cell OCV dataset (Zenodo record)",
       "schema:additionalType": "dataset",
       "bibo:doi": "10.5281/zenodo.20086298",
       "schema:identifier": "flores2026ocv"
@@ -1902,8 +1894,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-17T19:28:46+00:00",
-    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+    "prov:generatedAtTime": "2026-08-17T21:01:00+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",
@@ -2027,6 +2018,7 @@ SPOT CHECK 4b - the same dataset's canonical record
     "citations": [
       {
         "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
         "url": "https://doi.org/10.5281/zenodo.20086298",
         "doi": "10.5281/zenodo.20086298",
         "citation_key": "flores2026ocv"
@@ -2080,6 +2072,9 @@ SPOT CHECK 4b - the same dataset's canonical record
       "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg",
       "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
     ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
     "distributions": [
       {
         "type": "DataDownload",
@@ -2113,8 +2108,7 @@ SPOT CHECK 4b - the same dataset's canonical record
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994926,
+    "retrieved_at": 1787000460,
     "battinfo_version": "0.7.0"
   },
   "funding": {

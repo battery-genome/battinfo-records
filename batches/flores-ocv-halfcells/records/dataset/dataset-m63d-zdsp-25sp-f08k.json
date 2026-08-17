@@ -5,7 +5,7 @@
     "short_id": "m63dzd",
     "identifier": "dataset:m63d-zdsp-25sp-f08k",
     "name": "LNMO-NMP-1 cell b3d963 GITT half-cell OCV (BDF)",
-    "description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell b3d963, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-b3d963__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Known issue: Cell failed at end of 3rd cycle. Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell b3d963, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-b3d963__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
@@ -21,6 +21,7 @@
     "citations": [
       {
         "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
         "url": "https://doi.org/10.5281/zenodo.20086298",
         "doi": "10.5281/zenodo.20086298",
         "citation_key": "flores2026ocv"
@@ -74,6 +75,9 @@
       "https://w3id.org/battinfo/cell/egpw-37f5-26cm-8gj9",
       "https://w3id.org/battinfo/test/7s8v-9vdf-syaj-skzn"
     ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
     "distributions": [
       {
         "type": "DataDownload",
@@ -107,10 +111,12 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994927,
+    "retrieved_at": 1787000460,
     "battinfo_version": "0.7.0"
   },
+  "notes": [
+    "Known issue reported by the source for this measurement: Cell failed at end of 3rd cycle. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
+  ],
   "funding": {
     "type": "Grant",
     "identifier": "101069765",

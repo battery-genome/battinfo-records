@@ -265,6 +265,7 @@
       "@type": "schema:CreativeWork",
       "@id": "https://doi.org/10.5281/zenodo.20086298",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:name": "Flores et al., half-cell OCV dataset (Zenodo record)",
       "schema:additionalType": "dataset",
       "bibo:doi": "10.5281/zenodo.20086298",
       "schema:identifier": "flores2026ocv"
@@ -322,8 +323,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-17T19:28:46+00:00",
-    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+    "prov:generatedAtTime": "2026-08-17T21:01:00+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

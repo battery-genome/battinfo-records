@@ -5,14 +5,14 @@
     "short_id": "vczhm6",
     "cell_spec_id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/b1k0-3ht3-813y-edd0",
-    "name": "Si-AQ-1",
+    "name": "Si-AQ-1 cell 6d543b",
     "serial_number": "6d543b",
     "batch_id": "Si-AQ-1",
     "manufactured_at": 1743811200
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

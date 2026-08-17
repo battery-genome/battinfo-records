@@ -5,7 +5,6 @@
     "short_id": "tcqbq9",
     "name": "LNMO electrode, aqueous processed (IntelLiGent batch 1, SINTEF)",
     "kind": "lnmo",
-    "polarity": "positive",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
     "description": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label LNMO-AQ-1. Active-material type as stated in metadata.csv: \"LNMO\".",
     "coating": {
@@ -65,7 +64,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994908,
+    "retrieved_at": 1787000428,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

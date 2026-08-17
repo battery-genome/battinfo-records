@@ -5,14 +5,14 @@
     "short_id": "3dgx4x",
     "cell_spec_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/dzz9-etft-nqtk-8hc7",
-    "name": "LFP-NMP-1",
+    "name": "LFP-NMP-1 cell 182031",
     "serial_number": "182031",
     "batch_id": "LFP-NMP-1",
     "manufactured_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

@@ -5,7 +5,6 @@
     "short_id": "h173js",
     "name": "NMC111 electrode, NMP processed (commercial, Customcells)",
     "kind": "nmc111",
-    "polarity": "positive",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/j17h-6vp8-jcat-pmq1",
     "description": "LiNi0.33Mn0.33Co0.33O2 (commercial electrode). Electrode design of the commercial electrode supplied by Customcells, published under the label NMC111-NMP-1. Active-material type as stated in metadata.csv: \"NMC111\".",
     "coating": {
@@ -60,7 +59,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994908,
+    "retrieved_at": 1787000428,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

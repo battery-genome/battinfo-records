@@ -5,7 +5,7 @@
     "short_id": "5xnng8",
     "identifier": "dataset:5xnn-g8vy-66yh-8mg3",
     "name": "SiGr-AQ-1 cell 175ef2 GITT half-cell OCV (BDF)",
-    "description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 175ef2, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-175ef2__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 175ef2, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-175ef2__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
@@ -21,6 +21,7 @@
     "citations": [
       {
         "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
         "url": "https://doi.org/10.5281/zenodo.20086298",
         "doi": "10.5281/zenodo.20086298",
         "citation_key": "flores2026ocv"
@@ -74,6 +75,9 @@
       "https://w3id.org/battinfo/cell/4cgs-mebe-vkjg-7d44",
       "https://w3id.org/battinfo/test/qmed-01dv-t71e-2gyk"
     ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
     "distributions": [
       {
         "type": "DataDownload",
@@ -107,10 +111,12 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994926,
+    "retrieved_at": 1787000460,
     "battinfo_version": "0.7.0"
   },
+  "notes": [
+    "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
+  ],
   "funding": {
     "type": "Grant",
     "identifier": "101069765",

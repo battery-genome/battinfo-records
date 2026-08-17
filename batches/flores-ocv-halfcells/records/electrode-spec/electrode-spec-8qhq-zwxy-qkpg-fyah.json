@@ -5,7 +5,6 @@
     "short_id": "8qhqzw",
     "name": "Silicon-graphite electrode, aqueous processed, higher Si % (IntelLiGent batch 2, SINTEF)",
     "kind": "silicon_graphite",
-    "polarity": "negative",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
     "description": "Higher Si % silicon-graphite composite (aqueous processed). Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label SiGr-AQ-2. Active-material type as stated in metadata.csv: \"Silicon Graphite\".",
     "coating": {
@@ -69,7 +68,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994908,
+    "retrieved_at": 1787000428,
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

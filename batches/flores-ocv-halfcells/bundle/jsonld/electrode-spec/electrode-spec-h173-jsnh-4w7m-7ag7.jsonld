@@ -8,10 +8,7 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@type": [
-    "LithiumNickelManganeseCobaltOxideElectrode",
-    "PositiveElectrode"
-  ],
+  "@type": "LithiumNickelManganeseCobaltOxideElectrode",
   "hasCoating": {
     "@type": "ElectrodeCoating",
     "hasActiveMaterial": {

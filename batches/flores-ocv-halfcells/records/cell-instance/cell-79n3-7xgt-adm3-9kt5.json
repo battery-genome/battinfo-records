@@ -5,14 +5,14 @@
     "short_id": "79n37x",
     "cell_spec_id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/a68m-fztn-790r-vd0y",
-    "name": "LNMO-AQ-2",
+    "name": "LNMO-AQ-2 cell 0820fa",
     "serial_number": "0820fa",
     "batch_id": "LNMO-AQ-2",
     "manufactured_at": 1745452800
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

@@ -44,6 +44,28 @@ first-class electrode model (#342). What v4 changes:
       holder describes them, which is the honest level for a component the study
       treats as interchangeable.
 
+V4.1 is a content patch on top of that build, from the review of the staged corpus.
+Four things changed and nothing was re-modelled:
+
+  B3  No `polarity` on the twelve electrode specs. battinfo derives it from the
+      kind's family, and derived or not it contradicts both the half-cell ruling
+      (D2, no sides to name) and this batch's own voltage convention, in which a
+      "negative" graphite design charges to 1.00 V vs Li/Li+.
+  B5  Cell names carry the serial: "LNMO-NMP-2 cell 2f9459", the way the disc, the
+      test and the dataset are already named. Ninety-five cells sharing twelve
+      batch names made a browse listing unreadable. Display text only - identity
+      is the (spec, serial) seed and no IRI moves.
+  B1  The eleven known issues reach the DATASET, not only the test's conformance
+      block: a `Known issue: ...` prefix on the description (which the JSON-LD
+      emitter carries) and the full statement in the record's notes. Somebody
+      downloading the parquet now learns that "Cell failed at the end of 1st cycle"
+      means one usable cycle where the protocol specifies five.
+  S5  The Zenodo DOI leaves `provenance.citation`. It stays in the three slots that
+      mean self-reference (`access_url`, `same_as`, `is_based_on`) and as the typed
+      `kind: "dataset"` self-citation, but the untyped provenance citation is the
+      field the platform renders as "Peer-reviewed papers this dataset supports",
+      and a dataset cannot be the paper it supports.
+
 Everything that survived rounds 1-3 stands: electrodes named by ROLE, not polarity
 (D2); `cell_configuration = half_cell`; one cell spec per electrode design (D1);
 the rounding rule (D5); and the license, funding and nine-contributor attribution
@@ -71,8 +93,8 @@ Records authored (one published Zenodo dataset -> per-test granularity):
   * 95 electrodes       (the DISC inside each cell, with its as-built figures - R4)
   * 12 cell specs       (R2032 coin half-cells, cell_configuration = half_cell,
                          one per electrode design - D1)
-  * 95 cell instances   (one per parquet; serial = 6-char id, name = public label,
-                         each linking its working-electrode disc - R5)
+  * 95 cell instances   (one per parquet; serial = 6-char id, name = "<label> cell
+                         <serial>" - B5, each linking its working-electrode disc - R5)
   * 4  test protocols   (p-OCV, p-OCV hold, GITT, GITT hold; structured EMMO method)
   * 95 tests            (cell x protocol; 11 known issues -> conformance)
   * 95 datasets         (each references the published Zenodo parquet + md5 + size,
@@ -167,7 +189,11 @@ from pathlib import Path
 import battinfo as B
 from battinfo.authoring import bom, electrode, material, properties
 from battinfo.bundle import ChecksumInfo
-from battinfo.entities import electrode_identity_seed, stable_uid
+from battinfo.entities import (
+    cell_instance_identity_seed,
+    electrode_identity_seed,
+    stable_uid,
+)
 from battinfo.metadata import checksum, distribution, measured_variable
 
 HERE = Path(__file__).resolve().parent
@@ -714,6 +740,31 @@ def deviation_for(issue: str) -> dict:
     return {"category": category, "description": issue}
 
 
+def known_issue_note(issue: str) -> str:
+    """The dataset-level statement of a known issue (B1).
+
+    A known issue is a fact about the DATA, not only about the run that produced
+    it. v4 carried it on the test record's `conformance` block alone, so somebody
+    who reached the dataset page, or downloaded the parquet from Zenodo, got no
+    warning at all - "Cell failed at the end of 1st cycle" means one usable cycle
+    where the protocol specifies five, and that is exactly what a consumer of the
+    file needs to know first. The same sentence now rides the dataset: as a
+    `Known issue:` prefix on the description, which is the one field the JSON-LD
+    emitter carries into `dcterms:description` / `schema:description`, and in
+    full here, in the record's notes.
+    """
+    category = deviation_for(issue)["category"]
+    text = (
+        f"Known issue reported by the source for this measurement: {issue}. The test "
+        f"record that produced this file states it as a conformance deviation "
+        f"(status non-conformant, category {category}); it is repeated here so the "
+        f"warning travels with the data rather than only with the test.")
+    if category == "premature_termination":
+        text += (" The protocol specifies 5 cycles and this run did not finish them, "
+                 "so the file holds fewer cycles than the protocol describes.")
+    return text
+
+
 C50 = {"c_rate": q(0.02, "A/Ah")}
 
 
@@ -1059,7 +1110,20 @@ def main() -> int:
                 f"through the material spec: no field on an electrode spec or an "
                 f"electrode record points at a material INSTANCE (gap E8).")
         fields["notes"] = notes
-        electrode_spec_by_label[label] = ws.add("electrode_spec", **fields)[0]
+        record = ws.add("electrode_spec", **fields)[0]
+        # B3 (D2). battinfo derives `polarity` from the kind's family, so an anode
+        # kind writes "negative" and a cathode kind "positive" without anyone
+        # authoring either. This corpus drops the field. It is a sound field in the
+        # model - a design's intended full-cell side is a real fact for a design
+        # that has one - but it is not a fact THIS source states, and here it says
+        # two wrong things at once: it re-introduces the polarity language D2 removed
+        # from every other record in the batch, and it contradicts the batch's own
+        # voltage convention, in which a "negative" graphite design is charged to
+        # 1.00 V vs Li/Li+. Nothing else is lost: the JSON-LD emitter resolves the
+        # chemistry class (GraphiteElectrode, SiliconGraphiteElectrode, ...) from
+        # `kind` alone, and only the Positive/NegativeElectrode class drops out.
+        record["electrode_spec"].pop("polarity", None)
+        electrode_spec_by_label[label] = record
 
     # --- 3. Electrodes: the disc inside each cell (R4) ---------------------------
     # One electrode record per cell, 95 of them: the working-electrode disc that was
@@ -1221,6 +1285,13 @@ def main() -> int:
         ]
         spec_by_key[(kind, src, label)] = cs
 
+    # The cell identities are pinned (see the cell-instance block below) and the seed
+    # they are pinned to contains the cell-spec IRI - which battinfo mints at save
+    # time, not at ws.load(). So the specs are saved here, before the cells are added,
+    # instead of only once at step 8. ws.save() is an upsert: the second call re-saves
+    # them unchanged and writes nothing.
+    ws.save(validation_policy="strict")
+
     # --- 5. Cell instances: one per published parquet ---------------------------
     print("\n== cell instances ==")
     cell_by_hex: dict[str, object] = {}
@@ -1231,16 +1302,44 @@ def main() -> int:
     for r in rows:
         groups[(r["kind"], r["src"], r["label"], r["date"])].append(r)
     for (kind, src, label, date), items in sorted(groups.items()):
+        # B5. The name carries the serial, the way the disc, the test and the dataset
+        # already name themselves: "LNMO-NMP-2 cell 2f9459". Naming all 95 cells after
+        # their batch gave twelve names for ninety-five records and made a browse
+        # listing unreadable - eight indistinguishable "LNMO-NMP-2" rows.
+        #
+        # IDENTITY IS PINNED, and it has to be. ws.add("cell", ...) documents the name
+        # as display text several cells of a batch may share and the serial as the
+        # identity, but `entities.cell_instance_identity_seed` folds the name into the
+        # seed whenever one is set (``label = name or serial_number or batch_id``).
+        # Renaming for display would therefore re-mint all 95 cell IRIs, and with them
+        # the 95 test and 95 dataset IRIs seeded from the cells - 285 identifiers, 95 of
+        # them live and RETAINED from v1, moved by a change of display text. So the
+        # published identity is passed explicitly through `iris=`: the uid the published
+        # seed produces, computed here with battinfo's own primitives rather than
+        # hand-numbered, exactly as the discs are. Upstream note: the seed should prefer
+        # the serial over display text when a serial is given, which is what its own
+        # docstring promises.
+        spec_obj = spec_by_key[(kind, src, label)]
+        spec_id = getattr(spec_obj, "id", None)
+        if not spec_id:
+            raise RuntimeError(
+                f"cell spec {label} has no IRI yet; cannot pin the cell identities.")
+        pinned = [
+            "https://w3id.org/battinfo/cell/" + stable_uid(cell_instance_identity_seed(
+                cell_spec_id=spec_id, serial_number=i["hex"], batch_id=label, name=label))
+            for i in items
+        ]
         cells = ws.add(
             "cell",
-            spec=spec_by_key[(kind, src, label)],
+            spec=spec_obj,
+            names=[f"{label} cell {i['hex']}" for i in items],
             serial_numbers=[i["hex"] for i in items],
+            iris=pinned,
             production_date=yyyymmdd(date),
         )
         for cell, item in zip(cells, items):
-            # The public label is the electrode batch this cell was built from, and
-            # is also the batch_id of the disc inside it.
-            cell.name = label
+            # The batch label stays on `batch_id`, which is the field that joins a cell
+            # to its batch and to the disc inside it.
             cell.batch_id = label
             # R5 (BattINFO#346): the cell points at the disc physically inside it.
             # This is the join that v3 could only make by matching batch labels
@@ -1388,13 +1487,20 @@ def main() -> int:
         profile_dist = profile_distribution(r["file"])
         if profile_dist is not None:
             dists.append(profile_dist)
+        # B1: the eleven runs with a known issue say so on the dataset too. The
+        # prefix goes first because the description is what a search result, a
+        # dataset page and `schema:description` all show, and a warning at the end
+        # of a paragraph about file formats is a warning nobody reads.
+        issue = r["issue"]
         dataset = B.Dataset(
             name=dataset_title(r),
             description=(
+                (f"Known issue: {issue}. " if issue else "") +
                 f"Half-cell OCV electrochemical time series for {r['label']} coin cell "
                 f"{r['hex']}, measured with the {p['name']} protocol at room temperature. "
                 f"Apache Parquet in Battery Data Format (BDF). File "
                 f"{r['file']} of Zenodo record {DOI}."),
+            notes=[known_issue_note(issue)] if issue else None,
             license="cc-by-4.0",
             data_format=PARQUET_MEDIA,
             access_url=DOI_URL,
@@ -1410,10 +1516,29 @@ def main() -> int:
             measurement_techniques=[p["technique"]],
             keywords=["open circuit voltage", "OCV", "half-cell", "GITT", "quasi-OCV",
                       r["kind"].replace("_", "-")],
-            citations=[{"kind": "dataset", "doi": DOI, "url": DOI_URL,
-                        "citation_key": "flores2026ocv"}],
+            # S5. The Zenodo DOI is this dataset's OWN archive DOI, and every slot
+            # it sits in has to mean self-reference. Three do: `access_url` (where
+            # the file lives), `same_as` (the archived representation of this same
+            # dataset) and `is_based_on` (this record describes one file of that
+            # deposit). The typed self-citation stays too - `kind: "dataset"` is the
+            # model's way of saying "cite the deposit", and the registry derives the
+            # dataset's DOI from it.
+            #
+            # `provenance.citation` is the one that had to go. It means "a citable
+            # reference for this record", it is a bare string with no kind, and the
+            # platform reads exactly that field - see platform lib/dataset-citations.ts,
+            # which skips citations typed `dataset` and then treats an untyped
+            # provenance citation as an article - into the panel headed "Peer-reviewed
+            # papers this dataset supports". The Zenodo record is data, has no
+            # companion paper, and a dataset listed as the paper it supports is a
+            # circular claim. `provenance.url` still carries the DOI, so the source
+            # link and `prov:hadPrimarySource` are unchanged.
+            citations=[{"kind": "dataset", "name": "Flores et al., half-cell OCV dataset "
+                                                   "(Zenodo record)",
+                        "doi": DOI, "url": DOI_URL, "citation_key": "flores2026ocv"}],
             same_as=[DOI_URL],
-            source=B.ProvenanceInfo(type="measurement", url=DOI_URL, citation=DOI_URL),
+            is_based_on=[DOI_URL],
+            source=B.ProvenanceInfo(type="measurement", url=DOI_URL),
         )
         saved = B.save_dataset(
             dataset, source_root=RECORDS_ROOT, mode="upsert",

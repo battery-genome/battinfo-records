@@ -4501,7 +4501,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Cell failed at the end of 1st cycle. Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell ee5c27, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-ee5c27__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -4637,7 +4637,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Cell failed at the end of 1st cycle. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -6454,7 +6455,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell 85cad7, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-85cad7__20250720__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Cycling stopped unexpectedly during cycle 2. Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell 85cad7, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-85cad7__20250720__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -6590,7 +6591,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. Cycling stopped unexpectedly during cycle 2. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -8841,7 +8843,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 175ef2, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-175ef2__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 175ef2, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-175ef2__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -8977,7 +8979,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
     },
     {
       "@type": [
@@ -9709,7 +9712,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for NMC532-NMP-1 coin cell 1765db, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc532-R2032-gelon-1765db__20250706__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for NMC532-NMP-1 coin cell 1765db, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc532-R2032-gelon-1765db__20250706__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -9845,7 +9848,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
     },
     {
       "@type": [
@@ -12096,7 +12100,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell f46602, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-f46602__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Cell failed during the 2nd cycle. Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell f46602, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-f46602__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -12232,7 +12236,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Cell failed during the 2nd cycle. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -12747,7 +12752,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell fa5db1, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell fa5db1, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -12883,7 +12888,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
     },
     {
       "@type": [
@@ -15351,7 +15357,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -15487,7 +15493,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
     },
     {
       "@type": [
@@ -15785,7 +15792,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell 000b13, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-000b13__20250720__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Cycling stopped unexpectedly during cycle 4. Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell 000b13, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-000b13__20250720__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -15921,7 +15928,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Cycling stopped unexpectedly during cycle 4. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -16870,7 +16878,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell b3d963, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-b3d963__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Cell failed at end of 3rd cycle. Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell b3d963, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-b3d963__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -17006,7 +17014,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Cell failed at end of 3rd cycle. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -19474,7 +19483,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell e5a00e, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-e5a00e__20251015__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Cycling stopped unexpectedly during cycle 4. Half-cell OCV electrochemical time series for NMC111-NMP-1 coin cell e5a00e, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc111-R2032-customcells-e5a00e__20251015__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -19610,7 +19619,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Cycling stopped unexpectedly during cycle 4. The test record that produced this file states it as a conformance deviation (status non-conformant, category premature_termination); it is repeated here so the warning travels with the data rather than only with the test. The protocol specifies 5 cycles and this run did not finish them, so the file holds fewer cycles than the protocol describes."
     },
     {
       "@type": [
@@ -21644,7 +21654,7 @@
       "dcterms:isPartOf": {
         "@id": "https://zenodo.org/records/RECORD_ID"
       },
-      "schema:description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell e5b4f3, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-e5b4f3__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+      "schema:description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell e5b4f3, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-e5b4f3__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
       "schema:url": "https://doi.org/10.5281/zenodo.20086298",
       "schema:license": "cc-by-4.0",
       "schema:creator": [
@@ -21780,7 +21790,8 @@
           "@type": "schema:Organization",
           "schema:name": "European Commission"
         }
-      }
+      },
+      "schema:comment": "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
     },
     {
       "@type": [
@@ -26746,7 +26757,7 @@
         "@id": "https://w3id.org/battinfo/electrode/azx7-8sk3-pk5b-e0rf",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 6852ff",
       "schema:serialNumber": "6852ff",
       "schema:productionDate": {
         "@value": "2025-07-20",
@@ -26774,7 +26785,7 @@
         "@id": "https://w3id.org/battinfo/electrode/5s68-dd15-6d1x-vszm",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 02fb2b",
       "schema:serialNumber": "02fb2b",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -26802,7 +26813,7 @@
         "@id": "https://w3id.org/battinfo/electrode/n7fd-yezs-b1bh-bjyp",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell ee86d1",
       "schema:serialNumber": "ee86d1",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -26830,7 +26841,7 @@
         "@id": "https://w3id.org/battinfo/electrode/4jjf-gnyy-99e7-m0cq",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 3ac228",
       "schema:serialNumber": "3ac228",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -26858,7 +26869,7 @@
         "@id": "https://w3id.org/battinfo/electrode/zrnt-1d0x-yp4z-vcnr",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 70e745",
       "schema:serialNumber": "70e745",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -26886,7 +26897,7 @@
         "@id": "https://w3id.org/battinfo/electrode/7kgv-mbf8-dkfp-sn52",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell e5b4f3",
       "schema:serialNumber": "e5b4f3",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -26914,7 +26925,7 @@
         "@id": "https://w3id.org/battinfo/electrode/yj9f-7yx7-7k2h-t68p",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell e5a00e",
       "schema:serialNumber": "e5a00e",
       "schema:productionDate": {
         "@value": "2025-10-15",
@@ -26942,7 +26953,7 @@
         "@id": "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 882755",
       "schema:serialNumber": "882755",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -26970,7 +26981,7 @@
         "@id": "https://w3id.org/battinfo/electrode/d248-nszb-8cs3-r26a",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell f46602",
       "schema:serialNumber": "f46602",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -26998,7 +27009,7 @@
         "@id": "https://w3id.org/battinfo/electrode/8yq8-3w4f-4yqq-n60c",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell 7202c5",
       "schema:serialNumber": "7202c5",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -27026,7 +27037,7 @@
         "@id": "https://w3id.org/battinfo/electrode/erk4-6fzn-x4xw-qzbn",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell a29c1f",
       "schema:serialNumber": "a29c1f",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -27054,7 +27065,7 @@
         "@id": "https://w3id.org/battinfo/electrode/bnq2-gprs-epar-gxer",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell e0dd5f",
       "schema:serialNumber": "e0dd5f",
       "schema:productionDate": {
         "@value": "2025-07-20",
@@ -27082,7 +27093,7 @@
         "@id": "https://w3id.org/battinfo/electrode/dzz9-etft-nqtk-8hc7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell 182031",
       "schema:serialNumber": "182031",
       "schema:productionDate": {
         "@value": "2025-06-07",
@@ -27110,7 +27121,7 @@
         "@id": "https://w3id.org/battinfo/electrode/6q06-7vr7-4e17-w6qh",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell b26620",
       "schema:serialNumber": "b26620",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -27138,7 +27149,7 @@
         "@id": "https://w3id.org/battinfo/electrode/dsfm-57wj-1dez-08ax",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell 084a1b",
       "schema:serialNumber": "084a1b",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -27166,7 +27177,7 @@
         "@id": "https://w3id.org/battinfo/electrode/xgz1-yfgs-sd7a-zqmb",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 175ef2",
       "schema:serialNumber": "175ef2",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -27194,7 +27205,7 @@
         "@id": "https://w3id.org/battinfo/electrode/kz6f-3sh8-7t80-bkex",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 1c492a",
       "schema:serialNumber": "1c492a",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -27222,7 +27233,7 @@
         "@id": "https://w3id.org/battinfo/electrode/n8w9-xqw0-h9pf-xn3n",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 9d3ce5",
       "schema:serialNumber": "9d3ce5",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27250,7 +27261,7 @@
         "@id": "https://w3id.org/battinfo/electrode/13fk-z6mq-7ny2-jtjx",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 44efc9",
       "schema:serialNumber": "44efc9",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27278,7 +27289,7 @@
         "@id": "https://w3id.org/battinfo/electrode/22kx-s350-rbe7-1k8g",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell 86f18a",
       "schema:serialNumber": "86f18a",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -27306,7 +27317,7 @@
         "@id": "https://w3id.org/battinfo/electrode/6260-63kr-y5av-5ehs",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell 31c548",
       "schema:serialNumber": "31c548",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27334,7 +27345,7 @@
         "@id": "https://w3id.org/battinfo/electrode/0x40-88rw-m941-n8hw",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell b89ab5",
       "schema:serialNumber": "b89ab5",
       "schema:productionDate": {
         "@value": "2025-06-07",
@@ -27362,7 +27373,7 @@
         "@id": "https://w3id.org/battinfo/electrode/a68m-fztn-790r-vd0y",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell 0820fa",
       "schema:serialNumber": "0820fa",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -27390,7 +27401,7 @@
         "@id": "https://w3id.org/battinfo/electrode/p8jg-mc46-xs2v-njcj",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell eef2ba",
       "schema:serialNumber": "eef2ba",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -27418,7 +27429,7 @@
         "@id": "https://w3id.org/battinfo/electrode/6nvf-6ff6-2yqk-86zj",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 274e5a",
       "schema:serialNumber": "274e5a",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -27446,7 +27457,7 @@
         "@id": "https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell 4fc673",
       "schema:serialNumber": "4fc673",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27474,7 +27485,7 @@
         "@id": "https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 711dc8",
       "schema:serialNumber": "711dc8",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27502,7 +27513,7 @@
         "@id": "https://w3id.org/battinfo/electrode/dbws-fec9-qqrj-14nh",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell fbeeaf",
       "schema:serialNumber": "fbeeaf",
       "schema:productionDate": {
         "@value": "2025-06-07",
@@ -27530,7 +27541,7 @@
         "@id": "https://w3id.org/battinfo/electrode/b5mg-gmyy-t0rd-002k",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 9973ad",
       "schema:serialNumber": "9973ad",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27558,7 +27569,7 @@
         "@id": "https://w3id.org/battinfo/electrode/wegr-p3w2-nbvr-m4rt",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 876812",
       "schema:serialNumber": "876812",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27586,7 +27597,7 @@
         "@id": "https://w3id.org/battinfo/electrode/1b6x-k9a8-tp8f-m8pz",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 328a71",
       "schema:serialNumber": "328a71",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27614,7 +27625,7 @@
         "@id": "https://w3id.org/battinfo/electrode/jt0s-n8a1-cw2h-a1gv",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell 8eb80b",
       "schema:serialNumber": "8eb80b",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -27642,7 +27653,7 @@
         "@id": "https://w3id.org/battinfo/electrode/1hdp-2phw-xgfy-wpj7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 6115bb",
       "schema:serialNumber": "6115bb",
       "schema:productionDate": {
         "@value": "2025-07-20",
@@ -27670,7 +27681,7 @@
         "@id": "https://w3id.org/battinfo/electrode/543r-38v9-8s4z-myhf",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 21a280",
       "schema:serialNumber": "21a280",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -27698,7 +27709,7 @@
         "@id": "https://w3id.org/battinfo/electrode/s0kq-mvnx-z5gz-y0zy",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 677295",
       "schema:serialNumber": "677295",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -27726,7 +27737,7 @@
         "@id": "https://w3id.org/battinfo/electrode/8hzz-44ms-p19s-d1q0",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell f4569b",
       "schema:serialNumber": "f4569b",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -27754,7 +27765,7 @@
         "@id": "https://w3id.org/battinfo/electrode/est8-zf7g-4q28-ya4e",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 91618e",
       "schema:serialNumber": "91618e",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -27782,7 +27793,7 @@
         "@id": "https://w3id.org/battinfo/electrode/9x20-m2gm-h96g-eehj",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell f0ee8d",
       "schema:serialNumber": "f0ee8d",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -27810,7 +27821,7 @@
         "@id": "https://w3id.org/battinfo/electrode/2h76-t1mk-r035-1y4s",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 3f39a2",
       "schema:serialNumber": "3f39a2",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -27838,7 +27849,7 @@
         "@id": "https://w3id.org/battinfo/electrode/fvns-gfgv-t5ag-bqj4",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 000b13",
       "schema:serialNumber": "000b13",
       "schema:productionDate": {
         "@value": "2025-07-20",
@@ -27866,7 +27877,7 @@
         "@id": "https://w3id.org/battinfo/electrode/nwjv-e6p3-ae1k-5kk9",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell 59ceaa",
       "schema:serialNumber": "59ceaa",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -27894,7 +27905,7 @@
         "@id": "https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell ee5c27",
       "schema:serialNumber": "ee5c27",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27922,7 +27933,7 @@
         "@id": "https://w3id.org/battinfo/electrode/cwhe-wgmr-yv9v-z6x4",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell a39225",
       "schema:serialNumber": "a39225",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -27950,7 +27961,7 @@
         "@id": "https://w3id.org/battinfo/electrode/2s51-gz34-8rg4-6bmw",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell ab7297",
       "schema:serialNumber": "ab7297",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -27978,7 +27989,7 @@
         "@id": "https://w3id.org/battinfo/electrode/m0v0-q8qv-vazm-9rjv",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell 6dce02",
       "schema:serialNumber": "6dce02",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28006,7 +28017,7 @@
         "@id": "https://w3id.org/battinfo/electrode/3gm7-62w2-kgvp-czm7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell fb8cf6",
       "schema:serialNumber": "fb8cf6",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28034,7 +28045,7 @@
         "@id": "https://w3id.org/battinfo/electrode/8dd2-g4ws-tvfn-g381",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell b3d963",
       "schema:serialNumber": "b3d963",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28062,7 +28073,7 @@
         "@id": "https://w3id.org/battinfo/electrode/87nn-abck-v81q-dtgp",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell 2bac5c",
       "schema:serialNumber": "2bac5c",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28090,7 +28101,7 @@
         "@id": "https://w3id.org/battinfo/electrode/smvj-yrcm-2q73-yzjr",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 2373d9",
       "schema:serialNumber": "2373d9",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28118,7 +28129,7 @@
         "@id": "https://w3id.org/battinfo/electrode/bbvy-zkat-6gex-41d2",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell 655454",
       "schema:serialNumber": "655454",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28146,7 +28157,7 @@
         "@id": "https://w3id.org/battinfo/electrode/gbk8-hhyj-738z-zw5k",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 4ccc47",
       "schema:serialNumber": "4ccc47",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28174,7 +28185,7 @@
         "@id": "https://w3id.org/battinfo/electrode/2q1f-h3wt-f8az-nz32",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell da05ba",
       "schema:serialNumber": "da05ba",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -28202,7 +28213,7 @@
         "@id": "https://w3id.org/battinfo/electrode/r3sx-ent3-5qj4-mvbq",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell e8f570",
       "schema:serialNumber": "e8f570",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -28230,7 +28241,7 @@
         "@id": "https://w3id.org/battinfo/electrode/4xba-sfp0-6rpb-q2nn",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 063b77",
       "schema:serialNumber": "063b77",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28258,7 +28269,7 @@
         "@id": "https://w3id.org/battinfo/electrode/hace-e1dy-wc0v-qvcr",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 1765db",
       "schema:serialNumber": "1765db",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -28286,7 +28297,7 @@
         "@id": "https://w3id.org/battinfo/electrode/3t11-xe0x-tbyq-12m4",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 979353",
       "schema:serialNumber": "979353",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -28314,7 +28325,7 @@
         "@id": "https://w3id.org/battinfo/electrode/2qpf-4s4p-vtpb-h871",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell f5dd84",
       "schema:serialNumber": "f5dd84",
       "schema:productionDate": {
         "@value": "2025-06-07",
@@ -28342,7 +28353,7 @@
         "@id": "https://w3id.org/battinfo/electrode/7j7v-5354-6sr2-3msa",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell 0d30d4",
       "schema:serialNumber": "0d30d4",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -28370,7 +28381,7 @@
         "@id": "https://w3id.org/battinfo/electrode/gcad-s3as-j3ek-67hg",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell e030cf",
       "schema:serialNumber": "e030cf",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -28398,7 +28409,7 @@
         "@id": "https://w3id.org/battinfo/electrode/nt2n-0531-wsce-7s21",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell 0cf06a",
       "schema:serialNumber": "0cf06a",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -28426,7 +28437,7 @@
         "@id": "https://w3id.org/battinfo/electrode/y56y-r3j8-564x-96pw",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell 7c22c4",
       "schema:serialNumber": "7c22c4",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28454,7 +28465,7 @@
         "@id": "https://w3id.org/battinfo/electrode/swv5-9wmw-txnr-6jt7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell c04965",
       "schema:serialNumber": "c04965",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28482,7 +28493,7 @@
         "@id": "https://w3id.org/battinfo/electrode/wr5p-wtf6-cbw7-47wz",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell f9bf3e",
       "schema:serialNumber": "f9bf3e",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28510,7 +28521,7 @@
         "@id": "https://w3id.org/battinfo/electrode/ejja-98qb-y942-cjfc",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC532-NMP-1",
+      "schema:name": "NMC532-NMP-1 cell 2a2be3",
       "schema:serialNumber": "2a2be3",
       "schema:productionDate": {
         "@value": "2025-06-07",
@@ -28538,7 +28549,7 @@
         "@id": "https://w3id.org/battinfo/electrode/3qt5-rztq-1f2p-r3yq",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell 244221",
       "schema:serialNumber": "244221",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -28566,7 +28577,7 @@
         "@id": "https://w3id.org/battinfo/electrode/vsq9-kn33-9s3a-46k1",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 5f45a8",
       "schema:serialNumber": "5f45a8",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -28594,7 +28605,7 @@
         "@id": "https://w3id.org/battinfo/electrode/wh2q-793v-were-qkht",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell f6ce67",
       "schema:serialNumber": "f6ce67",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28622,7 +28633,7 @@
         "@id": "https://w3id.org/battinfo/electrode/hxx5-82qp-ayxj-k8rx",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 6cf259",
       "schema:serialNumber": "6cf259",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28650,7 +28661,7 @@
         "@id": "https://w3id.org/battinfo/electrode/6wqn-55sx-57yx-8tw1",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Gr-AQ-1",
+      "schema:name": "Gr-AQ-1 cell 1d5628",
       "schema:serialNumber": "1d5628",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -28678,7 +28689,7 @@
         "@id": "https://w3id.org/battinfo/electrode/ebe7-4rks-x35n-cnf6",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell 2b6be3",
       "schema:serialNumber": "2b6be3",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28706,7 +28717,7 @@
         "@id": "https://w3id.org/battinfo/electrode/5e2j-71pp-z03r-r8pb",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell e43ac0",
       "schema:serialNumber": "e43ac0",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28734,7 +28745,7 @@
         "@id": "https://w3id.org/battinfo/electrode/dy69-yxdm-5j0n-8px7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell b4f90b",
       "schema:serialNumber": "b4f90b",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28762,7 +28773,7 @@
         "@id": "https://w3id.org/battinfo/electrode/mbp2-j4bd-sxz4-ejgx",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell 32a68c",
       "schema:serialNumber": "32a68c",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28790,7 +28801,7 @@
         "@id": "https://w3id.org/battinfo/electrode/p49y-2r8m-mp8d-qagg",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-2",
+      "schema:name": "LNMO-AQ-2 cell 38f87f",
       "schema:serialNumber": "38f87f",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28818,7 +28829,7 @@
         "@id": "https://w3id.org/battinfo/electrode/409v-s9c5-adwp-yee8",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-1",
+      "schema:name": "SiGr-AQ-1 cell bdb7bc",
       "schema:serialNumber": "bdb7bc",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28846,7 +28857,7 @@
         "@id": "https://w3id.org/battinfo/electrode/twbh-gsrr-2vva-43j2",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell d11721",
       "schema:serialNumber": "d11721",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28874,7 +28885,7 @@
         "@id": "https://w3id.org/battinfo/electrode/16jn-76y3-8mg4-kyyv",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 70cc5b",
       "schema:serialNumber": "70cc5b",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -28902,7 +28913,7 @@
         "@id": "https://w3id.org/battinfo/electrode/29z1-18sm-yj10-927x",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 1e88d8",
       "schema:serialNumber": "1e88d8",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -28930,7 +28941,7 @@
         "@id": "https://w3id.org/battinfo/electrode/pen0-jqyp-s00d-prm7",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-1",
+      "schema:name": "LNMO-NMP-1 cell df0911",
       "schema:serialNumber": "df0911",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -28958,7 +28969,7 @@
         "@id": "https://w3id.org/battinfo/electrode/7r87-pzj3-6zp6-e62w",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell fd2719",
       "schema:serialNumber": "fd2719",
       "schema:productionDate": {
         "@value": "2025-05-14",
@@ -28986,7 +28997,7 @@
         "@id": "https://w3id.org/battinfo/electrode/b1k0-3ht3-813y-edd0",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 6d543b",
       "schema:serialNumber": "6d543b",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -29014,7 +29025,7 @@
         "@id": "https://w3id.org/battinfo/electrode/fb5x-vpfs-f5e4-xr0t",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell f2733d",
       "schema:serialNumber": "f2733d",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -29042,7 +29053,7 @@
         "@id": "https://w3id.org/battinfo/electrode/xtds-735k-e8d6-fpmy",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-3",
+      "schema:name": "SiGr-AQ-3 cell a39539",
       "schema:serialNumber": "a39539",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -29070,7 +29081,7 @@
         "@id": "https://w3id.org/battinfo/electrode/p98g-td9b-t8xr-3n58",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell d07eb6",
       "schema:serialNumber": "d07eb6",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -29098,7 +29109,7 @@
         "@id": "https://w3id.org/battinfo/electrode/mcrb-wcs5-f2pt-rd37",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 85cad7",
       "schema:serialNumber": "85cad7",
       "schema:productionDate": {
         "@value": "2025-07-20",
@@ -29126,7 +29137,7 @@
         "@id": "https://w3id.org/battinfo/electrode/0d9z-1b2m-9vcw-887z",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell fa5db1",
       "schema:serialNumber": "fa5db1",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -29154,7 +29165,7 @@
         "@id": "https://w3id.org/battinfo/electrode/m4fa-9333-h899-m4sx",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 2c4b6a",
       "schema:serialNumber": "2c4b6a",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -29182,7 +29193,7 @@
         "@id": "https://w3id.org/battinfo/electrode/z2tv-k7vw-6stv-h12y",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "Si-AQ-1",
+      "schema:name": "Si-AQ-1 cell 931301",
       "schema:serialNumber": "931301",
       "schema:productionDate": {
         "@value": "2025-04-05",
@@ -29210,7 +29221,7 @@
         "@id": "https://w3id.org/battinfo/electrode/gfa4-pb59-tgvn-psvs",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell 2f9459",
       "schema:serialNumber": "2f9459",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -29238,7 +29249,7 @@
         "@id": "https://w3id.org/battinfo/electrode/0mrb-h4x9-sxk8-3rah",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell 210cad",
       "schema:serialNumber": "210cad",
       "schema:productionDate": {
         "@value": "2025-05-28",
@@ -29266,7 +29277,7 @@
         "@id": "https://w3id.org/battinfo/electrode/javb-9pjp-sna1-7d19",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-AQ-1",
+      "schema:name": "LNMO-AQ-1 cell c89aa7",
       "schema:serialNumber": "c89aa7",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -29294,7 +29305,7 @@
         "@id": "https://w3id.org/battinfo/electrode/fcey-p1km-zvh8-17c1",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "NMC111-NMP-1",
+      "schema:name": "NMC111-NMP-1 cell 53acb0",
       "schema:serialNumber": "53acb0",
       "schema:productionDate": {
         "@value": "2025-06-25",
@@ -29322,7 +29333,7 @@
         "@id": "https://w3id.org/battinfo/electrode/8k63-wv21-4trq-5gdp",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "SiGr-AQ-2",
+      "schema:name": "SiGr-AQ-2 cell 61a57a",
       "schema:serialNumber": "61a57a",
       "schema:productionDate": {
         "@value": "2025-06-02",
@@ -29350,7 +29361,7 @@
         "@id": "https://w3id.org/battinfo/electrode/3vkc-jz8e-m092-3e7p",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LFP-NMP-1",
+      "schema:name": "LFP-NMP-1 cell 178617",
       "schema:serialNumber": "178617",
       "schema:productionDate": {
         "@value": "2025-07-06",
@@ -29378,7 +29389,7 @@
         "@id": "https://w3id.org/battinfo/electrode/rmsq-pcpb-e8f1-bht6",
         "@type": "WorkingElectrode"
       },
-      "schema:name": "LNMO-NMP-2",
+      "schema:name": "LNMO-NMP-2 cell dd8a76",
       "schema:serialNumber": "dd8a76",
       "schema:productionDate": {
         "@value": "2025-04-24",
@@ -29404,8 +29415,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-1",
-      "rdfs:label": "GITT hold — SiGr-AQ-1",
+      "schema:name": "GITT hold — SiGr-AQ-1 cell 02fb2b",
+      "rdfs:label": "GITT hold — SiGr-AQ-1 cell 02fb2b",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -29429,8 +29440,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-3",
-      "rdfs:label": "GITT hold — SiGr-AQ-3",
+      "schema:name": "GITT hold — SiGr-AQ-3 cell 0d30d4",
+      "rdfs:label": "GITT hold — SiGr-AQ-3 cell 0d30d4",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -29454,8 +29465,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — Si-AQ-1",
-      "rdfs:label": "p-OCV — Si-AQ-1",
+      "schema:name": "p-OCV — Si-AQ-1 cell 931301",
+      "rdfs:label": "p-OCV — Si-AQ-1 cell 931301",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -29479,8 +29490,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — NMC111-NMP-1",
-      "rdfs:label": "GITT — NMC111-NMP-1",
+      "schema:name": "GITT — NMC111-NMP-1 cell e5a00e",
+      "rdfs:label": "GITT — NMC111-NMP-1 cell e5a00e",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-10-15T00:00:00Z",
@@ -29523,8 +29534,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-NMP-1",
-      "rdfs:label": "p-OCV — LNMO-NMP-1",
+      "schema:name": "p-OCV — LNMO-NMP-1 cell 59ceaa",
+      "rdfs:label": "p-OCV — LNMO-NMP-1 cell 59ceaa",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -29548,8 +29559,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LFP-NMP-1",
-      "rdfs:label": "GITT — LFP-NMP-1",
+      "schema:name": "GITT — LFP-NMP-1 cell b89ab5",
+      "rdfs:label": "GITT — LFP-NMP-1 cell b89ab5",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-07T00:00:00Z",
@@ -29573,8 +29584,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-1",
-      "rdfs:label": "GITT hold — SiGr-AQ-1",
+      "schema:name": "GITT hold — SiGr-AQ-1 cell bdb7bc",
+      "rdfs:label": "GITT hold — SiGr-AQ-1 cell bdb7bc",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -29598,8 +29609,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-2",
-      "rdfs:label": "GITT hold — SiGr-AQ-2",
+      "schema:name": "GITT hold — SiGr-AQ-2 cell ab7297",
+      "rdfs:label": "GITT hold — SiGr-AQ-2 cell ab7297",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -29623,8 +29634,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — NMC111-NMP-1",
-      "rdfs:label": "GITT hold — NMC111-NMP-1",
+      "schema:name": "GITT hold — NMC111-NMP-1 cell 6852ff",
+      "rdfs:label": "GITT hold — NMC111-NMP-1 cell 6852ff",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-07-20T00:00:00Z",
@@ -29648,8 +29659,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-NMP-2",
-      "rdfs:label": "GITT — LNMO-NMP-2",
+      "schema:name": "GITT — LNMO-NMP-2 cell 2f9459",
+      "rdfs:label": "GITT — LNMO-NMP-2 cell 2f9459",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -29673,8 +29684,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — NMC111-NMP-1",
-      "rdfs:label": "GITT hold — NMC111-NMP-1",
+      "schema:name": "GITT hold — NMC111-NMP-1 cell 53acb0",
+      "rdfs:label": "GITT hold — NMC111-NMP-1 cell 53acb0",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -29698,8 +29709,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-NMP-1",
-      "rdfs:label": "p-OCV hold — LNMO-NMP-1",
+      "schema:name": "p-OCV hold — LNMO-NMP-1 cell 32a68c",
+      "rdfs:label": "p-OCV hold — LNMO-NMP-1 cell 32a68c",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -29723,8 +29734,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-3",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-3",
+      "schema:name": "p-OCV hold — SiGr-AQ-3 cell 655454",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-3 cell 655454",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -29748,8 +29759,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — Si-AQ-1",
-      "rdfs:label": "p-OCV — Si-AQ-1",
+      "schema:name": "p-OCV — Si-AQ-1 cell 2c4b6a",
+      "rdfs:label": "p-OCV — Si-AQ-1 cell 2c4b6a",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -29773,8 +29784,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-AQ-1",
-      "rdfs:label": "GITT — LNMO-AQ-1",
+      "schema:name": "GITT — LNMO-AQ-1 cell a39225",
+      "rdfs:label": "GITT — LNMO-AQ-1 cell a39225",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -29798,8 +29809,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-AQ-1",
-      "rdfs:label": "p-OCV — LNMO-AQ-1",
+      "schema:name": "p-OCV — LNMO-AQ-1 cell 876812",
+      "rdfs:label": "p-OCV — LNMO-AQ-1 cell 876812",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -29823,8 +29834,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — Gr-AQ-1",
-      "rdfs:label": "GITT — Gr-AQ-1",
+      "schema:name": "GITT — Gr-AQ-1 cell 063b77",
+      "rdfs:label": "GITT — Gr-AQ-1 cell 063b77",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -29848,8 +29859,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — NMC111-NMP-1",
-      "rdfs:label": "GITT — NMC111-NMP-1",
+      "schema:name": "GITT — NMC111-NMP-1 cell 85cad7",
+      "rdfs:label": "GITT — NMC111-NMP-1 cell 85cad7",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-07-20T00:00:00Z",
@@ -29892,8 +29903,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — Si-AQ-1",
-      "rdfs:label": "p-OCV hold — Si-AQ-1",
+      "schema:name": "p-OCV hold — Si-AQ-1 cell 5f45a8",
+      "rdfs:label": "p-OCV hold — Si-AQ-1 cell 5f45a8",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -29917,8 +29928,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-2",
-      "rdfs:label": "GITT hold — SiGr-AQ-2",
+      "schema:name": "GITT hold — SiGr-AQ-2 cell da05ba",
+      "rdfs:label": "GITT hold — SiGr-AQ-2 cell da05ba",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -29942,8 +29953,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LFP-NMP-1",
-      "rdfs:label": "p-OCV hold — LFP-NMP-1",
+      "schema:name": "p-OCV hold — LFP-NMP-1 cell fbeeaf",
+      "rdfs:label": "p-OCV hold — LFP-NMP-1 cell fbeeaf",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-07T00:00:00Z",
@@ -29967,8 +29978,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-NMP-1",
-      "rdfs:label": "GITT — LNMO-NMP-1",
+      "schema:name": "GITT — LNMO-NMP-1 cell ee5c27",
+      "rdfs:label": "GITT — LNMO-NMP-1 cell ee5c27",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30011,8 +30022,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-NMP-1",
-      "rdfs:label": "GITT — LNMO-NMP-1",
+      "schema:name": "GITT — LNMO-NMP-1 cell b3d963",
+      "rdfs:label": "GITT — LNMO-NMP-1 cell b3d963",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30055,8 +30066,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-NMP-2",
-      "rdfs:label": "GITT hold — LNMO-NMP-2",
+      "schema:name": "GITT hold — LNMO-NMP-2 cell e5b4f3",
+      "rdfs:label": "GITT hold — LNMO-NMP-2 cell e5b4f3",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30099,8 +30110,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-NMP-2",
-      "rdfs:label": "p-OCV hold — LNMO-NMP-2",
+      "schema:name": "p-OCV hold — LNMO-NMP-2 cell 7c22c4",
+      "rdfs:label": "p-OCV hold — LNMO-NMP-2 cell 7c22c4",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30124,8 +30135,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — NMC111-NMP-1",
-      "rdfs:label": "p-OCV — NMC111-NMP-1",
+      "schema:name": "p-OCV — NMC111-NMP-1 cell 9d3ce5",
+      "rdfs:label": "p-OCV — NMC111-NMP-1 cell 9d3ce5",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30149,8 +30160,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-NMP-1",
-      "rdfs:label": "p-OCV hold — LNMO-NMP-1",
+      "schema:name": "p-OCV hold — LNMO-NMP-1 cell d11721",
+      "rdfs:label": "p-OCV hold — LNMO-NMP-1 cell d11721",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30174,8 +30185,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-2",
-      "rdfs:label": "p-OCV — SiGr-AQ-2",
+      "schema:name": "p-OCV — SiGr-AQ-2 cell f4569b",
+      "rdfs:label": "p-OCV — SiGr-AQ-2 cell f4569b",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -30199,8 +30210,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-AQ-2",
-      "rdfs:label": "p-OCV — LNMO-AQ-2",
+      "schema:name": "p-OCV — LNMO-AQ-2 cell c04965",
+      "rdfs:label": "p-OCV — LNMO-AQ-2 cell c04965",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30224,8 +30235,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-AQ-2",
-      "rdfs:label": "p-OCV hold — LNMO-AQ-2",
+      "schema:name": "p-OCV hold — LNMO-AQ-2 cell f6ce67",
+      "rdfs:label": "p-OCV hold — LNMO-AQ-2 cell f6ce67",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30249,8 +30260,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LFP-NMP-1",
-      "rdfs:label": "GITT — LFP-NMP-1",
+      "schema:name": "GITT — LFP-NMP-1 cell b26620",
+      "rdfs:label": "GITT — LFP-NMP-1 cell b26620",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -30274,8 +30285,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — NMC532-NMP-1",
-      "rdfs:label": "p-OCV — NMC532-NMP-1",
+      "schema:name": "p-OCV — NMC532-NMP-1 cell 2a2be3",
+      "rdfs:label": "p-OCV — NMC532-NMP-1 cell 2a2be3",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-07T00:00:00Z",
@@ -30299,8 +30310,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-3",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-3",
+      "schema:name": "p-OCV hold — SiGr-AQ-3 cell 084a1b",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-3 cell 084a1b",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -30324,8 +30335,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — Gr-AQ-1",
-      "rdfs:label": "p-OCV — Gr-AQ-1",
+      "schema:name": "p-OCV — Gr-AQ-1 cell 4ccc47",
+      "rdfs:label": "p-OCV — Gr-AQ-1 cell 4ccc47",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -30349,8 +30360,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-NMP-2",
-      "rdfs:label": "p-OCV hold — LNMO-NMP-2",
+      "schema:name": "p-OCV hold — LNMO-NMP-2 cell 6dce02",
+      "rdfs:label": "p-OCV hold — LNMO-NMP-2 cell 6dce02",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30374,8 +30385,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — NMC111-NMP-1",
-      "rdfs:label": "p-OCV hold — NMC111-NMP-1",
+      "schema:name": "p-OCV hold — NMC111-NMP-1 cell 1e88d8",
+      "rdfs:label": "p-OCV hold — NMC111-NMP-1 cell 1e88d8",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30399,8 +30410,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — Gr-AQ-1",
-      "rdfs:label": "p-OCV hold — Gr-AQ-1",
+      "schema:name": "p-OCV hold — Gr-AQ-1 cell 677295",
+      "rdfs:label": "p-OCV hold — Gr-AQ-1 cell 677295",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -30424,8 +30435,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-AQ-1",
-      "rdfs:label": "p-OCV hold — LNMO-AQ-1",
+      "schema:name": "p-OCV hold — LNMO-AQ-1 cell 711dc8",
+      "rdfs:label": "p-OCV hold — LNMO-AQ-1 cell 711dc8",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30449,8 +30460,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-1",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-1",
+      "schema:name": "p-OCV hold — SiGr-AQ-1 cell e43ac0",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-1 cell e43ac0",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -30474,8 +30485,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — NMC532-NMP-1",
-      "rdfs:label": "p-OCV hold — NMC532-NMP-1",
+      "schema:name": "p-OCV hold — NMC532-NMP-1 cell f5dd84",
+      "rdfs:label": "p-OCV hold — NMC532-NMP-1 cell f5dd84",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-07T00:00:00Z",
@@ -30499,8 +30510,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-NMP-2",
-      "rdfs:label": "p-OCV — LNMO-NMP-2",
+      "schema:name": "p-OCV — LNMO-NMP-2 cell f2733d",
+      "rdfs:label": "p-OCV — LNMO-NMP-2 cell f2733d",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30524,8 +30535,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-AQ-2",
-      "rdfs:label": "GITT hold — LNMO-AQ-2",
+      "schema:name": "GITT hold — LNMO-AQ-2 cell 0820fa",
+      "rdfs:label": "GITT hold — LNMO-AQ-2 cell 0820fa",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -30549,8 +30560,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — NMC532-NMP-1",
-      "rdfs:label": "GITT — NMC532-NMP-1",
+      "schema:name": "GITT — NMC532-NMP-1 cell 44efc9",
+      "rdfs:label": "GITT — NMC532-NMP-1 cell 44efc9",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30574,8 +30585,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — Si-AQ-1",
-      "rdfs:label": "GITT — Si-AQ-1",
+      "schema:name": "GITT — Si-AQ-1 cell f0ee8d",
+      "rdfs:label": "GITT — Si-AQ-1 cell f0ee8d",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -30599,8 +30610,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-NMP-1",
-      "rdfs:label": "GITT hold — LNMO-NMP-1",
+      "schema:name": "GITT hold — LNMO-NMP-1 cell f46602",
+      "rdfs:label": "GITT hold — LNMO-NMP-1 cell f46602",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30643,8 +30654,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — NMC532-NMP-1",
-      "rdfs:label": "GITT — NMC532-NMP-1",
+      "schema:name": "GITT — NMC532-NMP-1 cell 1765db",
+      "rdfs:label": "GITT — NMC532-NMP-1 cell 1765db",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -30687,8 +30698,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — Gr-AQ-1",
-      "rdfs:label": "p-OCV — Gr-AQ-1",
+      "schema:name": "p-OCV — Gr-AQ-1 cell 1d5628",
+      "rdfs:label": "p-OCV — Gr-AQ-1 cell 1d5628",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -30712,8 +30723,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LFP-NMP-1",
-      "rdfs:label": "p-OCV — LFP-NMP-1",
+      "schema:name": "p-OCV — LFP-NMP-1 cell 178617",
+      "rdfs:label": "p-OCV — LFP-NMP-1 cell 178617",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -30737,8 +30748,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-NMP-2",
-      "rdfs:label": "p-OCV — LNMO-NMP-2",
+      "schema:name": "p-OCV — LNMO-NMP-2 cell b4f90b",
+      "rdfs:label": "p-OCV — LNMO-NMP-2 cell b4f90b",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30762,8 +30773,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — NMC111-NMP-1",
-      "rdfs:label": "GITT hold — NMC111-NMP-1",
+      "schema:name": "GITT hold — NMC111-NMP-1 cell 000b13",
+      "rdfs:label": "GITT hold — NMC111-NMP-1 cell 000b13",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-07-20T00:00:00Z",
@@ -30806,8 +30817,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-AQ-2",
-      "rdfs:label": "GITT — LNMO-AQ-2",
+      "schema:name": "GITT — LNMO-AQ-2 cell 4fc673",
+      "rdfs:label": "GITT — LNMO-AQ-2 cell 4fc673",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30831,8 +30842,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — SiGr-AQ-3",
-      "rdfs:label": "GITT hold — SiGr-AQ-3",
+      "schema:name": "GITT hold — SiGr-AQ-3 cell e8f570",
+      "rdfs:label": "GITT hold — SiGr-AQ-3 cell e8f570",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -30856,8 +30867,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-AQ-2",
-      "rdfs:label": "GITT hold — LNMO-AQ-2",
+      "schema:name": "GITT hold — LNMO-AQ-2 cell 38f87f",
+      "rdfs:label": "GITT hold — LNMO-AQ-2 cell 38f87f",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -30881,8 +30892,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-3",
-      "rdfs:label": "p-OCV — SiGr-AQ-3",
+      "schema:name": "p-OCV — SiGr-AQ-3 cell fd2719",
+      "rdfs:label": "p-OCV — SiGr-AQ-3 cell fd2719",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -30906,8 +30917,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LFP-NMP-1",
-      "rdfs:label": "p-OCV hold — LFP-NMP-1",
+      "schema:name": "p-OCV hold — LFP-NMP-1 cell 244221",
+      "rdfs:label": "p-OCV hold — LFP-NMP-1 cell 244221",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -30931,8 +30942,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-3",
-      "rdfs:label": "p-OCV — SiGr-AQ-3",
+      "schema:name": "p-OCV — SiGr-AQ-3 cell a39539",
+      "rdfs:label": "p-OCV — SiGr-AQ-3 cell a39539",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -30956,8 +30967,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-1",
-      "rdfs:label": "p-OCV — SiGr-AQ-1",
+      "schema:name": "p-OCV — SiGr-AQ-1 cell 1c492a",
+      "rdfs:label": "p-OCV — SiGr-AQ-1 cell 1c492a",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -30981,8 +30992,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-1",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-1",
+      "schema:name": "p-OCV hold — SiGr-AQ-1 cell 274e5a",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-1 cell 274e5a",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -31006,8 +31017,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — SiGr-AQ-1",
-      "rdfs:label": "GITT — SiGr-AQ-1",
+      "schema:name": "GITT — SiGr-AQ-1 cell 8eb80b",
+      "rdfs:label": "GITT — SiGr-AQ-1 cell 8eb80b",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -31031,8 +31042,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — Si-AQ-1",
-      "rdfs:label": "p-OCV hold — Si-AQ-1",
+      "schema:name": "p-OCV hold — Si-AQ-1 cell 882755",
+      "rdfs:label": "p-OCV hold — Si-AQ-1 cell 882755",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -31056,8 +31067,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-AQ-1",
-      "rdfs:label": "GITT hold — LNMO-AQ-1",
+      "schema:name": "GITT hold — LNMO-AQ-1 cell c89aa7",
+      "rdfs:label": "GITT hold — LNMO-AQ-1 cell c89aa7",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31081,8 +31092,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — Si-AQ-1",
-      "rdfs:label": "GITT hold — Si-AQ-1",
+      "schema:name": "GITT hold — Si-AQ-1 cell 6d543b",
+      "rdfs:label": "GITT hold — Si-AQ-1 cell 6d543b",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -31106,8 +31117,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — Gr-AQ-1",
-      "rdfs:label": "GITT — Gr-AQ-1",
+      "schema:name": "GITT — Gr-AQ-1 cell 3ac228",
+      "rdfs:label": "GITT — Gr-AQ-1 cell 3ac228",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31131,8 +31142,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-AQ-2",
-      "rdfs:label": "p-OCV — LNMO-AQ-2",
+      "schema:name": "p-OCV — LNMO-AQ-2 cell 31c548",
+      "rdfs:label": "p-OCV — LNMO-AQ-2 cell 31c548",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31156,8 +31167,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — NMC111-NMP-1",
-      "rdfs:label": "p-OCV hold — NMC111-NMP-1",
+      "schema:name": "p-OCV hold — NMC111-NMP-1 cell e0dd5f",
+      "rdfs:label": "p-OCV hold — NMC111-NMP-1 cell e0dd5f",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-07-20T00:00:00Z",
@@ -31181,8 +31192,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — SiGr-AQ-1",
-      "rdfs:label": "GITT — SiGr-AQ-1",
+      "schema:name": "GITT — SiGr-AQ-1 cell 175ef2",
+      "rdfs:label": "GITT — SiGr-AQ-1 cell 175ef2",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -31225,8 +31236,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — Si-AQ-1",
-      "rdfs:label": "GITT — Si-AQ-1",
+      "schema:name": "GITT — Si-AQ-1 cell 70cc5b",
+      "rdfs:label": "GITT — Si-AQ-1 cell 70cc5b",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -31250,8 +31261,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-NMP-1",
-      "rdfs:label": "GITT hold — LNMO-NMP-1",
+      "schema:name": "GITT hold — LNMO-NMP-1 cell df0911",
+      "rdfs:label": "GITT hold — LNMO-NMP-1 cell df0911",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31275,8 +31286,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LFP-NMP-1",
-      "rdfs:label": "GITT hold — LFP-NMP-1",
+      "schema:name": "GITT hold — LFP-NMP-1 cell 182031",
+      "rdfs:label": "GITT hold — LFP-NMP-1 cell 182031",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-07T00:00:00Z",
@@ -31300,8 +31311,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — SiGr-AQ-3",
-      "rdfs:label": "GITT — SiGr-AQ-3",
+      "schema:name": "GITT — SiGr-AQ-3 cell e030cf",
+      "rdfs:label": "GITT — SiGr-AQ-3 cell e030cf",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31325,8 +31336,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — NMC532-NMP-1",
-      "rdfs:label": "p-OCV — NMC532-NMP-1",
+      "schema:name": "p-OCV — NMC532-NMP-1 cell ee86d1",
+      "rdfs:label": "p-OCV — NMC532-NMP-1 cell ee86d1",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31350,8 +31361,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-AQ-2",
-      "rdfs:label": "p-OCV hold — LNMO-AQ-2",
+      "schema:name": "p-OCV hold — LNMO-AQ-2 cell 2bac5c",
+      "rdfs:label": "p-OCV hold — LNMO-AQ-2 cell 2bac5c",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31375,8 +31386,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-AQ-2",
-      "rdfs:label": "GITT — LNMO-AQ-2",
+      "schema:name": "GITT — LNMO-AQ-2 cell fb8cf6",
+      "rdfs:label": "GITT — LNMO-AQ-2 cell fb8cf6",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31400,8 +31411,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LFP-NMP-1",
-      "rdfs:label": "p-OCV — LFP-NMP-1",
+      "schema:name": "p-OCV — LFP-NMP-1 cell d07eb6",
+      "rdfs:label": "p-OCV — LFP-NMP-1 cell d07eb6",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -31425,8 +31436,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — Gr-AQ-1",
-      "rdfs:label": "p-OCV hold — Gr-AQ-1",
+      "schema:name": "p-OCV hold — Gr-AQ-1 cell a29c1f",
+      "rdfs:label": "p-OCV hold — Gr-AQ-1 cell a29c1f",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31450,8 +31461,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-2",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-2",
+      "schema:name": "p-OCV hold — SiGr-AQ-2 cell eef2ba",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-2 cell eef2ba",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -31475,8 +31486,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — SiGr-AQ-2",
-      "rdfs:label": "GITT — SiGr-AQ-2",
+      "schema:name": "GITT — SiGr-AQ-2 cell 61a57a",
+      "rdfs:label": "GITT — SiGr-AQ-2 cell 61a57a",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-06-02T00:00:00Z",
@@ -31500,8 +31511,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — NMC532-NMP-1",
-      "rdfs:label": "GITT hold — NMC532-NMP-1",
+      "schema:name": "GITT hold — NMC532-NMP-1 cell 328a71",
+      "rdfs:label": "GITT hold — NMC532-NMP-1 cell 328a71",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31525,8 +31536,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — Si-AQ-1",
-      "rdfs:label": "GITT hold — Si-AQ-1",
+      "schema:name": "GITT hold — Si-AQ-1 cell 91618e",
+      "rdfs:label": "GITT hold — Si-AQ-1 cell 91618e",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-05T00:00:00Z",
@@ -31550,8 +31561,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — SiGr-AQ-2",
-      "rdfs:label": "p-OCV hold — SiGr-AQ-2",
+      "schema:name": "p-OCV hold — SiGr-AQ-2 cell 210cad",
+      "rdfs:label": "p-OCV hold — SiGr-AQ-2 cell 210cad",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31575,8 +31586,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LFP-NMP-1",
-      "rdfs:label": "GITT hold — LFP-NMP-1",
+      "schema:name": "GITT hold — LFP-NMP-1 cell 86f18a",
+      "rdfs:label": "GITT hold — LFP-NMP-1 cell 86f18a",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -31600,8 +31611,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — NMC532-NMP-1",
-      "rdfs:label": "p-OCV hold — NMC532-NMP-1",
+      "schema:name": "p-OCV hold — NMC532-NMP-1 cell 2373d9",
+      "rdfs:label": "p-OCV hold — NMC532-NMP-1 cell 2373d9",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31625,8 +31636,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-AQ-1",
-      "rdfs:label": "p-OCV — LNMO-AQ-1",
+      "schema:name": "p-OCV — LNMO-AQ-1 cell 21a280",
+      "rdfs:label": "p-OCV — LNMO-AQ-1 cell 21a280",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31650,8 +31661,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — SiGr-AQ-3",
-      "rdfs:label": "GITT — SiGr-AQ-3",
+      "schema:name": "GITT — SiGr-AQ-3 cell 7202c5",
+      "rdfs:label": "GITT — SiGr-AQ-3 cell 7202c5",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31675,8 +31686,8 @@
           "@id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
         }
       ],
-      "schema:name": "p-OCV hold — LNMO-AQ-1",
-      "rdfs:label": "p-OCV hold — LNMO-AQ-1",
+      "schema:name": "p-OCV hold — LNMO-AQ-1 cell 6cf259",
+      "rdfs:label": "p-OCV hold — LNMO-AQ-1 cell 6cf259",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31700,8 +31711,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-NMP-2",
-      "rdfs:label": "GITT hold — LNMO-NMP-2",
+      "schema:name": "GITT hold — LNMO-NMP-2 cell dd8a76",
+      "rdfs:label": "GITT hold — LNMO-NMP-2 cell dd8a76",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31744,8 +31755,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — NMC532-NMP-1",
-      "rdfs:label": "GITT hold — NMC532-NMP-1",
+      "schema:name": "GITT hold — NMC532-NMP-1 cell 979353",
+      "rdfs:label": "GITT hold — NMC532-NMP-1 cell 979353",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-07-06T00:00:00Z",
@@ -31769,8 +31780,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — LNMO-NMP-1",
-      "rdfs:label": "p-OCV — LNMO-NMP-1",
+      "schema:name": "p-OCV — LNMO-NMP-1 cell f9bf3e",
+      "rdfs:label": "p-OCV — LNMO-NMP-1 cell f9bf3e",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31794,8 +31805,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-AQ-1",
-      "rdfs:label": "GITT — LNMO-AQ-1",
+      "schema:name": "GITT — LNMO-AQ-1 cell 2b6be3",
+      "rdfs:label": "GITT — LNMO-AQ-1 cell 2b6be3",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -31819,8 +31830,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-1",
-      "rdfs:label": "p-OCV — SiGr-AQ-1",
+      "schema:name": "p-OCV — SiGr-AQ-1 cell 70e745",
+      "rdfs:label": "p-OCV — SiGr-AQ-1 cell 70e745",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-14T00:00:00Z",
@@ -31844,8 +31855,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — Gr-AQ-1",
-      "rdfs:label": "GITT hold — Gr-AQ-1",
+      "schema:name": "GITT hold — Gr-AQ-1 cell 3f39a2",
+      "rdfs:label": "GITT hold — Gr-AQ-1 cell 3f39a2",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31869,8 +31880,8 @@
           "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
         }
       ],
-      "schema:name": "GITT hold — LNMO-AQ-1",
-      "rdfs:label": "GITT hold — LNMO-AQ-1",
+      "schema:name": "GITT hold — LNMO-AQ-1 cell 9973ad",
+      "rdfs:label": "GITT hold — LNMO-AQ-1 cell 9973ad",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT hold",
       "prov:startedAtTime": "2025-06-25T00:00:00Z",
@@ -31894,8 +31905,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — NMC111-NMP-1",
-      "rdfs:label": "p-OCV — NMC111-NMP-1",
+      "schema:name": "p-OCV — NMC111-NMP-1 cell 6115bb",
+      "rdfs:label": "p-OCV — NMC111-NMP-1 cell 6115bb",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-07-20T00:00:00Z",
@@ -31919,8 +31930,8 @@
           "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
         }
       ],
-      "schema:name": "p-OCV — SiGr-AQ-2",
-      "rdfs:label": "p-OCV — SiGr-AQ-2",
+      "schema:name": "p-OCV — SiGr-AQ-2 cell 0cf06a",
+      "rdfs:label": "p-OCV — SiGr-AQ-2 cell 0cf06a",
       "schema:additionalType": "quasi_ocv",
       "schema:measurementTechnique": "p-OCV",
       "prov:startedAtTime": "2025-05-28T00:00:00Z",
@@ -31944,8 +31955,8 @@
           "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
         }
       ],
-      "schema:name": "GITT — LNMO-NMP-2",
-      "rdfs:label": "GITT — LNMO-NMP-2",
+      "schema:name": "GITT — LNMO-NMP-2 cell fa5db1",
+      "rdfs:label": "GITT — LNMO-NMP-2 cell fa5db1",
       "schema:additionalType": "gitt",
       "schema:measurementTechnique": "GITT",
       "prov:startedAtTime": "2025-04-24T00:00:00Z",
@@ -32185,10 +32196,7 @@
       ]
     },
     {
-      "@type": [
-        "SiliconGraphiteElectrode",
-        "NegativeElectrode"
-      ],
+      "@type": "SiliconGraphiteElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -32346,10 +32354,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumIronPhosphateElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumIronPhosphateElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -32498,10 +32503,7 @@
       ]
     },
     {
-      "@type": [
-        "SiliconGraphiteElectrode",
-        "NegativeElectrode"
-      ],
+      "@type": "SiliconGraphiteElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -32659,10 +32661,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -32809,10 +32808,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -32958,10 +32954,7 @@
       ]
     },
     {
-      "@type": [
-        "SiliconGraphiteElectrode",
-        "NegativeElectrode"
-      ],
+      "@type": "SiliconGraphiteElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33119,10 +33112,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33269,10 +33259,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseCobaltOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseCobaltOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33418,10 +33405,7 @@
       ]
     },
     {
-      "@type": [
-        "SiliconBasedElectrode",
-        "NegativeElectrode"
-      ],
+      "@type": "SiliconBasedElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33569,10 +33553,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33718,10 +33699,7 @@
       ]
     },
     {
-      "@type": [
-        "LithiumNickelManganeseCobaltOxideElectrode",
-        "PositiveElectrode"
-      ],
+      "@type": "LithiumNickelManganeseCobaltOxideElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {
@@ -33867,10 +33845,7 @@
       ]
     },
     {
-      "@type": [
-        "GraphiteElectrode",
-        "NegativeElectrode"
-      ],
+      "@type": "GraphiteElectrode",
       "hasCoating": {
         "@type": "ElectrodeCoating",
         "hasActiveMaterial": {

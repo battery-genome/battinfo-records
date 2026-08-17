@@ -5,14 +5,14 @@
     "short_id": "kr46wr",
     "cell_spec_id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/y56y-r3j8-564x-96pw",
-    "name": "LNMO-NMP-2",
+    "name": "LNMO-NMP-2 cell 7c22c4",
     "serial_number": "7c22c4",
     "batch_id": "LNMO-NMP-2",
     "manufactured_at": 1745452800
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

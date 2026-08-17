@@ -5,7 +5,7 @@
     "short_id": "bzwjct",
     "identifier": "dataset:bzwj-ctwj-ecw1-yh0y",
     "name": "LNMO-NMP-2 cell fa5db1 GITT half-cell OCV (BDF)",
-    "description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell fa5db1, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell fa5db1, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fa5db1__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
@@ -21,6 +21,7 @@
     "citations": [
       {
         "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
         "url": "https://doi.org/10.5281/zenodo.20086298",
         "doi": "10.5281/zenodo.20086298",
         "citation_key": "flores2026ocv"
@@ -74,6 +75,9 @@
       "https://w3id.org/battinfo/cell/xd20-jnmr-w65p-gmjb",
       "https://w3id.org/battinfo/test/zw10-y5sb-rc0b-ezqs"
     ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
     "distributions": [
       {
         "type": "DataDownload",
@@ -107,10 +111,12 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994927,
+    "retrieved_at": 1787000461,
     "battinfo_version": "0.7.0"
   },
+  "notes": [
+    "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."
+  ],
   "funding": {
     "type": "Grant",
     "identifier": "101069765",

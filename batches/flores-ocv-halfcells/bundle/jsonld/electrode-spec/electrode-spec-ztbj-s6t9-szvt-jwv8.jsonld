@@ -8,10 +8,7 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@type": [
-    "GraphiteElectrode",
-    "NegativeElectrode"
-  ],
+  "@type": "GraphiteElectrode",
   "hasCoating": {
     "@type": "ElectrodeCoating",
     "hasActiveMaterial": {

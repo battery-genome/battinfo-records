@@ -5,14 +5,14 @@
     "short_id": "drh9f0",
     "cell_spec_id": "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3",
-    "name": "LNMO-NMP-1",
+    "name": "LNMO-NMP-1 cell ee5c27",
     "serial_number": "ee5c27",
     "batch_id": "LNMO-NMP-1",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1787000445,
     "battinfo_version": "0.7.0"
   },
   "funding": {

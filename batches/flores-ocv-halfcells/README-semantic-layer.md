@@ -58,15 +58,17 @@ electrode (95)         the DISC inside one cell: this cell's as-built figures,
 cell-spec (12)         R2032 coin half-cells, cell_configuration = half_cell,
    |                   one per electrode design. Every one cites its design.
    v cell_spec_id
-cell-instance (95)     one per parquet; serial = 6-char id, name + batch_id = public
-   |                   label; working_electrode_id -> the disc inside it
+cell-instance (95)     one per parquet; serial = 6-char id, batch_id = public label,
+   |                   name = "<label> cell <serial>"; working_electrode_id -> the
+   |                   disc inside it
    |
    +-- test (95)       cell x protocol; 11 known issues -> conformance annotations
    |     ^ protocol_id
    |     test-protocol (4)   p-OCV, p-OCV hold, GITT, GITT hold
    |
    +-- dataset (95)    about -> cell + test; references the Zenodo parquet by URL,
-                       md5 and byte size, plus the derived plot figure
+                       md5 and byte size, plus the derived plot figure. The 11
+                       known issues are repeated here, on the data itself
 ```
 
 Each of the 95 parquet files maps to exactly one `electrode` + `cell-instance` + `test` + `dataset`.
@@ -153,7 +155,7 @@ All twelve cell specs are R2032 coin half-cells, stated structurally:
 
 Nothing is lost by dropping the bases. The chemistry that used to ride `positive_electrode_basis` now reaches the graph through the cited electrode spec, whose own node is typed with its chemistry class (`SiliconBasedElectrode`, `LithiumIronPhosphateElectrode`, `LithiumNickelManganeseOxideElectrode`, ...); the lithium-metal counter electrode is an authored holder rather than a basis string; and the cell keeps its half-cell device typing from `cell_configuration`.
 
-`electrode_spec.polarity` is a different statement and stays: it is the *design's* intended full-cell side, derived from the kind, so the silicon, graphite and Si/Gr designs remain negative-electrode designs. A design's polarity and the role it is given in a cell are two facts in two places, and neither is authored twice.
+`electrode_spec.polarity` looked like a different statement and was kept through v4, on the reasoning that a design's intended full-cell side is a fact of its own. v4.1 drops it. The field is sound in the model, but it is not a fact this source states: every design here is characterized against lithium metal, and a design labelled `negative` whose cell spec charges to 1.00 V vs Li/Li+ imports the full-cell convention this whole corpus stopped using. It was also derived rather than authored - battinfo fills it from the kind's family - so it added no information that `kind` did not already carry. The chemistry class is untouched: all twelve electrode specs still emit `SiliconGraphiteElectrode`, `LithiumIronPhosphateElectrode`, `LithiumNickelManganeseOxideElectrode` and the rest, with no `PositiveElectrode` / `NegativeElectrode` stacked on top. So "no polarity anywhere" is now literal: zero occurrences of the word in any record of the batch.
 
 Every cell spec covers exactly one electrode design, which is what lets all twelve carry `working_electrode_spec_id`. In v2 three specs each covered two designs and could cite neither; splitting them is ruling D1, and it re-seeded 144 published identifiers (`superseded/supersede-map.json`).
 
@@ -168,6 +170,12 @@ The methods are material-agnostic, which is what lets one protocol record serve 
 Each test carries only what is genuinely a condition of the test: `ambient_temperature: "room temperature"` and `voltage_reference: "Li/Li+"`.
 
 v3 also carried four as-built electrode figures here - active-material mass, coating mass, areal capacity and loading - because the model had nowhere per-cell to put them (gap G2). It does now. They were true before the test started and would still be true if the test had never run, so they are properties of the disc, one hop away through `working_electrode_id`. Gap G2 is closed.
+
+## Known issues
+
+Eleven of the 95 runs carry a known issue from `metadata.csv`: five with anomalously high voltage during the pulse step, five that stopped or failed mid-run, and one with both. Each becomes a `conformance` block on the test - `status: non-conformant`, the source's own sentence as the note, and a typed deviation (`out_of_tolerance` or `premature_termination`).
+
+Since v4.1 the same sentence rides the **dataset** too, because a known issue is a fact about the data and not only about the run: the description opens `Known issue: Cell failed at the end of 1st cycle.` and the record's notes carry the full statement, including that the protocol specifies five cycles and this one did not finish them. Somebody who arrives at the parquet without ever seeing the test record still gets the warning. `description` is the field that carries it into `dcterms:description` and `schema:description`; the record-level notes do not emit, which is why the short form leads.
 
 ## Numbers
 
@@ -189,6 +197,7 @@ Every quantity is rounded to a fixed number of decimals per unit, chosen at or a
 - **Canonical records** (`records/<type>/<type>-<id>.json`) are plain BattINFO JSON. Every record carries an `id` of the form `https://w3id.org/battinfo/<ns>/<uid>`, and cross-links use those IRIs (`manufacturer.id`, `active_material_spec_id`, `electrode_spec_id`, `working_electrode_spec_id`, `cell_spec_id`, `protocol_id`, dataset `about`).
 - **JSON-LD** (`bundle/jsonld/<type>/<...>.jsonld`) carries the full inline `@context`, so every file expands offline. Every record type present is emitted.
 - **Datasets** point at the real files: `distributions[].content_url` is the Zenodo download URL, with the md5 checksum and byte size taken from the Zenodo API; `access_url` is the DOI.
+- **The Zenodo DOI is this dataset's own**, so it sits only where self-reference is meant: `access_url` (where the file lives), `same_as` (the archived representation of this same dataset), `is_based_on` (this record describes one file of that deposit), `provenance.source_url`, and a `citations` entry typed `kind: "dataset"`. It is deliberately *not* in `provenance.citation` - that field means "a citable reference for this record", carries no kind, and is what the platform reads into the panel headed "Peer-reviewed papers this dataset supports". This Zenodo record is data with no companion paper, and a dataset listed as the paper it supports is a circular claim.
 
 ## Publishing caveats (see `bundle/gold-standard-report.txt`)
 
