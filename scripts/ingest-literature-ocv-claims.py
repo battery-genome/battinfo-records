@@ -62,7 +62,8 @@ SOURCE_ATTRIBUTION: dict[str, dict[str, str]] = {
         "license": "cc-by-sa-4.0",
         "note": (
             "Adapted from the About:Energy BPX parameterisation "
-            "(https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation), "
+            "(https://doi.org/10.5281/zenodo.19052625; source repository "
+            "https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation), "
             "(c) About:Energy, licensed CC-BY-SA-4.0 "
             "(https://creativecommons.org/licenses/by-sa/4.0/). "
             "Changes: the OCP function was tabulated on a stoichiometry grid. "
@@ -168,6 +169,19 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
         + ".",
         attribution["note"],
     ]
+    # The About:Energy sets have no paper: their citable identity is the
+    # Zenodo deposit of the A:E parameterisation, not the BPX examples
+    # mirror the manifest happens to point at.
+    citation = (
+        "https://doi.org/10.5281/zenodo.19052625"
+        if first["source_tool"] == "BPX"
+        else first.get("parameter_set_doi_or_url") or None
+    )
+    citation_doi = (
+        citation.removeprefix("https://doi.org/")
+        if citation and citation.startswith("https://doi.org/")
+        else None
+    )
     record = create_parameter_set(
         name=f"{first['parameter_set']} ({first['source_tool']}) - {kind}",
         material_kind=kind,
@@ -178,14 +192,8 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
             f"{first['parameter_set']} parameterization ({first['parameter_set_reference']})."
         ),
         source_type="literature",
-        # The About:Energy sets have no paper: their canonical origin (and the
-        # thing the CC-BY-SA attribution must link) is the A:E repo itself, not
-        # the BPX examples mirror the manifest happens to point at.
-        citation=(
-            "https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation"
-            if first["source_tool"] == "BPX"
-            else first.get("parameter_set_doi_or_url") or None
-        ),
+        citation=citation,
+        citation_doi=citation_doi,
         notes=notes,
     )
     # The license is a condition of the source, so it is set at ingest, not at

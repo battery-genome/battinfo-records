@@ -2029,7 +2029,8 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994007,
+    "retrieved_at": 1786994138,
+    "citation_doi": "10.1149/2.0122001JES",
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1149/2.0122001JES"
   },

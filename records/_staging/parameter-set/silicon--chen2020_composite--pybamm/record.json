@@ -6058,7 +6058,8 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994008,
+    "retrieved_at": 1786994139,
+    "citation_doi": "10.1016/j.jpowsour.2022.231142",
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1016/j.jpowsour.2022.231142"
   },

@@ -2029,14 +2029,15 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994008,
+    "retrieved_at": 1786994139,
+    "citation_doi": "10.5281/zenodo.19052625",
     "battinfo_version": "0.7.0",
-    "citation": "https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation"
+    "citation": "https://doi.org/10.5281/zenodo.19052625"
   },
   "notes": [
     "Ingested from the curated literature_ocv library (graphite__bpx__nmc111_pouch_aboutenergy2022.csv).",
     "Source function(s): nmc_pouch_cell_BPX.json.",
-    "Adapted from the About:Energy BPX parameterisation (https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation), (c) About:Energy, licensed CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Changes: the OCP function was tabulated on a stoichiometry grid. This record is licensed cc-by-sa-4.0 to honour the share-alike condition."
+    "Adapted from the About:Energy BPX parameterisation (https://doi.org/10.5281/zenodo.19052625; source repository https://github.com/About-Energy-OpenSource/About-Energy-BPX-Parameterisation), (c) About:Energy, licensed CC-BY-SA-4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Changes: the OCP function was tabulated on a stoichiometry grid. This record is licensed cc-by-sa-4.0 to honour the share-alike condition."
   ],
   "license": "cc-by-sa-4.0"
 }

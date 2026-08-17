@@ -2029,7 +2029,8 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1786994008,
+    "retrieved_at": 1786994139,
+    "citation_doi": "10.1149/1945-7111/ab9050",
     "battinfo_version": "0.7.0",
     "citation": "https://doi.org/10.1149/1945-7111/ab9050"
   },
