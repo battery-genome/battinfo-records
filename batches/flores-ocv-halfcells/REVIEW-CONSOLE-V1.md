@@ -43,7 +43,7 @@ Local stack: registry :8010 (preview DB, display persisted from the dossier bran
 | 14 | [Kind: silicon_graphite](http://127.0.0.1:3100/registry/kind/silicon_graphite) | Second kind for comparison |
 | 15 | [Browse cells](http://127.0.0.1:3100/registry?type=cell) | Serial-distinct titles across the 95 |
 
-All 14 record/kind pages sweep-verified 2026-08-20: HTTP 200, console on exactly the seven anchors, no error boundaries.
+All pages sweep-verified 2026-08-20: HTTP 200, console on every record type except organizations, no error boundaries. Content-verified: the powder's used-by rosters, the protocol's prose-as-narrative, and the electrode's spec/material sections all survive the console switch.
 
 ## What to exercise beyond clicking through
 
