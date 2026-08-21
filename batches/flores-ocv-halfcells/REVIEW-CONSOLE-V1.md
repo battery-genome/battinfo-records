@@ -1,6 +1,6 @@
 # Console review - Flores 2026 corpus on the record console
 
-**Staged only; nothing republished.** The corpus is v4.1 (416 records, PR #6 at `51671d4`), re-verified 2026-08-20: `build_records.py` reproduces all 416 records byte-identically on the pinned toolchain (BattINFO `dc9b905`), `build_bundle.py` validates 0 errors / 0 warnings / 0 SHACL non-conformances across all nine types. The only rebuild delta was the RO-Crate `datePublished` build stamp, reverted.
+**Staged only; nothing republished.** The corpus is v4.2 (424 records, PR #6): v4.1 re-verified byte-identical 2026-08-20, then extended 2026-08-21 with a material lot for every spec (curator ruling - eight new lots joining the LNMO one: two SINTEF-coated singles, three silicon-graphite blends evidenced by their distinct theoretical capacities, three purchased-electrode batches asserted as existence-only). Validation 0 errors / 0 warnings / 0 SHACL non-conformances across all 424; idempotent; all pre-existing identifiers unchanged.
 
 What changed since REVIEW-TABLE-V4 is the *presentation*: every record type now renders as the four-band record console (registry `feat/record-dossier`, PR #56; platform `feat/record-dossier`, PR #81 - both unmerged), each at its own scale - cells and datasets tell their full chain; the other types get their own facts plus the records behind them, with the reverse "used by" rosters as clickable tables in the Related band. Organizations keep their profile page. This review is of that surface, over the unchanged corpus.
 
@@ -34,6 +34,7 @@ Local stack: registry :8010 (preview DB, display persisted from the dossier bran
 | 10 | [Electrode gfa4 (was "disc")](http://127.0.0.1:3100/registry/electrode/gfa4-pb59-tgvn-psvs) | Console: as-built figures, its spec and powder as sections, the cell using it in Related. The record *title* still says "disc" - titles are corpus data, renaming is a v5 decision |
 | 11 | [GITT protocol](http://127.0.0.1:3100/registry/spec/rd8x-1nqr-3dp2-0we8) | Console: the protocol prose leads as the page's narrative; the 47 tests using it in Related |
 | 12 | [Topsoe](http://127.0.0.1:3100/registry/organization/vz1v-rvhz-n77h-344c) | Organizations keep their dedicated profile page - the one non-console type |
+| 12b | [Graphite study powder batch](http://127.0.0.1:3100/registry/material/k1pt-wy97-tetf-fzsw) | One of the eight v4.2 lots: the instance behind the spec, honest about what the source does and does not evidence |
 
 ### Compilations
 
