@@ -1,0 +1,129 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "./",
+      "name": "Half-Cell Open-Circuit Voltage of Several Lithium-Ion Battery Active Materials - BattINFO semantic layer",
+      "description": "Machine-readable BattINFO semantic layer describing the electrodes, cells, electrochemical protocols, tests and datasets of Zenodo record 10.5281/zenodo.20086298. Each of the 95 BDF parquet files is described by a linked electrode-spec / electrode / cell-spec / cell-instance / test-protocol / test / dataset record chain, with a material-spec for the one active material the source identifies as a powder; datasets reference the Zenodo files by URL and md5 checksum.",
+      "datePublished": "2026-08-21",
+      "license": {
+        "@id": "https://spdx.org/licenses/cc-by-4.0.html"
+      },
+      "url": "https://zenodo.org/records/0",
+      "identifier": "10.5281/zenodo.RECORD_ID",
+      "hasPart": [
+        {
+          "@id": "battinfo.json"
+        }
+      ],
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Flores, Eibar",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0000-0003-2954-1233"
+        },
+        {
+          "@type": "Person",
+          "name": "Krishnamurthi, Sridevi",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0009-0006-0805-6713"
+        },
+        {
+          "@type": "Person",
+          "name": "Stokes-Rodriguez, Killian",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0000-0002-6299-1319"
+        },
+        {
+          "@type": "Person",
+          "name": "Guldahl, Julie Cathrine",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0009-0005-4059-7715"
+        },
+        {
+          "@type": "Person",
+          "name": "Hakim, Charifa",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0000-0003-0931-5466"
+        },
+        {
+          "@type": "Person",
+          "name": "Clark, Simon",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0000-0002-8758-6109"
+        },
+        {
+          "@type": "Person",
+          "name": "Wagner, Nils Peter",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "SINTEF"
+          },
+          "@id": "https://orcid.org/0000-0002-8014-4324"
+        },
+        {
+          "@type": "Person",
+          "name": "Obrador, Sergi",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Institut de Recerca de l'Energia de Catalunya"
+          },
+          "@id": "https://orcid.org/0009-0003-1413-0770"
+        },
+        {
+          "@type": "Person",
+          "name": "Bernabeu Santisteban, Andres",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Institut de Recerca de l'Energia de Catalunya"
+          },
+          "@id": "https://orcid.org/0000-0001-9591-6422"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "File",
+        "CreativeWork"
+      ],
+      "@id": "battinfo.json",
+      "name": "BattINFO linked data",
+      "description": "Battery domain metadata using EMMO/domain-battery ontology terms.",
+      "encodingFormat": "application/ld+json",
+      "conformsTo": {
+        "@id": "https://w3id.org/battinfo/"
+      },
+      "contentSize": "2"
+    }
+  ]
+}

@@ -1,0 +1,2209 @@
+==============================================================================
+SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by ROLE (hasWorkingElectrode, hasCounterElectrode typed CounterElectrode + ReferenceElectrode) with NO polarity relation anywhere; the working-electrode node carries the @id of the electrode spec it realizes
+==============================================================================
+{
+  "@type": [
+    "BatteryCellSpecification",
+    "schema:CreativeWork"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
+  "schema:identifier": "zqwq-ted6-cwb2-0d42",
+  "schema:name": "SINTEF Silicon R2032 half-cell (intelligent1)",
+  "schema:model": "Silicon R2032 half-cell (intelligent1)",
+  "schema:manufacturer": {
+    "@type": "schema:Organization",
+    "schema:name": "SINTEF"
+  },
+  "schema:url": "https://www.battery-genome.org/registry/spec/zqwq-ted6-cwb2-0d42",
+  "isDescriptionFor": {
+    "@type": [
+      "BatteryCell",
+      "CoinCell",
+      "BatteryHalfCell",
+      "HalfCellDevice",
+      "LithiumMetalBattery",
+      "SecondaryBattery"
+    ],
+    "skos:prefLabel": "SINTEF Silicon R2032 half-cell (intelligent1)"
+  },
+  "schema:size": "R2032",
+  "schema:schemaVersion": "0.2.0",
+  "hasProperty": [
+    {
+      "@type": [
+        "ChargingVoltage",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ChargingVoltage",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
+    },
+    {
+      "@type": [
+        "LowerVoltageLimit",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "LowerVoltageLimit",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.01
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
+    }
+  ],
+  "hasWorkingElectrode": {
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": [
+          "Silicon",
+          "ActiveMaterial"
+        ],
+        "schema:name": "Silicon",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.84971
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "CalenderedCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "CalenderedCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 44.0
+        },
+        "schema:unitText": "um"
+      }
+    ],
+    "@type": "WorkingElectrode",
+    "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
+  },
+  "hasCounterElectrode": {
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": "ActiveMaterial",
+        "schema:name": "Lithium metal"
+      }
+    },
+    "@type": [
+      "CounterElectrode",
+      "ReferenceElectrode"
+    ]
+  },
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "datasheet",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating composition, aqueous route as prov:wasGeneratedBy, no powder link
+==============================================================================
+{
+  "@type": "SiliconBasedElectrode",
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": [
+        "Silicon",
+        "ActiveMaterial"
+      ],
+      "schema:name": "Silicon",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+      },
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.84971
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.3282
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.2237,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 44.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.6505
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0625,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
+  "schema:name": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
+    "@type": "ActiveMaterial"
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "aqueous",
+      "schema:name": "Water-based (aqueous) processing"
+    },
+    "hasSolvent": {
+      "@type": "schema:ChemicalSubstance",
+      "schema:name": "water"
+    },
+    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1 and the Zenodo batch table."
+  },
+  "schema:description": "Silicon (aqueous processed). Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label Si-AQ-1. Active-material type as stated in metadata.csv: \"Silicon\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch Si-AQ-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 0.6505 mg/cm2, sample standard deviation 0.0625 mg/cm2 over n = 8 discs (range 0.5595-0.7195 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 44.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 2.3282 mAh/cm2, sample standard deviation 0.2237 mAh/cm2 over n = 8 discs (range 2.0024-2.5751 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public label as a schema:PropertyValue + as-built dry thickness
+==============================================================================
+{
+  "@type": "Electrode",
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 2.3974
+      },
+      "schema:unitText": "mAh/cm2"
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 44.0
+      },
+      "schema:unitText": "um"
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.6698
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"
+    },
+    {
+      "@type": [
+        "Mass",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Mass",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.214
+      },
+      "schema:unitText": "mg"
+    },
+    {
+      "@type": [
+        "MassFraction",
+        "ConventionalProperty"
+      ],
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.84971
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/electrode/16jn-76y3-8mg4-kyyv",
+  "schema:name": "Si-AQ-1 disc 70cc5b",
+  "schema:isVariantOf": {
+    "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
+  },
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:name": "batch_id",
+    "schema:value": "Si-AQ-1"
+  },
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "The working-electrode disc built into coin cell 70cc5b, punched from electrode batch Si-AQ-1. Silicon (aqueous processed).",
+    "Every figure here is the value metadata.csv publishes for this one cell, not a batch average; the batch averages are on the electrode spec.",
+    "Active-material mass 1.0316 mg = coating mass (1.214 mg) x active-material weight percentage (84.971 %), the way metadata.csv derives it. Both factors are structured properties of this record; the product is not, because `mass` is the one curated key that means Mass and a second one would collapse onto it in JSON-LD."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substance anchor, theoretical capacity
+==============================================================================
+{
+  "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
+  "@type": "LithiumNickelManganeseOxide",
+  "schema:sameAs": {
+    "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
+  },
+  "schema:name": "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel",
+  "schema:molecularFormula": "LiNi0.5Mn1.5O4",
+  "hasProperty": {
+    "@type": [
+      "TheoreticalCapacity",
+      "ConventionalProperty"
+    ],
+    "skos:prefLabel": "TheoreticalCapacity",
+    "hasNumericalPart": {
+      "@type": "RealData",
+      "hasNumberValue": 140.0
+    },
+    "schema:unitText": "mAh/g"
+  },
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "The Zenodo record states: \"The OCVs from LiNi0.5Mn1.5O4 (LNMO) electrodes vary depending on the degree of Mn/Ni disorder (see Sun et al.). The LNMO material used in this study targeted high Mn/Ni disorder, therefore the OCVs is a highly disordered spinel.\" No grade or product identifier is given for the powder, so none is stated here.",
+    "Manufacturer: Topsoe. Supplied by the corpus maintainer, not by the Zenodo record, which names no supplier for any active material."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powder IRI; the route is in the identity seed, so this is its own design
+==============================================================================
+{
+  "@type": "LithiumNickelManganeseOxideElectrode",
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": "ActiveMaterial",
+      "schema:name": "Lithium nickel manganese oxide (LNMO)",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+      },
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.90276
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 0.5716
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0453,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 47.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 4.0829
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.3234,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
+  "schema:name": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
+    "@type": "ActiveMaterial"
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "aqueous",
+      "schema:name": "Water-based (aqueous) processing"
+    },
+    "hasSolvent": {
+      "@type": "schema:ChemicalSubstance",
+      "schema:name": "water"
+    },
+    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2 and the Zenodo batch table."
+  },
+  "schema:description": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-AQ-2. Active-material type as stated in metadata.csv: \"LNMO\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch LNMO-AQ-2, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 4.0829 mg/cm2, sample standard deviation 0.3234 mg/cm2 over n = 8 discs (range 3.6462-4.4727 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 47.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 0.5716 mAh/cm2, sample standard deviation 0.0453 mAh/cm2 over n = 8 discs (range 0.5105-0.6262 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different design
+==============================================================================
+{
+  "@type": "LithiumNickelManganeseOxideElectrode",
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": "ActiveMaterial",
+      "schema:name": "Lithium nickel manganese oxide (LNMO)",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+      },
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.92002
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.3324
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.045,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 90.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 9.5173
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.3213,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 8
+        }
+      ]
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
+  "schema:name": "LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
+    "@type": "ActiveMaterial"
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "nmp",
+      "schema:name": "NMP solvent-based processing"
+    },
+    "hasSolvent": {
+      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+      "@type": "NMethyl2Pyrrolidone",
+      "schema:name": "NMP"
+    },
+    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2 and the Zenodo batch table."
+  },
+  "schema:description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-NMP-2. Active-material type as stated in metadata.csv: \"LNMO\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch LNMO-NMP-2, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: mean 9.5173 mg/cm2, sample standard deviation 0.3213 mg/cm2 over n = 8 discs (range 8.9505-9.99 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 90.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 1.3324 mAh/cm2, sample standard deviation 0.045 mAh/cm2 over n = 8 discs (range 1.2531-1.3986 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 2d - the two LNMO designs are distinct IRIs
+==============================================================================
+aqueous: https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs
+nmp:     https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh
+powder:  https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
+
+==============================================================================
+SPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, for every LNMO cell spec
+==============================================================================
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)
+  cell spec      https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp
+  -> electrode   https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev  (LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3  (LNMO-NMP-1)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)
+  cell spec      https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y
+  -> electrode   https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs  (LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y  (LNMO-AQ-2)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)
+  cell spec      https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c
+  -> electrode   https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk  (LNMO electrode, aqueous processed (IntelLiGent batch 1, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb  (LNMO-AQ-1)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
+LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)
+  cell spec      https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7
+  -> electrode   https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh  (LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF))
+  -> batch       https://w3id.org/battinfo/electrode/0d9z-1b2m-9vcw-887z  (LNMO-NMP-2)
+  -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
+
+==============================================================================
+SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
+==============================================================================
+{
+  "@type": [
+    "prov:Plan",
+    "schema:HowTo",
+    "GalvanostaticIntermittentTitrationTechnique"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
+  "schema:name": "GITT",
+  "schema:additionalType": "gitt",
+  "schema:description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "hasTask": [
+    {
+      "@type": "IterativeWorkflow",
+      "NumberOfIterations": {
+        "hasNumericalPart": {
+          "hasNumberValue": 5
+        }
+      },
+      "hasTask": [
+        {
+          "@type": "IterativeWorkflow",
+          "hasTask": [
+            {
+              "@type": "ConstantCurrentDischarging",
+              "rdfs:label": "Current pulse at C/50",
+              "hasControlParameter": [
+                {
+                  "@type": "CRate",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 0.02
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "electrochemistry:AmperePerAmpereHour"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OpenCircuitHold",
+              "rdfs:label": "Rest for 150 minutes",
+              "hasTerminationParameter": [
+                {
+                  "@type": "Duration",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 150.0
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "emmo:Minute"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 6 h at the lower voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 6.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "IterativeWorkflow",
+          "hasTask": [
+            {
+              "@type": "ConstantCurrentCharging",
+              "rdfs:label": "Current pulse at C/50",
+              "hasControlParameter": [
+                {
+                  "@type": "CRate",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 0.02
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "electrochemistry:AmperePerAmpereHour"
+                  }
+                }
+              ]
+            },
+            {
+              "@type": "OpenCircuitHold",
+              "rdfs:label": "Rest for 150 minutes",
+              "hasTerminationParameter": [
+                {
+                  "@type": "Duration",
+                  "hasNumericalPart": {
+                    "hasNumberValue": 150.0
+                  },
+                  "hasMeasurementUnit": {
+                    "@id": "emmo:Minute"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 6 h at the upper voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 6.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "manual",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
+==============================================================================
+{
+  "@type": [
+    "prov:Plan",
+    "schema:HowTo",
+    "PseudoOpenCircuitVoltageMethod"
+  ],
+  "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
+  "schema:name": "p-OCV",
+  "schema:additionalType": "quasi_ocv",
+  "schema:description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "hasTask": [
+    {
+      "@type": "IterativeWorkflow",
+      "NumberOfIterations": {
+        "hasNumericalPart": {
+          "hasNumberValue": 5
+        }
+      },
+      "hasTask": [
+        {
+          "@type": "ConstantCurrentDischarging",
+          "rdfs:label": "Constant current at C/50 to the lower voltage cutoff",
+          "hasControlParameter": [
+            {
+              "@type": "CRate",
+              "hasNumericalPart": {
+                "hasNumberValue": 0.02
+              },
+              "hasMeasurementUnit": {
+                "@id": "electrochemistry:AmperePerAmpereHour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 8 h at the lower voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 8.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "ConstantCurrentCharging",
+          "rdfs:label": "Constant current at C/50 to the upper voltage cutoff",
+          "hasControlParameter": [
+            {
+              "@type": "CRate",
+              "hasNumericalPart": {
+                "hasNumberValue": 0.02
+              },
+              "hasMeasurementUnit": {
+                "@id": "electrochemistry:AmperePerAmpereHour"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OpenCircuitHold",
+          "rdfs:label": "Rest for 8 h at the upper voltage cutoff",
+          "hasTerminationParameter": [
+            {
+              "@type": "Duration",
+              "hasNumericalPart": {
+                "hasNumberValue": 8.0
+              },
+              "hasMeasurementUnit": {
+                "@id": "emmo:Hour"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "manual",
+    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}
+
+==============================================================================
+SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed as md5) + license + contributors
+==============================================================================
+{
+  "@type": "http://www.w3.org/ns/dcat#Dataset",
+  "@id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
+  "dcterms:title": "SiGr-AQ-3 cell 655454 p-OCV hold half-cell OCV (BDF)",
+  "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  },
+  "dcat:accessURL": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "dcat:keyword": [
+    "open circuit voltage",
+    "OCV",
+    "half-cell",
+    "GITT",
+    "quasi-OCV",
+    "silicon-graphite"
+  ],
+  "schema:keywords": [
+    "open circuit voltage",
+    "OCV",
+    "half-cell",
+    "GITT",
+    "quasi-OCV",
+    "silicon-graphite"
+  ],
+  "dcterms:created": "2026-05-08T00:00:00Z",
+  "dcterms:modified": "2026-05-08T00:00:00Z",
+  "dcterms:issued": "2026-05-08T00:00:00Z",
+  "schema:datePublished": "2026-05-08T00:00:00Z",
+  "schema:measurementTechnique": [
+    "quasi_ocv"
+  ],
+  "schema:variableMeasured": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Test Time / s",
+      "schema:description": "Elapsed time since the start of the test",
+      "schema:unitText": "s"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Unix Time / s",
+      "schema:description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+      "schema:unitText": "s"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Current / A",
+      "schema:description": "Instantaneous current",
+      "schema:unitText": "A"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Voltage / V",
+      "schema:description": "Instantaneous voltage",
+      "schema:unitText": "V"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Cumulative Capacity / Ah",
+      "schema:description": "Total capacity accumulated over a half cycle",
+      "schema:unitText": "Ah"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Cycle Count / 1",
+      "schema:description": "Monotonically increasing index of test cycles",
+      "schema:unitText": "1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "Step Index / 1",
+      "schema:description": "Index of the instantaneous step type within the measurement protocol",
+      "schema:unitText": "1"
+    }
+  ],
+  "schema:citation": [
+    {
+      "@type": "schema:CreativeWork",
+      "@id": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:url": "https://doi.org/10.5281/zenodo.20086298",
+      "schema:name": "Flores et al., half-cell OCV dataset (Zenodo record)",
+      "schema:additionalType": "dataset",
+      "bibo:doi": "10.5281/zenodo.20086298",
+      "schema:identifier": "flores2026ocv"
+    }
+  ],
+  "dcterms:subject": [
+    {
+      "@id": "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg"
+    },
+    {
+      "@id": "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
+    }
+  ],
+  "dcat:distribution": [
+    {
+      "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet",
+      "schema:description": "BDF parquet file hosted on Zenodo.",
+      "dcat:downloadURL": {
+        "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet/content"
+      },
+      "dcat:mediaType": "application/vnd.apache.parquet",
+      "dcat:byteSize": 3504698,
+      "schema:contentSize": "3504698",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_md5"
+        },
+        "spdx:checksumValue": "f875674c607fe898a7c6f5a75c03a1d6"
+      }
+    },
+    {
+      "@type": "dcat:Distribution",
+      "schema:name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+      "schema:description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+      "dcat:downloadURL": {
+        "@id": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/061xx0/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json"
+      },
+      "dcat:mediaType": "application/json",
+      "dcat:byteSize": 66916,
+      "schema:contentSize": "66916",
+      "spdx:checksum": {
+        "@type": "spdx:Checksum",
+        "spdx:checksumAlgorithm": {
+          "@id": "spdx:checksumAlgorithm_sha256"
+        },
+        "spdx:checksumValue": "a692bc4d12bd22d91c74fdb8eee1ee093ae640a8f444fd32a413b5bcb6f08cd2"
+      }
+    }
+  ],
+  "dcterms:source": {
+    "@type": "prov:Entity",
+    "dcterms:type": "measurement",
+    "prov:hadPrimarySource": {
+      "@id": "https://doi.org/10.5281/zenodo.20086298"
+    },
+    "prov:generatedAtTime": "2026-08-17T21:01:00+00:00"
+  },
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}
+
+==============================================================================
+SPOT CHECK 4b - the same dataset's canonical record
+==============================================================================
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
+    "short_id": "061xx0",
+    "identifier": "dataset:061x-x0df-cmjt-ck28",
+    "name": "SiGr-AQ-3 cell 655454 p-OCV hold half-cell OCV (BDF)",
+    "description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "license": "cc-by-4.0",
+    "same_as": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "keywords": [
+      "open circuit voltage",
+      "OCV",
+      "half-cell",
+      "GITT",
+      "quasi-OCV",
+      "silicon-graphite"
+    ],
+    "citations": [
+      {
+        "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
+        "url": "https://doi.org/10.5281/zenodo.20086298",
+        "doi": "10.5281/zenodo.20086298",
+        "citation_key": "flores2026ocv"
+      }
+    ],
+    "measurement_techniques": [
+      "quasi_ocv"
+    ],
+    "variable_measured": [
+      {
+        "name": "Test Time / s",
+        "description": "Elapsed time since the start of the test",
+        "unit_text": "s"
+      },
+      {
+        "name": "Unix Time / s",
+        "description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+        "unit_text": "s"
+      },
+      {
+        "name": "Current / A",
+        "description": "Instantaneous current",
+        "unit_text": "A"
+      },
+      {
+        "name": "Voltage / V",
+        "description": "Instantaneous voltage",
+        "unit_text": "V"
+      },
+      {
+        "name": "Cumulative Capacity / Ah",
+        "description": "Total capacity accumulated over a half cycle",
+        "unit_text": "Ah"
+      },
+      {
+        "name": "Cycle Count / 1",
+        "description": "Monotonically increasing index of test cycles",
+        "unit_text": "1"
+      },
+      {
+        "name": "Step Index / 1",
+        "description": "Index of the instantaneous step type within the measurement protocol",
+        "unit_text": "1"
+      }
+    ],
+    "access_url": "https://doi.org/10.5281/zenodo.20086298",
+    "created_at": 1778198400,
+    "modified_at": 1778198400,
+    "published_at": 1778198400,
+    "about": [
+      "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg",
+      "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
+    ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet",
+        "description": "BDF parquet file hosted on Zenodo.",
+        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet/content",
+        "encoding_format": "application/vnd.apache.parquet",
+        "content_size": "3504698",
+        "access_level": "open",
+        "checksum": {
+          "algorithm": "md5",
+          "value": "f875674c607fe898a7c6f5a75c03a1d6"
+        }
+      },
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+        "description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/061xx0/sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.plot.json",
+        "encoding_format": "application/json",
+        "content_size": "66916",
+        "access_level": "open",
+        "role": "other",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "a692bc4d12bd22d91c74fdb8eee1ee093ae640a8f444fd32a413b5bcb6f08cd2"
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "source_url": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1787000460,
+    "battinfo_version": "0.7.0"
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}

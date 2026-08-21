@@ -1,0 +1,3633 @@
+{
+  "batch": "flores-ocv-halfcells",
+  "zenodo_record": "https://doi.org/10.5281/zenodo.20086298",
+  "published_corpus": {
+    "version": "v1",
+    "records": 319,
+    "state": "live in the Battery Genome registry"
+  },
+  "staged_corpus": {
+    "version": "v4",
+    "branch": "data/flores-ocv-halfcells",
+    "records": 424
+  },
+  "generated_by": "build_supersede_map.py",
+  "v2_baseline_commit": "a798b71",
+  "status_counts": {
+    "replaced": 147,
+    "retained": 154,
+    "split": 18
+  },
+  "statuses": {
+    "retained": "same identifier in v4; the record content changed but the identity did not",
+    "replaced": "one successor under a new identifier",
+    "split": "more than one successor: one published identifier named several things"
+  },
+  "new_in_v4": {
+    "note": "v4 records that supersede no published identifier, by record directory. The seven powders and the material lot are new descriptions rather than replacements - v1's nine 'material specs' were electrode products and map to electrode specs instead. The Topsoe organization record is written to records/organization/topsoe/ in the shared corpus and is not counted here.",
+    "counts": {
+      "material": 9,
+      "material-spec": 7
+    }
+  },
+  "entries": [
+    {
+      "published_id": "https://w3id.org/battinfo/cell/02kc-kdzs-wd9d-2jc7",
+      "published_type": "cell_instance",
+      "natural_key": "6852ff",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/02kc-kdzs-wd9d-2jc7"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/0gj9-pre9-zg89-3qf0",
+      "published_type": "cell_instance",
+      "natural_key": "f6ce67",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/p7e4-zh7n-f83w-hn03"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/0qpq-q8sw-arxd-0737",
+      "published_type": "cell_instance",
+      "natural_key": "02fb2b",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/0qpq-q8sw-arxd-0737"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/0rwp-te68-02gp-q6cc",
+      "published_type": "cell_instance",
+      "natural_key": "ee86d1",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/0rwp-te68-02gp-q6cc"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/0zsj-0332-7s54-7acd",
+      "published_type": "cell_instance",
+      "natural_key": "3ac228",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/0zsj-0332-7s54-7acd"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/10nf-qvqy-8969-6jqn",
+      "published_type": "cell_instance",
+      "natural_key": "70e745",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/10nf-qvqy-8969-6jqn"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/1dm8-xf5g-h0ha-8jxq",
+      "published_type": "cell_instance",
+      "natural_key": "e5a00e",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/1dm8-xf5g-h0ha-8jxq"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/1q2d-ymrd-kc4c-6cm4",
+      "published_type": "cell_instance",
+      "natural_key": "a39225",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/e4st-dmkh-3mfs-06w6"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/1reb-71rr-6w10-w40e",
+      "published_type": "cell_instance",
+      "natural_key": "a39539",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/wga2-06wf-yy0t-ddks"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/21rr-mqz9-svwa-aq27",
+      "published_type": "cell_instance",
+      "natural_key": "882755",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/21rr-mqz9-svwa-aq27"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/29mf-39et-7yv1-gv02",
+      "published_type": "cell_instance",
+      "natural_key": "0820fa",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/79n3-7xgt-adm3-9kt5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/2ex9-nbat-wwv1-3039",
+      "published_type": "cell_instance",
+      "natural_key": "a29c1f",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/2ex9-nbat-wwv1-3039"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/2feg-p2mv-0hz6-w3xn",
+      "published_type": "cell_instance",
+      "natural_key": "e0dd5f",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/2feg-p2mv-0hz6-w3xn"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/3dgx-4x7b-61yk-kg15",
+      "published_type": "cell_instance",
+      "natural_key": "182031",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/3dgx-4x7b-61yk-kg15"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/3kbw-2fn6-27xa-rtd0",
+      "published_type": "cell_instance",
+      "natural_key": "c89aa7",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/ynfb-77vm-ekys-5zw1"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/3nky-w0dk-djyk-wdsv",
+      "published_type": "cell_instance",
+      "natural_key": "b26620",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/3nky-w0dk-djyk-wdsv"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/40s7-mbj6-rj1t-bqjr",
+      "published_type": "cell_instance",
+      "natural_key": "c04965",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/krz6-n590-rd33-6y49"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/47r1-2jqz-1ntn-3m5t",
+      "published_type": "cell_instance",
+      "natural_key": "61a57a",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/z4fe-phh4-zbfx-0vap"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/4cgs-mebe-vkjg-7d44",
+      "published_type": "cell_instance",
+      "natural_key": "175ef2",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/4cgs-mebe-vkjg-7d44"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/4k74-0w84-dv2d-717w",
+      "published_type": "cell_instance",
+      "natural_key": "1c492a",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/4k74-0w84-dv2d-717w"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/4pa0-e80r-v89y-k1z5",
+      "published_type": "cell_instance",
+      "natural_key": "6cf259",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/p8b4-7wv3-1ymn-6qp2"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/4w5f-taks-vb3n-az75",
+      "published_type": "cell_instance",
+      "natural_key": "9d3ce5",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/4w5f-taks-vb3n-az75"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5cjs-2hys-jms3-xvtq",
+      "published_type": "cell_instance",
+      "natural_key": "b4f90b",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/pxyc-gwzv-42hw-9zpa"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5jya-m8b6-8e2g-tdnr",
+      "published_type": "cell_instance",
+      "natural_key": "44efc9",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/5jya-m8b6-8e2g-tdnr"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5mjq-tznd-sfq2-0cn9",
+      "published_type": "cell_instance",
+      "natural_key": "dd8a76",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/zgjx-b43x-99r9-av9t"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5n16-m2a1-fzr7-e98m",
+      "published_type": "cell_instance",
+      "natural_key": "7c22c4",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/kr46-wr5x-d2hj-e4q9"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5sn1-prv4-q3gf-fk7f",
+      "published_type": "cell_instance",
+      "natural_key": "f46602",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/26ry-qdc5-3697-rpvy"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/5yp6-89e9-ft42-n83j",
+      "published_type": "cell_instance",
+      "natural_key": "9973ad",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/a37j-5f43-afpd-jjb0"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/65ms-bqkb-etf5-8rs5",
+      "published_type": "cell_instance",
+      "natural_key": "7202c5",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/2bvh-ebak-s521-v9bn"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/6c9z-asyh-x094-6fgv",
+      "published_type": "cell_instance",
+      "natural_key": "86f18a",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/6c9z-asyh-x094-6fgv"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/6xr9-rdm4-rnze-t1h8",
+      "published_type": "cell_instance",
+      "natural_key": "b89ab5",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/6xr9-rdm4-rnze-t1h8"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/74t3-pnxy-v6ay-pcnx",
+      "published_type": "cell_instance",
+      "natural_key": "655454",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/f7bn-j9rr-mydf-apyg"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/7ryr-q801-wtbg-w0a8",
+      "published_type": "cell_instance",
+      "natural_key": "274e5a",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/7ryr-q801-wtbg-w0a8"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/81gf-vqwh-3x9r-6wag",
+      "published_type": "cell_instance",
+      "natural_key": "6dce02",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/e9ng-ga2y-r4mw-p13y"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/8ap3-k2y2-mynz-fxpc",
+      "published_type": "cell_instance",
+      "natural_key": "f4569b",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/cagw-5nkb-bv9z-b8rx"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/8jhf-ps7r-332d-7m7e",
+      "published_type": "cell_instance",
+      "natural_key": "eef2ba",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/7ckk-d2xe-kzt8-z0j8"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/8y12-grp9-4va5-7gzk",
+      "published_type": "cell_instance",
+      "natural_key": "0d30d4",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/hsjh-edvt-gmen-5pyy"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/a19y-zvyr-780e-p5y1",
+      "published_type": "cell_instance",
+      "natural_key": "fbeeaf",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/a19y-zvyr-780e-p5y1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/a8fw-04w2-qn4m-xp95",
+      "published_type": "cell_instance",
+      "natural_key": "328a71",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/a8fw-04w2-qn4m-xp95"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/akp7-1t8c-n05b-faf8",
+      "published_type": "cell_instance",
+      "natural_key": "8eb80b",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/akp7-1t8c-n05b-faf8"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/at5f-w043-yw8c-dmp6",
+      "published_type": "cell_instance",
+      "natural_key": "6115bb",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/at5f-w043-yw8c-dmp6"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/bkgc-b8j2-d27b-qkke",
+      "published_type": "cell_instance",
+      "natural_key": "ee5c27",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/drh9-f0d8-hget-87hn"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/c0v6-hw6z-z2rg-3r80",
+      "published_type": "cell_instance",
+      "natural_key": "2f9459",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/xw1k-b1ce-8m7d-9fwa"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/c47g-7n7s-1e64-dmb9",
+      "published_type": "cell_instance",
+      "natural_key": "677295",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/c47g-7n7s-1e64-dmb9"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/c4vt-6a0e-wse9-2nmp",
+      "published_type": "cell_instance",
+      "natural_key": "fd2719",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/tn2f-46da-0hj1-f53a"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/ckm0-1a25-kfdp-0s2v",
+      "published_type": "cell_instance",
+      "natural_key": "2b6be3",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/p9cp-gdm8-5kt4-7m4m"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/cvhz-296r-t4by-ng26",
+      "published_type": "cell_instance",
+      "natural_key": "91618e",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/cvhz-296r-t4by-ng26"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/cxgq-gmwd-fkf7-bwrt",
+      "published_type": "cell_instance",
+      "natural_key": "f0ee8d",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/cxgq-gmwd-fkf7-bwrt"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/d02z-abf9-cknx-vhes",
+      "published_type": "cell_instance",
+      "natural_key": "3f39a2",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/d02z-abf9-cknx-vhes"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/d72t-0em0-e26f-hbth",
+      "published_type": "cell_instance",
+      "natural_key": "000b13",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/d72t-0em0-e26f-hbth"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/d89h-mc45-abzk-avgk",
+      "published_type": "cell_instance",
+      "natural_key": "fb8cf6",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/ea36-gsfc-3yhk-7nkt"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/eskq-ehmd-12p0-edbw",
+      "published_type": "cell_instance",
+      "natural_key": "e8f570",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/fz4m-cqga-5nqe-kwfj"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/f0fz-c1jv-p82q-5d8x",
+      "published_type": "cell_instance",
+      "natural_key": "df0911",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/tg9s-zr8t-ba4y-xncx"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/f2zc-bas3-a23v-4vcw",
+      "published_type": "cell_instance",
+      "natural_key": "2373d9",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/f2zc-bas3-a23v-4vcw"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/faqw-aaeg-1heb-jbjn",
+      "published_type": "cell_instance",
+      "natural_key": "4ccc47",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/faqw-aaeg-1heb-jbjn"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/fesj-hjbw-8x7r-231h",
+      "published_type": "cell_instance",
+      "natural_key": "fa5db1",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/xd20-jnmr-w65p-gmjb"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/gb4g-rs9e-0kg7-4ghy",
+      "published_type": "cell_instance",
+      "natural_key": "063b77",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/gb4g-rs9e-0kg7-4ghy"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/gmw1-qnpw-c6z4-jx8w",
+      "published_type": "cell_instance",
+      "natural_key": "1765db",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/gmw1-qnpw-c6z4-jx8w"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/h0my-m2yj-z9x7-yn7v",
+      "published_type": "cell_instance",
+      "natural_key": "979353",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/h0my-m2yj-z9x7-yn7v"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/hefq-tf13-qecx-qtkk",
+      "published_type": "cell_instance",
+      "natural_key": "4fc673",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/7s05-1bdt-jsgs-mpss"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/hp7r-6p52-2a37-trw5",
+      "published_type": "cell_instance",
+      "natural_key": "f5dd84",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/hp7r-6p52-2a37-trw5"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/k2c9-816s-qgxh-10nx",
+      "published_type": "cell_instance",
+      "natural_key": "711dc8",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/9zb3-20mr-xdc1-5q8r"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/mkca-pgfs-gndc-68h6",
+      "published_type": "cell_instance",
+      "natural_key": "e030cf",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/k5qh-gpz0-y9k3-gd21"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/n0ym-py04-bf1z-sp9a",
+      "published_type": "cell_instance",
+      "natural_key": "2a2be3",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/n0ym-py04-bf1z-sp9a"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/n203-rq4n-12e2-9zx3",
+      "published_type": "cell_instance",
+      "natural_key": "244221",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/n203-rq4n-12e2-9zx3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/nfse-xx64-58ma-g5yd",
+      "published_type": "cell_instance",
+      "natural_key": "5f45a8",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/nfse-xx64-58ma-g5yd"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/nj6g-q4gt-5fp6-9jbh",
+      "published_type": "cell_instance",
+      "natural_key": "59ceaa",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/dhb9-08kj-x8c8-sgvv"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/p97g-jg80-f2aq-3deh",
+      "published_type": "cell_instance",
+      "natural_key": "1d5628",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/p97g-jg80-f2aq-3deh"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/pp27-jafm-cm76-g0dr",
+      "published_type": "cell_instance",
+      "natural_key": "e43ac0",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/pp27-jafm-cm76-g0dr"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/q0hr-c6qg-apge-n2af",
+      "published_type": "cell_instance",
+      "natural_key": "b3d963",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/egpw-37f5-26cm-8gj9"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/qnpd-zc5x-ej5t-k8r7",
+      "published_type": "cell_instance",
+      "natural_key": "31c548",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/6ve2-kpvk-htfv-mvbf"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/rh52-rqzm-mtj2-nmdb",
+      "published_type": "cell_instance",
+      "natural_key": "32a68c",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/r371-dj51-mpte-ytrv"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/rzyx-2fez-0rbf-c6de",
+      "published_type": "cell_instance",
+      "natural_key": "210cad",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/yfpg-6ma2-mrjq-3x4y"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/sbqb-nr5a-erb7-5qw1",
+      "published_type": "cell_instance",
+      "natural_key": "e5b4f3",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/125q-6168-1g23-wzk1"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/sd36-k5ap-q58r-78t1",
+      "published_type": "cell_instance",
+      "natural_key": "bdb7bc",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/sd36-k5ap-q58r-78t1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/srqh-8dj7-q06g-nrm3",
+      "published_type": "cell_instance",
+      "natural_key": "ab7297",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/e83y-c23p-fxgm-2b4d"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/sw51-mdnn-gjsj-vjed",
+      "published_type": "cell_instance",
+      "natural_key": "f2733d",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/w0jf-d52p-prgn-za9n"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/t66p-bb2k-fdh8-a8pz",
+      "published_type": "cell_instance",
+      "natural_key": "21a280",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/bnkg-n5bg-71n7-497a"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/tbef-e52s-5mh2-x96y",
+      "published_type": "cell_instance",
+      "natural_key": "70cc5b",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/tbef-e52s-5mh2-x96y"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/te96-rcak-2k7q-h264",
+      "published_type": "cell_instance",
+      "natural_key": "1e88d8",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/te96-rcak-2k7q-h264"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/tnfz-kt6t-gxjz-ktw5",
+      "published_type": "cell_instance",
+      "natural_key": "da05ba",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/ffwj-5pmm-5d88-mz3g"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/v50n-kbaz-5t4h-94be",
+      "published_type": "cell_instance",
+      "natural_key": "084a1b",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/4ant-bhqf-bs3n-nm68"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/vczh-m6zr-9w11-xwqj",
+      "published_type": "cell_instance",
+      "natural_key": "6d543b",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/vczh-m6zr-9w11-xwqj"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/wzza-ef12-rkxt-zwrn",
+      "published_type": "cell_instance",
+      "natural_key": "d07eb6",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/wzza-ef12-rkxt-zwrn"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/x1vs-40qb-rd00-fh2j",
+      "published_type": "cell_instance",
+      "natural_key": "85cad7",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/x1vs-40qb-rd00-fh2j"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/xg7t-7xcd-jjvk-b1rh",
+      "published_type": "cell_instance",
+      "natural_key": "2c4b6a",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/xg7t-7xcd-jjvk-b1rh"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/xp9m-tzn3-ckcg-90jf",
+      "published_type": "cell_instance",
+      "natural_key": "38f87f",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/s19q-pgyb-g13a-wzvq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/xv8x-qmx5-vzvr-0vr4",
+      "published_type": "cell_instance",
+      "natural_key": "931301",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/xv8x-qmx5-vzvr-0vr4"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/yc8c-ws0t-xvqf-2bpy",
+      "published_type": "cell_instance",
+      "natural_key": "d11721",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/srv9-7k9d-8m7k-t5ym"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/yk2z-t6f2-s8ar-8j0z",
+      "published_type": "cell_instance",
+      "natural_key": "876812",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/a8bh-rdge-wehy-4s0y"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/yzgg-dd4m-99vn-k3c0",
+      "published_type": "cell_instance",
+      "natural_key": "53acb0",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/yzgg-dd4m-99vn-k3c0"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/zc06-9yy7-cayr-4cm2",
+      "published_type": "cell_instance",
+      "natural_key": "178617",
+      "status": "retained",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/zc06-9yy7-cayr-4cm2"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/zdvr-j8wp-pdn8-cx9j",
+      "published_type": "cell_instance",
+      "natural_key": "2bac5c",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/ez1d-5sh9-4h0b-q2g5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/zh58-bnxx-70fw-m5sb",
+      "published_type": "cell_instance",
+      "natural_key": "0cf06a",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/kh2v-n2wg-czez-axm8"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/cell/zyfk-1egz-hp8s-59wa",
+      "published_type": "cell_instance",
+      "natural_key": "f9bf3e",
+      "status": "replaced",
+      "successor_type": "cell_instance",
+      "successors": [
+        "https://w3id.org/battinfo/cell/mtmb-wtce-kwfs-trsd"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/0rtc-478r-eqaw-5b02",
+      "published_type": "cell_spec",
+      "natural_key": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2)",
+      "status": "split",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
+        "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7"
+      ],
+      "note": "split (D1): this spec covered two electrode designs, so it becomes two specs, each citing one"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk",
+      "published_type": "cell_spec",
+      "natural_key": "Silicon-graphite composite R2032 half-cell (intelligent1)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
+      "published_type": "cell_spec",
+      "natural_key": "LFP (LiFePO4) R2032 half-cell (gelon)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/dyb1-7smn-efq9-tnqf",
+      "published_type": "cell_spec",
+      "natural_key": "Silicon-graphite composite R2032 half-cell (intelligent2)",
+      "status": "split",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/1kt7-7141-vpj2-pqv0",
+        "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4"
+      ],
+      "note": "split (D1): this spec covered two electrode designs, so it becomes two specs, each citing one"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3",
+      "published_type": "cell_spec",
+      "natural_key": "NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/kzhf-qsrt-2z76-agkp",
+      "published_type": "cell_spec",
+      "natural_key": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1)",
+      "status": "split",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp",
+        "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c"
+      ],
+      "note": "split (D1): this spec covered two electrode designs, so it becomes two specs, each citing one"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
+      "published_type": "cell_spec",
+      "natural_key": "Graphite R2032 half-cell (intelligent)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
+      "published_type": "cell_spec",
+      "natural_key": "NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
+      "published_type": "cell_spec",
+      "natural_key": "Silicon R2032 half-cell (intelligent1)",
+      "status": "retained",
+      "successor_type": "cell_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42"
+      ],
+      "note": "identifier held: this spec already covered exactly one electrode design"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/09vb-kh3s-aq3q-4s3e",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell ee5c27 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/06xa-nxne-46kw-3cjy"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/0hg5-mk4b-defj-q8js",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 2c4b6a p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/0hg5-mk4b-defj-q8js"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/0mhj-teyc-7rw9-cdm9",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell fd2719 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/q1ht-xkkc-3mnm-8jaw"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/0p0r-755c-j3ys-44jn",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 1c492a p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/0p0r-755c-j3ys-44jn"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/2az8-5xcc-r2rg-npt9",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 9973ad GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/tnmz-8nnj-d6jc-mcqb"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/2k1x-6ndw-wj3p-wspj",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell e5b4f3 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/wcb2-jte1-v8zx-rr05"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/34cj-ecdk-414d-4h6w",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell ee86d1 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/34cj-ecdk-414d-4h6w"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3asp-cmph-hx59-pcmz",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell 210cad p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/5qs2-ma5j-6c43-h0fp"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3dfm-wp3e-zbv4-g463",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell a39225 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/my6t-xacr-2nfg-cf8j"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3fm6-cjrh-hbpd-frpg",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell f46602 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/b7w9-42q8-htjp-1mdk"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3hy8-wn75-pj9j-1k05",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell e8f570 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/qd9f-ee08-6ny2-77qq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3jnp-3tde-khfr-hxmv",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 85cad7 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/3jnp-3tde-khfr-hxmv"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3m3r-fcmb-1xj4-8b8v",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell fa5db1 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/bzwj-ctwj-ecw1-yh0y"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3q18-65k4-tm3t-httm",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 9d3ce5 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/3q18-65k4-tm3t-httm"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/3rag-z9p9-5f46-m27y",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell 182031 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/3rag-z9p9-5f46-m27y"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/4r3r-5qat-z7x1-nkyf",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 02fb2b GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/4r3r-5qat-z7x1-nkyf"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/4v2w-cbfn-e3d0-rexf",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 44efc9 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/4v2w-cbfn-e3d0-rexf"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/4ywg-49fr-1hyt-p1hr",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell f6ce67 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/dsbq-w0kf-bs9y-9y85"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/54s2-jq55-bkyx-gbpv",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell e0dd5f p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/54s2-jq55-bkyx-gbpv"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/5rj0-7jpd-r8yq-0mej",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 8eb80b GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/5rj0-7jpd-r8yq-0mej"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/5tt7-9gy3-yjye-s7f1",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell 178617 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/5tt7-9gy3-yjye-s7f1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/5xnn-g8vy-66yh-8mg3",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 175ef2 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/5xnn-g8vy-66yh-8mg3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/5znt-3fev-2rv0-r1n9",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 70e745 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/5znt-3fev-2rv0-r1n9"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/6721-0dt8-vtr3-z7v5",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell a29c1f p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/6721-0dt8-vtr3-z7v5"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/67ny-yj72-ywms-kr2t",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell eef2ba p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/49qs-emek-6z0e-kkkp"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/6apx-93qw-y3wj-9ps0",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell fbeeaf p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/6apx-93qw-y3wj-9ps0"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/6smz-ectt-adch-vc49",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 1765db GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/6smz-ectt-adch-vc49"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/70m8-7gg1-c29v-qf2q",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 876812 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/ym66-1kg7-qvst-j03c"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/744m-pk0j-4a65-m475",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 6115bb p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/744m-pk0j-4a65-m475"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/7ajx-91kx-rydg-nx9g",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell 61a57a GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/1ywf-7a4k-nx0p-0g1p"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/7qj7-5f15-r7zq-9vd6",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 70cc5b GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/7qj7-5f15-r7zq-9vd6"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/8neh-7v76-32p2-b7dg",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell 86f18a GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/8neh-7v76-32p2-b7dg"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/90wy-7j7t-3xse-eacq",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell f0ee8d GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/90wy-7j7t-3xse-eacq"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/a868-1kpb-vkfp-5c4c",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 3f39a2 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/a868-1kpb-vkfp-5c4c"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/ajnf-fgs6-st7z-td9v",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell 31c548 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/yccc-1qt2-yzmb-p509"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/b93n-k3q0-w7pj-gswz",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 979353 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/b93n-k3q0-w7pj-gswz"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/br5k-t9g0-9kz2-xc9n",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell 38f87f GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/7h7h-2yan-ccv7-7xrw"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/bs46-6ewk-pqat-xafn",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 2b6be3 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/0drq-9976-pdhq-52tm"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/c013-hz5e-g8h9-8025",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell 084a1b p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/fdfd-e96g-v3d3-c9sv"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/cmxa-sn8z-a80x-3w12",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell 7202c5 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/vsq1-4chp-58dh-49bq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/cxe2-g31q-nrbz-9kjn",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell 0820fa GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/krat-m0x0-q0fg-g6ss"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/d0ht-kf1r-4tvr-gehm",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 21a280 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/yy36-ypr6-esgw-fr4z"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/dgbg-b33d-hsv0-a95t",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 882755 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/dgbg-b33d-hsv0-a95t"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/f032-baz8-v3nc-1kpj",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell f9bf3e p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/7wyz-abbw-s3np-0r2j"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/fsn5-r1mf-01na-bzqx",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell a39539 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/0bmv-h2y1-wfj8-7ffm"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/g357-c7p3-d0f8-t319",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell 0cf06a p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/dwep-3arx-thcc-7ppa"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/gby4-ez35-p2f1-58qe",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 91618e GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/gby4-ez35-p2f1-58qe"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/gd93-v11s-d3zk-bkp4",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell c89aa7 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/eah6-6j4g-1yen-cmr7"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/gj2x-sx6z-jjkx-1ncg",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell 2f9459 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/50hd-jyge-hvj1-hsfh"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/h3r3-afpd-gsfk-5whv",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell 4fc673 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/0j0g-a385-ddyk-tnws"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/h63y-vnek-g4r1-5kvx",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell e43ac0 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/h63y-vnek-g4r1-5kvx"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/hymr-1a46-ceax-0tsm",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell f2733d p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/vcsw-e4tr-1539-jjg1"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/jmpm-nzas-4cgw-2xjj",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 000b13 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/jmpm-nzas-4cgw-2xjj"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/jzsv-6aqy-1d13-5sft",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell df0911 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/8hdf-sz07-j830-4e08"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/k38y-xfdr-mdna-004q",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell 7c22c4 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/7dh6-tvfq-80s5-aexn"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/k7yq-05ky-6m6v-1845",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 2373d9 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/k7yq-05ky-6m6v-1845"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/kgh4-yye2-36fz-t0g5",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell 244221 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/kgh4-yye2-36fz-t0g5"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/kt2j-e6az-72hb-65cp",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 6852ff GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/kt2j-e6az-72hb-65cp"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/kxa9-p9vd-78cg-vatm",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell e030cf GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/3382-yyq3-56p3-4w50"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/m874-2djx-xz93-qab3",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 5f45a8 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/m874-2djx-xz93-qab3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/mkdd-864w-73hr-pyy3",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell 655454 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/mr19-8rww-0svx-9ca9",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell b89ab5 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/mr19-8rww-0svx-9ca9"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/n1h3-q5f0-86ms-yta4",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell da05ba GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/z1xv-gf9y-9pyp-jqhj"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/n7rx-efcg-dc1w-8nbm",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell d11721 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/erpd-smmg-013f-y2xg"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/prsq-s728-7cwt-186n",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell b26620 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/prsq-s728-7cwt-186n"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/pxhb-w7r4-mm4r-7xh7",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-3 cell 0d30d4 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/daq4-n5jr-twab-k9y6"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/qm7k-a52p-sbxy-dx6p",
+      "published_type": "dataset",
+      "natural_key": "LFP-NMP-1 cell d07eb6 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/qm7k-a52p-sbxy-dx6p"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/r52j-75c3-5nsh-yk82",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 677295 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/r52j-75c3-5nsh-yk82"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/r5qf-v48k-rmnf-dfqz",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell 2bac5c p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/fawm-6hy3-ra01-gq90"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/r6p0-6x3z-enp4-97sb",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell 59ceaa p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/tcyk-jyzh-fjx3-vna3"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/rdnr-6emx-dsnp-9etd",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell dd8a76 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/h7kf-v0gd-34bj-vw5p"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/s9fb-w89g-9324-j0gb",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell fb8cf6 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/nhs5-y6yr-qnwt-h38q"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/sfd6-mp02-zyj1-yzzg",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell e5a00e GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/sfd6-mp02-zyj1-yzzg"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/stad-s5pk-j61w-qzbd",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 063b77 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/stad-s5pk-j61w-qzbd"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/t86z-srrk-8jy9-zeay",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 1e88d8 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/t86z-srrk-8jy9-zeay"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/t9k1-m53j-9473-kndk",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 931301 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/t9k1-m53j-9473-kndk"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/tjqt-7rq5-wx7a-64he",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 4ccc47 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/tjqt-7rq5-wx7a-64he"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/vp5s-f4xj-ahst-4ff0",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 711dc8 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/jczm-egvr-28pz-0pxr"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/w6qp-dj7j-yvmn-vyhe",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell 6dce02 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/vayz-tj6a-pvp2-fz92"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/x2wj-eqqj-mdm3-tca3",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell bdb7bc GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/x2wj-eqqj-mdm3-tca3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/x9qa-b80e-ags5-0eyk",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-1 cell 6cf259 p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/qpyq-52yn-ayd6-jd2y"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xb4r-awft-epz5-fvkk",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-1 cell 274e5a p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/xb4r-awft-epz5-fvkk"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xevf-5hwh-n7ya-yqmb",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell 32a68c p-OCV hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/zfnj-2418-hrg8-fese"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xskp-wcgn-rpmv-jz79",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-2 cell b4f90b p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/psq7-vydk-j8vm-f6ne"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xvpm-54m5-55sg-g47k",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell f5dd84 p-OCV hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/xvpm-54m5-55sg-g47k"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xvt1-z51a-jskf-rbxb",
+      "published_type": "dataset",
+      "natural_key": "LNMO-AQ-2 cell c04965 p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/dps7-n0v4-rd54-47re"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/xy0c-dyrv-q8x6-gfkg",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 328a71 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/xy0c-dyrv-q8x6-gfkg"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/y62v-6js9-afpn-6515",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell ab7297 GITT hold half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/bj9r-z607-v72q-3k9b"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/y6bs-pham-d2tj-aj03",
+      "published_type": "dataset",
+      "natural_key": "NMC111-NMP-1 cell 53acb0 GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/y6bs-pham-d2tj-aj03"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/y6m8-rwv1-hb9b-w9fa",
+      "published_type": "dataset",
+      "natural_key": "NMC532-NMP-1 cell 2a2be3 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/y6m8-rwv1-hb9b-w9fa"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/yvwr-sj3p-k3ye-f424",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 1d5628 p-OCV half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/yvwr-sj3p-k3ye-f424"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/z5dp-4g73-5yvs-e0j6",
+      "published_type": "dataset",
+      "natural_key": "Gr-AQ-1 cell 3ac228 GITT half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/z5dp-4g73-5yvs-e0j6"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/z89x-3wxx-dmgd-5yp0",
+      "published_type": "dataset",
+      "natural_key": "LNMO-NMP-1 cell b3d963 GITT half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/m63d-zdsp-25sp-f08k"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/zevq-1vsr-wx7k-p1mh",
+      "published_type": "dataset",
+      "natural_key": "SiGr-AQ-2 cell f4569b p-OCV half-cell OCV (BDF)",
+      "status": "replaced",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/azp3-mak0-m4ae-frnt"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/dataset/zj71-ark8-6j8b-vwj5",
+      "published_type": "dataset",
+      "natural_key": "Si-AQ-1 cell 6d543b GITT hold half-cell OCV (BDF)",
+      "status": "retained",
+      "successor_type": "dataset",
+      "successors": [
+        "https://w3id.org/battinfo/dataset/zj71-ark8-6j8b-vwj5"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/17t8-f8vm-d6hj-gwzd",
+      "published_type": "material",
+      "natural_key": "NMC532-NMP-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/13fk-z6mq-7ny2-jtjx",
+        "https://w3id.org/battinfo/electrode/1b6x-k9a8-tp8f-m8pz",
+        "https://w3id.org/battinfo/electrode/2qpf-4s4p-vtpb-h871",
+        "https://w3id.org/battinfo/electrode/3t11-xe0x-tbyq-12m4",
+        "https://w3id.org/battinfo/electrode/ejja-98qb-y942-cjfc",
+        "https://w3id.org/battinfo/electrode/hace-e1dy-wc0v-qvcr",
+        "https://w3id.org/battinfo/electrode/n7fd-yezs-b1bh-bjyp",
+        "https://w3id.org/battinfo/electrode/smvj-yrcm-2q73-yzjr"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/19v1-tpd1-qp44-hdzb",
+      "published_type": "material",
+      "natural_key": "LFP-NMP-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/0x40-88rw-m941-n8hw",
+        "https://w3id.org/battinfo/electrode/22kx-s350-rbe7-1k8g",
+        "https://w3id.org/battinfo/electrode/3qt5-rztq-1f2p-r3yq",
+        "https://w3id.org/battinfo/electrode/3vkc-jz8e-m092-3e7p",
+        "https://w3id.org/battinfo/electrode/6q06-7vr7-4e17-w6qh",
+        "https://w3id.org/battinfo/electrode/dbws-fec9-qqrj-14nh",
+        "https://w3id.org/battinfo/electrode/dzz9-etft-nqtk-8hc7",
+        "https://w3id.org/battinfo/electrode/p98g-td9b-t8xr-3n58"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/9eba-2hq8-a1bc-mcc1",
+      "published_type": "material",
+      "natural_key": "Gr-AQ-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/2h76-t1mk-r035-1y4s",
+        "https://w3id.org/battinfo/electrode/4jjf-gnyy-99e7-m0cq",
+        "https://w3id.org/battinfo/electrode/4xba-sfp0-6rpb-q2nn",
+        "https://w3id.org/battinfo/electrode/6wqn-55sx-57yx-8tw1",
+        "https://w3id.org/battinfo/electrode/erk4-6fzn-x4xw-qzbn",
+        "https://w3id.org/battinfo/electrode/gbk8-hhyj-738z-zw5k",
+        "https://w3id.org/battinfo/electrode/s0kq-mvnx-z5gz-y0zy"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 7 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/d1mg-jjt4-1x97-t9rp",
+      "published_type": "material",
+      "natural_key": "LNMO-AQ-2",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y",
+        "https://w3id.org/battinfo/electrode/3gm7-62w2-kgvp-czm7",
+        "https://w3id.org/battinfo/electrode/6260-63kr-y5av-5ehs",
+        "https://w3id.org/battinfo/electrode/87nn-abck-v81q-dtgp",
+        "https://w3id.org/battinfo/electrode/a68m-fztn-790r-vd0y",
+        "https://w3id.org/battinfo/electrode/p49y-2r8m-mp8d-qagg",
+        "https://w3id.org/battinfo/electrode/swv5-9wmw-txnr-6jt7",
+        "https://w3id.org/battinfo/electrode/wh2q-793v-were-qkht"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/dq7q-vqw9-yf5p-mfz3",
+      "published_type": "material",
+      "natural_key": "LNMO-AQ-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb",
+        "https://w3id.org/battinfo/electrode/543r-38v9-8s4z-myhf",
+        "https://w3id.org/battinfo/electrode/b5mg-gmyy-t0rd-002k",
+        "https://w3id.org/battinfo/electrode/cwhe-wgmr-yv9v-z6x4",
+        "https://w3id.org/battinfo/electrode/ebe7-4rks-x35n-cnf6",
+        "https://w3id.org/battinfo/electrode/hxx5-82qp-ayxj-k8rx",
+        "https://w3id.org/battinfo/electrode/javb-9pjp-sna1-7d19",
+        "https://w3id.org/battinfo/electrode/wegr-p3w2-nbvr-m4rt"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/gs6f-9p49-yqb0-vgvy",
+      "published_type": "material",
+      "natural_key": "NMC111-NMP-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/1hdp-2phw-xgfy-wpj7",
+        "https://w3id.org/battinfo/electrode/29z1-18sm-yj10-927x",
+        "https://w3id.org/battinfo/electrode/azx7-8sk3-pk5b-e0rf",
+        "https://w3id.org/battinfo/electrode/bnq2-gprs-epar-gxer",
+        "https://w3id.org/battinfo/electrode/fcey-p1km-zvh8-17c1",
+        "https://w3id.org/battinfo/electrode/fvns-gfgv-t5ag-bqj4",
+        "https://w3id.org/battinfo/electrode/mcrb-wcs5-f2pt-rd37",
+        "https://w3id.org/battinfo/electrode/n8w9-xqw0-h9pf-xn3n",
+        "https://w3id.org/battinfo/electrode/yj9f-7yx7-7k2h-t68p"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 9 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/paap-ck0z-fbq3-npcw",
+      "published_type": "material",
+      "natural_key": "SiGr-AQ-2",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/0mrb-h4x9-sxk8-3rah",
+        "https://w3id.org/battinfo/electrode/2q1f-h3wt-f8az-nz32",
+        "https://w3id.org/battinfo/electrode/2s51-gz34-8rg4-6bmw",
+        "https://w3id.org/battinfo/electrode/8hzz-44ms-p19s-d1q0",
+        "https://w3id.org/battinfo/electrode/8k63-wv21-4trq-5gdp",
+        "https://w3id.org/battinfo/electrode/nt2n-0531-wsce-7s21",
+        "https://w3id.org/battinfo/electrode/p8jg-mc46-xs2v-njcj"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 7 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/tfv2-qsp5-3xcb-n8fs",
+      "published_type": "material",
+      "natural_key": "SiGr-AQ-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/409v-s9c5-adwp-yee8",
+        "https://w3id.org/battinfo/electrode/5e2j-71pp-z03r-r8pb",
+        "https://w3id.org/battinfo/electrode/5s68-dd15-6d1x-vszm",
+        "https://w3id.org/battinfo/electrode/6nvf-6ff6-2yqk-86zj",
+        "https://w3id.org/battinfo/electrode/jt0s-n8a1-cw2h-a1gv",
+        "https://w3id.org/battinfo/electrode/kz6f-3sh8-7t80-bkex",
+        "https://w3id.org/battinfo/electrode/xgz1-yfgs-sd7a-zqmb",
+        "https://w3id.org/battinfo/electrode/zrnt-1d0x-yp4z-vcnr"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/w9n6-4vhn-e6ad-hnkv",
+      "published_type": "material",
+      "natural_key": "LNMO-NMP-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3",
+        "https://w3id.org/battinfo/electrode/8dd2-g4ws-tvfn-g381",
+        "https://w3id.org/battinfo/electrode/d248-nszb-8cs3-r26a",
+        "https://w3id.org/battinfo/electrode/mbp2-j4bd-sxz4-ejgx",
+        "https://w3id.org/battinfo/electrode/nwjv-e6p3-ae1k-5kk9",
+        "https://w3id.org/battinfo/electrode/pen0-jqyp-s00d-prm7",
+        "https://w3id.org/battinfo/electrode/twbh-gsrr-2vva-43j2",
+        "https://w3id.org/battinfo/electrode/wr5p-wtf6-cbw7-47wz"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/wrhz-thsv-1zn9-s8m0",
+      "published_type": "material",
+      "natural_key": "SiGr-AQ-3",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/7j7v-5354-6sr2-3msa",
+        "https://w3id.org/battinfo/electrode/7r87-pzj3-6zp6-e62w",
+        "https://w3id.org/battinfo/electrode/8yq8-3w4f-4yqq-n60c",
+        "https://w3id.org/battinfo/electrode/bbvy-zkat-6gex-41d2",
+        "https://w3id.org/battinfo/electrode/dsfm-57wj-1dez-08ax",
+        "https://w3id.org/battinfo/electrode/gcad-s3as-j3ek-67hg",
+        "https://w3id.org/battinfo/electrode/r3sx-ent3-5qj4-mvbq",
+        "https://w3id.org/battinfo/electrode/xtds-735k-e8d6-fpmy"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/xy28-8fsa-8mnw-hpq5",
+      "published_type": "material",
+      "natural_key": "LNMO-NMP-2",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/0d9z-1b2m-9vcw-887z",
+        "https://w3id.org/battinfo/electrode/7kgv-mbf8-dkfp-sn52",
+        "https://w3id.org/battinfo/electrode/dy69-yxdm-5j0n-8px7",
+        "https://w3id.org/battinfo/electrode/fb5x-vpfs-f5e4-xr0t",
+        "https://w3id.org/battinfo/electrode/gfa4-pb59-tgvn-psvs",
+        "https://w3id.org/battinfo/electrode/m0v0-q8qv-vazm-9rjv",
+        "https://w3id.org/battinfo/electrode/rmsq-pcpb-e8f1-bht6",
+        "https://w3id.org/battinfo/electrode/y56y-r3j8-564x-96pw"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/material/z204-mp8w-zqr9-dc8n",
+      "published_type": "material",
+      "natural_key": "Si-AQ-1",
+      "status": "split",
+      "successor_type": "electrode",
+      "successors": [
+        "https://w3id.org/battinfo/electrode/16jn-76y3-8mg4-kyyv",
+        "https://w3id.org/battinfo/electrode/9x20-m2gm-h96g-eehj",
+        "https://w3id.org/battinfo/electrode/b1k0-3ht3-813y-edd0",
+        "https://w3id.org/battinfo/electrode/est8-zf7g-4q28-ya4e",
+        "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
+        "https://w3id.org/battinfo/electrode/m4fa-9333-h899-m4sx",
+        "https://w3id.org/battinfo/electrode/vsq9-kn33-9s3a-46k1",
+        "https://w3id.org/battinfo/electrode/z2tv-k7vw-6stv-h12y"
+      ],
+      "note": "a coated electrode batch, not a material lot. v4 records the electrode as the disc inside each cell, so this batch becomes the 8 discs cut from it; the batch itself, and its statistics, are the electrode spec https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/2208-dksg-mzz3-479z",
+      "published_type": "material_spec",
+      "natural_key": "silicon_graphite / intelligent2",
+      "status": "split",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv",
+        "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/3tnq-rh30-0prq-4t3m",
+      "published_type": "material_spec",
+      "natural_key": "nmc111 / customcells",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/8mn9-1fgv-00ar-zb0b",
+      "published_type": "material_spec",
+      "natural_key": "silicon_graphite / intelligent1",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/cdsx-hym5-zrjt-17rv",
+      "published_type": "material_spec",
+      "natural_key": "silicon / intelligent1",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/frcy-ggh1-s9xt-cy41",
+      "published_type": "material_spec",
+      "natural_key": "lnmo / intelligent2",
+      "status": "split",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
+        "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/jqs2-8jqx-abnp-6b9q",
+      "published_type": "material_spec",
+      "natural_key": "nmc532 / gelon",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/kw37-e849-72hy-3364",
+      "published_type": "material_spec",
+      "natural_key": "lfp / gelon",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/p6m5-fdbt-yvpc-kx6w",
+      "published_type": "material_spec",
+      "natural_key": "graphite / intelligent",
+      "status": "replaced",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/q0fg-efmx-n2gp-2zd6",
+      "published_type": "material_spec",
+      "natural_key": "lnmo / intelligent1",
+      "status": "split",
+      "successor_type": "electrode_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
+        "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
+      ],
+      "note": "an electrode product, not a powder: replaced by the electrode spec(s) of the same active material and electrode source"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/02zq-wn0n-07cg-74zy",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 02fb2b GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/02zq-wn0n-07cg-74zy"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/09rs-51dx-re7x-gv8e",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell 61a57a GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/ts27-9srw-dqp9-c7v7"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/0m0p-fxpn-736a-fv9f",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell eef2ba p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/tp0b-xe0p-jnsa-np8d"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/0s90-29rs-22bw-x5e3",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 931301 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/0s90-29rs-22bw-x5e3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/0tj0-r80k-anx0-28fj",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell e5a00e GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/0tj0-r80k-anx0-28fj"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/1agh-ztcc-bkqq-804c",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell b89ab5 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/1agh-ztcc-bkqq-804c"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/1egs-a7qa-wkgq-ew64",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 2b6be3 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/y5z3-enhk-v4va-a8dc"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/1v4q-sx3p-gqwh-4d66",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell bdb7bc GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/1v4q-sx3p-gqwh-4d66"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/24sp-wk1r-nhxc-0ag3",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 6cf259 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/wktk-z9b1-009v-ne1g"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/2ang-gggr-93zx-r7r9",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell b3d963 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/7s8v-9vdf-syaj-skzn"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/2h61-f22t-10dr-z7e1",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell f2733d p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/dq1c-64ja-9mfg-vtmq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/2j25-j1d3-yjdq-rmbg",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 6852ff GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/2j25-j1d3-yjdq-rmbg"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/2pg2-9h24-qxd0-6vkd",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell e5b4f3 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/85hw-zhss-2v2n-knns"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/3kg0-er4k-1ha5-6by7",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell 0d30d4 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/0d2w-kcdz-sky2-g2y5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/3ny3-dv9e-xxz2-qf9c",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell dd8a76 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/wvgd-xteq-dacs-mqtt"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/3w8d-49r4-zy78-p248",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell 210cad p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/v52s-dwgc-scxe-kv64"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/40pp-zk6e-4haz-69h8",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell 2bac5c p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/sswy-fskm-ck4e-b5ex"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/422c-58yx-akqh-hqwe",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 53acb0 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/422c-58yx-akqh-hqwe"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/4sdf-1y5m-3h16-aavy",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 2c4b6a p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/4sdf-1y5m-3h16-aavy"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/4sy9-5vcc-e0sf-vfzx",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell 38f87f GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/kt4p-csar-myjk-1zx2"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/5bcb-b8j0-r9be-vrzq",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell 655454 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/4e88-337w-h1zd-35jb"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/5e66-1xq5-g52d-2y17",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 063b77 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/5e66-1xq5-g52d-2y17"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/5rkr-qqg1-txjp-k5cv",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 85cad7 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/5rkr-qqg1-txjp-k5cv"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/5t41-25wg-1q3m-jjx3",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 5f45a8 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/5t41-25wg-1q3m-jjx3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/6a8y-q8md-76vf-5e5h",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell 0820fa GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/e6ht-9j9e-dmez-ebxk"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/6hxh-4436-kh13-zdp6",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell fbeeaf p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/6hxh-4436-kh13-zdp6"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/79th-7q48-b6b8-jmpe",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell fa5db1 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/zw10-y5sb-rc0b-ezqs"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/7q41-stw0-a1cb-cxb0",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell 7c22c4 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/8k7t-47g1-a167-6hmd"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/8agt-zyk4-qacg-3xcj",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell d11721 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/9evb-t6t6-2e1y-d8t9"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/8ed4-1wnf-6nvr-0s62",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell 084a1b p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/bq4p-1325-y4s7-jknh"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/8eje-4qqt-53mn-nsja",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell fd2719 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/m96e-vwsk-m74x-zpf0"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/9ayc-05j0-4prx-1x2w",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell a39539 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/mftm-f0mf-8n08-nj3h"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/9d32-enbw-6j9h-8jpj",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 9d3ce5 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/9d32-enbw-6j9h-8jpj"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/a8mb-1z3e-jxwf-jgs8",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell 6dce02 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/bxej-qd77-vm8a-2d8x"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/b8kx-dj6r-f14p-ac2z",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell b26620 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/b8kx-dj6r-f14p-ac2z"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/b8vs-e64p-2y4h-pg78",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 2a2be3 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/b8vs-e64p-2y4h-pg78"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/bqhh-43gg-x6mn-8q5x",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell ee5c27 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/7jv6-2etm-ratp-fhxq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/brg7-kmdh-6wha-ha6b",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 4ccc47 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/brg7-kmdh-6wha-ha6b"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/cb7f-9k0b-b0z1-pv4b",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 1e88d8 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/cb7f-9k0b-b0z1-pv4b"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/ce9n-y3pp-qs5t-aeyc",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 677295 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/ce9n-y3pp-qs5t-aeyc"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/cg69-7mmt-677d-h726",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell f6ce67 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/b392-rc2g-634y-f0zt"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/cjny-c17b-bj43-xhxk",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell f9bf3e p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/y5mr-4zgs-yq48-bjdq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/d12p-6zs3-xbs9-q70c",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 9973ad GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/yvm1-cvyb-ackp-7ar3"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/d1jq-bj9x-tayq-8dgy",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell a39225 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/4v7g-cg8q-k9dj-yf6w"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/d2fj-zt1s-2x7t-gf7b",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell e43ac0 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/d2fj-zt1s-2x7t-gf7b"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/d5sp-ckp1-mf70-x2y7",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell 31c548 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/q528-f3ns-7pnf-rkqy"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/daw8-hk4h-p2v8-5xse",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell f46602 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/fn5f-7svg-aj5j-ra4s"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/dja2-4vnw-21xe-6a75",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell 7202c5 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/w6jw-53b7-jtzc-jz10"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/dk9p-0k79-hbh8-nd53",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell f5dd84 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/dk9p-0k79-hbh8-nd53"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/dknq-1er8-6x6h-e7y8",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell e030cf GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/s0mv-wdpv-nq96-eeyf"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/egcb-kkka-m5fr-jtfz",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 21a280 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/vnxh-n79t-a5d6-m10h"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/f04y-erxz-hfet-sfgh",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell b4f90b p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/hfd2-2xvj-fh7e-a8m5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/f1yp-s1aa-yxf8-syp2",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 44efc9 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/f1yp-s1aa-yxf8-syp2"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/fk8n-23pw-na4h-bj99",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell f0ee8d GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/fk8n-23pw-na4h-bj99"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/h1q7-yjx5-btpx-paky",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 1765db GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/h1q7-yjx5-btpx-paky"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/h88b-8qnb-q0wz-n4nz",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 1d5628 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/h88b-8qnb-q0wz-n4nz"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/hbzz-eh13-etan-60cx",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell 4fc673 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/hw5t-r7q0-1t8p-pzv5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/hf43-6sgn-j28k-napf",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell 178617 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/hf43-6sgn-j28k-napf"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/htbj-xqrp-a10a-qkfx",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 000b13 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/htbj-xqrp-a10a-qkfx"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/jac9-d53d-m1rv-qa63",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell da05ba GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/63f6-5pwm-5jnn-vhsq"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/kx40-pft5-0gf3-wyw3",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell c04965 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/atkq-xafr-mj30-0d2z"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/m2vr-ys3g-8z33-0z00",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell 59ceaa p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/0y1w-a03e-3bj4-8bhx"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/ma0g-wm4w-s520-4j2r",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell 244221 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/ma0g-wm4w-s520-4j2r"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/mhmh-crb4-w07s-4hs1",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 1c492a p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/mhmh-crb4-w07s-4hs1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/natv-y0sk-g0z7-e969",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 274e5a p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/natv-y0sk-g0z7-e969"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/nqqn-8anx-7ygq-njkg",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 8eb80b GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/nqqn-8anx-7ygq-njkg"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/nzdb-gb6w-a22r-7m9e",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 882755 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/nzdb-gb6w-a22r-7m9e"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/pgwn-gr8d-at0r-gpec",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell df0911 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/r9k9-aev3-5027-xms5"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/px8n-3d6r-b1z0-n6q1",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 6d543b GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/px8n-3d6r-b1z0-n6q1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/pxpe-64qn-q6wv-zq4a",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 3ac228 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/pxpe-64qn-q6wv-zq4a"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/qd4y-dtn0-hfjm-d1nh",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell e0dd5f p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/qd4y-dtn0-hfjm-d1nh"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/qmed-01dv-t71e-2gyk",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 175ef2 GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/qmed-01dv-t71e-2gyk"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/r40w-qnc5-73ga-g0fs",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 70cc5b GITT",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/r40w-qnc5-73ga-g0fs"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/rchd-qgzt-smy2-v2r9",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell c89aa7 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/pvp9-tkfy-bvf2-fr08"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/rk2g-60a1-89wj-hfna",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell 182031 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/rk2g-60a1-89wj-hfna"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/s0tz-6n40-vvnr-csnd",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 876812 p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/5011-dttw-fp51-c62n"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/s2vf-kkzy-pv1f-r1f6",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell 0cf06a p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/zm2j-xtwn-5max-57xj"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/s864-b22p-09zg-mvf3",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell ee86d1 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/s864-b22p-09zg-mvf3"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/t2kz-4h3b-g4yv-de09",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell d07eb6 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/t2kz-4h3b-g4yv-de09"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/t3t5-t6k2-z0gs-4qbk",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell ab7297 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/2a11-1qxx-4m2t-jnnd"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/te0v-918d-a972-j8bd",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell a29c1f p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/te0v-918d-a972-j8bd"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/tj7p-e42y-r1yv-e4ge",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-3 cell e8f570 GITT hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/k9kt-gkjp-pyc7-zkrf"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/txa1-qv1s-ernr-9x41",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 328a71 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/txa1-qv1s-ernr-9x41"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/v190-j4sq-02w5-tdgp",
+      "published_type": "test",
+      "natural_key": "Si-AQ-1 cell 91618e GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/v190-j4sq-02w5-tdgp"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/vc3d-m3na-9x4c-h35h",
+      "published_type": "test",
+      "natural_key": "LFP-NMP-1 cell 86f18a GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/vc3d-m3na-9x4c-h35h"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/vj4p-cc5t-dc7j-db9p",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 2373d9 p-OCV hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/vj4p-cc5t-dc7j-db9p"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/we65-wgh0-hdwm-y66a",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-1 cell 32a68c p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/4bkc-5pp1-1b3a-y01s"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/wwgs-cajb-prk1-cqke",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-2 cell f4569b p-OCV",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/9wcd-7h9s-dk3k-h4vy"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/x4mz-tdrm-mqyz-3tkp",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-1 cell 711dc8 p-OCV hold",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/cx0b-p9a6-nzk1-8zbk"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/xgbq-b3r3-avbv-q31x",
+      "published_type": "test",
+      "natural_key": "NMC532-NMP-1 cell 979353 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/xgbq-b3r3-avbv-q31x"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/y603-8t3t-hy63-tjeq",
+      "published_type": "test",
+      "natural_key": "LNMO-NMP-2 cell 2f9459 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/3hyc-4m5p-tctw-sry3"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/yh35-mz7z-4es7-q9xh",
+      "published_type": "test",
+      "natural_key": "SiGr-AQ-1 cell 70e745 p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/yh35-mz7z-4es7-q9xh"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/yqkc-rrfd-wqzd-ddg1",
+      "published_type": "test",
+      "natural_key": "Gr-AQ-1 cell 3f39a2 GITT hold",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/yqkc-rrfd-wqzd-ddg1"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/zepg-dqhw-9rqx-0ya7",
+      "published_type": "test",
+      "natural_key": "NMC111-NMP-1 cell 6115bb p-OCV",
+      "status": "retained",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/zepg-dqhw-9rqx-0ya7"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/test/zn3c-fm31-xhnc-xfyb",
+      "published_type": "test",
+      "natural_key": "LNMO-AQ-2 cell fb8cf6 GITT",
+      "status": "replaced",
+      "successor_type": "test",
+      "successors": [
+        "https://w3id.org/battinfo/test/sya7-k72w-5h7q-4t5q"
+      ],
+      "note": "re-seeded: its cell spec was split (D1), and the identity seed of this record starts at the cell spec"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
+      "published_type": "test_spec",
+      "natural_key": "p-OCV",
+      "status": "retained",
+      "successor_type": "test_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69",
+      "published_type": "test_spec",
+      "natural_key": "p-OCV hold",
+      "status": "retained",
+      "successor_type": "test_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
+      "published_type": "test_spec",
+      "natural_key": "GITT",
+      "status": "retained",
+      "successor_type": "test_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8"
+      ],
+      "note": "identifier held"
+    },
+    {
+      "published_id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t",
+      "published_type": "test_spec",
+      "natural_key": "GITT hold",
+      "status": "retained",
+      "successor_type": "test_spec",
+      "successors": [
+        "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t"
+      ],
+      "note": "identifier held"
+    }
+  ]
+}

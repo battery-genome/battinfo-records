@@ -1,0 +1,128 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/material/k1pt-wy97-tetf-fzsw",
+  "@type": "schema:ChemicalSubstance",
+  "schema:name": "Graphite study powder batch",
+  "schema:isVariantOf": {
+    "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
+  },
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:name": "lot_id",
+    "schema:value": "study powder batch"
+  },
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "The batch of graphite powder SINTEF coated as Gr-AQ-1. The study necessarily handled a physical batch to coat it; the single-lot claim is the corpus maintainer's (curator ruling, 2026-08-21) - the source publishes no lot identity.",
+    "No `processing` block: the route is a design decision and is carried by the electrode spec."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}

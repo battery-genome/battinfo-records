@@ -1,0 +1,212 @@
+{
+  "schema_version": "0.2.0",
+  "dataset": {
+    "id": "https://w3id.org/battinfo/dataset/tnmz-8nnj-d6jc-mcqb",
+    "short_id": "tnmz8n",
+    "identifier": "dataset:tnmz-8nnj-d6jc-mcqb",
+    "name": "LNMO-AQ-1 cell 9973ad GITT hold half-cell OCV (BDF)",
+    "description": "Half-cell OCV electrochemical time series for LNMO-AQ-1 coin cell 9973ad, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "license": "cc-by-4.0",
+    "same_as": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "keywords": [
+      "open circuit voltage",
+      "OCV",
+      "half-cell",
+      "GITT",
+      "quasi-OCV",
+      "lnmo"
+    ],
+    "citations": [
+      {
+        "kind": "dataset",
+        "name": "Flores et al., half-cell OCV dataset (Zenodo record)",
+        "url": "https://doi.org/10.5281/zenodo.20086298",
+        "doi": "10.5281/zenodo.20086298",
+        "citation_key": "flores2026ocv"
+      }
+    ],
+    "measurement_techniques": [
+      "gitt"
+    ],
+    "variable_measured": [
+      {
+        "name": "Test Time / s",
+        "description": "Elapsed time since the start of the test",
+        "unit_text": "s"
+      },
+      {
+        "name": "Unix Time / s",
+        "description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
+        "unit_text": "s"
+      },
+      {
+        "name": "Current / A",
+        "description": "Instantaneous current",
+        "unit_text": "A"
+      },
+      {
+        "name": "Voltage / V",
+        "description": "Instantaneous voltage",
+        "unit_text": "V"
+      },
+      {
+        "name": "Cumulative Capacity / Ah",
+        "description": "Total capacity accumulated over a half cycle",
+        "unit_text": "Ah"
+      },
+      {
+        "name": "Cycle Count / 1",
+        "description": "Monotonically increasing index of test cycles",
+        "unit_text": "1"
+      },
+      {
+        "name": "Step Index / 1",
+        "description": "Index of the instantaneous step type within the measurement protocol",
+        "unit_text": "1"
+      }
+    ],
+    "access_url": "https://doi.org/10.5281/zenodo.20086298",
+    "created_at": 1778198400,
+    "modified_at": 1778198400,
+    "published_at": 1778198400,
+    "about": [
+      "https://w3id.org/battinfo/cell/a37j-5f43-afpd-jjb0",
+      "https://w3id.org/battinfo/test/yvm1-cvyb-ackp-7ar3"
+    ],
+    "is_based_on": [
+      "https://doi.org/10.5281/zenodo.20086298"
+    ],
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.bdf.parquet",
+        "description": "BDF parquet file hosted on Zenodo.",
+        "content_url": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.bdf.parquet/content",
+        "encoding_format": "application/vnd.apache.parquet",
+        "content_size": "304747549",
+        "access_level": "open",
+        "checksum": {
+          "algorithm": "md5",
+          "value": "4068f36575b9066e0ebe2dfc91d79187"
+        }
+      },
+      {
+        "type": "DataDownload",
+        "name": "sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.plot.json",
+        "description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/tnmz8n/sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.plot.json",
+        "encoding_format": "application/json",
+        "content_size": "85348",
+        "access_level": "open",
+        "role": "other",
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "6601612c46cb6c66b98f43d406ac3a2297e9ccca9e9a48d5f658c11adb0b5db5"
+        }
+      }
+    ]
+  },
+  "provenance": {
+    "source_type": "measurement",
+    "source_url": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1787000461,
+    "battinfo_version": "0.7.0"
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "@context": [
+    "https://w3id.org/emmo/domain/battery/context",
+    {
+      "schema": "https://schema.org/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "bibo": "http://purl.org/ontology/bibo/",
+      "battinfo": "https://w3id.org/battinfo/"
+    }
+  ],
+  "@type": "GraphiteElectrode",
+  "hasCoating": {
+    "@type": "ElectrodeCoating",
+    "hasActiveMaterial": {
+      "@type": [
+        "Graphite",
+        "ActiveMaterial"
+      ],
+      "schema:name": "Graphite",
+      "schema:isVariantOf": {
+        "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
+      },
+      "hasProperty": {
+        "@type": [
+          "MassFraction",
+          "ConventionalProperty"
+        ],
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.90984
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+      }
+    }
+  },
+  "hasProperty": [
+    {
+      "@type": [
+        "AreicCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "AreicCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 1.4241
+      },
+      "schema:unitText": "mAh/cm2",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.05,
+          "schema:unitText": "mAh/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 7
+        }
+      ]
+    },
+    {
+      "@type": [
+        "Diameter",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "Diameter",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 14.0
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+    },
+    {
+      "@type": [
+        "DryCoatingThickness",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "DryCoatingThickness",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 64.0
+      },
+      "schema:unitText": "um",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.0,
+          "schema:unitText": "um"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 7
+        }
+      ]
+    },
+    {
+      "@type": [
+        "ActiveMassLoading",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "ActiveMassLoading",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3.8282
+      },
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+      "schema:valueReference": [
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "standard_deviation",
+          "schema:value": 0.1345,
+          "schema:unitText": "mg/cm2"
+        },
+        {
+          "@type": "schema:PropertyValue",
+          "schema:propertyID": "sample_count",
+          "schema:value": 7
+        }
+      ]
+    }
+  ],
+  "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",
+  "schema:name": "Graphite electrode, aqueous processed (IntelLiGent, SINTEF)",
+  "hasActiveMaterial": {
+    "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t",
+    "@type": "ActiveMaterial"
+  },
+  "prov:wasGeneratedBy": {
+    "@type": "Manufacturing",
+    "skos:prefLabel": "Manufacturing",
+    "dcterms:type": {
+      "@type": "schema:DefinedTerm",
+      "schema:termCode": "aqueous",
+      "schema:name": "Water-based (aqueous) processing"
+    },
+    "hasSolvent": {
+      "@type": "schema:ChemicalSubstance",
+      "schema:name": "water"
+    },
+    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Gr-AQ-1 and the Zenodo batch table."
+  },
+  "schema:description": "Graphite (aqueous processed). Electrode design of the IntelLiGent project batch (SINTEF), published under the label Gr-AQ-1. Active-material type as stated in metadata.csv: \"Graphite\".",
+  "schema:citation": {
+    "@id": "https://doi.org/10.5281/zenodo.20086298",
+    "@type": "schema:CreativeWork",
+    "bibo:doi": "10.5281/zenodo.20086298"
+  },
+  "schema:comment": [
+    "Design values are as published in metadata.csv for batch Gr-AQ-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 7 electrode records that cite this spec.",
+    "Active-mass loading: mean 3.8282 mg/cm2, sample standard deviation 0.1345 mg/cm2 over n = 7 discs (range 3.5818-3.9776 mg/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
+    "Dry thickness: 64.0 um for every one of the 7 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: mean 1.4241 mAh/cm2, sample standard deviation 0.05 mAh/cm2 over n = 7 discs (range 1.3324-1.4797 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note."
+  ],
+  "schema:funding": {
+    "@type": "schema:Grant",
+    "@id": "https://cordis.europa.eu/project/id/101069765",
+    "schema:identifier": "101069765",
+    "schema:name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "schema:alternateName": "IntelLiGent",
+    "schema:funder": {
+      "@type": "schema:Organization",
+      "schema:name": "European Commission"
+    }
+  },
+  "schema:contributor": [
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-2954-1233",
+      "schema:name": "Eibar Flores",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0006-0805-6713",
+      "schema:name": "Sridevi Krishnamurthi",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-6299-1319",
+      "schema:name": "Killian Stokes-Rodriguez",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0005-4059-7715",
+      "schema:name": "Julie Cathrine Guldahl",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0003-0931-5466",
+      "schema:name": "Charifa Hakim",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8014-4324",
+      "schema:name": "Nils Peter Wagner",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "SINTEF"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0009-0003-1413-0770",
+      "schema:name": "Sergi Obrador",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0001-9591-6422",
+      "schema:name": "Andres Bernabeu Santisteban",
+      "schema:affiliation": {
+        "@type": "schema:Organization",
+        "schema:name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "dcterms:license": {
+    "@id": "cc-by-4.0"
+  }
+}

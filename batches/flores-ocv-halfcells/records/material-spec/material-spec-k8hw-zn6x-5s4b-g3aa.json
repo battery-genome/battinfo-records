@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.2.0",
+  "material_spec": {
+    "id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
+    "short_id": "k8hwzn",
+    "name": "Silicon-graphite composite active material",
+    "kind": "silicon_graphite",
+    "material_class": "active_material",
+    "chemistry_family": "silicon-graphite-composite",
+    "description": "Silicon-graphite composite active material of the aqueous-processed Si-Gr electrodes of this dataset. No theoretical specific capacity is stated on this powder because the source states three different ones - 510, 900 and 1150 mAh/g - one for each of the three blends used, so the number belongs to the electrode design and is carried there. The blend ratio itself is named by the Zenodo record as one of the properties the suppliers did not provide."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1786994908,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "notes": [
+    "No manufacturer or supplier is stated: the source names none for this powder, and the field is left unset rather than guessed.",
+    "No theoretical specific capacity is stated on this powder because the source states three different ones - 510, 900 and 1150 mAh/g - one for each of the three blends used, so the number belongs to the electrode design and is carried there. The blend ratio itself is named by the Zenodo record as one of the properties the suppliers did not provide."
+  ],
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

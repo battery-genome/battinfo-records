@@ -1,0 +1,168 @@
+{
+  "schema_version": "0.2.0",
+  "electrode_spec": {
+    "id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
+    "short_id": "z6tqsh",
+    "name": "NMC532 electrode, NMP processed (commercial, Gelon LIB)",
+    "kind": "nmc532",
+    "active_material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
+    "description": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode). Electrode design of the commercial electrode supplied by Gelon LIB, published under the label NMC532-NMP-1. Active-material type as stated in metadata.csv: \"NMC532\".",
+    "coating": {
+      "component": {
+        "active_material": [
+          {
+            "name": "NMC532 (LiNi0.5Mn0.3Co0.2O2)",
+            "property": {
+              "mass_fraction": {
+                "value": 96.62,
+                "unit": "%"
+              }
+            },
+            "material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff"
+          }
+        ]
+      }
+    },
+    "processing": {
+      "route": "nmp",
+      "solvent": "NMP",
+      "detail": "Organic-solvent electrode coating (NMP), as stated by the public electrode label NMC532-NMP-1 and the Zenodo batch table."
+    },
+    "manufacturer": {
+      "type": "Organization",
+      "name": "Gelon LIB"
+    },
+    "property": {
+      "diameter": {
+        "value": 14.0,
+        "unit": "mm"
+      },
+      "loading": {
+        "value": 20.4,
+        "unit": "mg/cm2",
+        "standard_deviation": 0.0,
+        "sample_count": 8
+      },
+      "dry_thickness": {
+        "value": 96.0,
+        "unit": "um",
+        "standard_deviation": 0.0,
+        "sample_count": 8
+      },
+      "areal_capacity": {
+        "value": 3.1,
+        "unit": "mAh/cm2",
+        "standard_deviation": 0.0,
+        "sample_count": 8
+      }
+    }
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1787000428,
+    "battinfo_version": "0.7.0",
+    "citation": "https://doi.org/10.5281/zenodo.20086298"
+  },
+  "notes": [
+    "Design values are as published in metadata.csv for batch NMC532-NMP-1, the one batch that realizes this design. The as-built figures of each individual disc are on the 8 electrode records that cite this spec.",
+    "Active-mass loading: 20.4 mg/cm2 for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Dry thickness: 96.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
+    "Nominal areal capacity: 3.1 mAh/cm2 for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread."
+  ],
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}

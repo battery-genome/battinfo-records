@@ -1,0 +1,13 @@
+Deposit-graph coverage by record type (deposit.jsonld)
+
+material-spec   records=  7  nodes_in_deposit_graph=  7
+material        records=  9  nodes_in_deposit_graph=  9
+electrode-spec  records= 12  nodes_in_deposit_graph= 12
+electrode       records= 95  nodes_in_deposit_graph= 95
+cell-spec       records= 12  nodes_in_deposit_graph= 12
+cell-instance   records= 95  nodes_in_deposit_graph= 95
+test-protocol   records=  4  nodes_in_deposit_graph=  4
+test            records= 95  nodes_in_deposit_graph= 95
+dataset         records= 95  nodes_in_deposit_graph= 95
+
+deposit graph nodes: 426

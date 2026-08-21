@@ -1,0 +1,206 @@
+{
+  "schema_version": "0.2.0",
+  "test_spec": {
+    "id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
+    "short_id": "rd8x1n",
+    "identifier": "test-protocol:rd8x-1nqr-3dp2-0we8",
+    "name": "GITT",
+    "kind": "gitt",
+    "description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature."
+  },
+  "provenance": {
+    "source_type": "manual",
+    "citation": "https://doi.org/10.5281/zenodo.20086298",
+    "retrieved_at": 1786994913,
+    "battinfo_version": "0.7.0"
+  },
+  "method": [
+    {
+      "mode": "group",
+      "description": "5 cycles",
+      "count": 5,
+      "steps": [
+        {
+          "mode": "group",
+          "description": "Current pulses at C/50 with 150-minute rests toward the lower voltage cutoff",
+          "steps": [
+            {
+              "mode": "cc",
+              "direction": "discharge",
+              "setpoints": {
+                "c_rate": {
+                  "value": 0.02,
+                  "unit": "A/Ah"
+                }
+              },
+              "description": "Current pulse at C/50"
+            },
+            {
+              "mode": "rest",
+              "duration": {
+                "value": 150.0,
+                "unit": "min"
+              },
+              "description": "Rest for 150 minutes"
+            }
+          ]
+        },
+        {
+          "mode": "rest",
+          "duration": {
+            "value": 6.0,
+            "unit": "h"
+          },
+          "description": "Rest for 6 h at the lower voltage cutoff"
+        },
+        {
+          "mode": "group",
+          "description": "Current pulses at C/50 with 150-minute rests toward the upper voltage cutoff",
+          "steps": [
+            {
+              "mode": "cc",
+              "direction": "charge",
+              "setpoints": {
+                "c_rate": {
+                  "value": 0.02,
+                  "unit": "A/Ah"
+                }
+              },
+              "description": "Current pulse at C/50"
+            },
+            {
+              "mode": "rest",
+              "duration": {
+                "value": 150.0,
+                "unit": "min"
+              },
+              "description": "Rest for 150 minutes"
+            }
+          ]
+        },
+        {
+          "mode": "rest",
+          "duration": {
+            "value": 6.0,
+            "unit": "h"
+          },
+          "description": "Rest for 6 h at the upper voltage cutoff"
+        }
+      ]
+    }
+  ],
+  "facets": {
+    "modes": [
+      "group"
+    ],
+    "directions": [
+      "charge",
+      "discharge"
+    ],
+    "control_modes": [
+      "current"
+    ],
+    "has_cv_hold": false,
+    "has_rest": true,
+    "has_eis": false,
+    "c_rates": [
+      0.02
+    ]
+  },
+  "funding": {
+    "type": "Grant",
+    "identifier": "101069765",
+    "id": "https://cordis.europa.eu/project/id/101069765",
+    "name": "Innovative and Sustainable High Voltage Li-ion Cells for Next Generation (EV) Batteries",
+    "acronym": "IntelLiGent",
+    "funder": {
+      "type": "Organization",
+      "name": "European Commission"
+    },
+    "program": "HE"
+  },
+  "contributor": [
+    {
+      "type": "Person",
+      "name": "Eibar Flores",
+      "same_as": "https://orcid.org/0000-0003-2954-1233",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sridevi Krishnamurthi",
+      "same_as": "https://orcid.org/0009-0006-0805-6713",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Killian Stokes-Rodriguez",
+      "same_as": "https://orcid.org/0000-0002-6299-1319",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Julie Cathrine Guldahl",
+      "same_as": "https://orcid.org/0009-0005-4059-7715",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Charifa Hakim",
+      "same_as": "https://orcid.org/0000-0003-0931-5466",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Simon Clark",
+      "same_as": "https://orcid.org/0000-0002-8758-6109",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Nils Peter Wagner",
+      "same_as": "https://orcid.org/0000-0002-8014-4324",
+      "affiliation": {
+        "type": "Organization",
+        "name": "SINTEF"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Sergi Obrador",
+      "same_as": "https://orcid.org/0009-0003-1413-0770",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Andres Bernabeu Santisteban",
+      "same_as": "https://orcid.org/0000-0001-9591-6422",
+      "affiliation": {
+        "type": "Organization",
+        "name": "Institut de Recerca de l'Energia de Catalunya"
+      }
+    }
+  ],
+  "license": "cc-by-4.0"
+}
