@@ -8,11 +8,11 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@id": "https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq",
+  "@id": "https://w3id.org/battinfo/material/k1pt-wy97-tetf-fzsw",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "LNMO study powder batch",
+  "schema:name": "Graphite study powder batch",
   "schema:isVariantOf": {
-    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+    "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",
@@ -25,10 +25,8 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": [
-    "The single batch of LNMO powder this study coated. The Zenodo record speaks of \"the LNMO material used in this study\" in the singular while describing four electrode batches across two processing routes, so one lot supplied all of them: LNMO-AQ-1, LNMO-AQ-2, LNMO-NMP-1, LNMO-NMP-2. No supplier lot number is published, so the label states what the lot is rather than inventing an identifier.",
-    "No `processing` block: this one lot was coated by BOTH routes - two aqueous designs and two NMP ones - so no single route describes it. The route is a design decision and is carried by each electrode spec, which is where it is also part of the identity seed.",
-    "The four LNMO electrode designs are coated from this lot. They cannot point at it directly: an electrode spec links a material SPEC (`active_material_spec_id`) and an electrode record links no material at all, so the electrode -> material-lot edge has no field in the model (gap E8). Both sides name the other in prose until it does.",
-    "Every material spec carries at least one lot record (curator ruling, 2026-08-21); this one is the only lot the source itself evidences in the singular."
+    "The batch of graphite powder SINTEF coated as Gr-AQ-1. The study necessarily handled a physical batch to coat it; the single-lot claim is the corpus maintainer's (curator ruling, 2026-08-21) - the source publishes no lot identity.",
+    "No `processing` block: the route is a design decision and is carried by the electrode spec."
   ],
   "schema:funding": {
     "@type": "schema:Grant",

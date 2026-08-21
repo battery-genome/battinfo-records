@@ -9,7 +9,7 @@
   "staged_corpus": {
     "version": "v4",
     "branch": "data/flores-ocv-halfcells",
-    "records": 416
+    "records": 424
   },
   "generated_by": "build_supersede_map.py",
   "v2_baseline_commit": "a798b71",
@@ -26,7 +26,7 @@
   "new_in_v4": {
     "note": "v4 records that supersede no published identifier, by record directory. The seven powders and the material lot are new descriptions rather than replacements - v1's nine 'material specs' were electrode products and map to electrode specs instead. The Topsoe organization record is written to records/organization/topsoe/ in the shared corpus and is not counted here.",
     "counts": {
-      "material": 1,
+      "material": 9,
       "material-spec": 7
     }
   },

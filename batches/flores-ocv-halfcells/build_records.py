@@ -87,7 +87,9 @@ carries a content-derived IRI and unchanged records report ``[unchanged]``.
 Records authored (one published Zenodo dataset -> per-test granularity):
   * 1  organization     (Topsoe, into the shared records/organization/ corpus - R2)
   * 7  material specs   (one POWDER per active-material kind - R1)
-  * 1  material lot     (the one study powder the source evidences: LNMO - R3)
+  * 9  material lots    (one per spec by curator ruling 2026-08-21; LNMO is the
+                        one the source evidences, silicon-graphite splits into its
+                        three evidenced blends)
   * 12 electrode specs  (one per electrode DESIGN: kind x source x processing route,
                          each citing its powder and carrying the batch statistics)
   * 95 electrodes       (the DISC inside each cell, with its as-built figures - R4)
@@ -919,6 +921,7 @@ def main() -> int:
     # states and - just as important - what it says the source does not report.
     print("\n== material specs (powders) ==")
     material_spec_by_kind: dict[str, str] = {}
+    material_spec_records: dict[str, dict] = {}
     lnmo_spec = None
     for kind in sorted({r["kind"] for r in rows}):
         powder = POWDERS[kind]
@@ -958,6 +961,7 @@ def main() -> int:
         fields["notes"] = notes
         record = ws.add("material_spec", **fields)[0]
         material_spec_by_kind[kind] = record["material_spec"]["id"]
+        material_spec_records[kind] = record
         if kind == "lnmo":
             lnmo_spec = record
     lnmo_spec_id = material_spec_by_kind["lnmo"]
@@ -991,12 +995,91 @@ def main() -> int:
             "(`active_material_spec_id`) and an electrode record links no material at "
             "all, so the electrode -> material-lot edge has no field in the model "
             "(gap E8). Both sides name the other in prose until it does.",
-            "No lot record is authored for the other six active materials: the source "
-            "evidences no physical batch for them, and for the three purchased "
-            "electrodes it never saw the powder.",
+            "Every material spec carries at least one lot record (curator ruling, "
+            "2026-08-21); this one is the only lot the source itself evidences in "
+            "the singular.",
         ],
     )[0]
     lnmo_lot_id = lnmo_lot["material"]["id"]
+    material_lot_ids: list[str] = [lnmo_lot_id]
+
+    # --- 1c. A lot for every other spec (curator ruling, 2026-08-21) -------------
+    # "We need both": every material spec gets a material instance. Three honest
+    # flavours, matched to what the source supports:
+    #   * SINTEF-coated single-blend kinds (graphite, silicon): the study coated
+    #     the powder, so a physical batch necessarily existed; the single-lot
+    #     claim is curator-asserted (no lot identity is published).
+    #   * silicon_graphite: the source evidences THREE distinct blends - the
+    #     designs state different theoretical specific capacities (510, 1150,
+    #     900 mAh/g) - so one lot per blend, not one for the kind.
+    #   * Purchased-electrode kinds (lfp, nmc111, nmc532): the powder exists only
+    #     inside the finished electrodes and the study never handled it; the lot
+    #     record asserts that batch's existence and nothing more.
+    coated_single = {
+        "graphite": "Gr-AQ-1",
+        "silicon": "Si-AQ-1",
+    }
+    purchased_supplier = {
+        "lfp": "Gelon LIB",
+        "nmc111": "Customcells",
+        "nmc532": "Gelon LIB",
+    }
+    for kind, label in sorted(coated_single.items()):
+        lot_record = ws.add(
+            "material",
+            spec=material_spec_records[kind],
+            lot=LNMO_LOT_LABEL,
+            name=f"{POWDERS[kind]['name'].split(' active material')[0]} {LNMO_LOT_LABEL}",
+            source_type="literature",
+            citation=DOI_URL,
+            notes=[
+                f"The batch of {kind.replace('_', '-')} powder SINTEF coated as {label}. "
+                "The study necessarily handled a physical batch to coat it; the "
+                "single-lot claim is the corpus maintainer's (curator ruling, "
+                "2026-08-21) - the source publishes no lot identity.",
+                "No `processing` block: the route is a design decision and is carried "
+                "by the electrode spec.",
+            ],
+        )[0]
+        material_lot_ids.append(lot_record["material"]["id"])
+    sigr_blends = sorted(
+        {(r["label"], r["theo_mahg"]) for r in rows if r["kind"] == "silicon_graphite"}
+    )
+    for label, theo in sigr_blends:
+        lot_record = ws.add(
+            "material",
+            spec=material_spec_records["silicon_graphite"],
+            lot=f"{label} blend",
+            name=f"Silicon-graphite blend coated as {label}",
+            source_type="literature",
+            citation=DOI_URL,
+            notes=[
+                f"The silicon-graphite blend SINTEF coated as {label}, stated at "
+                f"{theo:g} mAh/g theoretical specific capacity. The three "
+                "silicon-graphite designs state three different capacities (510, "
+                "1150, 900 mAh/g), so they are three distinct physical blends and "
+                "each gets its own lot; the blend ratios themselves are among the "
+                "properties the source says the suppliers did not provide.",
+            ],
+        )[0]
+        material_lot_ids.append(lot_record["material"]["id"])
+    for kind, supplier in sorted(purchased_supplier.items()):
+        lot_record = ws.add(
+            "material",
+            spec=material_spec_records[kind],
+            lot="powder within the purchased electrodes",
+            name=f"{POWDERS[kind]['name'].split(' active material')[0]} powder within the purchased electrodes",
+            source_type="literature",
+            citation=DOI_URL,
+            notes=[
+                f"The batch of powder inside the finished electrodes {supplier} "
+                "supplied. Its existence is certain - the material is physically in "
+                "the cells - but the study never handled the powder separately, and "
+                "no supplier, grade or lot identity is published for it. This record "
+                "asserts the batch and nothing more (curator ruling, 2026-08-21).",
+            ],
+        )[0]
+        material_lot_ids.append(lot_record["material"]["id"])
 
     # --- 2. Electrode specs: one per electrode DESIGN ---------------------------
     # The design key is (kind, electrode source, processing route). In this dataset
@@ -1582,7 +1665,7 @@ def main() -> int:
 
     manifest = {
         "material-spec": sorted(material_spec_by_kind.values()),
-        "material": [lnmo_lot_id],
+        "material": sorted(material_lot_ids),
         "electrode-spec": [_iri(o, "electrode_spec") for o in electrode_spec_by_label.values()],
         "electrode": [_iri(o, "electrode") for o in electrode_by_hex.values()],
         "cell-spec": [_iri(o, "cell_spec") for o in spec_by_key.values()],

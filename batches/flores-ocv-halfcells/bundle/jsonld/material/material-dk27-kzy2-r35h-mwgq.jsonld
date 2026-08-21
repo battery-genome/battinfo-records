@@ -8,28 +8,23 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@id": "https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq",
+  "@id": "https://w3id.org/battinfo/material/dk27-kzy2-r35h-mwgq",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "LNMO study powder batch",
+  "schema:name": "Silicon-graphite blend coated as SiGr-AQ-2",
   "schema:isVariantOf": {
-    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+    "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",
     "schema:name": "lot_id",
-    "schema:value": "study powder batch"
+    "schema:value": "SiGr-AQ-2 blend"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",
     "bibo:doi": "10.5281/zenodo.20086298"
   },
-  "schema:comment": [
-    "The single batch of LNMO powder this study coated. The Zenodo record speaks of \"the LNMO material used in this study\" in the singular while describing four electrode batches across two processing routes, so one lot supplied all of them: LNMO-AQ-1, LNMO-AQ-2, LNMO-NMP-1, LNMO-NMP-2. No supplier lot number is published, so the label states what the lot is rather than inventing an identifier.",
-    "No `processing` block: this one lot was coated by BOTH routes - two aqueous designs and two NMP ones - so no single route describes it. The route is a design decision and is carried by each electrode spec, which is where it is also part of the identity seed.",
-    "The four LNMO electrode designs are coated from this lot. They cannot point at it directly: an electrode spec links a material SPEC (`active_material_spec_id`) and an electrode record links no material at all, so the electrode -> material-lot edge has no field in the model (gap E8). Both sides name the other in prose until it does.",
-    "Every material spec carries at least one lot record (curator ruling, 2026-08-21); this one is the only lot the source itself evidences in the singular."
-  ],
+  "schema:comment": "The silicon-graphite blend SINTEF coated as SiGr-AQ-2, stated at 1150 mAh/g theoretical specific capacity. The three silicon-graphite designs state three different capacities (510, 1150, 900 mAh/g), so they are three distinct physical blends and each gets its own lot; the blend ratios themselves are among the properties the source says the suppliers did not provide.",
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",
