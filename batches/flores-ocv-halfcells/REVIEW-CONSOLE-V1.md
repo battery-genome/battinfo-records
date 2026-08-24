@@ -2,7 +2,7 @@
 
 **Staged only; nothing republished.** The corpus is v4.2 (424 records, PR #6): v4.1 re-verified byte-identical 2026-08-20, then extended 2026-08-21 with a material lot for every spec (curator ruling - eight new lots joining the LNMO one: two SINTEF-coated singles, three silicon-graphite blends evidenced by their distinct theoretical capacities, three purchased-electrode batches asserted as existence-only). Validation 0 errors / 0 warnings / 0 SHACL non-conformances across all 424; idempotent; all pre-existing identifiers unchanged.
 
-What changed since REVIEW-TABLE-V4 is the *presentation*: every record type now renders as the four-band record console (registry `feat/record-dossier`, PR #56; platform `feat/record-dossier`, PR #81 - both unmerged), each at its own scale - cells and datasets tell their full chain; the other types get their own facts plus the records behind them, with the reverse "used by" rosters as clickable tables in the Related band. Organizations keep their profile page. This review is of that surface, over the unchanged corpus.
+What changed since REVIEW-TABLE-V4 is the *presentation*: every record type now renders as the four-band record console (registry `feat/record-dossier`, PR #56; platform `feat/record-dossier`, PR #81 - both unmerged), each at its own scale - cells and datasets tell their full chain; the other types get their own facts plus the records behind them, with the reverse "used by" rosters as clickable tables in the Related band. Organizations keep their profile page. This review is of that surface, over corpus v4.2.
 
 Local stack: registry :8010 (preview DB, display persisted from the dossier branch), platform :3100 (dev server from `plat-dossier`). Add a `?x=1` cache-buster if a page looks stale.
 
@@ -44,7 +44,7 @@ Local stack: registry :8010 (preview DB, display persisted from the dossier bran
 | 14 | [Kind: silicon_graphite](http://127.0.0.1:3100/registry/kind/silicon_graphite) | Second kind for comparison |
 | 15 | [Browse cells](http://127.0.0.1:3100/registry?type=cell) | Serial-distinct titles across the 95 |
 
-All pages sweep-verified 2026-08-20: HTTP 200, console on every record type except organizations, no error boundaries. Content-verified: the powder's used-by rosters, the protocol's prose-as-narrative, and the electrode's spec/material sections all survive the console switch.
+All pages sweep-verified 2026-08-20 and re-verified 2026-08-21 after the v4.2 reseed: HTTP 200, console on every record type except organizations, no error boundaries. Content-verified: the powder's used-by rosters, the protocol's prose-as-narrative, and the electrode's spec/material sections all survive the console switch.
 
 ## What to exercise beyond clicking through
 
@@ -62,4 +62,4 @@ All pages sweep-verified 2026-08-20: HTTP 200, console on every record type exce
 
 ## Republication note
 
-This review changes nothing in the runbook: corpus v4.1 stands as staged, S10 is fixed on the PR train, and the console ships with registry #56 + platform #81. Merge order: BattINFO #350 -> registry #55 -> #56 -> platform #81, then the standing republish sequence.
+Corpus v4.2 stands as staged. The republication gate changed on 2026-08-21: the S10 fix (BattINFO #350 + the re-vendor half of registry #55) was rejected in favour of eliminating the ns# namespace outright - that work is handed off and not started, and its two replacement PRs take the head of the train. Merge order: [ns# BattINFO PR] -> [ns# registry PR] -> registry #56 -> platform #81, then the standing republish sequence (publish in dependency order, rerender --apply --persist-display, upload_profiles.py, drop the passphrase gate, Zenodo v2).
