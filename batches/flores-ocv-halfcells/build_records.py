@@ -425,12 +425,12 @@ ROUTE_TOKENS = {"AQ": ("aqueous", "water"), "NMP": ("nmp", "NMP")}
 # every build. The value is pinned so a change in the minting primitive fails the
 # build instead of silently moving a published identifier.
 #
-# NOTE FOR REVIEW: records/organization/haldor-topsoe/ already holds a Battery
-# Knowledge Graph stub for the same company under its pre-2022 legal name (IRI
-# j50f-3ebx-sssw-svnm). The two are the same legal entity and should be merged
-# before anything here is published; this record carries the former name in
-# `alternateName` so the duplicate is findable rather than silent. Flagged in
-# README-semantic-layer.md and in the pull request.
+# RESOLVED (curator ruling, 2026-08-21): this record is the one Topsoe. The
+# Battery Knowledge Graph stub for the same company under its pre-2022 legal
+# name (records/organization/haldor-topsoe/, IRI j50f-3ebx-sssw-svnm) is
+# retired from the corpus; its one unique fact - the BKG item identifier - is
+# absorbed into this record's sameAs. The live j50f record gets marked
+# superseded-by this IRI at republication (see README-semantic-layer.md).
 TOPSOE_SEED = "organization::topsoe"
 TOPSOE_IRI = "https://w3id.org/battinfo/organization/vz1v-rvhz-n77h-344c"
 TOPSOE_NAME = "Topsoe"
@@ -845,8 +845,13 @@ def write_topsoe_organization() -> str:
             "short_id": TOPSOE_IRI.rsplit("/", 1)[-1].replace("-", "")[:8],
             "type": "Corporation",
             "name": TOPSOE_NAME,
-            "alternateName": ["Haldor Topsoe", "Haldor Topsoe A/S"],
+            "alternateName": ["Haldor Topsoe", "Haldor Topsoe A/S", "Haldor Topsøe A/S"],
             "url": "https://www.topsoe.com/",
+            # Absorbed from the retired BKG stub (j50f-3ebx-sssw-svnm): the one
+            # fact it carried that this record lacked. BKG content is CC BY-SA 4.0.
+            "sameAs": [
+                "https://battery.knowledge-graph.eu/wiki/Item:OSW1f65aa230152401796031474ba920ccd"
+            ],
             "description": (
                 "Danish catalyst and materials company. Named by the corpus maintainer as "
                 "the manufacturer of the LNMO active material measured in Zenodo record "
@@ -863,10 +868,11 @@ def write_topsoe_organization() -> str:
             "review_status": "stub",
             "note": (
                 "Created for the Flores half-cell OCV batch, from a fact supplied by the "
-                "corpus maintainer rather than by the source record. "
-                "records/organization/haldor-topsoe/ is a Battery Knowledge Graph stub for "
-                "the same legal entity under its pre-2022 name and should be merged into "
-                "this record before either is published."),
+                "corpus maintainer rather than by the source record. Supersedes the "
+                "Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (the same "
+                "legal entity under its pre-2022 name, Haldor Topsoe; curator ruling "
+                "2026-08-21). The sameAs link to the BKG item is absorbed from that stub "
+                "(BKG content is CC BY-SA 4.0)."),
         },
     }
     record["provenance"] = {k: v for k, v in record["provenance"].items() if v is not None}
