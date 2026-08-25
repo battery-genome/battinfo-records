@@ -33,7 +33,7 @@ Local stack: registry :8010 (preview DB, display persisted from the dossier bran
 | 9 | [LNMO electrode spec (NMP)](http://127.0.0.1:3100/registry/spec/93f0-n525-w6pr-t8gh) | Console: batch statistics with sd/n as KPIs, active-material section, used-by rosters |
 | 10 | [Electrode gfa4 (was "disc")](http://127.0.0.1:3100/registry/electrode/gfa4-pb59-tgvn-psvs) | Console: as-built figures, its spec and powder as sections, the cell using it in Related. The record *title* still says "disc" - titles are corpus data, renaming is a v5 decision |
 | 11 | [GITT protocol](http://127.0.0.1:3100/registry/spec/rd8x-1nqr-3dp2-0we8) | Console: the protocol prose leads as the page's narrative; the 47 tests using it in Related |
-| 12 | [Topsoe](http://127.0.0.1:3100/registry/organization/vz1v-rvhz-n77h-344c) | Organizations keep their dedicated profile page - the one non-console type |
+| 12 | [Topsoe](http://127.0.0.1:3100/registry/organization/vz1v-rvhz-n77h-344c) | Organizations joined the console 2026-08-21 (user ruling: all record pages): overview band with QR and identity tiles, the records naming the org as clickable tables, publications, citation. Preview seeds orgs name-only, so alternate names and sameAs pills show in production |
 | 12b | [Graphite study powder batch](http://127.0.0.1:3100/registry/material/k1pt-wy97-tetf-fzsw) | One of the eight v4.2 lots: the instance behind the spec, honest about what the source does and does not evidence |
 
 ### Compilations
@@ -44,7 +44,7 @@ Local stack: registry :8010 (preview DB, display persisted from the dossier bran
 | 14 | [Kind: silicon_graphite](http://127.0.0.1:3100/registry/kind/silicon_graphite) | Second kind for comparison |
 | 15 | [Browse cells](http://127.0.0.1:3100/registry?type=cell) | Serial-distinct titles across the 95 |
 
-All pages sweep-verified 2026-08-20 and re-verified 2026-08-21 after the v4.2 reseed: HTTP 200, console on every record type except organizations, no error boundaries. Content-verified: the powder's used-by rosters, the protocol's prose-as-narrative, and the electrode's spec/material sections all survive the console switch.
+All pages sweep-verified 2026-08-20 and re-verified 2026-08-21 after the v4.2 reseed: HTTP 200, console on every record type including organizations, no error boundaries. Content-verified: the powder's used-by rosters, the protocol's prose-as-narrative, and the electrode's spec/material sections all survive the console switch.
 
 ## What to exercise beyond clicking through
 
