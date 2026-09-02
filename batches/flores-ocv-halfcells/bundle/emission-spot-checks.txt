@@ -124,7 +124,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "prov:generatedAtTime": "2026-09-02T13:06:06+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

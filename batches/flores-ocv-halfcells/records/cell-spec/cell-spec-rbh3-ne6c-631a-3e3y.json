@@ -31,7 +31,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994913,
+    "retrieved_at": 1788354366,
     "battinfo_version": "0.7.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
