@@ -1563,8 +1563,66 @@ def main() -> int:
         dist["role"] = "other"
         return dist
 
+    # --- 9a. The dataset collection (corpus v5) ----------------------------------
+    # One dcat:DatasetSeries record for the whole Zenodo deposit (BattINFO#351).
+    # The deposit is one archive with one DOI; the 95 per-cell datasets are its
+    # members and each carries the forward edge via `series_id` below, which is
+    # why the collection publishes FIRST. It is an ordinary dataset record
+    # flavored by additional_type - no new record type - and it carries no
+    # `about` cell link of its own: the members hold the cell links, and the
+    # series exemption (BattINFO#352) is what lets it save under strict policy.
+    #
+    # IDENTITY: a dataset IRI seeds from cell :: test :: locator :: name. The
+    # collection has neither cell nor test, so its identity is (access_url,
+    # name) - renaming it re-seeds the IRI and orphans every member's
+    # series_id. The name is frozen once published.
+    print("\n== dataset collection ==")
+    collection_kinds = sorted({r["kind"].replace("_", "-") for r in rows})
+    collection_techniques = sorted({PROTOCOLS[r["proto"]]["technique"] for r in rows})
+    collection = B.Dataset(
+        name="Flores et al. half-cell OCV collection",
+        description=(
+            f"The Flores et al. half-cell OCV collection: the {len(rows)} "
+            f"electrochemical time-series datasets of Zenodo record {DOI}, measured "
+            f"on coin half-cells built from {len(by_batch)} electrode batches across "
+            f"{len(collection_kinds)} active-material kinds "
+            f"({', '.join(collection_kinds)}), with the GITT and quasi-OCV protocols "
+            f"at room temperature. Apache Parquet in Battery Data Format (BDF). Each "
+            f"member dataset describes one file of the deposit and states its "
+            f"membership through this record."),
+        additional_type=["DatasetSeries"],
+        license="cc-by-4.0",
+        access_url=DOI_URL,
+        # The collection IS the deposit, so the deposit DOI is its own external
+        # identifier - the anchor of the whole series - where a member's
+        # identifier stays derived from its IRI.
+        identifier={"property_id": "doi", "value": DOI},
+        created_at=ZENODO_PUBLISHED,
+        published_at=ZENODO_PUBLISHED,
+        keywords=["open circuit voltage", "OCV", "half-cell", "GITT", "quasi-OCV",
+                  "dataset collection", *collection_kinds],
+        measurement_techniques=collection_techniques,
+        # Same typed self-citation as the members (S5): `kind: "dataset"` is how
+        # the registry derives the deposit DOI. `same_as` also stays: the Zenodo
+        # record is the archived representation of this same collection. No
+        # `is_based_on`: unlike a member, this record does not derive from the
+        # deposit - it is the deposit.
+        citations=[{"kind": "dataset", "name": "Flores et al., half-cell OCV dataset "
+                                               "(Zenodo record)",
+                    "doi": DOI, "url": DOI_URL, "citation_key": "flores2026ocv"}],
+        same_as=[DOI_URL],
+        source=B.ProvenanceInfo(type="measurement", url=DOI_URL),
+    )
+    collection_saved = B.save_dataset(
+        collection, source_root=RECORDS_ROOT, mode="upsert",
+        duplicate_policy="return_existing", resolve_references=False,
+        validation_policy="strict", build_jsonld=False, build_html=False,
+        stamp=stamp)
+    collection_iri = collection_saved["id"]
+    print(f"  collection: {collection_iri}")
+
     print("\n== datasets ==")
-    dataset_results = []
+    dataset_results = [collection_saved]
     for r in rows:
         p = PROTOCOLS[r["proto"]]
         zf = zfiles[r["file"]]
@@ -1627,6 +1685,11 @@ def main() -> int:
                         "doi": DOI, "url": DOI_URL, "citation_key": "flores2026ocv"}],
             same_as=[DOI_URL],
             is_based_on=[DOI_URL],
+            # Corpus v5: membership in the deposit's collection record, emitted
+            # as dcat:inSeries + schema:isPartOf (BattINFO#351). The forward
+            # edge lives here on the member, which is why the collection
+            # publishes first.
+            series_id=collection_iri,
             source=B.ProvenanceInfo(type="measurement", url=DOI_URL),
         )
         saved = B.save_dataset(

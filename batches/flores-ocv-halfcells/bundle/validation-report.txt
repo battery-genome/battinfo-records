@@ -8,6 +8,6 @@ cell-spec       records= 12  errors=0  warnings=0  shacl_non_conforming=0
 cell-instance   records= 95  errors=0  warnings=0  shacl_non_conforming=0
 test-protocol   records=  4  errors=0  warnings=0  shacl_non_conforming=0
 test            records= 95  errors=0  warnings=0  shacl_non_conforming=0
-dataset         records= 95  errors=0  warnings=0  shacl_non_conforming=0
+dataset         records= 96  errors=0  warnings=0  shacl_non_conforming=0
 
-TOTAL records=424  errors=0  warnings=0  shacl_non_conforming=0
+TOTAL records=425  errors=0  warnings=0  shacl_non_conforming=0

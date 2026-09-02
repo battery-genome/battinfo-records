@@ -387,6 +387,12 @@
   "@type": "http://www.w3.org/ns/dcat#Dataset",
   "@id": "https://w3id.org/battinfo/dataset/4r3r-5qat-z7x1-nkyf",
   "dcterms:title": "SiGr-AQ-1 cell 02fb2b GITT hold half-cell OCV (BDF)",
+  "dcat:inSeries": {
+    "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
+  },
+  "schema:isPartOf": {
+    "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
+  },
   "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 02fb2b, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-02fb2b__20250602__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell 02fb2b, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-02fb2b__20250602__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
@@ -525,7 +531,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-08-17T21:01:00+00:00"
+    "prov:generatedAtTime": "2026-09-02T13:09:27+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",

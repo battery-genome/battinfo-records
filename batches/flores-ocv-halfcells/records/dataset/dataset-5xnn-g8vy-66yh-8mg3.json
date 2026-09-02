@@ -78,6 +78,7 @@
     "is_based_on": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
+    "series_id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s",
     "distributions": [
       {
         "type": "DataDownload",
@@ -111,7 +112,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1787000460,
+    "retrieved_at": 1788354567,
     "battinfo_version": "0.7.0"
   },
   "notes": [

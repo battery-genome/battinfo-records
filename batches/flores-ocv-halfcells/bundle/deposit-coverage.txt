@@ -8,6 +8,6 @@ cell-spec       records= 12  nodes_in_deposit_graph= 12
 cell-instance   records= 95  nodes_in_deposit_graph= 95
 test-protocol   records=  4  nodes_in_deposit_graph=  4
 test            records= 95  nodes_in_deposit_graph= 95
-dataset         records= 95  nodes_in_deposit_graph= 95
+dataset         records= 96  nodes_in_deposit_graph= 96
 
-deposit graph nodes: 426
+deposit graph nodes: 427

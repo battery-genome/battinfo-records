@@ -1,4 +1,4 @@
-  Gold-standard: 95 error(s), 95 warning(s) -- address before publishing:
+  Gold-standard: 98 error(s), 96 warning(s) -- address before publishing:
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
@@ -23,6 +23,7 @@
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
+    ERROR   Published dataset nodes must define at least one schema:distribution entry.
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
@@ -94,6 +95,8 @@
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
     ERROR   Published dataset nodes must define non-empty schema:about references.
+    ERROR   Published dataset nodes must define non-empty schema:about references.
+    ERROR   Member dataset must carry at least one dcat:distribution.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
@@ -189,7 +192,8 @@
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
     warning BatteryTest should record prov:generated (output dataset) for PROV self-completeness.
+    warning Member dataset should mirror a schema:DataDownload for schema.org consumers.
   Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\deposit.jsonld
-  Graph nodes: 426
+  Graph nodes: 427
   Data files:  0
   Written: C:\Users\simonc\Documents\Github-local\battery-genome\ocv-regen\batches\flores-ocv-halfcells\bundle\ro-crate-metadata.json

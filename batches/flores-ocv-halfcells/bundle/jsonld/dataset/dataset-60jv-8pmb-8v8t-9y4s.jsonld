@@ -384,17 +384,14 @@
       "@type": "@id"
     }
   },
-  "@type": "http://www.w3.org/ns/dcat#Dataset",
-  "@id": "https://w3id.org/battinfo/dataset/nhs5-y6yr-qnwt-h38q",
-  "dcterms:title": "LNMO-AQ-2 cell fb8cf6 GITT half-cell OCV (BDF)",
-  "dcat:inSeries": {
-    "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
-  },
-  "schema:isPartOf": {
-    "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
-  },
-  "dcterms:description": "Half-cell OCV electrochemical time series for LNMO-AQ-2 coin cell fb8cf6, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
-  "schema:description": "Half-cell OCV electrochemical time series for LNMO-AQ-2 coin cell fb8cf6, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "@type": [
+    "http://www.w3.org/ns/dcat#Dataset",
+    "http://www.w3.org/ns/dcat#DatasetSeries"
+  ],
+  "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s",
+  "dcterms:title": "Flores et al. half-cell OCV collection",
+  "dcterms:description": "The Flores et al. half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
+  "schema:description": "The Flores et al. half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
   "dcterms:license": {
     "@id": "cc-by-4.0"
   },
@@ -407,7 +404,14 @@
     "half-cell",
     "GITT",
     "quasi-OCV",
-    "lnmo"
+    "dataset collection",
+    "graphite",
+    "lfp",
+    "lnmo",
+    "nmc111",
+    "nmc532",
+    "silicon",
+    "silicon-graphite"
   ],
   "schema:keywords": [
     "open circuit voltage",
@@ -415,58 +419,22 @@
     "half-cell",
     "GITT",
     "quasi-OCV",
-    "lnmo"
+    "dataset collection",
+    "graphite",
+    "lfp",
+    "lnmo",
+    "nmc111",
+    "nmc532",
+    "silicon",
+    "silicon-graphite"
   ],
   "dcterms:created": "2026-05-08T00:00:00Z",
   "dcterms:modified": "2026-05-08T00:00:00Z",
   "dcterms:issued": "2026-05-08T00:00:00Z",
   "schema:datePublished": "2026-05-08T00:00:00Z",
   "schema:measurementTechnique": [
-    "gitt"
-  ],
-  "schema:variableMeasured": [
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Test Time / s",
-      "schema:description": "Elapsed time since the start of the test",
-      "schema:unitText": "s"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Unix Time / s",
-      "schema:description": "Timestamp in Unix time format (seconds since 1970-01-01 UTC)",
-      "schema:unitText": "s"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Current / A",
-      "schema:description": "Instantaneous current",
-      "schema:unitText": "A"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Voltage / V",
-      "schema:description": "Instantaneous voltage",
-      "schema:unitText": "V"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Cumulative Capacity / Ah",
-      "schema:description": "Total capacity accumulated over a half cycle",
-      "schema:unitText": "Ah"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Cycle Count / 1",
-      "schema:description": "Monotonically increasing index of test cycles",
-      "schema:unitText": "1"
-    },
-    {
-      "@type": "schema:PropertyValue",
-      "schema:name": "Step Index / 1",
-      "schema:description": "Index of the instantaneous step type within the measurement protocol",
-      "schema:unitText": "1"
-    }
+    "gitt",
+    "quasi_ocv"
   ],
   "schema:citation": [
     {
@@ -479,59 +447,13 @@
       "schema:identifier": "flores2026ocv"
     }
   ],
-  "dcterms:subject": [
-    {
-      "@id": "https://w3id.org/battinfo/cell/ea36-gsfc-3yhk-7nkt"
-    },
-    {
-      "@id": "https://w3id.org/battinfo/test/sya7-k72w-5h7q-4t5q"
-    }
-  ],
-  "dcat:distribution": [
-    {
-      "@type": "dcat:Distribution",
-      "schema:name": "sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet",
-      "schema:description": "BDF parquet file hosted on Zenodo.",
-      "dcat:downloadURL": {
-        "@id": "https://zenodo.org/api/records/20086298/files/sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet/content"
-      },
-      "dcat:mediaType": "application/vnd.apache.parquet",
-      "dcat:byteSize": 314704889,
-      "schema:contentSize": "314704889",
-      "spdx:checksum": {
-        "@type": "spdx:Checksum",
-        "spdx:checksumAlgorithm": {
-          "@id": "spdx:checksumAlgorithm_md5"
-        },
-        "spdx:checksumValue": "88287c399e481341d9cffc46158b1390"
-      }
-    },
-    {
-      "@type": "dcat:Distribution",
-      "schema:name": "sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.plot.json",
-      "schema:description": "Downsampled voltage and open-circuit curves derived from the BDF file, as a Plotly figure for the dataset page.",
-      "dcat:downloadURL": {
-        "@id": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/datasets/nhs5y6/sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.plot.json"
-      },
-      "dcat:mediaType": "application/json",
-      "dcat:byteSize": 85446,
-      "schema:contentSize": "85446",
-      "spdx:checksum": {
-        "@type": "spdx:Checksum",
-        "spdx:checksumAlgorithm": {
-          "@id": "spdx:checksumAlgorithm_sha256"
-        },
-        "spdx:checksumValue": "acf64f3ca48fd6676e7585f417427a86fb18a2ece01b1fae39471d90aaa81132"
-      }
-    }
-  ],
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-09-02T13:09:28+00:00"
+    "prov:generatedAtTime": "2026-09-02T13:09:27+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",
