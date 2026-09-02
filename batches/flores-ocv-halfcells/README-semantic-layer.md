@@ -294,6 +294,16 @@ Steps on Zenodo:
 
 The records reference the parquet files by their Zenodo download URL and md5 checksum, both taken verbatim from the Zenodo API snapshot in `sources/zenodo-record.json`. A new version does not change those URLs or checksums, so nothing in the layer needs regenerating after the upload.
 
+## The dataset collection (corpus v5)
+
+One record speaks for the whole deposit: `dataset/60jv-8pmb-8v8t-9y4s`, "Flores et al. half-cell OCV collection". It is an ordinary dataset record flavored as a series by `additional_type: ["DatasetSeries"]` (DCAT 3 declares `dcat:DatasetSeries` a subclass of `dcat:Dataset`, so there is no new record type - BIG-MAP/BattINFO#351), and the deposit DOI `10.5281/zenodo.20086298` is its external `identifier`: the collection IS the deposit, where each member describes one file of it. All 95 member datasets carry `series_id` pointing at it, which the JSON-LD emits as `dcat:inSeries` and `schema:isPartOf`; the registry renders the same field as a forward "Series" link on each member page and a members panel on the collection page, with no registry code involved.
+
+What the collection record deliberately does not carry: `about` (its members hold the cell and test links - the series exemption of BIG-MAP/BattINFO#352 is what admits it under the strict policy), `distributions` (the files belong to the members), and `is_based_on` (a member derives from the deposit; the collection does not derive from itself).
+
+Two invariants to keep. The collection's IRI seeds from `(access_url, name)`, because it has neither cell nor test - renaming the record re-seeds the identifier and orphans every member's `series_id`, so the name is frozen once published. And at republish time the collection goes in FIRST among the datasets: the members carry the forward edge, so it must exist before any of them arrives (registry PR #63 makes same-batch staging of the members tolerant of pending siblings either way).
+
+The deposit-level gold-standard report gains three errors and one warning, all on the collection node, all from checks that predate the series flavor ("dataset nodes must define distribution/about"). They are the series-shaped siblings of caveats 1 and 2 below: the checker is not yet series-aware upstream.
+
 ## Registry publication
 
 The 319 v1 records were published to the Battery Genome registry on 2026-08-11 (workspace `battinfo-records`, publisher `battinfo-records-bot`, `source_version` `2026-08-11`), in dependency order so that every internal reference resolved before the record citing it was submitted. Every record was staged and then promoted through the review gate; none failed.
