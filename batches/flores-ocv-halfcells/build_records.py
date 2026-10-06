@@ -430,9 +430,10 @@ ROUTE_TOKENS = {"AQ": ("aqueous", "water"), "NMP": ("nmp", "NMP")}
 # Battery Knowledge Graph stub for the same company under its pre-2022 legal
 # name (records/organization/haldor-topsoe/, IRI j50f-3ebx-sssw-svnm) is
 # retired from the corpus; its one unique fact - the BKG item identifier - is
-# absorbed into this record's sameAs. The live j50f record gets marked
+# absorbed into this record's same_as. The live j50f record gets marked
 # superseded-by this IRI at republication (see README-semantic-layer.md).
 TOPSOE_SEED = "organization::topsoe"
+TOPSOE_RETRIEVED_AT = 1787270400  # 2026-08-21T00:00:00Z
 TOPSOE_IRI = "https://w3id.org/battinfo/organization/vz1v-rvhz-n77h-344c"
 TOPSOE_NAME = "Topsoe"
 TOPSOE_SLUG = "topsoe"
@@ -846,11 +847,11 @@ def write_topsoe_organization() -> str:
             "short_id": TOPSOE_IRI.rsplit("/", 1)[-1].replace("-", "")[:8],
             "type": "Corporation",
             "name": TOPSOE_NAME,
-            "alternateName": ["Haldor Topsoe", "Haldor Topsoe A/S", "Haldor Topsøe A/S"],
+            "alternate_name": ["Haldor Topsoe", "Haldor Topsoe A/S", "Haldor Topsøe A/S"],
             "url": "https://www.topsoe.com/",
             # Absorbed from the retired BKG stub (j50f-3ebx-sssw-svnm): the one
             # fact it carried that this record lacked. BKG content is CC BY-SA 4.0.
-            "sameAs": [
+            "same_as": [
                 "https://battery.knowledge-graph.eu/wiki/Item:OSW1f65aa230152401796031474ba920ccd"
             ],
             "description": (
@@ -863,7 +864,10 @@ def write_topsoe_organization() -> str:
         "provenance": {
             "source_type": "manual",
             "source_url": DOI_URL,
-            "retrieved_at": None,
+            # The registry requires retrieved_at. A manual record has no fetch time, so
+            # this is the day the fact was supplied and ruled on (curator ruling
+            # 2026-08-21). It is fixed, not the build time, so a rebuild stays a no-op.
+            "retrieved_at": TOPSOE_RETRIEVED_AT,
         },
         "editorial": {
             "review_status": "stub",
@@ -872,7 +876,7 @@ def write_topsoe_organization() -> str:
                 "corpus maintainer rather than by the source record. Supersedes the "
                 "Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (the same "
                 "legal entity under its pre-2022 name, Haldor Topsoe; curator ruling "
-                "2026-08-21). The sameAs link to the BKG item is absorbed from that stub "
+                "2026-08-21). The same_as link to the BKG item is absorbed from that stub "
                 "(BKG content is CC BY-SA 4.0)."),
         },
     }
