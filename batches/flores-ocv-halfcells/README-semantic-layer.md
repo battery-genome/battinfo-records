@@ -9,7 +9,7 @@ This directory is the machine-readable [BattINFO](https://github.com/BIG-MAP/Bat
 
 The layer does **not** copy the data. It describes the 95 BDF parquet files that already live on Zenodo and links each one, through a chain of typed records, to the cell it was measured on, the electrode disc inside that cell, the design that disc realizes, the powder that design is coated from, the electrochemical protocol used, and the test run. It is designed to be attached to a new Zenodo version as supplementary metadata, and to be imported into the Battery Genome registry.
 
-> **Corpus v4, staged for review.** This directory holds corpus v4: the review-round-3 rulings on top of v3. A powder record for every active material rather than only where the source volunteers one; Topsoe named as the LNMO powder's manufacturer; a material lot for the one physical batch the source evidences; the electrode record redefined as the disc inside one cell, carrying that cell's as-built figures, with the batch statistics moved up to the electrode spec as structured `standard_deviation` / `sample_count`; and every cell linking its disc through `working_electrode_id`. The 319 records published on 2026-08-11 are the v1 shape and are still live and untouched; republishing is a separate, review-gated step, and `superseded/supersede-map.json` says what happens to each of the 319. Start with `REVIEW-TABLE-V4.md`.
+> **Corpus v5, staged for review.** This directory holds corpus v5: the v4 corpus below plus a collection record for the whole deposit (see "The dataset collection"), built on BattINFO 0.8.0. v4 was the review-round-3 rulings on top of v3. A powder record for every active material rather than only where the source volunteers one; Topsoe named as the LNMO powder's manufacturer; a material lot for the one physical batch the source evidences; the electrode record redefined as the disc inside one cell, carrying that cell's as-built figures, with the batch statistics moved up to the electrode spec as structured `standard_deviation` / `sample_count`; and every cell linking its disc through `working_electrode_id`. The 319 records published on 2026-08-11 are the v1 shape and are still live and untouched; republishing is a separate, review-gated step, and `superseded/supersede-map.json` says what happens to each of the 319. Start with `REVIEW-TABLE-V4.md`; `republish.py` is the driver that publishes v5 to the registry.
 
 ## What is here
 
@@ -22,8 +22,10 @@ The layer does **not** copy the data. It describes the 95 BDF parquet files that
 | `sources/zenodo-record.json` | Verbatim snapshot of the Zenodo API record (metadata + file checksums, sizes and URLs). |
 | `drafts/` | The 16 cell-spec and test-spec authoring drafts the script writes and then loads with `ws.load()`. These are the human-editable inputs, not outputs. |
 | `extract_profiles.py`, `profiles/` | Derives one small Plotly figure per dataset from the parquet on Zenodo; the 95 figures it produced, with their sha256 index. |
-| `upload_profiles.py` | Puts those figures in the object store the dataset records point at. Deliberately not run for v4: it is a production write. |
-| `records/` | The 416 canonical BattINFO JSON records (source of truth; the working `.battinfo/` workspace is gitignored). |
+| `upload_profiles.py` | Puts those figures in the object store the dataset records point at. Deliberately not run yet: it is a production write. |
+| `republish.py`, `superseded/split-successors.json` | The registry republish driver (dry run by default) and the successor rule for split records. |
+| `battinfo-pin.json` | The BattINFO version the records are built with. `build_records.py` stops on any other version. |
+| `records/` | The 425 canonical BattINFO JSON records (source of truth; the working `.battinfo/` workspace is gitignored). |
 | `superseded/v1/` | The 21 v1 material-layer records the electrode remodel retires, kept with a mapping table. |
 | `superseded/supersede-map.json` | Generated: every one of the 319 published identifiers, and whether v4 keeps, replaces or splits it, plus a count of the v4 records that supersede nothing. |
 | `build_supersede_map.py` | Writes that map by joining the published corpus to v4 on natural keys. |
@@ -36,7 +38,7 @@ The layer does **not** copy the data. It describes the 95 BDF parquet files that
 | `bundle/emission-spot-checks.txt` | Worked JSON-LD examples: half-cell typing, electrode typing and route, powder anchors, typed protocol method, dataset distribution. |
 | `bundle/gold-standard-report.txt` | Captured RO-Crate gold-standard check (see caveats below). |
 
-## Record model (416 records)
+## Record model (425 records)
 
 ```
 organization (1)       Topsoe, written to the shared records/organization/ corpus
@@ -167,7 +169,7 @@ The methods are material-agnostic, which is what lets one protocol record serve 
 
 ## Test conditions
 
-Each test carries only what is genuinely a condition of the test: `ambient_temperature: "room temperature"` and `voltage_reference: "Li/Li+"`.
+Each test carries only what is genuinely a condition of the test: `ambient_temperature` and `voltage_reference`. Neither has a number in the source, so both are stated as text, `{"value_text": "room temperature"}` and `{"value_text": "Li/Li+"}`, the object form BattINFO 0.8 requires for every condition.
 
 v3 also carried four as-built electrode figures here - active-material mass, coating mass, areal capacity and loading - because the model had nowhere per-cell to put them (gap G2). It does now. They were true before the test started and would still be true if the test had never run, so they are properties of the disc, one hop away through `working_electrode_id`. Gap G2 is closed.
 
@@ -201,24 +203,19 @@ Every quantity is rounded to a fixed number of decimals per unit, chosen at or a
 
 ## Publishing caveats (see `bundle/gold-standard-report.txt`)
 
-Per-record validation is clean: 416 records, 0 errors, 0 warnings, 0 SHACL non-conformances. The deposit-level RO-Crate gold-standard check reports two classes of issue, unchanged from v1 and neither coming from these records:
+Per-record validation is clean: 425 records, 0 errors, 0 warnings, 0 SHACL non-conformances.
 
-1. 95 errors, "Published dataset nodes must define non-empty schema:about references". Every dataset record does carry `about` (its cell and its test) and the per-record JSON-LD emits it as `dcterms:subject`; the deposit graph builder drops it.
-2. 95 warnings, "BatteryTest should record prov:generated". The test-to-dataset back-link is not authored, because `ws.save()` rebuilds `test.dataset_ids` from the datasets the workspace engine holds and blanks it for everything else. The forward direction (dataset to cell and test) is complete.
+The deposit-level gold-standard check reports 98 errors and 96 warnings on BattINFO 0.8.0, and none of them come from these records. 96 errors say a dataset node has no `schema:about`: every dataset record carries `about` (its cell and its test), but the 0.8.0 deposit graph builder only learns that link from a test's `dataset_ids` and drops it otherwise. The other two errors and one warning are the collection node being asked for a file, because the builder treats it as an ordinary dataset. The 95 "BatteryTest should record prov:generated" warnings are the reverse of the same missing link. All of it is fixed on BattINFO branch `fix/deposit-graph-collections`, which reads each dataset's own `about` and types the collection as a series: on this corpus the report goes to a clean pass. Once that lands, move `battinfo-pin.json` and rebuild.
 
-Both are recorded in `READINESS-REPORT.md` as gaps G7 and G1.
-
-A third class, 190 errors reading "Distribution sha256 must be a 64-character hexadecimal digest", was fixed upstream in BIG-MAP/BattINFO#339 and no longer appears. The deposit graph used to publish every checksum under a sha256 predicate whatever the record said; it now states `spdx:checksumAlgorithm_md5` with the Zenodo md5, which is the honest statement and needs no 10 GB download to produce.
-
-A fourth was found in v2 and fixed upstream in BIG-MAP/BattINFO#344: the deposit graph hardcoded two record types, so the whole electrode layer was missing from `deposit.jsonld`. All nine types now reach it - `bundle/deposit-coverage.txt` shows 416 of 416 records in a 418-node graph.
+Two earlier classes were fixed upstream and no longer appear: md5 checksums published under a sha256 predicate (BIG-MAP/BattINFO#339), and the electrode layer missing from the deposit graph (BIG-MAP/BattINFO#344). `bundle/deposit-coverage.txt` shows every record in the graph.
 
 ## Reproducing
 
 ```bash
-pip install "git+https://github.com/BIG-MAP/BattINFO.git" pyshacl
+pip install "battinfo==0.8.0" pyshacl   # the version in battinfo-pin.json
 pip install pyarrow numpy     # only for extract_profiles.py
 python extract_profiles.py --cache <scratch-dir>   # writes profiles/ (95 plot figures)
-python build_records.py      # writes drafts/ and .battinfo/records/ (416 records)
+python build_records.py      # writes drafts/ and .battinfo/records/ (425 records)
 python build_records.py      # again: idempotence check, and it rebuilds the workspace index
 python build_bundle.py       # writes records/ and bundle/
 python build_supersede_map.py  # writes superseded/supersede-map.json
@@ -236,7 +233,7 @@ Each figure has two panels. The top one is voltage against test time, reduced by
 
 All 95 profiles are extracted and committed. The records point at `{R2_PUBLIC_BASE}/datasets/{short_id}/{filename}`, the key layout `ws.upload()` uses for every dataset file. `python upload_profiles.py` puts the files there.
 
-**The v4 profiles are not uploaded.** Uploading is a production write and this corpus is staged; until it runs with R2 credentials the URLs 404, which means a dataset page renders its data-explorer panel (the record carries a `plot_data` distribution and the platform detects it) but the figure itself does not load. `python upload_profiles.py --dry-run` lists the 95 objects, 7.1 MB in total, that a republish would send.
+**The profiles are not uploaded.** Uploading is a production write and this corpus is staged; until it runs with R2 credentials the URLs 404, which means a dataset page renders its data-explorer panel (the record carries a `plot_data` distribution and the platform detects it) but the figure itself does not load. `python upload_profiles.py --dry-run` lists the 95 objects, 7.1 MB in total, that a republish would send.
 
 Rendered review pages for the staged batch, from a checkout of `battinfo-registry`:
 
@@ -250,7 +247,7 @@ uv run python scripts/preview_staged_batch.py \
 
 `preview/` is gitignored: the generated HTML is many times the size of the whole repository.
 
-The build is reproducible on BattINFO main at commit `a7661d2` or later (BIG-MAP/BattINFO#346: the cell-to-electrode links and the quantity statistics fields). Re-running against an existing workspace rewrites nothing: every record reports `[unchanged]`, no dataset is written, and no identity is pruned. A rebuild in an empty workspace reproduces all 416 byte for byte apart from `provenance.retrieved_at`, the build timestamp.
+The build is pinned to the BattINFO version in `battinfo-pin.json` (0.8.0, commit `2feabb7`), and `build_records.py` refuses to run on another version unless given `--ignore-pin`. Re-running against an existing workspace rewrites nothing: every record reports `[unchanged]`, no dataset is written, and no identity is pruned. A rebuild in an empty workspace reproduces all 425 byte for byte apart from `provenance.retrieved_at`, the build timestamp.
 
 Because D1 re-seeded six cell specs and v4 re-seeds the material and electrode layers, a rebuild leaves the identities it replaced behind in the workspace. `build_records.py` prunes them and reports the count, so `records/` and the deposit graph only ever contain records the run actually authored.
 
@@ -268,19 +265,19 @@ uv run --env-file .preview/.env.preview python scripts/rerender_record_pages.py 
 
 The layer is supplementary metadata for [Zenodo 20086298](https://doi.org/10.5281/zenodo.20086298). Publishing it as a new version of that record keeps the concept DOI (10.5281/zenodo.19107294) and leaves the 95 parquet files untouched.
 
-**These steps describe the v1 upload that has already happened.** They are kept as the recipe; the v4 corpus is not uploaded anywhere yet, and the counts below refresh at republish time along with `description-addendum.md`.
+**These steps describe the v1 upload that has already happened.** They are kept as the recipe; the v5 corpus is not uploaded anywhere yet, and the counts below refresh at republish time along with `description-addendum.md`.
 
 Upload two archives, built from this directory:
 
 ```bash
 cd batches/flores-ocv-halfcells
-zip -r battinfo-records.zip records          # v4: 416 files
-zip -r battinfo-bundle.zip  bundle           # v4: 422 files
+zip -r battinfo-records.zip records          # v5: 425 files
+zip -r battinfo-bundle.zip  bundle           # v5: 431 files
 ```
 
 | archive | contents |
 |---|---|
-| `battinfo-records.zip` | `records/` - the canonical BattINFO JSON records. v4: `material-spec` (7), `material` (1), `electrode-spec` (12), `electrode` (95), `cell-spec` (12), `cell-instance` (95), `test-protocol` (4), `test` (95), `dataset` (95). |
+| `battinfo-records.zip` | `records/` - the canonical BattINFO JSON records. v5: `material-spec` (7), `material` (9), `electrode-spec` (12), `electrode` (95), `cell-spec` (12), `cell-instance` (95), `test-protocol` (4), `test` (95), `dataset` (96, the collection and its 95 members). |
 | `battinfo-bundle.zip` | `bundle/jsonld/` (one JSON-LD document per record, each with a full inline `@context`), `bundle/deposit.jsonld` (the combined deposit graph), `bundle/ro-crate-metadata.json`, and the evidence files: `validation-report.txt`, `deposit-coverage.txt`, `emission-spot-checks.txt`, `gold-standard-report.txt`. |
 
 Steps on Zenodo:
@@ -302,13 +299,19 @@ What the collection record deliberately does not carry: `about` (its members hol
 
 Two invariants to keep. The collection's IRI seeds from `(access_url, name)`, because it has neither cell nor test - renaming the record re-seeds the identifier and orphans every member's `series_id`, so the name is frozen once published. And at republish time the collection goes in FIRST among the datasets: the members carry the forward edge, so it must exist before any of them arrives (registry PR #63 makes same-batch staging of the members tolerant of pending siblings either way).
 
-The deposit-level gold-standard report gains three errors and one warning, all on the collection node, all from checks that predate the series flavor ("dataset nodes must define distribution/about"). They are the series-shaped siblings of caveats 1 and 2 below: the checker is not yet series-aware upstream.
+The deposit-level gold-standard report flags the collection node for having no file and no `about`, because the 0.8.0 deposit graph builder is not series-aware. BattINFO branch `fix/deposit-graph-collections` fixes this (see the publishing caveats).
 
 ## Registry publication
 
 The 319 v1 records were published to the Battery Genome registry on 2026-08-11 (workspace `battinfo-records`, publisher `battinfo-records-bot`, `source_version` `2026-08-11`), in dependency order so that every internal reference resolved before the record citing it was submitted. Every record was staged and then promoted through the review gate; none failed.
 
-**Corpus v4 has not been submitted.** All 319 published records are still live and stay live until the republish supersedes them. `superseded/supersede-map.json` is the complete statement of what happens to each: 154 keep their identifier, 147 are replaced by one successor, and 18 are split - the 6 cell specs that covered two designs each, and the 12 v1 "material lots" that were coated electrode batches and become the 7-9 discs cut from each. Eight records supersede nothing at all: the seven powders and the material lot, which describe a level v1 never had. The republish is the only step that touches the registry, and it happens after this branch is reviewed.
+**Corpus v5 has not been submitted.** All 319 published records are still live and stay live until the republish supersedes them. `superseded/supersede-map.json` is the complete statement of what happens to each: 154 keep their identifier, 147 are replaced by one successor, and 18 are split - the 6 cell specs that covered two designs each, and the 12 v1 "material lots" that were coated electrode batches and become the 7-9 discs cut from each. Eight records supersede nothing at all: the seven powders and the material lot, which describe a level v1 never had. The republish is the only step that touches the registry, and it happens after this branch is reviewed.
+
+`republish.py` runs it. Without `--apply` it only checks and prints the plan: every record validates against battinfo and against the schemas the target registry serves, the supersede map matches what is live, no new record collides with a live identifier, and the collection name still seeds `60jv-8pmb-8v8t-9y4s`. With `--apply` it publishes the Topsoe organization, then the collection, then the other 424 records in dependency order, applies the supersede map, uploads the profiles, re-renders pages with their reverse panels, and finishes with a sweep: every record resolves, every superseded identifier is a tombstone that points at a live successor, and the collection lists 95 members. Each step checks the target first and skips what is done, so a re-run is safe. It refuses any host other than localhost unless given `--production` and `FLORES_REPUBLISH_CONFIRM` set to the host. The rollback notes are in its docstring: superseded flags can be set back to published, but the 272 new identifiers and the collection name cannot be taken back.
+
+Split records name one successor each, by the rule in `superseded/split-successors.json`: a v1 material lot points at the electrode spec its discs belong to, and a split cell or material spec points at the design whose batch label sorts first (aqueous before NMP, lower batch number first). Per-record overrides go in the same file.
+
+The full run was tested on a local registry seeded with the 319 v1 records: 426 records resolve, 165 tombstones point at live successors, the collection lists 95 members, and a second run writes nothing. It has not been run against production.
 
 Each published record has a permanent `w3id.org` identifier. Three worth citing:
 
