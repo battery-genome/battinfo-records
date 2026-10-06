@@ -4,6 +4,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
 {
   "@type": [
     "BatteryCellSpecification",
+    "schema:ProductModel",
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
@@ -24,107 +25,115 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
       "LithiumMetalBattery",
       "SecondaryBattery"
     ],
-    "skos:prefLabel": "SINTEF Silicon R2032 half-cell (intelligent1)"
-  },
-  "schema:size": "R2032",
-  "schema:schemaVersion": "0.2.0",
-  "hasProperty": [
-    {
-      "@type": [
-        "ChargingVoltage",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ChargingVoltage",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 1.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
-    },
-    {
-      "@type": [
-        "LowerVoltageLimit",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "LowerVoltageLimit",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 0.01
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
-    }
-  ],
-  "hasWorkingElectrode": {
-    "hasCoating": {
-      "@type": "ElectrodeCoating",
-      "hasActiveMaterial": {
-        "@type": [
-          "Silicon",
-          "ActiveMaterial"
-        ],
-        "schema:name": "Silicon",
-        "schema:isVariantOf": {
-          "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
-        },
-        "hasProperty": {
-          "@type": [
-            "MassFraction",
-            "ConventionalProperty"
-          ],
-          "hasNumericalPart": {
-            "@type": "RealData",
-            "hasNumberValue": 0.84971
-          },
-          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
-        }
-      }
-    },
+    "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42#described",
+    "skos:prefLabel": "SINTEF Silicon R2032 half-cell (intelligent1)",
     "hasProperty": [
       {
         "@type": [
-          "Diameter",
+          "ChargingVoltage",
           "ConventionalProperty"
         ],
-        "skos:prefLabel": "Diameter",
+        "skos:prefLabel": "ChargingVoltage",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 14.0
+          "hasNumberValue": 1.0
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+        "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
       },
       {
         "@type": [
-          "CalenderedCoatingThickness",
+          "LowerVoltageLimit",
           "ConventionalProperty"
         ],
-        "skos:prefLabel": "CalenderedCoatingThickness",
+        "skos:prefLabel": "LowerVoltageLimit",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 44.0
+          "hasNumberValue": 0.01
         },
-        "schema:unitText": "um"
+        "hasMeasurementUnit": "https://w3id.org/emmo#Volt"
       }
     ],
-    "@type": "WorkingElectrode",
-    "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
-  },
-  "hasCounterElectrode": {
-    "hasCoating": {
-      "@type": "ElectrodeCoating",
-      "hasActiveMaterial": {
-        "@type": "ActiveMaterial",
-        "schema:name": "Lithium metal"
-      }
+    "hasWorkingElectrode": {
+      "hasCoating": {
+        "@type": "ElectrodeCoating",
+        "hasActiveMaterial": {
+          "@type": [
+            "Silicon",
+            "ActiveMaterial"
+          ],
+          "schema:name": "Silicon",
+          "schema:isVariantOf": {
+            "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+          },
+          "hasProperty": {
+            "@type": [
+              "MassFraction",
+              "ConventionalProperty"
+            ],
+            "hasNumericalPart": {
+              "@type": "RealData",
+              "hasNumberValue": 0.84971
+            },
+            "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+          }
+        }
+      },
+      "hasProperty": [
+        {
+          "@type": [
+            "Diameter",
+            "ConventionalProperty"
+          ],
+          "skos:prefLabel": "Diameter",
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 14.0
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+        },
+        {
+          "@type": [
+            "CalenderedCoatingThickness",
+            "ConventionalProperty"
+          ],
+          "skos:prefLabel": "CalenderedCoatingThickness",
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 44.0
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre"
+        }
+      ],
+      "@type": "WorkingElectrode",
+      "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz#described"
     },
-    "@type": [
-      "CounterElectrode",
-      "ReferenceElectrode"
-    ]
+    "hasCounterElectrode": {
+      "hasCoating": {
+        "@type": "ElectrodeCoating",
+        "hasActiveMaterial": {
+          "@type": [
+            "Lithium",
+            "ActiveMaterial"
+          ],
+          "schema:name": "Lithium metal"
+        }
+      },
+      "@type": [
+        "CounterElectrode",
+        "ReferenceElectrode"
+      ]
+    },
+    "hasReferenceElectrode": {
+      "@type": "ReferenceElectrode",
+      "skos:prefLabel": "lithium"
+    }
   },
+  "schema:size": "R2032",
+  "schema:schemaVersion": "0.2.0",
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-09-02T13:06:06+00:00",
+    "prov:generatedAtTime": "2026-10-06T20:57:48+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -222,7 +231,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -230,140 +239,149 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
 SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating composition, aqueous route as prov:wasGeneratedBy, no powder link
 ==============================================================================
 {
-  "@type": "SiliconBasedElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": [
-        "Silicon",
-        "ActiveMaterial"
-      ],
-      "schema:name": "Silicon",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "SiliconBasedElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
         "@type": [
-          "MassFraction",
+          "Silicon",
+          "ActiveMaterial"
+        ],
+        "schema:name": "Silicon",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.84971
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
+        "@type": [
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.84971
+          "hasNumberValue": 2.3282
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.2237,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 44.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 0.6505
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0625,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "aqueous",
+        "schema:name": "Water-based (aqueous) processing"
+      },
+      "hasSolvent": {
+        "@type": "schema:ChemicalSubstance",
+        "schema:name": "water"
+      },
+      "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+    "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 2.3282
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.2237,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 44.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 0.6505
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0625,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
   "schema:name": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "aqueous",
-      "schema:name": "Water-based (aqueous) processing"
-    },
-    "hasSolvent": {
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "water"
-    },
-    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1 and the Zenodo batch table."
-  },
   "schema:description": "Silicon (aqueous processed). Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label Si-AQ-1. Active-material type as stated in metadata.csv: \"Silicon\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -471,7 +489,7 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -515,7 +533,7 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
         "@type": "RealData",
         "hasNumberValue": 44.0
       },
-      "schema:unitText": "um"
+      "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre"
     },
     {
       "@type": [
@@ -539,7 +557,7 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
         "@type": "RealData",
         "hasNumberValue": 1.214
       },
-      "schema:unitText": "mg"
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGram"
     },
     {
       "@type": [
@@ -668,7 +686,7 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -676,24 +694,37 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
 SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substance anchor, theoretical capacity
 ==============================================================================
 {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
   "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
-  "@type": "LithiumNickelManganeseOxide",
+  "schema:name": "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
   },
-  "schema:name": "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel",
-  "schema:molecularFormula": "LiNi0.5Mn1.5O4",
-  "hasProperty": {
-    "@type": [
-      "TheoreticalCapacity",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "TheoreticalCapacity",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 140.0
+  "schema:manufacturer": {
+    "@type": "schema:Organization",
+    "schema:name": "Topsoe"
+  },
+  "isDescriptionFor": {
+    "@type": "LithiumNickelManganeseOxide",
+    "schema:molecularFormula": "LiNi0.5Mn1.5O4",
+    "hasProperty": {
+      "@type": [
+        "TheoreticalCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "TheoreticalCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 140.0
+      },
+      "schema:unitText": "mAh/g"
     },
-    "schema:unitText": "mAh/g"
+    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m#described",
+    "skos:prefLabel": "LNMO (LiNi0.5Mn1.5O4), high Mn/Ni disorder spinel"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -799,7 +830,7 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -807,137 +838,146 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
 SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powder IRI; the route is in the identity seed, so this is its own design
 ==============================================================================
 {
-  "@type": "LithiumNickelManganeseOxideElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": "ActiveMaterial",
-      "schema:name": "Lithium nickel manganese oxide (LNMO)",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "LithiumNickelManganeseOxideElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": "ActiveMaterial",
+        "schema:name": "Lithium nickel manganese oxide (LNMO)",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.90276
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
         "@type": [
-          "MassFraction",
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.90276
+          "hasNumberValue": 0.5716
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0453,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 47.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 4.0829
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.3234,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "aqueous",
+        "schema:name": "Water-based (aqueous) processing"
+      },
+      "hasSolvent": {
+        "@type": "schema:ChemicalSubstance",
+        "schema:name": "water"
+      },
+      "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
+    "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 0.5716
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0453,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 47.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 4.0829
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.3234,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
   "schema:name": "LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "aqueous",
-      "schema:name": "Water-based (aqueous) processing"
-    },
-    "hasSolvent": {
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "water"
-    },
-    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2 and the Zenodo batch table."
-  },
   "schema:description": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-AQ-2. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -1046,7 +1086,7 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -1054,138 +1094,147 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
 SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different design
 ==============================================================================
 {
-  "@type": "LithiumNickelManganeseOxideElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": "ActiveMaterial",
-      "schema:name": "Lithium nickel manganese oxide (LNMO)",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "LithiumNickelManganeseOxideElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": "ActiveMaterial",
+        "schema:name": "Lithium nickel manganese oxide (LNMO)",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.92002
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
         "@type": [
-          "MassFraction",
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.92002
+          "hasNumberValue": 1.3324
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.045,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 90.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 9.5173
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.3213,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "nmp",
+        "schema:name": "NMP solvent-based processing"
+      },
+      "hasSolvent": {
+        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+        "@type": "NMethyl2Pyrrolidone",
+        "schema:name": "NMP"
+      },
+      "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF)",
+    "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 1.3324
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.045,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 90.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 9.5173
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.3213,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
   "schema:name": "LNMO electrode, NMP processed (IntelLiGent batch 2, SINTEF)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "nmp",
-      "schema:name": "NMP solvent-based processing"
-    },
-    "hasSolvent": {
-      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-      "@type": "NMethyl2Pyrrolidone",
-      "schema:name": "NMP"
-    },
-    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2 and the Zenodo batch table."
-  },
   "schema:description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-NMP-2. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -1294,7 +1343,7 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -1457,7 +1506,7 @@ SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "prov:generatedAtTime": "2026-10-06T20:57:58+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1555,7 +1604,7 @@ SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -1647,7 +1696,7 @@ SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-08-17T19:28:33+00:00",
+    "prov:generatedAtTime": "2026-10-06T20:57:58+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -1745,7 +1794,7 @@ SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }
 
@@ -1765,7 +1814,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
   "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   },
   "dcat:accessURL": {
     "@id": "https://doi.org/10.5281/zenodo.20086298"
@@ -1900,7 +1949,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-09-02T13:09:27+00:00"
+    "prov:generatedAtTime": "2026-10-06T20:58:22+00:00"
   },
   "schema:funding": {
     "@type": "schema:Grant",
@@ -2115,8 +2164,8 @@ SPOT CHECK 4b - the same dataset's canonical record
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1788354567,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320302,
+    "battinfo_version": "0.8.0"
   },
   "funding": {
     "type": "Grant",

@@ -8,138 +8,147 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@type": "LithiumNickelManganeseOxideElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": "ActiveMaterial",
-      "schema:name": "Lithium nickel manganese oxide (LNMO)",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "LithiumNickelManganeseOxideElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
+        "@type": "ActiveMaterial",
+        "schema:name": "Lithium nickel manganese oxide (LNMO)",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.91997
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
         "@type": [
-          "MassFraction",
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.91997
+          "hasNumberValue": 1.2234
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.035,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 64.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 8.7387
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.2503,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "nmp",
+        "schema:name": "NMP solvent-based processing"
+      },
+      "hasSolvent": {
+        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+        "@type": "NMethyl2Pyrrolidone",
+        "schema:name": "NMP"
+      },
+      "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
+    "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 1.2234
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.035,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 64.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 8.7387
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.2503,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
   "schema:name": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "nmp",
-      "schema:name": "NMP solvent-based processing"
-    },
-    "hasSolvent": {
-      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-      "@type": "NMethyl2Pyrrolidone",
-      "schema:name": "NMP"
-    },
-    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1 and the Zenodo batch table."
-  },
   "schema:description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label LNMO-NMP-1. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -248,6 +257,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

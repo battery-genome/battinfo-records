@@ -11,8 +11,8 @@
   "provenance": {
     "source_type": "manual",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1786994913,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320278,
+    "battinfo_version": "0.8.0"
   },
   "method": [
     {
@@ -91,7 +91,9 @@
   ],
   "facets": {
     "modes": [
-      "group"
+      "cc",
+      "rest",
+      "cv"
     ],
     "directions": [
       "charge",

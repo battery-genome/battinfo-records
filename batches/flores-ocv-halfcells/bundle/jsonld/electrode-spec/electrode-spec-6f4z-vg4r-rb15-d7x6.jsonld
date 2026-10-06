@@ -8,141 +8,150 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@type": "LithiumIronPhosphateElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": [
-        "LithiumIronPhosphate",
-        "ActiveMaterial"
-      ],
-      "schema:name": "Lithium iron phosphate (LFP)",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "LithiumIronPhosphateElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
         "@type": [
-          "MassFraction",
+          "LithiumIronPhosphate",
+          "ActiveMaterial"
+        ],
+        "schema:name": "Lithium iron phosphate (LFP)",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.95
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
+        "@type": [
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.95
+          "hasNumberValue": 2.0
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 78.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 13.4267
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 8
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "nmp",
+        "schema:name": "NMP solvent-based processing"
+      },
+      "hasSolvent": {
+        "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
+        "@type": "NMethyl2Pyrrolidone",
+        "schema:name": "NMP"
+      },
+      "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LFP-NMP-1 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "LFP electrode, NMP processed (commercial, Gelon LIB)",
+    "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 2.0
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 78.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 13.4267
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 8
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6",
   "schema:name": "LFP electrode, NMP processed (commercial, Gelon LIB)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "nmp",
-      "schema:name": "NMP solvent-based processing"
-    },
-    "hasSolvent": {
-      "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_59c65403_b7f9_4852_a37a_e6295c7b026c",
-      "@type": "NMethyl2Pyrrolidone",
-      "schema:name": "NMP"
-    },
-    "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LFP-NMP-1 and the Zenodo batch table."
-  },
   "schema:description": "LiFePO4 (commercial electrode). Electrode design of the commercial electrode supplied by Gelon LIB, published under the label LFP-NMP-1. Active-material type as stated in metadata.csv: \"LFP\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -250,6 +259,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

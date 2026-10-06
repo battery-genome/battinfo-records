@@ -44,7 +44,7 @@
         "@type": "RealData",
         "hasNumberValue": 64.0
       },
-      "schema:unitText": "um"
+      "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre"
     },
     {
       "@type": [
@@ -68,7 +68,7 @@
         "@type": "RealData",
         "hasNumberValue": 6.3825
       },
-      "schema:unitText": "mg"
+      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGram"
     },
     {
       "@type": [
@@ -197,6 +197,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

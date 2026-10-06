@@ -11,8 +11,12 @@
     "protocol_id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
     "status": "completed",
     "conditions": {
-      "ambient_temperature": "room temperature",
-      "voltage_reference": "Li/Li+"
+      "ambient_temperature": {
+        "value_text": "room temperature"
+      },
+      "voltage_reference": {
+        "value_text": "Li/Li+"
+      }
     },
     "protocol_name": "GITT",
     "started_at": 1760486400,
@@ -29,8 +33,8 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1786994913,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320296,
+    "battinfo_version": "0.8.0"
   },
   "funding": {
     "type": "Grant",

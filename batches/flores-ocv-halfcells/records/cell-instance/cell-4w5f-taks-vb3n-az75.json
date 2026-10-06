@@ -12,8 +12,8 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1787000445,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320278,
+    "battinfo_version": "0.8.0"
   },
   "funding": {
     "type": "Grant",

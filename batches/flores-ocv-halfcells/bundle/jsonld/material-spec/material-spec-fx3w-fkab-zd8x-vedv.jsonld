@@ -8,8 +8,13 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
   "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
-  "@type": "Silicon",
+  "schema:name": "Silicon active material",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_68c0876b_cb62_41cd_846d_95cc9d9a8733"
   },
@@ -21,19 +26,23 @@
       "@id": "https://next-gen.materialsproject.org/materials/mp-149"
     }
   ],
-  "schema:name": "Silicon active material",
-  "schema:molecularFormula": "Si",
-  "hasProperty": {
-    "@type": [
-      "TheoreticalCapacity",
-      "ConventionalProperty"
-    ],
-    "skos:prefLabel": "TheoreticalCapacity",
-    "hasNumericalPart": {
-      "@type": "RealData",
-      "hasNumberValue": 3579.0
+  "isDescriptionFor": {
+    "@type": "Silicon",
+    "schema:molecularFormula": "Si",
+    "hasProperty": {
+      "@type": [
+        "TheoreticalCapacity",
+        "ConventionalProperty"
+      ],
+      "skos:prefLabel": "TheoreticalCapacity",
+      "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3579.0
+      },
+      "schema:unitText": "mAh/g"
     },
-    "schema:unitText": "mAh/g"
+    "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv#described",
+    "skos:prefLabel": "Silicon active material"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -136,6 +145,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

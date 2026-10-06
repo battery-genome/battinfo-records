@@ -174,9 +174,10 @@ see READINESS-REPORT.md (gap G1).
 
 Nothing here submits: this build stages records for review only.
 
-Run:  python build_records.py
-Requires BattINFO from git main at or after a7661d2 (#346: cell working/counter
-electrode links, and standard_deviation / sample_count on a Quantity).
+Run:  python build_records.py [--ignore-pin]
+The BattINFO version this corpus is built with is pinned in battinfo-pin.json. The
+build stops if the installed battinfo reports a different version, because a
+different emitter changes the records it writes.
 """
 from __future__ import annotations
 
@@ -888,7 +889,17 @@ def write_topsoe_organization() -> str:
 
 
 # --------------------------------------------------------------------------- main
+def check_battinfo_pin() -> None:
+    """Stop unless the installed battinfo is the version pinned in battinfo-pin.json."""
+    pin = json.loads((Path(__file__).resolve().parent / "battinfo-pin.json").read_text(encoding="utf-8"))
+    if B.__version__ != pin["battinfo_version"] and "--ignore-pin" not in sys.argv:
+        sys.exit(f"battinfo {B.__version__} is installed but this corpus is pinned to "
+                 f"{pin['battinfo_version']} (commit {pin['battinfo_commit'][:7]}, see battinfo-pin.json). "
+                 "Install the pinned version, or pass --ignore-pin to build anyway.")
+
+
 def main() -> int:
+    check_battinfo_pin()
     rows = load_metadata()
     zfiles = load_zenodo_files()
 
@@ -1494,9 +1505,13 @@ def main() -> int:
         # they were true before the test started, and they would still be true if the
         # test had never run. They live on the electrode record this test's cell links
         # through `working_electrode_id`, one hop away.
+        # Both are qualitative: the source states no number for either. Since
+        # BattINFO 0.8 (#363) a condition is always an object, and a condition
+        # with no number is stated as {"value_text": ...}, which the registry
+        # indexes as the text it states (registry #74).
         test.conditions = {
-            "ambient_temperature": "room temperature",
-            "voltage_reference": "Li/Li+",
+            "ambient_temperature": {"value_text": "room temperature"},
+            "voltage_reference": {"value_text": "Li/Li+"},
         }
         test_by_hex[r["hex"]] = test
 

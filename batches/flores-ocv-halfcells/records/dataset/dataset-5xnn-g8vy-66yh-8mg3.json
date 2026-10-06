@@ -112,8 +112,8 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1788354567,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320301,
+    "battinfo_version": "0.8.0"
   },
   "notes": [
     "Known issue reported by the source for this measurement: Anomalously high voltage measurements during the pulse step. The test record that produced this file states it as a conformance deviation (status non-conformant, category out_of_tolerance); it is repeated here so the warning travels with the data rather than only with the test."

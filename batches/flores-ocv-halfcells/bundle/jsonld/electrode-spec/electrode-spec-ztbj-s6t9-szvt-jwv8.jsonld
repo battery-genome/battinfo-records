@@ -8,140 +8,149 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
-  "@type": "GraphiteElectrode",
-  "hasCoating": {
-    "@type": "ElectrodeCoating",
-    "hasActiveMaterial": {
-      "@type": [
-        "Graphite",
-        "ActiveMaterial"
-      ],
-      "schema:name": "Graphite",
-      "schema:isVariantOf": {
-        "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
-      },
-      "hasProperty": {
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
+  "isDescriptionFor": {
+    "@type": "GraphiteElectrode",
+    "hasCoating": {
+      "@type": "ElectrodeCoating",
+      "hasActiveMaterial": {
         "@type": [
-          "MassFraction",
+          "Graphite",
+          "ActiveMaterial"
+        ],
+        "schema:name": "Graphite",
+        "schema:isVariantOf": {
+          "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
+        },
+        "hasProperty": {
+          "@type": [
+            "MassFraction",
+            "ConventionalProperty"
+          ],
+          "hasNumericalPart": {
+            "@type": "RealData",
+            "hasNumberValue": 0.90984
+          },
+          "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        }
+      }
+    },
+    "hasProperty": [
+      {
+        "@type": [
+          "AreicCapacity",
           "ConventionalProperty"
         ],
+        "skos:prefLabel": "AreicCapacity",
         "hasNumericalPart": {
           "@type": "RealData",
-          "hasNumberValue": 0.90984
+          "hasNumberValue": 1.4241
         },
-        "hasMeasurementUnit": "https://w3id.org/emmo#EMMO_5ebd5e01_0ed3_49a2_a30d_cd05cbe72978"
+        "schema:unitText": "mAh/cm2",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.05,
+            "schema:unitText": "mAh/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 7
+          }
+        ]
+      },
+      {
+        "@type": [
+          "Diameter",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "Diameter",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 14.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
+      },
+      {
+        "@type": [
+          "DryCoatingThickness",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "DryCoatingThickness",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 64.0
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MicroMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.0,
+            "schema:unitText": "um"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 7
+          }
+        ]
+      },
+      {
+        "@type": [
+          "ActiveMassLoading",
+          "ConventionalProperty"
+        ],
+        "skos:prefLabel": "ActiveMassLoading",
+        "hasNumericalPart": {
+          "@type": "RealData",
+          "hasNumberValue": 3.8282
+        },
+        "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
+        "schema:valueReference": [
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "standard_deviation",
+            "schema:value": 0.1345,
+            "schema:unitText": "mg/cm2"
+          },
+          {
+            "@type": "schema:PropertyValue",
+            "schema:propertyID": "sample_count",
+            "schema:value": 7
+          }
+        ]
       }
-    }
+    ],
+    "hasActiveMaterial": {
+      "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t#described",
+      "@type": "ActiveMaterial"
+    },
+    "prov:wasGeneratedBy": {
+      "@type": "Manufacturing",
+      "skos:prefLabel": "Manufacturing",
+      "dcterms:type": {
+        "@type": "schema:DefinedTerm",
+        "schema:termCode": "aqueous",
+        "schema:name": "Water-based (aqueous) processing"
+      },
+      "hasSolvent": {
+        "@type": "schema:ChemicalSubstance",
+        "schema:name": "water"
+      },
+      "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Gr-AQ-1 and the Zenodo batch table."
+    },
+    "skos:prefLabel": "Graphite electrode, aqueous processed (IntelLiGent, SINTEF)",
+    "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8#described"
   },
-  "hasProperty": [
-    {
-      "@type": [
-        "AreicCapacity",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "AreicCapacity",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 1.4241
-      },
-      "schema:unitText": "mAh/cm2",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.05,
-          "schema:unitText": "mAh/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 7
-        }
-      ]
-    },
-    {
-      "@type": [
-        "Diameter",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "Diameter",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 14.0
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliMetre"
-    },
-    {
-      "@type": [
-        "DryCoatingThickness",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "DryCoatingThickness",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 64.0
-      },
-      "schema:unitText": "um",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.0,
-          "schema:unitText": "um"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 7
-        }
-      ]
-    },
-    {
-      "@type": [
-        "ActiveMassLoading",
-        "ConventionalProperty"
-      ],
-      "skos:prefLabel": "ActiveMassLoading",
-      "hasNumericalPart": {
-        "@type": "RealData",
-        "hasNumberValue": 3.8282
-      },
-      "hasMeasurementUnit": "https://w3id.org/emmo#MilliGramPerSquareCentiMetre",
-      "schema:valueReference": [
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "standard_deviation",
-          "schema:value": 0.1345,
-          "schema:unitText": "mg/cm2"
-        },
-        {
-          "@type": "schema:PropertyValue",
-          "schema:propertyID": "sample_count",
-          "schema:value": 7
-        }
-      ]
-    }
-  ],
   "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",
   "schema:name": "Graphite electrode, aqueous processed (IntelLiGent, SINTEF)",
-  "hasActiveMaterial": {
-    "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t",
-    "@type": "ActiveMaterial"
-  },
-  "prov:wasGeneratedBy": {
-    "@type": "Manufacturing",
-    "skos:prefLabel": "Manufacturing",
-    "dcterms:type": {
-      "@type": "schema:DefinedTerm",
-      "schema:termCode": "aqueous",
-      "schema:name": "Water-based (aqueous) processing"
-    },
-    "hasSolvent": {
-      "@type": "schema:ChemicalSubstance",
-      "schema:name": "water"
-    },
-    "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Gr-AQ-1 and the Zenodo batch table."
-  },
   "schema:description": "Graphite (aqueous processed). Electrode design of the IntelLiGent project batch (SINTEF), published under the label Gr-AQ-1. Active-material type as stated in metadata.csv: \"Graphite\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -249,6 +258,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

@@ -8,8 +8,13 @@
       "battinfo": "https://w3id.org/battinfo/"
     }
   ],
+  "@type": [
+    "Description",
+    "schema:ProductModel",
+    "schema:CreativeWork"
+  ],
   "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh",
-  "@type": "LithiumIronPhosphate",
+  "schema:name": "LFP (LiFePO4) active material",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90"
   },
@@ -24,8 +29,12 @@
       "@id": "https://next-gen.materialsproject.org/materials/mp-19017"
     }
   ],
-  "schema:name": "LFP (LiFePO4) active material",
-  "schema:molecularFormula": "LiFePO4",
+  "isDescriptionFor": {
+    "@type": "LithiumIronPhosphate",
+    "schema:molecularFormula": "LiFePO4",
+    "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh#described",
+    "skos:prefLabel": "LFP (LiFePO4) active material"
+  },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",
@@ -130,6 +139,6 @@
     }
   ],
   "dcterms:license": {
-    "@id": "cc-by-4.0"
+    "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   }
 }

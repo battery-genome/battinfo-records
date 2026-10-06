@@ -31,8 +31,8 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1788354366,
-    "battinfo_version": "0.7.0"
+    "retrieved_at": 1791320268,
+    "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy",
   "working_electrode": {
@@ -49,9 +49,7 @@
               }
             }
           }
-        ],
-        "binder": [],
-        "additive": []
+        ]
       },
       "property": {}
     },
@@ -75,9 +73,7 @@
             "name": "Lithium metal",
             "property": {}
           }
-        ],
-        "binder": [],
-        "additive": []
+        ]
       },
       "property": {}
     },
