@@ -1,0 +1,12 @@
+{
+  "about": "Overrides for the single successor republish.py names when it tombstones a split row of supersede-map.json. A tombstone carries one replaced_by_iri, so each of the 18 split rows needs one entry point; every other successor of the row stays published and reachable from it.",
+  "default_rule": {
+    "material": "A v1 'material lot' was a coated electrode batch. Its successor is the electrode spec its v5 discs instance (the batch as a unit), not one of the discs. Ruling default of decision 10 in the close-out plan, not yet confirmed by the owner.",
+    "cell_spec": "A v1 cell spec that covered two electrode designs names the v5 cell spec whose working electrode batch label sorts first (natural sort: AQ before NMP, lower batch number first). Gives LNMO-AQ-1, LNMO-AQ-2 and SiGr-AQ-2.",
+    "material_spec": "Same rule as cell_spec, over the electrode specs: the one whose batch label sorts first. A v1 material spec therefore points at the electrode design its cell spec points at."
+  },
+  "overrides": {},
+  "overrides_help": "Map a published_id of a split row to the successor IRI you want instead, e.g. {\"https://w3id.org/battinfo/spec/dyb1-7smn-efq9-tnqf\": \"https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4\"}. The successor must be one of the row's successors, or for a material row the electrode spec of its discs. Preflight refuses anything else.",
+  "extra_supersedes": [],
+  "extra_supersedes_help": "Rows outside supersede-map.json, as {\"published_id\", \"resource_type\", \"successor\"}. Candidate, deliberately not enabled: the Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (Haldor Topsoe) -> organization/vz1v-rvhz-n77h-344c, per the curator ruling of 2026-08-21 recorded in the Topsoe record's editorial note. Add it here once the owner confirms; it is not part of the Flores corpus map."
+}
