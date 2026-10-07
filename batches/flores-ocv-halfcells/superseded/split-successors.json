@@ -7,6 +7,12 @@
   },
   "overrides": {},
   "overrides_help": "Map a published_id of a split row to a different successor IRI. For a material lot it replaces the single successor (it must be one of the row's successors or the electrode spec of its discs). For a split spec it only changes which listed successor is the primary. Preflight refuses anything else.",
-  "extra_supersedes": [],
-  "extra_supersedes_help": "Rows outside supersede-map.json, as {\"published_id\", \"resource_type\", \"successor\"}. Candidate, deliberately not enabled: the Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (Haldor Topsoe) -> organization/vz1v-rvhz-n77h-344c, per the curator ruling of 2026-08-21 recorded in the Topsoe record's editorial note. Add it here once the owner confirms; it is not part of the Flores corpus map."
+  "extra_supersedes": [
+    {
+      "published_id": "https://w3id.org/battinfo/organization/j50f-3ebx-sssw-svnm",
+      "resource_type": "organization",
+      "successor": "https://w3id.org/battinfo/organization/vz1v-rvhz-n77h-344c"
+    }
+  ],
+  "extra_supersedes_help": "Rows outside supersede-map.json, as {\"published_id\", \"resource_type\", \"successor\"}. Enabled 2026-10-07 by the owner: the Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (Haldor Topsoe, the pre-2022 name) is superseded by the Topsoe record organization/vz1v-rvhz-n77h-344c, per the curator ruling of 2026-08-21 recorded in the Topsoe record's editorial note."
 }
