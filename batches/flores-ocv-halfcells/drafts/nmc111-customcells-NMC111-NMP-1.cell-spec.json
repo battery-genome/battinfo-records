@@ -1,0 +1,21 @@
+{
+  "manufacturer": "SINTEF",
+  "model": "NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+  "format": "coin",
+  "chemistry": "li-metal",
+  "size_code": "R2032",
+  "cell_configuration": "half_cell",
+  "reference_electrode": "lithium",
+  "rechargeable": true,
+  "citation": "https://doi.org/10.5281/zenodo.20086298",
+  "properties": {
+    "charging_voltage": {
+      "value": 4.3,
+      "unit": "V"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.0,
+      "unit": "V"
+    }
+  }
+}

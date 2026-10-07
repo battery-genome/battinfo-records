@@ -1,0 +1,12 @@
+{
+  "about": "Successor rules for the 18 split rows of supersede-map.json. A material lot's tombstone names one successor, its electrode spec. A spec that covered two designs is split into one spec per design, and its tombstone lists both in replaced_by_iris (owner ruling 2026-10-07); replaced_by_iri, the primary, is only an ordering for clients that read one successor.",
+  "default_rule": {
+    "material": "A v1 'material lot' was a coated electrode batch. Its single successor is the electrode spec its v5 discs instance (the batch as a unit), not one of the discs. Default of decision 10 in the close-out plan.",
+    "cell_spec": "A v1 cell spec that covered two electrode designs lists both v5 cell specs. The primary is the one whose working electrode batch label sorts first (natural sort: AQ before NMP, lower batch number first).",
+    "material_spec": "A v1 material spec that covered two electrode designs lists both v5 electrode specs, primary chosen by the same sort."
+  },
+  "overrides": {},
+  "overrides_help": "Map a published_id of a split row to a different successor IRI. For a material lot it replaces the single successor (it must be one of the row's successors or the electrode spec of its discs). For a split spec it only changes which listed successor is the primary. Preflight refuses anything else.",
+  "extra_supersedes": [],
+  "extra_supersedes_help": "Rows outside supersede-map.json, as {\"published_id\", \"resource_type\", \"successor\"}. Candidate, deliberately not enabled: the Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (Haldor Topsoe) -> organization/vz1v-rvhz-n77h-344c, per the curator ruling of 2026-08-21 recorded in the Topsoe record's editorial note. Add it here once the owner confirms; it is not part of the Flores corpus map."
+}

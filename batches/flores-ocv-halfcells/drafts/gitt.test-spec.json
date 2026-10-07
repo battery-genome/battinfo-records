@@ -1,0 +1,83 @@
+{
+  "name": "GITT",
+  "type": "gitt",
+  "description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "version": "1.0",
+  "cycles": 5,
+  "method": [
+    {
+      "mode": "group",
+      "count": 5,
+      "description": "5 cycles",
+      "steps": [
+        {
+          "mode": "group",
+          "description": "Current pulses at C/50 with 150-minute rests toward the lower voltage cutoff",
+          "steps": [
+            {
+              "mode": "cc",
+              "direction": "discharge",
+              "setpoints": {
+                "c_rate": {
+                  "value": 0.02,
+                  "unit": "A/Ah"
+                }
+              },
+              "description": "Current pulse at C/50"
+            },
+            {
+              "mode": "rest",
+              "duration": {
+                "value": 150,
+                "unit": "min"
+              },
+              "description": "Rest for 150 minutes"
+            }
+          ]
+        },
+        {
+          "mode": "rest",
+          "duration": {
+            "value": 6,
+            "unit": "h"
+          },
+          "description": "Rest for 6 h at the lower voltage cutoff"
+        },
+        {
+          "mode": "group",
+          "description": "Current pulses at C/50 with 150-minute rests toward the upper voltage cutoff",
+          "steps": [
+            {
+              "mode": "cc",
+              "direction": "charge",
+              "setpoints": {
+                "c_rate": {
+                  "value": 0.02,
+                  "unit": "A/Ah"
+                }
+              },
+              "description": "Current pulse at C/50"
+            },
+            {
+              "mode": "rest",
+              "duration": {
+                "value": 150,
+                "unit": "min"
+              },
+              "description": "Rest for 150 minutes"
+            }
+          ]
+        },
+        {
+          "mode": "rest",
+          "duration": {
+            "value": 6,
+            "unit": "h"
+          },
+          "description": "Rest for 6 h at the upper voltage cutoff"
+        }
+      ]
+    }
+  ],
+  "citation": "https://doi.org/10.5281/zenodo.20086298"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "p-OCV hold",
+  "type": "quasi_ocv",
+  "description": "Constant current cycling at C/50. The voltage is held for 6 h under potentiostatic control upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
+  "version": "1.0",
+  "cycles": 5,
+  "method": [
+    {
+      "mode": "group",
+      "count": 5,
+      "description": "5 cycles",
+      "steps": [
+        {
+          "mode": "cc",
+          "direction": "discharge",
+          "setpoints": {
+            "c_rate": {
+              "value": 0.02,
+              "unit": "A/Ah"
+            }
+          },
+          "description": "Constant current at C/50 to the lower voltage cutoff"
+        },
+        {
+          "mode": "cv",
+          "duration": {
+            "value": 6,
+            "unit": "h"
+          },
+          "description": "Potentiostatic hold for 6 h at the lower voltage cutoff"
+        },
+        {
+          "mode": "cc",
+          "direction": "charge",
+          "setpoints": {
+            "c_rate": {
+              "value": 0.02,
+              "unit": "A/Ah"
+            }
+          },
+          "description": "Constant current at C/50 to the upper voltage cutoff"
+        },
+        {
+          "mode": "cv",
+          "duration": {
+            "value": 6,
+            "unit": "h"
+          },
+          "description": "Potentiostatic hold for 6 h at the upper voltage cutoff"
+        }
+      ]
+    }
+  ],
+  "citation": "https://doi.org/10.5281/zenodo.20086298"
+}
