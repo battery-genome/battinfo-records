@@ -1,0 +1,309 @@
+{
+  "schema_version": "0.2.0",
+  "parameter_set": {
+    "id": "https://w3id.org/battinfo/spec/jqqz-r65f-yvhp-nxre",
+    "short_id": "jqqzr6",
+    "name": "HYDRA graphite/LNMO validation parameter set - positive electrode material",
+    "material_kind": "lnmo",
+    "scope": "material",
+    "claims": [
+      {
+        "parameter": "stoichiometry_min",
+        "quantity": {
+          "value": 0.1282523167597238,
+          "unit": "1"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "stoichiometry_max",
+        "quantity": {
+          "value": 0.8842803055071382,
+          "unit": "1"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "max_concentration",
+        "quantity": {
+          "value": 23761.0,
+          "unit": "mol/m3"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "particle_radius",
+        "quantity": {
+          "value": 8.94e-06,
+          "unit": "m"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "solid_diffusivity",
+        "quantity": {
+          "value": 3.4597121093775474e-14,
+          "unit": "m2/s"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "diffusivity_activation_energy",
+        "quantity": {
+          "value": 5630.0,
+          "unit": "J/mol"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "ocp",
+        "curve": {
+          "x_quantity": "stoichiometry",
+          "x": [
+            0.0,
+            0.14,
+            0.146026026026026,
+            0.155495495495496,
+            0.162382382382382,
+            0.170990990990991,
+            0.195095095095095,
+            0.212312312312312,
+            0.238998998998999,
+            0.363823823823824,
+            0.436136136136136,
+            0.473153153153153,
+            0.511031031031031,
+            0.525665665665666,
+            0.647907907907908,
+            0.69955955955956,
+            0.733993993993994,
+            0.765845845845846,
+            0.78994994994995,
+            0.808028028028028,
+            0.819219219219219,
+            0.826106106106106,
+            0.83041041041041,
+            0.836436436436437,
+            0.840740740740741,
+            0.847627627627628,
+            0.866566566566567,
+            0.906166166166166,
+            0.925965965965966,
+            0.962122122122122,
+            0.975895895895896,
+            0.985365365365365,
+            0.991391391391391,
+            0.993973973973974,
+            0.995695695695696,
+            1.0
+          ],
+          "y": [
+            5.9960861040075955,
+            4.87569505447853,
+            4.82747001430861,
+            4.79753922896548,
+            4.7859992051917,
+            4.77637521633041,
+            4.76094446489099,
+            4.75500387,
+            4.75024331446702,
+            4.74203862427403,
+            4.7326960207362,
+            4.72310485665652,
+            4.70371488323108,
+            4.69932957952965,
+            4.68730630273912,
+            4.67759372640082,
+            4.66539114218814,
+            4.64651526973415,
+            4.62260409416199,
+            4.59215508970157,
+            4.55906624814121,
+            4.52086678541922,
+            4.46980433035488,
+            4.32588632870393,
+            4.29329919295209,
+            4.26185062144669,
+            4.20190606339757,
+            4.09708321965834,
+            4.05334705857407,
+            3.98263417397545,
+            3.95063322436695,
+            3.91983192501725,
+            3.88554278797768,
+            3.85399425727179,
+            3.78157603488723,
+            2.99554375883436
+          ],
+          "y_unit": "V"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "entropic_coefficient",
+        "quantity": {
+          "value": 0.0,
+          "unit": "V/K"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "reaction_rate_constant",
+        "quantity": {
+          "value": 9.300612938296574e-05,
+          "unit": "mol.m-2.s-1"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "reaction_rate_activation_energy",
+        "quantity": {
+          "value": 0.0,
+          "unit": "J/mol"
+        },
+        "provenance_class": "fitted"
+      }
+    ],
+    "model_context": {
+      "tool": "BPX",
+      "name": "HYDRA graphite/LNMO validation parameter set",
+      "model": "DFN",
+      "version": "1.0"
+    },
+    "annex": {
+      "Negative electrode total solid volume fraction": 0.5993469682767011,
+      "Positive electrode total solid volume fraction": 0.6733612095489311,
+      "Negative electrode active material share within solids": 0.9378330373001775,
+      "Positive electrode active material share within solids": 0.8313253012048192,
+      "Negative electrode active material volume fraction": 0.5620873876555917,
+      "Positive electrode active material volume fraction": 0.5597822103479065,
+      "Negative electrode inactive solid volume fraction": 0.037259580621109345,
+      "Positive electrode inactive solid volume fraction": 0.11357899920102454,
+      "Open-circuit voltage at 0% SOC [V]": 2.6530625217791886,
+      "Open-circuit voltage at 100% SOC [V]": 4.875875807224855,
+      "BattMo negative electrode volumetric surface area [m-1]": 1540000.0,
+      "BattMo positive electrode volumetric surface area [m-1]": 222275.44206886273,
+      "BPX negative electrode surface area per unit volume [m-1]": 103451.66643967947,
+      "BPX positive electrode surface area per unit volume [m-1]": 187846.37931137803,
+      "BattMo negative electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          0.614180704504965,
+          1.9504887954224202,
+          2.85609207829683,
+          2.8777767177512197,
+          3.5783379705522402,
+          3.75161042355194,
+          3.99042436699301,
+          3.8588812440632503,
+          3.9107721646939897,
+          3.96434407803536,
+          4.02950087744402,
+          4.19105848461824,
+          5.04918252889569,
+          4.70739079700868,
+          4.68047272216724,
+          4.67314920246704,
+          4.71058023371167,
+          4.76839651936555,
+          4.81773917337519,
+          4.86312366426169,
+          4.97030884387319,
+          5.06113895934315,
+          5.526651377501239
+        ]
+      },
+      "BattMo positive electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.049999999999999,
+          0.099999999999999,
+          0.149999999999999,
+          0.199999999999999,
+          0.249999999999999,
+          0.299999999999999,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          1.46947187111,
+          1.43560314165,
+          0.96574397799,
+          0.33828337612,
+          2.62322367243,
+          3.95526276763,
+          4.3969851987599995,
+          4.46259692946,
+          4.32657905944,
+          4.15872886922,
+          3.92415831529,
+          3.67849409319,
+          3.91915976034,
+          3.95092933335,
+          3.90933653701,
+          3.8087900021300003,
+          3.77009511009,
+          3.59439847188,
+          3.44566811475,
+          3.15637394329,
+          2.8640829203600005,
+          2.10757234065,
+          4.03310274857
+        ]
+      },
+      "BattMo negative electrode BPX-fitted reaction rate constant [mol.m-2.s-1]": 0.0015391758232510362
+    },
+    "description": "BPX export of the BattMo parameter set used in runValidation.m. Both electrodes: kinetics are approximated by a single BPX reaction-rate constant fitted to each BattMo j0(soc) table at nominal electrolyte concentration. Geometric surface areas preserve active volume; kinetic constants absorb area scaling. OCP tables are linearly extrapolated to stoichiometry endpoints. Geometry, nominal capacity and upper cutoff are supplementary inputs. Source: IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.battmo.json. Geometry: h0b-geometry-3d.json.",
+    "set_id": "https://w3id.org/battinfo/spec/tt9p-19mr-ek6v-sz6q"
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1791404216,
+    "battinfo_version": "0.7.0",
+    "source_url": "https://raw.githubusercontent.com/BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication/51092701d66b8dcaa88febaa132ff877f7ebc6db/parameters/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+    "citation": "https://arxiv.org/abs/2601.10507"
+  },
+  "notes": [
+    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0. The file is the BPX export in BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication at commit 5109270; that repository's GPL-3.0-or-later licence covers its code.",
+    "Calibrated against the HYDRA0 measurements published at https://doi.org/10.5281/zenodo.18256663 (CC-BY-4.0). The file's Validation section holds five discharge-rate curves from that campaign."
+  ],
+  "license": "cc-by-4.0"
+}
