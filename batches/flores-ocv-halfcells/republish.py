@@ -627,7 +627,17 @@ class State:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         tmp = self.path.with_suffix(self.path.suffix + ".tmp")
         tmp.write_text(json.dumps(self.data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        os.replace(tmp, self.path)
+        # On Windows a virus scanner or the search indexer can hold a just-written file
+        # for a moment, and os.replace then fails with "Access is denied". A state file
+        # that cannot be saved must not abort a half-applied run, so retry briefly.
+        for attempt in range(40):
+            try:
+                os.replace(tmp, self.path)
+                return
+            except PermissionError:
+                if attempt == 39:
+                    raise
+                time.sleep(0.25)
 
 
 def _now() -> str:
