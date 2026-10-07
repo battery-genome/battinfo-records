@@ -205,7 +205,7 @@ Every quantity is rounded to a fixed number of decimals per unit, chosen at or a
 
 Per-record validation is clean: 425 records, 0 errors, 0 warnings, 0 SHACL non-conformances.
 
-The deposit-level gold-standard check reports 98 errors and 96 warnings on BattINFO 0.8.0, and none of them come from these records. 96 errors say a dataset node has no `schema:about`: every dataset record carries `about` (its cell and its test), but the 0.8.0 deposit graph builder only learns that link from a test's `dataset_ids` and drops it otherwise. The other two errors and one warning are the collection node being asked for a file, because the builder treats it as an ordinary dataset. The 95 "BatteryTest should record prov:generated" warnings are the reverse of the same missing link. All of it is fixed on BattINFO branch `fix/deposit-graph-collections`, which reads each dataset's own `about` and types the collection as a series: on this corpus the report goes to a clean pass. Once that lands, move `battinfo-pin.json` and rebuild.
+The deposit-level gold-standard check passes with no errors and no warnings. Until BIG-MAP/BattINFO#414 it reported 98 errors and 96 warnings, none of them from these records: the deposit graph builder learned a dataset's cell and test only from the test's `dataset_ids` and dropped the dataset's own `about`, and it asked the collection node for a file. #414 reads `about` and types the collection as a series.
 
 Two earlier classes were fixed upstream and no longer appear: md5 checksums published under a sha256 predicate (BIG-MAP/BattINFO#339), and the electrode layer missing from the deposit graph (BIG-MAP/BattINFO#344). `bundle/deposit-coverage.txt` shows every record in the graph.
 
@@ -247,7 +247,7 @@ uv run python scripts/preview_staged_batch.py \
 
 `preview/` is gitignored: the generated HTML is many times the size of the whole repository.
 
-The build is pinned to the BattINFO version in `battinfo-pin.json` (0.8.0, commit `2feabb7`), and `build_records.py` refuses to run on another version unless given `--ignore-pin`. Re-running against an existing workspace rewrites nothing: every record reports `[unchanged]`, no dataset is written, and no identity is pruned. A rebuild in an empty workspace reproduces all 425 byte for byte apart from `provenance.retrieved_at`, the build timestamp.
+The build is pinned to the BattINFO version in `battinfo-pin.json` (0.8.0: BattINFO main at commit `4c77773` with the release version stamp), and `build_records.py` refuses to run on another version unless given `--ignore-pin`. Re-running against an existing workspace rewrites nothing: every record reports `[unchanged]`, no dataset is written, and no identity is pruned. A rebuild in an empty workspace reproduces all 425 byte for byte apart from `provenance.retrieved_at`, the build timestamp.
 
 Because D1 re-seeded six cell specs and v4 re-seeds the material and electrode layers, a rebuild leaves the identities it replaced behind in the workspace. `build_records.py` prunes them and reports the count, so `records/` and the deposit graph only ever contain records the run actually authored.
 
@@ -299,7 +299,7 @@ What the collection record deliberately does not carry: `about` (its members hol
 
 Two invariants to keep. The collection's IRI seeds from `(access_url, name)`, because it has neither cell nor test - renaming the record re-seeds the identifier and orphans every member's `series_id`, so the name is frozen once published. And at republish time the collection goes in FIRST among the datasets: the members carry the forward edge, so it must exist before any of them arrives (registry PR #63 makes same-batch staging of the members tolerant of pending siblings either way).
 
-The deposit-level gold-standard report flags the collection node for having no file and no `about`, because the 0.8.0 deposit graph builder is not series-aware. BattINFO branch `fix/deposit-graph-collections` fixes this (see the publishing caveats).
+The deposit-level gold-standard check treats the collection as a series (BIG-MAP/BattINFO#414): it needs no file and no `about`, and every member's `dcat:inSeries` resolves to it inside the deposit graph.
 
 ## Registry publication
 

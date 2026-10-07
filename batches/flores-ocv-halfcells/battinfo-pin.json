@@ -1,6 +1,6 @@
 {
   "battinfo_version": "0.8.0",
-  "battinfo_commit": "2feabb79f31916a6c29a3768fb548bb63b8a04b0",
+  "battinfo_commit": "4c77773bf273cd8982ae96a1328a806e7c294623",
   "source": "https://github.com/BIG-MAP/BattINFO",
-  "note": "The BattINFO build these records were generated with. build_records.py refuses to run on a different battinfo version unless --ignore-pin is given. Move the pin to the v0.8.0 tag once it exists, and rebuild whenever the pin moves."
+  "note": "The BattINFO build these records were generated with: main at this commit with the 0.8.0 version stamp of the release PR on top. build_records.py refuses to run on a different battinfo version unless --ignore-pin is given. Move the pin to the v0.8.0 tag once it exists, and rebuild whenever the pin moves."
 }
