@@ -23,7 +23,9 @@ registry from the first state to the second, in eight ordered steps:
                  versions in place; everything else is a new identifier.
   4 supersede    one admin status call per replaced or split row of
                  superseded/supersede-map.json: status superseded + replaced_by_iri.
-                 Split rows name one successor (superseded/split-successors.json).
+                 A spec that split into several specs lists them all in
+                 replaced_by_iris (primary first); a material lot names its
+                 electrode spec (superseded/split-successors.json).
   5 profiles     upload the 95 plot profiles (delegates to upload_profiles.py).
   6 rerender     re-render every record page with persisted display (delegates to
                  battinfo-registry scripts/rerender_record_pages.py).
@@ -76,7 +78,7 @@ ROLLBACK
   What can be undone:
     * Step 4 (status flags). Every tombstone is reversible with the same admin call:
       POST /admin/resources/{type}/{id}/status {"status": "published"} restores a
-      superseded v1 record and clears replaced_by_iri. The state file lists every
+      superseded v1 record and clears replaced_by_iri(s). The state file lists every
       row this driver superseded ("supersedes"), so a rollback can replay it.
     * Step 3 versions of retained identifiers. The 154 retained records gain a new
       version; the v1 version stays in /versions. Re-submitting the v1 payload under
@@ -644,6 +646,23 @@ class SupersedeRow:
     status: str            # replaced | split | extra
     successor: str
     rule: str
+    # Every successor, the primary first, when a record split into several that are
+    # all its successors (a spec that covered two designs). Empty for a single
+    # successor, including a material lot, whose one successor is its electrode spec.
+    successors: tuple[str, ...] = ()
+
+    @property
+    def status_body(self) -> dict[str, Any]:
+        body: dict[str, Any] = {"status": "superseded", "replaced_by_iri": self.successor}
+        if self.successors:
+            body["replaced_by_iris"] = list(self.successors)
+        return body
+
+    def matches(self, current: dict[str, Any]) -> bool:
+        """True when the target already holds this row's tombstone."""
+        return (current.get("status") == "superseded"
+                and current.get("replaced_by_iri") == self.successor
+                and list(current.get("replaced_by_iris") or []) == list(self.successors))
 
     @property
     def canonical_id(self) -> str:
@@ -655,7 +674,9 @@ def _natural_key(text: str) -> list[Any]:
 
 
 def build_supersede_plan(records: list[Record], overrides_path: Path) -> tuple[list[SupersedeRow], dict[str, Any], list[str]]:
-    """One successor per replaced/split row. Returns (rows, map document, errors)."""
+    """One primary successor per replaced/split row, plus the full list for a split spec.
+
+    Returns (rows, map document, errors)."""
     document = json.loads(SUPERSEDE_MAP.read_text(encoding="utf-8"))
     overrides_doc = json.loads(overrides_path.read_text(encoding="utf-8")) if overrides_path.is_file() else {}
     overrides: dict[str, str] = overrides_doc.get("overrides") or {}
@@ -691,6 +712,7 @@ def build_supersede_plan(records: list[Record], overrides_path: Path) -> tuple[l
             errors.append(f"supersede map: {published} names successors not in this corpus: {missing}")
             continue
         allowed = set(successors)
+        listed = False
         if entry["status"] == "replaced":
             choice, rule = successors[0], "replaced"
         elif entry["published_type"] == "material":
@@ -701,16 +723,21 @@ def build_supersede_plan(records: list[Record], overrides_path: Path) -> tuple[l
             choice, rule = specs[0], "material lot -> electrode spec of its discs"
             allowed |= set(specs)
         else:
+            # A spec that covered two designs: both are its successors, so the
+            # tombstone lists both (owner ruling 2026-10-07, option 3). The primary is
+            # only an ordering for clients that read one successor.
             choice = sorted(successors, key=lambda iri: (_natural_key(label_of(iri)), iri))[0]
-            rule = f"split -> batch label sorting first ({label_of(choice)})"
+            rule = f"split -> all {len(successors)} successors, primary sorts first ({label_of(choice)})"
+            listed = True
         if published in overrides:
             used_overrides.add(published)
             wanted = overrides[published]
             if wanted not in allowed:
                 errors.append(f"override for {published} names {wanted}, which is not one of its successors")
                 continue
-            choice, rule = wanted, "override (split-successors.json)"
-        rows.append(SupersedeRow(published, resource_type, entry["status"], choice, rule))
+            choice, rule = wanted, "override (split-successors.json)" + (" as primary" if listed else "")
+        ordered = tuple([choice, *[iri for iri in successors if iri != choice]]) if listed else ()
+        rows.append(SupersedeRow(published, resource_type, entry["status"], choice, rule, ordered))
     for published in set(overrides) - used_overrides:
         errors.append(f"override for {published} matches no replaced or split row")
     for extra in overrides_doc.get("extra_supersedes") or []:
@@ -924,12 +951,18 @@ class Driver:
             replaced_by = (index.by_iri.get(row.published_id) or {}).get("replaced_by_iri")
             if status == "published":
                 continue
-            if status == "superseded" and replaced_by == row.successor:
+            if row.matches(index.by_iri.get(row.published_id) or {}):
                 continue   # step 4 already applied it
             errors.append(f"supersede map: {row.published_id} is {status or 'absent'} on the target"
                           + (f" (replaced by {replaced_by})" if replaced_by else ""))
         statuses = Counter(e["status"] for e in self.supersede_doc["entries"])
         self.say(f"  supersede map: {dict(statuses)}; {len(self.supersede_rows)} status calls planned")
+        listed = [row for row in self.supersede_rows if row.successors]
+        if listed:
+            self.say(f"  split specs: {len(listed)} tombstones list all their successors")
+            if not self.target_accepts_successor_lists():
+                errors.append(f"{len(listed)} split rows need a tombstone that lists several successors, but the "
+                              "target does not declare replaced_by_iris; deploy the registry change first")
 
         # identity collisions and outside references
         for record in [self.organization, *self.records]:
@@ -1085,6 +1118,16 @@ class Driver:
 
     # -- step 4 --------------------------------------------------------------
 
+    def target_accepts_successor_lists(self) -> bool:
+        """Whether the target's admin status payload declares replaced_by_iris.
+
+        An older registry would ignore the field and keep only the primary successor,
+        so a split row is never sent to one."""
+        openapi = self.target.get("/openapi.json")
+        if openapi.status != 200 or not isinstance(openapi.body, dict):
+            return False
+        return '"replaced_by_iris"' in json.dumps(openapi.body.get("components", {}).get("schemas", {}))
+
     def step_supersede(self) -> bool:
         self.say(f"\n== 4 supersede ({len(self.supersede_rows)} rows)")
         index = self.index(refresh=True)
@@ -1092,27 +1135,31 @@ class Driver:
         failures: list[str] = []
         for row in self.supersede_rows:
             current = index.by_iri.get(row.published_id) or {}
-            if current.get("status") == "superseded" and current.get("replaced_by_iri") == row.successor:
+            if row.matches(current):
                 outcome["already superseded"] += 1
                 continue
             if current.get("status") != "published":
                 failures.append(f"{row.published_id} is {current.get('status') or 'absent'}; not touching it")
                 continue
-            if index.status(row.successor) != "published":
-                failures.append(f"{row.published_id}: successor {row.successor} is not published")
+            dead = [iri for iri in (row.successors or (row.successor,)) if index.status(iri) != "published"]
+            if dead:
+                failures.append(f"{row.published_id}: successor(s) not published: {dead}")
                 continue
             response = self.target.request(
                 "POST", f"/admin/resources/{row.resource_type}/{row.canonical_id}/status",
                 headers=self.target.admin_headers(),
-                body={"status": "superseded", "replaced_by_iri": row.successor})
+                body=row.status_body)
             if response.status != 200:
                 failures.append(f"{row.published_id}: {error_text(response)}")
                 self.state.log("supersede_failed", iri=row.published_id, error=error_text(response))
                 continue
             self.state.data["supersedes"][row.published_id] = {
-                "resource_type": row.resource_type, "replaced_by_iri": row.successor, "rule": row.rule}
-            self.state.log("superseded", iri=row.published_id, replaced_by=row.successor)
-            current.update({"status": "superseded", "replaced_by_iri": row.successor})
+                "resource_type": row.resource_type, "replaced_by_iri": row.successor,
+                "replaced_by_iris": list(row.successors) or None, "rule": row.rule}
+            self.state.log("superseded", iri=row.published_id, replaced_by=row.successor,
+                           replaced_by_all=list(row.successors) or None)
+            current.update({"status": "superseded", "replaced_by_iri": row.successor,
+                            "replaced_by_iris": list(row.successors) or None})
             outcome["superseded"] += 1
         for failure in failures[:20]:
             self.say(f"  FAILED {failure}")
@@ -1222,13 +1269,17 @@ class Driver:
             response = self.target.get(f"/w3id/{segment}/{uid}", accept="application/ld+json",
                                        follow_redirects=False)
             body = response.body if isinstance(response.body, dict) else {}
-            replaced = (body.get("dcterms:isReplacedBy") or {}).get("@id")
+            replaced_node = body.get("dcterms:isReplacedBy")
+            nodes = replaced_node if isinstance(replaced_node, list) else [replaced_node or {}]
+            replaced = [node.get("@id") for node in nodes if isinstance(node, dict)]
+            expected = list(row.successors or (row.successor,))
+            dead = [iri for iri in expected if index.status(iri) != "published"]
             if response.status != 200 or body.get("owl:deprecated") is not True:
                 errors.append(f"{row.published_id}: not a tombstone (HTTP {response.status})")
-            elif replaced != row.successor:
-                errors.append(f"{row.published_id}: tombstone points at {replaced}, expected {row.successor}")
-            elif index.status(row.successor) != "published":
-                errors.append(f"{row.published_id}: successor {row.successor} is {index.status(row.successor)}")
+            elif sorted(replaced) != sorted(expected):
+                errors.append(f"{row.published_id}: tombstone points at {replaced}, expected {expected}")
+            elif dead:
+                errors.append(f"{row.published_id}: successor(s) not published: {dead}")
             else:
                 tombstones += 1
         self.say(f"  tombstones: {tombstones}/{len(self.supersede_rows)} point at a live successor")
