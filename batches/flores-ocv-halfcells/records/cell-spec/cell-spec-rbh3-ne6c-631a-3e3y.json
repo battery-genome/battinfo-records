@@ -5,6 +5,7 @@
     "short_id": "rbh3ne",
     "identifier": "cell-spec:rbh3-ne6c-631a-3e3y",
     "name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
+    "handle": "flores-ocv/lnmo-aq-2-cell-spec",
     "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
     "manufacturer": {
       "type": "Organization",
@@ -31,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320268,
+    "retrieved_at": 1791447092,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
@@ -84,7 +85,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
     "Half-cell voltage window vs Li/Li+: 3.50-4.80 V.",
     "Public electrode label: LNMO-AQ-2.",
-    "Electrode design realizing this spec: LNMO electrode, aqueous processed (IntelLiGent batch 2, SINTEF).",
+    "Electrode design realizing this spec: LNMO AQ-2 electrode spec.",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

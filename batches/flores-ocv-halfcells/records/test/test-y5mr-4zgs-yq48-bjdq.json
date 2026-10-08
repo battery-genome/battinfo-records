@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/y5mr-4zgs-yq48-bjdq",
     "short_id": "y5mr4z",
     "identifier": "test:y5mr-4zgs-yq48-bjdq",
-    "name": "LNMO-NMP-1 cell f9bf3e p-OCV",
+    "name": "LNMO NMP-1 cell f9bf3e p-OCV test",
+    "handle": "flores-ocv/lnmo-nmp-1-f9bf3e-p-ocv-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/mtmb-wtce-kwfs-trsd",
     "description": "p-OCV half-cell OCV measurement on LNMO-NMP-1 coin cell f9bf3e at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV",
+    "protocol_name": "p-OCV test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

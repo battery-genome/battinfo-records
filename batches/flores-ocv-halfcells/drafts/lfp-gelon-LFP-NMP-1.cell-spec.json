@@ -1,4 +1,6 @@
 {
+  "name": "LFP NMP-1 cell spec",
+  "handle": "flores-ocv/lfp-nmp-1-cell-spec",
   "manufacturer": "SINTEF",
   "model": "LFP (LiFePO4) R2032 half-cell (gelon)",
   "format": "coin",

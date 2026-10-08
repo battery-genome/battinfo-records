@@ -3,7 +3,8 @@
   "electrode_spec": {
     "id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
     "short_id": "z6tqsh",
-    "name": "NMC532 electrode, NMP processed (commercial, Gelon LIB)",
+    "name": "NMC532 NMP-1 electrode spec",
+    "handle": "flores-ocv/nmc532-nmp-1-electrode-spec",
     "active_material_kind": "nmc532",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
     "description": "LiNi0.5Mn0.3Co0.2O2 (commercial electrode). Electrode design of the commercial electrode supplied by Gelon LIB, published under the label NMC532-NMP-1. Active-material type as stated in metadata.csv: \"NMC532\".",
@@ -59,7 +60,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

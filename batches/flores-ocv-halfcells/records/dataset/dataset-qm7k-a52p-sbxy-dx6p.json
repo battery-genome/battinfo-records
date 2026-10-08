@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/qm7k-a52p-sbxy-dx6p",
     "short_id": "qm7ka5",
     "identifier": "dataset:qm7k-a52p-sbxy-dx6p",
-    "name": "LFP-NMP-1 cell d07eb6 p-OCV half-cell OCV (BDF)",
+    "name": "LFP NMP-1 cell d07eb6 p-OCV dataset",
+    "handle": "flores-ocv/lfp-nmp-1-d07eb6-p-ocv-dataset",
     "description": "Half-cell OCV electrochemical time series for LFP-NMP-1 coin cell d07eb6, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lfp-R2032-gelon-d07eb6__20250602__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447159,
     "battinfo_version": "0.8.0"
   },
   "funding": {

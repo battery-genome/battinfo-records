@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/87nn-abck-v81q-dtgp",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
     "short_id": "87nnab",
-    "name": "LNMO-AQ-2 disc 2bac5c",
+    "name": "LNMO AQ-2 electrode 2bac5c",
+    "handle": "flores-ocv/lnmo-aq-2-2bac5c-electrode",
     "batch_id": "LNMO-AQ-2",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

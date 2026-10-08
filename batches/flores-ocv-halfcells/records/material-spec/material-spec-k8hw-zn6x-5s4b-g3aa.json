@@ -3,7 +3,8 @@
   "material_spec": {
     "id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
     "short_id": "k8hwzn",
-    "name": "Silicon-graphite composite active material",
+    "name": "Silicon-graphite material spec",
+    "handle": "flores-ocv/silicon-graphite-material-spec",
     "kind": "silicon_graphite",
     "material_class": "active_material",
     "chemistry_family": "silicon-graphite-composite",
@@ -11,7 +12,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

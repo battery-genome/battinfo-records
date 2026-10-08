@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/5t41-25wg-1q3m-jjx3",
     "short_id": "5t4125",
     "identifier": "test:5t41-25wg-1q3m-jjx3",
-    "name": "Si-AQ-1 cell 5f45a8 p-OCV hold",
+    "name": "Silicon AQ-1 cell 5f45a8 p-OCV hold test",
+    "handle": "flores-ocv/silicon-aq-1-5f45a8-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/nfse-xx64-58ma-g5yd",
     "description": "p-OCV hold half-cell OCV measurement on Si-AQ-1 coin cell 5f45a8 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold",
+    "protocol_name": "p-OCV hold test spec",
     "started_at": 1743811200
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

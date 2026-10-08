@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/ebe7-4rks-x35n-cnf6",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk",
     "short_id": "ebe74r",
-    "name": "LNMO-AQ-1 disc 2b6be3",
+    "name": "LNMO AQ-1 electrode 2b6be3",
+    "handle": "flores-ocv/lnmo-aq-1-2b6be3-electrode",
     "batch_id": "LNMO-AQ-1",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

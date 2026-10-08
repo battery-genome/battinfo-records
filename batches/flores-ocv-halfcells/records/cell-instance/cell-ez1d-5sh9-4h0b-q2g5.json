@@ -5,14 +5,15 @@
     "short_id": "ez1d5s",
     "cell_spec_id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/87nn-abck-v81q-dtgp",
-    "name": "LNMO-AQ-2 cell 2bac5c",
+    "name": "LNMO AQ-2 cell 2bac5c",
+    "handle": "flores-ocv/lnmo-aq-2-2bac5c-cell",
     "serial_number": "2bac5c",
     "batch_id": "LNMO-AQ-2",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

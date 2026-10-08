@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/5rkr-qqg1-txjp-k5cv",
     "short_id": "5rkrqq",
     "identifier": "test:5rkr-qqg1-txjp-k5cv",
-    "name": "NMC111-NMP-1 cell 85cad7 GITT",
+    "name": "NMC111 NMP-1 cell 85cad7 GITT test",
+    "handle": "flores-ocv/nmc111-nmp-1-85cad7-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/x1vs-40qb-rd00-fh2j",
     "description": "GITT half-cell OCV measurement on NMC111-NMP-1 coin cell 85cad7 at room temperature.",
@@ -18,7 +19,7 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1752969600,
     "conformance": {
       "status": "non-conformant",
@@ -33,7 +34,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

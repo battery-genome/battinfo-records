@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/z2tv-k7vw-6stv-h12y",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
     "short_id": "z2tvk7",
-    "name": "Si-AQ-1 disc 931301",
+    "name": "Silicon AQ-1 electrode 931301",
+    "handle": "flores-ocv/silicon-aq-1-931301-electrode",
     "batch_id": "Si-AQ-1",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

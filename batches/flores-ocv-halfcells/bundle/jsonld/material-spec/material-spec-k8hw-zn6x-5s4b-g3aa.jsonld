@@ -14,14 +14,14 @@
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
-  "schema:name": "Silicon-graphite composite active material",
+  "schema:name": "Silicon-graphite material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_3f061928_e90f_4414_9308_d4c843ebb79a"
   },
   "isDescriptionFor": {
     "@type": "SiliconGraphite",
     "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa#described",
-    "skos:prefLabel": "Silicon-graphite composite active material"
+    "skos:prefLabel": "Silicon-graphite material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -32,6 +32,11 @@
     "No manufacturer or supplier is stated: the source names none for this powder, and the field is left unset rather than guessed.",
     "No theoretical specific capacity is stated on this powder because the source states three different ones - 510, 900 and 1150 mAh/g - one for each of the three blends used, so the number belongs to the electrode design and is carried there. The blend ratio itself is named by the Zenodo record as one of the properties the suppliers did not provide."
   ],
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:propertyID": "battinfo-handle",
+    "schema:value": "flores-ocv/silicon-graphite-material-spec"
+  },
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",

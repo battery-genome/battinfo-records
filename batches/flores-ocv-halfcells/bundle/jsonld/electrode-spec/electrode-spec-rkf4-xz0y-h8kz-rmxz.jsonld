@@ -146,11 +146,11 @@
       },
       "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1 and the Zenodo batch table."
     },
-    "skos:prefLabel": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+    "skos:prefLabel": "Silicon AQ-1 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz#described"
   },
   "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
-  "schema:name": "Silicon electrode, aqueous processed (IntelLiGent, SINTEF)",
+  "schema:name": "Silicon AQ-1 electrode spec",
   "schema:description": "Silicon (aqueous processed). Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label Si-AQ-1. Active-material type as stated in metadata.csv: \"Silicon\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -163,6 +163,11 @@
     "Dry thickness: 44.0 um for every one of the 8 discs. metadata.csv states this one value per cell, so the standard deviation is 0 by construction - a repeated declaration, not a measured spread.",
     "Nominal areal capacity: mean 2.3282 mAh/cm2, sample standard deviation 0.2237 mAh/cm2 over n = 8 discs (range 2.0024-2.5751 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note."
   ],
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:propertyID": "battinfo-handle",
+    "schema:value": "flores-ocv/silicon-aq-1-electrode-spec"
+  },
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",

@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/2qpf-4s4p-vtpb-h871",
-  "schema:name": "NMC532-NMP-1 disc f5dd84",
+  "schema:name": "NMC532 NMP-1 electrode f5dd84",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "NMC532-NMP-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "NMC532-NMP-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/nmc532-nmp-1-f5dd84-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

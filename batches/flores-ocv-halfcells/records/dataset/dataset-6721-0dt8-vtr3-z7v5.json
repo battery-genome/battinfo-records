@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/6721-0dt8-vtr3-z7v5",
     "short_id": "67210d",
     "identifier": "dataset:6721-0dt8-vtr3-z7v5",
-    "name": "Gr-AQ-1 cell a29c1f p-OCV hold half-cell OCV (BDF)",
+    "name": "Graphite AQ-1 cell a29c1f p-OCV hold dataset",
+    "handle": "flores-ocv/graphite-aq-1-a29c1f-p-ocv-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for Gr-AQ-1 coin cell a29c1f, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-graphite-R2032-intelligent-a29c1f__20250528__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320301,
+    "retrieved_at": 1791447151,
     "battinfo_version": "0.8.0"
   },
   "funding": {

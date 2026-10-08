@@ -5,14 +5,15 @@
     "short_id": "9zb320",
     "cell_spec_id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb",
-    "name": "LNMO-AQ-1 cell 711dc8",
+    "name": "LNMO AQ-1 cell 711dc8",
+    "handle": "flores-ocv/lnmo-aq-1-711dc8-cell",
     "serial_number": "711dc8",
     "batch_id": "LNMO-AQ-1",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

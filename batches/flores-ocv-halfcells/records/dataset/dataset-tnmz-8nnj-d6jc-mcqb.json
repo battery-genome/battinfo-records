@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/tnmz-8nnj-d6jc-mcqb",
     "short_id": "tnmz8n",
     "identifier": "dataset:tnmz-8nnj-d6jc-mcqb",
-    "name": "LNMO-AQ-1 cell 9973ad GITT hold half-cell OCV (BDF)",
+    "name": "LNMO AQ-1 cell 9973ad GITT hold dataset",
+    "handle": "flores-ocv/lnmo-aq-1-9973ad-gitt-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for LNMO-AQ-1 coin cell 9973ad, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-9973ad__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447157,
     "battinfo_version": "0.8.0"
   },
   "funding": {

@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/r9k9-aev3-5027-xms5",
     "short_id": "r9k9ae",
     "identifier": "test:r9k9-aev3-5027-xms5",
-    "name": "LNMO-NMP-1 cell df0911 GITT hold",
+    "name": "LNMO NMP-1 cell df0911 GITT hold test",
+    "handle": "flores-ocv/lnmo-nmp-1-df0911-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/tg9s-zr8t-ba4y-xncx",
     "description": "GITT hold half-cell OCV measurement on LNMO-NMP-1 coin cell df0911 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1745452800
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

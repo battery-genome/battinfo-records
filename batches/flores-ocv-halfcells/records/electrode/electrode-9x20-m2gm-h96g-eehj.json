@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/9x20-m2gm-h96g-eehj",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
     "short_id": "9x20m2",
-    "name": "Si-AQ-1 disc f0ee8d",
+    "name": "Silicon AQ-1 electrode f0ee8d",
+    "handle": "flores-ocv/silicon-aq-1-f0ee8d-electrode",
     "batch_id": "Si-AQ-1",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/mbp2-j4bd-sxz4-ejgx",
-  "schema:name": "LNMO-NMP-1 disc 32a68c",
+  "schema:name": "LNMO NMP-1 electrode 32a68c",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "LNMO-NMP-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "LNMO-NMP-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lnmo-nmp-1-32a68c-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

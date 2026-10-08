@@ -10,15 +10,22 @@
   ],
   "@id": "https://w3id.org/battinfo/material/g8cp-8rjn-ga7e-r4xr",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Silicon-graphite blend coated as SiGr-AQ-1",
+  "schema:name": "Silicon-graphite AQ-1 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "lot_id",
-    "schema:value": "SiGr-AQ-1 blend"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "lot_id",
+      "schema:value": "SiGr-AQ-1 blend"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-graphite-aq-1-material-lot"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

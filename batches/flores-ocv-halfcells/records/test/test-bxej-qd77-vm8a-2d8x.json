@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/bxej-qd77-vm8a-2d8x",
     "short_id": "bxejqd",
     "identifier": "test:bxej-qd77-vm8a-2d8x",
-    "name": "LNMO-NMP-2 cell 6dce02 p-OCV hold",
+    "name": "LNMO NMP-2 cell 6dce02 p-OCV hold test",
+    "handle": "flores-ocv/lnmo-nmp-2-6dce02-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/e9ng-ga2y-r4mw-p13y",
     "description": "p-OCV hold half-cell OCV measurement on LNMO-NMP-2 coin cell 6dce02 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold",
+    "protocol_name": "p-OCV hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

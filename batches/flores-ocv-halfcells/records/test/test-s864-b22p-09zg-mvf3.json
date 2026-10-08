@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/s864-b22p-09zg-mvf3",
     "short_id": "s864b2",
     "identifier": "test:s864-b22p-09zg-mvf3",
-    "name": "NMC532-NMP-1 cell ee86d1 p-OCV",
+    "name": "NMC532 NMP-1 cell ee86d1 p-OCV test",
+    "handle": "flores-ocv/nmc532-nmp-1-ee86d1-p-ocv-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/0rwp-te68-02gp-q6cc",
     "description": "p-OCV half-cell OCV measurement on NMC532-NMP-1 coin cell ee86d1 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV",
+    "protocol_name": "p-OCV test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

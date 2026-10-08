@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/cwhe-wgmr-yv9v-z6x4",
-  "schema:name": "LNMO-AQ-1 disc a39225",
+  "schema:name": "LNMO AQ-1 electrode a39225",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "LNMO-AQ-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "LNMO-AQ-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lnmo-aq-1-a39225-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

@@ -5,14 +5,15 @@
     "short_id": "d72t0e",
     "cell_spec_id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/fvns-gfgv-t5ag-bqj4",
-    "name": "NMC111-NMP-1 cell 000b13",
+    "name": "NMC111 NMP-1 cell 000b13",
+    "handle": "flores-ocv/nmc111-nmp-1-000b13-cell",
     "serial_number": "000b13",
     "batch_id": "NMC111-NMP-1",
     "manufactured_at": 1752969600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

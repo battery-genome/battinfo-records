@@ -4,12 +4,13 @@
     "id": "https://w3id.org/battinfo/material/qbt2-cy0p-gg46-42sp",
     "material_spec_id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
     "short_id": "qbt2cy",
-    "name": "Silicon study powder batch",
+    "name": "Silicon material lot",
+    "handle": "flores-ocv/silicon-material-lot",
     "lot_id": "study powder batch"
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

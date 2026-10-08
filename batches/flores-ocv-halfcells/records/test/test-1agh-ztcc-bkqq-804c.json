@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/1agh-ztcc-bkqq-804c",
     "short_id": "1aghzt",
     "identifier": "test:1agh-ztcc-bkqq-804c",
-    "name": "LFP-NMP-1 cell b89ab5 GITT",
+    "name": "LFP NMP-1 cell b89ab5 GITT test",
+    "handle": "flores-ocv/lfp-nmp-1-b89ab5-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/6xr9-rdm4-rnze-t1h8",
     "description": "GITT half-cell OCV measurement on LFP-NMP-1 coin cell b89ab5 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

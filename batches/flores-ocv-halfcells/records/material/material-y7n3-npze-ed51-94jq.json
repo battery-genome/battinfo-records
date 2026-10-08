@@ -4,12 +4,13 @@
     "id": "https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq",
     "material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
     "short_id": "y7n3np",
-    "name": "LNMO study powder batch",
+    "name": "LNMO material lot",
+    "handle": "flores-ocv/lnmo-material-lot",
     "lot_id": "study powder batch"
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

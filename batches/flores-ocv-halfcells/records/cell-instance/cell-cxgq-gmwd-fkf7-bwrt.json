@@ -5,14 +5,15 @@
     "short_id": "cxgqgm",
     "cell_spec_id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/9x20-m2gm-h96g-eehj",
-    "name": "Si-AQ-1 cell f0ee8d",
+    "name": "Silicon AQ-1 cell f0ee8d",
+    "handle": "flores-ocv/silicon-aq-1-f0ee8d-cell",
     "serial_number": "f0ee8d",
     "batch_id": "Si-AQ-1",
     "manufactured_at": 1743811200
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

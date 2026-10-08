@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/rk2g-60a1-89wj-hfna",
     "short_id": "rk2g60",
     "identifier": "test:rk2g-60a1-89wj-hfna",
-    "name": "LFP-NMP-1 cell 182031 GITT hold",
+    "name": "LFP NMP-1 cell 182031 GITT hold test",
+    "handle": "flores-ocv/lfp-nmp-1-182031-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/3dgx-4x7b-61yk-kg15",
     "description": "GITT hold half-cell OCV measurement on LFP-NMP-1 coin cell 182031 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

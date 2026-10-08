@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/jt0s-n8a1-cw2h-a1gv",
-  "schema:name": "SiGr-AQ-1 disc 8eb80b",
+  "schema:name": "Silicon-graphite AQ-1 electrode 8eb80b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "SiGr-AQ-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "SiGr-AQ-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-graphite-aq-1-8eb80b-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

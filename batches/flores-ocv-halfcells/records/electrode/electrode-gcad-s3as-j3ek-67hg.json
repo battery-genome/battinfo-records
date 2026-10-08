@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/gcad-s3as-j3ek-67hg",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv",
     "short_id": "gcads3",
-    "name": "SiGr-AQ-3 disc e030cf",
+    "name": "Silicon-graphite AQ-3 electrode e030cf",
+    "handle": "flores-ocv/silicon-graphite-aq-3-e030cf-electrode",
     "batch_id": "SiGr-AQ-3",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

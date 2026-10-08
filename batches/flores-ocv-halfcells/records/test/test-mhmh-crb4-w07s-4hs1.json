@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/mhmh-crb4-w07s-4hs1",
     "short_id": "mhmhcr",
     "identifier": "test:mhmh-crb4-w07s-4hs1",
-    "name": "SiGr-AQ-1 cell 1c492a p-OCV",
+    "name": "Silicon-graphite AQ-1 cell 1c492a p-OCV test",
+    "handle": "flores-ocv/silicon-graphite-aq-1-1c492a-p-ocv-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/4k74-0w84-dv2d-717w",
     "description": "p-OCV half-cell OCV measurement on SiGr-AQ-1 coin cell 1c492a at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV",
+    "protocol_name": "p-OCV test spec",
     "started_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

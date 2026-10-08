@@ -75,6 +75,31 @@ cell-instance (95)     one per parquet; serial = 6-char id, batch_id = public la
 
 Each of the 95 parquet files maps to exactly one `electrode` + `cell-instance` + `test` + `dataset`.
 
+## Names and handles
+
+Every record has three names, each with one job (ruled 2026-10-08):
+
+- The IRI is the identity. It is opaque and never changes when a record is renamed.
+- The handle is a short slug, unique within the registry workspace and shown as `<workspace>/<handle>`. It is generated from the record's own fields: `<group>/<subject>[-<variant>][-<sample>][-<method>]-<kind>`, with the kind word always last so that every record about one sample sorts together. This corpus's group is `flores-ocv`, which is also the collection's handle.
+- The title (`name`) is readable text built from the same parts. The platform shows a context line under it (record type, material, collection) so that many similar titles stay distinguishable.
+
+| type | handle | title |
+|---|---|---|
+| collection | `flores-ocv` | Flores et al. 2026 half-cell OCV collection |
+| material spec | `flores-ocv/graphite-material-spec` | Graphite material spec |
+| material lot | `flores-ocv/graphite-material-lot` | Graphite material lot |
+| electrode spec | `flores-ocv/graphite-aq-1-electrode-spec` | Graphite AQ-1 electrode spec |
+| electrode | `flores-ocv/graphite-aq-1-063b77-electrode` | Graphite AQ-1 electrode 063b77 |
+| cell spec | `flores-ocv/graphite-aq-1-cell-spec` | Graphite AQ-1 cell spec |
+| cell | `flores-ocv/graphite-aq-1-063b77-cell` | Graphite AQ-1 cell 063b77 |
+| test spec | `flores-ocv/gitt-test-spec` | GITT test spec |
+| test | `flores-ocv/graphite-aq-1-063b77-gitt-test` | Graphite AQ-1 cell 063b77 GITT test |
+| dataset | `flores-ocv/graphite-aq-1-063b77-gitt-dataset` | Graphite AQ-1 cell 063b77 GITT dataset |
+
+The variant is the source's own design label without its material prefix (`Gr-AQ-1` becomes `AQ-1`). What the earlier titles said in words (processing route, IntelLiGent batch, supplier, "powder within the purchased electrodes") lives in each record's description, notes and structured fields.
+
+Several BattINFO identity seeds include the display name, so a rename alone would mint new IRIs. `published-iris.json` records the IRI every record was published with, keyed by facts that do not change with a name (material kind, lot label, design label, sample id, protocol), and `build_records.py` pins each record to it and stops if any IRI would move. `pin_published_iris.py` wrote that file once, from the records as published before the rename.
+
 ## The material and electrode levels
 
 The model separates what a powder is from what an electrode is, and this dataset is a good test of that separation because it has both kinds of provenance in one deposit.
@@ -293,11 +318,11 @@ The records reference the parquet files by their Zenodo download URL and md5 che
 
 ## The dataset collection (corpus v5)
 
-One record speaks for the whole deposit: `dataset/60jv-8pmb-8v8t-9y4s`, "Flores et al. half-cell OCV collection". It is an ordinary dataset record flavored as a series by `additional_type: ["DatasetSeries"]` (DCAT 3 declares `dcat:DatasetSeries` a subclass of `dcat:Dataset`, so there is no new record type - BIG-MAP/BattINFO#351), and the deposit DOI `10.5281/zenodo.20086298` is its external `identifier`: the collection IS the deposit, where each member describes one file of it. All 95 member datasets carry `series_id` pointing at it, which the JSON-LD emits as `dcat:inSeries` and `schema:isPartOf`; the registry renders the same field as a forward "Series" link on each member page and a members panel on the collection page, with no registry code involved.
+One record speaks for the whole deposit: `dataset/60jv-8pmb-8v8t-9y4s`, "Flores et al. 2026 half-cell OCV collection" (handle `flores-ocv`; published until 2026-10-08 as "Flores et al. half-cell OCV collection"). It is an ordinary dataset record flavored as a series by `additional_type: ["DatasetSeries"]` (DCAT 3 declares `dcat:DatasetSeries` a subclass of `dcat:Dataset`, so there is no new record type - BIG-MAP/BattINFO#351), and the deposit DOI `10.5281/zenodo.20086298` is its external `identifier`: the collection IS the deposit, where each member describes one file of it. All 95 member datasets carry `series_id` pointing at it, which the JSON-LD emits as `dcat:inSeries` and `schema:isPartOf`; the registry renders the same field as a forward "Series" link on each member page and a members panel on the collection page, with no registry code involved.
 
 What the collection record deliberately does not carry: `about` (its members hold the cell and test links - the series exemption of BIG-MAP/BattINFO#352 is what admits it under the strict policy), `distributions` (the files belong to the members), and `is_based_on` (a member derives from the deposit; the collection does not derive from itself).
 
-Two invariants to keep. The collection's IRI seeds from `(access_url, name)`, because it has neither cell nor test - renaming the record re-seeds the identifier and orphans every member's `series_id`, so the name is frozen once published. And at republish time the collection goes in FIRST among the datasets: the members carry the forward edge, so it must exist before any of them arrives (registry PR #63 makes same-batch staging of the members tolerant of pending siblings either way).
+Two invariants to keep. The collection's IRI seeds from `(access_url, name)`, because it has neither cell nor test, so a rename would re-seed it and orphan every member's `series_id`; the build therefore pins it, like every other record, to its published IRI (see Names and handles). And at republish time the collection goes in FIRST among the datasets: the members carry the forward edge, so it must exist before any of them arrives (registry PR #63 makes same-batch staging of the members tolerant of pending siblings either way).
 
 The deposit-level gold-standard check treats the collection as a series (BIG-MAP/BattINFO#414): it needs no file and no `about`, and every member's `dcat:inSeries` resolves to it inside the deposit graph.
 
@@ -307,7 +332,7 @@ The 319 v1 records were published to the Battery Genome registry on 2026-08-11 (
 
 **Corpus v5 has not been submitted.** All 319 published records are still live and stay live until the republish supersedes them. `superseded/supersede-map.json` is the complete statement of what happens to each: 154 keep their identifier, 147 are replaced by one successor, and 18 are split - the 6 cell specs that covered two designs each, and the 12 v1 "material lots" that were coated electrode batches and become the 7-9 discs cut from each. Eight records supersede nothing at all: the seven powders and the material lot, which describe a level v1 never had. The republish is the only step that touches the registry, and it happens after this branch is reviewed.
 
-`republish.py` runs it. Without `--apply` it only checks and prints the plan: every record validates against battinfo and against the schemas the target registry serves, the supersede map matches what is live, no new record collides with a live identifier, and the collection name still seeds `60jv-8pmb-8v8t-9y4s`. With `--apply` it publishes the Topsoe organization, then the collection, then the other 424 records in dependency order, applies the supersede map, uploads the profiles, re-renders pages with their reverse panels, and finishes with a sweep: every record resolves, every superseded identifier is a tombstone that points at a live successor, and the collection lists 95 members. Each step checks the target first and skips what is done, so a re-run is safe. It refuses any host other than localhost unless given `--production` and `FLORES_REPUBLISH_CONFIRM` set to the host. The rollback notes are in its docstring: superseded flags can be set back to published, but the 272 new identifiers and the collection name cannot be taken back.
+`republish.py` runs it. Without `--apply` it only checks and prints the plan: every record validates against battinfo and against the schemas the target registry serves, the supersede map matches what is live, no new record collides with a live identifier, and every record carries the IRI pinned in `published-iris.json`. With `--apply` it publishes the Topsoe organization, then the collection, then the other 424 records in dependency order, applies the supersede map, uploads the profiles, re-renders pages with their reverse panels, and finishes with a sweep: every record resolves, every superseded identifier is a tombstone that points at a live successor, and the collection lists 95 members. Each step checks the target first and skips what is done, so a re-run is safe. It refuses any host other than localhost unless given `--production` and `FLORES_REPUBLISH_CONFIRM` set to the host. The rollback notes are in its docstring: superseded flags can be set back to published, but the 272 new identifiers and the collection name cannot be taken back.
 
 Split records follow `superseded/split-successors.json`. A v1 material lot was a coated electrode batch, so its tombstone points at the electrode spec its discs belong to. A v1 cell or material spec that covered two electrode designs became one spec per design, and its tombstone lists both (`replaced_by_iris`), so a reader holding an old citation picks the design their cells actually used. Six records are split that way. The driver refuses to run them against a registry that cannot store a successor list.
 

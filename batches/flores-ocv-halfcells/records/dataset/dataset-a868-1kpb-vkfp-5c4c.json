@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/a868-1kpb-vkfp-5c4c",
     "short_id": "a8681k",
     "identifier": "dataset:a868-1kpb-vkfp-5c4c",
-    "name": "Gr-AQ-1 cell 3f39a2 GITT hold half-cell OCV (BDF)",
+    "name": "Graphite AQ-1 cell 3f39a2 GITT hold dataset",
+    "handle": "flores-ocv/graphite-aq-1-3f39a2-gitt-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for Gr-AQ-1 coin cell 3f39a2, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-graphite-R2032-intelligent-3f39a2__20250528__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320301,
+    "retrieved_at": 1791447151,
     "battinfo_version": "0.8.0"
   },
   "funding": {

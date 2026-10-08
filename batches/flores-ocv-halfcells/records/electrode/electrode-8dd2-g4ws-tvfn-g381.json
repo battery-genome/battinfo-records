@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/8dd2-g4ws-tvfn-g381",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
     "short_id": "8dd2g4",
-    "name": "LNMO-NMP-1 disc b3d963",
+    "name": "LNMO NMP-1 electrode b3d963",
+    "handle": "flores-ocv/lnmo-nmp-1-b3d963-electrode",
     "batch_id": "LNMO-NMP-1",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

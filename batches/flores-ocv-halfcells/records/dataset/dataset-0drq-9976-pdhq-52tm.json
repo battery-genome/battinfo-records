@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/0drq-9976-pdhq-52tm",
     "short_id": "0drq99",
     "identifier": "dataset:0drq-9976-pdhq-52tm",
-    "name": "LNMO-AQ-1 cell 2b6be3 GITT half-cell OCV (BDF)",
+    "name": "LNMO AQ-1 cell 2b6be3 GITT dataset",
+    "handle": "flores-ocv/lnmo-aq-1-2b6be3-gitt-dataset",
     "description": "Half-cell OCV electrochemical time series for LNMO-AQ-1 coin cell 2b6be3, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-2b6be3__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447157,
     "battinfo_version": "0.8.0"
   },
   "funding": {

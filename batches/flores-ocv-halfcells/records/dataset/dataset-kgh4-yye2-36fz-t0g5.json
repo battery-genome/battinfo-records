@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/kgh4-yye2-36fz-t0g5",
     "short_id": "kgh4yy",
     "identifier": "dataset:kgh4-yye2-36fz-t0g5",
-    "name": "LFP-NMP-1 cell 244221 p-OCV hold half-cell OCV (BDF)",
+    "name": "LFP NMP-1 cell 244221 p-OCV hold dataset",
+    "handle": "flores-ocv/lfp-nmp-1-244221-p-ocv-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for LFP-NMP-1 coin cell 244221, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lfp-R2032-gelon-244221__20250706__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447159,
     "battinfo_version": "0.8.0"
   },
   "funding": {

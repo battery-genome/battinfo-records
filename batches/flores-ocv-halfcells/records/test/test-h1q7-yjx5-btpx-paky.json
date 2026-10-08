@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/h1q7-yjx5-btpx-paky",
     "short_id": "h1q7yj",
     "identifier": "test:h1q7-yjx5-btpx-paky",
-    "name": "NMC532-NMP-1 cell 1765db GITT",
+    "name": "NMC532 NMP-1 cell 1765db GITT test",
+    "handle": "flores-ocv/nmc532-nmp-1-1765db-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/gmw1-qnpw-c6z4-jx8w",
     "description": "GITT half-cell OCV measurement on NMC532-NMP-1 coin cell 1765db at room temperature.",
@@ -18,7 +19,7 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1751760000,
     "conformance": {
       "status": "non-conformant",
@@ -33,7 +34,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

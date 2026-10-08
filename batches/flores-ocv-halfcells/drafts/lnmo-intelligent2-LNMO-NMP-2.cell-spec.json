@@ -1,4 +1,6 @@
 {
+  "name": "LNMO NMP-2 cell spec",
+  "handle": "flores-ocv/lnmo-nmp-2-cell-spec",
   "manufacturer": "SINTEF",
   "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
   "format": "coin",

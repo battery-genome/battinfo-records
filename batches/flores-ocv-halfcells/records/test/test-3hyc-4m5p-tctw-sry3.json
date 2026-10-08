@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/3hyc-4m5p-tctw-sry3",
     "short_id": "3hyc4m",
     "identifier": "test:3hyc-4m5p-tctw-sry3",
-    "name": "LNMO-NMP-2 cell 2f9459 GITT",
+    "name": "LNMO NMP-2 cell 2f9459 GITT test",
+    "handle": "flores-ocv/lnmo-nmp-2-2f9459-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/xw1k-b1ce-8m7d-9fwa",
     "description": "GITT half-cell OCV measurement on LNMO-NMP-2 coin cell 2f9459 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

@@ -10,8 +10,9 @@ registry from the first state to the second, in eight ordered steps:
                  jsonschema is importable); the supersede map is consistent (every
                  successor is in this corpus, every superseded IRI is live on the
                  target and published); no new record collides with a live
-                 (type, source_local_id); every outside reference resolves; the
-                 collection's name still seeds its IRI (name freeze).
+                 (type, source_local_id); every outside reference resolves; every
+                 record carries the IRI pinned in published-iris.json (renames are
+                 display-only and never move an identity).
   1 organization publish the Topsoe organization (vz1v-rvhz-n77h-344c), which v5
                  cites and the registry does not have.
   2 collection   submit + approve the collection record, before any member, because
@@ -95,10 +96,10 @@ ROLLBACK
       organization, the collection, and the 270 other new records) is registered
       permanently once published. It can be withdrawn (status withdrawn, which
       serves a tombstone), never deleted or reused.
-    * The collection's name. Its IRI is seeded from (access_url, name), so once the
-      collection is published under "Flores et al. half-cell OCV collection" that
-      name is frozen: renaming it later mints a different IRI and orphans the 95
-      members' series_id. Preflight checks the seed before anything is written.
+    * Nothing about names. Titles and handles are display text: every record is
+      pinned to its published IRI (published-iris.json), and preflight refuses a
+      corpus whose IRIs differ from the pins, so a rename never re-seeds the
+      collection or orphans the 95 members' series_id.
 """
 from __future__ import annotations
 
@@ -162,7 +163,6 @@ WORKFLOW_NAME = "authoring-workspace-submission"
 INTERNAL_IRI_RE = re.compile(
     r"^https://w3id\.org/battinfo/(?P<segment>[a-z_-]+)/(?P<uid>[0-9a-hjkmnp-tv-z]{4}(?:-[0-9a-hjkmnp-tv-z]{4}){3})$"
 )
-UID_ALPHABET = "0123456789abcdefghjkmnpqrstvwxyz"
 
 
 # --------------------------------------------------------------------------
@@ -253,17 +253,6 @@ def corpus_fingerprint(records: list[Record], organization: Record) -> str:
         digest.update(record.iri.encode())
         digest.update(json.dumps(record.raw, sort_keys=True, ensure_ascii=False).encode())
     return digest.hexdigest()[:10]
-
-
-def stable_uid(seed: str) -> str:
-    """battinfo.entities.stable_uid, reproduced so the name-freeze check needs no battinfo."""
-    value = int.from_bytes(hashlib.sha256(seed.encode("utf-8")).digest()[:16], "big")
-    chars = []
-    for _ in range(16):
-        value, remainder = divmod(value, 32)
-        chars.append(UID_ALPHABET[remainder])
-    token = "".join(reversed(chars))
-    return "-".join((token[:4], token[4:8], token[8:12], token[12:16]))
 
 
 def iter_internal_iris(node: Any, path: str = "") -> Iterator[tuple[str, str]]:
@@ -922,18 +911,21 @@ class Driver:
         self.say(f"  corpus: {len(self.records)} records + 1 organization, {len(members)} collection members, "
                  f"source_version {self.source_version}")
 
-        # name freeze
-        body = self.collection.body
-        seed = f"unknown-cell::::{body.get('access_url') or ''}::{body.get('name') or 'dataset'}"
-        if stable_uid(seed) != self.collection.canonical_id:
-            errors.append(f"name freeze: the collection's (access_url, name) seeds {stable_uid(seed)}, not "
-                          f"{self.collection.canonical_id}. Its name or access_url changed since the IRI was minted.")
-        live = self.index().by_iri.get(COLLECTION_IRI)
-        if live is not None and live.get("title") != body.get("name"):
-            errors.append(f"name freeze: the live collection is titled {live.get('title')!r}, local name is "
-                          f"{body.get('name')!r}")
-        if not any(e.startswith("name freeze") for e in errors):
-            self.say(f"  name freeze ok: {body.get('name')!r} seeds {self.collection.canonical_id}")
+        # identity pins: names are display text, IRIs never move
+        pins_path = HERE / "published-iris.json"
+        if pins_path.is_file():
+            pinned = {iri for table in json.loads(pins_path.read_text(encoding="utf-8")).values()
+                      for iri in table.values()}
+            local = {record.iri for record in self.records}
+            if local != pinned:
+                errors.append(f"identity pins: {len(pinned - local)} pinned IRIs missing from the corpus, "
+                              f"{len(local - pinned)} unpinned IRIs in it (published-iris.json)")
+            else:
+                self.say(f"  identity pins ok: all {len(pinned)} records carry their published IRI")
+        else:
+            errors.append("identity pins: published-iris.json is missing")
+        if self.collection.iri != COLLECTION_IRI:
+            errors.append(f"identity pins: the collection is {self.collection.iri}, expected {COLLECTION_IRI}")
 
         # validation
         everything = [self.organization, *self.records]
