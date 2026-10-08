@@ -55,9 +55,15 @@ USAGE
   # production: needs --production AND the confirmation variable set to the host
   FLORES_REPUBLISH_CONFIRM=battinfo-registry.onrender.com \\
   FLORES_REPUBLISH_PUBLISHER_KEY=... FLORES_REPUBLISH_ADMIN_TOKEN=... \\
-  R2_ENDPOINT=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... \\
+  R2_ENDPOINT=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... R2_BUCKET=... \\
   python republish.py --target https://battinfo-registry.onrender.com --production --apply \\
       --registry-repo ../battinfo-registry
+
+  R2_BUCKET must be the bucket served at the records' profile base URL
+  (https://pub-5d124607e4b748eea681efca486508ab.r2.dev): the registry's artifacts
+  bucket (STORAGE_ARTIFACTS_BUCKET, battery-genome-artifacts), not its page bucket
+  (STORAGE_PUBLIC_BUCKET). The 2026-10-07 run first uploaded to the page bucket; the
+  postflight now fetches every profile URL, so that cannot pass unnoticed again.
 
   Run it with an interpreter that has battinfo (and jsonschema) installed, or the
   record validation in preflight is skipped with a warning; --production requires
@@ -1294,8 +1300,32 @@ class Driver:
                 tombstones += 1
         self.say(f"  tombstones: {tombstones}/{len(self.supersede_rows)} point at a live successor")
 
+        # profile figures: every plot URL a dataset record names must serve the file
+        plot_urls = sorted({
+            dist["content_url"]
+            for record in self.records if record.type.resource_type == "dataset"
+            for dist in record.body.get("distributions") or []
+            if str(dist.get("content_url", "")).endswith(".plot.json")
+        })
+        missing_plots = []
+        for url in plot_urls:
+            # r2.dev answers 403 to some default client user agents
+            request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0 (flores-republish)"})
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    if response.status != 200:
+                        missing_plots.append(f"{url} (HTTP {response.status})")
+            except urllib.error.HTTPError as error:
+                missing_plots.append(f"{url} (HTTP {error.code})")
+            except OSError as error:
+                missing_plots.append(f"{url} ({error})")
+        errors.extend(f"profile figure not served: {item}" for item in missing_plots[:5])
+        if len(missing_plots) > 5:
+            errors.append(f"... and {len(missing_plots) - 5} more profile figures not served")
+        self.say(f"  profiles: {len(plot_urls) - len(missing_plots)}/{len(plot_urls)} figure URLs serve the file")
+
         # collection membership
-        members_expected = {r.iri for r in self.records if r.body.get("series_id") == COLLECTION_IRI}
+        members_expected ={r.iri for r in self.records if r.body.get("series_id") == COLLECTION_IRI}
         method, members_live = self.collection_members(fetched)
         if members_live != members_expected:
             errors.append(f"collection lists {len(members_live)} members via {method}, expected "
