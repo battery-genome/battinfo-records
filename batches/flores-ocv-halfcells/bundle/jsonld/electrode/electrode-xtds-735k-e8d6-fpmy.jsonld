@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/xtds-735k-e8d6-fpmy",
-  "schema:name": "SiGr-AQ-3 disc a39539",
+  "schema:name": "Silicon-graphite AQ-3 electrode a39539",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "SiGr-AQ-3"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "SiGr-AQ-3"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-graphite-aq-3-a39539-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

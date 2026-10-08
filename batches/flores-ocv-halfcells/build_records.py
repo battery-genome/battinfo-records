@@ -190,6 +190,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import battinfo as B
+from battinfo import naming
 from battinfo.authoring import bom, electrode, material, properties
 from battinfo.bundle import ChecksumInfo
 from battinfo.entities import (
@@ -535,6 +536,47 @@ LNMO_DISORDER_NOTE = (
 # singular and covers all four LNMO designs, so the lot label says exactly that and
 # nothing that looks like a supplier batch number, which the source does not give.
 LNMO_LOT_LABEL = "study powder batch"
+
+# ---------------------------------------------------------------------------
+# Record naming (owner ruling 2026-10-08; README-semantic-layer.md "Names and
+# handles"). Three layers: the IRI is the identity and never moves; `handle` is
+# a short slug unique within the registry workspace, laid out
+# <group>/<subject>[-<variant>][-<sample>][-<method>]-<kind> with the kind word
+# always last; `name` is the readable title. Renaming is display-only, and the
+# build checks after every run that no published IRI moved.
+#
+# Titles and handles come from battinfo.naming, so this corpus follows the same
+# rules as every other contributor. KIND_LABEL above stays as it is: the
+# cell-spec model strings are built from it and those strings seed the
+# cell-spec identities.
+GROUP = "flores-ocv"
+COLLECTION_LABEL = "Flores et al. 2026 half-cell OCV"
+
+
+def title(kind: str, **parts) -> str:
+    return naming.title_for(kind, **parts)
+
+
+def handle(kind: str, **parts) -> str:
+    return naming.handle_for(kind, group=GROUP, **parts)
+
+
+# Every record is pinned to the IRI it was published with (published-iris.json,
+# written once by pin_published_iris.py). Several identity seeds include the
+# display name, so without the pins the renames above would mint new IRIs.
+PINS: dict[str, dict[str, str]] = json.loads(
+    (Path(__file__).resolve().parent / "published-iris.json").read_text(encoding="utf-8"))
+
+
+def pinned_iri(record_type: str, key: str) -> str:
+    try:
+        return PINS[record_type][key]
+    except KeyError:
+        raise SystemExit(f"no published IRI pinned for {record_type} {key!r} (published-iris.json)") from None
+
+
+def pinned_uid(record_type: str, key: str) -> str:
+    return pinned_iri(record_type, key).rstrip("/").rsplit("/", 1)[-1]
 
 PROTOCOLS = {
     "p-ocv": dict(
@@ -951,7 +993,8 @@ def main() -> int:
         # (silicon-graphite) or none at all (LFP, NMC111, NMC532).
         theo = only_value(kind_rows, "theo_mahg")
         fields: dict = {
-            "name": powder["name"],
+            "name": title("material-spec", subject=kind),
+            "handle": handle("material-spec", subject=kind),
             "kind": kind,
             "material_class": "active_material",
             "chemistry_family": powder["family"],
@@ -980,6 +1023,7 @@ def main() -> int:
         if not theo:
             notes.append(powder["withheld"])
         fields["notes"] = notes
+        fields["uid"] = pinned_uid("material_spec", kind)
         record = ws.add("material_spec", **fields)[0]
         material_spec_by_kind[kind] = record["material_spec"]["id"]
         material_spec_records[kind] = record
@@ -998,7 +1042,9 @@ def main() -> int:
         "material",
         spec=lnmo_spec,
         lot=LNMO_LOT_LABEL,
-        name=f"LNMO {LNMO_LOT_LABEL}",
+        uid=pinned_uid("material", f"lnmo|{LNMO_LOT_LABEL}"),
+        name=title("material", subject="lnmo"),
+        handle=handle("material", subject="lnmo"),
         source_type="literature",
         citation=DOI_URL,
         notes=[
@@ -1050,7 +1096,9 @@ def main() -> int:
             "material",
             spec=material_spec_records[kind],
             lot=LNMO_LOT_LABEL,
-            name=f"{POWDERS[kind]['name'].split(' active material')[0]} {LNMO_LOT_LABEL}",
+            uid=pinned_uid("material", f"{kind}|{LNMO_LOT_LABEL}"),
+            name=title("material", subject=kind),
+            handle=handle("material", subject=kind),
             source_type="literature",
             citation=DOI_URL,
             notes=[
@@ -1071,7 +1119,9 @@ def main() -> int:
             "material",
             spec=material_spec_records["silicon_graphite"],
             lot=f"{label} blend",
-            name=f"Silicon-graphite blend coated as {label}",
+            uid=pinned_uid("material", f"silicon_graphite|{label} blend"),
+            name=title("material", subject="silicon_graphite", variant=label),
+            handle=handle("material", subject="silicon_graphite", variant=label),
             source_type="literature",
             citation=DOI_URL,
             notes=[
@@ -1089,7 +1139,9 @@ def main() -> int:
             "material",
             spec=material_spec_records[kind],
             lot="powder within the purchased electrodes",
-            name=f"{POWDERS[kind]['name'].split(' active material')[0]} powder within the purchased electrodes",
+            uid=pinned_uid("material", f"{kind}|powder within the purchased electrodes"),
+            name=title("material", subject=kind),
+            handle=handle("material", subject=kind),
             source_type="literature",
             citation=DOI_URL,
             notes=[
@@ -1172,7 +1224,8 @@ def main() -> int:
             design["theoretical_capacity"] = q(theo, "mAh/g")
 
         fields: dict = {
-            "name": DESIGN_NAME[label],
+            "name": title("electrode-spec", subject=kind, variant=label),
+            "handle": handle("electrode-spec", subject=kind, variant=label),
             "kind": kind,
             "manufacturer": producer,
             "active_material_spec_id": material_spec_by_kind[kind],
@@ -1214,6 +1267,7 @@ def main() -> int:
                 f"through the material spec: no field on an electrode spec or an "
                 f"electrode record points at a material INSTANCE (gap E8).")
         fields["notes"] = notes
+        fields["uid"] = pinned_uid("electrode_spec", label)
         record = ws.add("electrode_spec", **fields)[0]
         # B3 (D2). battinfo derives `polarity` from the kind's family, so an anode
         # kind writes "negative" and a cathode kind "positive" without anyone
@@ -1286,11 +1340,13 @@ def main() -> int:
         fields: dict = {
             "spec": spec,
             "batch": label,
-            "name": f"{label} disc {r['hex']}",
+            "name": title("electrode", subject=r["kind"], variant=label, sample=r["hex"]),
+            "handle": handle("electrode", subject=r["kind"], variant=label, sample=r["hex"]),
             # The batch slot of the identity seed carries the disc's full context so
             # the 7-9 discs of a batch mint 7-9 identities, not one.
-            "uid": stable_uid(electrode_identity_seed(
-                electrode_spec_id=spec_id, batch=f"{label}/{r['hex']}")),
+            # Pinned to the published IRI; with the spec pinned it equals the seeded
+            # (spec IRI, "<label>/<sample>") uid, which the assert below confirms.
+            "uid": pinned_uid("electrode", r["hex"]),
             "count": 1,
             "property": as_built or None,
             "notes": notes,
@@ -1300,6 +1356,11 @@ def main() -> int:
         role, org, _org_iri = SOURCE_ORG[r["src"]]
         if role == "supplier":
             fields["supplier"] = org
+        seeded = stable_uid(electrode_identity_seed(
+            electrode_spec_id=spec_id, batch=f"{label}/{r['hex']}"))
+        if seeded != fields["uid"]:
+            raise SystemExit(f"electrode {r['hex']}: seeded uid {seeded} differs from the "
+                             f"published {fields['uid']}; is its electrode spec pinned?")
         electrode_by_hex[r["hex"]] = ws.add("electrode", **fields)[0]
 
     # --- 4. Cell specs: twelve R2032 coin half-cells (D1) ------------------------
@@ -1327,6 +1388,10 @@ def main() -> int:
         model = (f"{KIND_LABEL[kind]} R2032 half-cell ({src})" if one_design
                  else f"{KIND_LABEL[kind]} R2032 half-cell ({src}, {label})")
         draft = {
+            # The title is display text; the model string stays exactly as published
+            # because it seeds the cell-spec IRI.
+            "name": title("cell-spec", subject=kind, variant=label),
+            "handle": handle("cell-spec", subject=kind, variant=label),
             "manufacturer": "SINTEF",
             "model": model,
             "format": "coin",
@@ -1436,7 +1501,8 @@ def main() -> int:
         cells = ws.add(
             "cell",
             spec=spec_obj,
-            names=[f"{label} cell {i['hex']}" for i in items],
+            names=[title("cell", subject=kind, variant=label, sample=i["hex"]) for i in items],
+            handles=[handle("cell", subject=kind, variant=label, sample=i["hex"]) for i in items],
             serial_numbers=[i["hex"] for i in items],
             iris=pinned,
             production_date=yyyymmdd(date),
@@ -1467,7 +1533,9 @@ def main() -> int:
     proto_by_key: dict[str, object] = {}
     for key, p in PROTOCOLS.items():
         draft = {
-            "name": p["name"],
+            "id": pinned_iri("test_spec", key),
+            "name": title("test-protocol", method=p["name"]),
+            "handle": handle("test-protocol", method=p["name"]),
             "type": p["type"],
             "description": p["desc"],
             "version": "1.0",
@@ -1480,8 +1548,12 @@ def main() -> int:
 
     # --- 7. Tests: cell x protocol; known issues become conformance --------------
     def dataset_title(row: dict) -> str:
-        return (f"{row['label']} cell {row['hex']} {PROTOCOLS[row['proto']]['name']} "
-                f"half-cell OCV (BDF)")
+        return title("dataset", subject=row["kind"], variant=row["label"], sample=row["hex"],
+                     method=PROTOCOLS[row["proto"]]["name"])
+
+    def dataset_handle(row: dict) -> str:
+        return handle("dataset", subject=row["kind"], variant=row["label"], sample=row["hex"],
+                      method=PROTOCOLS[row["proto"]]["name"])
 
     print("\n== tests ==")
     test_by_hex: dict[str, object] = {}
@@ -1495,7 +1567,9 @@ def main() -> int:
             "test",
             cell=cell_by_hex[r["hex"]],
             spec=proto_by_key[r["proto"]],
-            name=f"{r['label']} cell {r['hex']} {p['name']}",
+            name=title("test", subject=r["kind"], variant=r["label"], sample=r["hex"], method=p["name"]),
+            handle=handle("test", subject=r["kind"], variant=r["label"], sample=r["hex"], method=p["name"]),
+            iri=pinned_iri("test", f"{r['hex']}|{r['proto']}"),
             status="completed",
             conformance=conformance,
             description=(f"{p['name']} half-cell OCV measurement on {r['label']} coin cell "
@@ -1599,9 +1673,11 @@ def main() -> int:
     collection_kinds = sorted({r["kind"].replace("_", "-") for r in rows})
     collection_techniques = sorted({PROTOCOLS[r["proto"]]["technique"] for r in rows})
     collection = B.Dataset(
-        name="Flores et al. half-cell OCV collection",
+        id=pinned_iri("dataset", "collection"),
+        name=title("collection", label=COLLECTION_LABEL),
+        handle=naming.handle_for("collection", group=GROUP),
         description=(
-            f"The Flores et al. half-cell OCV collection: the {len(rows)} "
+            f"The {title('collection', label=COLLECTION_LABEL)}: the {len(rows)} "
             f"electrochemical time-series datasets of Zenodo record {DOI}, measured "
             f"on coin half-cells built from {len(by_batch)} electrode batches across "
             f"{len(collection_kinds)} active-material kinds "
@@ -1659,7 +1735,9 @@ def main() -> int:
         # of a paragraph about file formats is a warning nobody reads.
         issue = r["issue"]
         dataset = B.Dataset(
+            id=pinned_iri("dataset", f"{r['hex']}|{r['proto']}"),
             name=dataset_title(r),
+            handle=dataset_handle(r),
             description=(
                 (f"Known issue: {issue}. " if issue else "") +
                 f"Half-cell OCV electrochemical time series for {r['label']} coin cell "
@@ -1767,6 +1845,16 @@ def main() -> int:
     (RECORDS_ROOT.parent / "authored.json").write_text(
         json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(f"\nauthored manifest: {written} IRIs -> .battinfo/authored.json")
+
+    # Names are display text: the renamed corpus must keep every published IRI.
+    authored = {iri for values in manifest.values() for iri in values}
+    published = {iri for table in PINS.values() for iri in table.values()}
+    if authored != published:
+        moved = sorted(published - authored)[:5]
+        minted = sorted(authored - published)[:5]
+        raise SystemExit(f"identifiers moved: {len(published - authored)} published IRIs not "
+                         f"authored (e.g. {moved}), {len(authored - published)} new (e.g. {minted})")
+    print(f"identity check: all {len(published)} published IRIs kept, none minted")
 
     # Prune identities this run did not author. D1 re-seeds six cell specs and the
     # 141 cells, tests and datasets under them; their predecessors stay behind in the

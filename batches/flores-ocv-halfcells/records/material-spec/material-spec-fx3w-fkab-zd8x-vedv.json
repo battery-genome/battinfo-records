@@ -3,7 +3,8 @@
   "material_spec": {
     "id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
     "short_id": "fx3wfk",
-    "name": "Silicon active material",
+    "name": "Silicon material spec",
+    "handle": "flores-ocv/silicon-material-spec",
     "kind": "silicon",
     "material_class": "active_material",
     "formula": "Si",
@@ -18,7 +19,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

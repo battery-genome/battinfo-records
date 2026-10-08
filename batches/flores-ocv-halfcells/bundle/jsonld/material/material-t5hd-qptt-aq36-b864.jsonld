@@ -10,15 +10,22 @@
   ],
   "@id": "https://w3id.org/battinfo/material/t5hd-qptt-aq36-b864",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "LFP (LiFePO4) powder within the purchased electrodes",
+  "schema:name": "LFP material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "lot_id",
-    "schema:value": "powder within the purchased electrodes"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "lot_id",
+      "schema:value": "powder within the purchased electrodes"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lfp-material-lot"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/50hd-jyge-hvj1-hsfh",
     "short_id": "50hdjy",
     "identifier": "dataset:50hd-jyge-hvj1-hsfh",
-    "name": "LNMO-NMP-2 cell 2f9459 GITT half-cell OCV (BDF)",
+    "name": "LNMO NMP-2 cell 2f9459 GITT dataset",
+    "handle": "flores-ocv/lnmo-nmp-2-2f9459-gitt-dataset",
     "description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell 2f9459, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-2f9459__20250625__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447156,
     "battinfo_version": "0.8.0"
   },
   "funding": {

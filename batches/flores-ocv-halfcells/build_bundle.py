@@ -223,8 +223,10 @@ def spot_checks() -> str:
     out.write("\n")
 
     # --- Thread 3: protocols and datasets (unchanged from v1) -------------------
-    for name in ("GITT", "p-OCV"):
-        protocol = _pick("test-protocol", lambda r, n=name: r["test_spec"]["name"] == n)
+    for name, slug in (("GITT", "gitt"), ("p-OCV", "p-ocv")):
+        # Matched on the handle, which is stable across title changes.
+        protocol = _pick("test-protocol",
+                         lambda r, h=f"flores-ocv/{slug}-test-spec": r["test_spec"].get("handle") == h)
         section(f"SPOT CHECK 3 - test protocol {name}: typed EMMO method + process graph",
                 B.record_to_jsonld(protocol, "test-protocol", context="inline"))
 

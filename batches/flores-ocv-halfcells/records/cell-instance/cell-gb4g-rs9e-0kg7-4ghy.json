@@ -5,14 +5,15 @@
     "short_id": "gb4grs",
     "cell_spec_id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/4xba-sfp0-6rpb-q2nn",
-    "name": "Gr-AQ-1 cell 063b77",
+    "name": "Graphite AQ-1 cell 063b77",
+    "handle": "flores-ocv/graphite-aq-1-063b77-cell",
     "serial_number": "063b77",
     "batch_id": "Gr-AQ-1",
     "manufactured_at": 1747180800
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

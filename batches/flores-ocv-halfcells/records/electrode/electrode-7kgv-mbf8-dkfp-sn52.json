@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/7kgv-mbf8-dkfp-sn52",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
     "short_id": "7kgvmb",
-    "name": "LNMO-NMP-2 disc e5b4f3",
+    "name": "LNMO NMP-2 electrode e5b4f3",
+    "handle": "flores-ocv/lnmo-nmp-2-e5b4f3-electrode",
     "batch_id": "LNMO-NMP-2",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/422c-58yx-akqh-hqwe",
     "short_id": "422c58",
     "identifier": "test:422c-58yx-akqh-hqwe",
-    "name": "NMC111-NMP-1 cell 53acb0 GITT hold",
+    "name": "NMC111 NMP-1 cell 53acb0 GITT hold test",
+    "handle": "flores-ocv/nmc111-nmp-1-53acb0-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/yzgg-dd4m-99vn-k3c0",
     "description": "GITT hold half-cell OCV measurement on NMC111-NMP-1 coin cell 53acb0 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

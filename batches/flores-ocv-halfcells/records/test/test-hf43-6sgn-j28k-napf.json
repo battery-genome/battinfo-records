@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/hf43-6sgn-j28k-napf",
     "short_id": "hf436s",
     "identifier": "test:hf43-6sgn-j28k-napf",
-    "name": "LFP-NMP-1 cell 178617 p-OCV",
+    "name": "LFP NMP-1 cell 178617 p-OCV test",
+    "handle": "flores-ocv/lfp-nmp-1-178617-p-ocv-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/zc06-9yy7-cayr-4cm2",
     "description": "p-OCV half-cell OCV measurement on LFP-NMP-1 coin cell 178617 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV",
+    "protocol_name": "p-OCV test spec",
     "started_at": 1751760000
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

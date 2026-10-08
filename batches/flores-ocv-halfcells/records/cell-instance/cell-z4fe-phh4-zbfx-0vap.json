@@ -5,14 +5,15 @@
     "short_id": "z4feph",
     "cell_spec_id": "https://w3id.org/battinfo/spec/1kt7-7141-vpj2-pqv0",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/8k63-wv21-4trq-5gdp",
-    "name": "SiGr-AQ-2 cell 61a57a",
+    "name": "Silicon-graphite AQ-2 cell 61a57a",
+    "handle": "flores-ocv/silicon-graphite-aq-2-61a57a-cell",
     "serial_number": "61a57a",
     "batch_id": "SiGr-AQ-2",
     "manufactured_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

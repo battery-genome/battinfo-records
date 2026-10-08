@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/8hzz-44ms-p19s-d1q0",
-  "schema:name": "SiGr-AQ-2 disc f4569b",
+  "schema:name": "Silicon-graphite AQ-2 electrode f4569b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "SiGr-AQ-2"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "SiGr-AQ-2"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-graphite-aq-2-f4569b-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

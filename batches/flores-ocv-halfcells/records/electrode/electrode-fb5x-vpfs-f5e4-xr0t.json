@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/fb5x-vpfs-f5e4-xr0t",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
     "short_id": "fb5xvp",
-    "name": "LNMO-NMP-2 disc f2733d",
+    "name": "LNMO NMP-2 electrode f2733d",
+    "handle": "flores-ocv/lnmo-nmp-2-f2733d-electrode",
     "batch_id": "LNMO-NMP-2",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

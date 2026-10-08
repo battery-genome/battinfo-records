@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/erpd-smmg-013f-y2xg",
     "short_id": "erpdsm",
     "identifier": "dataset:erpd-smmg-013f-y2xg",
-    "name": "LNMO-NMP-1 cell d11721 p-OCV hold half-cell OCV (BDF)",
+    "name": "LNMO NMP-1 cell d11721 p-OCV hold dataset",
+    "handle": "flores-ocv/lnmo-nmp-1-d11721-p-ocv-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell d11721, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-d11721__20250625__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447154,
     "battinfo_version": "0.8.0"
   },
   "funding": {

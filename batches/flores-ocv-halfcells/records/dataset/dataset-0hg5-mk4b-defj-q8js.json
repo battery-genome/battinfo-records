@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/0hg5-mk4b-defj-q8js",
     "short_id": "0hg5mk",
     "identifier": "dataset:0hg5-mk4b-defj-q8js",
-    "name": "Si-AQ-1 cell 2c4b6a p-OCV half-cell OCV (BDF)",
+    "name": "Silicon AQ-1 cell 2c4b6a p-OCV dataset",
+    "handle": "flores-ocv/silicon-aq-1-2c4b6a-p-ocv-dataset",
     "description": "Half-cell OCV electrochemical time series for Si-AQ-1 coin cell 2c4b6a, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicon-R2032-intelligent1-2c4b6a__20250405__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320301,
+    "retrieved_at": 1791447149,
     "battinfo_version": "0.8.0"
   },
   "funding": {

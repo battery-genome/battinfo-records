@@ -10,15 +10,22 @@
   ],
   "@id": "https://w3id.org/battinfo/material/ppce-wn8a-1509-ypr9",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "NMC111 (LiNi1/3Mn1/3Co1/3O2) powder within the purchased electrodes",
+  "schema:name": "NMC111 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/j17h-6vp8-jcat-pmq1"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "lot_id",
-    "schema:value": "powder within the purchased electrodes"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "lot_id",
+      "schema:value": "powder within the purchased electrodes"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/nmc111-material-lot"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

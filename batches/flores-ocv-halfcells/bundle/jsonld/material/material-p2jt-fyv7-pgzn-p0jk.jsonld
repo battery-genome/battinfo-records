@@ -10,15 +10,22 @@
   ],
   "@id": "https://w3id.org/battinfo/material/p2jt-fyv7-pgzn-p0jk",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "NMC532 (LiNi0.5Mn0.3Co0.2O2) powder within the purchased electrodes",
+  "schema:name": "NMC532 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "lot_id",
-    "schema:value": "powder within the purchased electrodes"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "lot_id",
+      "schema:value": "powder within the purchased electrodes"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/nmc532-material-lot"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

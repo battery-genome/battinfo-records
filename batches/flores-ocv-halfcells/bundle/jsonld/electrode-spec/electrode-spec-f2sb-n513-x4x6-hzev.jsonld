@@ -144,11 +144,11 @@
       },
       "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-1 and the Zenodo batch table."
     },
-    "skos:prefLabel": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
+    "skos:prefLabel": "LNMO NMP-1 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev#described"
   },
   "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
-  "schema:name": "LNMO electrode, NMP processed (IntelLiGent batch 1, SINTEF)",
+  "schema:name": "LNMO NMP-1 electrode spec",
   "schema:description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label LNMO-NMP-1. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -162,6 +162,11 @@
     "Nominal areal capacity: mean 1.2234 mAh/cm2, sample standard deviation 0.035 mAh/cm2 over n = 8 discs (range 1.1681-1.2568 mAh/cm2). Computed from the per-cell values metadata.csv publishes for this batch and carried on the quantity itself, not in this note.",
     "Coated from the LNMO study powder lot https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq. The link runs through the material spec: no field on an electrode spec or an electrode record points at a material INSTANCE (gap E8)."
   ],
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:propertyID": "battinfo-handle",
+    "schema:value": "flores-ocv/lnmo-nmp-1-electrode-spec"
+  },
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",

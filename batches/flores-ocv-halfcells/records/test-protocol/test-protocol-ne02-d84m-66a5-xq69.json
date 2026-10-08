@@ -4,14 +4,15 @@
     "id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69",
     "short_id": "ne02d8",
     "identifier": "test-protocol:ne02-d84m-66a5-xq69",
-    "name": "p-OCV hold",
+    "name": "p-OCV hold test spec",
+    "handle": "flores-ocv/p-ocv-hold-test-spec",
     "kind": "quasi_ocv",
     "description": "Constant current cycling at C/50. The voltage is held for 6 h under potentiostatic control upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature."
   },
   "provenance": {
     "source_type": "manual",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "method": [

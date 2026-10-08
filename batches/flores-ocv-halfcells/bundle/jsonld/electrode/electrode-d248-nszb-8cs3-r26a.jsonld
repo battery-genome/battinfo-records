@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/d248-nszb-8cs3-r26a",
-  "schema:name": "LNMO-NMP-1 disc f46602",
+  "schema:name": "LNMO NMP-1 electrode f46602",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "LNMO-NMP-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "LNMO-NMP-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lnmo-nmp-1-f46602-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

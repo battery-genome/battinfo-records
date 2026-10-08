@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/b8vs-e64p-2y4h-pg78",
     "short_id": "b8vse6",
     "identifier": "test:b8vs-e64p-2y4h-pg78",
-    "name": "NMC532-NMP-1 cell 2a2be3 p-OCV",
+    "name": "NMC532 NMP-1 cell 2a2be3 p-OCV test",
+    "handle": "flores-ocv/nmc532-nmp-1-2a2be3-p-ocv-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/n0ym-py04-bf1z-sp9a",
     "description": "p-OCV half-cell OCV measurement on NMC532-NMP-1 coin cell 2a2be3 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV",
+    "protocol_name": "p-OCV test spec",
     "started_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

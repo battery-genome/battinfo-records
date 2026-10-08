@@ -5,14 +5,15 @@
     "short_id": "a19yzv",
     "cell_spec_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/dbws-fec9-qqrj-14nh",
-    "name": "LFP-NMP-1 cell fbeeaf",
+    "name": "LFP NMP-1 cell fbeeaf",
+    "handle": "flores-ocv/lfp-nmp-1-fbeeaf-cell",
     "serial_number": "fbeeaf",
     "batch_id": "LFP-NMP-1",
     "manufactured_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

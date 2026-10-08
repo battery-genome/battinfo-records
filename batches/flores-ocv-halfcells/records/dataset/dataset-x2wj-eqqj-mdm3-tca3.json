@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/x2wj-eqqj-mdm3-tca3",
     "short_id": "x2wjeq",
     "identifier": "dataset:x2wj-eqqj-mdm3-tca3",
-    "name": "SiGr-AQ-1 cell bdb7bc GITT hold half-cell OCV (BDF)",
+    "name": "Silicon-graphite AQ-1 cell bdb7bc GITT hold dataset",
+    "handle": "flores-ocv/silicon-graphite-aq-1-bdb7bc-gitt-hold-dataset",
     "description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell bdb7bc, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-bdb7bc__20250514__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320301,
+    "retrieved_at": 1791447151,
     "battinfo_version": "0.8.0"
   },
   "funding": {

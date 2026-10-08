@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/yvm1-cvyb-ackp-7ar3",
     "short_id": "yvm1cv",
     "identifier": "test:yvm1-cvyb-ackp-7ar3",
-    "name": "LNMO-AQ-1 cell 9973ad GITT hold",
+    "name": "LNMO AQ-1 cell 9973ad GITT hold test",
+    "handle": "flores-ocv/lnmo-aq-1-9973ad-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/a37j-5f43-afpd-jjb0",
     "description": "GITT hold half-cell OCV measurement on LNMO-AQ-1 coin cell 9973ad at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

@@ -4,14 +4,15 @@
     "id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
     "short_id": "1pvgsj",
     "identifier": "test-protocol:1pvg-sjjy-kn8j-jhxh",
-    "name": "p-OCV",
+    "name": "p-OCV test spec",
+    "handle": "flores-ocv/p-ocv-test-spec",
     "kind": "quasi_ocv",
     "description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature."
   },
   "provenance": {
     "source_type": "manual",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "method": [

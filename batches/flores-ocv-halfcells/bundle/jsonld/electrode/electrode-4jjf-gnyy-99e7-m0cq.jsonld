@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/4jjf-gnyy-99e7-m0cq",
-  "schema:name": "Gr-AQ-1 disc 3ac228",
+  "schema:name": "Graphite AQ-1 electrode 3ac228",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "Gr-AQ-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "Gr-AQ-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/graphite-aq-1-3ac228-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

@@ -10,15 +10,22 @@
   ],
   "@id": "https://w3id.org/battinfo/material/k1pt-wy97-tetf-fzsw",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Graphite study powder batch",
+  "schema:name": "Graphite material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "lot_id",
-    "schema:value": "study powder batch"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "lot_id",
+      "schema:value": "study powder batch"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/graphite-material-lot"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

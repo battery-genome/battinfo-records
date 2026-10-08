@@ -1,4 +1,6 @@
 {
+  "name": "Silicon-graphite AQ-2 cell spec",
+  "handle": "flores-ocv/silicon-graphite-aq-2-cell-spec",
   "manufacturer": "SINTEF",
   "model": "Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-2)",
   "format": "coin",

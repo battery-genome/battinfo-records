@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/dzz9-etft-nqtk-8hc7",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6",
     "short_id": "dzz9et",
-    "name": "LFP-NMP-1 disc 182031",
+    "name": "LFP NMP-1 electrode 182031",
+    "handle": "flores-ocv/lfp-nmp-1-182031-electrode",
     "batch_id": "LFP-NMP-1",
     "supplier": {
       "type": "Organization",
@@ -40,7 +41,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

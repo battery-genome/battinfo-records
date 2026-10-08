@@ -5,14 +5,15 @@
     "short_id": "n0ympy",
     "cell_spec_id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/ejja-98qb-y942-cjfc",
-    "name": "NMC532-NMP-1 cell 2a2be3",
+    "name": "NMC532 NMP-1 cell 2a2be3",
+    "handle": "flores-ocv/nmc532-nmp-1-2a2be3-cell",
     "serial_number": "2a2be3",
     "batch_id": "NMC532-NMP-1",
     "manufactured_at": 1749254400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

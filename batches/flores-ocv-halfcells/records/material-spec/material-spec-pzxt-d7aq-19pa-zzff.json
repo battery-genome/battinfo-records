@@ -3,7 +3,8 @@
   "material_spec": {
     "id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
     "short_id": "pzxtd7",
-    "name": "NMC532 (LiNi0.5Mn0.3Co0.2O2) active material",
+    "name": "NMC532 material spec",
+    "handle": "flores-ocv/nmc532-material-spec",
     "kind": "nmc532",
     "material_class": "active_material",
     "formula": "LiNi0.5Mn0.3Co0.2O2",
@@ -12,7 +13,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

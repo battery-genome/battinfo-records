@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/sswy-fskm-ck4e-b5ex",
     "short_id": "sswyfs",
     "identifier": "test:sswy-fskm-ck4e-b5ex",
-    "name": "LNMO-AQ-2 cell 2bac5c p-OCV hold",
+    "name": "LNMO AQ-2 cell 2bac5c p-OCV hold test",
+    "handle": "flores-ocv/lnmo-aq-2-2bac5c-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/ez1d-5sh9-4h0b-q2g5",
     "description": "p-OCV hold half-cell OCV measurement on LNMO-AQ-2 coin cell 2bac5c at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold",
+    "protocol_name": "p-OCV hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

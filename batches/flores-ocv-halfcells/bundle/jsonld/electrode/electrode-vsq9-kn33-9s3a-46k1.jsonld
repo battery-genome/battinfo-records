@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/vsq9-kn33-9s3a-46k1",
-  "schema:name": "Si-AQ-1 disc 5f45a8",
+  "schema:name": "Silicon AQ-1 electrode 5f45a8",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "Si-AQ-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "Si-AQ-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-aq-1-5f45a8-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

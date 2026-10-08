@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/4v7g-cg8q-k9dj-yf6w",
     "short_id": "4v7gcg",
     "identifier": "test:4v7g-cg8q-k9dj-yf6w",
-    "name": "LNMO-AQ-1 cell a39225 GITT",
+    "name": "LNMO AQ-1 cell a39225 GITT test",
+    "handle": "flores-ocv/lnmo-aq-1-a39225-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/e4st-dmkh-3mfs-06w6",
     "description": "GITT half-cell OCV measurement on LNMO-AQ-1 coin cell a39225 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

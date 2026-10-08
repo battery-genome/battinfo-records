@@ -5,14 +5,15 @@
     "short_id": "akp71t",
     "cell_spec_id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/jt0s-n8a1-cw2h-a1gv",
-    "name": "SiGr-AQ-1 cell 8eb80b",
+    "name": "Silicon-graphite AQ-1 cell 8eb80b",
+    "handle": "flores-ocv/silicon-graphite-aq-1-8eb80b-cell",
     "serial_number": "8eb80b",
     "batch_id": "SiGr-AQ-1",
     "manufactured_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

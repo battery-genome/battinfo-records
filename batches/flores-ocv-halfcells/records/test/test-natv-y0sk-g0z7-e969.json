@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/natv-y0sk-g0z7-e969",
     "short_id": "natvy0",
     "identifier": "test:natv-y0sk-g0z7-e969",
-    "name": "SiGr-AQ-1 cell 274e5a p-OCV hold",
+    "name": "Silicon-graphite AQ-1 cell 274e5a p-OCV hold test",
+    "handle": "flores-ocv/silicon-graphite-aq-1-274e5a-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/7ryr-q801-wtbg-w0a8",
     "description": "p-OCV hold half-cell OCV measurement on SiGr-AQ-1 coin cell 274e5a at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold",
+    "protocol_name": "p-OCV hold test spec",
     "started_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

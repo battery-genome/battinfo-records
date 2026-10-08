@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/m0v0-q8qv-vazm-9rjv",
-  "schema:name": "LNMO-NMP-2 disc 6dce02",
+  "schema:name": "LNMO NMP-2 electrode 6dce02",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "LNMO-NMP-2"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "LNMO-NMP-2"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lnmo-nmp-2-6dce02-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

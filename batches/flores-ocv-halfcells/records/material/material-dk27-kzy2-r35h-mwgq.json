@@ -4,12 +4,13 @@
     "id": "https://w3id.org/battinfo/material/dk27-kzy2-r35h-mwgq",
     "material_spec_id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
     "short_id": "dk27kz",
-    "name": "Silicon-graphite blend coated as SiGr-AQ-2",
+    "name": "Silicon-graphite AQ-2 material lot",
+    "handle": "flores-ocv/silicon-graphite-aq-2-material-lot",
     "lot_id": "SiGr-AQ-2 blend"
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

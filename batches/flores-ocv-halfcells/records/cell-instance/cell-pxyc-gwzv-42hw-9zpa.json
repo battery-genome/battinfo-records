@@ -5,14 +5,15 @@
     "short_id": "pxycgw",
     "cell_spec_id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/dy69-yxdm-5j0n-8px7",
-    "name": "LNMO-NMP-2 cell b4f90b",
+    "name": "LNMO NMP-2 cell b4f90b",
+    "handle": "flores-ocv/lnmo-nmp-2-b4f90b-cell",
     "serial_number": "b4f90b",
     "batch_id": "LNMO-NMP-2",
     "manufactured_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

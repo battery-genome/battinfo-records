@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/8yq8-3w4f-4yqq-n60c",
-  "schema:name": "SiGr-AQ-3 disc 7202c5",
+  "schema:name": "Silicon-graphite AQ-3 electrode 7202c5",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "SiGr-AQ-3"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "SiGr-AQ-3"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/silicon-graphite-aq-3-7202c5-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

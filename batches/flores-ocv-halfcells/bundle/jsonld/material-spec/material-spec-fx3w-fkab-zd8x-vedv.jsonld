@@ -14,7 +14,7 @@
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",
-  "schema:name": "Silicon active material",
+  "schema:name": "Silicon material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_68c0876b_cb62_41cd_846d_95cc9d9a8733"
   },
@@ -42,7 +42,7 @@
       "schema:unitText": "mAh/g"
     },
     "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv#described",
-    "skos:prefLabel": "Silicon active material"
+    "skos:prefLabel": "Silicon material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -50,6 +50,11 @@
     "bibo:doi": "10.5281/zenodo.20086298"
   },
   "schema:comment": "No manufacturer or supplier is stated: the source names none for this powder, and the field is left unset rather than guessed.",
+  "schema:identifier": {
+    "@type": "schema:PropertyValue",
+    "schema:propertyID": "battinfo-handle",
+    "schema:value": "flores-ocv/silicon-material-spec"
+  },
   "schema:funding": {
     "@type": "schema:Grant",
     "@id": "https://cordis.europa.eu/project/id/101069765",

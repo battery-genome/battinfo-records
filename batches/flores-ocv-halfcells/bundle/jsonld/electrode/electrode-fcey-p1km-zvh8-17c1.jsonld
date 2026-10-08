@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/fcey-p1km-zvh8-17c1",
-  "schema:name": "NMC111-NMP-1 disc 53acb0",
+  "schema:name": "NMC111 NMP-1 electrode 53acb0",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "NMC111-NMP-1"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "NMC111-NMP-1"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/nmc111-nmp-1-53acb0-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

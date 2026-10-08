@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/s0mv-wdpv-nq96-eeyf",
     "short_id": "s0mvwd",
     "identifier": "test:s0mv-wdpv-nq96-eeyf",
-    "name": "SiGr-AQ-3 cell e030cf GITT",
+    "name": "Silicon-graphite AQ-3 cell e030cf GITT test",
+    "handle": "flores-ocv/silicon-graphite-aq-3-e030cf-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/k5qh-gpz0-y9k3-gd21",
     "description": "GITT half-cell OCV measurement on SiGr-AQ-3 coin cell e030cf at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT",
+    "protocol_name": "GITT test spec",
     "started_at": 1748390400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

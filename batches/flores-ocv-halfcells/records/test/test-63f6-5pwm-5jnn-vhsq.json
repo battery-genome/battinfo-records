@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/63f6-5pwm-5jnn-vhsq",
     "short_id": "63f65p",
     "identifier": "test:63f6-5pwm-5jnn-vhsq",
-    "name": "SiGr-AQ-2 cell da05ba GITT hold",
+    "name": "Silicon-graphite AQ-2 cell da05ba GITT hold test",
+    "handle": "flores-ocv/silicon-graphite-aq-2-da05ba-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/ffwj-5pmm-5d88-mz3g",
     "description": "GITT hold half-cell OCV measurement on SiGr-AQ-2 coin cell da05ba at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

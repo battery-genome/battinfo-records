@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/dataset/y6m8-rwv1-hb9b-w9fa",
     "short_id": "y6m8rw",
     "identifier": "dataset:y6m8-rwv1-hb9b-w9fa",
-    "name": "NMC532-NMP-1 cell 2a2be3 p-OCV half-cell OCV (BDF)",
+    "name": "NMC532 NMP-1 cell 2a2be3 p-OCV dataset",
+    "handle": "flores-ocv/nmc532-nmp-1-2a2be3-p-ocv-dataset",
     "description": "Half-cell OCV electrochemical time series for NMC532-NMP-1 coin cell 2a2be3, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-nmc532-R2032-gelon-2a2be3__20250607__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
@@ -112,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320302,
+    "retrieved_at": 1791447160,
     "battinfo_version": "0.8.0"
   },
   "funding": {

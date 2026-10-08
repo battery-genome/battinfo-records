@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/vj4p-cc5t-dc7j-db9p",
     "short_id": "vj4pcc",
     "identifier": "test:vj4p-cc5t-dc7j-db9p",
-    "name": "NMC532-NMP-1 cell 2373d9 p-OCV hold",
+    "name": "NMC532 NMP-1 cell 2373d9 p-OCV hold test",
+    "handle": "flores-ocv/nmc532-nmp-1-2373d9-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/f2zc-bas3-a23v-4vcw",
     "description": "p-OCV hold half-cell OCV measurement on NMC532-NMP-1 coin cell 2373d9 at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold",
+    "protocol_name": "p-OCV hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {

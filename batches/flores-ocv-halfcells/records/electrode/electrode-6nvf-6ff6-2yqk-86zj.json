@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/electrode/6nvf-6ff6-2yqk-86zj",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy",
     "short_id": "6nvf6f",
-    "name": "SiGr-AQ-1 disc 274e5a",
+    "name": "Silicon-graphite AQ-1 electrode 274e5a",
+    "handle": "flores-ocv/silicon-graphite-aq-1-274e5a-electrode",
     "batch_id": "SiGr-AQ-1",
     "count": 1,
     "property": {
@@ -36,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320264,
+    "retrieved_at": 1791447085,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

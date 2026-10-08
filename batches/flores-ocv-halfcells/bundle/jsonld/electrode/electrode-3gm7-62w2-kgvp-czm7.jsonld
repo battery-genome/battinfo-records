@@ -83,15 +83,22 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/3gm7-62w2-kgvp-czm7",
-  "schema:name": "LNMO-AQ-2 disc fb8cf6",
+  "schema:name": "LNMO AQ-2 electrode fb8cf6",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },
-  "schema:identifier": {
-    "@type": "schema:PropertyValue",
-    "schema:name": "batch_id",
-    "schema:value": "LNMO-AQ-2"
-  },
+  "schema:identifier": [
+    {
+      "@type": "schema:PropertyValue",
+      "schema:name": "batch_id",
+      "schema:value": "LNMO-AQ-2"
+    },
+    {
+      "@type": "schema:PropertyValue",
+      "schema:propertyID": "battinfo-handle",
+      "schema:value": "flores-ocv/lnmo-aq-2-fb8cf6-electrode"
+    }
+  ],
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
     "@type": "schema:CreativeWork",

@@ -7,8 +7,9 @@
       "property_id": "doi",
       "value": "10.5281/zenodo.20086298"
     },
-    "name": "Flores et al. half-cell OCV collection",
-    "description": "The Flores et al. half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
+    "name": "Flores et al. 2026 half-cell OCV collection",
+    "handle": "flores-ocv",
+    "description": "The Flores et al. 2026 half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
@@ -52,7 +53,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320301,
+    "retrieved_at": 1791447149,
     "battinfo_version": "0.8.0"
   },
   "funding": {

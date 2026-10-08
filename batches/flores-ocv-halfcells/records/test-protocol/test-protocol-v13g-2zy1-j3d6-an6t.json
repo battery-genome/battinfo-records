@@ -4,14 +4,15 @@
     "id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t",
     "short_id": "v13g2z",
     "identifier": "test-protocol:v13g-2zy1-j3d6-an6t",
-    "name": "GITT hold",
+    "name": "GITT hold test spec",
+    "handle": "flores-ocv/gitt-hold-test-spec",
     "kind": "gitt",
     "description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). The voltage is held for 6 h under potentiostatic control upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature."
   },
   "provenance": {
     "source_type": "manual",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791320278,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "method": [

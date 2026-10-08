@@ -4,7 +4,8 @@
     "id": "https://w3id.org/battinfo/test/kt4p-csar-myjk-1zx2",
     "short_id": "kt4pcs",
     "identifier": "test:kt4p-csar-myjk-1zx2",
-    "name": "LNMO-AQ-2 cell 38f87f GITT hold",
+    "name": "LNMO AQ-2 cell 38f87f GITT hold test",
+    "handle": "flores-ocv/lnmo-aq-2-38f87f-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/s19q-pgyb-g13a-wzvq",
     "description": "GITT hold half-cell OCV measurement on LNMO-AQ-2 coin cell 38f87f at room temperature.",
@@ -18,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold",
+    "protocol_name": "GITT hold test spec",
     "started_at": 1750809600
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791320296,
+    "retrieved_at": 1791447130,
     "battinfo_version": "0.8.0"
   },
   "funding": {
