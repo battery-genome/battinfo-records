@@ -13,6 +13,12 @@ stamping attribution the way every corpus publication does:
   cc-by-4.0); a record without a license refuses to publish rather than
   getting one silently.
 
+A record that carries its file (a BPX parameter set, under
+``parameter_set.distributions``) also sends those files as the submission's
+distributions, which is what ``<IRI>?format=bpx`` resolves through. Before
+posting, every file URL is fetched and checked against the record's sha256,
+so a record never goes out pointing at a file that was not uploaded.
+
 The API key comes from ``--api-key`` or the BATTINFO_REGISTRY_API_KEY
 environment variable — deliberately no committed default.
 
@@ -20,11 +26,14 @@ Usage:
     python scripts/publish_parameter_sets.py \
         --contributor-name "..." --contributor-orcid 0000-0000-0000-0000 \
         --registry-url https://battinfo-registry.onrender.com \
-        [--source-version 2026-08-17-literature-ocv] [--dry-run] [--limit N]
+        [--source-version 2026-08-17-literature-ocv] [--dry-run] [--limit N] \
+        [--match '*--schmitt2026-hydra--bpx']
 """
 from __future__ import annotations
 
 import argparse
+import fnmatch
+import hashlib
 import json
 import os
 import sys
@@ -73,6 +82,41 @@ def stamp_attribution(
     return record
 
 
+def envelope_distributions(record: dict) -> list[dict]:
+    """The record's own files as submission distributions (registry field names)."""
+    out = []
+    for item in record.get("parameter_set", {}).get("distributions") or []:
+        entry = {
+            "title": item.get("name"),
+            "access_url": item["content_url"],
+            "role": item.get("role"),
+            "media_type": item.get("encoding_format"),
+            "conforms_to": item.get("conforms_to"),
+            "checksum_sha256": (item.get("checksum") or {}).get("value"),
+            "byte_size": item.get("byte_size"),
+            "immutable": True,
+        }
+        out.append({key: value for key, value in entry.items() if value is not None})
+    return out
+
+
+def verify_files(distributions: list[dict], *, timeout: float = 120.0) -> list[str]:
+    """Fetch each file and compare its sha256; returns the problems found."""
+    problems = []
+    for entry in distributions:
+        url = entry["access_url"]
+        try:
+            with urlopen(Request(url, method="GET"), timeout=timeout) as resp:
+                digest = hashlib.sha256(resp.read()).hexdigest()
+        except (HTTPError, URLError) as exc:
+            problems.append(f"{url}: not fetchable ({exc})")
+            continue
+        expected = (entry.get("checksum_sha256") or "").lower()
+        if expected and digest != expected:
+            problems.append(f"{url}: sha256 {digest} does not match the record's {expected}")
+    return problems
+
+
 def build_package(
     record: dict,
     *,
@@ -80,6 +124,7 @@ def build_package(
     publisher_id: str,
     source_version: str,
     source_local_id: str,
+    workflow_name: str = "literature-ocv-parameter-publication",
 ) -> dict:
     body = record.get("parameter_set", {})
     title = body.get("name") or source_local_id
@@ -96,7 +141,7 @@ def build_package(
         "publication_intent": {"mode": "canonical-publication"},
         "provenance": {
             "source_system": "battinfo-records",
-            "workflow_name": "literature-ocv-parameter-publication",
+            "workflow_name": workflow_name,
             "generated_at": generated_at,
         },
         "release": {"version": source_version},
@@ -110,7 +155,7 @@ def build_package(
                 "battinfo_records": {"parameter_set": record},
             },
             "related_resources": [],
-            "distributions": [],
+            "distributions": envelope_distributions(record),
         },
         "artifacts": [],
         "validation": {"ok": True, "errors": [], "policy": "default"},
@@ -164,13 +209,23 @@ def main() -> int:
                         help="build and print packages; POST nothing")
     parser.add_argument("--limit", type=int, default=None,
                         help="publish only the first N records (smoke run)")
+    parser.add_argument("--match", default="*",
+                        help="publish only records whose directory name matches this glob")
+    parser.add_argument("--workflow-name", default="literature-ocv-parameter-publication")
+    parser.add_argument("--skip-file-check", action="store_true",
+                        help="do not fetch and hash the files a record carries before posting it")
     args = parser.parse_args()
 
     if not args.dry_run and not args.api_key:
         print("error: no API key (--api-key or BATTINFO_REGISTRY_API_KEY)", file=sys.stderr)
         return 2
 
-    record_paths = sorted(RECORD_DIR.glob("*/record.json"))
+    record_paths = [
+        path for path in sorted(RECORD_DIR.glob("*/record.json"))
+        if fnmatch.fnmatch(path.parent.name, args.match)
+    ]
+    # A parameterisation set lists its members, so members go first.
+    record_paths.sort(key=lambda path: "members" in json.loads(path.read_text(encoding="utf-8"))["parameter_set"])
     if args.limit:
         record_paths = record_paths[: args.limit]
     if not record_paths:
@@ -197,15 +252,24 @@ def main() -> int:
             publisher_id=args.publisher_id,
             source_version=args.source_version,
             source_local_id=slug,
+            workflow_name=args.workflow_name,
         )
+        files = package["resource"]["distributions"]
         if args.dry_run:
             body = record["parameter_set"]
             print(
                 f"  dry-run  {slug}  [{record['license']}, "
-                f"{len(body.get('claims', []))} claim(s)]  {body['id']}"
+                f"{len(body.get('claims', []))} claim(s), {len(files)} file(s)]  {body['id']}"
             )
             ok += 1
             continue
+
+        if files and not args.skip_file_check:
+            problems = verify_files(files)
+            if problems:
+                print(f"  SKIPPED {slug}: " + "; ".join(problems))
+                fail += 1
+                continue
 
         print(f"  publishing {slug} ... ", end="", flush=True)
         result = post_package(package, registry_url=args.registry_url, api_key=args.api_key)

@@ -1,0 +1,215 @@
+{
+  "schema_version": "0.2.0",
+  "parameter_set": {
+    "id": "https://w3id.org/battinfo/spec/tt9p-19mr-ek6v-sz6q",
+    "short_id": "tt9p19",
+    "name": "HYDRA graphite/LNMO validation parameter set",
+    "cell_spec_id": "https://w3id.org/battinfo/spec/fjh3-sbc2-k87w-ae5n",
+    "scope": "cell",
+    "members": {
+      "negative_material": "https://w3id.org/battinfo/spec/9mtj-e8v8-z31e-d6wa",
+      "negative_electrode": "https://w3id.org/battinfo/spec/vse4-8wdv-eqgq-q5qs",
+      "positive_material": "https://w3id.org/battinfo/spec/jqqz-r65f-yvhp-nxre",
+      "positive_electrode": "https://w3id.org/battinfo/spec/ewyg-vy5z-qbq1-28vm",
+      "separator": "https://w3id.org/battinfo/spec/d43z-y69y-y9w0-j99p",
+      "electrolyte": "https://w3id.org/battinfo/spec/2jew-qd6q-tx70-nrfn"
+    },
+    "model_context": {
+      "tool": "BPX",
+      "name": "HYDRA graphite/LNMO validation parameter set",
+      "model": "DFN",
+      "version": "1.0"
+    },
+    "annex": {
+      "Negative electrode total solid volume fraction": 0.5993469682767011,
+      "Positive electrode total solid volume fraction": 0.6733612095489311,
+      "Negative electrode active material share within solids": 0.9378330373001775,
+      "Positive electrode active material share within solids": 0.8313253012048192,
+      "Negative electrode active material volume fraction": 0.5620873876555917,
+      "Positive electrode active material volume fraction": 0.5597822103479065,
+      "Negative electrode inactive solid volume fraction": 0.037259580621109345,
+      "Positive electrode inactive solid volume fraction": 0.11357899920102454,
+      "Open-circuit voltage at 0% SOC [V]": 2.6530625217791886,
+      "Open-circuit voltage at 100% SOC [V]": 4.875875807224855,
+      "BattMo negative electrode volumetric surface area [m-1]": 1540000.0,
+      "BattMo positive electrode volumetric surface area [m-1]": 222275.44206886273,
+      "BPX negative electrode surface area per unit volume [m-1]": 103451.66643967947,
+      "BPX positive electrode surface area per unit volume [m-1]": 187846.37931137803,
+      "BattMo negative electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          0.614180704504965,
+          1.9504887954224202,
+          2.85609207829683,
+          2.8777767177512197,
+          3.5783379705522402,
+          3.75161042355194,
+          3.99042436699301,
+          3.8588812440632503,
+          3.9107721646939897,
+          3.96434407803536,
+          4.02950087744402,
+          4.19105848461824,
+          5.04918252889569,
+          4.70739079700868,
+          4.68047272216724,
+          4.67314920246704,
+          4.71058023371167,
+          4.76839651936555,
+          4.81773917337519,
+          4.86312366426169,
+          4.97030884387319,
+          5.06113895934315,
+          5.526651377501239
+        ]
+      },
+      "BattMo positive electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.049999999999999,
+          0.099999999999999,
+          0.149999999999999,
+          0.199999999999999,
+          0.249999999999999,
+          0.299999999999999,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          1.46947187111,
+          1.43560314165,
+          0.96574397799,
+          0.33828337612,
+          2.62322367243,
+          3.95526276763,
+          4.3969851987599995,
+          4.46259692946,
+          4.32657905944,
+          4.15872886922,
+          3.92415831529,
+          3.67849409319,
+          3.91915976034,
+          3.95092933335,
+          3.90933653701,
+          3.8087900021300003,
+          3.77009511009,
+          3.59439847188,
+          3.44566811475,
+          3.15637394329,
+          2.8640829203600005,
+          2.10757234065,
+          4.03310274857
+        ]
+      },
+      "BattMo negative electrode BPX-fitted reaction rate constant [mol.m-2.s-1]": 0.0015391758232510362
+    },
+    "distributions": [
+      {
+        "type": "DataDownload",
+        "name": "IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+        "role": "source",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/tt9p-19mr-ek6v-sz6q/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+        "encoding_format": "application/json",
+        "conforms_to": "BPX 1.0",
+        "byte_size": 8790098,
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "29717e566ad0d0acf60a1a46e2b2044d3675e44d4e414dd32bef1bdefbf025a4"
+        },
+        "description": "The BPX file exactly as its authors published it.",
+        "checks": [
+          {
+            "check": "bpx_parse",
+            "tool": "bpx 1.1.1",
+            "passed": false,
+            "detail": "2 validation errors for BPX Cell Value error, The 'Initial temperature [K]' and 'Ambient temperature [K]' fields have been moved. Please provide these parameters in 'State.InitialConditions' and 'State.ThermalState' sections respectively. [type=value_error, input_value={'Electrode area [m2]': 0...emperature [K]': 298.15}, input_type=dict] Electrolyte Value error, 'Initial concentration [mol.m-3]' has been renamed and moved. Please provide this parameter as 'Initial electrolyte concentration [mol.m-3]' in the 'State.InitialConditions' section instead. [type=value_error, input_value={'Initial co Warnings: The 'bpx' field now expects the BPX semantic version as a string (e.g. '0.5.0'), not a float. This format is temporarily supported but will be removed in a future version. Please update your file accordingly.",
+            "checked_at": "2026-10-07"
+          }
+        ]
+      },
+      {
+        "type": "DataDownload",
+        "name": "IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx-1.1.json",
+        "role": "runnable",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/tt9p-19mr-ek6v-sz6q/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx-1.1.json",
+        "encoding_format": "application/json",
+        "conforms_to": "BPX 1.1.0",
+        "byte_size": 8790200,
+        "checksum": {
+          "algorithm": "sha256",
+          "value": "849649c7ed6a9dd68ba4bb5360814e6441f36f88449decd97445ce2175004757"
+        },
+        "description": "The source rewritten in the BPX 1.1 layout, which current PyBaMM requires.",
+        "derived_from": "sha256:29717e566ad0d0acf60a1a46e2b2044d3675e44d4e414dd32bef1bdefbf025a4",
+        "conversion": "BPX 1.0 layout rewritten as BPX 1.1.0 by battinfo 0.7.0 (BIG-MAP/BattINFO@6f1f6a8) upgrade_bpx: Cell.Ambient temperature [K] -> State.Thermal environment.Ambient temperature [K]; Cell.Initial temperature [K] -> State.Initial conditions.Initial temperature [K]; Electrolyte.Initial concentration [mol.m-3] -> State.Initial conditions.Initial electrolyte concentration [mol.m-3]; Header.BPX 1.0 -> 1.1.0. No values changed.",
+        "checks": [
+          {
+            "check": "bpx_parse",
+            "tool": "bpx 1.1.1",
+            "passed": true,
+            "detail": "Parsed by the official bpx parser.",
+            "checked_at": "2026-10-07"
+          },
+          {
+            "check": "simulation_smoke",
+            "tool": "pybamm 26.9.0.0",
+            "passed": true,
+            "detail": "DFN, 1C discharge to 3.5 V solved in 0.68 s; 0.991 Ah delivered.",
+            "checked_at": "2026-10-07"
+          }
+        ]
+      }
+    ],
+    "description": "BPX export of the BattMo parameter set used in runValidation.m. Both electrodes: kinetics are approximated by a single BPX reaction-rate constant fitted to each BattMo j0(soc) table at nominal electrolyte concentration. Geometric surface areas preserve active volume; kinetic constants absorb area scaling. OCP tables are linearly extrapolated to stoichiometry endpoints. Geometry, nominal capacity and upper cutoff are supplementary inputs. Source: IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.battmo.json. Geometry: h0b-geometry-3d.json."
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1791404216,
+    "battinfo_version": "0.7.0",
+    "source_url": "https://raw.githubusercontent.com/BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication/51092701d66b8dcaa88febaa132ff877f7ebc6db/parameters/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+    "citation": "https://arxiv.org/abs/2601.10507"
+  },
+  "notes": [
+    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0. The file is the BPX export in BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication at commit 5109270; that repository's GPL-3.0-or-later licence covers its code.",
+    "Calibrated against the HYDRA0 measurements published at https://doi.org/10.5281/zenodo.18256663 (CC-BY-4.0). The file's Validation section holds five discharge-rate curves from that campaign."
+  ],
+  "license": "cc-by-4.0"
+}

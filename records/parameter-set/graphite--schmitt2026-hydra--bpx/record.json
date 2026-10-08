@@ -1,0 +1,313 @@
+{
+  "schema_version": "0.2.0",
+  "parameter_set": {
+    "id": "https://w3id.org/battinfo/spec/9mtj-e8v8-z31e-d6wa",
+    "short_id": "9mtje8",
+    "name": "HYDRA graphite/LNMO validation parameter set - negative electrode material",
+    "material_kind": "graphite",
+    "scope": "material",
+    "claims": [
+      {
+        "parameter": "stoichiometry_min",
+        "quantity": {
+          "value": 0.0,
+          "unit": "1"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "stoichiometry_max",
+        "quantity": {
+          "value": 0.7858279578321714,
+          "unit": "1"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "max_concentration",
+        "quantity": {
+          "value": 31360.0,
+          "unit": "mol/m3"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "particle_radius",
+        "quantity": {
+          "value": 1.63e-05,
+          "unit": "m"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "solid_diffusivity",
+        "quantity": {
+          "value": 1.427347050167674e-13,
+          "unit": "m2/s"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "diffusivity_activation_energy",
+        "quantity": {
+          "value": 13820.0,
+          "unit": "J/mol"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "ocp",
+        "curve": {
+          "x_quantity": "stoichiometry",
+          "x": [
+            0.0,
+            0.009009009009009,
+            0.012012012012012,
+            0.016016016016016,
+            0.024024024024024,
+            0.029029029029029,
+            0.036036036036036,
+            0.043043043043043,
+            0.051051051051051,
+            0.058058058058058,
+            0.064064064064064,
+            0.07007007007007,
+            0.079079079079079,
+            0.122122122122122,
+            0.144144144144144,
+            0.161161161161161,
+            0.177177177177177,
+            0.19019019019019,
+            0.247247247247247,
+            0.268268268268268,
+            0.302302302302302,
+            0.327327327327327,
+            0.362362362362362,
+            0.473473473473474,
+            0.512512512512513,
+            0.525525525525526,
+            0.538538538538539,
+            0.561561561561562,
+            0.574574574574575,
+            0.593593593593594,
+            0.612612612612613,
+            0.641641641641642,
+            0.70970970970971,
+            0.884884884884885,
+            0.917917917917918,
+            0.942942942942943,
+            0.95995995995996,
+            0.96996996996997,
+            0.977977977977978,
+            0.983983983983984,
+            0.988988988988989,
+            1.0
+          ],
+          "y": [
+            1.5019540652656,
+            0.810231488586984,
+            0.686487465213566,
+            0.595186217482807,
+            0.478937054398693,
+            0.427100952578674,
+            0.36916142716026,
+            0.322705563214132,
+            0.279370834430757,
+            0.249277174943395,
+            0.234597424467763,
+            0.228649431723394,
+            0.224835429526173,
+            0.217588825351454,
+            0.199853715134376,
+            0.190509409751185,
+            0.180020903708828,
+            0.173346399863691,
+            0.152750787998698,
+            0.147039415239939,
+            0.139783180528147,
+            0.137494779209814,
+            0.135969178330926,
+            0.133280922470175,
+            0.130248175035095,
+            0.12757837349704,
+            0.123001570860375,
+            0.110415363609546,
+            0.105075760533436,
+            0.100880358116493,
+            0.098782656908022,
+            0.097066355919272,
+            0.095159354820662,
+            0.092108153062885,
+            0.090578827053948,
+            0.087149950206498,
+            0.081397694713802,
+            0.075326543395113,
+            0.067698539000671,
+            0.059117034056924,
+            0.04941477185042,
+            0.017163082765764
+          ],
+          "y_unit": "V"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "entropic_coefficient",
+        "quantity": {
+          "value": 0.0,
+          "unit": "V/K"
+        },
+        "provenance_class": "fitted"
+      },
+      {
+        "parameter": "reaction_rate_constant",
+        "quantity": {
+          "value": 0.0015391758232510362,
+          "unit": "mol.m-2.s-1"
+        },
+        "provenance_class": "fitted"
+      }
+    ],
+    "model_context": {
+      "tool": "BPX",
+      "name": "HYDRA graphite/LNMO validation parameter set",
+      "model": "DFN",
+      "version": "1.0"
+    },
+    "annex": {
+      "Negative electrode total solid volume fraction": 0.5993469682767011,
+      "Positive electrode total solid volume fraction": 0.6733612095489311,
+      "Negative electrode active material share within solids": 0.9378330373001775,
+      "Positive electrode active material share within solids": 0.8313253012048192,
+      "Negative electrode active material volume fraction": 0.5620873876555917,
+      "Positive electrode active material volume fraction": 0.5597822103479065,
+      "Negative electrode inactive solid volume fraction": 0.037259580621109345,
+      "Positive electrode inactive solid volume fraction": 0.11357899920102454,
+      "Open-circuit voltage at 0% SOC [V]": 2.6530625217791886,
+      "Open-circuit voltage at 100% SOC [V]": 4.875875807224855,
+      "BattMo negative electrode volumetric surface area [m-1]": 1540000.0,
+      "BattMo positive electrode volumetric surface area [m-1]": 222275.44206886273,
+      "BPX negative electrode surface area per unit volume [m-1]": 103451.66643967947,
+      "BPX positive electrode surface area per unit volume [m-1]": 187846.37931137803,
+      "BattMo negative electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.05,
+          0.1,
+          0.15,
+          0.2,
+          0.25,
+          0.3,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          0.614180704504965,
+          1.9504887954224202,
+          2.85609207829683,
+          2.8777767177512197,
+          3.5783379705522402,
+          3.75161042355194,
+          3.99042436699301,
+          3.8588812440632503,
+          3.9107721646939897,
+          3.96434407803536,
+          4.02950087744402,
+          4.19105848461824,
+          5.04918252889569,
+          4.70739079700868,
+          4.68047272216724,
+          4.67314920246704,
+          4.71058023371167,
+          4.76839651936555,
+          4.81773917337519,
+          4.86312366426169,
+          4.97030884387319,
+          5.06113895934315,
+          5.526651377501239
+        ]
+      },
+      "BattMo positive electrode exchange-current density j0 [A.m-2]": {
+        "x": [
+          0.0,
+          0.025,
+          0.049999999999999,
+          0.099999999999999,
+          0.149999999999999,
+          0.199999999999999,
+          0.249999999999999,
+          0.299999999999999,
+          0.35,
+          0.4,
+          0.45,
+          0.5,
+          0.55,
+          0.6,
+          0.65,
+          0.7,
+          0.75,
+          0.8,
+          0.85,
+          0.9,
+          0.95,
+          0.975,
+          1.0
+        ],
+        "y": [
+          1.46947187111,
+          1.43560314165,
+          0.96574397799,
+          0.33828337612,
+          2.62322367243,
+          3.95526276763,
+          4.3969851987599995,
+          4.46259692946,
+          4.32657905944,
+          4.15872886922,
+          3.92415831529,
+          3.67849409319,
+          3.91915976034,
+          3.95092933335,
+          3.90933653701,
+          3.8087900021300003,
+          3.77009511009,
+          3.59439847188,
+          3.44566811475,
+          3.15637394329,
+          2.8640829203600005,
+          2.10757234065,
+          4.03310274857
+        ]
+      },
+      "BattMo negative electrode BPX-fitted reaction rate constant [mol.m-2.s-1]": 0.0015391758232510362
+    },
+    "description": "BPX export of the BattMo parameter set used in runValidation.m. Both electrodes: kinetics are approximated by a single BPX reaction-rate constant fitted to each BattMo j0(soc) table at nominal electrolyte concentration. Geometric surface areas preserve active volume; kinetic constants absorb area scaling. OCP tables are linearly extrapolated to stoichiometry endpoints. Geometry, nominal capacity and upper cutoff are supplementary inputs. Source: IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.battmo.json. Geometry: h0b-geometry-3d.json.",
+    "set_id": "https://w3id.org/battinfo/spec/tt9p-19mr-ek6v-sz6q"
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1791404216,
+    "battinfo_version": "0.7.0",
+    "source_url": "https://raw.githubusercontent.com/BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication/51092701d66b8dcaa88febaa132ff877f7ebc6db/parameters/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+    "citation": "https://arxiv.org/abs/2601.10507"
+  },
+  "notes": [
+    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0. The file is the BPX export in BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication at commit 5109270; that repository's GPL-3.0-or-later licence covers its code.",
+    "Calibrated against the HYDRA0 measurements published at https://doi.org/10.5281/zenodo.18256663 (CC-BY-4.0). The file's Validation section holds five discharge-rate curves from that campaign."
+  ],
+  "license": "cc-by-4.0"
+}

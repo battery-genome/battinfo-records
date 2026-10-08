@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.2.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/fjh3-sbc2-k87w-ae5n",
+    "short_id": "fjh3sb",
+    "identifier": "cell-spec:fjh3-sbc2-k87w-ae5n",
+    "name": "HYDRA0 1 Ah graphite|LNMO prototype pouch cell",
+    "model": "IMP5-70-120-H0B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "HYDRA project (Horizon Europe)"
+    },
+    "cell_format": "pouch",
+    "chemistry": "li-ion",
+    "positive_electrode_basis": "LNMO",
+    "negative_electrode_basis": "graphite",
+    "rechargeable": true
+  },
+  "properties": {
+    "electrode_area": {
+      "value": 25.0,
+      "unit": "cm2"
+    },
+    "external_surface_area": {
+      "value": 57.52,
+      "unit": "cm2"
+    },
+    "volume": {
+      "value": 9.4,
+      "unit": "cm3"
+    },
+    "discharging_cutoff_voltage": {
+      "value": 3.5,
+      "unit": "V"
+    },
+    "charging_cutoff_voltage": {
+      "value": 4.9,
+      "unit": "V"
+    },
+    "nominal_capacity": {
+      "value": 1.0,
+      "unit": "Ah"
+    }
+  },
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1791404098,
+    "battinfo_version": "0.7.0",
+    "source_url": "https://raw.githubusercontent.com/BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication/51092701d66b8dcaa88febaa132ff877f7ebc6db/parameters/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+    "citation": "https://arxiv.org/abs/2601.10507"
+  },
+  "license": "cc-by-4.0",
+  "notes": [
+    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0. The file is the BPX export in BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication at commit 5109270; that repository's GPL-3.0-or-later licence covers its code."
+  ]
+}
