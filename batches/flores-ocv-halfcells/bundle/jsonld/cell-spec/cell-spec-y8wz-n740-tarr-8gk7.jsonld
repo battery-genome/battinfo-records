@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/lnmo-nmp-2-cell-spec"
     }
   ],
-  "schema:name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
+  "schema:name": "LNMO NMP-2 cell spec",
   "schema:model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7#described",
-    "skos:prefLabel": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
+    "skos:prefLabel": "LNMO NMP-2 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+    "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

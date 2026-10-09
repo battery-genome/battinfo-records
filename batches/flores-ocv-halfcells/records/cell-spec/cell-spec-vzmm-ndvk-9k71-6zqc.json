@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
     "short_id": "vzmmnd",
     "identifier": "cell-spec:vzmm-ndvk-9k71-6zqc",
-    "name": "SINTEF NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+    "name": "NMC111 NMP-1 cell spec",
     "handle": "flores-ocv/nmc111-nmp-1-cell-spec",
     "model": "NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7",

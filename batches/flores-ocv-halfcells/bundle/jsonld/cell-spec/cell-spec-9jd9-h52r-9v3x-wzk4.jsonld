@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/lfp-nmp-1-cell-spec"
     }
   ],
-  "schema:name": "SINTEF LFP (LiFePO4) R2032 half-cell (gelon)",
+  "schema:name": "LFP NMP-1 cell spec",
   "schema:model": "LFP (LiFePO4) R2032 half-cell (gelon)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4#described",
-    "skos:prefLabel": "SINTEF LFP (LiFePO4) R2032 half-cell (gelon)",
+    "skos:prefLabel": "LFP NMP-1 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+    "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

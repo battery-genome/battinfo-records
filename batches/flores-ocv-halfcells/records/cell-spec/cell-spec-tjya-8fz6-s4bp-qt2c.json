@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c",
     "short_id": "tjya8f",
     "identifier": "cell-spec:tjya-8fz6-s4bp-qt2c",
-    "name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
+    "name": "LNMO AQ-1 cell spec",
     "handle": "flores-ocv/lnmo-aq-1-cell-spec",
     "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk",

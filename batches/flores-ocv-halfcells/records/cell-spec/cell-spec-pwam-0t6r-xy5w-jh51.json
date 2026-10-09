@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
     "short_id": "pwam0t",
     "identifier": "cell-spec:pwam-0t6r-xy5w-jh51",
-    "name": "SINTEF Graphite R2032 half-cell (intelligent)",
+    "name": "Graphite AQ-1 cell spec",
     "handle": "flores-ocv/graphite-aq-1-cell-spec",
     "model": "Graphite R2032 half-cell (intelligent)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",

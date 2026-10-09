@@ -27203,7 +27203,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/1kt7-7141-vpj2-pqv0",
       "schema:identifier": "1kt7-7141-vpj2-pqv0",
-      "schema:name": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-2)",
+      "schema:name": "Silicon-graphite AQ-2 cell spec",
       "schema:model": "Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-2)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27220,7 +27220,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/1kt7-7141-vpj2-pqv0#described",
-        "skos:prefLabel": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-2)",
+        "skos:prefLabel": "Silicon-graphite AQ-2 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27324,7 +27324,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27336,7 +27336,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp",
       "schema:identifier": "6wqv-x8m4-15cx-tyqp",
-      "schema:name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)",
+      "schema:name": "LNMO NMP-1 cell spec",
       "schema:model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27353,7 +27353,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp#described",
-        "skos:prefLabel": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)",
+        "skos:prefLabel": "LNMO NMP-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27457,7 +27457,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27469,7 +27469,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk",
       "schema:identifier": "93qe-akpz-4zed-ymfk",
-      "schema:name": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent1)",
+      "schema:name": "Silicon-graphite AQ-1 cell spec",
       "schema:model": "Silicon-graphite composite R2032 half-cell (intelligent1)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27486,7 +27486,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk#described",
-        "skos:prefLabel": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent1)",
+        "skos:prefLabel": "Silicon-graphite AQ-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27590,7 +27590,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27602,7 +27602,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
       "schema:identifier": "9jd9-h52r-9v3x-wzk4",
-      "schema:name": "SINTEF LFP (LiFePO4) R2032 half-cell (gelon)",
+      "schema:name": "LFP NMP-1 cell spec",
       "schema:model": "LFP (LiFePO4) R2032 half-cell (gelon)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27619,7 +27619,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4#described",
-        "skos:prefLabel": "SINTEF LFP (LiFePO4) R2032 half-cell (gelon)",
+        "skos:prefLabel": "LFP NMP-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27723,7 +27723,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27735,7 +27735,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3",
       "schema:identifier": "frtx-xz2n-r4y7-nqj3",
-      "schema:name": "SINTEF NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
+      "schema:name": "NMC532 NMP-1 cell spec",
       "schema:model": "NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27752,7 +27752,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3#described",
-        "skos:prefLabel": "SINTEF NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
+        "skos:prefLabel": "NMC532 NMP-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27856,7 +27856,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -27868,7 +27868,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
       "schema:identifier": "pwam-0t6r-xy5w-jh51",
-      "schema:name": "SINTEF Graphite R2032 half-cell (intelligent)",
+      "schema:name": "Graphite AQ-1 cell spec",
       "schema:model": "Graphite R2032 half-cell (intelligent)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -27885,7 +27885,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51#described",
-        "skos:prefLabel": "SINTEF Graphite R2032 half-cell (intelligent)",
+        "skos:prefLabel": "Graphite AQ-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -27992,7 +27992,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28004,7 +28004,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
       "schema:identifier": "rbh3-ne6c-631a-3e3y",
-      "schema:name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
+      "schema:name": "LNMO AQ-2 cell spec",
       "schema:model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28021,7 +28021,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y#described",
-        "skos:prefLabel": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
+        "skos:prefLabel": "LNMO AQ-2 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28125,7 +28125,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28137,7 +28137,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c",
       "schema:identifier": "tjya-8fz6-s4bp-qt2c",
-      "schema:name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
+      "schema:name": "LNMO AQ-1 cell spec",
       "schema:model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28154,7 +28154,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c#described",
-        "skos:prefLabel": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
+        "skos:prefLabel": "LNMO AQ-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28258,7 +28258,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28270,7 +28270,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
       "schema:identifier": "vzmm-ndvk-9k71-6zqc",
-      "schema:name": "SINTEF NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+      "schema:name": "NMC111 NMP-1 cell spec",
       "schema:model": "NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28287,7 +28287,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc#described",
-        "skos:prefLabel": "SINTEF NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+        "skos:prefLabel": "NMC111 NMP-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28391,7 +28391,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28403,7 +28403,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4",
       "schema:identifier": "whvd-e6g6-zd72-n9f4",
-      "schema:name": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-3)",
+      "schema:name": "Silicon-graphite AQ-3 cell spec",
       "schema:model": "Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-3)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28420,7 +28420,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4#described",
-        "skos:prefLabel": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-3)",
+        "skos:prefLabel": "Silicon-graphite AQ-3 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28524,7 +28524,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28536,7 +28536,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
       "schema:identifier": "y8wz-n740-tarr-8gk7",
-      "schema:name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
+      "schema:name": "LNMO NMP-2 cell spec",
       "schema:model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28553,7 +28553,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7#described",
-        "skos:prefLabel": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
+        "skos:prefLabel": "LNMO NMP-2 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28657,7 +28657,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },
@@ -28669,7 +28669,7 @@
       ],
       "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
       "schema:identifier": "zqwq-ted6-cwb2-0d42",
-      "schema:name": "SINTEF Silicon R2032 half-cell (intelligent1)",
+      "schema:name": "Silicon AQ-1 cell spec",
       "schema:model": "Silicon R2032 half-cell (intelligent1)",
       "schema:manufacturer": {
         "@type": "schema:Organization",
@@ -28686,7 +28686,7 @@
           "SecondaryBattery"
         ],
         "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42#described",
-        "skos:prefLabel": "SINTEF Silicon R2032 half-cell (intelligent1)",
+        "skos:prefLabel": "Silicon AQ-1 cell spec",
         "hasProperty": [
           {
             "@type": [
@@ -28793,7 +28793,7 @@
       "dcterms:source": {
         "@type": "prov:Entity",
         "dcterms:type": "datasheet",
-        "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+        "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
         "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
       }
     },

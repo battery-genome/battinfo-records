@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/silicon-graphite-aq-1-cell-spec"
     }
   ],
-  "schema:name": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent1)",
+  "schema:name": "Silicon-graphite AQ-1 cell spec",
   "schema:model": "Silicon-graphite composite R2032 half-cell (intelligent1)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk#described",
-    "skos:prefLabel": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent1)",
+    "skos:prefLabel": "Silicon-graphite AQ-1 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+    "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

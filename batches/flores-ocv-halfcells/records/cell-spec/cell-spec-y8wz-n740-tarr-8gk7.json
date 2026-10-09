@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
     "short_id": "y8wzn7",
     "identifier": "cell-spec:y8wz-n740-tarr-8gk7",
-    "name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
+    "name": "LNMO NMP-2 cell spec",
     "handle": "flores-ocv/lnmo-nmp-2-cell-spec",
     "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",

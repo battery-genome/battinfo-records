@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
     "short_id": "9jd9h5",
     "identifier": "cell-spec:9jd9-h52r-9v3x-wzk4",
-    "name": "SINTEF LFP (LiFePO4) R2032 half-cell (gelon)",
+    "name": "LFP NMP-1 cell spec",
     "handle": "flores-ocv/lfp-nmp-1-cell-spec",
     "model": "LFP (LiFePO4) R2032 half-cell (gelon)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6",

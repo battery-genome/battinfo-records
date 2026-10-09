@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
     "short_id": "rbh3ne",
     "identifier": "cell-spec:rbh3-ne6c-631a-3e3y",
-    "name": "SINTEF LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
+    "name": "LNMO AQ-2 cell spec",
     "handle": "flores-ocv/lnmo-aq-2-cell-spec",
     "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",

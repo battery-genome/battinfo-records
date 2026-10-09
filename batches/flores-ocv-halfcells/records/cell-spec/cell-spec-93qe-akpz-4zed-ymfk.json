@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/93qe-akpz-4zed-ymfk",
     "short_id": "93qeak",
     "identifier": "cell-spec:93qe-akpz-4zed-ymfk",
-    "name": "SINTEF Silicon-graphite composite R2032 half-cell (intelligent1)",
+    "name": "Silicon-graphite AQ-1 cell spec",
     "handle": "flores-ocv/silicon-graphite-aq-1-cell-spec",
     "model": "Silicon-graphite composite R2032 half-cell (intelligent1)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791530809,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy",
