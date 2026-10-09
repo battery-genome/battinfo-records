@@ -247,11 +247,18 @@ def load_corpus(organization_path: Path) -> tuple[list[Record], Record]:
 
 
 def corpus_fingerprint(records: list[Record], organization: Record) -> str:
-    """Content hash of the corpus, independent of line endings and key order."""
+    """Hash of what this driver submits: each record's content and the title it is sent under.
+
+    Independent of line endings and key order. The title is part of the submission, and the
+    registry keys a submission by (record, source_version): a title change under an unchanged
+    source_version is refused as "same identity, different content", so the version has to
+    change with the titles too. Re-submitting unchanged content under a new version updates
+    the registry title and version label without minting a new record version."""
     digest = hashlib.sha256()
     for record in [organization, *records]:
         digest.update(record.iri.encode())
         digest.update(json.dumps(record.raw, sort_keys=True, ensure_ascii=False).encode())
+        digest.update(record_title(record).encode())
     return digest.hexdigest()[:10]
 
 
