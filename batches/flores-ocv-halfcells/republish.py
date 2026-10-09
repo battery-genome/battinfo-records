@@ -316,6 +316,10 @@ def build_graph(records: list[Record]) -> Graph:
 def record_title(record: Record) -> str:
     body = record.body
     if record.type.resource_type == "cell_spec":
+        # The record's own title wins; "<manufacturer> <model>" is only the fallback for a
+        # cell spec without one (what battinfo.ws.submit() used to send for every cell spec).
+        if _text(body.get("name")):
+            return _text(body["name"])[:255]
         manufacturer = body.get("manufacturer")
         name = manufacturer.get("name") if isinstance(manufacturer, dict) else manufacturer
         title = f"{_text(name)} {_text(body.get('model'))}".strip()
@@ -853,8 +857,14 @@ class Driver:
         return local_id, None
 
     def is_current(self, record: Record) -> bool:
+        """Published under this corpus version AND under the title this driver sends.
+
+        The title is not part of the content hash, so a record whose registry title is
+        stale (a cell spec once titled "<manufacturer> <model>") is resubmitted; the
+        registry updates the title of an unchanged record without minting a version."""
         row = self.index().by_iri.get(record.iri)
-        return bool(row and row.get("status") == "published" and row.get("source_version") == self.source_version)
+        return bool(row and row.get("status") == "published" and row.get("source_version") == self.source_version
+                    and row.get("title") == record_title(record))
 
     # -- step 0 --------------------------------------------------------------
 
