@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3",
-  "schema:name": "LNMO NMP-1 electrode ee5c27",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode ee5c27",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/wr5p-wtf6-cbw7-47wz",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev",
     "short_id": "wr5pwt",
-    "name": "LNMO NMP-1 electrode f9bf3e",
+    "name": "Flores 2026 LNMO NMP-1 electrode f9bf3e",
     "handle": "flores-ocv/lnmo-nmp-1-f9bf3e-electrode",
     "batch_id": "LNMO-NMP-1",
     "count": 1,
@@ -37,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

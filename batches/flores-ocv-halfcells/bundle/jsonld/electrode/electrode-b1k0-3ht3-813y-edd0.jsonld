@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/b1k0-3ht3-813y-edd0",
-  "schema:name": "Silicon AQ-1 electrode 6d543b",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 6d543b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },

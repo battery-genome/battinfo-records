@@ -818,15 +818,15 @@
   },
   "@type": "http://www.w3.org/ns/dcat#Dataset",
   "@id": "https://w3id.org/battinfo/dataset/h63y-vnek-g4r1-5kvx",
-  "dcterms:title": "Silicon-graphite AQ-1 cell e43ac0 p-OCV hold dataset",
+  "dcterms:title": "Flores 2026 silicon-graphite AQ-1 cell e43ac0 p-OCV hold dataset",
   "dcat:inSeries": {
     "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
   },
   "schema:isPartOf": {
     "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
   },
-  "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell e43ac0, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-e43ac0__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
-  "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-1 coin cell e43ac0, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-e43ac0__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "dcterms:description": "Half-cell OCP electrochemical time series for SiGr-AQ-1 coin cell e43ac0, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-e43ac0__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Half-cell OCP electrochemical time series for SiGr-AQ-1 coin cell e43ac0, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent1-e43ac0__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
     "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   },
@@ -834,19 +834,19 @@
     "@id": "https://doi.org/10.5281/zenodo.20086298"
   },
   "dcat:keyword": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "silicon-graphite"
   ],
   "schema:keywords": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "silicon-graphite"
   ],
   "dcterms:created": "2026-05-08T00:00:00Z",
@@ -963,7 +963,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-10-08T08:12:31+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:24:14+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

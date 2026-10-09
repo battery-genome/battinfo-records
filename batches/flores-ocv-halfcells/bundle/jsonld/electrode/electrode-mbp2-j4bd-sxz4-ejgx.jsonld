@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/mbp2-j4bd-sxz4-ejgx",
-  "schema:name": "LNMO NMP-1 electrode 32a68c",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode 32a68c",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

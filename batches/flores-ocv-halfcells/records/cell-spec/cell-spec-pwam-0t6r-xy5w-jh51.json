@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
     "short_id": "pwam0t",
     "identifier": "cell-spec:pwam-0t6r-xy5w-jh51",
-    "name": "Graphite AQ-1 cell spec",
+    "name": "Flores 2026 graphite AQ-1 cell spec",
     "handle": "flores-ocv/graphite-aq-1-cell-spec",
     "model": "Graphite R2032 half-cell (intelligent)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791530809,
+    "retrieved_at": 1791534181,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8",
@@ -85,7 +85,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
     "Half-cell voltage window vs Li/Li+: 0.01-1.00 V.",
     "Public electrode label: Gr-AQ-1.",
-    "Electrode design realizing this spec: Graphite AQ-1 electrode spec.",
+    "Electrode design realizing this spec: Flores 2026 graphite AQ-1 electrode spec.",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

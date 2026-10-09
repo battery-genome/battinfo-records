@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/sya7-k72w-5h7q-4t5q",
-  "schema:name": "LNMO AQ-2 cell fb8cf6 GITT test",
+  "schema:name": "Flores 2026 LNMO AQ-2 cell fb8cf6 GITT test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/ea36-gsfc-3yhk-7nkt"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

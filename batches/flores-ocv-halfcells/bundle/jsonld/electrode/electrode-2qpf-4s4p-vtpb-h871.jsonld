@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/2qpf-4s4p-vtpb-h871",
-  "schema:name": "NMC532 NMP-1 electrode f5dd84",
+  "schema:name": "Flores 2026 NMC532 NMP-1 electrode f5dd84",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
   },

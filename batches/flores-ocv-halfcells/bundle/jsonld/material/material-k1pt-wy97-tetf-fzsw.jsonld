@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/k1pt-wy97-tetf-fzsw",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Graphite material lot",
+  "schema:name": "Flores 2026 graphite material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t"
   },

@@ -5,7 +5,7 @@
     "short_id": "zgjxb4",
     "cell_spec_id": "https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/rmsq-pcpb-e8f1-bht6",
-    "name": "LNMO NMP-2 cell dd8a76",
+    "name": "Flores 2026 LNMO NMP-2 cell dd8a76",
     "handle": "flores-ocv/lnmo-nmp-2-dd8a76-cell",
     "serial_number": "dd8a76",
     "batch_id": "LNMO-NMP-2",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

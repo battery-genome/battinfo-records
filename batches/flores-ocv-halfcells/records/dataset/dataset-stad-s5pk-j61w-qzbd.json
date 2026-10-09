@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/stad-s5pk-j61w-qzbd",
     "short_id": "stads5",
     "identifier": "dataset:stad-s5pk-j61w-qzbd",
-    "name": "Graphite AQ-1 cell 063b77 GITT dataset",
+    "name": "Flores 2026 graphite AQ-1 cell 063b77 GITT dataset",
     "handle": "flores-ocv/graphite-aq-1-063b77-gitt-dataset",
-    "description": "Half-cell OCV electrochemical time series for Gr-AQ-1 coin cell 063b77, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-graphite-R2032-intelligent-063b77__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for Gr-AQ-1 coin cell 063b77, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-graphite-R2032-intelligent-063b77__20250514__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "graphite"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447150,
+    "retrieved_at": 1791534253,
     "battinfo_version": "0.8.0"
   },
   "funding": {

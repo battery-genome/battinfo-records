@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/dk27-kzy2-r35h-mwgq",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Silicon-graphite AQ-2 material lot",
+  "schema:name": "Flores 2026 silicon-graphite AQ-2 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
   },

@@ -5,7 +5,7 @@
     "short_id": "2ex9nb",
     "cell_spec_id": "https://w3id.org/battinfo/spec/pwam-0t6r-xy5w-jh51",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/erk4-6fzn-x4xw-qzbn",
-    "name": "Graphite AQ-1 cell a29c1f",
+    "name": "Flores 2026 graphite AQ-1 cell a29c1f",
     "handle": "flores-ocv/graphite-aq-1-a29c1f-cell",
     "serial_number": "a29c1f",
     "batch_id": "Gr-AQ-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

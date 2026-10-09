@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/0tj0-r80k-anx0-28fj",
     "short_id": "0tj0r8",
     "identifier": "test:0tj0-r80k-anx0-28fj",
-    "name": "NMC111 NMP-1 cell e5a00e GITT test",
+    "name": "Flores 2026 NMC111 NMP-1 cell e5a00e GITT test",
     "handle": "flores-ocv/nmc111-nmp-1-e5a00e-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/1dm8-xf5g-h0ha-8jxq",
-    "description": "GITT half-cell OCV measurement on NMC111-NMP-1 coin cell e5a00e at room temperature.",
+    "description": "GITT half-cell OCP measurement on NMC111-NMP-1 coin cell e5a00e at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
     "status": "completed",
     "conditions": {
@@ -19,7 +19,7 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT test spec",
+    "protocol_name": "Flores 2026 GITT test spec",
     "started_at": 1760486400,
     "conformance": {
       "status": "non-conformant",
@@ -34,7 +34,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

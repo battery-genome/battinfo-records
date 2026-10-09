@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/silicon-graphite-aq-3-cell-spec"
     }
   ],
-  "schema:name": "Silicon-graphite AQ-3 cell spec",
+  "schema:name": "Flores 2026 silicon-graphite AQ-3 cell spec",
   "schema:model": "Silicon-graphite composite R2032 half-cell (intelligent2, SiGr-AQ-3)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4#described",
-    "skos:prefLabel": "Silicon-graphite AQ-3 cell spec",
+    "skos:prefLabel": "Flores 2026 silicon-graphite AQ-3 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:01+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

@@ -14,14 +14,14 @@
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
-  "schema:name": "Silicon-graphite material spec",
+  "schema:name": "Flores 2026 silicon-graphite material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_3f061928_e90f_4414_9308_d4c843ebb79a"
   },
   "isDescriptionFor": {
     "@type": "SiliconGraphite",
     "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa#described",
-    "skos:prefLabel": "Silicon-graphite material spec"
+    "skos:prefLabel": "Flores 2026 silicon-graphite material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",

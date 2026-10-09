@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/px8n-3d6r-b1z0-n6q1",
-  "schema:name": "Silicon AQ-1 cell 6d543b GITT hold test",
+  "schema:name": "Flores 2026 silicon AQ-1 cell 6d543b GITT hold test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT hold test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT hold test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/vczh-m6zr-9w11-xwqj"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

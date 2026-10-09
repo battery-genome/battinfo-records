@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/a68m-fztn-790r-vd0y",
-  "schema:name": "LNMO AQ-2 electrode 0820fa",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode 0820fa",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },

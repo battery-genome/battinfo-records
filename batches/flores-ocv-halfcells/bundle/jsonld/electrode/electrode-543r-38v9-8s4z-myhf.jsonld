@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/543r-38v9-8s4z-myhf",
-  "schema:name": "LNMO AQ-1 electrode 21a280",
+  "schema:name": "Flores 2026 LNMO AQ-1 electrode 21a280",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
   },

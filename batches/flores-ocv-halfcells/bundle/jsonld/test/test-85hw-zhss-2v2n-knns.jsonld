@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/85hw-zhss-2v2n-knns",
-  "schema:name": "LNMO NMP-2 cell e5b4f3 GITT hold test",
+  "schema:name": "Flores 2026 LNMO NMP-2 cell e5b4f3 GITT hold test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT hold test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT hold test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/125q-6168-1g23-wzk1"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

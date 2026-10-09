@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/m4fa-9333-h899-m4sx",
-  "schema:name": "Silicon AQ-1 electrode 2c4b6a",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 2c4b6a",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },

@@ -3,7 +3,7 @@
   "electrode_spec": {
     "id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
     "short_id": "93f0n5",
-    "name": "LNMO NMP-2 electrode spec",
+    "name": "Flores 2026 LNMO NMP-2 electrode spec",
     "handle": "flores-ocv/lnmo-nmp-2-electrode-spec",
     "active_material_kind": "lnmo",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
@@ -65,7 +65,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534159,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

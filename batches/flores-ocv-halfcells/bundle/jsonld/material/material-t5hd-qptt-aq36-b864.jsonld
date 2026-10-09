@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/t5hd-qptt-aq36-b864",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "LFP material lot",
+  "schema:name": "Flores 2026 LFP material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh"
   },

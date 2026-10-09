@@ -16,7 +16,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
       "schema:value": "flores-ocv/silicon-aq-1-cell-spec"
     }
   ],
-  "schema:name": "Silicon AQ-1 cell spec",
+  "schema:name": "Flores 2026 silicon AQ-1 cell spec",
   "schema:model": "Silicon R2032 half-cell (intelligent1)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -33,7 +33,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42#described",
-    "skos:prefLabel": "Silicon AQ-1 cell spec",
+    "skos:prefLabel": "Flores 2026 silicon AQ-1 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -140,7 +140,7 @@ SPOT CHECK 1a - cell spec (Si-AQ): half-cell device typing; electrodes named by 
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-09T07:26:49+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:01+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {
@@ -384,11 +384,11 @@ SPOT CHECK 1b - that electrode spec: chemistry + polarity stacked @type, coating
       },
       "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label Si-AQ-1 and the Zenodo batch table."
     },
-    "skos:prefLabel": "Silicon AQ-1 electrode spec",
+    "skos:prefLabel": "Flores 2026 silicon AQ-1 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz#described"
   },
   "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
-  "schema:name": "Silicon AQ-1 electrode spec",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode spec",
   "schema:description": "Silicon (aqueous processed). Electrode design of the IntelLiGent project batch 1 (SINTEF), published under the label Si-AQ-1. Active-material type as stated in metadata.csv: \"Silicon\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -584,7 +584,7 @@ SPOT CHECK 1c - the electrode batch Si-AQ-1: isVariantOf its design + the public
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/16jn-76y3-8mg4-kyyv",
-  "schema:name": "Silicon AQ-1 electrode 70cc5b",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 70cc5b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },
@@ -719,7 +719,7 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",
-  "schema:name": "LNMO material spec",
+  "schema:name": "Flores 2026 LNMO material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478"
   },
@@ -743,7 +743,7 @@ SPOT CHECK 2a - the LNMO material spec (the POWDER): EMMO class, chemical-substa
       "schema:unitText": "mAh/g"
     },
     "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m#described",
-    "skos:prefLabel": "LNMO material spec"
+    "skos:prefLabel": "Flores 2026 LNMO material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -997,11 +997,11 @@ SPOT CHECK 2b - one powder, two routes (aqueous): hasActiveMaterial -> the powde
       },
       "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label LNMO-AQ-2 and the Zenodo batch table."
     },
-    "skos:prefLabel": "LNMO AQ-2 electrode spec",
+    "skos:prefLabel": "Flores 2026 LNMO AQ-2 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs#described"
   },
   "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
-  "schema:name": "LNMO AQ-2 electrode spec",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode spec",
   "schema:description": "LiNi0.5Mn1.5O4 (aqueous processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-AQ-2. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -1259,11 +1259,11 @@ SPOT CHECK 2c - the same powder, NMP route: a different IRI for a different desi
       },
       "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LNMO-NMP-2 and the Zenodo batch table."
     },
-    "skos:prefLabel": "LNMO NMP-2 electrode spec",
+    "skos:prefLabel": "Flores 2026 LNMO NMP-2 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh#described"
   },
   "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh",
-  "schema:name": "LNMO NMP-2 electrode spec",
+  "schema:name": "Flores 2026 LNMO NMP-2 electrode spec",
   "schema:description": "LiNi0.5Mn1.5O4 (organic solvent processed); high Mn/Ni disorder spinel. Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label LNMO-NMP-2. Active-material type as stated in metadata.csv: \"LNMO\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",
@@ -1393,22 +1393,22 @@ SPOT CHECK 2e - D1: cell spec -> electrode spec -> powder, for every LNMO cell s
 ==============================================================================
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-NMP-1)
   cell spec      https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp
-  -> electrode   https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev  (LNMO NMP-1 electrode spec)
+  -> electrode   https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev  (Flores 2026 LNMO NMP-1 electrode spec)
   -> batch       https://w3id.org/battinfo/electrode/4s88-wdb7-hc6s-2sx3  (LNMO-NMP-1)
   -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-AQ-2)
   cell spec      https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y
-  -> electrode   https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs  (LNMO AQ-2 electrode spec)
+  -> electrode   https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs  (Flores 2026 LNMO AQ-2 electrode spec)
   -> batch       https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y  (LNMO-AQ-2)
   -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)
   cell spec      https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c
-  -> electrode   https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk  (LNMO AQ-1 electrode spec)
+  -> electrode   https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk  (Flores 2026 LNMO AQ-1 electrode spec)
   -> batch       https://w3id.org/battinfo/electrode/1yjg-y6wm-r5g6-9azb  (LNMO-AQ-1)
   -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent2, LNMO-NMP-2)
   cell spec      https://w3id.org/battinfo/spec/y8wz-n740-tarr-8gk7
-  -> electrode   https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh  (LNMO NMP-2 electrode spec)
+  -> electrode   https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh  (Flores 2026 LNMO NMP-2 electrode spec)
   -> batch       https://w3id.org/battinfo/electrode/0d9z-1b2m-9vcw-887z  (LNMO-NMP-2)
   -> powder      https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m
 
@@ -1422,7 +1422,7 @@ SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
     "GalvanostaticIntermittentTitrationTechnique"
   ],
   "@id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
-  "schema:name": "GITT test spec",
+  "schema:name": "Flores 2026 GITT test spec",
   "schema:additionalType": "gitt",
   "schema:description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
   "hasTask": [
@@ -1540,7 +1540,7 @@ SPOT CHECK 3 - test protocol GITT: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:identifier": {
@@ -1657,7 +1657,7 @@ SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
     "PseudoOpenCircuitVoltageMethod"
   ],
   "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
-  "schema:name": "p-OCV test spec",
+  "schema:name": "Flores 2026 p-OCV test spec",
   "schema:additionalType": "quasi_ocv",
   "schema:description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
   "hasTask": [
@@ -1735,7 +1735,7 @@ SPOT CHECK 3 - test protocol p-OCV: typed EMMO method + process graph
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:identifier": {
@@ -1848,15 +1848,15 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
 {
   "@type": "http://www.w3.org/ns/dcat#Dataset",
   "@id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
-  "dcterms:title": "Silicon-graphite AQ-3 cell 655454 p-OCV hold dataset",
+  "dcterms:title": "Flores 2026 silicon-graphite AQ-3 cell 655454 p-OCV hold dataset",
   "dcat:inSeries": {
     "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
   },
   "schema:isPartOf": {
     "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s"
   },
-  "dcterms:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
-  "schema:description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "dcterms:description": "Half-cell OCP electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+  "schema:description": "Half-cell OCP electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
   "dcterms:license": {
     "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   },
@@ -1864,19 +1864,19 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "@id": "https://doi.org/10.5281/zenodo.20086298"
   },
   "dcat:keyword": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "silicon-graphite"
   ],
   "schema:keywords": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "silicon-graphite"
   ],
   "dcterms:created": "2026-05-08T00:00:00Z",
@@ -1993,7 +1993,7 @@ SPOT CHECK 4a - dataset JSON-LD: dcat distribution + spdx checksum (md5, typed a
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-10-08T08:12:33+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:24:14+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",
@@ -2105,19 +2105,19 @@ SPOT CHECK 4b - the same dataset's canonical record
     "id": "https://w3id.org/battinfo/dataset/061x-x0df-cmjt-ck28",
     "short_id": "061xx0",
     "identifier": "dataset:061x-x0df-cmjt-ck28",
-    "name": "Silicon-graphite AQ-3 cell 655454 p-OCV hold dataset",
+    "name": "Flores 2026 silicon-graphite AQ-3 cell 655454 p-OCV hold dataset",
     "handle": "flores-ocv/silicon-graphite-aq-3-655454-p-ocv-hold-dataset",
-    "description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for SiGr-AQ-3 coin cell 655454, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-655454__20250514__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "silicon-graphite"
     ],
     "citations": [
@@ -2214,7 +2214,7 @@ SPOT CHECK 4b - the same dataset's canonical record
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447153,
+    "retrieved_at": 1791534254,
     "battinfo_version": "0.8.0"
   },
   "funding": {

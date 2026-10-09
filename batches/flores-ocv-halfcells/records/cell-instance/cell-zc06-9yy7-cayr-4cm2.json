@@ -5,7 +5,7 @@
     "short_id": "zc069y",
     "cell_spec_id": "https://w3id.org/battinfo/spec/9jd9-h52r-9v3x-wzk4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/3vkc-jz8e-m092-3e7p",
-    "name": "LFP NMP-1 cell 178617",
+    "name": "Flores 2026 LFP NMP-1 cell 178617",
     "handle": "flores-ocv/lfp-nmp-1-178617-cell",
     "serial_number": "178617",
     "batch_id": "LFP-NMP-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

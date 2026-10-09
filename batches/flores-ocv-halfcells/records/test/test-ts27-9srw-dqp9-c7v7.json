@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/ts27-9srw-dqp9-c7v7",
     "short_id": "ts279s",
     "identifier": "test:ts27-9srw-dqp9-c7v7",
-    "name": "Silicon-graphite AQ-2 cell 61a57a GITT test",
+    "name": "Flores 2026 silicon-graphite AQ-2 cell 61a57a GITT test",
     "handle": "flores-ocv/silicon-graphite-aq-2-61a57a-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/z4fe-phh4-zbfx-0vap",
-    "description": "GITT half-cell OCV measurement on SiGr-AQ-2 coin cell 61a57a at room temperature.",
+    "description": "GITT half-cell OCP measurement on SiGr-AQ-2 coin cell 61a57a at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
     "status": "completed",
     "conditions": {
@@ -19,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT test spec",
+    "protocol_name": "Flores 2026 GITT test spec",
     "started_at": 1748822400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

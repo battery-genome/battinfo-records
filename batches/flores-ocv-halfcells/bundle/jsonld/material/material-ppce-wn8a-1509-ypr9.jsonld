@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/ppce-wn8a-1509-ypr9",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "NMC111 material lot",
+  "schema:name": "Flores 2026 NMC111 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/j17h-6vp8-jcat-pmq1"
   },

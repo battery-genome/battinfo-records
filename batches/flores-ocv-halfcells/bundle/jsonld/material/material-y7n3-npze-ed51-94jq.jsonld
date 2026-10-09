@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/y7n3-npze-ed51-94jq",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "LNMO material lot",
+  "schema:name": "Flores 2026 LNMO material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m"
   },

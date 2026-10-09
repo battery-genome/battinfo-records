@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/sya7-k72w-5h7q-4t5q",
     "short_id": "sya7k7",
     "identifier": "test:sya7-k72w-5h7q-4t5q",
-    "name": "LNMO AQ-2 cell fb8cf6 GITT test",
+    "name": "Flores 2026 LNMO AQ-2 cell fb8cf6 GITT test",
     "handle": "flores-ocv/lnmo-aq-2-fb8cf6-gitt-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/ea36-gsfc-3yhk-7nkt",
-    "description": "GITT half-cell OCV measurement on LNMO-AQ-2 coin cell fb8cf6 at room temperature.",
+    "description": "GITT half-cell OCP measurement on LNMO-AQ-2 coin cell fb8cf6 at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
     "status": "completed",
     "conditions": {
@@ -19,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT test spec",
+    "protocol_name": "Flores 2026 GITT test spec",
     "started_at": 1745452800
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

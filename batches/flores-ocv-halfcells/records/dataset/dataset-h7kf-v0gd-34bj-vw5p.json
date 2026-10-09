@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/h7kf-v0gd-34bj-vw5p",
     "short_id": "h7kfv0",
     "identifier": "dataset:h7kf-v0gd-34bj-vw5p",
-    "name": "LNMO NMP-2 cell dd8a76 GITT hold dataset",
+    "name": "Flores 2026 LNMO NMP-2 cell dd8a76 GITT hold dataset",
     "handle": "flores-ocv/lnmo-nmp-2-dd8a76-gitt-hold-dataset",
-    "description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Known issue: Anomalously high voltage measurements during the pulse step. Half-cell OCP electrochemical time series for LNMO-NMP-2 coin cell dd8a76, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-dd8a76__20250424__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "lnmo"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447156,
+    "retrieved_at": 1791534255,
     "battinfo_version": "0.8.0"
   },
   "notes": [

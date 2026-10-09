@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/dzz9-etft-nqtk-8hc7",
-  "schema:name": "LFP NMP-1 electrode 182031",
+  "schema:name": "Flores 2026 LFP NMP-1 electrode 182031",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6"
   },

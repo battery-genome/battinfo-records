@@ -821,9 +821,9 @@
     "http://www.w3.org/ns/dcat#DatasetSeries"
   ],
   "@id": "https://w3id.org/battinfo/dataset/60jv-8pmb-8v8t-9y4s",
-  "dcterms:title": "Flores et al. 2026 half-cell OCV collection",
-  "dcterms:description": "The Flores et al. 2026 half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
-  "schema:description": "The Flores et al. 2026 half-cell OCV collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCV protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
+  "dcterms:title": "Flores 2026 half-cell OCP collection",
+  "dcterms:description": "The Flores 2026 half-cell OCP collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCP protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
+  "schema:description": "The Flores 2026 half-cell OCP collection: the 95 electrochemical time-series datasets of Zenodo record 10.5281/zenodo.20086298, measured on coin half-cells built from 12 electrode batches across 7 active-material kinds (graphite, lfp, lnmo, nmc111, nmc532, silicon, silicon-graphite), with the GITT and quasi-OCP protocols at room temperature. Apache Parquet in Battery Data Format (BDF). Each member dataset describes one file of the deposit and states its membership through this record.",
   "dcterms:license": {
     "@id": "https://spdx.org/licenses/CC-BY-4.0.html"
   },
@@ -831,11 +831,11 @@
     "@id": "https://doi.org/10.5281/zenodo.20086298"
   },
   "dcat:keyword": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "dataset collection",
     "graphite",
     "lfp",
@@ -846,11 +846,11 @@
     "silicon-graphite"
   ],
   "schema:keywords": [
-    "open circuit voltage",
-    "OCV",
+    "open circuit potential",
+    "OCP",
     "half-cell",
     "GITT",
-    "quasi-OCV",
+    "quasi-OCP",
     "dataset collection",
     "graphite",
     "lfp",
@@ -885,7 +885,7 @@
     "prov:hadPrimarySource": {
       "@id": "https://doi.org/10.5281/zenodo.20086298"
     },
-    "prov:generatedAtTime": "2026-10-08T08:12:29+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:24:13+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/r3sx-ent3-5qj4-mvbq",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv",
     "short_id": "r3sxen",
-    "name": "Silicon-graphite AQ-3 electrode e8f570",
+    "name": "Flores 2026 silicon-graphite AQ-3 electrode e8f570",
     "handle": "flores-ocv/silicon-graphite-aq-3-e8f570-electrode",
     "batch_id": "SiGr-AQ-3",
     "count": 1,
@@ -37,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/p2jt-fyv7-pgzn-p0jk",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "NMC532 material lot",
+  "schema:name": "Flores 2026 NMC532 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff"
   },

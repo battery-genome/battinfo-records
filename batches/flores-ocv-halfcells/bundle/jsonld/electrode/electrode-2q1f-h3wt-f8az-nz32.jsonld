@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/2q1f-h3wt-f8az-nz32",
-  "schema:name": "Silicon-graphite AQ-2 electrode da05ba",
+  "schema:name": "Flores 2026 silicon-graphite AQ-2 electrode da05ba",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah"
   },

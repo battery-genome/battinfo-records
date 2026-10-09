@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/javb-9pjp-sna1-7d19",
-  "schema:name": "LNMO AQ-1 electrode c89aa7",
+  "schema:name": "Flores 2026 LNMO AQ-1 electrode c89aa7",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
   },

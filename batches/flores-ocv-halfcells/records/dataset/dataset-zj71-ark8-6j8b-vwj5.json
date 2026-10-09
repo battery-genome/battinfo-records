@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/zj71-ark8-6j8b-vwj5",
     "short_id": "zj71ar",
     "identifier": "dataset:zj71-ark8-6j8b-vwj5",
-    "name": "Silicon AQ-1 cell 6d543b GITT hold dataset",
+    "name": "Flores 2026 silicon AQ-1 cell 6d543b GITT hold dataset",
     "handle": "flores-ocv/silicon-aq-1-6d543b-gitt-hold-dataset",
-    "description": "Half-cell OCV electrochemical time series for Si-AQ-1 coin cell 6d543b, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicon-R2032-intelligent1-6d543b__20250405__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for Si-AQ-1 coin cell 6d543b, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicon-R2032-intelligent1-6d543b__20250405__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "silicon"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447150,
+    "retrieved_at": 1791534253,
     "battinfo_version": "0.8.0"
   },
   "funding": {

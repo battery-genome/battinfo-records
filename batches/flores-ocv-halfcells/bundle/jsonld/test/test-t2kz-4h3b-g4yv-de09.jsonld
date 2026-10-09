@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/t2kz-4h3b-g4yv-de09",
-  "schema:name": "LFP NMP-1 cell d07eb6 p-OCV test",
+  "schema:name": "Flores 2026 LFP NMP-1 cell d07eb6 p-OCV test",
   "schema:additionalType": "quasi_ocv",
-  "schema:measurementTechnique": "p-OCV test spec",
+  "schema:measurementTechnique": "Flores 2026 p-OCV test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/wzza-ef12-rkxt-zwrn"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

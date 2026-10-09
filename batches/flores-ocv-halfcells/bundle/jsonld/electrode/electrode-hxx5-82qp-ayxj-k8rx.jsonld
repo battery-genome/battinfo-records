@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/hxx5-82qp-ayxj-k8rx",
-  "schema:name": "LNMO AQ-1 electrode 6cf259",
+  "schema:name": "Flores 2026 LNMO AQ-1 electrode 6cf259",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
   },

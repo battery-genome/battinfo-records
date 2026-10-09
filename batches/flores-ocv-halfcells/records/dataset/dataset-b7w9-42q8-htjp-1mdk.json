@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/b7w9-42q8-htjp-1mdk",
     "short_id": "b7w942",
     "identifier": "dataset:b7w9-42q8-htjp-1mdk",
-    "name": "LNMO NMP-1 cell f46602 GITT hold dataset",
+    "name": "Flores 2026 LNMO NMP-1 cell f46602 GITT hold dataset",
     "handle": "flores-ocv/lnmo-nmp-1-f46602-gitt-hold-dataset",
-    "description": "Known issue: Cell failed during the 2nd cycle. Half-cell OCV electrochemical time series for LNMO-NMP-1 coin cell f46602, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-f46602__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Known issue: Cell failed during the 2nd cycle. Half-cell OCP electrochemical time series for LNMO-NMP-1 coin cell f46602, measured with the GITT hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent1-f46602__20250625__gitthold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "lnmo"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447155,
+    "retrieved_at": 1791534254,
     "battinfo_version": "0.8.0"
   },
   "notes": [

@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c",
     "short_id": "tjya8f",
     "identifier": "cell-spec:tjya-8fz6-s4bp-qt2c",
-    "name": "LNMO AQ-1 cell spec",
+    "name": "Flores 2026 LNMO AQ-1 cell spec",
     "handle": "flores-ocv/lnmo-aq-1-cell-spec",
     "model": "LNMO (LiNi0.5Mn1.5O4) R2032 half-cell (intelligent1, LNMO-AQ-1)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791530809,
+    "retrieved_at": 1791534181,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk",
@@ -85,7 +85,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
     "Half-cell voltage window vs Li/Li+: 3.50-4.80 V.",
     "Public electrode label: LNMO-AQ-1.",
-    "Electrode design realizing this spec: LNMO AQ-1 electrode spec.",
+    "Electrode design realizing this spec: Flores 2026 LNMO AQ-1 electrode spec.",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

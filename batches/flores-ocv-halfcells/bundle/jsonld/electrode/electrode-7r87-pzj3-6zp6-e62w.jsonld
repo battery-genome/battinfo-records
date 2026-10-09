@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/7r87-pzj3-6zp6-e62w",
-  "schema:name": "Silicon-graphite AQ-3 electrode fd2719",
+  "schema:name": "Flores 2026 silicon-graphite AQ-3 electrode fd2719",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv"
   },

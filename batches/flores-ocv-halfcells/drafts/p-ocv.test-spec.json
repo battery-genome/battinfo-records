@@ -1,6 +1,6 @@
 {
   "id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
-  "name": "p-OCV test spec",
+  "name": "Flores 2026 p-OCV test spec",
   "handle": "flores-ocv/p-ocv-test-spec",
   "type": "quasi_ocv",
   "description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",

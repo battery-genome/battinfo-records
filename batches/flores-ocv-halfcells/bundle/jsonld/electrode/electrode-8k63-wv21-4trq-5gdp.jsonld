@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/8k63-wv21-4trq-5gdp",
-  "schema:name": "Silicon-graphite AQ-2 electrode 61a57a",
+  "schema:name": "Flores 2026 silicon-graphite AQ-2 electrode 61a57a",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah"
   },

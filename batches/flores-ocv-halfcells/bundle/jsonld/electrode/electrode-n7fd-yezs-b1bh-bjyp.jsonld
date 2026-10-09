@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/n7fd-yezs-b1bh-bjyp",
-  "schema:name": "NMC532 NMP-1 electrode ee86d1",
+  "schema:name": "Flores 2026 NMC532 NMP-1 electrode ee86d1",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
   },

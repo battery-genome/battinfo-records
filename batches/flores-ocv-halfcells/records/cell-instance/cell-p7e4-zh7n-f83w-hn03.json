@@ -5,7 +5,7 @@
     "short_id": "p7e4zh",
     "cell_spec_id": "https://w3id.org/battinfo/spec/rbh3-ne6c-631a-3e3y",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/wh2q-793v-were-qkht",
-    "name": "LNMO AQ-2 cell f6ce67",
+    "name": "Flores 2026 LNMO AQ-2 cell f6ce67",
     "handle": "flores-ocv/lnmo-aq-2-f6ce67-cell",
     "serial_number": "f6ce67",
     "batch_id": "LNMO-AQ-2",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

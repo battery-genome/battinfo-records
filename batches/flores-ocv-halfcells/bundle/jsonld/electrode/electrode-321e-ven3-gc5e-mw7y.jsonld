@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/321e-ven3-gc5e-mw7y",
-  "schema:name": "LNMO AQ-2 electrode 4fc673",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode 4fc673",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },

@@ -4,13 +4,13 @@
     "id": "https://w3id.org/battinfo/material/p2jt-fyv7-pgzn-p0jk",
     "material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
     "short_id": "p2jtfy",
-    "name": "NMC532 material lot",
+    "name": "Flores 2026 NMC532 material lot",
     "handle": "flores-ocv/nmc532-material-lot",
     "lot_id": "powder within the purchased electrodes"
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534159,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

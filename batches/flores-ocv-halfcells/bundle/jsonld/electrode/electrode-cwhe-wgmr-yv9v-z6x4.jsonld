@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/cwhe-wgmr-yv9v-z6x4",
-  "schema:name": "LNMO AQ-1 electrode a39225",
+  "schema:name": "Flores 2026 LNMO AQ-1 electrode a39225",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/tcqb-q91a-gg35-n0sk"
   },

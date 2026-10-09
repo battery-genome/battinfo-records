@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/3gm7-62w2-kgvp-czm7",
-  "schema:name": "LNMO AQ-2 electrode fb8cf6",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode fb8cf6",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },

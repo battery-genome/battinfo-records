@@ -5,7 +5,7 @@
     "short_id": "k5qhgp",
     "cell_spec_id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/gcad-s3as-j3ek-67hg",
-    "name": "Silicon-graphite AQ-3 cell e030cf",
+    "name": "Flores 2026 silicon-graphite AQ-3 cell e030cf",
     "handle": "flores-ocv/silicon-graphite-aq-3-e030cf-cell",
     "serial_number": "e030cf",
     "batch_id": "SiGr-AQ-3",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

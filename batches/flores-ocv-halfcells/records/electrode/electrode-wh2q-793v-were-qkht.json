@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/wh2q-793v-were-qkht",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs",
     "short_id": "wh2q79",
-    "name": "LNMO AQ-2 electrode f6ce67",
+    "name": "Flores 2026 LNMO AQ-2 electrode f6ce67",
     "handle": "flores-ocv/lnmo-aq-2-f6ce67-electrode",
     "batch_id": "LNMO-AQ-2",
     "count": 1,
@@ -37,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

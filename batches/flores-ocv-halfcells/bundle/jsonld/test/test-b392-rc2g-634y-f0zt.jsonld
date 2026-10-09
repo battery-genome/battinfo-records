@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/b392-rc2g-634y-f0zt",
-  "schema:name": "LNMO AQ-2 cell f6ce67 p-OCV hold test",
+  "schema:name": "Flores 2026 LNMO AQ-2 cell f6ce67 p-OCV hold test",
   "schema:additionalType": "quasi_ocv",
-  "schema:measurementTechnique": "p-OCV hold test spec",
+  "schema:measurementTechnique": "Flores 2026 p-OCV hold test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/p7e4-zh7n-f83w-hn03"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

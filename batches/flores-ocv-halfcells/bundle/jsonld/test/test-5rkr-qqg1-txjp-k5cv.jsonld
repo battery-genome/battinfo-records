@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/5rkr-qqg1-txjp-k5cv",
-  "schema:name": "NMC111 NMP-1 cell 85cad7 GITT test",
+  "schema:name": "Flores 2026 NMC111 NMP-1 cell 85cad7 GITT test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/x1vs-40qb-rd00-fh2j"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

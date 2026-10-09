@@ -822,7 +822,7 @@
     "GalvanostaticIntermittentTitrationTechnique"
   ],
   "@id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t",
-  "schema:name": "GITT hold test spec",
+  "schema:name": "Flores 2026 GITT hold test spec",
   "schema:additionalType": "gitt",
   "schema:description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). The voltage is held for 6 h under potentiostatic control upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
   "hasTask": [
@@ -940,7 +940,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:identifier": {

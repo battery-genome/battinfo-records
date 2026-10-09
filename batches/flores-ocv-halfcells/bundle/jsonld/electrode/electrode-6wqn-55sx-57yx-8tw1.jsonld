@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/6wqn-55sx-57yx-8tw1",
-  "schema:name": "Graphite AQ-1 electrode 1d5628",
+  "schema:name": "Flores 2026 graphite AQ-1 electrode 1d5628",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
   },

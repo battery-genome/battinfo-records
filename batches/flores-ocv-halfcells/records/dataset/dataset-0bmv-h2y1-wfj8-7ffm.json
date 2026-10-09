@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/0bmv-h2y1-wfj8-7ffm",
     "short_id": "0bmvh2",
     "identifier": "dataset:0bmv-h2y1-wfj8-7ffm",
-    "name": "Silicon-graphite AQ-3 cell a39539 p-OCV dataset",
+    "name": "Flores 2026 silicon-graphite AQ-3 cell a39539 p-OCV dataset",
     "handle": "flores-ocv/silicon-graphite-aq-3-a39539-p-ocv-dataset",
-    "description": "Half-cell OCV electrochemical time series for SiGr-AQ-3 coin cell a39539, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-a39539__20250528__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for SiGr-AQ-3 coin cell a39539, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-silicongraphite-R2032-intelligent2-a39539__20250528__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "silicon-graphite"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447153,
+    "retrieved_at": 1791534254,
     "battinfo_version": "0.8.0"
   },
   "funding": {
