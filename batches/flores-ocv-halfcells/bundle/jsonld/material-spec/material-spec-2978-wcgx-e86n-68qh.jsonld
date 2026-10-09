@@ -14,7 +14,7 @@
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh",
-  "schema:name": "LFP material spec",
+  "schema:name": "Flores 2026 LFP material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90"
   },
@@ -33,7 +33,7 @@
     "@type": "LithiumIronPhosphate",
     "schema:molecularFormula": "LiFePO4",
     "@id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh#described",
-    "skos:prefLabel": "LFP material spec"
+    "skos:prefLabel": "Flores 2026 LFP material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",

@@ -481,7 +481,7 @@ POWDERS = {
         family="spinel",
         summary="LNMO active material used across all four LNMO electrode batches of the "
                 "dataset, aqueous and NMP processed alike. The study targeted high Mn/Ni "
-                "disorder, so these OCVs are those of a highly disordered spinel.",
+                "disorder, so these OCPs are those of a highly disordered spinel.",
         withheld="The Zenodo record gives no grade or product identifier for the powder, "
                  "and no supplier; the manufacturer stated here was supplied by the "
                  "corpus maintainer, not by the source.",
@@ -550,11 +550,16 @@ LNMO_LOT_LABEL = "study powder batch"
 # cell-spec model strings are built from it and those strings seed the
 # cell-spec identities.
 GROUP = "flores-ocv"
-COLLECTION_LABEL = "Flores et al. 2026 half-cell OCV"
+COLLECTION_LABEL = "Flores 2026 half-cell OCP"
+# Research titles lead with their source (owner ruling 2026-10-09), so one graphite
+# spec among a hundred is recognisable from its title alone.
+SOURCE = "Flores 2026"
 
 
 def title(kind: str, **parts) -> str:
-    return naming.title_for(kind, **parts)
+    if kind == "collection":
+        return naming.title_for(kind, **parts)
+    return naming.title_for(kind, source=SOURCE, **parts)
 
 
 def handle(kind: str, **parts) -> str:
@@ -914,7 +919,7 @@ def write_topsoe_organization() -> str:
         "editorial": {
             "review_status": "stub",
             "note": (
-                "Created for the Flores half-cell OCV batch, from a fact supplied by the "
+                "Created for the Flores half-cell OCP batch, from a fact supplied by the "
                 "corpus maintainer rather than by the source record. Supersedes the "
                 "Battery Knowledge Graph stub organization/j50f-3ebx-sssw-svnm (the same "
                 "legal entity under its pre-2022 name, Haldor Topsoe; curator ruling "
@@ -1572,7 +1577,7 @@ def main() -> int:
             iri=pinned_iri("test", f"{r['hex']}|{r['proto']}"),
             status="completed",
             conformance=conformance,
-            description=(f"{p['name']} half-cell OCV measurement on {r['label']} coin cell "
+            description=(f"{p['name']} half-cell OCP measurement on {r['label']} coin cell "
                          f"{r['hex']} at room temperature."),
         )[0]
         test.started_at = yyyymmdd(r["date"])
@@ -1681,7 +1686,7 @@ def main() -> int:
             f"electrochemical time-series datasets of Zenodo record {DOI}, measured "
             f"on coin half-cells built from {len(by_batch)} electrode batches across "
             f"{len(collection_kinds)} active-material kinds "
-            f"({', '.join(collection_kinds)}), with the GITT and quasi-OCV protocols "
+            f"({', '.join(collection_kinds)}), with the GITT and quasi-OCP protocols "
             f"at room temperature. Apache Parquet in Battery Data Format (BDF). Each "
             f"member dataset describes one file of the deposit and states its "
             f"membership through this record."),
@@ -1694,7 +1699,7 @@ def main() -> int:
         identifier={"property_id": "doi", "value": DOI},
         created_at=ZENODO_PUBLISHED,
         published_at=ZENODO_PUBLISHED,
-        keywords=["open circuit voltage", "OCV", "half-cell", "GITT", "quasi-OCV",
+        keywords=["open circuit potential", "OCP", "half-cell", "GITT", "quasi-OCP",
                   "dataset collection", *collection_kinds],
         measurement_techniques=collection_techniques,
         # Same typed self-citation as the members (S5): `kind: "dataset"` is how
@@ -1740,7 +1745,7 @@ def main() -> int:
             handle=dataset_handle(r),
             description=(
                 (f"Known issue: {issue}. " if issue else "") +
-                f"Half-cell OCV electrochemical time series for {r['label']} coin cell "
+                f"Half-cell OCP electrochemical time series for {r['label']} coin cell "
                 f"{r['hex']}, measured with the {p['name']} protocol at room temperature. "
                 f"Apache Parquet in Battery Data Format (BDF). File "
                 f"{r['file']} of Zenodo record {DOI}."),
@@ -1758,7 +1763,7 @@ def main() -> int:
             variable_measured=[measured_variable(n, unit_text=u, description=d)
                                for n, u, d in BDF_COLUMNS],
             measurement_techniques=[p["technique"]],
-            keywords=["open circuit voltage", "OCV", "half-cell", "GITT", "quasi-OCV",
+            keywords=["open circuit potential", "OCP", "half-cell", "GITT", "quasi-OCP",
                       r["kind"].replace("_", "-")],
             # S5. The Zenodo DOI is this dataset's OWN archive DOI, and every slot
             # it sits in has to mean self-reference. Three do: `access_url` (where

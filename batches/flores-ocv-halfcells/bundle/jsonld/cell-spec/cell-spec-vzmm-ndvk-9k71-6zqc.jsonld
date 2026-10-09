@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/nmc111-nmp-1-cell-spec"
     }
   ],
-  "schema:name": "SINTEF NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+  "schema:name": "Flores 2026 NMC111 NMP-1 cell spec",
   "schema:model": "NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc#described",
-    "skos:prefLabel": "SINTEF NMC111 (LiNi1/3Mn1/3Co1/3O2) R2032 half-cell (customcells)",
+    "skos:prefLabel": "Flores 2026 NMC111 NMP-1 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:01+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

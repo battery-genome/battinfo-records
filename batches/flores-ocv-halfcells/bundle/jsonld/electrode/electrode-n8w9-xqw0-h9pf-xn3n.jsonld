@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/n8w9-xqw0-h9pf-xn3n",
-  "schema:name": "NMC111 NMP-1 electrode 9d3ce5",
+  "schema:name": "Flores 2026 NMC111 NMP-1 electrode 9d3ce5",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
   },

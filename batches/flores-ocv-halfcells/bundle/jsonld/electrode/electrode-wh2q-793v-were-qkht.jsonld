@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/wh2q-793v-were-qkht",
-  "schema:name": "LNMO AQ-2 electrode f6ce67",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode f6ce67",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },

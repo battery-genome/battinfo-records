@@ -3,7 +3,7 @@
   "electrode_spec": {
     "id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
     "short_id": "z6tqsh",
-    "name": "NMC532 NMP-1 electrode spec",
+    "name": "Flores 2026 NMC532 NMP-1 electrode spec",
     "handle": "flores-ocv/nmc532-nmp-1-electrode-spec",
     "active_material_kind": "nmc532",
     "active_material_spec_id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
@@ -60,7 +60,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

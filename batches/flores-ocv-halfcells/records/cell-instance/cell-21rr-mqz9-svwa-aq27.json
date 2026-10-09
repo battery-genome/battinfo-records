@@ -5,7 +5,7 @@
     "short_id": "21rrmq",
     "cell_spec_id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
-    "name": "Silicon AQ-1 cell 882755",
+    "name": "Flores 2026 silicon AQ-1 cell 882755",
     "handle": "flores-ocv/silicon-aq-1-882755-cell",
     "serial_number": "882755",
     "batch_id": "Si-AQ-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

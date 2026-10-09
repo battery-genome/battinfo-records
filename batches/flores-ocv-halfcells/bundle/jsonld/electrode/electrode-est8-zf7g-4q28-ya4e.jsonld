@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/est8-zf7g-4q28-ya4e",
-  "schema:name": "Silicon AQ-1 electrode 91618e",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 91618e",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },

@@ -1,6 +1,6 @@
 {
   "id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69",
-  "name": "p-OCV hold test spec",
+  "name": "Flores 2026 p-OCV hold test spec",
   "handle": "flores-ocv/p-ocv-hold-test-spec",
   "type": "quasi_ocv",
   "description": "Constant current cycling at C/50. The voltage is held for 6 h under potentiostatic control upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",

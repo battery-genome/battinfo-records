@@ -147,11 +147,11 @@
       },
       "schema:description": "Organic-solvent electrode coating (NMP), as stated by the public electrode label LFP-NMP-1 and the Zenodo batch table."
     },
-    "skos:prefLabel": "LFP NMP-1 electrode spec",
+    "skos:prefLabel": "Flores 2026 LFP NMP-1 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6#described"
   },
   "@id": "https://w3id.org/battinfo/spec/6f4z-vg4r-rb15-d7x6",
-  "schema:name": "LFP NMP-1 electrode spec",
+  "schema:name": "Flores 2026 LFP NMP-1 electrode spec",
   "schema:description": "LiFePO4 (commercial electrode). Electrode design of the commercial electrode supplied by Gelon LIB, published under the label LFP-NMP-1. Active-material type as stated in metadata.csv: \"LFP\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",

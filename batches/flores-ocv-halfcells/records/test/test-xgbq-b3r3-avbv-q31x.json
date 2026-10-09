@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/xgbq-b3r3-avbv-q31x",
     "short_id": "xgbqb3",
     "identifier": "test:xgbq-b3r3-avbv-q31x",
-    "name": "NMC532 NMP-1 cell 979353 GITT hold test",
+    "name": "Flores 2026 NMC532 NMP-1 cell 979353 GITT hold test",
     "handle": "flores-ocv/nmc532-nmp-1-979353-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/h0my-m2yj-z9x7-yn7v",
-    "description": "GITT hold half-cell OCV measurement on NMC532-NMP-1 coin cell 979353 at room temperature.",
+    "description": "GITT hold half-cell OCP measurement on NMC532-NMP-1 coin cell 979353 at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t",
     "status": "completed",
     "conditions": {
@@ -19,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold test spec",
+    "protocol_name": "Flores 2026 GITT hold test spec",
     "started_at": 1751760000
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

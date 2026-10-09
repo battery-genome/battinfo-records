@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/1v4q-sx3p-gqwh-4d66",
-  "schema:name": "Silicon-graphite AQ-1 cell bdb7bc GITT hold test",
+  "schema:name": "Flores 2026 silicon-graphite AQ-1 cell bdb7bc GITT hold test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT hold test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT hold test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/sd36-k5ap-q58r-78t1"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

@@ -4,13 +4,13 @@
     "id": "https://w3id.org/battinfo/material/g8cp-8rjn-ga7e-r4xr",
     "material_spec_id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa",
     "short_id": "g8cp8r",
-    "name": "Silicon-graphite AQ-1 material lot",
+    "name": "Flores 2026 silicon-graphite AQ-1 material lot",
     "handle": "flores-ocv/silicon-graphite-aq-1-material-lot",
     "lot_id": "SiGr-AQ-1 blend"
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534159,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

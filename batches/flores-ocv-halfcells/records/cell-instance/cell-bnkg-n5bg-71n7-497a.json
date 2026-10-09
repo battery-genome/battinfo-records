@@ -5,7 +5,7 @@
     "short_id": "bnkgn5",
     "cell_spec_id": "https://w3id.org/battinfo/spec/tjya-8fz6-s4bp-qt2c",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/543r-38v9-8s4z-myhf",
-    "name": "LNMO AQ-1 cell 21a280",
+    "name": "Flores 2026 LNMO AQ-1 cell 21a280",
     "handle": "flores-ocv/lnmo-aq-1-21a280-cell",
     "serial_number": "21a280",
     "batch_id": "LNMO-AQ-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

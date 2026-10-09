@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/r40w-qnc5-73ga-g0fs",
-  "schema:name": "Silicon AQ-1 cell 70cc5b GITT test",
+  "schema:name": "Flores 2026 silicon AQ-1 cell 70cc5b GITT test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/tbef-e52s-5mh2-x96y"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

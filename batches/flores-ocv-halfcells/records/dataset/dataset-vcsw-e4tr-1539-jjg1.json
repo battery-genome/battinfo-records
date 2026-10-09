@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/vcsw-e4tr-1539-jjg1",
     "short_id": "vcswe4",
     "identifier": "dataset:vcsw-e4tr-1539-jjg1",
-    "name": "LNMO NMP-2 cell f2733d p-OCV dataset",
+    "name": "Flores 2026 LNMO NMP-2 cell f2733d p-OCV dataset",
     "handle": "flores-ocv/lnmo-nmp-2-f2733d-p-ocv-dataset",
-    "description": "Half-cell OCV electrochemical time series for LNMO-NMP-2 coin cell f2733d, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-f2733d__20250424__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for LNMO-NMP-2 coin cell f2733d, measured with the p-OCV protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-f2733d__20250424__p-ocv__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "lnmo"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447155,
+    "retrieved_at": 1791534254,
     "battinfo_version": "0.8.0"
   },
   "funding": {

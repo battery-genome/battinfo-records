@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/rd8x-1nqr-3dp2-0we8",
     "short_id": "rd8x1n",
     "identifier": "test-protocol:rd8x-1nqr-3dp2-0we8",
-    "name": "GITT test spec",
+    "name": "Flores 2026 GITT test spec",
     "handle": "flores-ocv/gitt-test-spec",
     "kind": "gitt",
     "description": "Sequence of current pulses (C/50) followed by a period of rest (150 minutes). A rest period of 6 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature."
@@ -12,7 +12,7 @@
   "provenance": {
     "source_type": "manual",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "method": [

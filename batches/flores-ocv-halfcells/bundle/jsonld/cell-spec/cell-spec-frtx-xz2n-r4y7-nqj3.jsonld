@@ -830,7 +830,7 @@
       "schema:value": "flores-ocv/nmc532-nmp-1-cell-spec"
     }
   ],
-  "schema:name": "SINTEF NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
+  "schema:name": "Flores 2026 NMC532 NMP-1 cell spec",
   "schema:model": "NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
   "schema:manufacturer": {
     "@type": "schema:Organization",
@@ -847,7 +847,7 @@
       "SecondaryBattery"
     ],
     "@id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3#described",
-    "skos:prefLabel": "SINTEF NMC532 (LiNi0.5Mn0.3Co0.2O2) R2032 half-cell (gelon)",
+    "skos:prefLabel": "Flores 2026 NMC532 NMP-1 cell spec",
     "hasProperty": [
       {
         "@type": [
@@ -951,7 +951,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "datasheet",
-    "prov:generatedAtTime": "2026-10-08T08:11:32+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:01+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:funding": {

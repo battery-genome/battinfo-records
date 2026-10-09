@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/d248-nszb-8cs3-r26a",
-  "schema:name": "LNMO NMP-1 electrode f46602",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode f46602",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

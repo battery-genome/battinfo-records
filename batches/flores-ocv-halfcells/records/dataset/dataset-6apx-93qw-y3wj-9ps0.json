@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/6apx-93qw-y3wj-9ps0",
     "short_id": "6apx93",
     "identifier": "dataset:6apx-93qw-y3wj-9ps0",
-    "name": "LFP NMP-1 cell fbeeaf p-OCV hold dataset",
+    "name": "Flores 2026 LFP NMP-1 cell fbeeaf p-OCV hold dataset",
     "handle": "flores-ocv/lfp-nmp-1-fbeeaf-p-ocv-hold-dataset",
-    "description": "Half-cell OCV electrochemical time series for LFP-NMP-1 coin cell fbeeaf, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lfp-R2032-gelon-fbeeaf__20250607__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for LFP-NMP-1 coin cell fbeeaf, measured with the p-OCV hold protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lfp-R2032-gelon-fbeeaf__20250607__p-ocvhold__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "lfp"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447159,
+    "retrieved_at": 1791534255,
     "battinfo_version": "0.8.0"
   },
   "funding": {

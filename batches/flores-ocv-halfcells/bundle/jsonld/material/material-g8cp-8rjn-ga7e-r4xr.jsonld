@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/g8cp-8rjn-ga7e-r4xr",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Silicon-graphite AQ-1 material lot",
+  "schema:name": "Flores 2026 silicon-graphite AQ-1 material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/k8hw-zn6x-5s4b-g3aa"
   },

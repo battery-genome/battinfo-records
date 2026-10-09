@@ -5,7 +5,7 @@
     "short_id": "x1vs40",
     "cell_spec_id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/mcrb-wcs5-f2pt-rd37",
-    "name": "NMC111 NMP-1 cell 85cad7",
+    "name": "Flores 2026 NMC111 NMP-1 cell 85cad7",
     "handle": "flores-ocv/nmc111-nmp-1-85cad7-cell",
     "serial_number": "85cad7",
     "batch_id": "NMC111-NMP-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

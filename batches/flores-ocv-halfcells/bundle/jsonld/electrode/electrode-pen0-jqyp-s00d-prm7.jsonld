@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/pen0-jqyp-s00d-prm7",
-  "schema:name": "LNMO NMP-1 electrode df0911",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode df0911",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

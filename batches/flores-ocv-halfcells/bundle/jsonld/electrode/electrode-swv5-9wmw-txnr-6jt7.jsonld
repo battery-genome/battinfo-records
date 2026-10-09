@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/swv5-9wmw-txnr-6jt7",
-  "schema:name": "LNMO AQ-2 electrode c04965",
+  "schema:name": "Flores 2026 LNMO AQ-2 electrode c04965",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/9crz-xq8b-0fvx-n3cs"
   },

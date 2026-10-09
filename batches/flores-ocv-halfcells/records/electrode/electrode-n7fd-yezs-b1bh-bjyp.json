@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/n7fd-yezs-b1bh-bjyp",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0",
     "short_id": "n7fdye",
-    "name": "NMC532 NMP-1 electrode ee86d1",
+    "name": "Flores 2026 NMC532 NMP-1 electrode ee86d1",
     "handle": "flores-ocv/nmc532-nmp-1-ee86d1-electrode",
     "batch_id": "NMC532-NMP-1",
     "supplier": {
@@ -41,7 +41,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

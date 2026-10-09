@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/v52s-dwgc-scxe-kv64",
     "short_id": "v52sdw",
     "identifier": "test:v52s-dwgc-scxe-kv64",
-    "name": "Silicon-graphite AQ-2 cell 210cad p-OCV hold test",
+    "name": "Flores 2026 silicon-graphite AQ-2 cell 210cad p-OCV hold test",
     "handle": "flores-ocv/silicon-graphite-aq-2-210cad-p-ocv-hold-test",
     "kind": "quasi_ocv",
     "cell_id": "https://w3id.org/battinfo/cell/yfpg-6ma2-mrjq-3x4y",
-    "description": "p-OCV hold half-cell OCV measurement on SiGr-AQ-2 coin cell 210cad at room temperature.",
+    "description": "p-OCV hold half-cell OCP measurement on SiGr-AQ-2 coin cell 210cad at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/ne02-d84m-66a5-xq69",
     "status": "completed",
     "conditions": {
@@ -19,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "p-OCV hold test spec",
+    "protocol_name": "Flores 2026 p-OCV hold test spec",
     "started_at": 1748390400
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

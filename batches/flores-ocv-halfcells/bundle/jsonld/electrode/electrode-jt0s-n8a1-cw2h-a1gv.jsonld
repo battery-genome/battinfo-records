@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/jt0s-n8a1-cw2h-a1gv",
-  "schema:name": "Silicon-graphite AQ-1 electrode 8eb80b",
+  "schema:name": "Flores 2026 silicon-graphite AQ-1 electrode 8eb80b",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/ez15-2qqn-36fq-64fy"
   },

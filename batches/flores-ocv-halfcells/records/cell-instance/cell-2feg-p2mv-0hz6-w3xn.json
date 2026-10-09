@@ -5,7 +5,7 @@
     "short_id": "2fegp2",
     "cell_spec_id": "https://w3id.org/battinfo/spec/vzmm-ndvk-9k71-6zqc",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/bnq2-gprs-epar-gxer",
-    "name": "NMC111 NMP-1 cell e0dd5f",
+    "name": "Flores 2026 NMC111 NMP-1 cell e0dd5f",
     "handle": "flores-ocv/nmc111-nmp-1-e0dd5f-cell",
     "serial_number": "e0dd5f",
     "batch_id": "NMC111-NMP-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

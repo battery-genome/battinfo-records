@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/azx7-8sk3-pk5b-e0rf",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7",
     "short_id": "azx78s",
-    "name": "NMC111 NMP-1 electrode 6852ff",
+    "name": "Flores 2026 NMC111 NMP-1 electrode 6852ff",
     "handle": "flores-ocv/nmc111-nmp-1-6852ff-electrode",
     "batch_id": "NMC111-NMP-1",
     "supplier": {
@@ -41,7 +41,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

@@ -10,7 +10,7 @@
   ],
   "@id": "https://w3id.org/battinfo/material/qbt2-cy0p-gg46-42sp",
   "@type": "schema:ChemicalSubstance",
-  "schema:name": "Silicon material lot",
+  "schema:name": "Flores 2026 silicon material lot",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv"
   },

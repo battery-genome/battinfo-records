@@ -4,19 +4,19 @@
     "id": "https://w3id.org/battinfo/dataset/nhs5-y6yr-qnwt-h38q",
     "short_id": "nhs5y6",
     "identifier": "dataset:nhs5-y6yr-qnwt-h38q",
-    "name": "LNMO AQ-2 cell fb8cf6 GITT dataset",
+    "name": "Flores 2026 LNMO AQ-2 cell fb8cf6 GITT dataset",
     "handle": "flores-ocv/lnmo-aq-2-fb8cf6-gitt-dataset",
-    "description": "Half-cell OCV electrochemical time series for LNMO-AQ-2 coin cell fb8cf6, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
+    "description": "Half-cell OCP electrochemical time series for LNMO-AQ-2 coin cell fb8cf6, measured with the GITT protocol at room temperature. Apache Parquet in Battery Data Format (BDF). File sintef__sintef-lnmo-R2032-intelligent2-fb8cf6__20250424__gitt__RT.bdf.parquet of Zenodo record 10.5281/zenodo.20086298.",
     "license": "cc-by-4.0",
     "same_as": [
       "https://doi.org/10.5281/zenodo.20086298"
     ],
     "keywords": [
-      "open circuit voltage",
-      "OCV",
+      "open circuit potential",
+      "OCP",
       "half-cell",
       "GITT",
-      "quasi-OCV",
+      "quasi-OCP",
       "lnmo"
     ],
     "citations": [
@@ -113,7 +113,7 @@
   "provenance": {
     "source_type": "measurement",
     "source_url": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447158,
+    "retrieved_at": 1791534255,
     "battinfo_version": "0.8.0"
   },
   "funding": {

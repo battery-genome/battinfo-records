@@ -5,7 +5,7 @@
     "short_id": "wga206",
     "cell_spec_id": "https://w3id.org/battinfo/spec/whvd-e6g6-zd72-n9f4",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/xtds-735k-e8d6-fpmy",
-    "name": "Silicon-graphite AQ-3 cell a39539",
+    "name": "Flores 2026 silicon-graphite AQ-3 cell a39539",
     "handle": "flores-ocv/silicon-graphite-aq-3-a39539-cell",
     "serial_number": "a39539",
     "batch_id": "SiGr-AQ-3",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

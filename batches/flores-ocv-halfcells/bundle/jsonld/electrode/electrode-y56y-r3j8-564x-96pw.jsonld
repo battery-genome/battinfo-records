@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/y56y-r3j8-564x-96pw",
-  "schema:name": "LNMO NMP-2 electrode 7c22c4",
+  "schema:name": "Flores 2026 LNMO NMP-2 electrode 7c22c4",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/93f0-n525-w6pr-t8gh"
   },

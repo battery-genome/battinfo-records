@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/xgbq-b3r3-avbv-q31x",
-  "schema:name": "NMC532 NMP-1 cell 979353 GITT hold test",
+  "schema:name": "Flores 2026 NMC532 NMP-1 cell 979353 GITT hold test",
   "schema:additionalType": "gitt",
-  "schema:measurementTechnique": "GITT hold test spec",
+  "schema:measurementTechnique": "Flores 2026 GITT hold test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/h0my-m2yj-z9x7-yn7v"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

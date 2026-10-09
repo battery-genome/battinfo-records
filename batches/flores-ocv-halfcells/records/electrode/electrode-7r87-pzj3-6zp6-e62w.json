@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/7r87-pzj3-6zp6-e62w",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv",
     "short_id": "7r87pz",
-    "name": "Silicon-graphite AQ-3 electrode fd2719",
+    "name": "Flores 2026 silicon-graphite AQ-3 electrode fd2719",
     "handle": "flores-ocv/silicon-graphite-aq-3-fd2719-electrode",
     "batch_id": "SiGr-AQ-3",
     "count": 1,
@@ -37,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

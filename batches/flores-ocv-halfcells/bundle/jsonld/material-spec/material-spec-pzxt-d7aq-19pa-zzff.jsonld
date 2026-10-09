@@ -14,7 +14,7 @@
     "schema:CreativeWork"
   ],
   "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff",
-  "schema:name": "NMC532 material spec",
+  "schema:name": "Flores 2026 NMC532 material spec",
   "schema:sameAs": {
     "@id": "https://w3id.org/emmo/domain/chemical-substance#substance_592acd61_23c8_4a1a_b41b_1eeabedc0710"
   },
@@ -27,7 +27,7 @@
     "@type": "LithiumNickelManganeseCobaltOxide532",
     "schema:molecularFormula": "LiNi0.5Mn0.3Co0.2O2",
     "@id": "https://w3id.org/battinfo/spec/pzxt-d7aq-19pa-zzff#described",
-    "skos:prefLabel": "NMC532 material spec"
+    "skos:prefLabel": "Flores 2026 NMC532 material spec"
   },
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",

@@ -155,11 +155,11 @@
       },
       "schema:description": "Aqueous electrode coating (water), as stated by the public electrode label SiGr-AQ-2 and the Zenodo batch table."
     },
-    "skos:prefLabel": "Silicon-graphite AQ-2 electrode spec",
+    "skos:prefLabel": "Flores 2026 silicon-graphite AQ-2 electrode spec",
     "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah#described"
   },
   "@id": "https://w3id.org/battinfo/spec/8qhq-zwxy-qkpg-fyah",
-  "schema:name": "Silicon-graphite AQ-2 electrode spec",
+  "schema:name": "Flores 2026 silicon-graphite AQ-2 electrode spec",
   "schema:description": "Higher Si % silicon-graphite composite (aqueous processed). Electrode design of the IntelLiGent project batch 2 (SINTEF), published under the label SiGr-AQ-2. Active-material type as stated in metadata.csv: \"Silicon Graphite\".",
   "schema:citation": {
     "@id": "https://doi.org/10.5281/zenodo.20086298",

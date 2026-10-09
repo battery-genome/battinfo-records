@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/wr5p-wtf6-cbw7-47wz",
-  "schema:name": "LNMO NMP-1 electrode f9bf3e",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode f9bf3e",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/vsq9-kn33-9s3a-46k1",
-  "schema:name": "Silicon AQ-1 electrode 5f45a8",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 5f45a8",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },

@@ -5,7 +5,7 @@
     "short_id": "yfpg6m",
     "cell_spec_id": "https://w3id.org/battinfo/spec/1kt7-7141-vpj2-pqv0",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/0mrb-h4x9-sxk8-3rah",
-    "name": "Silicon-graphite AQ-2 cell 210cad",
+    "name": "Flores 2026 silicon-graphite AQ-2 cell 210cad",
     "handle": "flores-ocv/silicon-graphite-aq-2-210cad-cell",
     "serial_number": "210cad",
     "batch_id": "SiGr-AQ-2",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

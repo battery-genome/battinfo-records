@@ -81,20 +81,21 @@ Every record has three names, each with one job (ruled 2026-10-08):
 
 - The IRI is the identity. It is opaque and never changes when a record is renamed.
 - The handle is a short slug, unique within the registry workspace and shown as `<workspace>/<handle>`. It is generated from the record's own fields: `<group>/<subject>[-<variant>][-<sample>][-<method>]-<kind>`, with the kind word always last so that every record about one sample sorts together. This corpus's group is `flores-ocv`, which is also the collection's handle.
-- The title (`name`) is readable text built from the same parts. The platform shows a context line under it (record type, material, collection) so that many similar titles stay distinguishable.
+- The title (`name`) is readable text that leads with the source, `Flores 2026`, so one graphite record among many is recognisable from its title alone (ruled 2026-10-09). The handle is not shown in the page header; the IRI is the one identifier a record page shows.
+- The records say open-circuit potential (OCP), since a half cell against lithium measures the electrode's potential. The protocol names keep the source's spelling (p-OCV, p-OCV hold), and so do quotes of the Zenodo record and its published title.
 
 | type | handle | title |
 |---|---|---|
-| collection | `flores-ocv` | Flores et al. 2026 half-cell OCV collection |
-| material spec | `flores-ocv/graphite-material-spec` | Graphite material spec |
-| material lot | `flores-ocv/graphite-material-lot` | Graphite material lot |
-| electrode spec | `flores-ocv/graphite-aq-1-electrode-spec` | Graphite AQ-1 electrode spec |
-| electrode | `flores-ocv/graphite-aq-1-063b77-electrode` | Graphite AQ-1 electrode 063b77 |
-| cell spec | `flores-ocv/graphite-aq-1-cell-spec` | Graphite AQ-1 cell spec |
-| cell | `flores-ocv/graphite-aq-1-063b77-cell` | Graphite AQ-1 cell 063b77 |
-| test spec | `flores-ocv/gitt-test-spec` | GITT test spec |
-| test | `flores-ocv/graphite-aq-1-063b77-gitt-test` | Graphite AQ-1 cell 063b77 GITT test |
-| dataset | `flores-ocv/graphite-aq-1-063b77-gitt-dataset` | Graphite AQ-1 cell 063b77 GITT dataset |
+| collection | `flores-ocv` | Flores 2026 half-cell OCP collection |
+| material spec | `flores-ocv/graphite-material-spec` | Flores 2026 graphite material spec |
+| material lot | `flores-ocv/graphite-material-lot` | Flores 2026 graphite material lot |
+| electrode spec | `flores-ocv/graphite-aq-1-electrode-spec` | Flores 2026 graphite AQ-1 electrode spec |
+| electrode | `flores-ocv/graphite-aq-1-063b77-electrode` | Flores 2026 graphite AQ-1 electrode 063b77 |
+| cell spec | `flores-ocv/graphite-aq-1-cell-spec` | Flores 2026 graphite AQ-1 cell spec |
+| cell | `flores-ocv/graphite-aq-1-063b77-cell` | Flores 2026 graphite AQ-1 cell 063b77 |
+| test spec | `flores-ocv/gitt-test-spec` | Flores 2026 GITT test spec |
+| test | `flores-ocv/graphite-aq-1-063b77-gitt-test` | Flores 2026 graphite AQ-1 cell 063b77 GITT test |
+| dataset | `flores-ocv/graphite-aq-1-063b77-gitt-dataset` | Flores 2026 graphite AQ-1 cell 063b77 GITT dataset |
 
 The variant is the source's own design label without its material prefix (`Gr-AQ-1` becomes `AQ-1`). What the earlier titles said in words (processing route, IntelLiGent batch, supplier, "powder within the purchased electrodes") lives in each record's description, notes and structured fields.
 
@@ -318,7 +319,7 @@ The records reference the parquet files by their Zenodo download URL and md5 che
 
 ## The dataset collection (corpus v5)
 
-One record speaks for the whole deposit: `dataset/60jv-8pmb-8v8t-9y4s`, "Flores et al. 2026 half-cell OCV collection" (handle `flores-ocv`; published until 2026-10-08 as "Flores et al. half-cell OCV collection"). It is an ordinary dataset record flavored as a series by `additional_type: ["DatasetSeries"]` (DCAT 3 declares `dcat:DatasetSeries` a subclass of `dcat:Dataset`, so there is no new record type - BIG-MAP/BattINFO#351), and the deposit DOI `10.5281/zenodo.20086298` is its external `identifier`: the collection IS the deposit, where each member describes one file of it. All 95 member datasets carry `series_id` pointing at it, which the JSON-LD emits as `dcat:inSeries` and `schema:isPartOf`; the registry renders the same field as a forward "Series" link on each member page and a members panel on the collection page, with no registry code involved.
+One record speaks for the whole deposit: `dataset/60jv-8pmb-8v8t-9y4s`, "Flores 2026 half-cell OCP collection" (handle `flores-ocv`; titled "Flores et al. half-cell OCV collection" until 2026-10-08 and "Flores et al. 2026 half-cell OCV collection" until 2026-10-09). It is an ordinary dataset record flavored as a series by `additional_type: ["DatasetSeries"]` (DCAT 3 declares `dcat:DatasetSeries` a subclass of `dcat:Dataset`, so there is no new record type - BIG-MAP/BattINFO#351), and the deposit DOI `10.5281/zenodo.20086298` is its external `identifier`: the collection IS the deposit, where each member describes one file of it. All 95 member datasets carry `series_id` pointing at it, which the JSON-LD emits as `dcat:inSeries` and `schema:isPartOf`; the registry renders the same field as a forward "Series" link on each member page and a members panel on the collection page, with no registry code involved.
 
 What the collection record deliberately does not carry: `about` (its members hold the cell and test links - the series exemption of BIG-MAP/BattINFO#352 is what admits it under the strict policy), `distributions` (the files belong to the members), and `is_based_on` (a member derives from the deposit; the collection does not derive from itself).
 

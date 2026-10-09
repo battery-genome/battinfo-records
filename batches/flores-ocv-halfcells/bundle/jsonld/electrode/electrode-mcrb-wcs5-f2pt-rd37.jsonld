@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/mcrb-wcs5-f2pt-rd37",
-  "schema:name": "NMC111 NMP-1 electrode 85cad7",
+  "schema:name": "Flores 2026 NMC111 NMP-1 electrode 85cad7",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7"
   },

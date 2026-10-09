@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
     "electrode_spec_id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
     "short_id": "jjyze2",
-    "name": "Silicon AQ-1 electrode 882755",
+    "name": "Flores 2026 silicon AQ-1 electrode 882755",
     "handle": "flores-ocv/silicon-aq-1-882755-electrode",
     "batch_id": "Si-AQ-1",
     "count": 1,
@@ -37,7 +37,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447085,
+    "retrieved_at": 1791534160,
     "battinfo_version": "0.8.0",
     "citation": "https://doi.org/10.5281/zenodo.20086298"
   },

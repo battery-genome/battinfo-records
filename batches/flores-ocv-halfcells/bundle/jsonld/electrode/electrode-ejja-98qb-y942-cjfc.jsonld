@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/ejja-98qb-y942-cjfc",
-  "schema:name": "NMC532 NMP-1 electrode 2a2be3",
+  "schema:name": "Flores 2026 NMC532 NMP-1 electrode 2a2be3",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
   },

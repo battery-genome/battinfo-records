@@ -822,7 +822,7 @@
     "PseudoOpenCircuitVoltageMethod"
   ],
   "@id": "https://w3id.org/battinfo/spec/1pvg-sjjy-kn8j-jhxh",
-  "schema:name": "p-OCV test spec",
+  "schema:name": "Flores 2026 p-OCV test spec",
   "schema:additionalType": "quasi_ocv",
   "schema:description": "Constant current cycling at C/50. A rest period of 8 h is applied upon reaching the upper and lower voltage cutoffs. 5 cycles, room temperature.",
   "hasTask": [
@@ -900,7 +900,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "manual",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00",
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00",
     "dcterms:bibliographicCitation": "https://doi.org/10.5281/zenodo.20086298"
   },
   "schema:identifier": {

@@ -4,11 +4,11 @@
     "id": "https://w3id.org/battinfo/test/px8n-3d6r-b1z0-n6q1",
     "short_id": "px8n3d",
     "identifier": "test:px8n-3d6r-b1z0-n6q1",
-    "name": "Silicon AQ-1 cell 6d543b GITT hold test",
+    "name": "Flores 2026 silicon AQ-1 cell 6d543b GITT hold test",
     "handle": "flores-ocv/silicon-aq-1-6d543b-gitt-hold-test",
     "kind": "gitt",
     "cell_id": "https://w3id.org/battinfo/cell/vczh-m6zr-9w11-xwqj",
-    "description": "GITT hold half-cell OCV measurement on Si-AQ-1 coin cell 6d543b at room temperature.",
+    "description": "GITT hold half-cell OCP measurement on Si-AQ-1 coin cell 6d543b at room temperature.",
     "protocol_id": "https://w3id.org/battinfo/spec/v13g-2zy1-j3d6-an6t",
     "status": "completed",
     "conditions": {
@@ -19,12 +19,12 @@
         "value_text": "Li/Li+"
       }
     },
-    "protocol_name": "GITT hold test spec",
+    "protocol_name": "Flores 2026 GITT hold test spec",
     "started_at": 1743811200
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

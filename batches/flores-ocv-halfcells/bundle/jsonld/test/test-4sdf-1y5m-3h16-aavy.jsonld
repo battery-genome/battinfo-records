@@ -822,9 +822,9 @@
     "prov:Activity"
   ],
   "@id": "https://w3id.org/battinfo/test/4sdf-1y5m-3h16-aavy",
-  "schema:name": "Silicon AQ-1 cell 2c4b6a p-OCV test",
+  "schema:name": "Flores 2026 silicon AQ-1 cell 2c4b6a p-OCV test",
   "schema:additionalType": "quasi_ocv",
-  "schema:measurementTechnique": "p-OCV test spec",
+  "schema:measurementTechnique": "Flores 2026 p-OCV test spec",
   "schema:actionStatus": "completed",
   "hasTestObject": {
     "@id": "https://w3id.org/battinfo/cell/xg7t-7xcd-jjvk-b1rh"
@@ -864,7 +864,7 @@
   "dcterms:source": {
     "@type": "prov:Entity",
     "dcterms:type": "measurement",
-    "prov:generatedAtTime": "2026-10-08T08:12:10+00:00"
+    "prov:generatedAtTime": "2026-10-09T08:23:44+00:00"
   },
   "schema:identifier": {
     "@type": "schema:PropertyValue",

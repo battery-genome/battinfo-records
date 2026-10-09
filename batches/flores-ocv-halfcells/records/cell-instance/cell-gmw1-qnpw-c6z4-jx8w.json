@@ -5,7 +5,7 @@
     "short_id": "gmw1qn",
     "cell_spec_id": "https://w3id.org/battinfo/spec/frtx-xz2n-r4y7-nqj3",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/hace-e1dy-wc0v-qvcr",
-    "name": "NMC532 NMP-1 cell 1765db",
+    "name": "Flores 2026 NMC532 NMP-1 cell 1765db",
     "handle": "flores-ocv/nmc532-nmp-1-1765db-cell",
     "serial_number": "1765db",
     "batch_id": "NMC532-NMP-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/r3sx-ent3-5qj4-mvbq",
-  "schema:name": "Silicon-graphite AQ-3 electrode e8f570",
+  "schema:name": "Flores 2026 silicon-graphite AQ-3 electrode e8f570",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/2mm7-aq4c-5qtc-kyrv"
   },

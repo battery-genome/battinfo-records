@@ -4,7 +4,7 @@
     "id": "https://w3id.org/battinfo/spec/zqwq-ted6-cwb2-0d42",
     "short_id": "zqwqte",
     "identifier": "cell-spec:zqwq-ted6-cwb2-0d42",
-    "name": "SINTEF Silicon R2032 half-cell (intelligent1)",
+    "name": "Flores 2026 silicon AQ-1 cell spec",
     "handle": "flores-ocv/silicon-aq-1-cell-spec",
     "model": "Silicon R2032 half-cell (intelligent1)",
     "manufacturer": {
@@ -32,7 +32,7 @@
   "provenance": {
     "source_type": "datasheet",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
-    "retrieved_at": 1791447092,
+    "retrieved_at": 1791534181,
     "battinfo_version": "0.8.0"
   },
   "working_electrode_spec_id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz",
@@ -85,7 +85,7 @@
     "R2032 coin half-cell. The working electrode is the named active material; the counter electrode, which is also the potential reference, is lithium metal. All voltages are reported vs Li/Li+, and the cell has no positive or negative side to name.",
     "Half-cell voltage window vs Li/Li+: 0.01-1.00 V.",
     "Public electrode label: Si-AQ-1.",
-    "Electrode design realizing this spec: Silicon AQ-1 electrode spec.",
+    "Electrode design realizing this spec: Flores 2026 silicon AQ-1 electrode spec.",
     "Electrolyte and separator are not reported in the source record and are omitted."
   ],
   "funding": {

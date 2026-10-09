@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/jjyz-e20h-c3be-hy6s",
-  "schema:name": "Silicon AQ-1 electrode 882755",
+  "schema:name": "Flores 2026 silicon AQ-1 electrode 882755",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/rkf4-xz0y-h8kz-rmxz"
   },

@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/1b6x-k9a8-tp8f-m8pz",
-  "schema:name": "NMC532 NMP-1 electrode 328a71",
+  "schema:name": "Flores 2026 NMC532 NMP-1 electrode 328a71",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/z6tq-shhs-zrt2-hhz0"
   },

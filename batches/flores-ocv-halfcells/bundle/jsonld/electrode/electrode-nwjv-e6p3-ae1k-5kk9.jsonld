@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/nwjv-e6p3-ae1k-5kk9",
-  "schema:name": "LNMO NMP-1 electrode 59ceaa",
+  "schema:name": "Flores 2026 LNMO NMP-1 electrode 59ceaa",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/f2sb-n513-x4x6-hzev"
   },

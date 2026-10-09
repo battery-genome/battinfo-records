@@ -5,7 +5,7 @@
     "short_id": "tg9szr",
     "cell_spec_id": "https://w3id.org/battinfo/spec/6wqv-x8m4-15cx-tyqp",
     "working_electrode_id": "https://w3id.org/battinfo/electrode/pen0-jqyp-s00d-prm7",
-    "name": "LNMO NMP-1 cell df0911",
+    "name": "Flores 2026 LNMO NMP-1 cell df0911",
     "handle": "flores-ocv/lnmo-nmp-1-df0911-cell",
     "serial_number": "df0911",
     "batch_id": "LNMO-NMP-1",
@@ -13,7 +13,7 @@
   },
   "provenance": {
     "source_type": "measurement",
-    "retrieved_at": 1791447130,
+    "retrieved_at": 1791534224,
     "battinfo_version": "0.8.0"
   },
   "funding": {

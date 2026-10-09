@@ -83,7 +83,7 @@
     }
   ],
   "@id": "https://w3id.org/battinfo/electrode/gbk8-hhyj-738z-zw5k",
-  "schema:name": "Graphite AQ-1 electrode 4ccc47",
+  "schema:name": "Flores 2026 graphite AQ-1 electrode 4ccc47",
   "schema:isVariantOf": {
     "@id": "https://w3id.org/battinfo/spec/ztbj-s6t9-szvt-jwv8"
   },
