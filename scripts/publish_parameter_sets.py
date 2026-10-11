@@ -251,7 +251,9 @@ def main() -> int:
             workspace_id=args.workspace_id,
             publisher_id=args.publisher_id,
             source_version=args.source_version,
-            source_local_id=slug,
+            # The record uid, not the folder name: the registry refuses a new
+            # dataset/ record under a key that already holds a spec/ one.
+            source_local_id="parameter-set:" + record["parameter_set"]["id"].rsplit("/", 1)[-1],
             workflow_name=args.workflow_name,
         )
         files = package["resource"]["distributions"]

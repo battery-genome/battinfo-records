@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/ya52-ppct-9jm6-6hg0",
-    "short_id": "ya52pp",
+    "id": "https://w3id.org/battinfo/dataset/hwph-b9vm-wxk3-k8sr",
+    "short_id": "hwphb9",
     "name": "Mohtat2020 (PyBaMM) - graphite",
     "material_kind": "graphite",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "PyBaMM",
       "name": "Mohtat2020"
     },
-    "description": "Half-cell open-circuit potential of graphite from the Mohtat2020 parameterization (Mohtat et al. 2020, Journal of The Electrochemical Society)."
+    "description": "Half-cell open-circuit potential of graphite from the Mohtat2020 parameterization (Mohtat et al. 2020, Journal of The Electrochemical Society).",
+    "supersedes": "https://w3id.org/battinfo/spec/ya52-ppct-9jm6-6hg0"
   },
   "provenance": {
     "source_type": "literature",

@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/szxp-xwnx-vhyf-rvm0",
-    "short_id": "szxpxw",
+    "id": "https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52",
+    "short_id": "7jnccj",
     "name": "HYDRA graphite/LNMO validation parameter set",
     "cell_spec_id": "https://w3id.org/battinfo/spec/3xf1-1f61-6nsc-6qtp",
     "parameters_sha256": "b29ec1fd8b0d5c160ffc12fcd39010484c654d3ed149d8a75081d4b49f2d1873",
@@ -1927,12 +1927,13 @@
     "not_imported": [
       "Validation"
     ],
+    "supersedes": "https://w3id.org/battinfo/spec/szxp-xwnx-vhyf-rvm0",
     "distributions": [
       {
         "type": "DataDownload",
         "name": "IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
         "role": "source",
-        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/szxp-xwnx-vhyf-rvm0/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/7jnc-cjtw-5h3a-5t52/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
         "encoding_format": "application/json",
         "conforms_to": "BPX 1.0",
         "byte_size": 8790098,
@@ -1955,7 +1956,7 @@
         "type": "DataDownload",
         "name": "IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx-v1.json",
         "role": "runnable",
-        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/szxp-xwnx-vhyf-rvm0/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx-v1.json",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/7jnc-cjtw-5h3a-5t52/v1/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx-v1.json",
         "encoding_format": "application/json",
         "conforms_to": "BPX 1.1.0",
         "byte_size": 8790236,
@@ -1965,7 +1966,7 @@
         },
         "description": "The source in the BPX v1 layout, which the current parser and PyBaMM require; State defaults are added as the bpx package's own v0-to-v1 migration adds them.",
         "derived_from": "sha256:29717e566ad0d0acf60a1a46e2b2044d3675e44d4e414dd32bef1bdefbf025a4",
-        "conversion": "BPX 1.0 file in the v0.x layout, rewritten in the BPX v1 layout as BPX 1.1.0 by battinfo 0.7.0 (BIG-MAP/BattINFO@6ffd1d2) upgrade_bpx: Cell.Initial temperature [K] -> State.Initial conditions.Initial temperature [K]; Cell.Ambient temperature [K] -> State.Thermal environment.Ambient temperature [K]; Electrolyte.Initial concentration [mol.m-3] -> State.Initial conditions.Initial electrolyte concentration [mol.m-3]; Header.BPX 1.0 -> \"1.1.0\". Values added, which the file does not state: State.Initial conditions.Initial state-of-charge = 1 (the v0.x layout states none). The bpx package's own v0-to-v1 migration (bpx.convert_v0_to_v1) adds the same.",
+        "conversion": "BPX 1.0 file in the v0.x layout, rewritten in the BPX v1 layout as BPX 1.1.0 by battinfo 0.7.0 (BIG-MAP/BattINFO@46e99ce) upgrade_bpx: Cell.Initial temperature [K] -> State.Initial conditions.Initial temperature [K]; Cell.Ambient temperature [K] -> State.Thermal environment.Ambient temperature [K]; Electrolyte.Initial concentration [mol.m-3] -> State.Initial conditions.Initial electrolyte concentration [mol.m-3]; Header.BPX 1.0 -> \"1.1.0\". Values added, which the file does not state: State.Initial conditions.Initial state-of-charge = 1 (the v0.x layout states none). The bpx package's own v0-to-v1 migration (bpx.convert_v0_to_v1) adds the same.",
         "checks": [
           {
             "check": "bpx_parse",
@@ -1978,7 +1979,7 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.9.0.0",
             "passed": true,
-            "detail": "DFN, 1C discharge to 3.5 V solved in 0.64 s; 0.991 Ah delivered.",
+            "detail": "DFN, 1C discharge to 3.5 V solved in 0.59 s; 0.991 Ah delivered.",
             "checked_at": "2026-10-11"
           }
         ]
@@ -2002,7 +2003,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1791745285,
+    "retrieved_at": 1791754849,
     "battinfo_version": "0.7.0",
     "source_url": "https://raw.githubusercontent.com/BattMoTeam/schmitt-2026-lnmo-graphite-hydra-publication/51092701d66b8dcaa88febaa132ff877f7ebc6db/parameters/IMP5-70-120-H0B_graphite-lnmo_schmitt-2026_validation.bpx.json",
     "citation": "https://arxiv.org/abs/2601.10507"

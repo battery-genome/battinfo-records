@@ -84,6 +84,8 @@ SOURCES: dict[str, dict] = {
             "(CC-BY-4.0). The file's Validation section holds five discharge-rate curves from that campaign.",
         ],
         "materials": {"negative": "graphite", "positive": "lnmo"},
+        # Published under spec/ on 2026-10-11, before parameter sets moved to dataset/.
+        "supersedes": "https://w3id.org/battinfo/spec/szxp-xwnx-vhyf-rvm0",
         "software_requirements": None,
         "cell": {
             "case": "new",
@@ -356,6 +358,7 @@ def main() -> int:
         distributions=distributions,
         # BattINFO checks that the runnable copy is the layout upgrade of the source.
         **({"runnable_file": runnable_path} if runnable_path is not None else {}),
+        **({"supersedes": source["supersedes"]} if source.get("supersedes") else {}),
         citation=source["citation"],
         source_url=source["url"],
         notes=[source["attribution"], *source["notes"]],

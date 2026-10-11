@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/pazj-epnz-5jef-r5nv",
-    "short_id": "pazjep",
+    "id": "https://w3id.org/battinfo/dataset/420q-ctd8-xz83-kanx",
+    "short_id": "420qct",
     "name": "LNMO_Mao (BattMo) - lnmo",
     "material_kind": "lnmo",
     "scope": "material",
@@ -51,7 +51,8 @@
       "tool": "BattMo",
       "name": "LNMO_Mao"
     },
-    "description": "Half-cell open-circuit potential of lnmo from the LNMO_Mao parameterization (Mao et al. 2020, ACS Omega)."
+    "description": "Half-cell open-circuit potential of lnmo from the LNMO_Mao parameterization (Mao et al. 2020, ACS Omega).",
+    "supersedes": "https://w3id.org/battinfo/spec/pazj-epnz-5jef-r5nv"
   },
   "provenance": {
     "source_type": "literature",

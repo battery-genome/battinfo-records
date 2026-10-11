@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/6f63-eped-mvk6-ch0n",
-    "short_id": "6f63ep",
+    "id": "https://w3id.org/battinfo/dataset/kp2k-fv6g-8tvq-dkme",
+    "short_id": "kp2kfv",
     "name": "nmc_pouch_cell_BPX (BPX) - graphite",
     "material_kind": "graphite",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "BPX",
       "name": "nmc_pouch_cell_BPX"
     },
-    "description": "Half-cell open-circuit potential of graphite from the nmc_pouch_cell_BPX parameterization (About:Energy BPX example, December 2022)."
+    "description": "Half-cell open-circuit potential of graphite from the nmc_pouch_cell_BPX parameterization (About:Energy BPX example, December 2022).",
+    "supersedes": "https://w3id.org/battinfo/spec/6f63-eped-mvk6-ch0n"
   },
   "provenance": {
     "source_type": "literature",

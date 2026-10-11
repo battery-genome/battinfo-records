@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/cc96-dka2-7esj-qa3h",
-    "short_id": "cc96dk",
+    "id": "https://w3id.org/battinfo/dataset/esx4-4v23-zr1n-mj41",
+    "short_id": "esx44v",
     "name": "Chen2020 (PyBaMM) - graphite",
     "material_kind": "graphite",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "PyBaMM",
       "name": "Chen2020"
     },
-    "description": "Half-cell open-circuit potential of graphite from the Chen2020 parameterization (Chen et al. 2020, Journal of The Electrochemical Society)."
+    "description": "Half-cell open-circuit potential of graphite from the Chen2020 parameterization (Chen et al. 2020, Journal of The Electrochemical Society).",
+    "supersedes": "https://w3id.org/battinfo/spec/cc96-dka2-7esj-qa3h"
   },
   "provenance": {
     "source_type": "literature",
