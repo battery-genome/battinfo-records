@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.2.0",
+  "cell_spec": {
+    "id": "https://w3id.org/battinfo/spec/3xf1-1f61-6nsc-6qtp",
+    "short_id": "3xf11f",
+    "identifier": "cell-spec:3xf1-1f61-6nsc-6qtp",
+    "name": "HYDRA0 1 Ah graphite|LNMO prototype pouch cell",
+    "model": "IMP5-70-120-H0B",
+    "manufacturer": {
+      "type": "Organization",
+      "name": "CEA",
+      "id": "https://w3id.org/battinfo/organization/s4ag-msnc-aa3a-xf0r"
+    },
+    "cell_format": "pouch",
+    "chemistry": "li-ion",
+    "positive_electrode_basis": "LNMO",
+    "negative_electrode_basis": "graphite",
+    "rechargeable": true
+  },
+  "properties": {},
+  "provenance": {
+    "source_type": "literature",
+    "retrieved_at": 1791733882,
+    "battinfo_version": "0.7.0",
+    "citation": "https://arxiv.org/abs/2601.10507"
+  },
+  "specification_comment": [
+    "Prototype pouch cell developed within the Horizon Europe project HYDRA (https://doi.org/10.5281/zenodo.18256663)."
+  ],
+  "license": "cc-by-4.0"
+}

@@ -224,8 +224,6 @@ def main() -> int:
         path for path in sorted(RECORD_DIR.glob("*/record.json"))
         if fnmatch.fnmatch(path.parent.name, args.match)
     ]
-    # A parameterisation set lists its members, so members go first.
-    record_paths.sort(key=lambda path: "members" in json.loads(path.read_text(encoding="utf-8"))["parameter_set"])
     if args.limit:
         record_paths = record_paths[: args.limit]
     if not record_paths:
@@ -259,7 +257,8 @@ def main() -> int:
             body = record["parameter_set"]
             print(
                 f"  dry-run  {slug}  [{record['license']}, "
-                f"{len(body.get('claims', []))} claim(s), {len(files)} file(s)]  {body['id']}"
+                f"{len(body.get('claims', [])) + sum(len(p.get('claims', [])) for p in body.get('parts', []))} claim(s), "
+                f"{len(files)} file(s)]  {body['id']}"
             )
             ok += 1
             continue
