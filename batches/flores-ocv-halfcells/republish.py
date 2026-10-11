@@ -10,8 +10,9 @@ registry from the first state to the second, in eight ordered steps:
                  jsonschema is importable); the supersede map is consistent (every
                  successor is in this corpus, every superseded IRI is live on the
                  target and published); no new record collides with a live
-                 (type, source_local_id); every outside reference resolves; the
-                 collection's name still seeds its IRI (name freeze).
+                 (type, source_local_id); every outside reference resolves; every
+                 record carries the IRI pinned in published-iris.json (renames are
+                 display-only and never move an identity).
   1 organization publish the Topsoe organization (vz1v-rvhz-n77h-344c), which v5
                  cites and the registry does not have.
   2 collection   submit + approve the collection record, before any member, because
@@ -55,9 +56,15 @@ USAGE
   # production: needs --production AND the confirmation variable set to the host
   FLORES_REPUBLISH_CONFIRM=battinfo-registry.onrender.com \\
   FLORES_REPUBLISH_PUBLISHER_KEY=... FLORES_REPUBLISH_ADMIN_TOKEN=... \\
-  R2_ENDPOINT=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... \\
+  R2_ENDPOINT=... R2_ACCESS_KEY_ID=... R2_SECRET_ACCESS_KEY=... R2_BUCKET=... \\
   python republish.py --target https://battinfo-registry.onrender.com --production --apply \\
       --registry-repo ../battinfo-registry
+
+  R2_BUCKET must be the bucket served at the records' profile base URL
+  (https://pub-5d124607e4b748eea681efca486508ab.r2.dev): the registry's artifacts
+  bucket (STORAGE_ARTIFACTS_BUCKET, battery-genome-artifacts), not its page bucket
+  (STORAGE_PUBLIC_BUCKET). The 2026-10-07 run first uploaded to the page bucket; the
+  postflight now fetches every profile URL, so that cannot pass unnoticed again.
 
   Run it with an interpreter that has battinfo (and jsonschema) installed, or the
   record validation in preflight is skipped with a warning; --production requires
@@ -89,10 +96,10 @@ ROLLBACK
       organization, the collection, and the 270 other new records) is registered
       permanently once published. It can be withdrawn (status withdrawn, which
       serves a tombstone), never deleted or reused.
-    * The collection's name. Its IRI is seeded from (access_url, name), so once the
-      collection is published under "Flores et al. half-cell OCV collection" that
-      name is frozen: renaming it later mints a different IRI and orphans the 95
-      members' series_id. Preflight checks the seed before anything is written.
+    * Nothing about names. Titles and handles are display text: every record is
+      pinned to its published IRI (published-iris.json), and preflight refuses a
+      corpus whose IRIs differ from the pins, so a rename never re-seeds the
+      collection or orphans the 95 members' series_id.
 """
 from __future__ import annotations
 
@@ -156,7 +163,6 @@ WORKFLOW_NAME = "authoring-workspace-submission"
 INTERNAL_IRI_RE = re.compile(
     r"^https://w3id\.org/battinfo/(?P<segment>[a-z_-]+)/(?P<uid>[0-9a-hjkmnp-tv-z]{4}(?:-[0-9a-hjkmnp-tv-z]{4}){3})$"
 )
-UID_ALPHABET = "0123456789abcdefghjkmnpqrstvwxyz"
 
 
 # --------------------------------------------------------------------------
@@ -241,23 +247,19 @@ def load_corpus(organization_path: Path) -> tuple[list[Record], Record]:
 
 
 def corpus_fingerprint(records: list[Record], organization: Record) -> str:
-    """Content hash of the corpus, independent of line endings and key order."""
+    """Hash of what this driver submits: each record's content and the title it is sent under.
+
+    Independent of line endings and key order. The title is part of the submission, and the
+    registry keys a submission by (record, source_version): a title change under an unchanged
+    source_version is refused as "same identity, different content", so the version has to
+    change with the titles too. Re-submitting unchanged content under a new version updates
+    the registry title and version label without minting a new record version."""
     digest = hashlib.sha256()
     for record in [organization, *records]:
         digest.update(record.iri.encode())
         digest.update(json.dumps(record.raw, sort_keys=True, ensure_ascii=False).encode())
+        digest.update(record_title(record).encode())
     return digest.hexdigest()[:10]
-
-
-def stable_uid(seed: str) -> str:
-    """battinfo.entities.stable_uid, reproduced so the name-freeze check needs no battinfo."""
-    value = int.from_bytes(hashlib.sha256(seed.encode("utf-8")).digest()[:16], "big")
-    chars = []
-    for _ in range(16):
-        value, remainder = divmod(value, 32)
-        chars.append(UID_ALPHABET[remainder])
-    token = "".join(reversed(chars))
-    return "-".join((token[:4], token[4:8], token[8:12], token[12:16]))
 
 
 def iter_internal_iris(node: Any, path: str = "") -> Iterator[tuple[str, str]]:
@@ -321,6 +323,10 @@ def build_graph(records: list[Record]) -> Graph:
 def record_title(record: Record) -> str:
     body = record.body
     if record.type.resource_type == "cell_spec":
+        # The record's own title wins; "<manufacturer> <model>" is only the fallback for a
+        # cell spec without one (what battinfo.ws.submit() used to send for every cell spec).
+        if _text(body.get("name")):
+            return _text(body["name"])[:255]
         manufacturer = body.get("manufacturer")
         name = manufacturer.get("name") if isinstance(manufacturer, dict) else manufacturer
         title = f"{_text(name)} {_text(body.get('model'))}".strip()
@@ -858,8 +864,14 @@ class Driver:
         return local_id, None
 
     def is_current(self, record: Record) -> bool:
+        """Published under this corpus version AND under the title this driver sends.
+
+        The title is not part of the content hash, so a record whose registry title is
+        stale (a cell spec once titled "<manufacturer> <model>") is resubmitted; the
+        registry updates the title of an unchanged record without minting a version."""
         row = self.index().by_iri.get(record.iri)
-        return bool(row and row.get("status") == "published" and row.get("source_version") == self.source_version)
+        return bool(row and row.get("status") == "published" and row.get("source_version") == self.source_version
+                    and row.get("title") == record_title(record))
 
     # -- step 0 --------------------------------------------------------------
 
@@ -916,18 +928,21 @@ class Driver:
         self.say(f"  corpus: {len(self.records)} records + 1 organization, {len(members)} collection members, "
                  f"source_version {self.source_version}")
 
-        # name freeze
-        body = self.collection.body
-        seed = f"unknown-cell::::{body.get('access_url') or ''}::{body.get('name') or 'dataset'}"
-        if stable_uid(seed) != self.collection.canonical_id:
-            errors.append(f"name freeze: the collection's (access_url, name) seeds {stable_uid(seed)}, not "
-                          f"{self.collection.canonical_id}. Its name or access_url changed since the IRI was minted.")
-        live = self.index().by_iri.get(COLLECTION_IRI)
-        if live is not None and live.get("title") != body.get("name"):
-            errors.append(f"name freeze: the live collection is titled {live.get('title')!r}, local name is "
-                          f"{body.get('name')!r}")
-        if not any(e.startswith("name freeze") for e in errors):
-            self.say(f"  name freeze ok: {body.get('name')!r} seeds {self.collection.canonical_id}")
+        # identity pins: names are display text, IRIs never move
+        pins_path = HERE / "published-iris.json"
+        if pins_path.is_file():
+            pinned = {iri for table in json.loads(pins_path.read_text(encoding="utf-8")).values()
+                      for iri in table.values()}
+            local = {record.iri for record in self.records}
+            if local != pinned:
+                errors.append(f"identity pins: {len(pinned - local)} pinned IRIs missing from the corpus, "
+                              f"{len(local - pinned)} unpinned IRIs in it (published-iris.json)")
+            else:
+                self.say(f"  identity pins ok: all {len(pinned)} records carry their published IRI")
+        else:
+            errors.append("identity pins: published-iris.json is missing")
+        if self.collection.iri != COLLECTION_IRI:
+            errors.append(f"identity pins: the collection is {self.collection.iri}, expected {COLLECTION_IRI}")
 
         # validation
         everything = [self.organization, *self.records]
@@ -1294,8 +1309,32 @@ class Driver:
                 tombstones += 1
         self.say(f"  tombstones: {tombstones}/{len(self.supersede_rows)} point at a live successor")
 
+        # profile figures: every plot URL a dataset record names must serve the file
+        plot_urls = sorted({
+            dist["content_url"]
+            for record in self.records if record.type.resource_type == "dataset"
+            for dist in record.body.get("distributions") or []
+            if str(dist.get("content_url", "")).endswith(".plot.json")
+        })
+        missing_plots = []
+        for url in plot_urls:
+            # r2.dev answers 403 to some default client user agents
+            request = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "Mozilla/5.0 (flores-republish)"})
+            try:
+                with urllib.request.urlopen(request, timeout=60) as response:
+                    if response.status != 200:
+                        missing_plots.append(f"{url} (HTTP {response.status})")
+            except urllib.error.HTTPError as error:
+                missing_plots.append(f"{url} (HTTP {error.code})")
+            except OSError as error:
+                missing_plots.append(f"{url} ({error})")
+        errors.extend(f"profile figure not served: {item}" for item in missing_plots[:5])
+        if len(missing_plots) > 5:
+            errors.append(f"... and {len(missing_plots) - 5} more profile figures not served")
+        self.say(f"  profiles: {len(plot_urls) - len(missing_plots)}/{len(plot_urls)} figure URLs serve the file")
+
         # collection membership
-        members_expected = {r.iri for r in self.records if r.body.get("series_id") == COLLECTION_IRI}
+        members_expected ={r.iri for r in self.records if r.body.get("series_id") == COLLECTION_IRI}
         method, members_live = self.collection_members(fetched)
         if members_live != members_expected:
             errors.append(f"collection lists {len(members_live)} members via {method}, expected "

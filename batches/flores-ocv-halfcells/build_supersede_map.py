@@ -119,6 +119,16 @@ def entry(published: str, published_type: str, key: str,
 
 
 def main() -> int:
+    # The map pairs v1 records with v5 successors by natural keys that include the
+    # pre-2026-10-08 titles. It was applied to the registry on 2026-10-07 and is
+    # now a historical statement; the renamed records no longer carry those titles,
+    # so regenerating it from them would be wrong. Rebuild it only from a checkout
+    # before the rename (git history), where it reproduces byte for byte.
+    sample = next((RECORDS / "test-protocol").glob("*.json"), None)
+    if sample is not None and "handle" in json.loads(sample.read_text(encoding="utf-8")).get("test_spec", {}):
+        print("superseded/supersede-map.json is frozen as applied on 2026-10-07; these records "
+              "carry the 2026-10-08 titles, so the map is not regenerated from them.")
+        return 0
     entries: list[dict] = []
 
     # --- the four types whose successor is found by an unchanged natural key ----
