@@ -106,7 +106,9 @@ def verify_files(distributions: list[dict], *, timeout: float = 120.0) -> list[s
     for entry in distributions:
         url = entry["access_url"]
         try:
-            with urlopen(Request(url, method="GET"), timeout=timeout) as resp:
+            # Cloudflare r2.dev answers 403 to the default Python-urllib user agent.
+            request = Request(url, method="GET", headers={"User-Agent": "battinfo-records-publish/1.0"})
+            with urlopen(request, timeout=timeout) as resp:
                 digest = hashlib.sha256(resp.read()).hexdigest()
         except (HTTPError, URLError) as exc:
             problems.append(f"{url}: not fetchable ({exc})")
