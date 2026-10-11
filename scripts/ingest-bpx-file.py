@@ -299,7 +299,8 @@ def main() -> int:
                 runnable_path,
                 content_url=content_url(runnable_path.name),
                 role="runnable",
-                description="The source in the BPX v1 layout, which the current parser and PyBaMM require.",
+                description="The source in the BPX v1 layout, which the current parser and PyBaMM require; "
+                "State defaults are added as the bpx package's own v0-to-v1 migration adds them.",
                 derived_from=distributions[0]["checksum"]["value"],
                 conversion=upgraded.conversion_note(f"{battinfo_label(battinfo)} upgrade_bpx"),
                 software_requirements=source["software_requirements"],
@@ -353,6 +354,8 @@ def main() -> int:
         **link,
         materials=source["materials"],
         distributions=distributions,
+        # BattINFO checks that the runnable copy is the layout upgrade of the source.
+        **({"runnable_file": runnable_path} if runnable_path is not None else {}),
         citation=source["citation"],
         source_url=source["url"],
         notes=[source["attribution"], *source["notes"]],
