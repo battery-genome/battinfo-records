@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/nsf5-a9f9-3e05-trm0",
-    "short_id": "nsf5a9",
+    "id": "https://w3id.org/battinfo/dataset/6w21-4gnn-cp2p-k0fs",
+    "short_id": "6w214g",
     "name": "Mohtat2020 (PyBaMM) - nmc532",
     "material_kind": "nmc532",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "PyBaMM",
       "name": "Mohtat2020"
     },
-    "description": "Half-cell open-circuit potential of nmc532 from the Mohtat2020 parameterization (Mohtat et al. 2020, Journal of The Electrochemical Society)."
+    "description": "Half-cell open-circuit potential of nmc532 from the Mohtat2020 parameterization (Mohtat et al. 2020, Journal of The Electrochemical Society).",
+    "supersedes": "https://w3id.org/battinfo/spec/nsf5-a9f9-3e05-trm0"
   },
   "provenance": {
     "source_type": "literature",

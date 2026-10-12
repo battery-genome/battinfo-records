@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/h37t-evtr-5w72-aa5a",
-    "short_id": "h37tev",
+    "id": "https://w3id.org/battinfo/dataset/gqkw-7d00-jks6-eg6p",
+    "short_id": "gqkw7d",
     "name": "Chen2020_composite (PyBaMM) - silicon",
     "material_kind": "silicon",
     "scope": "material",
@@ -6054,7 +6054,8 @@
       "tool": "PyBaMM",
       "name": "Chen2020_composite"
     },
-    "description": "Half-cell open-circuit potential of silicon from the Chen2020_composite parameterization (Ai et al. 2022, Journal of Power Sources)."
+    "description": "Half-cell open-circuit potential of silicon from the Chen2020_composite parameterization (Ai et al. 2022, Journal of Power Sources).",
+    "supersedes": "https://w3id.org/battinfo/spec/h37t-evtr-5w72-aa5a"
   },
   "provenance": {
     "source_type": "literature",

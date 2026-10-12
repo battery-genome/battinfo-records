@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/tnt6-6nkt-8c96-hpdw",
-    "short_id": "tnt66n",
+    "id": "https://w3id.org/battinfo/dataset/h7y4-n53c-78zz-wh21",
+    "short_id": "h7y4n5",
     "name": "lfp_18650_cell_BPX (BPX) - lfp",
     "material_kind": "lfp",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "BPX",
       "name": "lfp_18650_cell_BPX"
     },
-    "description": "Half-cell open-circuit potential of lfp from the lfp_18650_cell_BPX parameterization (About:Energy BPX example, December 2022)."
+    "description": "Half-cell open-circuit potential of lfp from the lfp_18650_cell_BPX parameterization (About:Energy BPX example, December 2022).",
+    "supersedes": "https://w3id.org/battinfo/spec/tnt6-6nkt-8c96-hpdw"
   },
   "provenance": {
     "source_type": "literature",

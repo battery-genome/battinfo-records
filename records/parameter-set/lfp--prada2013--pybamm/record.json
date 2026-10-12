@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/baj3-hqsm-kh14-pd7p",
-    "short_id": "baj3hq",
+    "id": "https://w3id.org/battinfo/dataset/vhz8-secg-h39h-myya",
+    "short_id": "vhz8se",
     "name": "Prada2013 (PyBaMM) - lfp",
     "material_kind": "lfp",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "PyBaMM",
       "name": "Prada2013"
     },
-    "description": "Half-cell open-circuit potential of lfp from the Prada2013 parameterization (Afshar et al. 2017, arXiv preprint arXiv:1709.03970)."
+    "description": "Half-cell open-circuit potential of lfp from the Prada2013 parameterization (Afshar et al. 2017, arXiv preprint arXiv:1709.03970).",
+    "supersedes": "https://w3id.org/battinfo/spec/baj3-hqsm-kh14-pd7p"
   },
   "provenance": {
     "source_type": "literature",

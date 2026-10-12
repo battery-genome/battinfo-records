@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/f7tn-rqk1-gzyr-k52r",
-    "short_id": "f7tnrq",
+    "id": "https://w3id.org/battinfo/dataset/5r99-ap5t-sy4r-amdz",
+    "short_id": "5r99ap",
     "name": "Chen2020 (PyBaMM) - nmc111",
     "material_kind": "nmc111",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "PyBaMM",
       "name": "Chen2020"
     },
-    "description": "Half-cell open-circuit potential of nmc111 from the Chen2020 parameterization (Chen et al. 2020, Journal of The Electrochemical Society)."
+    "description": "Half-cell open-circuit potential of nmc111 from the Chen2020 parameterization (Chen et al. 2020, Journal of The Electrochemical Society).",
+    "supersedes": "https://w3id.org/battinfo/spec/f7tn-rqk1-gzyr-k52r"
   },
   "provenance": {
     "source_type": "literature",

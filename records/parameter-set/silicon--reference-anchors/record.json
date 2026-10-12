@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/656r-3qxc-65mq-e39m",
-    "short_id": "656r3q",
+    "id": "https://w3id.org/battinfo/dataset/cex2-a2rq-ne6n-y0vk",
+    "short_id": "cex2a2",
     "name": "Curated reference anchors - silicon",
     "material_kind": "silicon",
     "scope": "material",
@@ -17,7 +17,8 @@
         "comment": "Theoretical stoichiometric value (curated Battery Genome reference anchor), not a practical reversible capacity."
       }
     ],
-    "description": "Curated, citable reference values for silicon from the Battery Genome material-kind vocabulary: the generic anchors reported distributions are compared against."
+    "description": "Curated, citable reference values for silicon from the Battery Genome material-kind vocabulary: the generic anchors reported distributions are compared against.",
+    "supersedes": "https://w3id.org/battinfo/spec/656r-3qxc-65mq-e39m"
   },
   "provenance": {
     "source_type": "literature",

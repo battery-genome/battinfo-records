@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.2.0",
+  "organization": {
+    "id": "https://w3id.org/battinfo/organization/s4ag-msnc-aa3a-xf0r",
+    "short_id": "s4agms",
+    "name": "CEA",
+    "type": "ResearchOrganization",
+    "legal_name": "Commissariat à l'énergie atomique et aux énergies alternatives",
+    "alternate_name": [
+      "French Alternative Energies and Atomic Energy Commission"
+    ],
+    "location": {
+      "address_country": "FR"
+    }
+  },
+  "provenance": {
+    "source_type": "manual",
+    "retrieved_at": 1791733908,
+    "battinfo_version": "0.7.0"
+  }
+}

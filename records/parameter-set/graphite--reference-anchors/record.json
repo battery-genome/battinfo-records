@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/dy4t-naf7-pmsh-8y5d",
-    "short_id": "dy4tna",
+    "id": "https://w3id.org/battinfo/dataset/7x6y-vemg-arv9-h4vc",
+    "short_id": "7x6yve",
     "name": "Curated reference anchors - graphite",
     "material_kind": "graphite",
     "scope": "material",
@@ -25,7 +25,8 @@
         "comment": "Theoretical stoichiometric value (curated Battery Genome reference anchor), not a practical reversible capacity."
       }
     ],
-    "description": "Curated, citable reference values for graphite from the Battery Genome material-kind vocabulary: the generic anchors reported distributions are compared against."
+    "description": "Curated, citable reference values for graphite from the Battery Genome material-kind vocabulary: the generic anchors reported distributions are compared against.",
+    "supersedes": "https://w3id.org/battinfo/spec/dy4t-naf7-pmsh-8y5d"
   },
   "provenance": {
     "source_type": "literature",

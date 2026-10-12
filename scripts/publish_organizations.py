@@ -15,7 +15,9 @@ Usage:
 """
 
 import argparse
+import fnmatch
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -102,15 +104,20 @@ def post_package(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--api-key", default="battinfo-records-bot-live-2026")
+    parser.add_argument("--api-key", default=os.environ.get("BATTINFO_REGISTRY_API_KEY"))
     parser.add_argument("--registry-url", default="https://battinfo-registry.onrender.com")
     parser.add_argument("--workspace-id", default="battinfo-records")
     parser.add_argument("--publisher-id", default="battinfo-records-bot")
     parser.add_argument("--source-version", default="2026-04-29-organizations")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--match", default="*",
+                        help="publish only organizations whose directory name matches this glob")
     args = parser.parse_args()
+    if not args.dry_run and not args.api_key:
+        print("error: no API key (--api-key or BATTINFO_REGISTRY_API_KEY)", file=sys.stderr)
+        sys.exit(2)
 
-    records = sorted(ORG_DIR.glob("*/record.json"))
+    records = [p for p in sorted(ORG_DIR.glob("*/record.json")) if fnmatch.fnmatch(p.parent.name, args.match)]
     if not records:
         print("No organization records found.")
         sys.exit(1)

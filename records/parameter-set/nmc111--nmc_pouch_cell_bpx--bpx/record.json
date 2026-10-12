@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/gw9r-c9pv-nttm-b6jf",
-    "short_id": "gw9rc9",
+    "id": "https://w3id.org/battinfo/dataset/f1yr-ez2d-94mz-08qc",
+    "short_id": "f1yrez",
     "name": "nmc_pouch_cell_BPX (BPX) - nmc111",
     "material_kind": "nmc111",
     "scope": "material",
@@ -2025,7 +2025,8 @@
       "tool": "BPX",
       "name": "nmc_pouch_cell_BPX"
     },
-    "description": "Half-cell open-circuit potential of nmc111 from the nmc_pouch_cell_BPX parameterization (About:Energy BPX example, December 2022)."
+    "description": "Half-cell open-circuit potential of nmc111 from the nmc_pouch_cell_BPX parameterization (About:Energy BPX example, December 2022).",
+    "supersedes": "https://w3id.org/battinfo/spec/gw9r-c9pv-nttm-b6jf"
   },
   "provenance": {
     "source_type": "literature",

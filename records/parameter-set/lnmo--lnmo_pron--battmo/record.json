@@ -1,8 +1,8 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/spec/pt62-xa2e-k23p-z041",
-    "short_id": "pt62xa",
+    "id": "https://w3id.org/battinfo/dataset/0mvc-0xzy-6k3p-153k",
+    "short_id": "0mvc0x",
     "name": "LNMO_Pron (BattMo) - lnmo",
     "material_kind": "lnmo",
     "scope": "material",
@@ -219,7 +219,8 @@
       "tool": "BattMo",
       "name": "LNMO_Pron"
     },
-    "description": "Half-cell open-circuit potential of lnmo from the LNMO_Pron parameterization (Pron et al. 2019, Journal of The Electrochemical Society)."
+    "description": "Half-cell open-circuit potential of lnmo from the LNMO_Pron parameterization (Pron et al. 2019, Journal of The Electrochemical Society).",
+    "supersedes": "https://w3id.org/battinfo/spec/pt62-xa2e-k23p-z041"
   },
   "provenance": {
     "source_type": "literature",
