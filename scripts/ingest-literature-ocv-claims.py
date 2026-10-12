@@ -209,6 +209,22 @@ def build_record(rows: list[dict[str, str]], source_dir: Path):
     return slug, record
 
 
+def carry_supersedes(record: dict, out_path: Path) -> None:
+    """Keep the old IRI a regenerated record supersedes.
+
+    Parameter sets moved from spec/ to dataset/ on 2026-10-11 and the records
+    here name their old spec/ IRI in ``supersedes``
+    (scripts/migrate-parameter-sets-to-dataset.py). Regenerating a record from
+    its source must not drop that link.
+    """
+    if not out_path.exists():
+        return
+    previous = json.loads(out_path.read_text(encoding="utf-8")).get("parameter_set", {})
+    body = record["parameter_set"]
+    if previous.get("supersedes") and "supersedes" not in body and previous.get("id") == body.get("id"):
+        body["supersedes"] = previous["supersedes"]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--source", required=True, help="literature_ocv directory (with manifest.csv)")
@@ -244,6 +260,7 @@ def main() -> int:
         out_dir = out_root / slug
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / "record.json"
+        carry_supersedes(record, out_path)
         out_path.write_text(
             json.dumps(record, indent=2, ensure_ascii=False, allow_nan=False) + "\n",
             encoding="utf-8",
