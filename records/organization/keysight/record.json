@@ -5,7 +5,7 @@
     "short_id": "vzwapmh6",
     "type": "Manufacturer",
     "name": "Keysight",
-    "sameAs": [
+    "same_as": [
       "https://battery.knowledge-graph.eu/wiki/Item:OSW7050e605d605435685fee14224cf8b54"
     ]
   },

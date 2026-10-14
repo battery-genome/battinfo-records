@@ -5,7 +5,7 @@
     "short_id": "cc6ysdkt",
     "type": "Manufacturer",
     "name": "NXP",
-    "sameAs": [
+    "same_as": [
       "https://battery.knowledge-graph.eu/wiki/Item:OSW286dcd1b77d34620856805f2dddeacc9"
     ]
   },

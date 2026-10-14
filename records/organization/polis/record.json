@@ -8,7 +8,7 @@
     "legalName": "POLIS Post Lithium Storage Cluster of Excellence",
     "location": {"addressLocality":"Ulm","addressCountry":"DE"},
     "url": "https://www.postlithiumstorage.org/en/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW2701a6e221c64522ac094dcb96dfaf10"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSW2701a6e221c64522ac094dcb96dfaf10"],
     "description": "German Cluster of Excellence developing new battery materials and technology concepts for sustainable electrical energy storage."
   },
   "provenance": {

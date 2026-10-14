@@ -8,7 +8,7 @@
     "legalName": "Dansk Batteriselskab",
     "location": {"addressCountry":"DK"},
     "url": "http://batteriselskab.dk/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW85613e41bfb148a8b6345ace4aa2e1fd"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSW85613e41bfb148a8b6345ace4aa2e1fd"],
     "alternateName": ["DBS","Dansk Batteriselskab"],
     "description": "Independent professional organisation of persons, institutions, and companies working with batteries in Denmark."
   },

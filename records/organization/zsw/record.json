@@ -8,7 +8,7 @@
     "legalName": "Zentrum für Sonnenenergie- und Wasserstoff-Forschung Baden-Württemberg",
     "location": {"addressLocality":"Ulm","addressCountry":"DE"},
     "url": "https://www.zsw-bw.de/en.html",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW9ecad32b44a14954b908476c116fc3da","https://ror.org/014x8q810"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSW9ecad32b44a14954b908476c116fc3da","https://ror.org/014x8q810"],
     "alternateName": ["Center for Solar Energy and Hydrogen Research","ZSW Baden-Württemberg"],
     "description": "German energy research institute focused on solar energy, hydrogen, and battery technologies."
   },
