@@ -111,7 +111,7 @@ def write_org_stub(slug: str, name: str, url: str | None, existing_iri: str | No
         },
         "editorial": {
             "review_status": "stub",
-            "note": "Auto-generated stub. Add legalName, sameAs (Wikidata/ROR), location, foundingDate, type.",
+            "note": "Auto-generated stub. Add legalName, same_as (Wikidata/ROR), location, foundingDate, type.",
         },
     }
 
@@ -167,7 +167,7 @@ def main() -> None:
     print(f"\nDone. {noun}: {created}  Already exist: {skipped}")
     if created and not args.dry_run:
         print("\nNext steps:")
-        print("  1. Curate each stub: add legalName, sameAs (Wikidata IRI), location, type.")
+        print("  1. Curate each stub: add legalName, same_as (Wikidata IRI), location, type.")
         print("  2. Run scripts/backfill_org_ids.py to add manufacturer.id to cell-spec records.")
 
 
