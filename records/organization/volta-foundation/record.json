@@ -6,7 +6,7 @@
     "type": "Organization",
     "name": "Volta Foundation",
     "url": "https://volta.foundation/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWf5b056548710406b84b0a1d31614a382"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSWf5b056548710406b84b0a1d31614a382"],
     "alternateName": ["VF"],
     "description": "A global network of battery professionals spanning industry, academia, and government."
   },

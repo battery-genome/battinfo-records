@@ -5,7 +5,7 @@ Syncs organization records from the Battery Knowledge Graph (BKG)
 https://battery.knowledge-graph.eu into battinfo-records.
 
 For each of the 171 BKG organizations:
-  - If a matching battinfo-records directory exists → adds/updates sameAs
+  - If a matching battinfo-records directory exists → adds/updates same_as
   - If no match → creates a new record stub with data fetched from BKG
 
 Usage:
@@ -341,24 +341,35 @@ def _existing_records() -> dict[str, Path]:
     return result
 
 
+def _as_list(value: object) -> list:
+    if value is None:
+        return []
+    return [value] if isinstance(value, str) else list(value)
+
+
 def _update_same_as(rec_path: Path, bkg_url: str, dry_run: bool) -> None:
-    """Add the BKG URL to sameAs in an existing record."""
+    """Add the BKG URL to same_as in an existing record.
+
+    The registry's organisation schema takes same_as only, so a leftover
+    sameAs key is folded into same_as and removed.
+    """
     rec = json.loads(rec_path.read_text(encoding="utf-8"))
     org = rec.setdefault("organization", {})
-    same_as = org.get("sameAs", [])
-    if isinstance(same_as, str):
-        same_as = [same_as]
-    if bkg_url not in same_as:
+    legacy = _as_list(org.pop("sameAs", None))
+    same_as = list(dict.fromkeys(_as_list(org.get("same_as")) + legacy))
+    added = bkg_url not in same_as
+    if added:
         same_as.append(bkg_url)
-        org["sameAs"] = same_as
+    if added or legacy:
+        org["same_as"] = same_as
         if not dry_run:
             rec_path.write_text(
                 json.dumps(rec, indent=2, ensure_ascii=False) + "\n",
                 encoding="utf-8",
             )
-        print(f"  [updated] {rec_path.parent.name}: added sameAs → {bkg_url}")
+        print(f"  [updated] {rec_path.parent.name}: same_as now holds {bkg_url}")
     else:
-        print(f"  [skip] {rec_path.parent.name}: sameAs already present")
+        print(f"  [skip] {rec_path.parent.name}: same_as already present")
 
 
 def _create_record(
@@ -378,7 +389,7 @@ def _create_record(
         "short_id": short_id,
         "type": org_type,
         "name": name,
-        "sameAs": [bkg_url],
+        "same_as": [bkg_url],
     }
     if extra:
         org.update(extra)

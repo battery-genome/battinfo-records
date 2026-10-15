@@ -8,7 +8,7 @@
     "legalName": "Georgia Institute of Technology",
     "location": {"addressLocality":"Atlanta","addressCountry":"US"},
     "url": "https://www.gatech.edu/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWf1fcf1be81cc4a6eb653a90fed1d7a60","https://ror.org/01zkghx44"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSWf1fcf1be81cc4a6eb653a90fed1d7a60","https://ror.org/01zkghx44"],
     "alternateName": ["GT","Georgia Institute of Technology"],
     "description": "Public research university in Atlanta, Georgia, USA with significant battery and energy storage research programmes."
   },

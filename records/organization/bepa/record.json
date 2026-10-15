@@ -7,7 +7,7 @@
     "name": "BEPA",
     "legalName": "Batteries European Partnership Association AISBL",
     "url": "https://bepassociation.eu/about/bepa/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWd5bfd25b959c4386bbfe493d32e2e43b"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSWd5bfd25b959c4386bbfe493d32e2e43b"],
     "alternateName": ["Batteries European Partnership Association","BATT4EU"],
     "description": "International non-profit association representing the private side of the BATT4EU Partnership."
   },

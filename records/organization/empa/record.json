@@ -8,7 +8,7 @@
     "legalName": "Empa - Swiss Federal Laboratories for Materials Science and Technology",
     "location": {"addressCountry":"CH"},
     "url": "https://www.empa.ch/empa",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW25ae50eb4e0d491fb76d82c95c34329b"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSW25ae50eb4e0d491fb76d82c95c34329b"],
     "description": "Interdisciplinary materials science research institute of the ETH Domain in Switzerland."
   },
   "provenance": {

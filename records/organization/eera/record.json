@@ -7,7 +7,7 @@
     "name": "EERA",
     "legalName": "European Energy Research Alliance",
     "url": "https://www.eera-set.eu/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSWa2aef4b4902a47d7be8cf31673e68a1d"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSWa2aef4b4902a47d7be8cf31673e68a1d"],
     "alternateName": ["European Energy Research Alliance"],
     "description": "The largest low-carbon energy research community in Europe; a key player in the EU Strategic Energy Technology (SET) Plan."
   },

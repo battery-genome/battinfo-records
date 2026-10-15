@@ -6,7 +6,7 @@
     "type": "Organization",
     "name": "Battery Associates",
     "url": "https://www.battery.associates/",
-    "sameAs": [
+    "same_as": [
       "https://battery.knowledge-graph.eu/wiki/Item:OSW652327a5d54b48c1992dc1121cfd422b",
       "https://battery.knowledge-graph.eu/wiki/Item:OSW33726bfbbe21401a9416b4112fa96f8b"
     ],

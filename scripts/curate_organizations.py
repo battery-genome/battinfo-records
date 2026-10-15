@@ -43,7 +43,7 @@ KNOWN: dict[str, dict] = {
         "type": "Manufacturer",
         "location": {"addressCountry": "US"},
         "foundingDate": "2001",
-        "sameAs": ["https://www.wikidata.org/wiki/Q193793"],
+        "same_as": ["https://www.wikidata.org/wiki/Q193793"],
         "alternateName": ["A123"],
         "description": (
             "US manufacturer of lithium iron phosphate (LFP) batteries, "
@@ -64,7 +64,7 @@ KNOWN: dict[str, dict] = {
         "type": "Manufacturer",
         "location": {"addressCountry": "CN", "addressLocality": "Hong Kong"},
         "foundingDate": "1999",
-        "sameAs": ["https://www.wikidata.org/wiki/Q4756494"],
+        "same_as": ["https://www.wikidata.org/wiki/Q4756494"],
         "alternateName": ["ATL", "ATL Amperex Technology"],
         "description": (
             "Leading manufacturer of lithium-ion polymer batteries, "
@@ -93,7 +93,7 @@ KNOWN: dict[str, dict] = {
         "type": "Manufacturer",
         "location": {"addressCountry": "CN", "addressLocality": "Ningde"},
         "foundingDate": "2011",
-        "sameAs": ["https://www.wikidata.org/wiki/Q20731953"],
+        "same_as": ["https://www.wikidata.org/wiki/Q20731953"],
         "alternateName": ["Contemporary Amperex Technology", "宁德时代"],
         "description": "World's largest manufacturer of lithium-ion batteries for electric vehicles.",
     },
@@ -109,7 +109,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Duracell Inc.",
         "type": "Manufacturer",
         "location": {"addressCountry": "US"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q672808"],
+        "same_as": ["https://www.wikidata.org/wiki/Q672808"],
         "alternateName": ["DURACELL"],
         "description": "US consumer battery brand, owned by Berkshire Hathaway.",
     },
@@ -118,7 +118,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "EaglePicher Technologies, LLC",
         "type": "Manufacturer",
         "location": {"addressCountry": "US", "addressLocality": "Joplin, MO"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q3050826"],
+        "same_as": ["https://www.wikidata.org/wiki/Q3050826"],
         "alternateName": ["Eagle Picher Technologies LLC", "EAGLE PICHER", "EaglePicher"],
         "description": (
             "US manufacturer of specialty batteries for defence, space, and medical applications."
@@ -167,7 +167,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Energizer Holdings, Inc.",
         "type": "Manufacturer",
         "location": {"addressCountry": "US", "addressLocality": "St. Louis, MO"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q1340474"],
+        "same_as": ["https://www.wikidata.org/wiki/Q1340474"],
         "alternateName": ["ENERGIZER"],
         "description": "US manufacturer and marketer of primary and rechargeable batteries.",
     },
@@ -214,7 +214,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "GS Yuasa Technology Ltd.",
         "type": "Manufacturer",
         "location": {"addressCountry": "JP"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q1571799"],
+        "same_as": ["https://www.wikidata.org/wiki/Q1571799"],
         "alternateName": ["GS Yuasa Technology", "ジーエス・ユアサ"],
         "description": "Japanese battery manufacturer producing lead-acid and lithium-ion cells.",
     },
@@ -231,7 +231,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Hitachi, Ltd.",
         "type": "Corporation",
         "location": {"addressCountry": "JP", "addressLocality": "Tokyo"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q190125"],
+        "same_as": ["https://www.wikidata.org/wiki/Q190125"],
         "description": "Japanese multinational conglomerate with battery divisions.",
     },
     "jiangsu-frey": {
@@ -245,7 +245,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Kokam Co., Ltd.",
         "type": "Manufacturer",
         "location": {"addressCountry": "KR"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q17022028"],
+        "same_as": ["https://www.wikidata.org/wiki/Q17022028"],
         "description": (
             "South Korean manufacturer of high-performance lithium polymer cells, "
             "widely used in research and aerospace. Acquired by SolarEdge Technologies."
@@ -256,7 +256,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Leclanché SA",
         "type": "Manufacturer",
         "location": {"addressCountry": "CH", "addressLocality": "Yverdon-les-Bains"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q2724618"],
+        "same_as": ["https://www.wikidata.org/wiki/Q2724618"],
         "alternateName": ["LECLANCHÉ", "Leclanche"],
         "description": "Swiss manufacturer of lithium-ion cells and energy storage systems.",
     },
@@ -266,7 +266,7 @@ KNOWN: dict[str, dict] = {
         "type": "Manufacturer",
         "location": {"addressCountry": "KR", "addressLocality": "Seoul"},
         "foundingDate": "2020",
-        "sameAs": ["https://www.wikidata.org/wiki/Q104997810"],
+        "same_as": ["https://www.wikidata.org/wiki/Q104997810"],
         "alternateName": ["LG", "LG Chem", "LG Chem Battery", "LGCS", "LGES"],
         "description": (
             "South Korean battery manufacturer, spun off from LG Chem in 2020. "
@@ -305,7 +305,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Murata Manufacturing Co., Ltd.",
         "type": "Manufacturer",
         "location": {"addressCountry": "JP", "addressLocality": "Kyoto"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q696128"],
+        "same_as": ["https://www.wikidata.org/wiki/Q696128"],
         "alternateName": ["MURATA", "村田製作所", "Sony Energy Devices"],
         "description": (
             "Japanese electronics manufacturer that acquired Sony's battery business "
@@ -317,7 +317,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Panasonic Holdings Corporation",
         "type": "Manufacturer",
         "location": {"addressCountry": "JP", "addressLocality": "Osaka"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q183230"],
+        "same_as": ["https://www.wikidata.org/wiki/Q183230"],
         "alternateName": ["パナソニック", "Panasonic Energy"],
         "description": (
             "Japanese electronics manufacturer and major global producer of "
@@ -337,7 +337,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Saft Groupe S.A.",
         "type": "Manufacturer",
         "location": {"addressCountry": "FR", "addressLocality": "Bagnolet"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q1380143"],
+        "same_as": ["https://www.wikidata.org/wiki/Q1380143"],
         "description": (
             "French manufacturer of high-performance batteries for industrial, "
             "defence, and space applications. Subsidiary of TotalEnergies since 2016."
@@ -348,7 +348,7 @@ KNOWN: dict[str, dict] = {
         "legalName": "Samsung SDI Co., Ltd.",
         "type": "Manufacturer",
         "location": {"addressCountry": "KR", "addressLocality": "Yongin"},
-        "sameAs": ["https://www.wikidata.org/wiki/Q491229"],
+        "same_as": ["https://www.wikidata.org/wiki/Q491229"],
         "alternateName": ["Samsung", "삼성SDI"],
         "description": (
             "South Korean battery manufacturer and subsidiary of Samsung Group. "
@@ -362,7 +362,7 @@ KNOWN: dict[str, dict] = {
         "location": {"addressCountry": "JP"},
         "foundingDate": "1947",
         "dissolutionDate": "2012",
-        "sameAs": ["https://www.wikidata.org/wiki/Q186168"],
+        "same_as": ["https://www.wikidata.org/wiki/Q186168"],
         "alternateName": ["SANYO"],
         "parentOrganization": {
             "id": "https://w3id.org/battinfo/organization/en1a-v2t1-0qt5-n6w8",
@@ -474,10 +474,13 @@ def apply_curation(org: dict, patch: dict) -> dict:
                 existing = [existing]
             merged = list(dict.fromkeys(existing + value))
             org[key] = merged
-        elif key == "sameAs":
-            existing = org.get("sameAs", [])
-            if isinstance(existing, str):
-                existing = [existing]
+        elif key == "same_as":
+            # The registry's organisation schema takes same_as only: fold a
+            # leftover sameAs into it.
+            existing = []
+            for old in (org.pop("sameAs", None), org.get("same_as")):
+                if old:
+                    existing += [old] if isinstance(old, str) else list(old)
             merged = list(dict.fromkeys(existing + value))
             org[key] = merged if len(merged) > 1 else merged[0] if merged else None
             if org[key] is None:

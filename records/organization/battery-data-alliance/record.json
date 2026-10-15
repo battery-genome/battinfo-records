@@ -6,7 +6,7 @@
     "type": "Organization",
     "name": "Battery Data Alliance",
     "url": "https://lfenergy.org/projects/battery-data-alliance/",
-    "sameAs": ["https://battery.knowledge-graph.eu/wiki/Item:OSW477fba7373e04e81acfd724d33743768"],
+    "same_as": ["https://battery.knowledge-graph.eu/wiki/Item:OSW477fba7373e04e81acfd724d33743768"],
     "alternateName": ["BDA"],
     "description": "LF Energy organisation focused on standardisation and analysis of battery data."
   },
