@@ -64,6 +64,7 @@
     "source_type": "catalog",
     "source_file": "Panasonic_NCR20700A.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Panasonic_NCR20700A.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "87ba45f351b1468b3d94f28e3f63761913f6226d64b9d13659ca75c4179fc1f2"

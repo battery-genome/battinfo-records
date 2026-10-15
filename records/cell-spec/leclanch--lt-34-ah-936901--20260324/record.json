@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "LECLANCHÉ_LT_34_Ah_(936901).json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/LECLANCH%C3%89_LT_34_Ah_%28936901%29.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "a2f914aae24df3e6aab5d34884201e41b4ab89bf91d6f1126c2147380c76fc77"

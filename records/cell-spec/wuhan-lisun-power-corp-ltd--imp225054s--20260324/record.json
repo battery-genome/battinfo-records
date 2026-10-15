@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "Wuhan_Lisun_Power_Corp._Ltd_IMP225054S.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Wuhan_Lisun_Power_Corp._Ltd_IMP225054S.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "64d0e326c8d45444b2bef5e7aba3efa39009ef5872e831858490152cfbbea582"

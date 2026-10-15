@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "Neosonic_Li-Polymer_Energy_KMBNS08035130S.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Neosonic_Li-Polymer_Energy_KMBNS08035130S.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "33ac0ac7f0aadaed7924e02a592ba5c40b971a0c209f01d7c2d1b91ce3e48963"

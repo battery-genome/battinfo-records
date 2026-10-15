@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "Auto_Energy_Technology_Co_YT185185185.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Auto_Energy_Technology_Co_YT185185185.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "436e7d7baad3a7db8654328c0bc048ddcd85c2a7e8f42c078e224d1947bf1aaf"

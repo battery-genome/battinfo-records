@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "Eemb_Co_LP8545135-PCM-LD.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Eemb_Co_LP8545135-PCM-LD.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "6976d440b0d54fde8fbfbccbd67c5ac951162705ed0cfea5b48d023c001dff4d"

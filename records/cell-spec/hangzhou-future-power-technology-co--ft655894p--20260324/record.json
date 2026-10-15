@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "Hangzhou_Future_Power_Technology_Co_FT655894P.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Hangzhou_Future_Power_Technology_Co_FT655894P.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "0c2eb2b0faca2fe6c1755686c8d1b3bc89e9301da71d6d71525bc246673e864c"

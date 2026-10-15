@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "Yoku_Energy_(Shenzhen)_Co_7545135.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Yoku_Energy_%28Shenzhen%29_Co_7545135.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "a7721496eb3b7ca869f7583dd90513c1bbfc67130fa2bb819206db8af4d4417e"

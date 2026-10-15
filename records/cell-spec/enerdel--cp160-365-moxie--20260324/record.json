@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "ENERDEL_CP160-365_Moxie+.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/ENERDEL_CP160-365_Moxie%2B.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "61b7348993023fc4e68ee68663217ed133c511a7eaf23b16b66d39fb083fc226"

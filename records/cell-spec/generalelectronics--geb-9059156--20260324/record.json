@@ -66,6 +66,7 @@
     "source_type": "catalog",
     "source_file": "GeneralElectronics_GEB_9059156.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/GeneralElectronics_GEB_9059156.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "8662ea5632f1dce19bed51b7a2c1ef88bf6b8426994e2664bd42f7480b90f344"

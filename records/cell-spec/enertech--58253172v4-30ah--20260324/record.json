@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "ENERTECH_58253172V4_30Ah.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/ENERTECH_58253172V4_30Ah.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "dad9cb6005ffbcb7b53b434907b707949c9369ab1b8f151a5a81d6692d6986f2"

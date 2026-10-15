@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Thunder-Sky_WB-LYP700AHA.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Thunder-Sky_WB-LYP700AHA.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "7b04572f4a8a7ff3957afd5cb503b427732bba9829369d85ed511b86491e3837"

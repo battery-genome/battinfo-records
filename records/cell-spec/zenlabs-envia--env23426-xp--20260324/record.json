@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Zenlabs_Envia_ENV23426-XP.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Zenlabs_Envia_ENV23426-XP.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "e605df909bc026e511aca34f784281f1af3bfc7324349e04776be7ab89f729d4"

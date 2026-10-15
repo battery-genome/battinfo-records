@@ -62,6 +62,7 @@
     "source_type": "catalog",
     "source_file": "E-One_Moli_Energy_(Canada)_Limited_IBR-26700A.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/E-One_Moli_Energy_%28Canada%29_Limited_IBR-26700A.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "351e84e99368134c7c5c3d0e81666456697ed71c22bc7e28976509f08f88dd87"

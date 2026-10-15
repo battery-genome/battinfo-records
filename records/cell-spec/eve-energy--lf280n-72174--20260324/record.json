@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "EVE_Energy_LF280N-72174.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/EVE_Energy_LF280N-72174.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "e925d1c6bd318118613b1243b062b2907b68f700d59fb92b67a16011d5e90eec"

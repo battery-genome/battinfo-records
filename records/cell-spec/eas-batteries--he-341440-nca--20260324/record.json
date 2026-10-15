@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "EAS_Batteries_HE-341440_NCA.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/EAS_Batteries_HE-341440_NCA.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "27a8d49bfe887d396575b2ab4d6201379548bdbbed029afb5e3ebf1cf670de3c"

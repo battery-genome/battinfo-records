@@ -64,6 +64,7 @@
     "source_type": "catalog",
     "source_file": "BMZ_Sony_BMZ_21700_50EL.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/BMZ_Sony_BMZ_21700_50EL.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "0b96923ba3980f3bcfbdadd1bb31c9c9208cfe59596aebb323f8e6c225c8c905"

@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Sinopoly_Sinopoly_400_Ah.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Sinopoly_Sinopoly_400_Ah.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "5d7ac98e0d9d3856d38f49cabcfa7070d337d8189f17d8bb91d21971b7f9c06a"

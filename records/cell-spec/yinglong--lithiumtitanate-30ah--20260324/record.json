@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "Yinglong_LithiumTitanate_30Ah.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Yinglong_LithiumTitanate_30Ah.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "4fc90c3c8f5fb1e1ce89a9cc92b2727f1b948d5ef10c2907e7d1df86ec414b64"

@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "OSN_OSN-08198255-LT28.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/OSN_OSN-08198255-LT28.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "89c5bcecc05ba8f0b42f2208d7506be2b5baac8175970b3472cad0729e4f4c17"

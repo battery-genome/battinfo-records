@@ -64,6 +64,7 @@
     "source_type": "catalog",
     "source_file": "Kayo_battery_co.._ltd_KFL_32650-10P.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Kayo_battery_co.._ltd_KFL_32650-10P.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "899ba5184dbcc9cf5375e41769c3a53a627745a1d52fb696f08839e96e6be24c"

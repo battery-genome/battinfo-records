@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Amita_Technologies_120155250N-AM44E.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Amita_Technologies_120155250N-AM44E.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "c3cdea9900789705eebd298881042e27a5cc0e576d0558eff8f16792319f1807"

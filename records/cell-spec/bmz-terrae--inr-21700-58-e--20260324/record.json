@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "BMZ_TerraE_INR_21700_58_E.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/BMZ_TerraE_INR_21700_58_E.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "b5512350f34ba1ca6d28636dc7cd87bbf5ad56b047b046850d77a1d878c3536d"

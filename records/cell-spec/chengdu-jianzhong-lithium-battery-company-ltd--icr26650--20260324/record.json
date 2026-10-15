@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "Chengdu_Jianzhong_Lithium_Battery_Company_Ltd_ICR26650.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Chengdu_Jianzhong_Lithium_Battery_Company_Ltd_ICR26650.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "12bf23513f1295bf622b3393c32c0b7184507b854bf0e58eae34fc16cbcd09a5"

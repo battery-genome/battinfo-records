@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "EAS_Batteries_HE-602030_NCA_55AH.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/EAS_Batteries_HE-602030_NCA_55AH.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "1f603d98ab9dd05325c7633b2210d6a95a9c15ea0a4266b1535da31e83e7afc7"

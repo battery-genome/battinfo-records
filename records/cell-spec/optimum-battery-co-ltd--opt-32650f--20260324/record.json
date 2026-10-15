@@ -63,6 +63,7 @@
     "source_type": "catalog",
     "source_file": "Optimum_Battery_Co_Ltd_OPT-32650F.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Optimum_Battery_Co_Ltd_OPT-32650F.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "b5442401ac464d5adef8d3da6a7bfcbc9f63b37dbc5034c514c0a2ef3c6af446"

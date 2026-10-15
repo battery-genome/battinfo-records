@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Zenlabs_Envia_ENV_50.4_Ah.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Zenlabs_Envia_ENV_50.4_Ah.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "da021f36b40931a1ed107e4e8f2719326ba2dd06a9facf43b6a53599f7181da6"

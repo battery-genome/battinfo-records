@@ -67,6 +67,7 @@
     "source_type": "catalog",
     "source_file": "Kokam_SLPB70205130P.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Kokam_SLPB70205130P.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "4c35db3bfb084de08b6cb5c8074baa73df3c849cdcf5f6623c15b6f9c5762f94"
