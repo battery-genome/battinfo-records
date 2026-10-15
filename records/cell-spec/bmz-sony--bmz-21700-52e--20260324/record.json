@@ -62,8 +62,9 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/BMZ_Sony_BMZ_21700_52E.json",
+    "source_file": "BMZ_Sony_BMZ_21700_52E.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/BMZ_Sony_BMZ_21700_52E.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "9863afd18a358a0a5e2450eca203283557dfcb70d74fc361cee11a73f9f4f437"

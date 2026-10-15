@@ -65,8 +65,9 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Amita_Technologies_5099130NRS.json",
+    "source_file": "Amita_Technologies_5099130NRS.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Amita_Technologies_5099130NRS.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "1036c8b30f119d1ab9406792d6365df69417ae6d8f20390aa880eee4e48f1b0b"

@@ -64,8 +64,9 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Amprius_Wuxi_Lead_ANW3.6-455055.json",
+    "source_file": "Amprius_Wuxi_Lead_ANW3.6-455055.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Amprius_Wuxi_Lead_ANW3.6-455055.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "d4ac00634891a7e577c613256453a82f3c0aab810181c405be4d6138f4887b1b"

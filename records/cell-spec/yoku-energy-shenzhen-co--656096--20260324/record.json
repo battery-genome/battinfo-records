@@ -64,8 +64,9 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/Yoku_Energy_(Shenzhen)_Co_656096.json",
+    "source_file": "Yoku_Energy_(Shenzhen)_Co_656096.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/Yoku_Energy_%28Shenzhen%29_Co_656096.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "3015ff6044963cf4b228d68f76a9f4dee2c7c05a77511c92f8d37a912fae60e6"

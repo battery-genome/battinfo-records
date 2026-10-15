@@ -65,8 +65,9 @@
   },
   "provenance": {
     "source_type": "catalog",
-    "source_file": "C:/Users/simonc/Documents/Github-local/DigiBatt/CellInfoRepository/BatteryTypeJson/GBS_ZhEJIANG_Systems_GBS-LFP200Ah-B.json",
+    "source_file": "GBS_ZhEJIANG_Systems_GBS-LFP200Ah-B.json",
     "source_url": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
+    "comment": "Source file in CellInfoRepository: https://github.com/phdechent/CellInfoRepository/blob/e3bb6f5cf5855f5abc66961cecccbb39f4ece494/BatteryTypeJson/GBS_ZhEJIANG_Systems_GBS-LFP200Ah-B.json",
     "retrieved_at": 1774380439,
     "citation": "https://github.com/TUMFTM/TruckBatteryDesign/raw/main/Step1_cell_selection/inputs/CellDatabase_v6.xlsx",
     "file_hash": "16d5e1610096fce1706bb60958d0bd00ba4a00bea9b7ae91ae91853c296f747b"
