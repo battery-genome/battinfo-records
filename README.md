@@ -93,6 +93,16 @@ Example:
   -ApiKey <publisher-api-key>
 ```
 
+## Precomputed simulations
+
+Every parameter-set record whose BPX file passed its PyBaMM smoke run is simulated by `scripts/simulate-parameter-sets.py`: the DFN model at each measured discharge in the file, plus a grid of C-rates and ambient temperatures, with through-cell and particle profiles at every time step. The `Simulations` workflow runs it on changes to `records/parameter-set/`, weekly, and on demand, and copies the results to the `battery-genome-simulations` bucket under `simulations/`. Nothing is written to this repo. The platform reads `simulations/latest.json` to build its simulation panels.
+
+To run it locally without uploading:
+
+```bash
+uv run --no-project --with "pybamm[bpx]==26.10.1.1" python scripts/simulate-parameter-sets.py --out ../sim-out
+```
+
 See [CONTRIBUTING.md](CONTRIBUTING.md), [docs/repo-scope.md](docs/repo-scope.md), and [docs/record-lifecycle.md](docs/record-lifecycle.md) for the operating rules.
 For the concrete shared review -> promote -> publish loop, see [docs/editorial-cell-spec-workflow.md](docs/editorial-cell-spec-workflow.md).
 
