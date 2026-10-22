@@ -1,0 +1,71 @@
+name: Simulations
+
+# Precomputes PyBaMM runs for every parameter-set record with a runnable BPX file
+# and copies them to the battery-genome-simulations bucket under simulations/ (write-once paths;
+# only simulations/latest.json is ever replaced). See scripts/simulate-parameter-sets.py.
+#
+# The R2 key lives in the "r2-simulations" environment, which only releases it to
+# runs on main. The key can only write that bucket, the script refuses to write
+# outside simulations/, and existing keys are never overwritten. Actions are
+# pinned to commits for the same reason.
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Glob on record folder names, e.g. schmitt* (empty: all records)"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "records/parameter-set/**"
+      - "scripts/simulate-parameter-sets.py"
+      - ".github/workflows/simulations.yml"
+  schedule:
+    - cron: "17 4 * * 1"  # Mondays 04:17 UTC
+
+concurrency:
+  group: simulations
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    environment: r2-simulations
+    timeout-minutes: 90
+    env:
+      PYBAMM_VERSION: "26.10.1.1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e  # v6.8.0
+
+      - name: Cache downloaded BPX files
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830  # v4.3.0
+        with:
+          path: .bpx-cache
+          key: bpx-files-${{ hashFiles('records/parameter-set/**/record.json') }}
+          restore-keys: bpx-files-
+
+      - name: Simulate and upload
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ vars.R2_ENDPOINT }}
+          R2_BUCKET: ${{ vars.R2_BUCKET }}
+          ONLY: ${{ inputs.only }}
+          STAMP_SUFFIX: ${{ github.run_id }}
+        run: |
+          uv run --no-project --python 3.12 \
+            --with "pybamm[bpx]==${PYBAMM_VERSION}" --with boto3 \
+            python scripts/simulate-parameter-sets.py \
+            --out "$RUNNER_TEMP/sim-out" --cache-dir .bpx-cache \
+            --stamp "$(date -u +%F)-${STAMP_SUFFIX}" \
+            ${ONLY:+--only "$ONLY"} \
+            --upload
