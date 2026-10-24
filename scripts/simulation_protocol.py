@@ -76,13 +76,11 @@ def thermal_support(raw: bytes, model: str, options: dict) -> tuple[bool, str]:
         sim = pybamm.Simulation(model_for(model, options, True), parameter_values=parameter_values(raw),
                                 experiment=pybamm.Experiment(["Rest for 10 seconds"]))
         sim.solve()
-    except KeyError as exc:
-        missing = re.search(r"Parameter '([^']+)'", str(exc))
-        needed = f" (PyBaMM's lumped thermal model needs '{missing.group(1)}')" if missing else ""
-        return False, f"The runs are isothermal: the file carries no thermal properties{needed}."
-    except Exception as exc:  # noqa: BLE001
-        return False, f"The runs are isothermal: the lumped thermal model did not run on this file ({type(exc).__name__})."
-    return True, "Lumped thermal model, with the thermal properties given in the file."
+    except KeyError:
+        return False, "Isothermal: the file has no thermal properties."
+    except Exception:  # noqa: BLE001
+        return False, "Isothermal: the thermal model did not run on this file."
+    return True, "Lumped thermal model."
 
 
 def measured_cases(bpx: dict) -> list[dict]:

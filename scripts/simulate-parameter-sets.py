@@ -225,7 +225,7 @@ def simulate_file(folder: str, body: dict, dist: dict, raw: bytes, out_root: Pat
             item["agreement"] = protocol.agreement(case, t, voltage, capacity)
         measured.append(item)
 
-    rates = ", ".join(f"{rate:g}C" for rate in protocol.STANDARD_C_RATES)
+    beyond = max_measured is not None and any(rate > max_measured * 1.001 for rate in protocol.STANDARD_C_RATES)
     summary = {
         "generator": {"name": "battinfo-records/scripts/simulate-parameter-sets.py", "version": GENERATOR_VERSION},
         "parameter_set": {
@@ -242,12 +242,7 @@ def simulate_file(folder: str, body: dict, dist: dict, raw: bytes, out_root: Pat
         "grid": {
             "c_rates": list(protocol.STANDARD_C_RATES),
             "max_measured_c_rate": round(max_measured, 4) if max_measured is not None else None,
-            "c_rate_note": (
-                f"The same rates for every file ({rates}). Rates above the highest measured one "
-                f"({max_measured:.3g}C) are beyond the measured range."
-                if max_measured is not None else
-                f"The same rates for every file ({rates}). The file carries no measured data."
-            ),
+            "c_rate_note": f"Rates above {max_measured:.3g}C are beyond the measured range." if beyond else "",
         },
         "measured_source": "the file's own Validation section" if measured else None,
         "measured": measured,
