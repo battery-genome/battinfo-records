@@ -21,6 +21,8 @@ on:
     paths:
       - "records/parameter-set/**"
       - "scripts/simulate-parameter-sets.py"
+      - "scripts/simulation_protocol.py"
+      - "scripts/simulation_files.py"
       - ".github/workflows/simulations.yml"
   schedule:
     - cron: "17 4 * * 1"  # Mondays 04:17 UTC

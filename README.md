@@ -95,12 +95,18 @@ Example:
 
 ## Precomputed simulations
 
-Every parameter-set record whose BPX file passed its PyBaMM smoke run is simulated by `scripts/simulate-parameter-sets.py`: the DFN model at each measured discharge in the file, plus a grid of C-rates and ambient temperatures, with through-cell and particle profiles at every time step. The `Simulations` workflow runs it on changes to `records/parameter-set/`, weekly, and on demand, and copies the results to the `battery-genome-simulations` bucket under `simulations/`. Nothing is written to this repo. The platform reads `simulations/latest.json` to build its simulation panels.
+Every parameter-set record whose BPX file passed its PyBaMM smoke run is simulated with one standard protocol (`scripts/simulation_protocol.py`): constant-current discharges at 0.05C, 0.1C, 0.2C, 0.5C, 1C and 2C of the file's nominal capacity, with the model, initial state, ambient temperature and cut-off voltage the file itself states. When the file carries measured data in its own `Validation` section, each measured discharge is also replayed with its own current and compared. Through-cell and particle profiles are stored for the standard runs.
 
-To run it locally without uploading:
+- `scripts/simulate-parameter-sets.py` makes the runs. The `Simulations` workflow runs it on changes to `records/parameter-set/` or the scripts, weekly, and on demand.
+- `scripts/benchmark-simulators.py` applies the same protocol under each PyBaMM release line of the last 12 months, on one machine, and records whether each release reads each file, how long each case takes, and how the replays compare with the measured data. The `Simulator benchmark` workflow runs it weekly, on demand, and when the protocol changes.
+
+Both write to the `battery-genome-simulations` bucket under `simulations/`. Nothing is written to this repo. The platform reads `simulations/latest.json` for its simulation panels and its `/simulators` page.
+
+To run either locally without uploading:
 
 ```bash
 uv run --no-project --with "pybamm[bpx]==26.10.1.1" python scripts/simulate-parameter-sets.py --out ../sim-out
+uv run --no-project python scripts/benchmark-simulators.py --out ../bench-out --versions 26.9.0.0,26.10.1.1
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md), [docs/repo-scope.md](docs/repo-scope.md), and [docs/record-lifecycle.md](docs/record-lifecycle.md) for the operating rules.
