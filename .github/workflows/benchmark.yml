@@ -1,0 +1,64 @@
+name: Simulator benchmark
+
+# Runs the standard simulation protocol under each PyBaMM release line of the last 12 months
+# (the latest patch of each) plus the pinned version, all on the same runner, and adds the result
+# to the battery-genome-simulations bucket. See scripts/benchmark-simulators.py.
+#
+# Shares the "simulations" concurrency group with the Simulations workflow, so the two never
+# move simulations/latest.json at the same time. The R2 key comes from the "r2-simulations"
+# environment, which only releases it to runs on main. Actions are pinned to commits.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/simulation_protocol.py"
+      - "scripts/simulation_files.py"
+      - "scripts/benchmark_runner.py"
+      - "scripts/benchmark-simulators.py"
+      - ".github/workflows/benchmark.yml"
+  schedule:
+    - cron: "47 5 * * 1"  # Mondays 05:47 UTC, after the Simulations run
+
+concurrency:
+  group: simulations
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    environment: r2-simulations
+    timeout-minutes: 180
+    env:
+      PYBAMM_VERSION: "26.10.1.1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e  # v6.8.0
+
+      - name: Cache downloaded BPX files
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830  # v4.3.0
+        with:
+          path: .bpx-cache
+          key: bpx-files-${{ hashFiles('records/parameter-set/**/record.json') }}
+          restore-keys: bpx-files-
+
+      - name: Benchmark PyBaMM releases and upload
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ vars.R2_ENDPOINT }}
+          R2_BUCKET: ${{ vars.R2_BUCKET }}
+          STAMP_SUFFIX: ${{ github.run_id }}
+        run: |
+          uv run --no-project --python 3.12 --with boto3 \
+            python scripts/benchmark-simulators.py \
+            --out "$RUNNER_TEMP/bench-out" --cache-dir .bpx-cache \
+            --stamp "$(date -u +%F)-${STAMP_SUFFIX}" \
+            --upload
