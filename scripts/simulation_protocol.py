@@ -12,8 +12,8 @@ Every parameter file gets the same runs, whether or not it carries measured data
 When the file itself carries measured data (its BPX ``Validation`` section, and nothing from
 elsewhere), each measured discharge is also replayed with its own current, and the two curves
 are compared over the time both cover. BPX fixes no sign for current, so a case whose voltage
-falls under a net negative current is read as a discharge. Standard runs above the highest measured rate are marked
-as beyond the measured range.
+falls under a net negative current is read as a discharge. Standard runs above the highest
+measured rate are marked as beyond the measured range.
 """
 from __future__ import annotations
 
