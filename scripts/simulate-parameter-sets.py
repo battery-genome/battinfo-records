@@ -51,7 +51,8 @@ import pybamm  # noqa: E402
 import simulation_protocol as protocol  # noqa: E402
 from simulation_files import PREFIX, Bucket, dumps, fetch, find_records, sha256  # noqa: E402
 
-GENERATOR_VERSION = 2  # 2: one standard protocol for every file, no temperature grid, measured replays
+GENERATOR_VERSION = 3  # 2: one standard protocol for every file, no temperature grid, measured replays;
+# 3: no 24 h limit on a discharge, measured current read with either sign
 CURVE_POINTS = 200
 MAX_PROFILE_TIME_POINTS = 1000
 
@@ -219,6 +220,7 @@ def simulate_file(folder: str, body: dict, dist: dict, raw: bytes, out_root: Pat
         case = cases_by_key[spec["case"]]
         item = {"key": case["key"], "run": spec["id"], "constant_current": case["constant"],
                 "current_A": round(case["current_A"], 6) if case["current_A"] else None,
+                "current_sign_reversed": case["reversed_sign"],
                 "temperature_C": ambient_c, "curve": curve(case["t"], case["capacity"], case["voltage"])}
         if spec["id"] in solutions:
             t, capacity, voltage = solutions[spec["id"]]
