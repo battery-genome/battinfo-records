@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/h7g7-5082-63jk-9wm3",
     "short_id": "h7g750",
-    "name": "Parameterisation example of an LFP|graphite 2 Ah cylindrical 18650 cell.",
+    "name": "BPX example: LFP 18650 cell",
     "virtual_cell": true,
     "parameters_sha256": "7e7da04a7bee449ae4f36c970a0a5a6f7c3305b6da517122324ba62369b424ff",
     "model_context": {
@@ -536,7 +536,7 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN, 1C discharge to 2 V solved in 0.32 s; 1.988 Ah delivered.",
+            "detail": "DFN, 1C discharge to 2 V solved in 0.3 s; 1.988 Ah delivered.",
             "checked_at": "2026-10-29"
           }
         ]
@@ -560,7 +560,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793277453,
+    "retrieved_at": 1793279172,
     "battinfo_version": "0.8.0",
     "source_url": "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/lfp_18650_cell_BPX.json",
     "citation": "https://github.com/FaradayInstitution/BPX"

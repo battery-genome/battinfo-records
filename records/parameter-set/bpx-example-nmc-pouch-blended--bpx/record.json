@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/dpj6-1j9x-eetd-gs81",
     "short_id": "dpj61j",
-    "name": "Test case: blended electrode definition with two particle sizes but equivalent chemistry. Compare to nmc_pouch_cell_BPX.json in About:Energy open-source release.",
+    "name": "BPX example: NMC111 pouch cell, blended positive electrode",
     "virtual_cell": true,
     "parameters_sha256": "fcc7c98a2a9b665a256984d21b0b5fa1dbfa84430d0b5c1d957946373155a084",
     "model_context": {
@@ -398,7 +398,7 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN with {'particle phases': ['1', '2']}, 1C discharge to 2.7 V solved in 0.66 s; 12.925 Ah delivered.",
+            "detail": "DFN with {'particle phases': ['1', '2']}, 1C discharge to 2.7 V solved in 0.59 s; 12.925 Ah delivered.",
             "checked_at": "2026-10-29"
           }
         ]
@@ -421,7 +421,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793277442,
+    "retrieved_at": 1793279162,
     "battinfo_version": "0.8.0",
     "source_url": "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/nmc_pouch_cell_BPX_blended_electrode.json",
     "citation": "https://github.com/FaradayInstitution/BPX"

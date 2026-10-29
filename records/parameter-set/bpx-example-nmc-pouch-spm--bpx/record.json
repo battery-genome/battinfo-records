@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/6bpa-4qet-046r-1zzk",
     "short_id": "6bpa4q",
-    "name": "Test case: Single Particle Model (SPM) parameterisation example based on nmc_pouch_cell_BPX.json from About:Energy open-source release.",
+    "name": "BPX example: NMC111 pouch cell (SPM)",
     "virtual_cell": true,
     "parameters_sha256": "146b1f32a8b63a9be852b753a9770d49e6f59deb309cad00b783cfc9744710af",
     "model_context": {
@@ -386,13 +386,14 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793277436,
+    "retrieved_at": 1793279157,
     "battinfo_version": "0.8.0",
     "source_url": "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/nmc_pouch_cell_BPX_SPM.json",
     "citation": "https://github.com/FaradayInstitution/BPX"
   },
   "notes": [
-    "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), at commit 9b73d69."
+    "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), at commit 9b73d69.",
+    "PyBaMM 26.10 cannot read SPM parameter files (its BPX importer needs an electrolyte section), so its smoke run fails."
   ],
   "license": "mit"
 }

@@ -153,21 +153,28 @@ _BPX_ATTRIBUTION = (
     "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), "
     "at commit 9b73d69."
 )
-for _key, _file, _materials in (
-    ("bpx-example-nmc-pouch", "nmc_pouch_cell_BPX.json", {"negative": "graphite", "positive": "nmc111"}),
-    ("bpx-example-nmc-pouch-spm", "nmc_pouch_cell_BPX_SPM.json", {"negative": "graphite", "positive": "nmc111"}),
+for _key, _file, _name, _materials, _notes in (
+    ("bpx-example-nmc-pouch", "nmc_pouch_cell_BPX.json", "BPX example: NMC111 pouch cell",
+     {"negative": "graphite", "positive": "nmc111"}, []),
+    ("bpx-example-nmc-pouch-spm", "nmc_pouch_cell_BPX_SPM.json", "BPX example: NMC111 pouch cell (SPM)",
+     {"negative": "graphite", "positive": "nmc111"},
+     ["PyBaMM 26.10 cannot read SPM parameter files (its BPX importer needs an electrolyte section), "
+      "so its smoke run fails."]),
     # The positive electrode is a blend: BattINFO cannot name its materials yet.
-    ("bpx-example-nmc-pouch-blended", "nmc_pouch_cell_BPX_blended_electrode.json", {"negative": "graphite"}),
+    ("bpx-example-nmc-pouch-blended", "nmc_pouch_cell_BPX_blended_electrode.json",
+     "BPX example: NMC111 pouch cell, blended positive electrode", {"negative": "graphite"}, []),
     ("bpx-example-nmc-pouch-hysteresis", "nmc_pouch_cell_BPX_user-defined_hysteresis.json",
-     {"negative": "silicon_graphite", "positive": "nmc111"}),
-    ("bpx-example-lfp-18650", "lfp_18650_cell_BPX.json", {"negative": "graphite", "positive": "lfp"}),
+     "BPX example: NMC111 pouch cell with OCP hysteresis", {"negative": "silicon_graphite", "positive": "nmc111"}, []),
+    ("bpx-example-lfp-18650", "lfp_18650_cell_BPX.json", "BPX example: LFP 18650 cell",
+     {"negative": "graphite", "positive": "lfp"}, []),
 ):
     SOURCES[_key] = {
         "url": _BPX_EXAMPLES + _file,
+        "name": _name,
         "license": "mit",
         "attribution": _BPX_ATTRIBUTION,
         "citation": "https://github.com/FaradayInstitution/BPX",
-        "notes": [],
+        "notes": _notes,
         "materials": _materials,
         "software_requirements": None,
         "cell": {"case": "virtual"},
@@ -180,22 +187,26 @@ for _key, _file, _materials in (
 _PYBAMM_PARAMETERS = (
     "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/"
 )
-for _key, _name, _doi, _materials, _cell in (
+for _key, _name, _doi, _materials, _cell, _notes in (
     ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050",
      {"negative": "silicon_graphite", "positive": "nmc811"},
-     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}),  # LG INR21700 M50
-    ("pybamm-ecker2015", "Ecker2015", "10.1149/2.0551509jes",
-     {"negative": "graphite", "positive": "nmc111"},
-     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/c9g2-kj3e-mqsg-2rjp"}),  # Kokam SLPB75106100
-    # PyBaMM names a Kokam SLPB78205130H but says the values are not representative of it.
+     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
+    # Positive electrode LiNiCoO2 (NCO): no BattINFO material kind yet, so only the negative is named.
+    ("pybamm-ecker2015", "Ecker2015", "10.1149/2.0551509jes", {"negative": "graphite"},
+     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/c9g2-kj3e-mqsg-2rjp"},  # Kokam SLPB75106100
+     ["The file describes one electrode pair (0.156 Ah) of the 7.5 Ah cell. Its positive electrode is NCO, "
+      "which has no BattINFO material kind yet."]),
+    # PyBaMM names a Kokam SLPB78205130H, but the values are compiled from several sources (Dualfoil,
+    # Capiglia et al. 1999, Moura et al. 2016 functions), so the set is not that cell's parameterisation.
     ("pybamm-marquis2019", "Marquis2019", "10.1149/2.0341915jes", {"negative": "graphite", "positive": "lco"},
-     {"case": "virtual"}),
+     {"case": "virtual"},
+     ["PyBaMM names a Kokam SLPB78205130H, but the values are compiled from several sources, so no cell is linked."]),
     ("pybamm-nca-kim2011", "NCA_Kim2011", "10.1149/1.3597614", {"negative": "graphite", "positive": "nca"},
-     {"case": "virtual"}),  # a "nominal design" cell
+     {"case": "virtual"}, []),  # a "nominal design" cell
     ("pybamm-prada2013", "Prada2013", "10.1149/2.053304jes", {"negative": "graphite", "positive": "lfp"},
-     {"case": "virtual"}),  # no specific cell named
+     {"case": "virtual"}, []),  # no specific cell named; graphite OCP and j0 from Chen2020
     ("pybamm-ramadass2004", "Ramadass2004", "10.1149/1.1634273", {"negative": "graphite", "positive": "lco"},
-     {"case": "virtual"}),  # assembled from several papers
+     {"case": "virtual"}, []),  # assembled from several papers
 ):
     SOURCES[_key] = {
         "file": f"{_name.lower()}--pybamm.bpx.json",
@@ -209,7 +220,7 @@ for _key, _name, _doi, _materials, _cell in (
         ),
         "citation": f"https://doi.org/{_doi}",
         "citation_doi": _doi,
-        "notes": [],
+        "notes": _notes,
         "materials": _materials,
         "software_requirements": None,
         "cell": _cell,
@@ -224,10 +235,11 @@ def export_check_notes(check_path: Path) -> list[str]:
         return ["PyBaMM's native set and this file could not be compared."]
     rms = max(r["voltage_rms_difference_mV"] for r in runs)
     capacity = max(abs(r["capacity_difference_percent"]) for r in runs)
-    rates = ", ".join(f"{r['c_rate']:g}C" for r in runs)
+    rates = ", ".join(f"{r['c_rate']:g}C" for r in runs if "temperature_K" not in r)
+    warm = " and 1C 20 K warmer" if any("temperature_K" in r for r in runs) else ""
     notes = [f"Matches PyBaMM {report['pybamm']}'s native set within {rms:g} mV RMS and {capacity:g}% capacity "
-             f"(DFN discharges at {rates})."]
-    return notes + [note[0].upper() + note[1:] + "." for note in report.get("notes", [])]
+             f"(DFN discharges at {rates}{warm})."]
+    return notes + list(report.get("notes", []))
 
 
 def fetch(url: str) -> bytes:
@@ -451,6 +463,7 @@ def main() -> int:
         **({"supersedes": source["supersedes"]} if source.get("supersedes") else {}),
         citation=source["citation"],
         **({"citation_doi": source["citation_doi"]} if source.get("citation_doi") else {}),
+        **({"name": source["name"]} if source.get("name") else {}),
         source_url=source.get("source_url", source.get("url")),
         notes=[source["attribution"], *source["notes"],
                *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],

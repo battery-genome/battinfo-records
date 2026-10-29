@@ -36,18 +36,28 @@ import pybamm
 
 # PyBaMM's speed-benchmark parameter sets (packages/pybamm/tests/benchmarks/test_solve_models.py).
 SETS = {
-    "Chen2020": {"citation": "10.1149/1945-7111/ab9050", "model": "DFN"},
-    "ORegan2022": {"citation": "10.1016/j.electacta.2022.140700", "model": "DFN"},
-    "Ecker2015": {"citation": "10.1149/2.0551509jes", "model": "DFN"},
-    "Marquis2019": {"citation": "10.1149/2.0341915jes", "model": "DFN"},
-    "Ai2020": {"citation": "10.1149/2.0122001JES", "model": "DFN"},
-    "NCA_Kim2011": {"citation": "10.1149/1.3597614", "model": "DFN"},
-    "Prada2013": {"citation": "10.1149/2.053304jes", "model": "DFN"},
-    "Ramadass2004": {"citation": "10.1149/1.1634273", "model": "DFN"},
+    "Chen2020": {"citation": "10.1149/1945-7111/ab9050", "model": "DFN",
+                 "about": "an LG M50 cell (Chen et al. 2020)"},
+    "ORegan2022": {"citation": "10.1016/j.electacta.2022.140700", "model": "DFN",
+                   "about": "an LG M50 cell (O'Regan et al. 2022)"},
+    "Ecker2015": {"citation": "10.1149/2.0551509jes", "model": "DFN",
+                  "about": "one electrode pair of a Kokam SLPB 75106100 cell (Ecker et al. 2015)"},
+    "Marquis2019": {"citation": "10.1149/2.0341915jes", "model": "DFN",
+                    "about": "a graphite/LCO cell, compiled from several sources for Marquis et al. 2019"},
+    "Ai2020": {"citation": "10.1149/2.0122001JES", "model": "DFN",
+               "about": "an Enertech graphite/LCO pouch cell (Ai et al. 2020)"},
+    "NCA_Kim2011": {"citation": "10.1149/1.3597614", "model": "DFN",
+                    "about": "a nominal-design graphite/NCA pouch cell (Kim et al. 2011)"},
+    "Prada2013": {"citation": "10.1149/2.053304jes", "model": "DFN",
+                  "about": "an LFP cell (Prada et al. 2013), with Chen2020's graphite OCP and exchange-current density"},
+    "Ramadass2004": {"citation": "10.1149/1.1634273", "model": "DFN",
+                     "about": "a graphite/LCO cell, assembled from several papers (Ramadass et al. 2004 and others)"},
 }
 CHECK_RATES = (0.2, 1.0, 2.0)
-STO = np.linspace(0.0, 1.0, 401)
-C_E = np.linspace(1.0, 6000.0, 300)
+WARM_CHECK = 20.0  # K above the reference temperature, for one 1C run that tests the activation energies
+WINDOW_MARGIN = 0.05  # functions of stoichiometry are tabled over the stoichiometry window plus this margin
+OCP_BOUNDS = {"negative": (0.0, 3.0), "positive": (2.0, 5.0)}  # V; plausible open-circuit potentials vs Li
+C_E = np.linspace(1.0, 4000.0, 300)
 DELTA_T = 10.0  # K above the reference temperature, to fit activation energies
 R = 8.314462618
 
@@ -84,7 +94,8 @@ def scalar(pv: pybamm.ParameterValues, name: str, notes: list[str], at: dict) ->
 
         args = [at[arg] for arg in inspect.signature(value).parameters]
         result = float(evaluate(pv, name, *args))
-        notes.append(f"{name}: a function in PyBaMM; taken at {', '.join(f'{k} = {at[k]:g}' for k in inspect.signature(value).parameters)}")
+        where = ", ".join(f"{k} = {at[k]:g}" for k in inspect.signature(value).parameters)
+        notes.append(f"PyBaMM's {name} is a function; the file holds its value at {where}.")
         return result
     return float(pv.evaluate(pybamm.Parameter(name)))
 
@@ -107,7 +118,7 @@ def function_of_one(pv, name, grid, T_ref, extra_args=()):
     spread = float(np.ptp(ea_values)) if len(ea_values) else 0.0
     if np.allclose(at_ref, at_ref[0], rtol=1e-9, atol=0):
         return float(f"{at_ref[0]:.10g}"), ea, spread
-    keep = np.isfinite(at_ref)
+    keep = np.isfinite(at_ref) & (at_ref > 0)
     return {"x": digits(grid[keep]), "y": digits(at_ref[keep])}, ea, spread
 
 
@@ -121,8 +132,8 @@ def cell_geometry(pv: pybamm.ParameterValues, notes: list[str]) -> tuple[float, 
     layers = ["Negative electrode thickness [m]", "Separator thickness [m]", "Positive electrode thickness [m]",
               "Negative current collector thickness [m]", "Positive current collector thickness [m]"]
     stack = sum(float(pv[name]) for name in layers if name in keys)
-    notes.append("cell surface area and volume: not in the PyBaMM set; derived from the electrode stack "
-                 "(only thermal models use them)")
+    notes.append("The cell surface area and volume are not in the PyBaMM set. They are derived from the "
+                 "electrode stack, and only thermal models use them.")
     return float(f"{2 * area * pairs:.10g}"), float(f"{area * stack * pairs:.10g}")
 
 
@@ -135,26 +146,42 @@ def electrode(pv, side: str, T_ref: float, c_e0: float, window: tuple[float, flo
     am_fraction = float(pv[f"{prefix}active material volume fraction"])
     b_e = float(pv[f"{prefix}Bruggeman coefficient (electrolyte)"])
     b_s = float(pv[f"{prefix}Bruggeman coefficient (electrode)"])
+    sto = np.linspace(max(0.0, window[0] - WINDOW_MARGIN), min(1.0, window[1] + WINDOW_MARGIN), 401)
 
     # OCP at the reference temperature; the importer adds (T - T_ref) * entropic change.
     ocp_name = f"{prefix}OCP [V]"
     try:
-        ocp = evaluate(pv, ocp_name, STO)
+        ocp = evaluate(pv, ocp_name, sto)
     except TypeError:
-        ocp = evaluate(pv, ocp_name, STO, T_ref)
-    keep = np.isfinite(ocp)
+        ocp = evaluate(pv, ocp_name, sto, T_ref)
+    # Fitted OCP functions diverge near 0 or 1, outside their validity: keep the stretch around the
+    # window where the OCP stays plausible for the electrode.
+    low, high = OCP_BOUNDS[side]
+    plausible = np.isfinite(ocp) & (ocp > low) & (ocp < high)
+    centre = int(np.argmin(np.abs(sto - (window[0] + window[1]) / 2)))
+    if not plausible[centre]:
+        raise ValueError(f"{side} OCP is outside {low}-{high} V in the middle of its stoichiometry window")
+    first_kept, last_kept = centre, centre
+    while first_kept > 0 and plausible[first_kept - 1]:
+        first_kept -= 1
+    while last_kept < len(sto) - 1 and plausible[last_kept + 1]:
+        last_kept += 1
+    if sto[first_kept] > window[0] or sto[last_kept] < window[1]:
+        notes.append(f"The {side} OCP stays within {low}-{high} V only from {sto[first_kept]:.3f} to {sto[last_kept]:.3f}.")
+    keep = np.zeros(len(sto), dtype=bool)
+    keep[first_kept:last_kept + 1] = True
     out = {
         "Particle radius [m]": radius,
         "Thickness [m]": float(pv[f"{prefix}thickness [m]"]),
-        "OCP [V]": {"x": digits(STO[keep]), "y": digits(ocp[keep])},
+        "OCP [V]": {"x": digits(sto[keep]), "y": digits(ocp[keep])},
         "Conductivity [S.m-1]": float(
             f"{scalar(pv, f'{prefix}conductivity [S.m-1]', notes, {'sto': 0.5, 'T': T_ref}) * (1 - porosity) ** b_s:.10g}"
         ),
         "Surface area per unit volume [m-1]": float(f"{3 * am_fraction / radius:.10g}"),
         "Porosity": porosity,
         "Transport efficiency": float(f"{porosity ** b_e:.10g}"),
-        "Minimum stoichiometry": float(f"{window[0]:.10g}"),
-        "Maximum stoichiometry": float(f"{window[1]:.10g}"),
+        "Minimum stoichiometry": window[0],
+        "Maximum stoichiometry": window[1],
         "Maximum concentration [mol.m-3]": c_max,
     }
 
@@ -163,19 +190,19 @@ def electrode(pv, side: str, T_ref: float, c_e0: float, window: tuple[float, flo
     entropic_name = f"{prefix}OCP entropic change [V.K-1]"
     if entropic_name in pv.keys():
         try:
-            entropic = evaluate(pv, entropic_name, STO)
+            entropic = evaluate(pv, entropic_name, sto)
         except TypeError:
-            entropic = evaluate(pv, entropic_name, STO, c_max)
+            entropic = evaluate(pv, entropic_name, sto, c_max)
         if np.any(np.abs(entropic[np.isfinite(entropic)]) > 0):
             keep = np.isfinite(entropic)
-            out["Entropic change coefficient [V.K-1]"] = {"x": digits(STO[keep]), "y": digits(entropic[keep])}
+            out["Entropic change coefficient [V.K-1]"] = {"x": digits(sto[keep]), "y": digits(entropic[keep])}
 
     diffusivity_name = first(pv, f"{Side} particle diffusivity [m2.s-1]", f"{prefix}diffusivity [m2.s-1]")
-    diffusivity, ea_d, spread = function_of_one(pv, diffusivity_name, STO, T_ref)
+    diffusivity, ea_d, spread = function_of_one(pv, diffusivity_name, sto, T_ref)
     out["Diffusivity [m2.s-1]"] = diffusivity
     out["Diffusivity activation energy [J.mol-1]"] = float(f"{ea_d:.10g}")
     if spread > 1:
-        notes.append(f"{Side} diffusivity: temperature dependence not Arrhenius (activation energy spread {spread:.0f} J/mol)")
+        notes.append(f"The {side} diffusivity does not follow an Arrhenius law (activation energies spread over {spread:.0f} J/mol).")
 
     # Exchange-current density j0(c_e, c_s, c_max, T) -> BPX k_norm, with the importer's
     # j0 = k_norm * F / (c_max * sqrt(c_e0)) * arrhenius * sqrt(c_e * c_s * (c_max - c_s)).
@@ -186,8 +213,10 @@ def electrode(pv, side: str, T_ref: float, c_e0: float, window: tuple[float, flo
     j0_hot = evaluate(pv, j0_name, c_e0, c_s, c_max, T_ref + DELTA_T)
     k_values = j0_ref / shape
     k = float(np.median(k_values))
+    k_half = evaluate(pv, j0_name, c_e0 / 2, c_s, c_max, T_ref) / np.sqrt(c_e0 / 2 * c_s * (c_max - c_s))
+    k_values = np.concatenate([k_values, k_half])
     if np.ptp(k_values) > 1e-6 * abs(k):
-        notes.append(f"{Side} exchange-current density: not of BPX's form (rate constant varies {np.ptp(k_values) / abs(k):.1%})")
+        notes.append(f"The {side} exchange-current density is not of BPX's form (its rate constant varies by {np.ptp(k_values) / abs(k):.1%}).")
     ea_k = float(np.median(R * np.log(j0_hot / j0_ref) / (1 / T_ref - 1 / (T_ref + DELTA_T))))
     out["Reaction rate constant [mol.m-2.s-1]"] = float(f"{k * c_max * math.sqrt(c_e0) / pybamm.constants.F.value:.10g}")
     out["Reaction rate constant activation energy [J.mol-1]"] = float(f"{ea_k:.10g}")
@@ -199,41 +228,41 @@ def export(name: str) -> tuple[dict, list[str]]:
     notes: list[str] = []
     T_ref = float(pv["Reference temperature [K]"])
     c_e0 = float(pv["Initial concentration in electrolyte [mol.m-3]"])
-    x0, x100, y100, y0 = pybamm.lithium_ion.get_min_max_stoichiometries(pv)
+    x0, x100, y100, y0 = (float(f"{v:.7g}") for v in pybamm.lithium_ion.get_min_max_stoichiometries(pv))
     c_n0 = float(pv["Initial concentration in negative electrode [mol.m-3]"])
     c_p0 = float(pv["Initial concentration in positive electrode [mol.m-3]"])
     soc = (c_n0 / float(pv["Maximum concentration in negative electrode [mol.m-3]"]) - x0) / (x100 - x0)
     soc_p = (y0 - c_p0 / float(pv["Maximum concentration in positive electrode [mol.m-3]"])) / (y0 - y100)
     if abs(soc - soc_p) > 0.01:
-        notes.append(f"initial state: the electrodes disagree (negative {soc:.3f}, positive {soc_p:.3f}); negative used")
+        notes.append(f"The electrodes give different initial states of charge ({soc:.3f} and {soc_p:.3f}); the negative's is used.")
+    if not 0.0 <= soc <= 1.0:
+        notes.append(f"PyBaMM's initial concentrations give a state of charge of {soc:.4f}, clipped to [0, 1].")
     soc = min(1.0, max(0.0, soc))
 
     thermodynamic_factor = pv["Thermodynamic factor"] if "Thermodynamic factor" in pv.keys() else 1.0
     if not (isinstance(thermodynamic_factor, (int, float)) and float(thermodynamic_factor) == 1.0):
-        notes.append("thermodynamic factor is not 1 in PyBaMM; BPX assumes 1")
+        notes.append("PyBaMM's thermodynamic factor is not 1, and BPX assumes 1.")
 
     conductivity, ea_sigma, spread_sigma = function_of_one(pv, "Electrolyte conductivity [S.m-1]", C_E, T_ref)
     diffusivity, ea_de, spread_de = function_of_one(pv, "Electrolyte diffusivity [m2.s-1]", C_E, T_ref)
     for label, spread in (("electrolyte conductivity", spread_sigma), ("electrolyte diffusivity", spread_de)):
         if spread > 1:
-            notes.append(f"{label}: temperature dependence not Arrhenius (activation energy spread {spread:.0f} J/mol)")
+            notes.append(f"The {label} does not follow an Arrhenius law (activation energies spread over {spread:.0f} J/mol).")
 
     separator_porosity = float(pv["Separator porosity"])
     if separator_porosity >= 1.0:
         # PyBaMM's BPX importer takes log(transport efficiency) / log(porosity), so porosity 1 fails.
         separator_porosity = 1 - 1e-9
-        notes.append("separator porosity: 1 in PyBaMM; written as 1 - 1e-9 because PyBaMM's BPX importer divides by its logarithm")
+        notes.append("The separator porosity is 1 in PyBaMM. It is written as 1 - 1e-9 because PyBaMM's BPX importer "
+                     "divides by its logarithm.")
     geometry = cell_geometry(pv, notes)
-    doc = (pybamm.parameter_sets.get_docstring(name) or "").strip()
-    first_sentence = " ".join(doc.split())
-    first_sentence = first_sentence.split(" .. ")[0].split(":footcite")[0].rstrip(" ,") + "."
     bpx = {
         "Header": {
             "BPX": "1.1.0",
             "Title": f"{name} (PyBaMM)",
             "Description": (
-                f"PyBaMM {pybamm.__version__} parameter set {name}, exported to BPX by "
-                f"battinfo-records/scripts/export-pybamm-bpx.py. PyBaMM's description: {first_sentence}"
+                f"PyBaMM {pybamm.__version__}'s {name} parameter set, for {SETS[name]['about']}. "
+                "Exported to BPX by battinfo-records (scripts/export-pybamm-bpx.py)."
             ),
             "References": f"https://doi.org/{SETS[name]['citation']}",
             "Model": SETS[name]["model"],
@@ -272,7 +301,7 @@ def export(name: str) -> tuple[dict, list[str]]:
         },
         "State": {
             "Initial conditions": {
-                "Initial state-of-charge": float(f"{soc:.10g}"),
+                "Initial state-of-charge": float(f"{soc:.7g}"),
                 "Initial temperature [K]": float(pv["Initial temperature [K]"]),
                 "Initial electrolyte concentration [mol.m-3]": c_e0,
             },
@@ -282,7 +311,10 @@ def export(name: str) -> tuple[dict, list[str]]:
     return bpx, notes
 
 
-def discharge(parameter_values, rate: float, lower: float):
+def discharge(parameter_values, rate: float, lower: float, temperature: float | None = None):
+    if temperature is not None:
+        parameter_values = parameter_values.copy()
+        parameter_values.update({"Ambient temperature [K]": temperature, "Initial temperature [K]": temperature})
     model = pybamm.lithium_ion.DFN()
     current = rate * float(parameter_values["Nominal cell capacity [A.h]"])
     sim = pybamm.Simulation(model, parameter_values=parameter_values,
@@ -296,12 +328,13 @@ def check(name: str, bpx: dict) -> list[dict]:
     native = pybamm.ParameterValues(name)
     imported = pybamm.ParameterValues.create_from_bpx_obj(json.loads(json.dumps(bpx)))
     lower = float(bpx["Parameterisation"]["Cell"]["Lower voltage cut-off [V]"])
+    warm = float(bpx["Parameterisation"]["Cell"]["Reference temperature [K]"]) + WARM_CHECK
     results = []
-    for rate in CHECK_RATES:
-        entry = {"c_rate": rate}
+    for rate, temperature in [(rate, None) for rate in CHECK_RATES] + [(1.0, warm)]:
+        entry = {"c_rate": rate, **({"temperature_K": warm} if temperature else {})}
         try:
-            q_native, v_native = discharge(native, rate, lower)
-            q_bpx, v_bpx = discharge(imported, rate, lower)
+            q_native, v_native = discharge(native, rate, lower, temperature)
+            q_bpx, v_bpx = discharge(imported, rate, lower, temperature)
         except Exception as exc:  # noqa: BLE001 - a run that fails is part of the check's result
             entry["error"] = f"{type(exc).__name__}: {str(exc).splitlines()[0][:200]}"
             results.append(entry)
@@ -340,7 +373,8 @@ def main() -> int:
         report = {"set": name, "pybamm": pybamm.__version__, "file": path.name, "notes": notes, "check": results}
         (args.out / f"{name.lower()}--pybamm.check.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
         summary = ", ".join(
-            f"{r['c_rate']:g}C: {r['voltage_rms_difference_mV']} mV / {r['capacity_difference_percent']:+}%"
+            f"{r['c_rate']:g}C{' warm' if 'temperature_K' in r else ''}: "
+            f"{r['voltage_rms_difference_mV']} mV / {r['capacity_difference_percent']:+}%"
             if "error" not in r else f"{r['c_rate']:g}C: {r['error'][:60]}"
             for r in results
         )

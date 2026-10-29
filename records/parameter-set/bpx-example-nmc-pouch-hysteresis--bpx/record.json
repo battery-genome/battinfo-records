@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/xms6-5z2m-gpsz-nzy9",
     "short_id": "xms65z",
-    "name": "Test case: user-defined 0th-order hysteresis for graphite-Si blend in negative electrode. Compare to nmc_pouch_cell_BPX.json in About:Energy open-source release.",
+    "name": "BPX example: NMC111 pouch cell with OCP hysteresis",
     "virtual_cell": true,
     "parameters_sha256": "c19a385e1a02df4b3dbea88203f5f463108ed7ccb647b850d92f7c224bbc3989",
     "model_context": {
@@ -6499,7 +6499,7 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN, 1C discharge to 2.7 V solved in 0.38 s; 12.254 Ah delivered.",
+            "detail": "DFN, 1C discharge to 2.7 V solved in 0.31 s; 12.254 Ah delivered.",
             "checked_at": "2026-10-29"
           }
         ]
@@ -6522,7 +6522,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793277447,
+    "retrieved_at": 1793279167,
     "battinfo_version": "0.8.0",
     "source_url": "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/nmc_pouch_cell_BPX_user-defined_hysteresis.json",
     "citation": "https://github.com/FaradayInstitution/BPX"
