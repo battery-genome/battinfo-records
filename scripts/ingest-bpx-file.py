@@ -147,6 +147,88 @@ print(json.dumps({
 }))
 """
 
+# The examples distributed with the BPX standard, at a pinned commit. None describes a real cell.
+_BPX_EXAMPLES = "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/"
+_BPX_ATTRIBUTION = (
+    "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), "
+    "at commit 9b73d69."
+)
+for _key, _file, _materials in (
+    ("bpx-example-nmc-pouch", "nmc_pouch_cell_BPX.json", {"negative": "graphite", "positive": "nmc111"}),
+    ("bpx-example-nmc-pouch-spm", "nmc_pouch_cell_BPX_SPM.json", {"negative": "graphite", "positive": "nmc111"}),
+    # The positive electrode is a blend: BattINFO cannot name its materials yet.
+    ("bpx-example-nmc-pouch-blended", "nmc_pouch_cell_BPX_blended_electrode.json", {"negative": "graphite"}),
+    ("bpx-example-nmc-pouch-hysteresis", "nmc_pouch_cell_BPX_user-defined_hysteresis.json",
+     {"negative": "silicon_graphite", "positive": "nmc111"}),
+    ("bpx-example-lfp-18650", "lfp_18650_cell_BPX.json", {"negative": "graphite", "positive": "lfp"}),
+):
+    SOURCES[_key] = {
+        "url": _BPX_EXAMPLES + _file,
+        "license": "mit",
+        "attribution": _BPX_ATTRIBUTION,
+        "citation": "https://github.com/FaradayInstitution/BPX",
+        "notes": [],
+        "materials": _materials,
+        "software_requirements": None,
+        "cell": {"case": "virtual"},
+    }
+
+# PyBaMM's speed-benchmark parameter sets, exported to BPX by scripts/export-pybamm-bpx.py
+# (files and their checks in --exports-dir). Only sets whose BPX file reproduces PyBaMM's native
+# set (within about 1 mV) are listed: ORegan2022 and Ai2020 use a thermodynamic factor and
+# exchange-current forms that BPX cannot express.
+_PYBAMM_PARAMETERS = (
+    "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/"
+)
+for _key, _name, _doi, _materials, _cell in (
+    ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050",
+     {"negative": "silicon_graphite", "positive": "nmc811"},
+     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}),  # LG INR21700 M50
+    ("pybamm-ecker2015", "Ecker2015", "10.1149/2.0551509jes",
+     {"negative": "graphite", "positive": "nmc111"},
+     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/c9g2-kj3e-mqsg-2rjp"}),  # Kokam SLPB75106100
+    # PyBaMM names a Kokam SLPB78205130H but says the values are not representative of it.
+    ("pybamm-marquis2019", "Marquis2019", "10.1149/2.0341915jes", {"negative": "graphite", "positive": "lco"},
+     {"case": "virtual"}),
+    ("pybamm-nca-kim2011", "NCA_Kim2011", "10.1149/1.3597614", {"negative": "graphite", "positive": "nca"},
+     {"case": "virtual"}),  # a "nominal design" cell
+    ("pybamm-prada2013", "Prada2013", "10.1149/2.053304jes", {"negative": "graphite", "positive": "lfp"},
+     {"case": "virtual"}),  # no specific cell named
+    ("pybamm-ramadass2004", "Ramadass2004", "10.1149/1.1634273", {"negative": "graphite", "positive": "lco"},
+     {"case": "virtual"}),  # assembled from several papers
+):
+    SOURCES[_key] = {
+        "file": f"{_name.lower()}--pybamm.bpx.json",
+        "check": f"{_name.lower()}--pybamm.check.json",
+        "source_url": f"{_PYBAMM_PARAMETERS}{_name}.py",
+        "source_description": f"Exported from PyBaMM's {_name} parameter set by scripts/export-pybamm-bpx.py.",
+        "license": "bsd-3-clause",
+        "attribution": (
+            f"Parameter values from https://doi.org/{_doi} as implemented in PyBaMM's {_name} parameter set "
+            "(PyBaMM 26.10.1.1, BSD-3-Clause), exported to BPX by battinfo-records."
+        ),
+        "citation": f"https://doi.org/{_doi}",
+        "citation_doi": _doi,
+        "notes": [],
+        "materials": _materials,
+        "software_requirements": None,
+        "cell": _cell,
+    }
+
+
+def export_check_notes(check_path: Path) -> list[str]:
+    """The export check, as one short note: the largest difference from PyBaMM's native set."""
+    report = json.loads(check_path.read_text(encoding="utf-8"))
+    runs = [r for r in report["check"] if "error" not in r]
+    if not runs:
+        return ["PyBaMM's native set and this file could not be compared."]
+    rms = max(r["voltage_rms_difference_mV"] for r in runs)
+    capacity = max(abs(r["capacity_difference_percent"]) for r in runs)
+    rates = ", ".join(f"{r['c_rate']:g}C" for r in runs)
+    notes = [f"Matches PyBaMM {report['pybamm']}'s native set within {rms:g} mV RMS and {capacity:g}% capacity "
+             f"(DFN discharges at {rates})."]
+    return notes + [note[0].upper() + note[1:] + "." for note in report.get("notes", [])]
+
 
 def fetch(url: str) -> bytes:
     with urlopen(url, timeout=120) as response:
@@ -234,6 +316,8 @@ def main() -> int:
     parser.add_argument("--artifacts-base-url", required=True,
                         help="public base URL of the registry artifact store (STORAGE_ARTIFACTS_BASE_URL)")
     parser.add_argument("--artifact-version", default="v1")
+    parser.add_argument("--exports-dir", type=Path, default=REPO.parent / "bpx-exports",
+                        help="files made by export-pybamm-bpx.py, for sources that are local files")
     parser.add_argument("--out-dir", type=Path, default=REPO.parent / "bpx-artifacts",
                         help="where the files to upload are written (outside the repo)")
     parser.add_argument("--sim-python", default=None,
@@ -250,8 +334,12 @@ def main() -> int:
 
     source = SOURCES[args.source]
     cell = source["cell"]
-    raw = fetch(source["url"])
-    file_name = source["url"].rsplit("/", 1)[-1]
+    if "file" in source:
+        raw = (args.exports_dir / source["file"]).read_bytes()
+        file_name = source["file"]
+    else:
+        raw = fetch(source["url"])
+        file_name = source["url"].rsplit("/", 1)[-1]
 
     # The uid is the file's: known before any record exists, so the upload
     # path and the record agree by construction.
@@ -277,7 +365,8 @@ def main() -> int:
     if not source_checks[0]["passed"]:
         upgraded = upgrade_bpx(source_path)
         if upgraded.changed:
-            runnable_path = file_dir / file_name.replace(".bpx.json", ".bpx-v1.json")
+            stem = file_name[: -len(".bpx.json")] if file_name.endswith(".bpx.json") else Path(file_name).stem
+            runnable_path = file_dir / f"{stem}.bpx-v1.json"
             upgraded.save(runnable_path)
             runnable_checks = [check_bpx(runnable_path)]
     if args.sim_python:
@@ -290,7 +379,7 @@ def main() -> int:
         bpx_file_distribution(
             source_path,
             content_url=content_url(file_name),
-            description="The BPX file exactly as its authors published it.",
+            description=source.get("source_description", "The BPX file exactly as its authors published it."),
             software_requirements=source["software_requirements"],
             checks=source_checks,
         )
@@ -309,14 +398,15 @@ def main() -> int:
                 checks=runnable_checks,
             )
         )
-    distributions.append(
-        bpx_file_distribution(
-            source_path,
-            content_url=source["url"],
-            role="mirror",
-            description="The same bytes in the source repository, at a pinned commit.",
+    if "url" in source:
+        distributions.append(
+            bpx_file_distribution(
+                source_path,
+                content_url=source["url"],
+                role="mirror",
+                description="The same bytes in the source repository, at a pinned commit.",
+            )
         )
-    )
 
     out: dict[Path, dict] = {}
     link: dict[str, object]
@@ -360,8 +450,10 @@ def main() -> int:
         **({"runnable_file": runnable_path} if runnable_path is not None else {}),
         **({"supersedes": source["supersedes"]} if source.get("supersedes") else {}),
         citation=source["citation"],
-        source_url=source["url"],
-        notes=[source["attribution"], *source["notes"]],
+        **({"citation_doi": source["citation_doi"]} if source.get("citation_doi") else {}),
+        source_url=source.get("source_url", source.get("url")),
+        notes=[source["attribution"], *source["notes"],
+               *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],
     )
     record["license"] = source["license"]
     out[PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"] = record

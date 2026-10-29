@@ -100,6 +100,8 @@ Every parameter-set record whose BPX file passed its PyBaMM smoke run is simulat
 - `scripts/simulate-parameter-sets.py` makes the runs. The `Simulations` workflow runs it on changes to `records/parameter-set/` or the scripts, weekly, and on demand.
 - `scripts/benchmark-simulators.py` applies the same protocol under each PyBaMM release line of the last 12 months, on one machine, and records whether each release reads each file, how long each case takes, and how the replays compare with the measured data. The `Simulator benchmark` workflow runs it weekly, on demand, and when the protocol changes.
 
+- `scripts/export-pybamm-bpx.py` exports PyBaMM's speed-benchmark parameter sets to BPX and checks each file against PyBaMM's native set; `scripts/ingest-bpx-file.py` turns those files and the BPX standard's examples into parameter-set records.
+
 Both write to the `battery-genome-simulations` bucket under `simulations/`. Nothing is written to this repo. The platform reads `simulations/latest.json` for its simulation panels and its `/simulators` page.
 
 To run either locally without uploading:
