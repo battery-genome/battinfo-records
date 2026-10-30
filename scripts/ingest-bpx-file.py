@@ -180,10 +180,9 @@ for _key, _file, _name, _materials, _notes in (
         "cell": {"case": "virtual"},
     }
 
-# PyBaMM's speed-benchmark parameter sets, exported to BPX by scripts/export-pybamm-bpx.py
-# (files and their checks in --exports-dir). Only sets whose BPX file reproduces PyBaMM's native
-# set (within about 1 mV) are listed: ORegan2022 and Ai2020 use a thermodynamic factor and
-# exchange-current forms that BPX cannot express.
+# PyBaMM's parameter sets that already have records in the registry, exported to BPX by
+# scripts/export-pybamm-bpx.py (files and their checks in --exports-dir). Ai2020 is not listed: BPX
+# has no thermodynamic factor, and without it the file differs from PyBaMM's set by up to 57 mV.
 _PYBAMM_PARAMETERS = (
     "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/"
 )
@@ -191,22 +190,14 @@ for _key, _name, _doi, _materials, _cell, _notes in (
     ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050",
      {"negative": "silicon_graphite", "positive": "nmc811"},
      {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
-    # Positive electrode LiNiCoO2 (NCO): no BattINFO material kind yet, so only the negative is named.
-    ("pybamm-ecker2015", "Ecker2015", "10.1149/2.0551509jes", {"negative": "graphite"},
-     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/c9g2-kj3e-mqsg-2rjp"},  # Kokam SLPB75106100
-     ["The file describes one electrode pair (0.156 Ah) of the 7.5 Ah cell. Its positive electrode is NCO, "
-      "which has no BattINFO material kind yet."]),
-    # PyBaMM names a Kokam SLPB78205130H, but the values are compiled from several sources (Dualfoil,
-    # Capiglia et al. 1999, Moura et al. 2016 functions), so the set is not that cell's parameterisation.
-    ("pybamm-marquis2019", "Marquis2019", "10.1149/2.0341915jes", {"negative": "graphite", "positive": "lco"},
-     {"case": "virtual"},
-     ["PyBaMM names a Kokam SLPB78205130H, but the values are compiled from several sources, so no cell is linked."]),
-    ("pybamm-nca-kim2011", "NCA_Kim2011", "10.1149/1.3597614", {"negative": "graphite", "positive": "nca"},
-     {"case": "virtual"}, []),  # a "nominal design" cell
+    # The negative electrode is blended (graphite and silicon), so, as for the BPX blended example, only
+    # the positive material is named.
+    ("pybamm-chen2020-composite", "Chen2020_composite", "10.1016/j.jpowsour.2022.231142", {"positive": "nmc811"},
+     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
+    ("pybamm-mohtat2020", "Mohtat2020", "10.1149/1945-7111/aba5d1", {"negative": "graphite", "positive": "nmc532"},
+     {"case": "virtual"}, []),  # pouch cells made for the study
     ("pybamm-prada2013", "Prada2013", "10.1149/2.053304jes", {"negative": "graphite", "positive": "lfp"},
      {"case": "virtual"}, []),  # no specific cell named; graphite OCP and j0 from Chen2020
-    ("pybamm-ramadass2004", "Ramadass2004", "10.1149/1.1634273", {"negative": "graphite", "positive": "lco"},
-     {"case": "virtual"}, []),  # assembled from several papers
 ):
     SOURCES[_key] = {
         "file": f"{_name.lower()}--pybamm.bpx.json",
@@ -235,10 +226,11 @@ def export_check_notes(check_path: Path) -> list[str]:
         return ["PyBaMM's native set and this file could not be compared."]
     rms = max(r["voltage_rms_difference_mV"] for r in runs)
     capacity = max(abs(r["capacity_difference_percent"]) for r in runs)
-    rates = ", ".join(f"{r['c_rate']:g}C" for r in runs if "temperature_K" not in r)
-    warm = " and 1C 20 K warmer" if any("temperature_K" in r for r in runs) else ""
+    rates = [r["c_rate"] for r in runs if "temperature_K" not in r]
+    rates = f"{min(rates):g}C to {max(rates):g}C" if len(rates) > 1 else f"{rates[0]:g}C"
+    warm = ", and at 1C 20 K warmer" if any("temperature_K" in r for r in runs) else ""
     notes = [f"Matches PyBaMM {report['pybamm']}'s native set within {rms:g} mV RMS and {capacity:g}% capacity "
-             f"(DFN discharges at {rates}{warm})."]
+             f"({report.get('model', 'DFN')} discharges from {rates}{warm})."]
     return notes + list(report.get("notes", []))
 
 

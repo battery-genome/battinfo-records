@@ -3287,14 +3287,14 @@
             "tool": "bpx 1.1.1",
             "passed": true,
             "detail": "Parsed by the official bpx parser.",
-            "checked_at": "2026-10-29"
+            "checked_at": "2026-10-30"
           },
           {
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN, 1C discharge to 2.5 V solved in 0.31 s; 4.938 Ah delivered.",
-            "checked_at": "2026-10-29"
+            "detail": "DFN, 1C discharge to 2.5 V solved in 0.37 s; 4.938 Ah delivered.",
+            "checked_at": "2026-10-30"
           }
         ]
       }
@@ -3303,7 +3303,7 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793279176,
+    "retrieved_at": 1793346656,
     "citation_doi": "10.1149/1945-7111/ab9050",
     "battinfo_version": "0.8.0",
     "source_url": "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/Chen2020.py",
@@ -3311,7 +3311,7 @@
   },
   "notes": [
     "Parameter values from https://doi.org/10.1149/1945-7111/ab9050 as implemented in PyBaMM's Chen2020 parameter set (PyBaMM 26.10.1.1, BSD-3-Clause), exported to BPX by battinfo-records.",
-    "Matches PyBaMM 26.10.1.1's native set within 0.18 mV RMS and 0.003% capacity (DFN discharges at 0.2C, 1C, 2C and 1C 20 K warmer)."
+    "Matches PyBaMM 26.10.1.1's native set within 0.22 mV RMS and 0.003% capacity (DFN discharges from 0.05C to 2C, and at 1C 20 K warmer)."
   ],
   "license": "bsd-3-clause"
 }

@@ -156,19 +156,22 @@ def replay_profile(case: dict) -> np.ndarray:
     return np.column_stack([t, current])
 
 
-def solve(raw: bytes, spec: dict, model: str, options: dict, thermal: bool, lower_cutoff: float,
-          case: dict | None = None):
-    """One run of the protocol; returns (simulation, solution)."""
+def experiment_step(spec: dict, lower_cutoff: float, case: dict | None = None):
+    """The one experiment step of a run."""
     if spec["current_A"] is not None:
         # PyBaMM stops a step after 24 h by default, before the cut-off at low rates when the cell
         # holds more than its nominal capacity.
         hours = TIME_LIMIT_FACTOR / spec["c_rate"]
-        step = f"Discharge at {spec['current_A']:.6g} A for {hours:.6g} hours or until {lower_cutoff:.6g} V"
-    else:
-        # A current profile has no single direction, so the cut-off needs its operator spelled out.
-        step = pybamm.step.current(replay_profile(case), termination=f"< {lower_cutoff:.6g} V")
+        return f"Discharge at {spec['current_A']:.6g} A for {hours:.6g} hours or until {lower_cutoff:.6g} V"
+    # A current profile has no single direction, so the cut-off needs its operator spelled out.
+    return pybamm.step.current(replay_profile(case), termination=f"< {lower_cutoff:.6g} V")
+
+
+def solve(raw: bytes, spec: dict, model: str, options: dict, thermal: bool, lower_cutoff: float,
+          case: dict | None = None):
+    """One run of the protocol; returns (simulation, solution)."""
     sim = pybamm.Simulation(model_for(model, options, thermal), parameter_values=parameter_values(raw),
-                            experiment=pybamm.Experiment([step]))
+                            experiment=pybamm.Experiment([experiment_step(spec, lower_cutoff, case)]))
     return sim, sim.solve()
 
 
