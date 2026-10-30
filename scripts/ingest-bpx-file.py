@@ -227,10 +227,11 @@ def export_check_notes(check_path: Path) -> list[str]:
     rms = max(r["voltage_rms_difference_mV"] for r in runs)
     capacity = max(abs(r["capacity_difference_percent"]) for r in runs)
     rates = [r["c_rate"] for r in runs if "temperature_K" not in r]
-    rates = f"{min(rates):g}C to {max(rates):g}C" if len(rates) > 1 else f"{rates[0]:g}C"
-    warm = ", and at 1C 20 K warmer" if any("temperature_K" in r for r in runs) else ""
+    where = [f"from {min(rates):g}C to {max(rates):g}C" if len(rates) > 1 else f"at {rates[0]:g}C"] if rates else []
+    if any("temperature_K" in r for r in runs):
+        where.append("at 1C 20 K warmer")
     notes = [f"Matches PyBaMM {report['pybamm']}'s native set within {rms:g} mV RMS and {capacity:g}% capacity "
-             f"({report.get('model', 'DFN')} discharges from {rates}{warm})."]
+             f"({report.get('model', 'DFN')} discharges {', and '.join(where)})."]
     return notes + list(report.get("notes", []))
 
 

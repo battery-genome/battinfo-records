@@ -364,7 +364,7 @@ def export(name: str) -> tuple[dict, list[str]]:
             "Thermal environment": {"Ambient temperature [K]": float(pv["Ambient temperature [K]"])},
         },
     }
-    return bpx, notes
+    return bpx, list(dict.fromkeys(notes))  # a blended electrode's phases can repeat an electrode-level note
 
 
 def discharge(parameter_values, model: str, options: dict, rate: float, current: float, lower: float,
@@ -384,7 +384,8 @@ def check(name: str, bpx: dict) -> dict:
     """The standard protocol's discharges on the native set and on the file: voltage and capacity differences.
 
     The native set starts from its own initial concentrations, or, when the file starts it elsewhere,
-    from the file's state of charge.
+    from the file's state of charge. PyBaMM's own concentrations need not put the phases of a blended
+    electrode at one potential, while the file's state of charge does; both hold the same lithium.
     """
     model, _ = protocol.model_choice(bpx)
     options = protocol.model_options(bpx)
