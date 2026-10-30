@@ -41,7 +41,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import simulation_protocol as protocol  # noqa: E402
 
 # PyBaMM's parameter sets that already have records in the registry (their half-cell OCP claims, from
-# the literature_ocv library). Ai2020 is exported for its check only: BPX has no thermodynamic factor.
+# the literature_ocv library). Ai2020 and Chen2020_composite are exported for their checks only; neither
+# has a record (see SOURCES in ingest-bpx-file.py).
 SETS = {
     "Chen2020": {"citation": "10.1149/1945-7111/ab9050", "model": "DFN",
                  "about": "an LG M50 cell (Chen et al. 2020)"},

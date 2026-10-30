@@ -181,18 +181,15 @@ for _key, _file, _name, _materials, _notes in (
     }
 
 # PyBaMM's parameter sets that already have records in the registry, exported to BPX by
-# scripts/export-pybamm-bpx.py (files and their checks in --exports-dir). Ai2020 is not listed: BPX
-# has no thermodynamic factor, and without it the file differs from PyBaMM's set by up to 57 mV.
+# scripts/export-pybamm-bpx.py (files and their checks in --exports-dir). Ai2020 and Chen2020_composite
+# are not listed. BPX has no thermodynamic factor, and without it the Ai2020 file differs from PyBaMM's
+# set by up to 57 mV; Chen2020_composite's negative electrode is blended, which BattINFO does not import yet.
 _PYBAMM_PARAMETERS = (
     "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/"
 )
 for _key, _name, _doi, _materials, _cell, _notes in (
     ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050",
      {"negative": "silicon_graphite", "positive": "nmc811"},
-     {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
-    # The negative electrode is blended (graphite and silicon), so, as for the BPX blended example, only
-    # the positive material is named.
-    ("pybamm-chen2020-composite", "Chen2020_composite", "10.1016/j.jpowsour.2022.231142", {"positive": "nmc811"},
      {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
     ("pybamm-mohtat2020", "Mohtat2020", "10.1149/1945-7111/aba5d1", {"negative": "graphite", "positive": "nmc532"},
      {"case": "virtual"}, []),  # pouch cells made for the study
