@@ -109,6 +109,8 @@ uv run --no-project --with "pybamm[bpx]==26.10.1.1" python scripts/simulate-para
 uv run --no-project python scripts/benchmark-simulators.py --out ../bench-out --versions 26.9.0.0,26.10.1.1
 ```
 
+`scripts/export-pybamm-bpx.py` exports PyBaMM's speed-benchmark parameter sets to BPX and checks each file against PyBaMM's native set. `scripts/ingest-bpx-file.py` turns those files and the BPX standard's examples into parameter-set records.
+
 See [CONTRIBUTING.md](CONTRIBUTING.md), [docs/repo-scope.md](docs/repo-scope.md), and [docs/record-lifecycle.md](docs/record-lifecycle.md) for the operating rules.
 For the concrete shared review -> promote -> publish loop, see [docs/editorial-cell-spec-workflow.md](docs/editorial-cell-spec-workflow.md).
 

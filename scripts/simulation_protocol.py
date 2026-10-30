@@ -11,8 +11,9 @@ Every parameter file gets the same runs, whether or not it carries measured data
 
 When the file itself carries measured data (its BPX ``Validation`` section, and nothing from
 elsewhere), each measured discharge is also replayed with its own current, and the two curves
-are compared over the time both cover. Standard runs above the highest measured rate are marked
-as beyond the measured range.
+are compared over the time both cover. BPX fixes no sign for current, so a case whose voltage
+falls under a net negative current is read as a discharge. Standard runs above the highest
+measured rate are marked as beyond the measured range.
 """
 from __future__ import annotations
 
@@ -27,6 +28,7 @@ DEFAULT_MODEL = "DFN"
 MODELS = {"SPM": "SPM", "SPME": "SPMe", "DFN": "DFN", "P2D": "DFN"}
 CONSTANT_CURRENT_TOLERANCE = 0.02  # relative spread below which a measured current counts as constant
 MAX_REPLAY_POINTS = 5000  # a measured current profile is resampled to at most this many points
+TIME_LIMIT_FACTOR = 5  # a constant-current run stops at the cut-off, or after five times its nominal duration
 MESH_DOMAINS = ("x_n", "x_s", "x_p", "r_n", "r_p")
 
 
@@ -96,11 +98,17 @@ def measured_cases(bpx: dict) -> list[dict]:
         if len(t) < 2 or not (len(t) == len(current) == len(voltage)):
             continue
         t = t - t[0]
+        capacity = np.concatenate([[0.0], np.cumsum(np.diff(t) * (current[1:] + current[:-1]) / 2)]) / 3600
+        # BPX fixes no sign for current: its own examples give a discharge as negative, other files as
+        # positive, which is PyBaMM's convention. A case whose voltage falls while the net current is
+        # negative is read with the sign reversed.
+        reversed_sign = bool(capacity[-1] < 0 and voltage[-1] < voltage[0])
+        if reversed_sign:
+            current, capacity = -current, -capacity
         mean = float(np.mean(current))
         constant = mean > 0 and float(np.ptp(current)) <= CONSTANT_CURRENT_TOLERANCE * abs(mean)
-        capacity = np.concatenate([[0.0], np.cumsum(np.diff(t) * (current[1:] + current[:-1]) / 2)]) / 3600
         cases.append({
-            "key": key, "constant": constant, "current_A": mean if constant else None,
+            "key": key, "constant": constant, "current_A": mean if constant else None, "reversed_sign": reversed_sign,
             "peak_current_A": float(np.max(np.abs(current))),
             "t": t, "current": current, "voltage": voltage, "capacity": capacity,
         })
@@ -148,16 +156,22 @@ def replay_profile(case: dict) -> np.ndarray:
     return np.column_stack([t, current])
 
 
+def experiment_step(spec: dict, lower_cutoff: float, case: dict | None = None):
+    """The one experiment step of a run."""
+    if spec["current_A"] is not None:
+        # PyBaMM stops a step after 24 h by default, before the cut-off at low rates when the cell
+        # holds more than its nominal capacity.
+        hours = TIME_LIMIT_FACTOR / spec["c_rate"]
+        return f"Discharge at {spec['current_A']:.6g} A for {hours:.6g} hours or until {lower_cutoff:.6g} V"
+    # A current profile has no single direction, so the cut-off needs its operator spelled out.
+    return pybamm.step.current(replay_profile(case), termination=f"< {lower_cutoff:.6g} V")
+
+
 def solve(raw: bytes, spec: dict, model: str, options: dict, thermal: bool, lower_cutoff: float,
           case: dict | None = None):
     """One run of the protocol; returns (simulation, solution)."""
-    if spec["current_A"] is not None:
-        step = f"Discharge at {spec['current_A']:.6g} A until {lower_cutoff:.6g} V"
-    else:
-        # A current profile has no single direction, so the cut-off needs its operator spelled out.
-        step = pybamm.step.current(replay_profile(case), termination=f"< {lower_cutoff:.6g} V")
     sim = pybamm.Simulation(model_for(model, options, thermal), parameter_values=parameter_values(raw),
-                            experiment=pybamm.Experiment([step]))
+                            experiment=pybamm.Experiment([experiment_step(spec, lower_cutoff, case)]))
     return sim, sim.solve()
 
 
