@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/6bpa-4qet-046r-1zzk",
     "short_id": "6bpa4q",
-    "name": "BPX example: NMC111 pouch cell (SPM)",
+    "name": "BPX NMC111 pouch SPM",
     "virtual_cell": true,
     "parameters_sha256": "146b1f32a8b63a9be852b753a9770d49e6f59deb309cad00b783cfc9744710af",
     "model_context": {
@@ -356,14 +356,14 @@
             "tool": "bpx 1.1.1",
             "passed": true,
             "detail": "Parser warnings: Detected a legacy BPX v0.x file/object; converting to the v1.x schema for backward compatibility. The conversion is approximate: the 'State' block is synthesised from the v0.x parameterisation (initial SOC set to 1, ambient and initial temperatures resolved from those provided, lumped thermal conductivity dropped). Optional v1.x fields that have no v0.x equivalent (e.g. initial hysteresis state and heat transfer coefficient) are omitted from the converted object rather than given a value here, so any tool that consumes it will apply its own defaults for them. Cross-version semantic changes are not corrected. Re-export from bpx>=1 to silence this warning, or pass convert_legacy=False to disable conversion. | The maximum voltage computed from the STO limits (4.201761488607647 V) is higher than the upper voltage cut-off (4.2 V) with the absolute tolerance v_tol = 0.001 V. Parsed by the official bpx parser.",
-            "checked_at": "2026-10-29"
+            "checked_at": "2026-10-30"
           },
           {
             "check": "simulation_smoke",
             "tool": "pybamm",
             "passed": false,
             "detail": "SPM, 1C discharge to the lower cut-off failed: AttributeError: 'ParameterisationSPM' object has no attribute 'electrolyte'",
-            "checked_at": "2026-10-29"
+            "checked_at": "2026-10-30"
           }
         ]
       },
@@ -386,13 +386,14 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793279157,
+    "retrieved_at": 1793354497,
     "battinfo_version": "0.8.0",
     "source_url": "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/nmc_pouch_cell_BPX_SPM.json",
-    "citation": "https://github.com/FaradayInstitution/BPX"
+    "citation": "https://github.com/FaradayInstitution/BPX",
+    "source_name": "About:Energy 2022"
   },
   "notes": [
-    "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), at commit 9b73d69.",
+    "A test case in the BPX standard's examples (FaradayInstitution/BPX, MIT licence, commit 9b73d69), built from About:Energy Limited's NMC111 pouch cell parameterisation (December 2022).",
     "PyBaMM 26.10 cannot read SPM parameter files (its BPX importer needs an electrolyte section), so its smoke run fails."
   ],
   "license": "mit"

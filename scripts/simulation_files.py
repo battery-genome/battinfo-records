@@ -43,19 +43,22 @@ def runnable_distribution(body: dict) -> dict | None:
     return None
 
 
-def find_records(only: str | None) -> list[tuple[str, dict, dict]]:
+def find_records(only: str | None) -> list[tuple[str, dict, dict, str | None]]:
+    """(folder, parameter set, the file to run, credit) for each record with a runnable file. The
+    credit is who made the values (the record's provenance source_name), shown beside the name."""
     found = []
     for path in sorted(PARAMETER_SET_DIR.glob("*/record.json")):
         if only and not fnmatch.fnmatch(path.parent.name, only):
             continue
-        body = json.loads(path.read_text(encoding="utf-8")).get("parameter_set") or {}
+        record = json.loads(path.read_text(encoding="utf-8"))
+        body = record.get("parameter_set") or {}
         if not body.get("distributions"):
             continue  # claim batches carry no file
         dist = runnable_distribution(body)
         if dist is None:
             print(f"skip {path.parent.name}: no file with a passing simulation_smoke check")
             continue
-        found.append((path.parent.name, body, dist))
+        found.append((path.parent.name, body, dist, (record.get("provenance") or {}).get("source_name")))
     return found
 
 

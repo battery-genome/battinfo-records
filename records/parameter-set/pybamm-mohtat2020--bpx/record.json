@@ -3,7 +3,7 @@
   "parameter_set": {
     "id": "https://w3id.org/battinfo/dataset/zmge-t0r1-8zeh-y68q",
     "short_id": "zmget0",
-    "name": "Mohtat2020 (PyBaMM)",
+    "name": "BPX NMC532 pouch",
     "virtual_cell": true,
     "parameters_sha256": "dd24b82d2888e2c757538cdd5a179955c324ab4c53598f50a8c73b06a42ff70d",
     "model_context": {
@@ -3695,7 +3695,7 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN, 1C discharge to 2.8 V solved in 0.35 s; 4.836 Ah delivered.",
+            "detail": "DFN, 1C discharge to 2.8 V solved in 0.51 s; 4.836 Ah delivered.",
             "checked_at": "2026-10-30"
           }
         ]
@@ -3705,11 +3705,12 @@
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1793346669,
+    "retrieved_at": 1793354517,
     "citation_doi": "10.1149/1945-7111/aba5d1",
     "battinfo_version": "0.8.0",
     "source_url": "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/Mohtat2020.py",
-    "citation": "https://doi.org/10.1149/1945-7111/aba5d1"
+    "citation": "https://doi.org/10.1149/1945-7111/aba5d1",
+    "source_name": "Mohtat et al. 2020"
   },
   "notes": [
     "Parameter values from https://doi.org/10.1149/1945-7111/aba5d1 as implemented in PyBaMM's Mohtat2020 parameter set (PyBaMM 26.10.1.1, BSD-3-Clause), exported to BPX by battinfo-records.",

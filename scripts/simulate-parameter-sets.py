@@ -301,11 +301,12 @@ def main() -> int:
     records = find_records(args.only)
     print(f"PyBaMM {pybamm.__version__}, {len(records)} file(s) to simulate")
     entries, failures = [], 0
-    for folder, body, dist in records:
+    for folder, body, dist, credit in records:
         print(f"{folder}: {dist['name']} ({dist['role']})")
         try:
             raw = fetch(dist, cache_dir)
-            entries.append(simulate_file(folder, body, dist, raw, out_root))
+            # Name and credit go in the index, which every run rewrites; a run set's summary is written once.
+            entries.append({**simulate_file(folder, body, dist, raw, out_root), "credit": credit})
         except Exception as exc:  # noqa: BLE001 - one bad file must not stop the others
             failures += 1
             print(f"  FAILED: {type(exc).__name__}: {exc}")

@@ -107,12 +107,12 @@ def main() -> int:
         raise SystemExit(f"--stamp may only contain letters, digits, '.', '_' and '-': {stamp}")
 
     files, listed = [], []
-    for folder, body, dist in find_records(args.only):
+    for folder, body, dist, credit in find_records(args.only):
         raw = fetch(dist, cache_dir)
         path = work / f"{dist['checksum']['value']}.json"
         path.write_bytes(raw)
         files.append({"iri": body["id"], "path": str(path)})
-        listed.append({"iri": body["id"], "name": body.get("name"), "record": folder,
+        listed.append({"iri": body["id"], "name": body.get("name"), "credit": credit, "record": folder,
                        "parameters_sha256": body["parameters_sha256"], "file_sha256": dist["checksum"]["value"]})
     files_json = work / "files.json"
     files_json.write_text(json.dumps(files), encoding="utf-8")

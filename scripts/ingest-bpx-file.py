@@ -79,6 +79,8 @@ SOURCES: dict[str, dict] = {
             "repository's GPL-3.0-or-later licence covers its code."
         ),
         "citation": "https://arxiv.org/abs/2601.10507",
+        "label": ("LNMO", "pouch", ""),
+        "credit": "Schmitt et al. 2026",
         "notes": [
             "Calibrated against the HYDRA0 measurements published at https://doi.org/10.5281/zenodo.18256663 "
             "(CC-BY-4.0). The file's Validation section holds five discharge-rate curves from that campaign.",
@@ -87,34 +89,8 @@ SOURCES: dict[str, dict] = {
         # Published under spec/ on 2026-10-11, before parameter sets moved to dataset/.
         "supersedes": "https://w3id.org/battinfo/spec/szxp-xwnx-vhyf-rvm0",
         "software_requirements": None,
-        "cell": {
-            "case": "new",
-            "slug": "cea--imp5-70-120-h0b--2026",
-            "spec": {
-                "name": "HYDRA0 1 Ah graphite|LNMO prototype pouch cell",
-                "manufacturer": "CEA",
-                "model": "IMP5-70-120-H0B",
-                "format": "pouch",
-                "chemistry": "li-ion",
-                "positive_electrode_basis": "LNMO",
-                "negative_electrode_basis": "graphite",
-                "rechargeable": True,
-                "specification_comment": (
-                    "Prototype pouch cell developed within the Horizon Europe project HYDRA "
-                    "(https://doi.org/10.5281/zenodo.18256663)."
-                ),
-            },
-            "organization": {
-                "slug": "cea",
-                "fields": {
-                    "name": "CEA",
-                    "type": "ResearchOrganization",
-                    "legal_name": "Commissariat à l'énergie atomique et aux énergies alternatives",
-                    "alternate_name": ["French Alternative Energies and Atomic Energy Commission"],
-                    "location": {"address_country": "FR"},
-                },
-            },
-        },
+        # The cell was described from this source on 2026-10-11 (records/cell-spec/cea--imp5-70-120-h0b--2026).
+        "cell": {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/3xf1-1f61-6nsc-6qtp"},
     },
 }
 
@@ -147,32 +123,39 @@ print(json.dumps({
 }))
 """
 
-# The examples distributed with the BPX standard, at a pinned commit. None describes a real cell.
+# The examples distributed with the BPX standard, at a pinned commit. None describes a real cell. The two
+# full parameterisations are About:Energy's (December 2022); the test cases are built from the pouch cell's.
 _BPX_EXAMPLES = "https://raw.githubusercontent.com/FaradayInstitution/BPX/9b73d69fb758b9422e463478989bd3d3e0807024/examples/"
 _BPX_ATTRIBUTION = (
-    "Example parameter set distributed with the BPX standard (FaradayInstitution/BPX, MIT licence), "
-    "at commit 9b73d69."
+    "Parameterisation by About:Energy Limited (December 2022), distributed as an example with the BPX standard "
+    "(FaradayInstitution/BPX, MIT licence) at commit 9b73d69."
 )
-for _key, _file, _name, _materials, _notes in (
-    ("bpx-example-nmc-pouch", "nmc_pouch_cell_BPX.json", "BPX example: NMC111 pouch cell",
+_BPX_TEST_CASE_ATTRIBUTION = (
+    "A test case in the BPX standard's examples (FaradayInstitution/BPX, MIT licence, commit 9b73d69), built from "
+    "About:Energy Limited's NMC111 pouch cell parameterisation (December 2022)."
+)
+for _key, _file, _label, _attribution, _materials, _notes in (
+    ("bpx-example-nmc-pouch", "nmc_pouch_cell_BPX.json", ("NMC111", "pouch", ""), _BPX_ATTRIBUTION,
      {"negative": "graphite", "positive": "nmc111"}, []),
-    ("bpx-example-nmc-pouch-spm", "nmc_pouch_cell_BPX_SPM.json", "BPX example: NMC111 pouch cell (SPM)",
+    ("bpx-example-nmc-pouch-spm", "nmc_pouch_cell_BPX_SPM.json", ("NMC111", "pouch", "SPM"), _BPX_TEST_CASE_ATTRIBUTION,
      {"negative": "graphite", "positive": "nmc111"},
      ["PyBaMM 26.10 cannot read SPM parameter files (its BPX importer needs an electrolyte section), "
       "so its smoke run fails."]),
     # The positive electrode is a blend: BattINFO cannot name its materials yet.
-    ("bpx-example-nmc-pouch-blended", "nmc_pouch_cell_BPX_blended_electrode.json",
-     "BPX example: NMC111 pouch cell, blended positive electrode", {"negative": "graphite"}, []),
+    ("bpx-example-nmc-pouch-blended", "nmc_pouch_cell_BPX_blended_electrode.json", ("NMC111", "pouch", "blended"),
+     _BPX_TEST_CASE_ATTRIBUTION, {"negative": "graphite"}, []),
     ("bpx-example-nmc-pouch-hysteresis", "nmc_pouch_cell_BPX_user-defined_hysteresis.json",
-     "BPX example: NMC111 pouch cell with OCP hysteresis", {"negative": "silicon_graphite", "positive": "nmc111"}, []),
-    ("bpx-example-lfp-18650", "lfp_18650_cell_BPX.json", "BPX example: LFP 18650 cell",
+     ("NMC111", "pouch", "hysteresis"), _BPX_TEST_CASE_ATTRIBUTION,
+     {"negative": "silicon_graphite", "positive": "nmc111"}, []),
+    ("bpx-example-lfp-18650", "lfp_18650_cell_BPX.json", ("LFP", "18650", ""), _BPX_ATTRIBUTION,
      {"negative": "graphite", "positive": "lfp"}, []),
 ):
     SOURCES[_key] = {
         "url": _BPX_EXAMPLES + _file,
-        "name": _name,
+        "label": _label,
+        "credit": "About:Energy 2022",
         "license": "mit",
-        "attribution": _BPX_ATTRIBUTION,
+        "attribution": _attribution,
         "citation": "https://github.com/FaradayInstitution/BPX",
         "notes": _notes,
         "materials": _materials,
@@ -187,16 +170,19 @@ for _key, _file, _name, _materials, _notes in (
 _PYBAMM_PARAMETERS = (
     "https://github.com/pybamm-team/PyBaMM/blob/pybamm-v26.10.1.1/packages/pybamm/src/pybamm/input/parameters/lithium_ion/"
 )
-for _key, _name, _doi, _materials, _cell, _notes in (
-    ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050",
+for _key, _name, _doi, _label, _credit, _materials, _cell, _notes in (
+    ("pybamm-chen2020", "Chen2020", "10.1149/1945-7111/ab9050", ("NMC811", "21700", ""), "Chen et al. 2020",
      {"negative": "silicon_graphite", "positive": "nmc811"},
      {"case": "existing", "cell_spec_id": "https://w3id.org/battinfo/spec/2c16-qpzn-d6xc-3shs"}, []),  # LG INR21700 M50
-    ("pybamm-mohtat2020", "Mohtat2020", "10.1149/1945-7111/aba5d1", {"negative": "graphite", "positive": "nmc532"},
-     {"case": "virtual"}, []),  # pouch cells made for the study
-    ("pybamm-prada2013", "Prada2013", "10.1149/2.053304jes", {"negative": "graphite", "positive": "lfp"},
-     {"case": "virtual"}, []),  # no specific cell named; graphite OCP and j0 from Chen2020
+    ("pybamm-mohtat2020", "Mohtat2020", "10.1149/1945-7111/aba5d1", ("NMC532", "pouch", ""), "Mohtat et al. 2020",
+     {"negative": "graphite", "positive": "nmc532"}, {"case": "virtual"}, []),  # pouch cells made for the study
+    # No specific cell named, so no format; graphite OCP and j0 from Chen2020.
+    ("pybamm-prada2013", "Prada2013", "10.1149/2.053304jes", ("LFP", "", ""), "Prada et al. 2013",
+     {"negative": "graphite", "positive": "lfp"}, {"case": "virtual"}, []),
 ):
     SOURCES[_key] = {
+        "label": _label,
+        "credit": _credit,
         "file": f"{_name.lower()}--pybamm.bpx.json",
         "check": f"{_name.lower()}--pybamm.check.json",
         "source_url": f"{_PYBAMM_PARAMETERS}{_name}.py",
@@ -213,6 +199,14 @@ for _key, _name, _doi, _materials, _cell, _notes in (
         "software_requirements": None,
         "cell": _cell,
     }
+
+# One rule for every name: BPX, the positive electrode material, the cell format (when the source states
+# one) and, where needed, what sets the file apart from others with the same three. Who made the values
+# is the record's credit (provenance source_name), shown beside the name rather than in it.
+for _source in SOURCES.values():
+    _source["name"] = " ".join(["BPX", *(part for part in _source["label"] if part)])
+if len({_source["name"] for _source in SOURCES.values()}) != len(SOURCES):
+    raise SystemExit("two sources would share a name: give one a variation")
 
 
 def export_check_notes(check_path: Path) -> list[str]:
@@ -459,6 +453,7 @@ def main() -> int:
                *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],
     )
     record["license"] = source["license"]
+    record["provenance"]["source_name"] = source["credit"]
     out[PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"] = record
 
     for path, rec in out.items():
