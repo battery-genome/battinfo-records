@@ -10,7 +10,8 @@ file, fails to solve a case, or does not install is recorded as such.
 
 Output: ``simulations/benchmark/<stamp>.json`` under ``--out``. With ``--upload`` it is written to
 the bucket named by R2_BUCKET (never overwritten), and a new index (the current run sets plus
-this benchmark) becomes ``simulations/latest.json``.
+this benchmark) becomes ``simulations/latest.json``, except with ``--only``, whose benchmark
+covers only some files.
 
     uv run --no-project --with boto3 python scripts/benchmark-simulators.py --out ../bench-out [--upload]
 """
@@ -141,6 +142,9 @@ def main() -> int:
         if bucket.exists(key):
             raise SystemExit(f"{key} already exists; use another --stamp")
         bucket.put(key, body)
+        if args.only:
+            print(f"{PREFIX}/latest.json not moved: --only selects some records")
+            return 0
         current_key, current = bucket.current_index()
         index = {**(current or {"generated": stamp, "run_sets": []}),
                  "benchmark": {"key": key, "sha256": sha256(body), "generated": stamp}}

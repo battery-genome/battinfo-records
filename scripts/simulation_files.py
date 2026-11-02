@@ -108,14 +108,17 @@ class Bucket:
         self.s3.put_object(Bucket=self.name, Key=key, Body=body, ContentType=content_type,
                            CacheControl=cache_control, Metadata={"sha256": sha256(body)})
 
-    def exists(self, key: str) -> bool:
+    def metadata(self, key: str) -> dict | None:
+        """The object's metadata (put() stores its sha256), or None when there is no such object."""
         try:
-            self.s3.head_object(Bucket=self.name, Key=key)
-            return True
+            return self.s3.head_object(Bucket=self.name, Key=key).get("Metadata") or {}
         except self.client_error as exc:
             if self._missing(exc):
-                return False
+                return None
             raise
+
+    def exists(self, key: str) -> bool:
+        return self.metadata(key) is not None
 
     def get_json(self, key: str):
         try:

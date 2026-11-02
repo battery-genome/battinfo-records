@@ -39,6 +39,7 @@ import os
 import sys
 import time
 from datetime import datetime, timezone
+from http.client import HTTPException
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
@@ -110,7 +111,7 @@ def verify_files(distributions: list[dict], *, timeout: float = 120.0) -> list[s
             request = Request(url, method="GET", headers={"User-Agent": "battinfo-records-publish/1.0"})
             with urlopen(request, timeout=timeout) as resp:
                 digest = hashlib.sha256(resp.read()).hexdigest()
-        except (HTTPError, URLError) as exc:
+        except (OSError, HTTPException) as exc:  # HTTP errors, timeouts and dropped connections alike
             problems.append(f"{url}: not fetchable ({exc})")
             continue
         expected = (entry.get("checksum_sha256") or "").lower()
