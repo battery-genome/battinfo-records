@@ -29,7 +29,11 @@ so the same input gives the same summary.
 named by R2_BUCKET (credentials R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY,
 R2_ENDPOINT): run-set files are never overwritten (existing keys are skipped),
 nothing outside ``simulations/`` is ever written, and a new index plus
-``latest.json`` are written only when the set of run sets changed.
+``latest.json`` are written only when the index changed. The uploaded index
+lists a run set for every record with a runnable file: a record this run left
+out (``--only``) or failed to simulate keeps its run set from the current index,
+so one bad file never takes the others off the site; a record no longer in the
+repository drops out.
 
     uv run --no-project --with "pybamm[bpx]==26.10.1.1" --with boto3 \\
         python scripts/simulate-parameter-sets.py --out ../sim-out [--upload]
@@ -257,29 +261,60 @@ def simulate_file(folder: str, body: dict, dist: dict, raw: bytes, out_root: Pat
             "summary_sha256": sha256((run_set_dir / "summary.json").read_bytes())}
 
 
-def upload(out_root: Path, run_set_entries: list[dict], index_key: str, index: dict) -> None:
+def carried_forward(simulated: list[dict], current: dict | None, records: list) -> list[dict]:
+    """Run sets in the current index for records this run did not simulate (left out by --only, or
+    failed), with the record's name and credit as they are now."""
+    done = {entry["iri"] for entry in simulated}
+    names = {body["id"]: (body.get("name"), credit) for _, body, _, credit in records}
+    kept = []
+    for entry in (current or {}).get("run_sets", []):
+        if entry["iri"] in done:
+            continue
+        if entry["iri"] not in names:
+            print(f"dropped from the index: {entry.get('name') or entry['iri']} (no runnable record)")
+            continue
+        name, credit = names[entry["iri"]]
+        kept.append({**entry, "name": name, "credit": credit})
+    return kept
+
+
+def upload(out_root: Path, run_set_entries: list[dict], index_key: str, index: dict, records: list) -> None:
+    """Copy new run-set files, then move latest.json to a new index if the run sets changed."""
     bucket = Bucket()
     written = skipped = 0
     for entry in run_set_entries:
         run_set_dir = out_root / Path(entry["summary"]).parent
         for path in sorted(p for p in run_set_dir.rglob("*") if p.is_file()):
             key = path.relative_to(out_root).as_posix()
-            if bucket.exists(key):
-                skipped += 1
+            metadata = bucket.metadata(key)
+            if metadata is None:
+                bucket.put(key, path.read_bytes())
+                written += 1
                 continue
-            bucket.put(key, path.read_bytes())
-            written += 1
+            skipped += 1
+            stored = metadata.get("sha256")
+            if key == entry["summary"] and stored and stored != entry["summary_sha256"]:
+                # Run-set files are never overwritten, so the index describes the summary already there.
+                print(f"  {key}: differs from this run's summary; the index keeps the stored one")
+                entry["summary_sha256"] = stored
     print(f"run-set files: {written} written, {skipped} already there")
 
-    def listing(ix: dict) -> list:
-        return sorted((r["summary"], r["summary_sha256"]) for r in ix.get("run_sets", []))
-
     current_key, current = bucket.current_index()
+    run_sets = run_set_entries + carried_forward(run_set_entries, current, records)
+    index = {**index, "run_sets": sorted(run_sets, key=lambda e: e["summary"]),
+             # The benchmark job writes its own entry; a new run-set index keeps the latest one.
+             "benchmark": (current or {}).get("benchmark")}
+
+    def listing(ix: dict) -> list:
+        return sorted((r["summary"], r["summary_sha256"], r.get("name"), r.get("credit"))
+                      for r in ix.get("run_sets", []))
+
     if current and listing(current) == listing(index):
         print(f"unchanged: {PREFIX}/latest.json still points at {current_key}")
         return
-    # The benchmark job writes its own entry; a new run-set index keeps the latest one.
-    bucket.publish_index(index_key, {**index, "benchmark": (current or {}).get("benchmark")})
+    if current and current.get("run_sets") and not index["run_sets"]:
+        raise SystemExit(f"refusing to replace {current_key} with an index of no run sets")
+    bucket.publish_index(index_key, index)
 
 
 def main() -> int:
@@ -321,7 +356,7 @@ def main() -> int:
     print(f"wrote {len(entries)} run set(s) and {index_key} under {out_root}")
 
     if args.upload:
-        upload(out_root, entries, index_key, index)
+        upload(out_root, entries, index_key, index, find_records(None) if args.only else records)
     return 1 if failures else 0
 
 

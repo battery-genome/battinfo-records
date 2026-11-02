@@ -22,3 +22,25 @@ jobs:
 
       - name: Lint scripts (ruff)
         run: uv run ruff check scripts
+
+  record-files:
+    # Merging a parameter-set record starts the Simulations workflow, which fetches its files.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Files of added or changed parameter-set records are uploaded
+        shell: bash
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git diff --name-only -z --diff-filter=AMR "$BASE"...HEAD -- 'records/parameter-set/*/record.json' > "$RUNNER_TEMP/changed"
+          if [ ! -s "$RUNNER_TEMP/changed" ]; then echo "no parameter-set record added or changed"; exit 0; fi
+          xargs -0 python3 scripts/check-record-files.py < "$RUNNER_TEMP/changed"

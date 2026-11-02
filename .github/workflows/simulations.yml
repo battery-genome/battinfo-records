@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       only:
-        description: "Glob on record folder names, e.g. schmitt* (empty: all records)"
+        description: "Glob on record folder names, e.g. schmitt* (empty: all records); the others keep their current runs"
         required: false
         default: ""
   push:
@@ -25,7 +25,9 @@ on:
       - "scripts/simulation_files.py"
       - ".github/workflows/simulations.yml"
   schedule:
-    - cron: "17 4 * * 1"  # Mondays 04:17 UTC
+    # Daily 04:17 UTC: new records and new files are picked up within a day. Every file is simulated
+    # again (about two minutes); when nothing changed, nothing is written.
+    - cron: "17 4 * * *"
 
 concurrency:
   group: simulations
