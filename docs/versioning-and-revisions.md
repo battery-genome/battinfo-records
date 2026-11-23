@@ -19,6 +19,8 @@ For cell types, a changed physical design behind the same marketed model name sh
 - `google--g20m7--sd12`
 - `google--g20m7--20260320`
 
+A revised datasheet with materially different declared values counts as such a change. Two records that describe the same document are copies, and one of them is superseded. `duplicate-and-revised-specs.md` sets out both cases.
+
 ## Revision Style
 
 - Prefer small, reviewable changes.
