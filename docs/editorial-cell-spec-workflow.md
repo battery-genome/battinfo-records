@@ -85,6 +85,7 @@ Use this checklist before promotion.
   `year`, `revision`, `evidence_date`, or explicit manual disambiguator.
 - Bare `manufacturer--model` is avoided unless the product identity is truly stable.
 - Known variant ambiguity is captured in the id or in notes.
+- No existing record describes the same product and document (see `duplicate-and-revised-specs.md`).
 
 ### Provenance
 
