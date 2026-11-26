@@ -42,8 +42,8 @@ md5, the arithmetic is deterministic, and ``retrieved_at`` is fixed.
 The batch IRI derives from (target, scope, name), so names are part of the
 identity: change one and the batch gets a new IRI.
 
-Run from the repo root with numpy, pyarrow and a BattINFO whose parameter-set schema takes
-``is_based_on`` (the first one after 0.8.1) installed:
+Run from the repo root with numpy, pyarrow and a BattINFO that validates parameter sets against
+v2 of the parameter-set schema (the version that takes ``is_based_on``) installed:
 
     python scripts/ingest-flores-ocp-claims.py --cache <download-dir> [--dry-run]
         [--plots <png-dir>] [--check-live]
@@ -317,10 +317,11 @@ def build_record(spec: dict, items: list[dict], curves: list[dict], grid: np.nda
 
 
 def require_is_based_on() -> None:
-    """Stop unless the installed BattINFO's parameter-set schema takes is_based_on on claims."""
+    """Stop unless the schema the installed BattINFO validates parameter sets against takes is_based_on on claims."""
+    from battinfo.entities import kind_for_doc
     from battinfo.validate.schema import schema_for_rel_path
 
-    claim = schema_for_rel_path("parameter-set.schema.json")["$defs"]["Claim"]["properties"]
+    claim = schema_for_rel_path(kind_for_doc({"parameter_set": {}}).schema_file)["$defs"]["Claim"]["properties"]
     if "is_based_on" not in claim:
         raise SystemExit("this BattINFO's parameter-set schema has no is_based_on; install a BattINFO that has it")
 
