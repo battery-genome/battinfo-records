@@ -511,13 +511,13 @@ def main() -> int:
         source_url=source.get("source_url", source.get("url")),
         notes=[source["attribution"], *source["notes"],
                *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],
+        # What the whole file was built from (needs a BattINFO that takes is_based_on).
+        **({"is_based_on": [parameter_set_iri(ref) for ref in source["based_on"]]} if source.get("based_on") else {}),
         # This corpus predates BattINFO 0.8's /id/1001/ form and keeps the old one (the uid is the same).
         base=RECORD_BASE,
     )
     record["license"] = source["license"]
     record["provenance"]["source_name"] = source["credit"]
-    if source.get("based_on"):
-        record["parameter_set"]["is_based_on"] = [parameter_set_iri(ref) for ref in source["based_on"]]
     if source.get("ocp_claims"):
         link_ocp_claims(record["parameter_set"], source["ocp_claims"])
     out[PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"] = record

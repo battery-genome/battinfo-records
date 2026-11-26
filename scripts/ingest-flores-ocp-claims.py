@@ -42,7 +42,8 @@ md5, the arithmetic is deterministic, and ``retrieved_at`` is fixed.
 The batch IRI derives from (target, scope, name), so names are part of the
 identity: change one and the batch gets a new IRI.
 
-Run from the repo root with BattINFO, numpy and pyarrow installed:
+Run from the repo root with numpy, pyarrow and a BattINFO whose parameter-set schema takes
+``is_based_on`` (the first one after 0.8.1) installed:
 
     python scripts/ingest-flores-ocp-claims.py --cache <download-dir> [--dry-run]
         [--plots <png-dir>] [--check-live]
@@ -292,7 +293,6 @@ def build_record(spec: dict, items: list[dict], curves: list[dict], grid: np.nda
         })
     material = KIND_LABELS[kind]
     record = create_parameter_set(
-        validate=False,
         name=batch_name(kind, label),
         material_spec_id=spec["active_material_spec_id"],
         scope="material",
@@ -318,26 +318,19 @@ def build_record(spec: dict, items: list[dict], curves: list[dict], grid: np.nda
     return batch_slug(kind, label), record, stats
 
 
-def schema_knows_is_based_on() -> bool:
+def require_is_based_on() -> None:
+    """Stop unless the installed BattINFO's parameter-set schema takes is_based_on on claims."""
     from battinfo.validate.schema import schema_for_rel_path
 
     claim = schema_for_rel_path("parameter-set.schema.json")["$defs"]["Claim"]["properties"]
-    return "is_based_on" in claim
+    if "is_based_on" not in claim:
+        raise SystemExit("this BattINFO's parameter-set schema has no is_based_on; install a BattINFO that has it")
 
 
-def without_is_based_on(record: dict) -> dict:
-    clone = json.loads(json.dumps(record))
-    clone["parameter_set"].pop("is_based_on", None)
-    for claim in clone["parameter_set"].get("claims", []):
-        claim.pop("is_based_on", None)
-    return clone
-
-
-def validate(record: dict, supported: bool) -> list[str]:
+def validate(record: dict) -> list[str]:
     from battinfo.validate import validate_record_report
 
-    report = validate_record_report(record if supported else without_is_based_on(record), policy="strict")
-    return [str(e) for e in report.errors]
+    return [str(e) for e in validate_record_report(record, policy="strict").errors]
 
 
 def check_live(iris: list[str]) -> list[str]:
@@ -393,11 +386,9 @@ def main() -> int:
     parser.add_argument("--check-live", action="store_true", help="fetch every cited IRI and stop on a superseded one")
     args = parser.parse_args()
 
+    require_is_based_on()
     corpus = load_corpus()
     groups, skipped, excluded = select_datasets(corpus)
-    supported = schema_knows_is_based_on()
-    if not supported:
-        print("note: this BattINFO's schema has no is_based_on; records are validated without it")
     grid = np.linspace(0.0, 1.0, GRID_POINTS)
 
     failures = 0
@@ -406,7 +397,7 @@ def main() -> int:
         items = sorted(groups[spec_iri], key=lambda i: i["iri"])
         curves = [extract(item, args.cache, grid) for item in items]
         slug, record, stats = build_record(spec, items, curves, grid)
-        errors = validate(record, supported)
+        errors = validate(record)
         body = record["parameter_set"]
         print(f"{slug}  {body['id']}")
         print(f"  {body['name']}  [{len(items)} dataset(s)]")
