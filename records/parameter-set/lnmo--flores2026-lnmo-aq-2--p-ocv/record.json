@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/xc6g-15x3-5mcp-755n",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/xc6g-15x3-5mcp-755n",
     "short_id": "xc6g15",
     "name": "Flores 2026 LNMO-AQ-2 (p-OCV) - lnmo",
     "material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",

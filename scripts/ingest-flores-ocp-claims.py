@@ -85,9 +85,6 @@ VOLTAGE_DIGITS = 5
 CUTOFF_TOLERANCE_V = 0.005
 # Shorter runs of nonzero current are not half-cycles.
 MIN_HALF_CYCLE_ROWS = 100
-# The corpus is a folder made before BattINFO 0.8 moved new records under /id/1001/;
-# its records keep the old form, so these do too (same uid either way).
-RECORD_BASE = "https://w3id.org/battinfo/"
 RETRIEVED_AT = int(datetime(2026, 11, 26, tzinfo=timezone.utc).timestamp())
 LICENSE = "cc-by-4.0"
 CREDIT = "Flores et al. 2026"
@@ -310,7 +307,8 @@ def build_record(spec: dict, items: list[dict], curves: list[dict], grid: np.nda
         notes=[f"Computed by {SCRIPT} from the BDF files of the datasets each claim names in is_based_on, "
                "checked against their md5 checksums."],
         license=LICENSE,
-        base=RECORD_BASE,
+        # New records mint under BattINFO's default base, /id/1001/. The records they name (the material
+        # spec, the datasets) keep the form they are published under, which is what the registry matches.
     )
     record["provenance"]["source_name"] = CREDIT
     stats = {"label": label, "kind": kind, "datasets": based_on, "mean": mean,

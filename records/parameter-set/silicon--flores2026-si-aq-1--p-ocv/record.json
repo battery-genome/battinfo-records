@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/hx8c-8728-071b-kbks",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/hx8c-8728-071b-kbks",
     "short_id": "hx8c87",
     "name": "Flores 2026 Si-AQ-1 (p-OCV) - silicon",
     "material_spec_id": "https://w3id.org/battinfo/spec/fx3w-fkab-zd8x-vedv",

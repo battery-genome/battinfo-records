@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/7w8t-8q9b-dtfn-bvty",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/7w8t-8q9b-dtfn-bvty",
     "short_id": "7w8t8q",
     "name": "Flores 2026 LNMO-NMP-2 (p-OCV) - lnmo",
     "material_spec_id": "https://w3id.org/battinfo/spec/aexf-ysdh-9z93-bs7m",

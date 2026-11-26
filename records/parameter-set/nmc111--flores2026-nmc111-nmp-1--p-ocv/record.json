@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/v90z-y5sh-kkxv-n087",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/v90z-y5sh-kkxv-n087",
     "short_id": "v90zy5",
     "name": "Flores 2026 NMC111-NMP-1 (p-OCV) - nmc111",
     "material_spec_id": "https://w3id.org/battinfo/spec/j17h-6vp8-jcat-pmq1",

@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/6mxp-6r2j-77ja-k1wk",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/6mxp-6r2j-77ja-k1wk",
     "short_id": "6mxp6r",
     "name": "Flores 2026 LFP-NMP-1 (p-OCV) - lfp",
     "material_spec_id": "https://w3id.org/battinfo/spec/2978-wcgx-e86n-68qh",

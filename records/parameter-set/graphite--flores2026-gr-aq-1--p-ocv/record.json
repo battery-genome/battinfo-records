@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/dataset/rgt4-vct9-9hw2-mava",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/rgt4-vct9-9hw2-mava",
     "short_id": "rgt4vc",
     "name": "Flores 2026 Gr-AQ-1 (p-OCV) - graphite",
     "material_spec_id": "https://w3id.org/battinfo/spec/9nqm-9k4e-619y-wh1t",

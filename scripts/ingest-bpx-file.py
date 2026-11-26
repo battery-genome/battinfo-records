@@ -60,7 +60,6 @@ REPO = Path(__file__).resolve().parent.parent
 PARAMETER_SET_DIR = REPO / "records" / "parameter-set"
 CELL_SPEC_DIR = REPO / "records" / "cell-spec"
 ORGANIZATION_DIR = REPO / "records" / "organization"
-RECORD_BASE = "https://w3id.org/battinfo/"
 
 # One entry per published BPX file. The URL pins a commit, so the bytes the
 # record describes can always be fetched again from the source as well.
@@ -366,6 +365,19 @@ def write_record(path: Path, record: dict) -> None:
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
+def saved_base(path: Path, uid: str) -> str | None:
+    """The base of the record already saved at path for this file, so it keeps its IRI in either form.
+
+    None when there is none (or it is another file's record): the record is new and mints under
+    BattINFO's default base, /id/1001/ (IDENTIFIER_POLICY 5.6).
+    """
+    if not path.exists():
+        return None
+    saved = json.loads(path.read_text(encoding="utf-8")).get("parameter_set", {}).get("id", "")
+    match = re.fullmatch(rf"(https://w3id\.org/battinfo/(?:id/\d{{4,}}/)?)dataset/{re.escape(uid)}", saved)
+    return match.group(1) if match else None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("source", choices=sorted(SOURCES))
@@ -498,6 +510,10 @@ def main() -> int:
     else:
         raise SystemExit(f"unknown cell case {cell['case']!r}: use existing, new or virtual")
 
+    record_path = PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"
+    # A record already saved for this file keeps its IRI (HYDRA's is in the old form); a new one takes
+    # the default, /id/1001/. The uid is the file's either way.
+    record_base = saved_base(record_path, uid)
     record = imported.to_parameter_set(
         **link,
         materials=source["materials"],
@@ -513,14 +529,13 @@ def main() -> int:
                *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],
         # What the whole file was built from (needs a BattINFO that takes is_based_on).
         **({"is_based_on": [parameter_set_iri(ref) for ref in source["based_on"]]} if source.get("based_on") else {}),
-        # This corpus predates BattINFO 0.8's /id/1001/ form and keeps the old one (the uid is the same).
-        base=RECORD_BASE,
+        **({"base": record_base} if record_base else {}),
     )
     record["license"] = source["license"]
     record["provenance"]["source_name"] = source["credit"]
     if source.get("ocp_claims"):
         link_ocp_claims(record["parameter_set"], source["ocp_claims"])
-    out[PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"] = record
+    out[record_path] = record
 
     for path, rec in out.items():
         report = validate_record_report(rec)
