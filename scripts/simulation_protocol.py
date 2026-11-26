@@ -30,6 +30,8 @@ CONSTANT_CURRENT_TOLERANCE = 0.02  # relative spread below which a measured curr
 MAX_REPLAY_POINTS = 5000  # a measured current profile is resampled to at most this many points
 TIME_LIMIT_FACTOR = 5  # a constant-current run stops at the cut-off, or after five times its nominal duration
 MESH_DOMAINS = ("x_n", "x_s", "x_p", "r_n", "r_p")
+# Top-level keys a BPX file may carry that are not model parameters. bpx 1.1 refuses both.
+NON_PARAMETER_KEYS = ("Metadata", "@context")
 
 
 def model_choice(bpx: dict) -> tuple[str, str]:
@@ -63,9 +65,14 @@ def declared_initial_soc(bpx: dict) -> float | None:
     return None
 
 
+def without_metadata(bpx: dict) -> dict:
+    """A shallow copy of the file without its top-level Metadata and @context; the model is the same."""
+    return {key: value for key, value in bpx.items() if key not in NON_PARAMETER_KEYS}
+
+
 def parameter_values(raw: bytes) -> pybamm.ParameterValues:
     """The file's parameters as PyBaMM reads them, initial state and temperatures included."""
-    return pybamm.ParameterValues.create_from_bpx_obj(json.loads(raw))  # it rewrites the dict it gets
+    return pybamm.ParameterValues.create_from_bpx_obj(without_metadata(json.loads(raw)))  # it rewrites the dict it gets
 
 
 def model_for(name: str, options: dict, thermal: bool):

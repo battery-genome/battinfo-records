@@ -101,6 +101,8 @@ SMOKE_RUN = r"""
 import json, sys, time
 import pybamm
 doc = json.load(open(sys.argv[1], encoding="utf-8"))
+# A top-level Metadata or @context is not a model parameter, and bpx 1.1 refuses both.
+doc = {key: value for key, value in doc.items() if key not in ("Metadata", "@context")}
 model_name = sys.argv[2]
 params = doc.get("Parameterisation", {})
 phases = tuple(
