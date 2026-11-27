@@ -202,6 +202,46 @@ for _key, _name, _doi, _label, _credit, _materials, _cell, _notes in (
         "cell": _cell,
     }
 
+# HYDRA's parameters with the Flores OCP claims in place of HYDRA's OCPs, made by scripts/derive-hydra-flores-bpx.py
+# (the file in --exports-dir). The Flores LNMO is another powder than HYDRA's, so the cell is virtual. Each OCP in
+# the file is one published claim, named in ocp_claims by the batch that holds it.
+SOURCES["hydra-flores2026-ocp"] = {
+    "label": ("LNMO", "pouch", "Flores OCP"),
+    "credit": "Schmitt et al. 2026 and Flores et al. 2026",
+    "file": "hydra-graphite-lnmo_flores-2026-ocp.bpx.json",
+    "source_description": (
+        "Made by scripts/derive-hydra-flores-bpx.py from HYDRA's runnable file: both OCP tables replaced by Flores "
+        "claims, the open-circuit voltages at 0% and 100% SOC recomputed for them, the upper cut-off set to the "
+        "100% SOC value, the Validation section removed."
+    ),
+    "license": "cc-by-4.0",
+    "attribution": (
+        "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah "
+        "graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under "
+        "CC-BY-4.0, as in their BPX file (https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52). Both electrode "
+        "OCPs are from the half-cell p-OCV data of Flores et al. 2026 (https://doi.org/10.5281/zenodo.20086298, "
+        "CC-BY-4.0). Changes: the OCP tables were replaced, the User-defined open-circuit voltages at 0% and 100% "
+        "SOC were recomputed for them at HYDRA's stoichiometry windows, the upper voltage cut-off was set to the "
+        "100% SOC value, and the Validation section was removed."
+    ),
+    "citation": "https://arxiv.org/abs/2601.10507",
+    "notes": [
+        "A virtual cell: the Flores LNMO is another powder than HYDRA's, and no cell with these OCPs was measured.",
+        "The upper voltage cut-off is 4.642 V, the file's open-circuit voltage at 100% SOC, so that charging does "
+        "not go past the stated full state; HYDRA's 4.9 V lies beyond the Flores LNMO curve, which ends at 4.8 V "
+        "vs Li/Li+.",
+        "The x of both OCP tables is the lithium fraction normalised to the measured capacity window of the "
+        "half-cells, not absolute stoichiometry, and the file uses it as stoichiometry.",
+    ],
+    "materials": {"negative": "graphite", "positive": "lnmo"},
+    "software_requirements": None,
+    "cell": {"case": "virtual"},
+    "based_on": ["https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52",
+                 "graphite--flores2026-gr-aq-1--p-ocv", "lnmo--flores2026-lnmo-aq-2--p-ocv"],
+    "ocp_claims": {"negative_material": "graphite--flores2026-gr-aq-1--p-ocv",
+                   "positive_material": "lnmo--flores2026-lnmo-aq-2--p-ocv"},
+}
+
 # One rule for every name: BPX, the positive electrode material, the cell format (when the source states
 # one) and, where needed, what sets the file apart from others with the same three. Who made the values
 # is the record's credit (provenance source_name), shown beside the name rather than in it.
@@ -303,9 +343,57 @@ def find_existing_cell(registry_url: str, manufacturer: str, model: str) -> list
     return hits
 
 
+def parameter_set_iri(ref: str) -> str:
+    """An IRI as given, or the IRI of the record in records/parameter-set/<ref>."""
+    if ref.startswith("https://"):
+        return ref
+    return json.loads((PARAMETER_SET_DIR / ref / "record.json").read_text(encoding="utf-8"))["parameter_set"]["id"]
+
+
+def link_ocp_claims(body: dict, ocp_claims: dict[str, str]) -> None:
+    """Tie each named part's OCP to the one published claim it is: same curve, that claim's class, is_based_on."""
+    for part_name, slug in ocp_claims.items():
+        batch = json.loads((PARAMETER_SET_DIR / slug / "record.json").read_text(encoding="utf-8"))["parameter_set"]
+        part = next(p for p in body["parts"] if p["part"] == part_name)
+        ocps = [c for c in part["claims"] if c["parameter"] == "ocp" and "curve" in c]
+        if len(ocps) != 1:
+            raise SystemExit(f"{part_name}: expected one tabulated OCP, found {len(ocps)}")
+        claim = ocps[0]
+        same = [c for c in batch["claims"] if c["parameter"] == "ocp" and "curve" in c
+                and c["curve"]["x"] == claim["curve"]["x"] and c["curve"]["y"] == claim["curve"]["y"]]
+        if len(same) != 1:
+            raise SystemExit(f"{part_name}: the file's OCP is not exactly one claim of {batch['id']} ({slug})")
+        claim["provenance_class"] = same[0]["provenance_class"]
+        claim["method"] = f"The {same[0]['curve'].get('branch', 'only')}-branch OCP claim of {batch['id']}, unchanged."
+        claim["is_based_on"] = [batch["id"]]
+
+
 def write_record(path: Path, record: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
+
+
+def saved_base(path: Path, uid: str, supersedes: str | None) -> str | None:
+    """The base of the record already saved at path for this file, so it keeps its IRI in either form.
+
+    None when nothing is saved there, or when the saved record is another file's and the source says this one
+    supersedes it: the record is new and mints under BattINFO's default base, /id/1001/ (IDENTIFIER_POLICY 5.6).
+    Any other record at path stops the run rather than being overwritten.
+    """
+    if not path.exists():
+        return None
+    saved = json.loads(path.read_text(encoding="utf-8")).get("parameter_set", {}).get("id", "")
+    match = re.fullmatch(rf"(https://w3id\.org/battinfo/(?:id/\d{{4,}}/)?)dataset/{re.escape(uid)}", saved)
+    if match:
+        return match.group(1)
+    saved_uid = saved.rstrip("/").rsplit("/", 1)[-1]
+    if supersedes and saved_uid and supersedes.rstrip("/").rsplit("/", 1)[-1] == saved_uid:
+        return None
+    raise SystemExit(
+        f"{path.relative_to(REPO)} holds {saved or 'a record with no id'}, another file's record, and this file "
+        f"mints dataset/{uid}. Name it in the source's supersedes if this file replaces it, or remove the record "
+        "file if it was never published."
+    )
 
 
 def main() -> int:
@@ -346,6 +434,10 @@ def main() -> int:
     (probe_dir / file_name).write_bytes(raw)
     imported = from_bpx_parameters(probe_dir / file_name)
     uid = imported.file_uid()
+    record_path = PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"
+    # A record already saved for this file keeps its IRI (HYDRA's is in the old form); a new one takes
+    # the default, /id/1001/. The uid is the file's either way.
+    record_base = saved_base(record_path, uid, source.get("supersedes"))
     file_dir = args.out_dir / uid
     file_dir.mkdir(parents=True, exist_ok=True)
     source_path = file_dir / file_name
@@ -453,10 +545,15 @@ def main() -> int:
         source_url=source.get("source_url", source.get("url")),
         notes=[source["attribution"], *source["notes"],
                *(export_check_notes(args.exports_dir / source["check"]) if source.get("check") else [])],
+        # What the whole file was built from (needs a BattINFO that takes is_based_on).
+        **({"is_based_on": [parameter_set_iri(ref) for ref in source["based_on"]]} if source.get("based_on") else {}),
+        **({"base": record_base} if record_base else {}),
     )
     record["license"] = source["license"]
     record["provenance"]["source_name"] = source["credit"]
-    out[PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"] = record
+    if source.get("ocp_claims"):
+        link_ocp_claims(record["parameter_set"], source["ocp_claims"])
+    out[record_path] = record
 
     for path, rec in out.items():
         report = validate_record_report(rec)
