@@ -4,8 +4,10 @@ version = "0.1.0"
 description = "Curated BattINFO records corpus and the ingestion/curation scripts that produce it."
 readme = "README.md"
 requires-python = ">=3.10"
-# The curation and ingestion scripts under scripts/ are standard-library only.
-# The optional datasheet-ingest validation step imports BattINFO lazily; install
+# The curation and ingestion scripts under scripts/ are standard-library only,
+# except where they import BattINFO lazily: the optional datasheet-ingest
+# validation step, and publish_parameter_sets.py, which sends each record's
+# JSON-LD export (battinfo 0.8.2 or later, or pass --no-record-jsonld). Install
 # it into the environment when needed, e.g. `uv pip install ../BattINFO`.
 dependencies = []
 

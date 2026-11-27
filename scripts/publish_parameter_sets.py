@@ -20,14 +20,16 @@ posting, every file URL is fetched and checked against the record's sha256,
 so a record never goes out pointing at a file that was not uploaded.
 
 Each package also carries BattINFO's JSON-LD export of the stamped record
-(``resource.record_jsonld``). The registry serves that export's statements at
-the record's IRI, which is how a claim's ``is_based_on`` reaches the RDF.
-Without it the IRI serves only the registry envelope, and a new version
-published without it drops what an earlier one served. Run the script with
-an environment that has ``battinfo``; ``--no-record-jsonld`` leaves the export
-out on purpose. The registry treats a re-send under the same
-``--source-version`` as the version it already holds, so adding the export to
-a published record takes a new source version.
+(``resource.record_jsonld``). The registry serves that export's statements
+about the record at its IRI, which is how ``is_based_on`` reaches the RDF.
+Without it the IRI serves only the registry envelope as RDF, and a new
+version published without it drops what an earlier one served. Run the
+script with battinfo 0.8.2 or later, the first release that exports
+``is_based_on``; a record that states it and gets an export without it is
+skipped. ``--no-record-jsonld`` leaves the export out on purpose. The
+registry keeps the version it holds when a record is re-sent under the same
+``--source-version``, so adding the export to a published record takes a new
+source version.
 
 The API key comes from ``--api-key`` or the BATTINFO_REGISTRY_API_KEY
 environment variable — deliberately no committed default.
@@ -37,7 +39,7 @@ Usage:
         --contributor-name "..." --contributor-orcid 0000-0000-0000-0000 \
         --registry-url https://battinfo-registry.onrender.com \
         [--source-version 2026-08-17-literature-ocv] [--dry-run] [--limit N] \
-        [--match '*--schmitt2026-hydra--bpx']
+        [--match '*--schmitt2026-hydra--bpx'] [--no-record-jsonld]
 """
 from __future__ import annotations
 
@@ -179,16 +181,50 @@ def build_package(
     return package
 
 
-def jsonld_report_note(response: object) -> str:
-    """A short note on what the registry left out of the export, or ''."""
-    report = response.get("record_jsonld_report") if isinstance(response, dict) else None
-    if not isinstance(report, dict):
+def states_based_on(record: dict) -> bool:
+    """Whether the parameter set, or any of its claims, names what it is based on."""
+    body = record.get("parameter_set") or {}
+    claims = list(body.get("claims") or [])
+    for part in body.get("parts") or []:
+        claims.extend(part.get("claims") or [])
+    return bool(body.get("is_based_on")) or any(claim.get("is_based_on") for claim in claims)
+
+
+def exports_based_on(doc: object) -> bool:
+    """Whether a JSON-LD export carries schema:isBasedOn anywhere."""
+    if isinstance(doc, dict):
+        return any(str(key).endswith("isBasedOn") or exports_based_on(value) for key, value in doc.items())
+    if isinstance(doc, list):
+        return any(exports_based_on(item) for item in doc)
+    return False
+
+
+def jsonld_report(response: object) -> dict | None:
+    """The registry's record_jsonld_report for the one resource a package sends."""
+    resources = response.get("resources") if isinstance(response, dict) else None
+    if not resources or not isinstance(resources[0], dict):
+        return None
+    report = resources[0].get("record_jsonld_report")
+    return report if isinstance(report, dict) else None
+
+
+def jsonld_report_note(report: dict | None) -> str:
+    """What the registry left out of the export, or ''.
+
+    Statements about other named subjects (an ORCID, a DOI, a substance) are
+    left out by design, so those show as a count; anything else by value.
+    """
+    if not report:
         return ""
-    parts = [f"{key} {len(report[key])}" for key in
-             ("dropped_subjects", "dropped_terms", "invalid_values", "unmapped_keys") if report.get(key)]
+    parts = []
     if report.get("reason"):
-        parts.insert(0, str(report["reason"]))
-    return "; JSON-LD export: " + ", ".join(parts) if parts else ""
+        parts.append(f"not served: {report['reason']}")
+    for key in ("dropped_terms", "invalid_values", "unmapped_keys"):
+        if report.get(key):
+            parts.append(f"{key} {', '.join(map(str, report[key]))}")
+    if report.get("dropped_subjects"):
+        parts.append(f"{len(report['dropped_subjects'])} other subject(s) left out")
+    return "; JSON-LD export: " + "; ".join(parts) if parts else ""
 
 
 def post_package(
@@ -270,7 +306,7 @@ def main() -> int:
         print(f"No parameter-set records found under {RECORD_DIR}.")
         return 1
 
-    ok = fail = 0
+    ok = kept = fail = 0
     for record_path in record_paths:
         slug = record_path.parent.name
         record = json.loads(record_path.read_text(encoding="utf-8"))
@@ -290,6 +326,11 @@ def main() -> int:
                 record_jsonld = record_to_jsonld(record, "parameter-set")
             except Exception as exc:  # the emitter's own errors vary; none should stop the other records
                 print(f"  SKIPPED {slug}: no JSON-LD export ({type(exc).__name__}: {exc})")
+                fail += 1
+                continue
+            if states_based_on(record) and not exports_based_on(record_jsonld):
+                print(f"  SKIPPED {slug}: the record states is_based_on and this battinfo does not export it "
+                      "(battinfo 0.8.2 or later does)")
                 fail += 1
                 continue
         package = build_package(
@@ -327,15 +368,26 @@ def main() -> int:
 
         print(f"  publishing {slug} ... ", end="", flush=True)
         result = post_package(package, registry_url=args.registry_url, api_key=args.api_key)
-        if result["status"] == "ok":
-            print(f"ok ({result['status_code']}){jsonld_report_note(result.get('response'))}")
-            ok += 1
-        else:
+        response = result.get("response")
+        if result["status"] != "ok":
             print(f"FAILED ({result['status_code']}): {result.get('error', '')[:200]}")
             fail += 1
+        elif isinstance(response, dict) and response.get("created_count") == 0:
+            print(f"KEPT ({result['status_code']}): the registry already holds source version "
+                  f"{args.source_version} of this record and stored nothing; pass a new --source-version")
+            kept += 1
+        else:
+            report = jsonld_report(response)
+            note = jsonld_report_note(report)
+            if record_jsonld is not None and report and report.get("reason"):
+                print(f"FAILED ({result['status_code']}): published without its JSON-LD statements{note}")
+                fail += 1
+            else:
+                print(f"ok ({result['status_code']}){note}")
+                ok += 1
         time.sleep(0.1)
 
-    print(f"\nDone. ok: {ok}  failed: {fail}")
+    print(f"\nDone. ok: {ok}  kept: {kept}  failed: {fail}")
     return 0 if fail == 0 else 1
 
 
