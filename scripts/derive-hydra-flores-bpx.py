@@ -14,6 +14,9 @@ Changes, and nothing else:
   its own OCPs at its stoichiometry windows, are recomputed the same way for the new
   OCPs. PyBaMM sets a file's initial state from these two values; HYDRA's would be
   unreachable with the new curves and would move the windows;
+- the upper voltage cut-off becomes the file's own open-circuit voltage at 100% SOC,
+  rounded to the mV, so that charging does not go past the stated full state; HYDRA's 4.9 V lies
+  beyond the Flores LNMO curve, which ends at 4.8 V vs Li/Li+;
 - the header says what the file is.
 
 The stoichiometry windows, kinetics, transport, geometry and state are HYDRA's. The
@@ -49,7 +52,8 @@ DESCRIPTION = (
     "The HYDRA graphite/LNMO parameter set of Schmitt et al. 2026 with both electrode OCP tables replaced by "
     "average-branch p-OCV curves of Flores et al. 2026 (graphite Gr-AQ-1, LNMO LNMO-AQ-2), and the open-circuit "
     "voltages at 0% and 100% SOC in User-defined recomputed for them at HYDRA's stoichiometry windows. "
-    "A virtual cell: the Flores LNMO is another powder, and no cell with these OCPs was measured, so the "
+    "The upper voltage cut-off is the open-circuit voltage at 100% SOC, so that charging does not go past the "
+    "full state. A virtual cell: the Flores LNMO is another powder, and no cell with these OCPs was measured, so the "
     "Validation section is removed. Everything else is HYDRA's, including its kinetics: each electrode's "
     "reaction-rate constant is a single BPX value fitted to a BattMo j0(soc) table."
 )
@@ -110,6 +114,8 @@ def derive(hydra: dict) -> dict:
         raise SystemExit("HYDRA's User-defined block no longer states the open-circuit voltages at 0% and 100% SOC")
     user[OCV_KEYS[0]] = empty
     user[OCV_KEYS[1]] = full
+    # Charging does not go past the stated full state or the end of the Flores LNMO curve.
+    params["Cell"]["Upper voltage cut-off [V]"] = round(full, 3)
     return doc
 
 
@@ -130,6 +136,7 @@ def main() -> int:
     for block, slug in OCP_CLAIMS.items():
         print(f"  {block} OCP: average branch of {average_claim(slug)[0]} ({slug})")
     print(f"  {OCV_KEYS[0]} = {user[OCV_KEYS[0]]}, {OCV_KEYS[1]} = {user[OCV_KEYS[1]]}")
+    print(f"  Upper voltage cut-off [V] = {doc['Parameterisation']['Cell']['Upper voltage cut-off [V]']}")
     return 0
 
 

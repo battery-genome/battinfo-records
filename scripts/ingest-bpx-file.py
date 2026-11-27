@@ -211,7 +211,8 @@ SOURCES["hydra-flores2026-ocp"] = {
     "file": "hydra-graphite-lnmo_flores-2026-ocp.bpx.json",
     "source_description": (
         "Made by scripts/derive-hydra-flores-bpx.py from HYDRA's runnable file: both OCP tables replaced by Flores "
-        "claims, the open-circuit voltages at 0% and 100% SOC recomputed for them, the Validation section removed."
+        "claims, the open-circuit voltages at 0% and 100% SOC recomputed for them, the upper cut-off set to the "
+        "100% SOC value, the Validation section removed."
     ),
     "license": "cc-by-4.0",
     "attribution": (
@@ -220,11 +221,18 @@ SOURCES["hydra-flores2026-ocp"] = {
         "CC-BY-4.0, as in their BPX file (https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52). Both electrode "
         "OCPs are from the half-cell p-OCV data of Flores et al. 2026 (https://doi.org/10.5281/zenodo.20086298, "
         "CC-BY-4.0). Changes: the OCP tables were replaced, the User-defined open-circuit voltages at 0% and 100% "
-        "SOC were recomputed for them at HYDRA's stoichiometry windows, and the Validation section was removed."
+        "SOC were recomputed for them at HYDRA's stoichiometry windows, the upper voltage cut-off was set to the "
+        "100% SOC value, and the Validation section was removed."
     ),
     "citation": "https://arxiv.org/abs/2601.10507",
-    "notes": ["A virtual cell: the Flores LNMO is another powder than HYDRA's, and no cell with these OCPs was "
-              "measured."],
+    "notes": [
+        "A virtual cell: the Flores LNMO is another powder than HYDRA's, and no cell with these OCPs was measured.",
+        "The upper voltage cut-off is 4.642 V, the file's open-circuit voltage at 100% SOC, so that charging does "
+        "not go past the stated full state; HYDRA's 4.9 V lies beyond the Flores LNMO curve, which ends at 4.8 V "
+        "vs Li/Li+.",
+        "The x of both OCP tables is the lithium fraction normalised to the measured capacity window of the "
+        "half-cells, not absolute stoichiometry, and the file uses it as stoichiometry.",
+    ],
     "materials": {"negative": "graphite", "positive": "lnmo"},
     "software_requirements": None,
     "cell": {"case": "virtual"},
@@ -365,17 +373,27 @@ def write_record(path: Path, record: dict) -> None:
     path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 
-def saved_base(path: Path, uid: str) -> str | None:
+def saved_base(path: Path, uid: str, supersedes: str | None) -> str | None:
     """The base of the record already saved at path for this file, so it keeps its IRI in either form.
 
-    None when there is none (or it is another file's record): the record is new and mints under
-    BattINFO's default base, /id/1001/ (IDENTIFIER_POLICY 5.6).
+    None when nothing is saved there, or when the saved record is another file's and the source says this one
+    supersedes it: the record is new and mints under BattINFO's default base, /id/1001/ (IDENTIFIER_POLICY 5.6).
+    Any other record at path stops the run rather than being overwritten.
     """
     if not path.exists():
         return None
     saved = json.loads(path.read_text(encoding="utf-8")).get("parameter_set", {}).get("id", "")
     match = re.fullmatch(rf"(https://w3id\.org/battinfo/(?:id/\d{{4,}}/)?)dataset/{re.escape(uid)}", saved)
-    return match.group(1) if match else None
+    if match:
+        return match.group(1)
+    saved_uid = saved.rstrip("/").rsplit("/", 1)[-1]
+    if supersedes and saved_uid and supersedes.rstrip("/").rsplit("/", 1)[-1] == saved_uid:
+        return None
+    raise SystemExit(
+        f"{path.relative_to(REPO)} holds {saved or 'a record with no id'}, another file's record, and this file "
+        f"mints dataset/{uid}. Name it in the source's supersedes if this file replaces it, or remove the record "
+        "file if it was never published."
+    )
 
 
 def main() -> int:
@@ -416,6 +434,10 @@ def main() -> int:
     (probe_dir / file_name).write_bytes(raw)
     imported = from_bpx_parameters(probe_dir / file_name)
     uid = imported.file_uid()
+    record_path = PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"
+    # A record already saved for this file keeps its IRI (HYDRA's is in the old form); a new one takes
+    # the default, /id/1001/. The uid is the file's either way.
+    record_base = saved_base(record_path, uid, source.get("supersedes"))
     file_dir = args.out_dir / uid
     file_dir.mkdir(parents=True, exist_ok=True)
     source_path = file_dir / file_name
@@ -510,10 +532,6 @@ def main() -> int:
     else:
         raise SystemExit(f"unknown cell case {cell['case']!r}: use existing, new or virtual")
 
-    record_path = PARAMETER_SET_DIR / f"{args.source}--bpx" / "record.json"
-    # A record already saved for this file keeps its IRI (HYDRA's is in the old form); a new one takes
-    # the default, /id/1001/. The uid is the file's either way.
-    record_base = saved_base(record_path, uid)
     record = imported.to_parameter_set(
         **link,
         materials=source["materials"],

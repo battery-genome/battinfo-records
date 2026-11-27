@@ -1,11 +1,11 @@
 {
   "schema_version": "0.2.0",
   "parameter_set": {
-    "id": "https://w3id.org/battinfo/id/1001/dataset/qnge-khmp-ntpt-2nw8",
-    "short_id": "qngekh",
+    "id": "https://w3id.org/battinfo/id/1001/dataset/wjme-w1st-gcpn-86zj",
+    "short_id": "wjmew1",
     "name": "BPX LNMO pouch Flores OCP",
     "virtual_cell": true,
-    "parameters_sha256": "331231e949c0bd47ef49f307f2c8f7efdf6e79bf49a1ffb807d5b3ff58e8484b",
+    "parameters_sha256": "cab45d16ded9b59498de9dbe22e88e995470ae7722fbf90508b333343ec05724",
     "model_context": {
       "tool": "BPX",
       "name": "HYDRA graphite/LNMO parameters with Flores 2026 OCPs",
@@ -55,7 +55,7 @@
           {
             "parameter": "charging_cutoff_voltage",
             "quantity": {
-              "value": 4.9,
+              "value": 4.642,
               "unit": "V"
             }
           },
@@ -2586,15 +2586,15 @@
         "type": "DataDownload",
         "name": "hydra-graphite-lnmo_flores-2026-ocp.bpx.json",
         "role": "source",
-        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/qnge-khmp-ntpt-2nw8/v1/hydra-graphite-lnmo_flores-2026-ocp.bpx.json",
+        "content_url": "https://pub-5d124607e4b748eea681efca486508ab.r2.dev/parameter-sets/wjme-w1st-gcpn-86zj/v1/hydra-graphite-lnmo_flores-2026-ocp.bpx.json",
         "encoding_format": "application/json",
         "conforms_to": "BPX 1.1.0",
-        "byte_size": 50707,
+        "byte_size": 50826,
         "checksum": {
           "algorithm": "sha256",
-          "value": "4ee217caa57e3daef0b0727b09846b521dfe55cbaae6dbd6056b567128ede349"
+          "value": "4bc59f54f7a59c2f166d169c7ce449787b844975f046e153b589495ebd0de97e"
         },
-        "description": "Made by scripts/derive-hydra-flores-bpx.py from HYDRA's runnable file: both OCP tables replaced by Flores claims, the open-circuit voltages at 0% and 100% SOC recomputed for them, the Validation section removed.",
+        "description": "Made by scripts/derive-hydra-flores-bpx.py from HYDRA's runnable file: both OCP tables replaced by Flores claims, the open-circuit voltages at 0% and 100% SOC recomputed for them, the upper cut-off set to the 100% SOC value, the Validation section removed.",
         "checks": [
           {
             "check": "bpx_parse",
@@ -2607,24 +2607,26 @@
             "check": "simulation_smoke",
             "tool": "pybamm 26.10.1.1",
             "passed": true,
-            "detail": "DFN, 1C discharge to 3.5 V solved in 0.54 s; 0.997 Ah delivered.",
+            "detail": "DFN, 1C discharge to 3.5 V solved in 0.42 s; 0.997 Ah delivered.",
             "checked_at": "2026-11-27"
           }
         ]
       }
     ],
-    "description": "The HYDRA graphite/LNMO parameter set of Schmitt et al. 2026 with both electrode OCP tables replaced by average-branch p-OCV curves of Flores et al. 2026 (graphite Gr-AQ-1, LNMO LNMO-AQ-2), and the open-circuit voltages at 0% and 100% SOC in User-defined recomputed for them at HYDRA's stoichiometry windows. A virtual cell: the Flores LNMO is another powder, and no cell with these OCPs was measured, so the Validation section is removed. Everything else is HYDRA's, including its kinetics: each electrode's reaction-rate constant is a single BPX value fitted to a BattMo j0(soc) table."
+    "description": "The HYDRA graphite/LNMO parameter set of Schmitt et al. 2026 with both electrode OCP tables replaced by average-branch p-OCV curves of Flores et al. 2026 (graphite Gr-AQ-1, LNMO LNMO-AQ-2), and the open-circuit voltages at 0% and 100% SOC in User-defined recomputed for them at HYDRA's stoichiometry windows. The upper voltage cut-off is the open-circuit voltage at 100% SOC, so that charging does not go past the full state. A virtual cell: the Flores LNMO is another powder, and no cell with these OCPs was measured, so the Validation section is removed. Everything else is HYDRA's, including its kinetics: each electrode's reaction-rate constant is a single BPX value fitted to a BattMo j0(soc) table."
   },
   "provenance": {
     "source_type": "literature",
-    "retrieved_at": 1795734523,
+    "retrieved_at": 1795739531,
     "battinfo_version": "0.8.1",
     "citation": "https://arxiv.org/abs/2601.10507",
     "source_name": "Schmitt et al. 2026 and Flores et al. 2026"
   },
   "notes": [
-    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0, as in their BPX file (https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52). Both electrode OCPs are from the half-cell p-OCV data of Flores et al. 2026 (https://doi.org/10.5281/zenodo.20086298, CC-BY-4.0). Changes: the OCP tables were replaced, the User-defined open-circuit voltages at 0% and 100% SOC were recomputed for them at HYDRA's stoichiometry windows, and the Validation section was removed.",
-    "A virtual cell: the Flores LNMO is another powder than HYDRA's, and no cell with these OCPs was measured."
+    "Parameters from Schmitt et al. 2026, 'Comprehensive parameter and electrochemical dataset for a 1 Ah graphite/LNMO battery cell for physical modelling' (arXiv:2601.10507), released by the authors under CC-BY-4.0, as in their BPX file (https://w3id.org/battinfo/dataset/7jnc-cjtw-5h3a-5t52). Both electrode OCPs are from the half-cell p-OCV data of Flores et al. 2026 (https://doi.org/10.5281/zenodo.20086298, CC-BY-4.0). Changes: the OCP tables were replaced, the User-defined open-circuit voltages at 0% and 100% SOC were recomputed for them at HYDRA's stoichiometry windows, the upper voltage cut-off was set to the 100% SOC value, and the Validation section was removed.",
+    "A virtual cell: the Flores LNMO is another powder than HYDRA's, and no cell with these OCPs was measured.",
+    "The upper voltage cut-off is 4.642 V, the file's open-circuit voltage at 100% SOC, so that charging does not go past the stated full state; HYDRA's 4.9 V lies beyond the Flores LNMO curve, which ends at 4.8 V vs Li/Li+.",
+    "The x of both OCP tables is the lithium fraction normalised to the measured capacity window of the half-cells, not absolute stoichiometry, and the file uses it as stoichiometry."
   ],
   "license": "cc-by-4.0"
 }
