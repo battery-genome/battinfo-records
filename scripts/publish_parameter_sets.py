@@ -19,6 +19,16 @@ distributions, which is what ``<IRI>?format=bpx`` resolves through. Before
 posting, every file URL is fetched and checked against the record's sha256,
 so a record never goes out pointing at a file that was not uploaded.
 
+Each package also carries BattINFO's JSON-LD export of the stamped record
+(``resource.record_jsonld``). The registry serves that export's statements at
+the record's IRI, which is how a claim's ``is_based_on`` reaches the RDF.
+Without it the IRI serves only the registry envelope, and a new version
+published without it drops what an earlier one served. Run the script with
+an environment that has ``battinfo``; ``--no-record-jsonld`` leaves the export
+out on purpose. The registry treats a re-send under the same
+``--source-version`` as the version it already holds, so adding the export to
+a published record takes a new source version.
+
 The API key comes from ``--api-key`` or the BATTINFO_REGISTRY_API_KEY
 environment variable — deliberately no committed default.
 
@@ -128,11 +138,12 @@ def build_package(
     source_version: str,
     source_local_id: str,
     workflow_name: str = "literature-ocv-parameter-publication",
+    record_jsonld: dict | None = None,
 ) -> dict:
     body = record.get("parameter_set", {})
     title = body.get("name") or source_local_id
     generated_at = now_iso()
-    return {
+    package = {
         "schema_version": "0.1.0",
         "kind": "BattinfoSubmission",
         "submission_mode": "resource",
@@ -163,6 +174,21 @@ def build_package(
         "artifacts": [],
         "validation": {"ok": True, "errors": [], "policy": "default"},
     }
+    if record_jsonld is not None:
+        package["resource"]["record_jsonld"] = record_jsonld
+    return package
+
+
+def jsonld_report_note(response: object) -> str:
+    """A short note on what the registry left out of the export, or ''."""
+    report = response.get("record_jsonld_report") if isinstance(response, dict) else None
+    if not isinstance(report, dict):
+        return ""
+    parts = [f"{key} {len(report[key])}" for key in
+             ("dropped_subjects", "dropped_terms", "invalid_values", "unmapped_keys") if report.get(key)]
+    if report.get("reason"):
+        parts.insert(0, str(report["reason"]))
+    return "; JSON-LD export: " + ", ".join(parts) if parts else ""
 
 
 def post_package(
@@ -217,11 +243,22 @@ def main() -> int:
     parser.add_argument("--workflow-name", default="literature-ocv-parameter-publication")
     parser.add_argument("--skip-file-check", action="store_true",
                         help="do not fetch and hash the files a record carries before posting it")
+    parser.add_argument("--no-record-jsonld", action="store_true",
+                        help="send no JSON-LD export; the record's IRI then serves only the registry envelope as RDF")
     args = parser.parse_args()
 
     if not args.dry_run and not args.api_key:
         print("error: no API key (--api-key or BATTINFO_REGISTRY_API_KEY)", file=sys.stderr)
         return 2
+
+    record_to_jsonld = None
+    if not args.no_record_jsonld:
+        try:
+            from battinfo.jsonld import record_to_jsonld
+        except ImportError:
+            print("error: battinfo is not importable, so no record can carry its JSON-LD export. "
+                  "Run with an environment that has battinfo, or pass --no-record-jsonld.", file=sys.stderr)
+            return 2
 
     record_paths = [
         path for path in sorted(RECORD_DIR.glob("*/record.json"))
@@ -247,6 +284,14 @@ def main() -> int:
             slug=slug,
         )
         assert record.get("license") == license_before, f"{slug}: license changed during stamping"
+        record_jsonld = None
+        if record_to_jsonld is not None:
+            try:
+                record_jsonld = record_to_jsonld(record, "parameter-set")
+            except Exception as exc:  # the emitter's own errors vary; none should stop the other records
+                print(f"  SKIPPED {slug}: no JSON-LD export ({type(exc).__name__}: {exc})")
+                fail += 1
+                continue
         package = build_package(
             record,
             workspace_id=args.workspace_id,
@@ -256,14 +301,19 @@ def main() -> int:
             # dataset/ record under a key that already holds a spec/ one.
             source_local_id="parameter-set:" + record["parameter_set"]["id"].rsplit("/", 1)[-1],
             workflow_name=args.workflow_name,
+            record_jsonld=record_jsonld,
         )
         files = package["resource"]["distributions"]
         if args.dry_run:
             body = record["parameter_set"]
+            export = (
+                f"JSON-LD {len(json.dumps(record_jsonld, ensure_ascii=False).encode('utf-8')) / 1024:.1f} KiB"
+                if record_jsonld is not None else "no JSON-LD"
+            )
             print(
                 f"  dry-run  {slug}  [{record['license']}, "
                 f"{len(body.get('claims', [])) + sum(len(p.get('claims', [])) for p in body.get('parts', []))} claim(s), "
-                f"{len(files)} file(s)]  {body['id']}"
+                f"{len(files)} file(s), {export}]  {body['id']}"
             )
             ok += 1
             continue
@@ -278,7 +328,7 @@ def main() -> int:
         print(f"  publishing {slug} ... ", end="", flush=True)
         result = post_package(package, registry_url=args.registry_url, api_key=args.api_key)
         if result["status"] == "ok":
-            print(f"ok ({result['status_code']})")
+            print(f"ok ({result['status_code']}){jsonld_report_note(result.get('response'))}")
             ok += 1
         else:
             print(f"FAILED ({result['status_code']}): {result.get('error', '')[:200]}")
