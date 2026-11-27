@@ -298,7 +298,8 @@ def build_record(spec: dict, items: list[dict], curves: list[dict], grid: np.nda
             f"Open-circuit potential of the Flores 2026 {material} powder vs Li/Li+, from p-OCV at C/50 on "
             f"{n} coin half-cells with {label} electrodes ({spec['id']}). Each branch comes from the first full "
             "cycle (the first lithiation and delithiation that each run between the voltage cut-offs) and is "
-            "averaged across the cells."
+            "averaged across the cells. The x of every curve is the lithium fraction normalised to the branch's "
+            "measured capacity window (0 at the delithiated end, 1 at the lithiated end), not absolute stoichiometry."
         ),
         source_type="measurement",
         citation=f"https://doi.org/{doi}",

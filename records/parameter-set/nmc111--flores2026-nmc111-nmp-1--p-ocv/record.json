@@ -1295,7 +1295,7 @@
         ]
       }
     ],
-    "description": "Open-circuit potential of the Flores 2026 NMC111 powder vs Li/Li+, from p-OCV at C/50 on 2 coin half-cells with NMC111-NMP-1 electrodes (https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7). Each branch comes from the first full cycle (the first lithiation and delithiation that each run between the voltage cut-offs) and is averaged across the cells."
+    "description": "Open-circuit potential of the Flores 2026 NMC111 powder vs Li/Li+, from p-OCV at C/50 on 2 coin half-cells with NMC111-NMP-1 electrodes (https://w3id.org/battinfo/spec/h173-jsnh-4w7m-7ag7). Each branch comes from the first full cycle (the first lithiation and delithiation that each run between the voltage cut-offs) and is averaged across the cells. The x of every curve is the lithium fraction normalised to the branch's measured capacity window (0 at the delithiated end, 1 at the lithiated end), not absolute stoichiometry."
   },
   "provenance": {
     "source_type": "measurement",
