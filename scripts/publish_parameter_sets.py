@@ -24,7 +24,7 @@ Each package also carries BattINFO's JSON-LD export of the stamped record
 about the record at its IRI, which is how ``is_based_on`` reaches the RDF.
 Without it the IRI serves only the registry envelope as RDF, and a new
 version published without it drops what an earlier one served. Run the
-script with battinfo 0.8.2 or later, the first release that exports
+script with a battinfo newer than the 0.8.1 release, which does not export
 ``is_based_on``; a record that states it and gets an export without it is
 skipped. ``--no-record-jsonld`` leaves the export out on purpose. The
 registry keeps the version it holds when a record is re-sent under the same
@@ -330,7 +330,7 @@ def main() -> int:
                 continue
             if states_based_on(record) and not exports_based_on(record_jsonld):
                 print(f"  SKIPPED {slug}: the record states is_based_on and this battinfo does not export it "
-                      "(battinfo 0.8.2 or later does)")
+                      "(the 0.8.1 release does not; a newer battinfo does)")
                 fail += 1
                 continue
         package = build_package(
@@ -374,7 +374,8 @@ def main() -> int:
             fail += 1
         elif isinstance(response, dict) and response.get("created_count") == 0:
             print(f"KEPT ({result['status_code']}): the registry already holds source version "
-                  f"{args.source_version} of this record and stored nothing; pass a new --source-version")
+                  f"{args.source_version} of this record and stored nothing; pass a new --source-version"
+                  f"{jsonld_report_note(jsonld_report(response))}")
             kept += 1
         else:
             report = jsonld_report(response)
