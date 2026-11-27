@@ -1301,7 +1301,7 @@
     "source_type": "measurement",
     "retrieved_at": 1795651200,
     "citation_doi": "10.5281/zenodo.20086298",
-    "battinfo_version": "0.8.1",
+    "battinfo_version": "0.8.2",
     "citation": "https://doi.org/10.5281/zenodo.20086298",
     "source_name": "Flores et al. 2026"
   },
